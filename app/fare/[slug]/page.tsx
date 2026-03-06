@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     }
 }
 
-export default function FarePage({ params }: { params: { slug: string } }) {
-    const { slug } = params
+export default async function FarePage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params
     const route = ROUTES.find((r) => r.slug === slug)
     if (!route) notFound()
 
