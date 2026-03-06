@@ -3,10 +3,9 @@ import { notFound } from "next/navigation"
 import { FareCalculator } from "../../components/fare-calculator"
 import { FareTable } from "../../components/fare-table"
 import { VehicleGallery } from "../../components/vehicle-gallery"
-import { RouteMap } from "../../components/route-map"
 import { TrustSection, FAQSection, FareInclusions, ExclusionsNotice, SafetySection, HowItWorks, OfficeLocation, TrustBadges, ExperienceSection, TestimonialsSection, SocialProof } from "../../components/sections"
 import { BreadcrumbList, LocalBusiness, Offer, FAQPage } from "../../components/schemas"
-import { MapPin, Clock, ShieldCheck, Star, Info } from "lucide-react"
+import { MapPin, Clock, ShieldCheck, Star } from "lucide-react"
 import { Metadata } from "next"
 
 export const revalidate = 86400
