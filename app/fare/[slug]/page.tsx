@@ -17,8 +17,8 @@ export async function generateStaticParams() {
     }))
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-    const { slug } = params
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+    const { slug } = await params
     const route = ROUTES.find((r) => r.slug === slug)
     if (!route) return {}
 
@@ -37,9 +37,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     }
 }
 
-export default async function FarePage({ params }: { params: { slug: string } }) {
+export default async function FarePage({ params }: { params: Promise<{ slug: string }> }) {
 
-    const { slug } = params
+    const { slug } = await params
     const route = ROUTES.find((r) => r.slug === slug)
 
     if (!route) notFound()
