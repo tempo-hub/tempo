@@ -4,6 +4,7 @@ import { VEHICLES } from "@/lib/data"
 import { Button, Card } from "./ui-base"
 import { Users, Briefcase, Snowflake, ShieldCheck, CheckCircle, ArrowRight } from "lucide-react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export const VehicleGallery = () => {
     return (
@@ -18,10 +19,11 @@ export const VehicleGallery = () => {
                 >
                     <Card className="h-full group hover:border-primary/50 transition-colors">
                         <div className="aspect-video relative overflow-hidden bg-slate-100">
-                            <img
+                            <Image
                                 src={v.image}
                                 alt={v.name}
-                                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                                fill
+                                className="object-cover group-hover:scale-110 transition-transform duration-500"
                             />
                             <div className="absolute top-4 left-4 bg-primary text-white text-[10px] font-black uppercase px-2 py-1 rounded">
                                 {v.type}

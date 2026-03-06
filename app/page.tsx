@@ -1,9 +1,10 @@
-import { ROUTES, calculateFare } from "@/lib/data"
-import { TrustSection, HowItWorks, SafetySection, OfficeLocation } from "./components/sections"
+import { ROUTES } from "@/lib/data"
+import { HowItWorks, SafetySection, OfficeLocation } from "./components/sections"
 import { VehicleGallery } from "./components/vehicle-gallery"
 import { Button, Card } from "./components/ui-base"
 import Link from "next/link"
-import { ArrowRight, Star, Shield, Zap, MapPin, CheckCircle, Users } from "lucide-react"
+import { ArrowRight, Star, Shield, Zap, MapPin, Users } from "lucide-react"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -133,10 +134,11 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1000"
                   alt="Varanasi Tempo Traveller Service"
-                  className="object-cover w-full h-full"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="absolute -bottom-10 -right-10 bg-white p-8 rounded-2xl shadow-xl border border-border hidden md:block">

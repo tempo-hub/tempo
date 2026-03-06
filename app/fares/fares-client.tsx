@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { ROUTES, calculateFare } from "@/lib/data"
-import { Search, MapPin, ArrowRight, ChevronRight, Globe, ShieldCheck, TrendingDown, Rocket } from "lucide-react"
+import { Search, MapPin, ArrowRight, Globe, ShieldCheck, TrendingDown } from "lucide-react"
 
 export default function FaresClient() {
     const [searchQuery, setSearchQuery] = useState("")
@@ -124,7 +124,9 @@ export default function FaresClient() {
     )
 }
 
-function RouteCard({ route }: { route: any }) {
+import { TaxiRoute } from "@/lib/data"
+
+function RouteCard({ route }: { route: TaxiRoute }) {
     return (
         <a
             href={`/fare/${route.slug}`}

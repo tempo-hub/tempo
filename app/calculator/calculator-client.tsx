@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { calculateFare } from "@/lib/data"
-import { Calculator, MapPin, Bus, ArrowRight, ShieldCheck, CheckCircle2, PhoneCall } from "lucide-react"
+import { Calculator, Bus, ShieldCheck, CheckCircle2, PhoneCall } from "lucide-react"
 import { Button, Card } from "../components/ui-base"
 
 export default function CalculatorClient() {

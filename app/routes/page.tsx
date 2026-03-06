@@ -1,7 +1,7 @@
 import { ROUTES, calculateFare } from "@/lib/data"
 import Link from "next/link"
 import { Card, Button } from "../components/ui-base"
-import { ArrowRight, MapPin, Clock, Search, Bus, Filter } from "lucide-react"
+import { ArrowRight, MapPin, Clock, Search, Bus } from "lucide-react"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {

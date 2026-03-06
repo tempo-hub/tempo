@@ -1,5 +1,4 @@
-
-import { ROUTES } from './lib/data';
+import { ROUTES, TaxiRoute } from './lib/data';
 
 console.log("Checking ROUTES data...");
 let errorCount = 0;
@@ -31,6 +30,6 @@ const routesByOrigin = ROUTES.reduce((acc, route) => {
     }
     acc[route.origin].push(route)
     return acc
-}, {});
+}, {} as Record<string, TaxiRoute[]>);
 
 console.log("Grouped Origins:", Object.keys(routesByOrigin));

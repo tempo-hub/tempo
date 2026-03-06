@@ -1,4 +1,5 @@
 import { ChevronDown, ShieldCheck, Award, ThumbsUp, MapPin, Info, Check, Fuel, Shield, Search, PhoneCall, CalendarCheck, Home, Zap, Users } from "lucide-react"
+import Image from "next/image"
 
 export const HowItWorks = () => (
     <section className="py-20 bg-white">
@@ -277,10 +278,11 @@ export const ExperienceSection = () => (
             <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div className="relative">
                     <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1000"
                             alt="Varanasi Tempo Traveller Service"
-                            className="object-cover w-full h-full"
+                            fill
+                            className="object-cover"
                         />
                     </div>
                     <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-border">

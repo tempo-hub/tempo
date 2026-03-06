@@ -2,7 +2,7 @@
 
 import { VEHICLES, calculateFare, TaxiRoute } from "@/lib/data"
 import { Button } from "./ui-base"
-import { Check, Info, ArrowUpRight } from "lucide-react"
+import { Info, ArrowUpRight } from "lucide-react"
 
 export const FareTable = ({ route }: { route: TaxiRoute }) => {
     return (
