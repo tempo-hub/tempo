@@ -48,11 +48,20 @@ export const VehicleGallery = () => {
                                     <CheckCircle className="h-4 w-4 text-primary" /> 24/7 Verified
                                 </div>
                             </div>
-                            <Button className="w-full group/btn bg-green-600 hover:bg-green-700 text-white rounded-xl h-12">
-                                <span className="flex items-center gap-2">
-                                    Book {v.type} <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                                </span>
-                            </Button>
+                            <div className="flex flex-col gap-3">
+                                <a href={`https://api.whatsapp.com/send?phone=+916280820037&text=Booking ${v.type} tempo traveller. Please share details.`} target="_blank" rel="noopener noreferrer">
+                                    <Button className="w-full group/btn bg-green-600 hover:bg-green-700 text-white rounded-xl h-12">
+                                        <span className="flex items-center gap-2">
+                                            Book {v.type} <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                                        </span>
+                                    </Button>
+                                </a>
+                                <a href="tel:8448445504">
+                                    <Button variant="outline" className="w-full rounded-xl h-12 border-primary/20 text-secondary hover:bg-primary/5">
+                                        Call 8448445504
+                                    </Button>
+                                </a>
+                            </div>
                         </div>
                     </Card>
                 </motion.div>

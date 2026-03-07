@@ -34,7 +34,7 @@ export default function Home() {
                     View Tempo Traveller Fares <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-                <a href="tel:+919999999999">
+                <a href="tel:8448445504">
                   <Button variant="outline" size="lg" className="h-14 rounded-xl px-10">
                     Call to Book
                   </Button>

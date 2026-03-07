@@ -54,11 +54,18 @@ export const FareTable = ({ route }: { route: TaxiRoute }) => {
                                         </div>
                                     </td>
                                     <td className="px-6 py-6">
-                                        <a href={`https://wa.me/919999999999?text=Booking ${v.type} tempo traveller Round-Trip for ${route.origin} to ${route.destination}`} target="_blank" rel="noopener noreferrer">
-                                            <Button size="sm" variant={isCheapest ? "primary" : "secondary"} className="h-9 px-4 rounded-lg group">
-                                                Book <ArrowUpRight className="ml-1 h-3 w-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                                            </Button>
-                                        </a>
+                                        <div className="flex gap-2">
+                                            <a href={`https://api.whatsapp.com/send?phone=+916280820037&text=Booking ${v.type} tempo traveller Round-Trip for ${route.origin} to ${route.destination}`} target="_blank" rel="noopener noreferrer">
+                                                <Button size="sm" variant={isCheapest ? "primary" : "secondary"} className="h-9 px-4 rounded-lg group">
+                                                    Book <ArrowUpRight className="ml-1 h-3 w-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                                                </Button>
+                                            </a>
+                                            <a href="tel:8448445504" className="hidden sm:block">
+                                                <Button size="sm" variant="outline" className="h-9 px-4 rounded-lg">
+                                                    Call
+                                                </Button>
+                                            </a>
+                                        </div>
                                     </td>
                                 </tr>
                             )

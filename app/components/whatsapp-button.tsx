@@ -5,7 +5,7 @@ import { Button } from "./ui-base"
 import { motion, AnimatePresence } from "framer-motion"
 
 export const WhatsAppButton = ({ message = "Hi YatraTempoTraveller, I want to book a taxi." }) => {
-    const whatsappUrl = `https://wa.me/919999999999?text=${encodeURIComponent(message)}`
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+916280820037&text=${encodeURIComponent(message)}`
 
     return (
         <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">

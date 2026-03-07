@@ -91,12 +91,12 @@ export default function RoutesPage() {
                             We provide custom tempo traveller packages for group tours across entire North India.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4 pt-4">
-                            <a href="tel:+919999999999">
+                            <a href="tel:8448445504">
                                 <Button size="lg" className="h-14 px-10 rounded-xl shadow-xl">
                                     Call for Custom Quote
                                 </Button>
                             </a>
-                            <a href="https://wa.me/919999999999">
+                            <a href="https://api.whatsapp.com/send?phone=+916280820037&text=Hi! Custom Quote for Tempo Traveller">
                                 <Button variant="whatsapp" size="lg" className="h-14 px-10 rounded-xl">
                                     WhatsApp Support
                                 </Button>

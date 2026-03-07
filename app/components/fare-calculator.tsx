@@ -17,7 +17,7 @@ Vehicle: ${selectedVehicle.name} (${selectedVehicle.type})
 Trip Type: Round Trip
 Estimated Fare: ₹${fare}`
 
-    const whatsappUrl = `https://wa.me/919999999999?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+916280820037&text=${encodeURIComponent(whatsappMessage)}`
 
     return (
         <Card className="p-6 md:p-8 lg:p-10 shadow-xl border-primary/20 bg-gradient-to-br from-white to-slate-50">
