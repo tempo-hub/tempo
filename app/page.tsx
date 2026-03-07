@@ -1,16 +1,15 @@
 import { ROUTES } from "@/lib/data"
-import { HowItWorks, SafetySection, OfficeLocation } from "./components/sections"
+import { HowItWorks, SafetySection, OfficeLocation, ExperienceSection, SocialProof } from "./components/sections"
 import { VehicleGallery } from "./components/vehicle-gallery"
 import { Button, Card } from "./components/ui-base"
 import Link from "next/link"
 import { ArrowRight, Star, Shield, Zap, MapPin, Users } from "lucide-react"
-import Image from "next/image"
 
 export default function Home() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden bg-slate-50">
+      <section className="relative pt-8 pb-20 lg:pt-12 lg:pb-32 overflow-hidden bg-slate-50">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
 
@@ -128,50 +127,9 @@ export default function Home() {
         <VehicleGallery />
       </section>
 
-      {/* About Us / Experience Section */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl">
-                <Image
-                  src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1000"
-                  alt="Varanasi Tempo Traveller Service"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-10 -right-10 bg-white p-8 rounded-2xl shadow-xl border border-border hidden md:block">
-                <p className="text-4xl font-black text-primary">10+</p>
-                <p className="text-sm font-bold text-secondary uppercase tracking-wider">Years Experience</p>
-              </div>
-            </div>
-            <div className="space-y-6">
-              <h2 className="text-4xl font-extrabold text-secondary tracking-tight">Varanasi&apos;s Homegrown <br /><span className="text-primary italic">Tempo Traveller Experts</span></h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                Started as a small local transport service near Dashashwamedh Ghat, YatraTempoTraveller has grown into Varanasi&apos;s most trusted tempo traveller provider. We understand the unique needs of pilgrim groups visiting Kashi, Ayodhya, and Prayagraj.
-              </p>
-              <div className="space-y-4">
-                {[
-                  "Verified Professional Drivers with Local Knowledge",
-                  "Fixed & Transparent Pricing - No Hidden Charges",
-                  "9 to 26 Seater Tempo Travellers Available",
-                  "Modern, Clean & Sanitized Fleet"
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <div className="h-6 w-6 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
-                      <Zap className="h-3.5 w-3.5 text-primary" />
-                    </div>
-                    <span className="font-semibold text-secondary">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ExperienceSection origin="Varanasi" />
 
-      <SafetySection />
+      <SafetySection origin="Varanasi" />
 
       {/* Testimonials Section */}
       <section className="py-24 bg-white">
@@ -220,35 +178,10 @@ export default function Home() {
         </div>
       </section>
 
-      <OfficeLocation />
+      <OfficeLocation origin="Varanasi" />
 
       {/* Social Proof / EEAT Section short */}
-      <section className="bg-secondary py-20 text-white overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center space-y-6 max-w-3xl mx-auto">
-            <h2 className="text-4xl font-extrabold tracking-tight">Varanasi&apos;s Most Trusted Tempo Traveller Service</h2>
-            <p className="text-slate-400 text-lg">We help over 300+ groups every month travel safely from Varanasi to different parts of UP and Bihar.</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-10">
-              <div>
-                <p className="text-3xl font-black text-primary">800+</p>
-                <p className="text-sm text-slate-400">Monthly Group Trips</p>
-              </div>
-              <div>
-                <p className="text-3xl font-black text-primary">₹2M+</p>
-                <p className="text-sm text-slate-400">Group Savings</p>
-              </div>
-              <div>
-                <p className="text-3xl font-black text-primary">4.9/5</p>
-                <p className="text-sm text-slate-400">Google Rating</p>
-              </div>
-              <div>
-                <p className="text-3xl font-black text-primary">Verified</p>
-                <p className="text-sm text-slate-400">Local Drivers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <SocialProof origin="Varanasi" />
     </main>
   );
 }

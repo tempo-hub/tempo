@@ -111,7 +111,7 @@ export default async function FarePage({ params }: { params: Promise<{ slug: str
                 </div>
             </section>
 
-            <TrustBadges />
+            <TrustBadges origin={route.origin} />
             <HowItWorks />
 
             <section className="py-24 max-w-7xl mx-auto px-4">
@@ -130,7 +130,7 @@ export default async function FarePage({ params }: { params: Promise<{ slug: str
                         </div>
 
                         <FareTable route={route} />
-                        <ExclusionsNotice />
+                        <ExclusionsNotice origin={route.origin} />
 
                     </div>
 
@@ -164,8 +164,8 @@ export default async function FarePage({ params }: { params: Promise<{ slug: str
 
             </section>
 
-            <ExperienceSection />
-            <SafetySection />
+            <ExperienceSection origin={route.origin} />
+            <SafetySection origin={route.origin} />
 
             <section className="py-24 bg-slate-50 border-y border-border">
 
@@ -189,10 +189,10 @@ export default async function FarePage({ params }: { params: Promise<{ slug: str
 
             </section>
 
-            <SocialProof />
-            <TrustSection />
-            <TestimonialsSection />
-            <OfficeLocation />
+            <SocialProof origin={route.origin} />
+            <TrustSection origin={route.origin} />
+            <TestimonialsSection origin={route.origin} />
+            <OfficeLocation origin={route.origin} />
 
             <FAQSection faqs={route.faqs} />
 
