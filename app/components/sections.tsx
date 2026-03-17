@@ -68,8 +68,8 @@ export const SafetySection = ({ origin = "Varanasi" }: { origin?: string }) => (
                             <h3 className="text-2xl font-bold">Driver Badge #481</h3>
                         </div>
                         <div className="flex items-center gap-4 py-4 border-y border-white/10">
-                            <div className="h-16 w-16 rounded-full bg-slate-700 relative overflow-hidden border-2 border-primary/20">
-                                <Image src="https://i.pravatar.cc/150?u=driver481" alt="Driver" fill className="object-cover" />
+                            <div className="h-16 w-16 rounded-full bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center border-2 border-primary/20 text-white font-bold text-xl">
+                                VP
                             </div>
                             <div>
                                 <p className="text-xl font-bold">Vivek Pandey</p>
@@ -220,8 +220,8 @@ export const TrustSection = ({ origin = "Varanasi" }: { origin?: string }) => (
                     <span className="text-primary font-black text-4xl mb-4 block italic">&quot;Perfect for Groups&quot;</span>
                     <p className="text-slate-300 italic mb-8">&quot;Our 20-person pilgrim group saved ₹5,000 on our {origin} to Ayodhya trip compared to booking two separate taxis. The 24 seater was spacious and the driver was excellent.&quot;</p>
                     <div className="flex items-center gap-4">
-                        <div className="h-12 w-12 rounded-full bg-slate-700 relative overflow-hidden border border-white/20">
-                            <Image src="https://i.pravatar.cc/150?u=rahul" alt="Rahul" fill className="object-cover" />
+                        <div className="h-12 w-12 rounded-full bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center border border-white/20 text-white font-bold text-sm">
+                            RS
                         </div>
                         <div>
                             <p className="font-bold">Rahul Sharma</p>
@@ -359,8 +359,8 @@ export const TestimonialsSection = ({ origin = "Varanasi" }: { origin?: string }
                         </div>
                         <p className="text-slate-600 italic mb-6">&quot;{t.text}&quot;</p>
                         <div className="flex items-center gap-4 pt-4 border-t border-border/50">
-                            <div className="h-10 w-10 rounded-full bg-slate-200 relative overflow-hidden">
-                                <Image src={`https://i.pravatar.cc/150?u=${t.name}`} alt={t.name} fill className="object-cover" />
+                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center text-white font-bold text-xs">
+                                {t.name.split(' ').map(n => n[0]).join('')}
                             </div>
                             <div>
                                 <p className="font-bold text-secondary text-sm">{t.name}</p>
