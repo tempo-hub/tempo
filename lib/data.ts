@@ -1486,6 +1486,9 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Lucknow",
     destination: "Bulandshahr",
     distance: 480,
+    duration: "8.5 Hours",
+    description: "Group travel from Lucknow to Bulandshahr by tempo traveller.",
+    highlights: ["Safe travel", "Verified drivers", "Fixed fare"],
     faqs: []
   },
   {
