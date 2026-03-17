@@ -137,7 +137,12 @@ export default function CalculatorClient() {
                         At YatraTempoTraveller, we believe in radical transparency. Most offline travel agents in Varanasi give vague estimates. Our calculator uses real-time distance metrics and vehicle utility rates to give you a quote that won&apos;t change after you book.
                     </p>
                 </div>
+
+                <FAQSection faqs={GLOBAL_FAQS} title="Fare Calculation & Booking FAQs" />
             </div>
         </div>
     )
 }
+
+import { FAQSection } from "../components/sections"
+import { GLOBAL_FAQS } from "@/lib/faq-data"

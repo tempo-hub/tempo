@@ -8,5 +8,17 @@ export const metadata: Metadata = {
 }
 
 export default function FaresPage() {
-    return <FaresClient />
+    return (
+        <>
+            <FaresClient />
+            {/* FAQ Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQPage(GLOBAL_FAQS)) }}
+            />
+        </>
+    )
 }
+
+import { FAQPage } from "../components/schemas"
+import { GLOBAL_FAQS } from "@/lib/faq-data"

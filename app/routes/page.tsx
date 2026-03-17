@@ -1,12 +1,15 @@
 import { ROUTES, calculateFare } from "@/lib/data"
+import { GLOBAL_FAQS } from "@/lib/faq-data"
 import Link from "next/link"
 import { Card, Button } from "../components/ui-base"
 import { ArrowRight, MapPin, Clock, Search, Bus } from "lucide-react"
 import { Metadata } from "next"
+import { FAQSection } from "../components/sections"
+import { FAQPage } from "../components/schemas"
 
 export const metadata: Metadata = {
-    title: "Tempo Traveller Routes | YatraTempoTraveller.com",
-    description: "Explorer all 24+ tempo traveller routes from Varanasi to Ayodhya, Prayagraj, Lucknow, Bodhgaya and more. Fixed fares starting from ₹18/km.",
+    title: "Varanasi Tempo Traveller Routes | Budget & Cheapest Options",
+    description: "Explore all 24+ tempo traveller routes from Varanasi. Discover the cheapest tempo traveller for group tours with transparent per km cost. Book your budget tempo traveller today.",
 }
 
 export default function RoutesPage() {
@@ -80,6 +83,26 @@ export default function RoutesPage() {
                     })}
                 </div>
 
+                {/* SEO Content Section */}
+                <div className="mt-20 bg-white rounded-3xl p-8 lg:p-12 border border-border shadow-sm">
+                    <div className="max-w-4xl mx-auto space-y-6">
+                        <h2 className="text-2xl lg:text-3xl font-bold text-secondary">
+                            Affordable & Transparent Outstation Travel
+                        </h2>
+                        <div className="prose prose-slate max-w-none text-slate-600 space-y-4">
+                            <p>
+                                Planning a group trip from Varanasi doesn&apos;t have to be expensive. We understand the importance of clear pricing, which is why we offer a completely transparent <strong>per km cost</strong> starting at just ₹18/km. There are no hidden charges, making it easier for you to plan your travel budget accurately.
+                            </p>
+                            <p>
+                                Whether you&apos;re organizing a spiritual pilgrimage to Ayodhya, a family reunion in Lucknow, or a historic tour to Bodhgaya, finding the <strong>cheapest tempo traveller</strong> without compromising on quality is our priority. Our diverse fleet of well-maintained vehicles ensures that you get the best value for your money.
+                            </p>
+                            <p>
+                                For travelers looking for cost-effective solutions, our <strong>budget tempo traveller</strong> options provide comfortable seating, ample luggage space, and air-conditioned interiors. You can enjoy a premium travel experience across North India while staying comfortably within your budget.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 {/* Bottom CTA */}
                 <div className="mt-20 text-center bg-secondary rounded-3xl p-10 lg:p-16 text-white relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-10 opacity-5 rotate-12">
@@ -104,7 +127,14 @@ export default function RoutesPage() {
                         </div>
                     </div>
                 </div>
+
+                <FAQSection faqs={GLOBAL_FAQS} title="Tempo Traveller Fare FAQs" />
             </div>
+            {/* FAQ Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQPage(GLOBAL_FAQS)) }}
+            />
         </main>
     )
 }

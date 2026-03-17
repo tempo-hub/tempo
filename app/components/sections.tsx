@@ -234,18 +234,26 @@ export const TrustSection = ({ origin = "Varanasi" }: { origin?: string }) => (
     </section>
 )
 
-export const FAQSection = ({ faqs }: { faqs: { question: string; answer: string }[] }) => (
-    <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-3xl font-black text-secondary text-center mb-12">Frequently Asked Questions</h2>
-            <div className="space-y-4">
+export const FAQSection = ({ faqs, title = "Frequently Asked Questions" }: { faqs: { question: string; answer: string }[], title?: string }) => (
+    <section className="py-24 bg-white border-t border-border">
+        <div className="max-w-4xl mx-auto px-4">
+            <div className="text-center mb-16 space-y-4">
+                <h2 className="text-4xl font-extrabold text-secondary tracking-tight">{title}</h2>
+                <div className="h-1.5 w-20 bg-primary mx-auto rounded-full" />
+                <p className="text-muted-foreground">Everything you need to know about booking our tempo traveller service.</p>
+            </div>
+            <div className="grid gap-4">
                 {faqs.map((faq, i) => (
-                    <details key={i} className="group border border-border rounded-xl px-6 py-4 [&_summary::-webkit-details-marker]:hidden">
+                    <details key={i} className="group border border-border rounded-2xl px-8 py-5 [&_summary::-webkit-details-marker]:hidden bg-slate-50/30 hover:bg-white hover:shadow-lg hover:border-primary/20 transition-all duration-300">
                         <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-secondary">
-                            <h3 className="text-lg font-bold">{faq.question}</h3>
-                            <ChevronDown className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180" />
+                            <h3 className="text-lg font-bold group-hover:text-primary transition-colors">{faq.question}</h3>
+                            <div className="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 group-hover:bg-primary/10 transition-colors">
+                                <ChevronDown className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180 group-hover:text-primary" />
+                            </div>
                         </summary>
-                        <p className="mt-4 leading-relaxed text-muted-foreground">{faq.answer}</p>
+                        <div className="mt-5 text-slate-600 leading-relaxed pl-1 border-l-2 border-primary/20">
+                            {faq.answer}
+                        </div>
                     </details>
                 ))}
             </div>

@@ -1,5 +1,7 @@
 import { ROUTES } from "@/lib/data"
-import { HowItWorks, SafetySection, OfficeLocation, ExperienceSection, SocialProof } from "./components/sections"
+import { GLOBAL_FAQS } from "@/lib/faq-data"
+import { HowItWorks, SafetySection, OfficeLocation, ExperienceSection, SocialProof, FAQSection } from "./components/sections"
+import { FAQPage } from "./components/schemas"
 import { VehicleGallery } from "./components/vehicle-gallery"
 import { Button, Card } from "./components/ui-base"
 import Link from "next/link"
@@ -180,8 +182,17 @@ export default function Home() {
 
       <OfficeLocation origin="Varanasi" />
 
+      {/* Global FAQs Section */}
+      <FAQSection faqs={GLOBAL_FAQS} />
+
       {/* Social Proof / EEAT Section short */}
       <SocialProof origin="Varanasi" />
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQPage(GLOBAL_FAQS)) }}
+      />
     </main>
   );
 }

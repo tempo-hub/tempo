@@ -2,7 +2,12 @@
   "name": "cab",
   "version": "0.1.0",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
     "clsx": "^2.1.1",

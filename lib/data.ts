@@ -1,3 +1,5 @@
+import { generateRouteFaqs } from "./faq-data";
+
 export interface VehicleFare {
   type: string;
   name: string;
@@ -1484,6 +1486,201 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Lucknow",
     destination: "Bulandshahr",
     distance: 480,
+    faqs: []
+  },
+  {
+    id: "lko-hrd-dist",
+    slug: "lucknow-to-hardoi-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Hardoi",
+    distance: 110,
+    duration: "2.5 Hours",
+    description: "Reliable tempo traveller service connecting Lucknow and Hardoi.",
+    highlights: ["Safe travel", "Trained drivers", "Fixed pricing"],
+    faqs: []
+  },
+  {
+    id: "lko-unn",
+    slug: "lucknow-to-unnao-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Unnao",
+    distance: 70,
+    duration: "1.5 Hours",
+    description: "Fastest group connectivity between Lucknow and Unnao.",
+    highlights: ["Short distance expert", "Reliable service", "AC comfort"],
+    faqs: []
+  },
+  {
+    id: "lko-rbl",
+    slug: "lucknow-to-rae-bareli-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Rae Bareli",
+    distance: 80,
+    duration: "2 Hours",
+    description: "Group travel from the capital to Rae Bareli by tempo traveller.",
+    highlights: ["Frequent service", "Professional drivers", "Clean vehicles"],
+    faqs: []
+  },
+  {
+    id: "lko-amt",
+    slug: "lucknow-to-amethi-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Amethi",
+    distance: 140,
+    duration: "3.5 Hours",
+    description: "Reliable tempo traveller service between Lucknow and Amethi.",
+    highlights: ["Safe long trips", "AC comfort", "Fixed pricing"],
+    faqs: []
+  },
+  {
+    id: "lko-sln",
+    slug: "lucknow-to-sultanpur-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Sultanpur",
+    distance: 150,
+    duration: "3.5 Hours",
+    description: "Direct group travel from Lucknow to Sultanpur city.",
+    highlights: ["Highway route", "Reliable vehicles", "Fixed fare"],
+    faqs: []
+  },
+  {
+    id: "lko-ptg",
+    slug: "lucknow-to-pratapgarh-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Pratapgarh",
+    distance: 170,
+    duration: "4 Hours",
+    description: "Connect Lucknow to Pratapgarh with our professional group travel service.",
+    highlights: ["Experienced drivers", "Safe journey", "AC comfort"],
+    faqs: []
+  },
+  {
+    id: "lko-mzp",
+    slug: "lucknow-to-mirzapur-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Mirzapur",
+    distance: 280,
+    duration: "6 Hours",
+    description: "Direct group tempo traveller service to Mirzapur from Lucknow.",
+    highlights: ["Vindhyachal special", "Professional drivers", "AC comfort"],
+    faqs: []
+  },
+  {
+    id: "lko-jnp",
+    slug: "lucknow-to-jaunpur-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Jaunpur",
+    distance: 250,
+    duration: "5.5 Hours",
+    description: "Group travel from Lucknow to the historical city of Jaunpur.",
+    highlights: ["Safe travel", "Experienced drivers", "Fixed pricing"],
+    faqs: []
+  },
+  {
+    id: "lko-gzp",
+    slug: "lucknow-to-ghazipur-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Ghazipur",
+    distance: 340,
+    duration: "6.5 Hours",
+    description: "Reliable tempo traveller service connecting Lucknow and Ghazipur.",
+    highlights: ["Purvanchal Expressway", "Trained drivers", "Clean seating"],
+    faqs: []
+  },
+  {
+    id: "lko-bal",
+    slug: "lucknow-to-ballia-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Ballia",
+    distance: 400,
+    duration: "8 Hours",
+    description: "Group travel from Lucknow to Ballia by tempo traveller.",
+    highlights: ["Long distance expert", "Safe travel", "Fixed fare"],
+    faqs: []
+  },
+  {
+    id: "lko-mau",
+    slug: "lucknow-to-mau-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Mau",
+    distance: 320,
+    duration: "6.5 Hours",
+    description: "Direct group travel from Lucknow to Mau city.",
+    highlights: ["Purvanchal Expressway", "Reliable vehicles", "AC comfort"],
+    faqs: []
+  },
+  {
+    id: "lko-deo",
+    slug: "lucknow-to-deoria-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Deoria",
+    distance: 310,
+    duration: "6.5 Hours",
+    description: "Reliable tempo traveller service between Lucknow and Deoria.",
+    highlights: ["Highway route", "Experienced drivers", "Fixed pricing"],
+    faqs: []
+  },
+  {
+    id: "lko-ksn",
+    slug: "lucknow-to-kushinagar-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Kushinagar",
+    distance: 330,
+    duration: "7 Hours",
+    description: "Pilgrimage group travel from Lucknow to the holy city of Kushinagar.",
+    highlights: ["Buddhist circuit expert", "Safe travel", "AC comfort"],
+    faqs: []
+  },
+  {
+    id: "lko-alg",
+    slug: "lucknow-to-aligarh-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Aligarh",
+    distance: 380,
+    duration: "7 Hours",
+    description: "Direct group tempo traveller service to Aligarh from Lucknow.",
+    highlights: ["Safe journey", "Reliable vehicles", "Fixed rates"],
+    faqs: []
+  },
+  {
+    id: "lko-mzf",
+    slug: "lucknow-to-muzaffarnagar-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Muzaffarnagar",
+    distance: 550,
+    duration: "10 Hours",
+    description: "Connect Lucknow to Muzaffarnagar with our professional group travel service.",
+    highlights: ["Interstate experts", "Safe travel", "AC comfort"],
+    faqs: []
+  },
+  {
+    id: "lko-sah",
+    slug: "lucknow-to-saharanpur-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Saharanpur",
+    distance: 600,
+    duration: "11 Hours",
+    description: "Reliable long distance group travel to Saharanpur from Lucknow.",
+    highlights: ["Safe long trips", "Professional drivers", "Fixed pricing"],
+    faqs: []
+  },
+  {
+    id: "lko-hpr",
+    slug: "lucknow-to-hapur-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Hapur",
+    distance: 460,
+    duration: "8 Hours",
+    description: "Direct group tempo traveller service from Lucknow to Hapur.",
+    highlights: ["Expressway route", "Reliable vehicles", "AC comfort"],
+    faqs: []
+  },
+  {
+    id: "lko-bul",
+    slug: "lucknow-to-bulandshahr-tempo-traveller-fare",
+    origin: "Lucknow",
+    destination: "Bulandshahr",
+    distance: 480,
     duration: "8.5 Hours",
     description: "Group travel from Lucknow to Bulandshahr by tempo traveller.",
     highlights: ["Safe travel", "Verified drivers", "Fixed fare"],
@@ -1498,17 +1695,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Reliable tempo traveller service from Prayagraj to the spiritual capital Varanasi.",
     highlights: ["Highway route", "Express pickup", "Fixed pricing"],
-    faqs: []
-  },
-  {
-    id: "pry-lko",
-    slug: "prayagraj-to-lucknow-tempo-traveller-fare",
-    origin: "Prayagraj",
-    destination: "Lucknow",
-    distance: 200,
-    duration: "4 Hours",
-    description: "Connect the administrative and cultural capitals with our professional tempo traveller service.",
-    highlights: ["Safe travel", "Experienced drivers", "AC comfort"],
     faqs: []
   },
   {
@@ -1533,7 +1719,12 @@ export const ROUTES: TaxiRoute[] = [
     highlights: ["Same day return", "Expert drivers", "Fixed price"],
     faqs: []
   }
-];
+].map(route => ({
+  ...route,
+  faqs: route.faqs && route.faqs.length >= 10 
+    ? route.faqs 
+    : [...(route.faqs || []), ...generateRouteFaqs(route.origin, route.destination, route.distance, route.duration)].slice(0, 10)
+}));
 
 export const calculateFare = (distance: number, rate: number) => {
   const base = distance * 2 * rate;

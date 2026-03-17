@@ -119,10 +119,15 @@ export default function FaresClient() {
                         ))}
                     </div>
                 )}
+
+                <FAQSection faqs={GLOBAL_FAQS} title="Tempo Traveller Fare & Booking FAQs" />
             </main>
         </div>
     )
 }
+
+import { FAQSection } from "../components/sections"
+import { GLOBAL_FAQS } from "@/lib/faq-data"
 
 import { TaxiRoute } from "@/lib/data"
 
