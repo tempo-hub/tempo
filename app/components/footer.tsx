@@ -51,10 +51,6 @@ export const Footer = () => {
                     <div>
                         <h4 className="text-lg font-bold mb-6 text-primary">Trust YatraTempoTraveller</h4>
                         <ul className="space-y-4 text-slate-400">
-                            <li>Fixed Pricing Policy</li>
-                            <li>Verified Drivers</li>
-                            <li>No Advance Required</li>
-                            <li>24/7 Helpline</li>
                             <li>
                                 <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
                             </li>
