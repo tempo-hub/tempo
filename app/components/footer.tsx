@@ -55,6 +55,15 @@ export const Footer = () => {
                             <li>Verified Drivers</li>
                             <li>No Advance Required</li>
                             <li>24/7 Helpline</li>
+                            <li>
+                                <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                            </li>
+                            <li>
+                                <Link href="/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</Link>
+                            </li>
+                            <li>
+                                <Link href="/refund-and-cancellation" className="hover:text-white transition-colors">Refund & Cancellation</Link>
+                            </li>
                         </ul>
                     </div>
 
@@ -80,10 +89,6 @@ export const Footer = () => {
 
                 <div className="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
                     <p>© 2026 All rights reserved from Chiku mobility india private limited.</p>
-                    <div className="flex gap-6">
-                        <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
-                        <Link href="/terms-and-conditions" className="hover:text-white">Terms of Service</Link>
-                    </div>
                 </div>
             </div>
         </footer>
