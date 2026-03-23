@@ -55,7 +55,6 @@ export const Footer = () => {
                             <li>Verified Drivers</li>
                             <li>No Advance Required</li>
                             <li>24/7 Helpline</li>
-                            <li>E-E-A-T Certified</li>
                         </ul>
                     </div>
 
@@ -80,10 +79,10 @@ export const Footer = () => {
                 </div>
 
                 <div className="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-                    <p>© 2026 YatraTempoTraveller.com. All rights reserved.</p>
+                    <p>© 2026 All rights reserved from Chiku mobility india private limited.</p>
                     <div className="flex gap-6">
-                        <Link href="#" className="hover:text-white">Privacy Policy</Link>
-                        <Link href="#" className="hover:text-white">Terms of Service</Link>
+                        <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
+                        <Link href="/terms-and-conditions" className="hover:text-white">Terms of Service</Link>
                     </div>
                 </div>
             </div>
