@@ -291,7 +291,7 @@ export const ExperienceSection = ({ origin = "Varanasi" }: { origin?: string }) 
                 <div className="relative">
                     <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                         <Image
-                            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=1000"
+                            src="/vehicles/premium_tempo_traveller.png"
                             alt={`${origin} Tempo Traveller Service`}
                             fill
                             className="object-cover"
