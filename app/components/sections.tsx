@@ -135,7 +135,7 @@ export const OfficeLocation = ({ origin = "Varanasi" }: { origin?: string }) => 
 )
 
 export const FareInclusions = () => (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {[
             { icon: Fuel, title: "Fuel Charges", detail: "Included in base price" },
             { icon: Award, title: "Driver Allowance", detail: "Day/Night allowance included" },
@@ -158,7 +158,7 @@ export const ExclusionsNotice = ({ origin = "Varanasi" }: { origin?: string }) =
         <div className="h-10 w-10 bg-amber-100 rounded-full flex items-center justify-center shrink-0">
             <Info className="h-5 w-5 text-amber-600" />
         </div>
-        <div className="space-y-2">
+        <div className="space-y-2 min-w-0">
             <h4 className="font-bold text-amber-900">What is NOT included in this fare?</h4>
             <p className="text-sm text-amber-800 leading-relaxed">
                 To keep our fares the lowest in {origin}, we don&apos;t include variable costs like <span className="font-bold">Toll Taxes, State Entry Taxes, and Parking Fees</span>. These must be paid by the customer directly at the toll plazas or added to the final bill at actuals.

@@ -118,7 +118,7 @@ export default async function FarePage({ params }: { params: Promise<{ slug: str
 
                 <div className="grid lg:grid-cols-3 gap-12">
 
-                    <div className="lg:col-span-2 space-y-12">
+                    <div className="lg:col-span-2 space-y-12 min-w-0">
 
                         <div>
                             <h2 className="text-3xl font-black text-secondary">
@@ -134,7 +134,7 @@ export default async function FarePage({ params }: { params: Promise<{ slug: str
 
                     </div>
 
-                    <div className="space-y-8">
+                    <div className="space-y-8 min-w-0">
 
                         <div className="bg-slate-50 p-8 rounded-3xl border border-border">
 
