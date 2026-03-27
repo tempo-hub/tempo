@@ -1,201 +1,223 @@
-import { ROUTES, calculateFare } from "@/lib/data"
-import { notFound } from "next/navigation"
-import { FareCalculator } from "../../components/fare-calculator"
-import { FareTable } from "../../components/fare-table"
-import { VehicleGallery } from "../../components/vehicle-gallery"
-import { TrustSection, FAQSection, FareInclusions, ExclusionsNotice, SafetySection, HowItWorks, OfficeLocation, TrustBadges, ExperienceSection, TestimonialsSection, SocialProof } from "../../components/sections"
-import { BreadcrumbList, LocalBusiness, Offer, FAQPage } from "../../components/schemas"
-import { MapPin, Clock, ShieldCheck, Star } from "lucide-react"
-import { Metadata } from "next"
+import { ROUTES, calculateFare } from "@/lib/data";
+import { notFound } from "next/navigation";
+import { FareCalculator } from "../../components/fare-calculator";
+import { FareTable } from "../../components/fare-table";
+import { VehicleGallery } from "../../components/vehicle-gallery";
+import {
+  TrustSection,
+  FAQSection,
+  FareInclusions,
+  ExclusionsNotice,
+  SafetySection,
+  HowItWorks,
+  OfficeLocation,
+  TrustBadges,
+  ExperienceSection,
+  TestimonialsSection,
+  SocialProof,
+} from "../../components/sections";
+import {
+  BreadcrumbList,
+  LocalBusiness,
+  Offer,
+  FAQPage,
+} from "../../components/schemas";
+import { MapPin, Clock, ShieldCheck, Star } from "lucide-react";
+import { Metadata } from "next";
 
-export const revalidate = 86400
+export const revalidate = 86400;
 
 export async function generateStaticParams() {
-    return ROUTES.map((route) => ({
-        slug: route.slug,
-    }))
+  return ROUTES.map((route) => ({
+    slug: route.slug,
+  }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-    const { slug } = await params
-    const route = ROUTES.find((r) => r.slug === slug)
-    if (!route) return {}
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const route = ROUTES.find((r) => r.slug === slug);
+  if (!route) return {};
 
-    const fare = calculateFare(route.distance, 18)
-    const title = `${route.origin} to ${route.destination} Tempo Traveller Fare | Round Trip ₹${fare}`
+  const fare = calculateFare(route.distance, 18);
+  const title = `${route.origin} to ${route.destination} Tempo Traveller Fare | Round Trip ₹${fare}`;
 
-    return {
-        title,
-        description: `Best ${route.origin} to ${route.destination} tempo traveller fare. Exclusive Round-trip @ ₹${fare}. Fixed price, verified drivers.`,
-        alternates: { canonical: `https://yatratempotraveller.com/fare/${slug}` },
-        openGraph: {
-            title,
-            description: route.description,
-            images: [{ url: "/og-image.jpg" }],
-        }
-    }
+  return {
+    title,
+    description: `Best ${route.origin} to ${route.destination} tempo traveller fare. Exclusive Round-trip @ ₹${fare}. Fixed price, verified drivers.`,
+    alternates: { canonical: `https://yatratempotraveller.com/fare/${slug}` },
+    openGraph: {
+      title,
+      description: route.description,
+      images: [{ url: "/og-image.jpg" }],
+    },
+  };
 }
 
-export default async function FarePage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function FarePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const route = ROUTES.find((r) => r.slug === slug);
 
-    const { slug } = await params
-    const route = ROUTES.find((r) => r.slug === slug)
+  if (!route) notFound();
 
-    if (!route) notFound()
+  const fare = calculateFare(route.distance, 18);
 
-    const fare = calculateFare(route.distance, 18)
+  const breadcrumbs = [
+    { name: "Home", item: "https://yatratempotraveller.com" },
+    { name: "Fares", item: "https://yatratempotraveller.com/fares" },
+    {
+      name: `${route.origin} to ${route.destination}`,
+      item: `https://yatratempotraveller.com/fare/${route.slug}`,
+    },
+  ];
 
-    const breadcrumbs = [
-        { name: "Home", item: "https://yatratempotraveller.com" },
-        { name: "Fares", item: "https://yatratempotraveller.com/fares" },
-        { name: `${route.origin} to ${route.destination}`, item: `https://yatratempotraveller.com/fare/${route.slug}` }
-    ]
+  return (
+    <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusiness) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(BreadcrumbList(breadcrumbs)),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(FAQPage(route.faqs)),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            Offer(fare, `${route.origin} to ${route.destination}`),
+          ),
+        }}
+      />
 
-    return (
-        <div className="min-h-screen bg-white">
+      <section className="pt-12 pb-20 bg-slate-50 border-b border-border">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12 space-y-4">
+            <div className="flex items-center justify-center gap-1 mb-2">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+              ))}
+              <span className="text-xs font-black text-secondary ml-2 uppercase tracking-widest">
+                4.9/5 Rating
+              </span>
+            </div>
 
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(LocalBusiness) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BreadcrumbList(breadcrumbs)) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQPage(route.faqs)) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(Offer(fare, `${route.origin} to ${route.destination}`)) }} />
+            <div className="inline-block text-primary font-bold text-xs uppercase tracking-[0.2em] bg-primary/5 px-4 py-1.5 rounded-full mb-2">
+              Tempo Traveller Fare {route.origin}
+            </div>
 
-            <section className="pt-12 pb-20 bg-slate-50 border-b border-border">
-                <div className="max-w-7xl mx-auto px-4">
+            <h1 className="text-4xl md:text-6xl font-black text-secondary tracking-tight leading-tight">
+              {route.origin} to {route.destination} Tempo Traveller Fare
+              <br />
+              <span className="text-primary italic">
+                Round Trip Fixed Price ₹{fare}
+              </span>
+            </h1>
 
-                    <div className="text-center mb-12 space-y-4">
+            <div className="flex flex-wrap justify-center gap-6 pt-4">
+              <div className="flex items-center gap-2 text-sm font-bold text-secondary">
+                <MapPin className="h-4 w-4 text-primary" />
+                {route.distance} km
+              </div>
 
-                        <div className="flex items-center justify-center gap-1 mb-2">
-                            {[1, 2, 3, 4, 5].map(i => (
-                                <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-                            ))}
-                            <span className="text-xs font-black text-secondary ml-2 uppercase tracking-widest">
-                                4.9/5 Rating
-                            </span>
-                        </div>
+              <div className="flex items-center gap-2 text-sm font-bold text-secondary">
+                <Clock className="h-4 w-4 text-primary" />
+                {route.duration}
+              </div>
 
-                        <div className="inline-block text-primary font-bold text-xs uppercase tracking-[0.2em] bg-primary/5 px-4 py-1.5 rounded-full mb-2">
-                            Tempo Traveller Fare {route.origin}
-                        </div>
+              <div className="flex items-center gap-2 text-sm font-bold text-secondary">
+                <ShieldCheck className="h-4 w-4 text-primary" />
+                Verified Tempo Traveller
+              </div>
+            </div>
+          </div>
 
-                        <h1 className="text-4xl md:text-6xl font-black text-secondary tracking-tight leading-tight">
-                            {route.origin} to {route.destination} Tempo Traveller Fare
-                            <br />
-                            <span className="text-primary italic">
-                                Round Trip Fixed Price ₹{fare}
-                            </span>
-                        </h1>
-
-                        <div className="flex flex-wrap justify-center gap-6 pt-4">
-
-                            <div className="flex items-center gap-2 text-sm font-bold text-secondary">
-                                <MapPin className="h-4 w-4 text-primary" />
-                                {route.distance} km
-                            </div>
-
-                            <div className="flex items-center gap-2 text-sm font-bold text-secondary">
-                                <Clock className="h-4 w-4 text-primary" />
-                                {route.duration}
-                            </div>
-
-                            <div className="flex items-center gap-2 text-sm font-bold text-secondary">
-                                <ShieldCheck className="h-4 w-4 text-primary" />
-                                Verified Tempo Traveller
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <FareCalculator route={route} />
-
-                </div>
-            </section>
-
-            <TrustBadges origin={route.origin} />
-            <HowItWorks />
-
-            <section className="py-24 max-w-7xl mx-auto px-4">
-
-                <div className="grid lg:grid-cols-3 gap-12">
-
-                    <div className="lg:col-span-2 space-y-12 min-w-0">
-
-                        <div>
-                            <h2 className="text-3xl font-black text-secondary">
-                                Compare All Tempo Traveller Fares
-                            </h2>
-                            <p className="text-muted-foreground mt-2">
-                                Transparent pricing for {route.origin} to {route.destination}
-                            </p>
-                        </div>
-
-                        <FareTable route={route} />
-                        <ExclusionsNotice origin={route.origin} />
-
-                    </div>
-
-                    <div className="space-y-8 min-w-0">
-
-                        <div className="bg-slate-50 p-8 rounded-3xl border border-border">
-
-                            <h4 className="font-bold text-secondary text-xl mb-4">
-                                Fare Inclusions
-                            </h4>
-
-                            <FareInclusions />
-
-                            <div className="mt-8 pt-6 border-t border-border">
-
-                                <p className="text-xs font-black text-primary uppercase tracking-widest mb-2">
-                                    Fixed Price Guarantee
-                                </p>
-
-                                <p className="text-xs text-muted-foreground">
-                                    The price shown for the vehicle is final.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-            <ExperienceSection origin={route.origin} />
-            <SafetySection origin={route.origin} />
-
-            <section className="py-24 bg-slate-50 border-y border-border">
-
-                <div className="max-w-7xl mx-auto px-4">
-
-                    <div className="text-center mb-12">
-
-                        <h2 className="text-3xl font-black text-secondary">
-                            Our Tempo Traveller Fleet
-                        </h2>
-
-                        <p className="text-muted-foreground">
-                            Pick the perfect tempo traveller for your {route.destination} group journey.
-                        </p>
-
-                    </div>
-
-                    <VehicleGallery />
-
-                </div>
-
-            </section>
-
-            <SocialProof origin={route.origin} />
-            <TrustSection origin={route.origin} />
-            <TestimonialsSection origin={route.origin} />
-            <OfficeLocation origin={route.origin} />
-
-            <FAQSection faqs={route.faqs} />
-
+          <FareCalculator route={route} />
         </div>
-    )
+      </section>
+
+      <TrustBadges origin={route.origin} />
+      <HowItWorks />
+
+      <section className="py-24 max-w-7xl mx-auto px-4">
+        <div className="grid lg:grid-cols-3 gap-12">
+          <div className="lg:col-span-2 space-y-12 min-w-0">
+            <div>
+              <h2 className="text-3xl font-black text-secondary">
+                Compare All Tempo Traveller Fares
+              </h2>
+              <p className="text-muted-foreground mt-2">
+                Transparent pricing for {route.origin} to {route.destination}
+              </p>
+            </div>
+
+            <FareTable route={route} />
+            <ExclusionsNotice origin={route.origin} />
+          </div>
+
+          <div className="space-y-8 min-w-0">
+            <div className="bg-slate-50 p-8 rounded-3xl border border-border">
+              <h4 className="font-bold text-secondary text-xl mb-4">
+                Fare Inclusions
+              </h4>
+
+              <FareInclusions />
+
+              <div className="mt-8 pt-6 border-t border-border">
+                <p className="text-xs font-black text-primary uppercase tracking-widest mb-2">
+                  Fixed Price Guarantee
+                </p>
+
+                <p className="text-xs text-muted-foreground">
+                  The price shown for the vehicle is final.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ExperienceSection origin={route.origin} />
+      <SafetySection origin={route.origin} />
+
+      <section className="py-24 bg-slate-50 border-y border-border">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-black text-secondary">
+              Our Tempo Traveller Fleet
+            </h2>
+
+            <p className="text-muted-foreground">
+              Pick the perfect tempo traveller for your {route.destination}{" "}
+              group journey.
+            </p>
+          </div>
+
+          <VehicleGallery />
+        </div>
+      </section>
+
+      <SocialProof origin={route.origin} />
+      <TrustSection origin={route.origin} />
+      <TestimonialsSection origin={route.origin} />
+      <OfficeLocation origin={route.origin} />
+
+      <FAQSection faqs={route.faqs} />
+    </div>
+  );
 }
