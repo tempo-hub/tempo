@@ -2813,7 +2813,6 @@ export const ROUTES: TaxiRoute[] = [
     highlights: ["Luxury options", "Safe travel", "Experienced drivers"],
     faqs: [],
   },
-
   {
     id: "ayu-jhs",
     slug: "ayodhya-to-jhansi-tempo-traveller-fare",

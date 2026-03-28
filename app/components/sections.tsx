@@ -289,6 +289,7 @@ export const ExclusionsNotice = ({
     </div>
   </div>
 );
+
 export const TrustSection = ({ origin = "Varanasi" }: { origin?: string }) => (
   <section className="py-20 bg-slate-50 border-y border-border">
     <div className="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
