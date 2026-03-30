@@ -2,7 +2,7 @@
 
 import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
 import { notFound, useParams } from "next/navigation";
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
 import {
   Phone,
   MessageCircle,
@@ -12,7 +12,6 @@ import {
   Star,
   ChevronRight,
   CheckCircle2,
-  Truck,
   Users,
   Calendar,
   ArrowRight,
@@ -23,6 +22,23 @@ import {
 } from "lucide-react";
 import { FAQSection } from "@/app/components/sections";
 import { VehicleGallery } from "@/app/components/vehicle-gallery";
+import Link from "next/link";
+import { VehiclePricingTable } from "@/app/components/VehiclePricingTable";
+
+// Loading component for Suspense
+function FarePageSkeleton() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="animate-pulse">
+          <div className="h-8 bg-gray-200 rounded w-1/3 mb-4"></div>
+          <div className="h-64 bg-gray-200 rounded-lg mb-8"></div>
+          <div className="h-96 bg-gray-200 rounded-lg"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 // Main Page Component - Now a Client Component
 export default function FarePage() {
@@ -45,307 +61,807 @@ export default function FarePage() {
     `Hi, I want to book a cab from ${route.origin} to ${route.destination} at ₹${fare}`,
   )}`;
 
+  // Generate canonical URL
+  const canonicalUrl = `https://yatratempotraveller.com/fare/${slug}`;
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://yatratempotraveller.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Tempo Traveller Fare",
+        item: "https://yatratempotraveller.com/fares",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: `${route.origin} to ${route.destination}`,
+        item: canonicalUrl,
+      },
+    ],
+  };
+
+  // Generate FAQ structured data
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: route.faqs.map((faq, index) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
-      {/* Floating CTA Bar - Sticky */}
-      <div className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <div>
-            <span className="text-sm font-semibold text-green-600 bg-green-50 px-3 py-1 rounded-full">
-              🔥 Limited Time Offer
-            </span>
-            <p className="text-xs text-muted-foreground mt-1">
-              Prices increasing soon
+    <Suspense fallback={<FarePageSkeleton />}>
+      <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
+        {/* SEO Meta Tags */}
+        <HeadMeta
+          title={`${route.origin} to ${route.destination} Tempo Traveller | Lowest Price ₹${fare}`}
+          description={`Book tempo traveller from ${route.origin} to ${route.destination} at just ₹${fare}. Best price guarantee, 9-26 seater options, instant booking. Save ₹${savings} today!`}
+          canonicalUrl={canonicalUrl}
+          keywords={`${route.origin} to ${route.destination} tempo traveller, ${route.origin} to ${route.destination} cab, ${route.origin} to ${route.destination} travel, ${route.origin} to ${route.destination} outstation`}
+        />
+
+        {/* Structured Data */}
+        <StructuredData
+          breadcrumbData={breadcrumbData}
+          faqData={faqData}
+          route={route}
+          fare={fare}
+        />
+
+        {/* Breadcrumbs with Internal Linking */}
+        <div className="max-w-7xl mx-auto px-4 pt-4 text-sm">
+          <nav aria-label="Breadcrumb">
+            <ol className="flex flex-wrap items-center gap-2 text-muted-foreground">
+              <li>
+                <Link href="/" className="hover:text-primary transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <span className="text-primary">/</span>
+              </li>
+              <li>
+                <Link
+                  href={`/fare/${route.slug}`}
+                  className="hover:text-primary transition-colors"
+                >
+                  Tempo Traveller Fare
+                </Link>
+              </li>
+              <li>
+                <span className="text-primary">/</span>
+              </li>
+              <li>
+                <Link
+                  href={`/cheapest/${route.slug}`}
+                  className="text-primary font-medium hover:underline"
+                >
+                  {route.origin} to {route.destination}
+                </Link>
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        {/* Hero Section with Price Highlight */}
+        <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 pointer-events-none"></div>
+          <div className="max-w-7xl mx-auto px-4 py-16 lg:py-24 w-full">
+            <div className="max-w-4xl mx-auto text-center">
+              {/* Trust Badges */}
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <div className="flex items-center gap-1">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <Star
+                      key={i}
+                      className="h-5 w-5 fill-yellow-400 text-yellow-400"
+                      aria-hidden="true"
+                    />
+                  ))}
+                </div>
+                <span className="text-sm font-medium text-muted-foreground">
+                  2,500+ Happy Customers
+                </span>
+              </div>
+
+              {/* Main Heading */}
+              <h1 className="text-4xl lg:text-6xl font-black leading-tight mb-4">
+                {route.origin} to{" "}
+                <span className="text-primary">{route.destination}</span>
+                <br />
+                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                  Lowest Price
+                </span>
+              </h1>
+
+              {/* Price Display */}
+              <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 my-6 border border-green-200 max-w-2xl mx-auto">
+                <div className="flex items-baseline gap-2 justify-center flex-wrap">
+                  <span className="text-sm font-semibold text-green-700">
+                    Starting from
+                  </span>
+                  <span className="text-5xl font-black text-green-700">
+                    ₹{fare}
+                  </span>
+                  <span className="text-sm text-muted-foreground line-through">
+                    ₹{competitorPrice}
+                  </span>
+                  <span className="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold ml-2">
+                    Save ₹{savings}
+                  </span>
+                </div>
+                <p className="text-sm text-green-700 mt-2 flex items-center justify-center gap-1">
+                  <Sparkles className="h-4 w-4" />
+                  Cheapest in India • No Hidden Charges • 100% Price Match
+                </p>
+              </div>
+
+              {/* Key Info */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 max-w-3xl mx-auto">
+                <div className="flex items-center justify-center gap-2 text-sm">
+                  <MapPin className="h-5 w-5 text-primary" aria-hidden="true" />
+                  <span>
+                    <strong>{route.distance} km</strong> Journey
+                  </span>
+                </div>
+                <div className="flex items-center justify-center gap-2 text-sm">
+                  <Clock className="h-5 w-5 text-primary" aria-hidden="true" />
+                  <span>
+                    <strong>{route.duration}</strong> Duration
+                  </span>
+                </div>
+                <div className="flex items-center justify-center gap-2 text-sm">
+                  <Shield className="h-5 w-5 text-primary" aria-hidden="true" />
+                  <span>Insured Travel</span>
+                </div>
+                <div className="flex items-center justify-center gap-2 text-sm">
+                  <Users className="h-5 w-5 text-primary" aria-hidden="true" />
+                  <span>9-26 Seaters</span>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all hover:shadow-lg text-lg group"
+                  aria-label={`Book ${route.origin} to ${route.destination} tempo traveller at ₹${fare}`}
+                >
+                  <Phone
+                    className="h-5 w-5 group-hover:animate-pulse"
+                    aria-hidden="true"
+                  />
+                  Book Now @ ₹{fare}
+                  <ArrowRight
+                    className="h-5 w-5 group-hover:translate-x-1 transition"
+                    aria-hidden="true"
+                  />
+                </a>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/5 transition-all"
+                  aria-label="Get free quote for tempo traveller"
+                >
+                  <MessageCircle className="h-5 w-5" aria-hidden="true" />
+                  Get Free Quote
+                </a>
+              </div>
+
+              {/* Features */}
+              <div className="flex flex-wrap gap-3 justify-center mt-6 pt-6 border-t max-w-md mx-auto">
+                <span className="text-xs text-muted-foreground flex items-center gap-1">
+                  <CheckCircle2
+                    className="h-3 w-3 text-green-600"
+                    aria-hidden="true"
+                  />
+                  No Cancellation Fee
+                </span>
+                <span className="text-xs text-muted-foreground flex items-center gap-1">
+                  <CheckCircle2
+                    className="h-3 w-3 text-green-600"
+                    aria-hidden="true"
+                  />
+                  Free Cancellation
+                </span>
+                <span className="text-xs text-muted-foreground flex items-center gap-1">
+                  <CheckCircle2
+                    className="h-3 w-3 text-green-600"
+                    aria-hidden="true"
+                  />
+                  Live Tracking
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Price Comparison Banner */}
+        <section className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-8">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <p className="text-lg font-bold flex items-center justify-center gap-2 flex-wrap">
+              <Gift className="h-6 w-6 animate-bounce" aria-hidden="true" />
+              Best Price Guarantee! Found a lower price? We'll match it & give
+              5% extra off
+              <Gift className="h-6 w-6 animate-bounce" aria-hidden="true" />
             </p>
           </div>
-          <div className="flex gap-3">
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white px-5 py-2 rounded-full font-bold flex items-center gap-2 hover:shadow-lg transition-all text-sm"
-            >
-              <Phone className="h-4 w-4" />
-              Call Now
-            </a>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 text-white px-5 py-2 rounded-full font-bold flex items-center gap-2 hover:shadow-lg transition-all text-sm"
-            >
-              <MessageCircle className="h-4 w-4" />
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </div>
+        </section>
 
-      {/* Hero Section with Price Highlight */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5"></div>
-        <div className="max-w-7xl mx-auto px-4 py-16 lg:py-24 w-full">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Trust Badges */}
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="flex items-center gap-1">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <Star
-                    key={i}
-                    className="h-5 w-5 fill-yellow-400 text-yellow-400"
-                  />
-                ))}
-              </div>
-              <span className="text-sm font-medium text-muted-foreground">
-                2,500+ Happy Customers
-              </span>
+        {/* Price Comparison Table - Professional & SEO Optimized */}
+        <section
+          className="py-16 bg-white"
+          aria-labelledby="price-comparison-heading"
+        >
+          <div className="max-w-5xl mx-auto px-4">
+            {/* Schema.org markup for rich search results */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "Table",
+                  about: {
+                    "@type": "Service",
+                    name: `Tempo Traveller from ${route.origin} to ${route.destination}`,
+                    provider: {
+                      "@type": "Organization",
+                      name: "Yatra Tempo Traveller",
+                    },
+                  },
+                  mainEntity: {
+                    "@type": "ItemList",
+                    itemListElement: [
+                      {
+                        "@type": "ListItem",
+                        position: 1,
+                        name: "Yatra Tempo Traveller",
+                        price: `₹${fare}`,
+                      },
+                      {
+                        "@type": "ListItem",
+                        position: 2,
+                        name: "Local Operator",
+                        price: `₹${competitorPrice}`,
+                      },
+                      {
+                        "@type": "ListItem",
+                        position: 3,
+                        name: "Other Platforms",
+                        price: `₹${competitorPrice + 500}`,
+                      },
+                    ],
+                  },
+                }),
+              }}
+            />
+
+            <h2
+              id="price-comparison-heading"
+              className="text-3xl font-bold text-center mb-4"
+            >
+              Price Comparison: {route.origin} to {route.destination}
+            </h2>
+
+            <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+              We’ve analyzed top providers to bring you the most affordable and
+              transparent pricing. Below is a direct comparison of total costs,
+              hidden fees, and cancellation policies.
+            </p>
+
+            <div className="overflow-x-auto shadow-lg rounded-xl border border-gray-200">
+              <table className="w-full text-sm md:text-base border-collapse">
+                <caption className="sr-only">
+                  Comparison of tempo traveller prices from {route.origin} to{" "}
+                  {route.destination}
+                </caption>
+
+                <thead>
+                  <tr className="bg-gradient-to-r from-primary to-primary/90 text-white">
+                    <th
+                      scope="col"
+                      className="px-5 py-4 text-left font-semibold"
+                    >
+                      Provider
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-5 py-4 text-left font-semibold"
+                    >
+                      Total Price (incl. taxes)
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-5 py-4 text-left font-semibold"
+                    >
+                      Hidden Charges
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-5 py-4 text-left font-semibold"
+                    >
+                      Cancellation Policy
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-5 py-4 text-left font-semibold"
+                    >
+                      Best For
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody className="divide-y divide-gray-200">
+                  {/* Best Value Row - highlighted */}
+                  <tr className="bg-green-50/80 border-l-4 border-green-600 hover:bg-green-100 transition-colors">
+                    <th
+                      scope="row"
+                      className="px-5 py-4 font-bold text-gray-900"
+                    >
+                      Yatra Tempo Traveller
+                      <span className="ml-2 inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">
+                        Best Value
+                      </span>
+                    </th>
+                    <td className="px-5 py-4">
+                      <span className="text-xl font-bold text-green-700">
+                        ₹{fare.toLocaleString("en-IN")}
+                      </span>
+                      <span className="text-gray-500 text-xs ml-1">
+                        incl. all taxes
+                      </span>
+                    </td>
+                    <td className="px-5 py-4">
+                      <span className="inline-flex items-center gap-1 text-green-700">
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        No hidden charges
+                      </span>
+                    </td>
+                    <td className="px-5 py-4 text-green-700 font-medium">
+                      Free cancellation • 24h notice
+                    </td>
+                    <td className="px-5 py-4 text-gray-600">
+                      Budget + flexibility
+                    </td>
+                  </tr>
+
+                  {/* Competitor 1 */}
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <th
+                      scope="row"
+                      className="px-5 py-4 font-medium text-gray-900"
+                    >
+                      Local Operator
+                    </th>
+                    <td className="px-5 py-4">
+                      <span className="font-bold text-gray-900">
+                        ₹{competitorPrice.toLocaleString("en-IN")}
+                      </span>
+                    </td>
+                    <td className="px-5 py-4">
+                      <span className="inline-flex items-center gap-1 text-red-600">
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                        Extra ₹500–1000
+                      </span>
+                    </td>
+                    <td className="px-5 py-4 text-red-600">Paid (₹300 fee)</td>
+                    <td className="px-5 py-4 text-gray-600">Local routes</td>
+                  </tr>
+
+                  {/* Competitor 2 */}
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <th
+                      scope="row"
+                      className="px-5 py-4 font-medium text-gray-900"
+                    >
+                      Other Aggregators
+                    </th>
+                    <td className="px-5 py-4">
+                      <span className="font-bold text-gray-900">
+                        ₹{(competitorPrice + 500).toLocaleString("en-IN")}
+                      </span>
+                      <span className="text-red-500 text-xs ml-1 line-through">
+                        ₹
+                        {Math.round(
+                          (competitorPrice + 500) * 1.15,
+                        ).toLocaleString("en-IN")}
+                      </span>
+                    </td>
+                    <td className="px-5 py-4">
+                      <span className="inline-flex items-center gap-1 text-red-600">
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                        Platform fee + GST
+                      </span>
+                    </td>
+                    <td className="px-5 py-4 text-red-600">
+                      Strict / Non-refundable
+                    </td>
+                    <td className="px-5 py-4 text-gray-600">
+                      Last-minute booking
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tfoot className="bg-gray-50 text-xs text-gray-500">
+                  <tr>
+                    <td colSpan={5} className="px-5 py-3">
+                      * Prices are dynamic and subject to change based on
+                      availability and season. Updated daily.
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-4xl lg:text-6xl font-black leading-tight mb-4">
-              {route.origin} to{" "}
-              <span className="text-primary">{route.destination}</span>
-              <br />
-              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                Lowest Price
-              </span>
-            </h1>
-
-            {/* Price Display */}
-            <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-6 my-6 border border-green-200 max-w-2xl mx-auto">
-              <div className="flex items-baseline gap-2 justify-center flex-wrap">
-                <span className="text-sm font-semibold text-green-700">
-                  Starting from
-                </span>
-                <span className="text-5xl font-black text-green-700">
-                  ₹{fare}
-                </span>
-                <span className="text-sm text-muted-foreground line-through">
-                  ₹{competitorPrice}
-                </span>
-                <span className="bg-green-600 text-white px-2 py-1 rounded-full text-xs font-bold ml-2">
-                  Save ₹{savings}
-                </span>
+            {/* Additional trust signals */}
+            <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-gray-500">
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-5 h-5 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>No hidden fees guaranteed</span>
               </div>
-              <p className="text-sm text-green-700 mt-2 flex items-center justify-center gap-1">
-                <Sparkles className="h-4 w-4" />
-                Cheapest in India • No Hidden Charges • 100% Price Match
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-5 h-5 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span>24/7 customer support</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <svg
+                  className="w-5 h-5 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
+                  />
+                </svg>
+                <span>Price match guarantee</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us - Value Props */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-3xl font-black text-center mb-12">
+              Why Customers Choose Us for{" "}
+              <span className="text-primary">Cheapest Rides</span>
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: TrendingDown,
+                  title: "Lowest Price Guarantee",
+                  desc: "We offer the most competitive rates in the industry with no hidden costs",
+                },
+                {
+                  icon: Shield,
+                  title: "Safe & Insured",
+                  desc: "All vehicles are fully insured with experienced, verified drivers",
+                },
+                {
+                  icon: Zap,
+                  title: "Instant Booking",
+                  desc: "Get confirmation within 10 minutes, 24/7 customer support",
+                },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="text-center p-6 rounded-2xl hover:shadow-xl transition-all group"
+                >
+                  <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition">
+                    <item.icon
+                      className="h-10 w-10 text-primary"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Price Breakdown Table */}
+        <section className="py-16 bg-slate-50">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-black mb-4">
+                Transparent Price Breakdown
+              </h2>
+              <p className="text-muted-foreground">
+                Know exactly what you're paying for - No Surprises
               </p>
             </div>
 
-            {/* Key Info */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 max-w-3xl mx-auto">
-              <div className="flex items-center justify-center gap-2 text-sm">
-                <MapPin className="h-5 w-5 text-primary" />
-                <span>
-                  <strong>{route.distance} km</strong> Journey
-                </span>
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden max-w-3xl mx-auto">
+              <div className="bg-primary text-white p-4">
+                <h3 className="text-xl font-bold">
+                  {route.origin} to {route.destination} - {selectedVehicle.name}
+                </h3>
               </div>
-              <div className="flex items-center justify-center gap-2 text-sm">
-                <Clock className="h-5 w-5 text-primary" />
-                <span>
-                  <strong>{route.duration}</strong> Duration
-                </span>
-              </div>
-              <div className="flex items-center justify-center gap-2 text-sm">
-                <Shield className="h-5 w-5 text-primary" />
-                <span>Insured Travel</span>
-              </div>
-              <div className="flex items-center justify-center gap-2 text-sm">
-                <Users className="h-5 w-5 text-primary" />
-                <span>9-26 Seaters</span>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all hover:shadow-lg text-lg group"
-              >
-                <Phone className="h-5 w-5 group-hover:animate-pulse" />
-                Book Now @ ₹{fare}
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition" />
-              </a>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/5 transition-all"
-              >
-                <MessageCircle className="h-5 w-5" />
-                Get Free Quote
-              </a>
-            </div>
-
-            {/* Features */}
-            <div className="flex flex-wrap gap-3 justify-center mt-6 pt-6 border-t max-w-md mx-auto">
-              <span className="text-xs text-muted-foreground flex items-center gap-1">
-                <CheckCircle2 className="h-3 w-3 text-green-600" />
-                No Cancellation Fee
-              </span>
-              <span className="text-xs text-muted-foreground flex items-center gap-1">
-                <CheckCircle2 className="h-3 w-3 text-green-600" />
-                Free Cancellation
-              </span>
-              <span className="text-xs text-muted-foreground flex items-center gap-1">
-                <CheckCircle2 className="h-3 w-3 text-green-600" />
-                Live Tracking
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Price Comparison Banner */}
-      <section className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-lg font-bold flex items-center justify-center gap-2 flex-wrap">
-            <Gift className="h-6 w-6 animate-bounce" />
-            Best Price Guarantee! Found a lower price? We'll match it & give 5%
-            extra off
-            <Gift className="h-6 w-6 animate-bounce" />
-          </p>
-        </div>
-      </section>
-
-      {/* Why Choose Us - Value Props */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-black text-center mb-12">
-            Why Customers Choose Us for{" "}
-            <span className="text-primary">Cheapest Rides</span>
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: TrendingDown,
-                title: "Lowest Price Guarantee",
-                desc: "We offer the most competitive rates in the industry with no hidden costs",
-              },
-              {
-                icon: Shield,
-                title: "Safe & Insured",
-                desc: "All vehicles are fully insured with experienced, verified drivers",
-              },
-              {
-                icon: Zap,
-                title: "Instant Booking",
-                desc: "Get confirmation within 10 minutes, 24/7 customer support",
-              },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="text-center p-6 rounded-2xl hover:shadow-xl transition-all group"
-              >
-                <div className="bg-primary/10 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition">
-                  <item.icon className="h-10 w-10 text-primary" />
+              <div className="divide-y">
+                <div className="flex justify-between p-4">
+                  <span>Base Fare (Includes Driver Allowance)</span>
+                  <span className="font-bold">₹{Math.round(fare * 0.7)}</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.desc}</p>
+                <div className="flex justify-between p-4 bg-slate-50">
+                  <span>Fuel & Toll Charges</span>
+                  <span className="font-bold">₹{Math.round(fare * 0.2)}</span>
+                </div>
+                <div className="flex justify-between p-4">
+                  <span>Taxes & GST</span>
+                  <span className="font-bold">₹{Math.round(fare * 0.1)}</span>
+                </div>
+                <div className="flex justify-between p-4 bg-green-50 font-bold">
+                  <span>Total Payable Amount</span>
+                  <span className="text-2xl text-green-700">₹{fare}</span>
+                </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
+            </div>
 
-      {/* Price Breakdown Table */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-black mb-4">
-              Transparent Price Breakdown
+            <div className="text-center mt-8">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
+              >
+                Book Now & Save ₹{savings}
+                <ChevronRight className="h-4 w-4" aria-hidden="true" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Vehicle Options */}
+        <section className="py-24 bg-slate-50 border-y border-border">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-black text-secondary">
+                Our Tempo Traveller Fleet
+              </h2>
+              <p className="text-muted-foreground mt-2">
+                Pick the perfect tempo traveller for your {route.destination}{" "}
+                group journey.
+              </p>
+            </div>
+
+            <VehicleGallery />
+          </div>
+        </section>
+
+        {/* vehicle pricing table */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-3xl font-black text-center mb-8">
+              Tempo Traveller Pricing (Per KM)
             </h2>
-            <p className="text-muted-foreground">
-              Know exactly what you're paying for - No Surprises
+
+            <VehiclePricingTable />
+          </div>
+        </section>
+
+        {/* Related Routes - Internal Linking */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-3xl font-black text-center mb-12">
+              Popular Routes from{" "}
+              <span className="text-primary">{route.origin}</span>
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {ROUTES.filter(
+                (r) =>
+                  r.origin === route.origin &&
+                  r.destination !== route.destination,
+              )
+                .slice(0, 4)
+                .map((relatedRoute) => (
+                  <Link
+                    key={relatedRoute.slug}
+                    href={`/cheapest/${relatedRoute.slug}`}
+                    className="group p-4 border rounded-xl hover:shadow-lg transition-all hover:border-primary"
+                  >
+                    <h3 className="font-semibold group-hover:text-primary transition-colors">
+                      {relatedRoute.origin} to {relatedRoute.destination}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      {relatedRoute.distance} km • ₹
+                      {calculateFare(relatedRoute.distance, 12)}
+                    </p>
+                  </Link>
+                ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Urgency Section */}
+        <section className="bg-gradient-to-r from-red-500 to-orange-500 text-white py-12">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <h2 className="text-3xl font-black mb-4 flex items-center justify-center gap-2">
+              <Calendar className="h-8 w-8" aria-hidden="true" />
+              Limited Slots Available!
+            </h2>
+            <p className="text-xl mb-6">
+              Prices increase by 15% after this month. Book now to lock the
+              lowest rate.
             </p>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-lg overflow-hidden max-w-3xl mx-auto">
-            <div className="bg-primary text-white p-4">
-              <h3 className="text-xl font-bold">
-                {route.origin} to {route.destination} - {selectedVehicle.name}
-              </h3>
-            </div>
-            <div className="divide-y">
-              <div className="flex justify-between p-4">
-                <span>Base Fare (Includes Driver Allowance)</span>
-                <span className="font-bold">₹{Math.round(fare * 0.7)}</span>
-              </div>
-              <div className="flex justify-between p-4 bg-slate-50">
-                <span>Fuel & Toll Charges</span>
-                <span className="font-bold">₹{Math.round(fare * 0.2)}</span>
-              </div>
-              <div className="flex justify-between p-4">
-                <span>Taxes & GST</span>
-                <span className="font-bold">₹{Math.round(fare * 0.1)}</span>
-              </div>
-              <div className="flex justify-between p-4 bg-green-50 font-bold">
-                <span>Total Payable Amount</span>
-                <span className="text-2xl text-green-700">₹{fare}</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center mt-8">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-primary font-bold hover:underline"
+              className="inline-flex items-center gap-2 bg-white text-red-600 px-8 py-3 rounded-full font-bold hover:shadow-xl transition-all"
+              aria-label={`Call to book ${route.origin} to ${route.destination} at ₹${fare}`}
             >
-              Book Now & Save ₹{savings}
-              <ChevronRight className="h-4 w-4" />
+              <Phone className="h-5 w-5" aria-hidden="true" />
+              Call & Book @ ₹{fare}
             </a>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Vehicle Options */}
-      <section className="py-24 bg-slate-50 border-y border-border">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-black text-secondary">
-              Our Tempo Traveller Fleet
-            </h2>
+        {/* FAQ Section */}
+        <FAQSection faqs={route.faqs} />
+      </div>
+    </Suspense>
+  );
+}
 
-            <p className="text-muted-foreground">
-              Pick the perfect tempo traveller for your {route.destination}{" "}
-              group journey.
-            </p>
-          </div>
+// Helper component for Head Meta
+function HeadMeta({
+  title,
+  description,
+  canonicalUrl,
+  keywords,
+}: {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  keywords: string;
+}) {
+  return (
+    <>
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href={canonicalUrl} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+    </>
+  );
+}
 
-          <VehicleGallery />
-        </div>
-      </section>
+// Helper component for Structured Data
+function StructuredData({
+  breadcrumbData,
+  faqData,
+  route,
+  fare,
+}: {
+  breadcrumbData: any;
+  faqData: any;
+  route: any;
+  fare: number;
+}) {
+  const productData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: `${route.origin} to ${route.destination} Tempo Traveller`,
+    description: `Book tempo traveller from ${route.origin} to ${route.destination}. Best price guaranteed.`,
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "INR",
+      price: fare,
+      availability: "https://schema.org/InStock",
+      validFrom: new Date().toISOString(),
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: "2500",
+    },
+  };
 
-      {/* Urgency Section */}
-      <section className="bg-gradient-to-r from-red-500 to-orange-500 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-black mb-4 flex items-center justify-center gap-2">
-            <Calendar className="h-8 w-8" />
-            Limited Slots Available!
-          </h2>
-          <p className="text-xl mb-6">
-            Prices increase by 15% after this month. Book now to lock the lowest
-            rate.
-          </p>
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-red-600 px-8 py-3 rounded-full font-bold hover:shadow-xl transition-all"
-          >
-            <Phone className="h-5 w-5" />
-            Call & Book @ ₹{fare}
-          </a>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <FAQSection faqs={route.faqs} />
-    </div>
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
+      />
+    </>
   );
 }

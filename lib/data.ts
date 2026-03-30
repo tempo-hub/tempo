@@ -4,6 +4,7 @@ export interface VehicleFare {
   type: string;
   name: string;
   seating: string;
+  capacity: Number;
   perKmRate: number;
   features: string[];
   image: string;
@@ -32,6 +33,7 @@ export const VEHICLES: VehicleFare[] = [
     type: "9 Seater",
     name: "9 Seater Tempo Traveller",
     seating: "9+1",
+    capacity: 9,
     perKmRate: 18,
     features: [
       "Full AC",
@@ -45,6 +47,7 @@ export const VEHICLES: VehicleFare[] = [
     type: "12 Seater",
     name: "12 Seater Tempo Traveller",
     seating: "12+1",
+    capacity: 12,
     perKmRate: 22,
     features: [
       "Full AC",
@@ -58,6 +61,8 @@ export const VEHICLES: VehicleFare[] = [
     type: "15 Seater",
     name: "15 Seater Tempo Traveller",
     seating: "15+1",
+    capacity: 15,
+
     perKmRate: 25,
     features: [
       "Full AC",
@@ -71,6 +76,7 @@ export const VEHICLES: VehicleFare[] = [
     type: "16 Seater",
     name: "16 Seater Tempo Traveller",
     seating: "16+1",
+    capacity: 16,
     perKmRate: 26,
     features: [
       "Full AC",
@@ -84,6 +90,7 @@ export const VEHICLES: VehicleFare[] = [
     type: "20 Seater",
     name: "20 Seater Tempo Traveller",
     seating: "20+1",
+    capacity: 20,
     perKmRate: 30,
     features: [
       "Full AC",
@@ -97,6 +104,7 @@ export const VEHICLES: VehicleFare[] = [
     type: "26 Seater",
     name: "26 Seater Tempo Traveller",
     seating: "26+1",
+    capacity: 26,
     perKmRate: 35,
     features: [
       "Full AC",
