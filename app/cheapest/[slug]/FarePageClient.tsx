@@ -1,7 +1,6 @@
 "use client";
 
 import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
-import { notFound } from "next/navigation";
 import {
   Phone,
   MessageCircle,
@@ -24,15 +23,37 @@ import { VehicleGallery } from "@/app/components/vehicle-gallery";
 import Link from "next/link";
 import { VehiclePricingTable } from "@/app/components/VehiclePricingTable";
 
-// Main Page Component - Now a Client Component
-export default function FarePage({ params }: { params: { slug: string } }) {
-  const slug = params.slug as string;
-  const route = ROUTES.find((r) => r.slug === params.slug);
-  if (!route) notFound();
+// Define proper types
+interface RouteType {
+  slug: string;
+  origin: string;
+  destination: string;
+  distance: number;
+  duration: string;
+  faqs: Array<{ question: string; answer: string }>;
+}
 
-  const selectedVehicle = VEHICLES[0];
-  const fare = calculateFare(route.distance, selectedVehicle.perKmRate);
+interface VehicleType {
+  id: string;
+  name: string;
+  perKmRate: number;
+  capacity: string;
+}
 
+interface FarePageClientProps {
+  params: { slug: string };
+  route: RouteType;
+  fare: number;
+  selectedVehicle: VehicleType;
+}
+
+// Main Page Component - Client Component
+export default function FarePageClient({
+  params,
+  route,
+  fare,
+  selectedVehicle,
+}: FarePageClientProps) {
   const competitorPrice = Math.round(fare * 1.4);
   const savings = competitorPrice - fare;
 
@@ -41,7 +62,7 @@ export default function FarePage({ params }: { params: { slug: string } }) {
   )}`;
 
   // Generate canonical URL
-  const canonicalUrl = `https://yatratempotraveller.com/cheapest/${slug}`;
+  const canonicalUrl = `https://yatratempotraveller.com/cheapest/${params.slug}`;
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -766,25 +787,6 @@ export default function FarePage({ params }: { params: { slug: string } }) {
   );
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const route = ROUTES.find((r) => r.slug === params.slug);
-  if (!route) return {};
-
-  const fare = calculateFare(route.distance, VEHICLES[0].perKmRate);
-
-  return {
-    title: `${route.origin} to ${route.destination} Tempo Traveller | ₹${fare}`,
-    description: `Book tempo traveller from ${route.origin} to ${route.destination} at ₹${fare}.`,
-    alternates: {
-      canonical: `https://yatratempotraveller.com/cheapest/${params.slug}`,
-    },
-  };
-}
-
 // Helper component for Structured Data
 interface BreadcrumbData {
   "@context": string;
@@ -810,13 +812,11 @@ interface FAQData {
   }>;
 }
 
-interface RouteType {
-  slug: string;
-  origin: string;
-  destination: string;
-  distance: number;
-  duration: string;
-  faqs: Array<{ question: string; answer: string }>;
+interface StructuredDataProps {
+  breadcrumbData: BreadcrumbData;
+  faqData: FAQData;
+  route: RouteType;
+  fare: number;
 }
 
 function StructuredData({
@@ -824,12 +824,7 @@ function StructuredData({
   faqData,
   route,
   fare,
-}: {
-  breadcrumbData: BreadcrumbData;
-  faqData: FAQData;
-  route: RouteType;
-  fare: number;
-}) {
+}: StructuredDataProps) {
   const productData = {
     "@context": "https://schema.org",
     "@type": "Product",
