@@ -2,13 +2,14 @@ import { notFound } from "next/navigation";
 import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
 import FarePageClient from "./FarePageClient";
 
-// SEO Metadata
+// SEO Metadata - params is now a Promise
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const route = ROUTES.find((r) => r.slug === params.slug);
+  const { slug } = await params; // Await the params Promise
+  const route = ROUTES.find((r) => r.slug === slug);
   if (!route) return {};
 
   const fare = calculateFare(route.distance, VEHICLES[0].perKmRate);
@@ -28,8 +29,14 @@ export async function generateMetadata({
   };
 }
 
-export default function Page({ params }: { params: { slug: string } }) {
-  const route = ROUTES.find((r) => r.slug === params.slug);
+// Page component - params is now a Promise
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params; // Await the params Promise
+  const route = ROUTES.find((r) => r.slug === slug);
 
   if (!route) return notFound();
 
@@ -37,8 +44,8 @@ export default function Page({ params }: { params: { slug: string } }) {
   const fare = calculateFare(route.distance, selectedVehicle.perKmRate);
 
   return (
-    <FarePageClient 
-      params={params}
+    <FarePageClient
+      params={{ slug }} // Pass the slug as an object
       route={route}
       fare={fare}
       selectedVehicle={selectedVehicle}
