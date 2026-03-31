@@ -2,13 +2,13 @@ import { notFound } from "next/navigation";
 import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
 import FarePageClient from "./FarePageClient";
 
-// SEO Metadata - params is now a Promise
+// SEO Metadata
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params; // Await the params Promise
+  const { slug } = await params;
   const route = ROUTES.find((r) => r.slug === slug);
   if (!route) return {};
 
@@ -29,23 +29,32 @@ export async function generateMetadata({
   };
 }
 
-// Page component - params is now a Promise
+// Generate static params for static site generation
+export async function generateStaticParams() {
+  return ROUTES.map((route) => ({
+    slug: route.slug,
+  }));
+}
+
+// Page component
 export default async function Page({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = await params; // Await the params Promise
+  const { slug } = await params;
   const route = ROUTES.find((r) => r.slug === slug);
 
-  if (!route) return notFound();
+  if (!route) {
+    notFound();
+  }
 
   const selectedVehicle = VEHICLES[0];
   const fare = calculateFare(route.distance, selectedVehicle.perKmRate);
 
   return (
     <FarePageClient
-      params={{ slug }} // Pass the slug as an object
+      params={{ slug }}
       route={route}
       fare={fare}
       selectedVehicle={selectedVehicle}

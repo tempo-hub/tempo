@@ -47,22 +47,9 @@ interface FarePageClientProps {
   selectedVehicle: VehicleType;
 }
 
-// Main Page Component - Client Component
-export default function FarePageClient({
-  params,
-  route,
-  fare,
-  selectedVehicle,
-}: FarePageClientProps) {
-  const competitorPrice = Math.round(fare * 1.4);
-  const savings = competitorPrice - fare;
-
-  const whatsappUrl = `https://wa.me/916280820037?text=${encodeURIComponent(
-    `Hi, I want to book a cab from ${route.origin} to ${route.destination} at ₹${fare}`,
-  )}`;
-
-  // Generate canonical URL
-  const canonicalUrl = `https://yatratempotraveller.com/cheapest/${params.slug}`;
+// Helper component for Structured Data
+function StructuredData({ route, fare }: { route: RouteType; fare: number }) {
+  const canonicalUrl = `https://yatratempotraveller.com/cheapest/${route.slug}`;
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -89,7 +76,6 @@ export default function FarePageClient({
     ],
   };
 
-  // Generate FAQ structured data
   const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -103,16 +89,62 @@ export default function FarePageClient({
     })),
   };
 
+  const productData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: `${route.origin} to ${route.destination} Tempo Traveller`,
+    description: `Book tempo traveller from ${route.origin} to ${route.destination}. Best price guaranteed.`,
+    offers: {
+      "@type": "Offer",
+      priceCurrency: "INR",
+      price: fare,
+      availability: "https://schema.org/InStock",
+      validFrom: new Date().toISOString(),
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: "2500",
+    },
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
+      />
+    </>
+  );
+}
+
+// Main Page Component - Client Component
+export default function FarePageClient({
+  params,
+  route,
+  fare,
+  selectedVehicle,
+}: FarePageClientProps) {
+  const competitorPrice = Math.round(fare * 1.4);
+  const savings = competitorPrice - fare;
+
+  const whatsappUrl = `https://wa.me/916280820037?text=${encodeURIComponent(
+    `Hi, I want to book a cab from ${route.origin} to ${route.destination} at ₹${fare}`,
+  )}`;
+
   return (
     <div>
       <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
         {/* Structured Data */}
-        <StructuredData
-          breadcrumbData={breadcrumbData}
-          faqData={faqData}
-          route={route}
-          fare={fare}
-        />
+        <StructuredData route={route} fare={fare} />
 
         {/* Breadcrumbs with Internal Linking */}
         <div className="max-w-7xl mx-auto px-4 pt-4 text-sm">
@@ -784,80 +816,5 @@ export default function FarePageClient({
         <FAQSection faqs={route.faqs} />
       </div>
     </div>
-  );
-}
-
-// Helper component for Structured Data
-interface BreadcrumbData {
-  "@context": string;
-  "@type": string;
-  itemListElement: Array<{
-    "@type": string;
-    position: number;
-    name: string;
-    item: string;
-  }>;
-}
-
-interface FAQData {
-  "@context": string;
-  "@type": string;
-  mainEntity: Array<{
-    "@type": string;
-    name: string;
-    acceptedAnswer: {
-      "@type": string;
-      text: string;
-    };
-  }>;
-}
-
-interface StructuredDataProps {
-  breadcrumbData: BreadcrumbData;
-  faqData: FAQData;
-  route: RouteType;
-  fare: number;
-}
-
-function StructuredData({
-  breadcrumbData,
-  faqData,
-  route,
-  fare,
-}: StructuredDataProps) {
-  const productData = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: `${route.origin} to ${route.destination} Tempo Traveller`,
-    description: `Book tempo traveller from ${route.origin} to ${route.destination}. Best price guaranteed.`,
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "INR",
-      price: fare,
-      availability: "https://schema.org/InStock",
-      validFrom: new Date().toISOString(),
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "2500",
-    },
-  };
-
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productData) }}
-      />
-    </>
   );
 }
