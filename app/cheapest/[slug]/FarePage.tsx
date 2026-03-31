@@ -1,3 +1,5 @@
+"use client";
+
 import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
 import { notFound } from "next/navigation";
 import {
