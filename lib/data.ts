@@ -4,7 +4,7 @@ export interface VehicleFare {
   type: string;
   name: string;
   seating: string;
-  capacity: Number;
+  capacity: number;
   perKmRate: number;
   features: string[];
   image: string;

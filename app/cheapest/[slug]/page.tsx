@@ -1,8 +1,5 @@
-"use client";
-
 import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
-import { notFound, useParams } from "next/navigation";
-import { useState, useMemo, Suspense } from "react";
+import { notFound } from "next/navigation";
 import {
   Phone,
   MessageCircle,
@@ -25,34 +22,14 @@ import { VehicleGallery } from "@/app/components/vehicle-gallery";
 import Link from "next/link";
 import { VehiclePricingTable } from "@/app/components/VehiclePricingTable";
 
-// Loading component for Suspense
-function FarePageSkeleton() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="animate-pulse">
-          <div className="h-8 bg-gray-200 rounded w-1/3 mb-4"></div>
-          <div className="h-64 bg-gray-200 rounded-lg mb-8"></div>
-          <div className="h-96 bg-gray-200 rounded-lg"></div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 // Main Page Component - Now a Client Component
-export default function FarePage() {
-  const params = useParams();
+export default function FarePage({ params }: { params: { slug: string } }) {
   const slug = params.slug as string;
-  const route = ROUTES.find((r) => r.slug === slug);
-  const [selectedVehicle, setSelectedVehicle] = useState(VEHICLES[0]);
-
+  const route = ROUTES.find((r) => r.slug === params.slug);
   if (!route) notFound();
 
-  // Calculate fare based on selected vehicle
-  const fare = useMemo(() => {
-    return calculateFare(route.distance, selectedVehicle.perKmRate);
-  }, [route.distance, selectedVehicle]);
+  const selectedVehicle = VEHICLES[0];
+  const fare = calculateFare(route.distance, selectedVehicle.perKmRate);
 
   const competitorPrice = Math.round(fare * 1.4);
   const savings = competitorPrice - fare;
@@ -62,7 +39,7 @@ export default function FarePage() {
   )}`;
 
   // Generate canonical URL
-  const canonicalUrl = `https://yatratempotraveller.com/fare/${slug}`;
+  const canonicalUrl = `https://yatratempotraveller.com/cheapest/${slug}`;
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -93,7 +70,7 @@ export default function FarePage() {
   const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: route.faqs.map((faq, index) => ({
+    mainEntity: route.faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -104,16 +81,8 @@ export default function FarePage() {
   };
 
   return (
-    <Suspense fallback={<FarePageSkeleton />}>
+    <div>
       <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
-        {/* SEO Meta Tags */}
-        <HeadMeta
-          title={`${route.origin} to ${route.destination} Tempo Traveller | Lowest Price ₹${fare}`}
-          description={`Book tempo traveller from ${route.origin} to ${route.destination} at just ₹${fare}. Best price guarantee, 9-26 seater options, instant booking. Save ₹${savings} today!`}
-          canonicalUrl={canonicalUrl}
-          keywords={`${route.origin} to ${route.destination} tempo traveller, ${route.origin} to ${route.destination} cab, ${route.origin} to ${route.destination} travel, ${route.origin} to ${route.destination} outstation`}
-        />
-
         {/* Structured Data */}
         <StructuredData
           breadcrumbData={breadcrumbData}
@@ -298,8 +267,8 @@ export default function FarePage() {
           <div className="max-w-7xl mx-auto px-4 text-center">
             <p className="text-lg font-bold flex items-center justify-center gap-2 flex-wrap">
               <Gift className="h-6 w-6 animate-bounce" aria-hidden="true" />
-              Best Price Guarantee! Found a lower price? We'll match it & give
-              5% extra off
+              Best Price Guarantee! Found a lower price? We&apos;ll match it &
+              give 5% extra off
               <Gift className="h-6 w-6 animate-bounce" aria-hidden="true" />
             </p>
           </div>
@@ -361,9 +330,9 @@ export default function FarePage() {
             </h2>
 
             <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-              We’ve analyzed top providers to bring you the most affordable and
-              transparent pricing. Below is a direct comparison of total costs,
-              hidden fees, and cancellation policies.
+              We&apos;ve analyzed top providers to bring you the most affordable
+              and transparent pricing. Below is a direct comparison of total
+              costs, hidden fees, and cancellation policies.
             </p>
 
             <div className="overflow-x-auto shadow-lg rounded-xl border border-gray-200">
@@ -651,7 +620,7 @@ export default function FarePage() {
                 Transparent Price Breakdown
               </h2>
               <p className="text-muted-foreground">
-                Know exactly what you're paying for - No Surprises
+                Know exactly what you&apos;re paying for - No Surprises
               </p>
             </div>
 
@@ -737,21 +706,29 @@ export default function FarePage() {
                   r.destination !== route.destination,
               )
                 .slice(0, 4)
-                .map((relatedRoute) => (
-                  <Link
-                    key={relatedRoute.slug}
-                    href={`/cheapest/${relatedRoute.slug}`}
-                    className="group p-4 border rounded-xl hover:shadow-lg transition-all hover:border-primary"
-                  >
-                    <h3 className="font-semibold group-hover:text-primary transition-colors">
-                      {relatedRoute.origin} to {relatedRoute.destination}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mt-1">
-                      {relatedRoute.distance} km • ₹
-                      {calculateFare(relatedRoute.distance, 12)}
-                    </p>
-                  </Link>
-                ))}
+                .map((relatedRoute) => {
+                  const cheapestRoute = Math.min(
+                    ...VEHICLES.map((v) => v.perKmRate),
+                  );
+                  const cheapestPrice = calculateFare(
+                    relatedRoute.distance,
+                    cheapestRoute,
+                  );
+                  return (
+                    <Link
+                      key={relatedRoute.slug}
+                      href={`/cheapest/${relatedRoute.slug}`}
+                      className="group p-4 border rounded-xl hover:shadow-lg transition-all hover:border-primary"
+                    >
+                      <h3 className="font-semibold group-hover:text-primary transition-colors">
+                        {relatedRoute.origin} to {relatedRoute.destination}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        {relatedRoute.distance} km • ₹{cheapestPrice}
+                      </p>
+                    </Link>
+                  );
+                })}
             </div>
           </div>
         </section>
@@ -783,50 +760,72 @@ export default function FarePage() {
         {/* FAQ Section */}
         <FAQSection faqs={route.faqs} />
       </div>
-    </Suspense>
+    </div>
   );
 }
 
-// Helper component for Head Meta
-function HeadMeta({
-  title,
-  description,
-  canonicalUrl,
-  keywords,
+export async function generateMetadata({
+  params,
 }: {
-  title: string;
-  description: string;
-  canonicalUrl: string;
-  keywords: string;
+  params: { slug: string };
 }) {
-  return (
-    <>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href={canonicalUrl} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={canonicalUrl} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-    </>
-  );
+  const route = ROUTES.find((r) => r.slug === params.slug);
+  if (!route) return {};
+
+  const fare = calculateFare(route.distance, VEHICLES[0].perKmRate);
+
+  return {
+    title: `${route.origin} to ${route.destination} Tempo Traveller | ₹${fare}`,
+    description: `Book tempo traveller from ${route.origin} to ${route.destination} at ₹${fare}.`,
+    alternates: {
+      canonical: `https://yatratempotraveller.com/cheapest/${params.slug}`,
+    },
+  };
 }
 
 // Helper component for Structured Data
+interface BreadcrumbData {
+  "@context": string;
+  "@type": string;
+  itemListElement: Array<{
+    "@type": string;
+    position: number;
+    name: string;
+    item: string;
+  }>;
+}
+
+interface FAQData {
+  "@context": string;
+  "@type": string;
+  mainEntity: Array<{
+    "@type": string;
+    name: string;
+    acceptedAnswer: {
+      "@type": string;
+      text: string;
+    };
+  }>;
+}
+
+interface RouteType {
+  slug: string;
+  origin: string;
+  destination: string;
+  distance: number;
+  duration: string;
+  faqs: Array<{ question: string; answer: string }>;
+}
+
 function StructuredData({
   breadcrumbData,
   faqData,
   route,
   fare,
 }: {
-  breadcrumbData: any;
-  faqData: any;
-  route: any;
+  breadcrumbData: BreadcrumbData;
+  faqData: FAQData;
+  route: RouteType;
   fare: number;
 }) {
   const productData = {
