@@ -34,10 +34,13 @@ interface RouteType {
 }
 
 interface VehicleType {
-  id: string;
+  type: string;
   name: string;
+  seating: string;
+  capacity: number;
   perKmRate: number;
-  capacity: string;
+  features: string[];
+  image: string;
 }
 
 interface FarePageClientProps {
