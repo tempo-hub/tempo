@@ -13,6 +13,8 @@ export const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Fare Calculator", href: "/calculator" },
     { name: "All Fares", href: "/fares" },
+    { name: "All Cheapest Fares", href: "/cheapests" },
+    { name: "Blogs", href: "/blogs" },
   ];
 
   return (

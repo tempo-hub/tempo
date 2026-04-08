@@ -207,12 +207,8 @@ export default function FarePageClient({
 
               {/* Main Heading */}
               <h1 className="text-4xl lg:text-6xl font-black leading-tight mb-4">
-                {route.origin} to{" "}
+                Cheapest Tempo Traveller from {route.origin} to{" "}
                 <span className="text-primary">{route.destination}</span>
-                <br />
-                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                  Lowest Price
-                </span>
               </h1>
 
               {/* Price Display */}
@@ -743,7 +739,7 @@ export default function FarePageClient({
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-3xl font-black text-center mb-8">
-              Tempo Traveller Pricing (Per KM)
+              {route.origin} to {route.destination} Tempo Traveller Pricing (Per k.m)
             </h2>
 
             <VehiclePricingTable />
