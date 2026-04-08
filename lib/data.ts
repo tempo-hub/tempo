@@ -1,4 +1,5 @@
 import { generateRouteFaqs } from "./faq-data";
+import { CITY_GUIDES } from "./cityGuides";
 
 export interface VehicleFare {
   type: string;
@@ -18,6 +19,7 @@ export interface TaxiRoute {
   distance: number;
   duration: string;
   description: string;
+  routeImage: string;
   highlights: string[];
   faqs: { question: string; answer: string }[];
   tollEstimate?: number;
@@ -26,6 +28,110 @@ export interface TaxiRoute {
   bestTime?: string;
   seasonalNotes?: string;
   comparison?: { transport: string; pros: string; cons: string }[];
+
+  // City Guide Section
+  cityGuide?: {
+    overview: string;
+    detailedDescription: string;
+    keyAttractions?: {
+      title: string;
+      items: string[];
+      bgColor: string;
+      textColor: string;
+    };
+    significance?: {
+      title: string;
+      items: string[];
+      bgColor: string;
+      textColor: string;
+    };
+    bestTimeToVisit?: string;
+    idealDuration?: string;
+    localFood?: string[];
+    festivals?: string[];
+    travelTips?: string[];
+  };
+
+  // Route Guide Section
+  routeGuide?: {
+    primaryRoute: string;
+    distance: string;
+    travelTime: string;
+    roadCondition: string;
+    stopovers?: {
+      name: string;
+      purpose: string;
+      description?: string;
+    }[];
+    proTip?: string;
+    highwayName?: string;
+    nightTravelSafe?: boolean;
+  };
+
+  // Pricing Explanation (Route-specific)
+  pricingDetails?: {
+    perKmRateDescription?: string;
+    nightHaltAllowance?: string;
+    statePermitCost?: string;
+    parkingCharges?: string;
+    tollCharges?: string;
+    includedFree?: string[];
+    whyPerKmBetter?: string;
+    nightStayNote?: string;
+    includedNote?: string;
+    volumeDiscount?: string;
+    additionalCosts?: {
+      name: string;
+      amount: string;
+    }[];
+  };
+
+  // Travel Use Cases (Route-specific recommendations)
+  travelUseCases?: {
+    pilgrimage?: {
+      title: string;
+      description: string;
+      features: string[];
+      recommendedSeater: string;
+    };
+    family?: {
+      title: string;
+      description: string;
+      features: string[];
+      recommendedSeater: string;
+    };
+    corporate?: {
+      title: string;
+      description: string;
+      features: string[];
+      recommendedSeater: string;
+    };
+    wedding?: {
+      title: string;
+      description: string;
+      features: string[];
+      recommendedSeater: string;
+    };
+  };
+
+  comparisonTable?: {
+    title: string;
+    subtitle: string;
+    rows: {
+      feature: string;
+      tempo: string;
+      cab: string;
+      train: string;
+    }[];
+    highlightNote: string;
+  };
+
+  relatedDestinations?: TaxiRoute[];
+
+  media?: {
+    description: string;
+    mapEmbedUrl?: string;
+  };
 }
 
 export const VEHICLES: VehicleFare[] = [
@@ -116,6 +222,267 @@ export const VEHICLES: VehicleFare[] = [
   },
 ];
 
+function addMediaToRoute(route: TaxiRoute) {
+  route.media = {
+    description: `Travel from ${route.origin} to ${route.destination} with our premium tempo traveller service. ${route.distance}km journey in ${route.duration}. Perfect for group travel.`,
+    mapEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(route.origin + " to " + route.destination)}&output=embed`,
+  };
+
+  route.relatedDestinations = getSmartRelatedDestinations(route, ROUTES);
+
+  route.comparisonTable = getComparisonTable(route.origin, route.destination);
+
+  route.travelUseCases = getTravelUseCases(route.distance);
+
+  route.pricingDetails = getPricingDetails(route.distance, true);
+
+  route.routeGuide = getRouteGuide(
+    route.origin,
+    route.destination,
+    route.distance,
+  );
+
+  // Add city guide dynamically
+  route.cityGuide = getCityGuideForDestination(route.destination);
+
+  return route;
+}
+
+export function getSmartRelatedDestinations(
+  currentRoute: any,
+  allRoutes: any[],
+  maxResults: number = 4
+) {
+  const currentDistance = currentRoute.distance;
+
+  return allRoutes
+    .filter((route) => {
+      if (route.slug === currentRoute.slug) return false;
+
+      const sameOrigin = route.origin === currentRoute.origin;
+
+      const similarDistance =
+        Math.abs(route.distance - currentDistance) <= 150;
+
+      return sameOrigin || similarDistance;
+    })
+    .slice(0, maxResults);
+}
+
+function getComparisonTable(origin: string, destination: string) {
+  return {
+    title: "Tempo Traveller vs Cab vs Train",
+    subtitle: `Compare travel options from ${origin} to ${destination}`,
+
+    rows: [
+      {
+        feature: "Cost",
+        tempo: "₹18/km (group sharing)",
+        cab: "₹25/km",
+        train: "₹200-500 per person",
+      },
+      {
+        feature: "Comfort",
+        tempo: "High (AC, spacious)",
+        cab: "Medium",
+        train: "Low (crowded)",
+      },
+      {
+        feature: "Flexibility",
+        tempo: "Door-to-door",
+        cab: "Door-to-door",
+        train: "Fixed schedule",
+      },
+    ],
+
+    highlightNote:
+      "For group travel, tempo traveller offers best value, comfort, and flexibility.",
+  };
+}
+
+export function getTravelUseCases(distance: number) {
+  return {
+    pilgrimage: {
+      title: "Devotees & Pilgrimage",
+      description: "Religious & temple visits",
+      features: [
+        "Overnight journey option",
+        "Early morning darshan arrival",
+        "Temple-to-temple service",
+        "Experienced drivers for pilgrimage routes",
+      ],
+      recommendedSeater: getSeater(distance),
+    },
+
+    family: {
+      title: "Family Travel",
+      description: "Trips with family & relatives",
+      features: [
+        "Comfortable for elderly & kids",
+        "Ample luggage space",
+        "Flexible stops for rest",
+        "AC comfort throughout journey",
+      ],
+      recommendedSeater: getFamilySeater(distance),
+    },
+
+    corporate: {
+      title: "Corporate Travel",
+      description: "Offsites & business trips",
+      features: [
+        "Professional drivers",
+        "On-time guarantee",
+        "Premium comfort",
+        "Wi-Fi on request",
+      ],
+      recommendedSeater: getCorporateSeater(distance),
+    },
+
+    wedding: {
+      title: "Wedding Transport",
+      description: "Group travel for wedding guests",
+      features: [
+        "One-way & round trip options",
+        "Large group capacity",
+        "Multiple vehicle booking",
+        "Coordination support",
+      ],
+      recommendedSeater: getWeddingSeater(distance),
+    },
+  };
+}
+
+function getFamilySeater(distance: number) {
+  if (distance < 150) return "9/12 Seater";
+  if (distance < 300) return "12/16 Seater";
+  return "16/20 Seater";
+}
+
+function getCorporateSeater(distance: number) {
+  if (distance < 200) return "12 Seater";
+  if (distance < 400) return "15 Seater";
+  return "17 Seater";
+}
+
+function getWeddingSeater(distance: number) {
+  if (distance < 200) return "16 Seater";
+  if (distance < 400) return "20 Seater";
+  return "26 Seater";
+}
+
+function getSeater(distance: number) {
+  if (distance < 200) return "9/12 Seater";
+  if (distance < 400) return "12/17 Seater";
+  return "17/26 Seater";
+}
+
+export function getRouteGuide(
+  origin: string,
+  destination: string,
+  distance: number,
+  highwayName?: string,
+) {
+  return {
+    primaryRoute: `${origin} → ${destination} (${highwayName || "via best available route"})`,
+    distance: `${distance} km`,
+    travelTime: estimateTravelTime(distance),
+    roadCondition: getRoadCondition(distance),
+    stopovers: getStopovers(origin, destination),
+    proTip: getProTip(origin, destination),
+    highwayName: highwayName || "State/Express Highway",
+    nightTravelSafe: distance < 300, // simple logic
+  };
+}
+
+function estimateTravelTime(distance: number) {
+  const hours = distance / 50; // average speed
+  const rounded = Math.round(hours * 10) / 10;
+  return `${rounded} hours (including 1 break)`;
+}
+
+function getRoadCondition(distance: number) {
+  if (distance > 500) return "Mix of highways and city roads. Good condition.";
+  if (distance > 250) return "Mostly highways. Well maintained roads.";
+  return "Excellent roads with smooth highways.";
+}
+
+function getStopovers(origin: string, destination: string) {
+  return [
+    {
+      name: "Midway Stop",
+      purpose: "Tea / Refreshment",
+      description: "Clean dhabas and food joints available",
+    },
+    {
+      name: "Local Town",
+      purpose: "Food Break",
+      description: "Popular restaurants and rest stops",
+    },
+  ];
+}
+
+function getProTip(origin: string, destination: string) {
+  return `Start early from ${origin} to avoid traffic and reach ${destination} comfortably during daylight.`;
+}
+
+function getCityGuideForDestination(destination: string) {
+  return CITY_GUIDES[destination] || null;
+}
+
+export function getPricingDetails(distance: number, isSameDay: boolean = true) {
+  const perKmRateMin = 18;
+  const perKmRateMax = 22;
+
+  const baseFareMin = distance * perKmRateMin;
+  const baseFareMax = distance * perKmRateMax;
+
+  return {
+    perKmRateDescription: `₹${perKmRateMin}-${perKmRateMax}/km (diesel + driver) – perfect for ${distance} km journey`,
+
+    nightHaltAllowance: isSameDay
+      ? "Not needed for same day return"
+      : "₹800-₹1500 (depends on driver stay)",
+
+    statePermitCost: "Included in round trip fare",
+
+    parkingCharges: "Free parking at most temples and tourist spots",
+
+    tollCharges: estimateToll(distance),
+
+    includedFree: [
+      "Driver charges for 10 hours",
+      "Basic insurance coverage",
+      "State taxes & permits",
+      "Parking at temples (up to 2 hours)",
+    ],
+
+    whyPerKmBetter: `For ${distance} km journey, per-km pricing saves up to 30-40% compared to fixed rental rates.`,
+
+    nightStayNote: isSameDay
+      ? "Same day return possible. Early morning departure recommended."
+      : "Overnight stay required for long-distance journeys.",
+
+    includedNote: isSameDay
+      ? "Driver allowance is included in same day trips"
+      : "Driver allowance applies for overnight trips",
+
+    volumeDiscount: "Book 2+ vehicles and get 10% off on total fare",
+
+    estimatedFare: {
+      min: Math.round(baseFareMin),
+      max: Math.round(baseFareMax),
+      currency: "INR",
+    },
+  };
+}
+
+function estimateToll(distance: number) {
+  if (distance < 100) return "₹50 - ₹150";
+  if (distance < 250) return "₹150 - ₹400";
+  if (distance < 500) return "₹300 - ₹800";
+  return "₹500 - ₹1500 (depending on route)";
+}
+
 export const ROUTES: TaxiRoute[] = [
   {
     id: "vns-ayu",
@@ -130,6 +497,8 @@ export const ROUTES: TaxiRoute[] = [
       "Doorstep Pickup",
       "Via Purvanchal Expressway",
       "Same Day Return Possible",
+      "Verified Professional Drivers",
+      "Fixed Transparent Pricing",
     ],
     faqs: [
       {
@@ -142,40 +511,6 @@ export const ROUTES: TaxiRoute[] = [
       },
     ],
     tollEstimate: 450,
-    itinerary: [
-      { time: "06:00 AM", activity: "Pickup from Varanasi Hotel/Home" },
-      {
-        time: "08:30 AM",
-        activity: "Breakfast break on Purvanchal Expressway",
-      },
-      { time: "10:30 AM", activity: "Arrival in Ayodhya, visit Ram Mandir" },
-      { time: "01:30 PM", activity: "Lunch and visit Hanuman Garhi" },
-      { time: "04:30 PM", activity: "Departure from Ayodhya" },
-      { time: "09:00 PM", activity: "Drop back at Varanasi" },
-    ],
-    roadConditions:
-      "Excellent via Purvanchal Expressway. Smooth 4-lane driving experience.",
-    bestTime:
-      "October to March (Pleasant weather) and Early Mornings (to beat traffic).",
-    seasonalNotes:
-      "Expect heavy rush during Ram Navami and Deepotsav. Pre-book at least 15 days in advance.",
-    comparison: [
-      {
-        transport: "Tempo Traveller",
-        pros: "Door-to-door, group stays together, luxury comfort, direct reach",
-        cons: "Higher cost for small groups",
-      },
-      {
-        transport: "Train",
-        pros: "Low cost",
-        cons: "Fixed timings, station transfers needed, hard to get group tickets",
-      },
-      {
-        transport: "Bus",
-        pros: "Budget friendly",
-        cons: "Uncomfortable, no luggage security, slow travel",
-      },
-    ],
   },
   {
     id: "vns-pry",
@@ -185,18 +520,26 @@ export const ROUTES: TaxiRoute[] = [
     distance: 125,
     duration: "2.5 Hours",
     description:
-      "Quick and reliable tempo traveller for group Triveni Sangam visit. Best for Kumbh Mela and Sangam Snan.",
+      "Fast and comfortable tempo traveller service from Varanasi to Prayagraj for Sangam darshan, Kumbh Mela, and group trips.",
+
     highlights: [
-      "Express Highway Route",
-      "Ghat to Sangam Service",
-      "Punctual Pickups",
+      "Direct Highway Route",
+      "Sangam Drop Service",
+      "Same Day Return Available",
     ],
+
     faqs: [
       {
-        question: "How long does it take?",
-        answer: "It usually takes 2.5 to 3 hours depending on traffic.",
+        question: "How long does it take from Varanasi to Prayagraj?",
+        answer:
+          "It takes around 2.5 to 3 hours depending on traffic and stops.",
+      },
+      {
+        question: "Is same-day return possible?",
+        answer: "Yes, you can comfortably complete a round trip in one day.",
       },
     ],
+
     tollEstimate: 200,
   },
   {
@@ -204,72 +547,88 @@ export const ROUTES: TaxiRoute[] = [
     slug: "varanasi-to-lucknow-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Lucknow",
-    distance: 310,
-    duration: "6 Hours",
+    distance: 320,
+    duration: "6-7 Hours",
     description:
-      "Comfortable tempo traveller service between the spiritual capital and the City of Nawabs for group travel.",
-    highlights: [
-      "Comfortable Tempo Travellers",
-      "Ideal for Group Trips",
-      "Fixed Pricing",
-    ],
+      "Comfortable tempo traveller service from Varanasi to Lucknow for family trips, business travel, and tourism.",
+
+    highlights: ["Expressway Route", "Smooth Highway Drive", "Same Day Travel"],
+
     faqs: [
       {
-        question: "Is there a round-trip requirement for Lucknow?",
-        answer:
-          "Yes, we exclusively offer round-trip services for all tempo traveller bookings to ensure availability and the best fixed group rates.",
+        question: "How long does it take from Varanasi to Lucknow?",
+        answer: "It takes around 6 to 7 hours depending on traffic.",
+      },
+      {
+        question: "Is this route safe for night travel?",
+        answer: "Yes, it is safe with well-maintained highways.",
       },
     ],
-    tollEstimate: 600,
+
+    tollEstimate: 400,
   },
   {
-    id: "vns-bg",
-    slug: "varanasi-to-bodhgaya-tempo-traveller-fare",
+    id: "vns-bodh",
+    slug: "varanasi-to-bodh-gaya-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Bodh Gaya",
-    distance: 255,
-    duration: "5.5 Hours",
+    distance: 260,
+    duration: "5-6 Hours",
     description:
-      "Group tempo traveller for the Buddhist circuit. Safe and reliable for foreign pilgrim groups.",
-    highlights: [
-      "English Speaking Drivers",
-      "Safe for Foreigners",
-      "Verified Tempo Travellers",
-    ],
+      "Tempo traveller service from Varanasi to Bodh Gaya for Buddhist pilgrimage and international tourists.",
+
+    highlights: ["Pilgrimage Route", "Temple Drop", "Comfort Travel"],
+
     faqs: [
       {
-        question: "Is it safe to travel at night to Bodhgaya?",
-        answer:
-          "We recommend daytime travel for the best experience, but our drivers are expert at night driving too.",
+        question: "How long does it take?",
+        answer: "Around 5-6 hours depending on traffic.",
       },
     ],
+
+    tollEstimate: 300,
   },
   {
     id: "vns-gkp",
     slug: "varanasi-to-gorakhpur-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Gorakhpur",
-    distance: 200,
-    duration: "4.5 Hours",
+    distance: 230,
+    duration: "5 Hours",
     description:
-      "Reliable tempo traveller service to the city of Gorakhnath Temple for group pilgrimages.",
-    highlights: [
-      "Well-maintained vehicles",
-      "Experienced drivers",
-      "Direct route",
+      "Reliable tempo traveller service from Varanasi to Gorakhpur for family trips, religious visits, and group travel.",
+
+    highlights: ["Highway Route", "Comfort Travel", "Affordable Pricing"],
+
+    faqs: [
+      {
+        question: "How long does it take?",
+        answer: "Around 5 hours depending on traffic.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 250,
   },
   {
-    id: "vns-gzp",
+    id: "vns-ghz",
     slug: "varanasi-to-ghazipur-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Ghazipur",
     distance: 80,
     duration: "2 Hours",
-    description: "Short distance tempo traveller for group travel to Ghazipur.",
-    highlights: ["Fastest route", "Local drivers", "Pocket friendly"],
-    faqs: [],
+    description:
+      "Comfortable tempo traveller service from Varanasi to Ghazipur for family and local trips.",
+
+    highlights: ["Short Distance", "Quick Travel", "Affordable"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 2 hours.",
+      },
+    ],
+
+    tollEstimate: 80,
   },
   {
     id: "vns-azm",
@@ -279,25 +638,39 @@ export const ROUTES: TaxiRoute[] = [
     distance: 100,
     duration: "2.5 Hours",
     description:
-      "Daily tempo traveller service from Varanasi to Azamgarh for group and family trips.",
-    highlights: ["Punctual arrivals", "Clean vehicles", "Fixed fare"],
-    faqs: [],
+      "Affordable tempo traveller service from Varanasi to Azamgarh for family visits and local travel.",
+
+    highlights: ["Short Route", "Quick Travel", "Budget Friendly"],
+
+    faqs: [
+      {
+        question: "How long does it take?",
+        answer: "Around 2 to 3 hours.",
+      },
+    ],
+
+    tollEstimate: 100,
   },
   {
     id: "vns-jnp",
     slug: "varanasi-to-jaunpur-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Jaunpur",
-    distance: 65,
+    distance: 60,
     duration: "1.5 Hours",
     description:
-      "Easiest way to reach Jaunpur from Varanasi by tempo traveller with your group.",
-    highlights: [
-      "Best for family trips",
-      "Comfortable ride",
-      "Instant booking",
+      "Quick tempo traveller service from Varanasi to Jaunpur for heritage and local travel.",
+
+    highlights: ["Short Route", "Historic City", "Quick Travel"],
+
+    faqs: [
+      {
+        question: "How long does it take?",
+        answer: "Around 1.5 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 70,
   },
   {
     id: "vns-mzp",
@@ -307,25 +680,39 @@ export const ROUTES: TaxiRoute[] = [
     distance: 65,
     duration: "1.5 Hours",
     description:
-      "Tempo traveller service to Mirzapur and Vindhyachal Dham for group pilgrimages.",
-    highlights: ["Shrine visits", "Experienced drivers", "Reliable service"],
-    faqs: [],
+      "Quick and comfortable tempo traveller service from Varanasi to Mirzapur for Vindhyachal temple visits.",
+
+    highlights: ["Short Distance", "Temple Route", "Same Day Return"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 1.5 hours.",
+      },
+    ],
+
+    tollEstimate: 100,
   },
   {
-    id: "vns-pat",
+    id: "vns-patna",
     slug: "varanasi-to-patna-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Patna",
     distance: 250,
-    duration: "6 Hours",
+    duration: "5-6 Hours",
     description:
-      "Interstate tempo traveller service from Varanasi to the capital of Bihar for groups.",
-    highlights: [
-      "Long distance experts",
-      "AC comfort",
-      "Interstate permits included",
+      "Comfortable tempo traveller service from Varanasi to Patna for business and family trips.",
+
+    highlights: ["Interstate Route", "Smooth Travel", "Group Friendly"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "5 to 6 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 300,
   },
   {
     id: "vns-knp",
@@ -333,15 +720,30 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Kanpur",
     distance: 330,
-    duration: "7 Hours",
+    duration: "6.5 - 7 Hours",
     description:
-      "Professional tempo traveller service for corporate groups and events to Kanpur.",
+      "Reliable tempo traveller service from Varanasi to Kanpur for corporate travel, family trips, and group journeys with comfortable seating and experienced drivers.",
+
     highlights: [
-      "Highway driving experts",
-      "Ample luggage space",
-      "Corporate friendly",
+      "Smooth Highway Route",
+      "Corporate & Group Friendly",
+      "Same Day Return Possible",
     ],
-    faqs: [],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Kanpur?",
+        answer:
+          "It takes around 6.5 to 7 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Can I do a same-day return trip?",
+        answer:
+          "Yes, same-day return is possible with early departure from Varanasi.",
+      },
+    ],
+
+    tollEstimate: 400,
   },
   {
     id: "vns-agr",
@@ -349,11 +751,30 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Agra",
     distance: 600,
-    duration: "10 Hours",
+    duration: "10-11 Hours",
     description:
-      "Group travel from the city of Shiva to the city of Taj by tempo traveller.",
-    highlights: ["Expressway route", "Multi-day packages", "Tourist friendly"],
-    faqs: [],
+      "Comfortable tempo traveller service from Varanasi to Agra for Taj Mahal tours, family trips, and group travel. Ideal for sightseeing with AC vehicles and experienced drivers.",
+
+    highlights: [
+      "Expressway Route",
+      "Taj Mahal Tour Special",
+      "Overnight Travel Available",
+    ],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Agra?",
+        answer:
+          "It takes around 10 to 11 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is overnight travel a good option?",
+        answer:
+          "Yes, starting at night helps you reach Agra early morning for Taj Mahal visit.",
+      },
+    ],
+
+    tollEstimate: 700,
   },
   {
     id: "vns-vnd",
@@ -361,38 +782,82 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Vindhyachal",
     distance: 70,
-    duration: "2 Hours",
+    duration: "1.5 - 2 Hours",
     description:
-      "Pilgrimage group tempo traveller for Maa Vindhyavasini Darshan.",
-    highlights: ["Same day return", "Temple pickup/drop", "Budget friendly"],
-    faqs: [],
+      "Comfortable tempo traveller service from Varanasi to Vindhyachal for Maa Vindhyavasini Darshan, ideal for pilgrimage groups and same-day trips.",
+
+    highlights: [
+      "Same Day Return",
+      "Temple Pickup & Drop",
+      "Quick Highway Route",
+    ],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Vindhyachal?",
+        answer:
+          "It takes around 1.5 to 2 hours depending on traffic conditions.",
+      },
+      {
+        question: "Is same-day return possible?",
+        answer:
+          "Yes, Vindhyachal is perfect for a same-day pilgrimage trip from Varanasi.",
+      },
+    ],
+
+    tollEstimate: 100,
   },
   {
-    id: "vns-kus",
+    id: "vns-kush",
     slug: "varanasi-to-kushinagar-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Kushinagar",
     distance: 230,
-    duration: "5 Hours",
+    duration: "5-6 Hours",
     description:
-      "Tempo traveller service for Buddhist pilgrimage groups to Kushinagar.",
+      "Comfortable tempo traveller service from Varanasi to Kushinagar for Buddhist pilgrimage tours, group travel, and heritage visits with experienced drivers.",
+
     highlights: [
-      "Part of Buddhist circuit",
-      "Reliable vehicles",
-      "Guided drivers",
+      "Buddhist Circuit Route",
+      "Peaceful Pilgrimage Journey",
+      "Same Day Return Possible",
     ],
-    faqs: [],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Kushinagar?",
+        answer:
+          "It takes around 5 to 6 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Kushinagar suitable for a one-day trip?",
+        answer:
+          "Yes, you can visit Kushinagar and return the same day with proper planning.",
+      },
+    ],
+
+    tollEstimate: 300,
   },
   {
-    id: "vns-ssm",
+    id: "vns-ssr",
     slug: "varanasi-to-sasaram-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Sasaram",
     distance: 150,
     duration: "3.5 Hours",
-    description: "Direct tempo traveller service to Sasaram for group visits.",
-    highlights: ["GT Road route", "Quick transit", "Verified drivers"],
-    faqs: [],
+    description:
+      "Reliable tempo traveller service from Varanasi to Sasaram for historical and family trips.",
+
+    highlights: ["Historic Route", "Smooth Travel", "Affordable"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 3.5 hours.",
+      },
+    ],
+
+    tollEstimate: 150,
   },
   {
     id: "vns-bxr",
@@ -400,134 +865,197 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Buxar",
     distance: 130,
-    duration: "3 Hours",
+    duration: "3 - 3.5 Hours",
     description:
-      "Comfortable tempo traveller for group travel between Varanasi and Buxar.",
-    highlights: ["Smooth ride", "Fixed pricing", "24/7 service"],
-    faqs: [],
+      "Reliable tempo traveller service from Varanasi to Buxar for group travel, family trips, and religious visits with comfortable seating and professional drivers.",
+
+    highlights: [
+      "Short Highway Route",
+      "Same Day Return Available",
+      "Budget Friendly Travel",
+    ],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Buxar?",
+        answer:
+          "It takes around 3 to 3.5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is same-day return possible?",
+        answer: "Yes, Buxar is ideal for a same-day trip from Varanasi.",
+      },
+    ],
+
+    tollEstimate: 150,
   },
   {
-    id: "vns-bla",
+    id: "vns-bll",
     slug: "varanasi-to-ballia-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Ballia",
     distance: 140,
     duration: "3.5 Hours",
-    description: "Reliable tempo traveller for group travel to eastern UP.",
-    highlights: ["Expert rural drivers", "Sturdy vehicles", "On-time service"],
-    faqs: [],
+    description:
+      "Affordable tempo traveller service from Varanasi to Ballia for family trips and local travel.",
+
+    highlights: ["Riverside Route", "Comfort Travel", "Budget Friendly"],
+
+    faqs: [
+      {
+        question: "How long does it take?",
+        answer: "Around 3 to 4 hours depending on traffic.",
+      },
+    ],
+
+    tollEstimate: 150,
   },
   {
-    id: "vns-deo",
+    id: "vns-der",
     slug: "varanasi-to-deoria-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Deoria",
-    distance: 180,
-    duration: "4 Hours",
+    distance: 210,
+    duration: "4.5 Hours",
     description:
-      "Daily tempo travellers from Varanasi to Deoria at best group rates.",
-    highlights: ["Safe travel", "Competitive rates", "Punctual bookings"],
-    faqs: [],
+      "Comfortable tempo traveller service from Varanasi to Deoria for family and regional travel.",
+
+    highlights: ["Smooth Route", "Affordable Travel", "Group Friendly"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 4 to 5 hours.",
+      },
+    ],
+
+    tollEstimate: 200,
   },
   {
     id: "vns-mau",
     slug: "varanasi-to-mau-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Mau",
-    distance: 100,
+    distance: 110,
     duration: "2.5 Hours",
     description:
-      "Quick and easy tempo traveller booking for group trips to Mau from Varanasi.",
-    highlights: ["Best for group events", "Clean vehicles", "Fixed fare"],
-    faqs: [],
+      "Tempo traveller service from Varanasi to Mau for quick and comfortable regional travel.",
+
+    highlights: ["Short Route", "Quick Travel", "Affordable"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 2.5 hours.",
+      },
+    ],
+
+    tollEstimate: 100,
   },
   {
-    id: "vns-cha",
+    id: "vns-chd",
     slug: "varanasi-to-chandauli-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Chandauli",
-    distance: 30,
+    distance: 40,
     duration: "1 Hour",
     description:
-      "Short distance tempo traveller for group travel to Chandauli.",
-    highlights: ["Local expertise", "Fastest booking", "Transparent pricing"],
-    faqs: [],
+      "Quick and affordable tempo traveller service from Varanasi to Chandauli for local and business travel.",
+
+    highlights: ["Very Short Route", "Quick Travel", "Budget Friendly"],
+
+    faqs: [
+      {
+        question: "How long does it take?",
+        answer: "Around 1 hour.",
+      },
+    ],
+
+    tollEstimate: 50,
   },
   {
     id: "vns-rbg",
     slug: "varanasi-to-robertsganj-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Robertsganj",
-    distance: 90,
+    distance: 95,
     duration: "2.5 Hours",
     description:
-      "Tempo traveller for group trips to the industrial hub of Sonbhadra.",
-    highlights: ["Hilly terrain experts", "Reliable vehicles", "Fixed prices"],
-    faqs: [],
+      "Tempo traveller service from Varanasi to Robertsganj for Sonbhadra region travel and business trips.",
+
+    highlights: ["Hill Edge Route", "Smooth Travel", "Budget Friendly"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 2.5 hours.",
+      },
+    ],
+
+    tollEstimate: 100,
   },
   {
-    id: "vns-slt",
+    id: "vns-sln",
     slug: "varanasi-to-sultanpur-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Sultanpur",
-    distance: 160,
-    duration: "3.5 Hours",
+    distance: 180,
+    duration: "4 Hours",
     description:
-      "Reliable tempo traveller service for group travel to Sultanpur.",
-    highlights: [
-      "Purvanchal expressway route",
-      "On-time arrival",
-      "Comfortable ride",
+      "Affordable tempo traveller service from Varanasi to Sultanpur for family and business travel.",
+
+    highlights: ["Highway Route", "Comfort Travel", "Budget Friendly"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 4 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 180,
   },
   {
-    id: "vns-rai",
+    id: "vns-rbl",
     slug: "varanasi-to-raebareli-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Raebareli",
-    distance: 230,
-    duration: "5 Hours",
+    distance: 300,
+    duration: "6 Hours",
     description:
-      "Professional tempo traveller rental for group trips to Raebareli from Varanasi.",
-    highlights: [
-      "Highway experts",
-      "Well maintained vehicles",
-      "All-inclusive prices",
+      "Tempo traveller service from Varanasi to Raebareli for business, family, and political visits.",
+
+    highlights: ["Long Route", "Comfort Travel", "Highway Drive"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 6 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 300,
   },
   {
-    id: "vns-fzd",
+    id: "vns-fzb",
     slug: "varanasi-to-faizabad-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Faizabad",
     distance: 210,
     duration: "4.5 Hours",
     description:
-      "Direct tempo traveller for group pilgrimage to Faizabad (Ayodhya) at fixed rates.",
-    highlights: [
-      "Temple tourists special",
-      "Hassle-free booking",
-      "Proven reliability",
+      "Tempo traveller service from Varanasi to Faizabad for religious and family travel.",
+
+    highlights: ["Temple Route", "Smooth Travel", "Affordable"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 4.5 hours.",
+      },
     ],
-    faqs: [],
-  },
-  {
-    id: "vns-cht",
-    slug: "varanasi-to-chitrakoot-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Chitrakoot",
-    distance: 260,
-    duration: "6 Hours",
-    description:
-      "Spiritual journey to Chitrakoot from Varanasi by tempo traveller. Best for group pilgrimage and sightseeing.",
-    highlights: [
-      "Doorstep pickup",
-      "Expert drivers",
-      "Religious circuit special",
-    ],
-    faqs: [],
+
+    tollEstimate: 200,
   },
   {
     id: "vns-raj",
@@ -535,15 +1063,30 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Rajgir",
     distance: 250,
-    duration: "6 Hours",
+    duration: "5.5 - 6 hours",
     description:
-      "Varanasi to Rajgir tempo traveller service for the Buddhist and Jain pilgrimage groups.",
+      "Comfortable tempo traveller service from Varanasi to Rajgir for Buddhist and Jain pilgrimage groups, offering safe and smooth travel with experienced drivers.",
+
     highlights: [
-      "Well-maintained vehicles",
-      "Safe for families",
-      "Hassle-free travel",
+      "Buddhist & Jain Pilgrimage Route",
+      "Safe & Comfortable Travel",
+      "Same Day Return Possible",
     ],
-    faqs: [],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Rajgir?",
+        answer:
+          "It takes around 5.5 to 6 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Rajgir suitable for a same-day trip?",
+        answer:
+          "Yes, it is possible, but overnight travel is recommended for a relaxed pilgrimage experience.",
+      },
+    ],
+
+    tollEstimate: 350,
   },
   {
     id: "vns-nal",
@@ -551,11 +1094,30 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Nalanda",
     distance: 260,
-    duration: "6.5 Hours",
+    duration: "6 - 6.5 hours",
     description:
-      "Explore the ancient heritage of Nalanda with our reliable group tempo traveller service.",
-    highlights: ["Educational tours", "Comfortable seating", "On-time arrival"],
-    faqs: [],
+      "Comfortable tempo traveller service from Varanasi to Nalanda for Buddhist pilgrimage groups, educational tours, and heritage exploration with safe and smooth travel.",
+
+    highlights: [
+      "Buddhist Heritage Route",
+      "Safe & Comfortable Travel",
+      "Educational & Group Tours",
+    ],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Nalanda?",
+        answer:
+          "It takes around 6 to 6.5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Nalanda suitable for a same-day trip?",
+        answer:
+          "Yes, it can be covered in a day, but overnight stay is recommended for better exploration.",
+      },
+    ],
+
+    tollEstimate: 400,
   },
   {
     id: "vns-ujj",
@@ -563,15 +1125,30 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Ujjain",
     distance: 950,
-    duration: "16 Hours",
+    duration: "15.5 - 16 hours",
     description:
-      "Long distance tempo traveller service for Mahakaleshwar Darshan from Varanasi.",
+      "Comfortable long-distance tempo traveller service from Varanasi to Ujjain for Mahakaleshwar Jyotirlinga darshan, offering safe, smooth, and reliable travel for pilgrimage groups.",
+
     highlights: [
-      "Expressway route",
-      "Night driving experts",
-      "Multi-day packages",
+      "Mahakaleshwar Jyotirlinga Pilgrimage Route",
+      "Night driving experienced drivers",
+      "Safe & comfortable long journey",
     ],
-    faqs: [],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Ujjain?",
+        answer:
+          "It takes around 15.5 to 16 hours depending on traffic, route, and road conditions.",
+      },
+      {
+        question: "Is Ujjain suitable for a same-day trip?",
+        answer:
+          "No, due to the long distance, it is recommended to plan at least a 2-day trip.",
+      },
+    ],
+
+    tollEstimate: 1200,
   },
   {
     id: "vns-omk",
@@ -579,131 +1156,208 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Omkareshwar",
     distance: 1050,
-    duration: "18 Hours",
+    duration: "17.5 - 18 hours",
     description:
-      "Group pilgrimage from Kashi to Omkareshwar Jyotirlinga by premium tempo traveller.",
-    highlights: ["Pan-India permits", "AC comfort", "Professional service"],
-    faqs: [],
+      "Premium long-distance tempo traveller service from Varanasi to Omkareshwar Jyotirlinga, ideal for group pilgrimage with safe, comfortable, and reliable travel.",
+
+    highlights: [
+      "Omkareshwar Jyotirlinga Pilgrimage Route",
+      "Pan-India permits available",
+      "AC comfort for long journey",
+    ],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Omkareshwar?",
+        answer:
+          "It takes around 17.5 to 18 hours depending on route, traffic, and stops.",
+      },
+      {
+        question: "Is this a one-day trip?",
+        answer:
+          "No, due to the long distance, it is recommended to plan a 2–3 day pilgrimage trip.",
+      },
+    ],
+
+    tollEstimate: 1400,
   },
   {
-    id: "vns-deo-bhr",
+    id: "vns-deo",
     slug: "varanasi-to-deoghar-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Deoghar",
-    distance: 400,
-    duration: "9 Hours",
+    distance: 320,
+    duration: "6.5 - 7 hours",
     description:
-      "Direct tempo traveller for group pilgrimage to Baba Baidyanath Dham Deoghar.",
-    highlights: ["Shrine visits", "Religious circuit", "Fixed rates"],
-    faqs: [],
+      "Comfortable tempo traveller service from Varanasi to Deoghar for Baba Baidyanath Jyotirlinga pilgrimage, ensuring safe, smooth, and reliable group travel.",
+
+    highlights: [
+      "Baba Baidyanath Jyotirlinga Pilgrimage Route",
+      "Comfortable & safe travel",
+      "Experienced drivers for highway journey",
+    ],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Deoghar?",
+        answer:
+          "It takes around 6.5 to 7 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Deoghar suitable for a same-day trip?",
+        answer:
+          "Yes, it can be covered in a day, but an overnight stay is recommended for a relaxed pilgrimage experience.",
+      },
+    ],
+
+    tollEstimate: 300,
   },
   {
-    id: "vns-nai",
+    id: "vns-ntl",
     slug: "varanasi-to-nainital-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Nainital",
-    distance: 750,
-    duration: "14 Hours",
+    distance: 900,
+    duration: "16 Hours",
     description:
-      "Group hill station trip to Nainital from Varanasi with experienced hill-driving experts.",
-    highlights: [
-      "Hilly terrain experts",
-      "Cooling comfort",
-      "Tourist friendly",
+      "Tempo traveller service from Varanasi to Nainital for hill station trips, family vacations, and group tours.",
+
+    highlights: ["Hill Station", "Lake View", "Cool Weather"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 15 to 16 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 900,
   },
   {
-    id: "vns-mus",
+    id: "vns-msr",
     slug: "varanasi-to-mussoorie-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Mussoorie",
-    distance: 900,
-    duration: "17 Hours",
-    description:
-      "Explore the Queen of Hills with your group in a comfortable tempo traveller from Varanasi.",
-    highlights: [
-      "Group tour special",
-      "Clean vehicles",
-      "Reliable mountain transport",
-    ],
-    faqs: [],
-  },
-  {
-    id: "vns-sml",
-    slug: "varanasi-to-shimla-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Shimla",
-    distance: 1100,
-    duration: "20 Hours",
-    description:
-      "Long distance group travel to Shimla from Varanasi by premium tempo traveller.",
-    highlights: [
-      "Safe for long trips",
-      "AC comfort",
-      "Expert mountain drivers",
-    ],
-    faqs: [],
-  },
-  {
-    id: "vns-man",
-    slug: "varanasi-to-manali-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Manali",
-    distance: 1350,
-    duration: "24 Hours",
-    description:
-      "Ultimate road trip from Varanasi to Manali for large groups and friend circles.",
-    highlights: [
-      "Premium tempo traveller",
-      "Multiple stops planned",
-      "All-inclusive pricing",
-    ],
-    faqs: [],
-  },
-  {
-    id: "vns-cha-dham",
-    slug: "varanasi-to-char-dham-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Char Dham",
-    distance: 900,
-    duration: "18 Hours",
-    description:
-      "Holy Char Dham Yatra group packages from Varanasi by verified tempo travellers.",
-    highlights: [
-      "Yatra specialists",
-      "Verified vehicles",
-      "Pilgrimage support",
-    ],
-    faqs: [],
-  },
-  {
-    id: "vns-hdw",
-    slug: "varanasi-to-haridwar-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Haridwar",
     distance: 850,
     duration: "15 Hours",
     description:
-      "Reliable tempo traveller service for group Snan in Harki Pauri from Varanasi.",
-    highlights: ["Express highway", "Group friendly", "24/7 support"],
-    faqs: [],
+      "Comfortable tempo traveller service from Varanasi to Mussoorie for hill station vacations and group trips.",
+
+    highlights: ["Queen of Hills", "Scenic Views", "Cool Climate"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 14 to 15 hours.",
+      },
+    ],
+
+    tollEstimate: 850,
   },
   {
-    id: "vns-rsk",
+    id: "vns-shm",
+    slug: "varanasi-to-shimla-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Shimla",
+    distance: 1000,
+    duration: "18 Hours",
+    description:
+      "Comfortable tempo traveller service from Varanasi to Shimla for hill station vacations and group tours.",
+
+    highlights: ["Hill Station", "Snow Views", "Scenic Drive"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 17 to 18 hours.",
+      },
+    ],
+
+    tollEstimate: 1000,
+  },
+  {
+    id: "vns-mnl",
+    slug: "varanasi-to-manali-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Manali",
+    distance: 1200,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller service from Varanasi to Manali for snow trips, honeymoon travel, and adventure tours.",
+
+    highlights: ["Snow Destination", "Adventure Hub", "Long Drive"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 20 to 22 hours.",
+      },
+    ],
+
+    tollEstimate: 1200,
+  },
+  {
+    id: "vns-chdham",
+    slug: "varanasi-to-char-dham-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Char Dham",
+    distance: 1500,
+    duration: "10-12 Days",
+    description:
+      "Complete Char Dham Yatra tempo traveller package from Varanasi covering Yamunotri, Gangotri, Kedarnath, and Badrinath.",
+
+    highlights: ["Spiritual Yatra", "All 4 Dhams", "Group Package"],
+
+    faqs: [
+      {
+        question: "How many days required?",
+        answer: "10 to 12 days for full Char Dham Yatra.",
+      },
+    ],
+
+    tollEstimate: 1500,
+  },
+  {
+    id: "vns-hrd",
+    slug: "varanasi-to-haridwar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Haridwar",
+    distance: 820,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller service from Varanasi to Haridwar for Ganga darshan and pilgrimage trips.",
+
+    highlights: ["Pilgrimage Route", "Ganga Aarti", "Long Journey"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 14 hours.",
+      },
+    ],
+
+    tollEstimate: 800,
+  },
+  {
+    id: "vns-rsh",
     slug: "varanasi-to-rishikesh-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Rishikesh",
-    distance: 870,
-    duration: "15.5 Hours",
+    distance: 830,
+    duration: "14-15 Hours",
     description:
-      "Tempo traveller for adventure or spiritual group trips to Rishikesh from Varanasi.",
-    highlights: [
-      "Adventure group special",
-      "Safe driving",
-      "Flexible drop points",
+      "Comfortable tempo traveller service from Varanasi to Rishikesh for yoga retreats, adventure trips, and spiritual journeys.",
+
+    highlights: ["Yoga Capital", "Adventure Hub", "Ganga River Views"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 14 to 15 hours depending on traffic and stops.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 800,
   },
   {
     id: "vns-del",
@@ -711,15 +1365,20 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Delhi",
     distance: 820,
-    duration: "14 Hours",
+    duration: "12-14 Hours",
     description:
-      "Comfortable interstate tempo traveller service to the capital city for group travel.",
-    highlights: [
-      "Yamuna Expressway route",
-      "Doorstep drop",
-      "Corporate friendly",
+      "Long-distance tempo traveller service from Varanasi to Delhi for group travel, corporate trips, and family journeys.",
+
+    highlights: ["Long Route", "Highway Drive", "Overnight Travel"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 12 to 14 hours depending on route and stops.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 800,
   },
   {
     id: "vns-sar",
@@ -730,48 +1389,81 @@ export const ROUTES: TaxiRoute[] = [
     duration: "0.5 Hours",
     description:
       "Local group sightseeing to the historical Buddhist site of Sarnath from Varanasi.",
+
     highlights: ["Half-day packages", "Local guide drivers", "Quick transit"],
-    faqs: [],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Sarnath?",
+        answer: "It takes around 30 minutes depending on traffic conditions.",
+      },
+      {
+        question: "Can Sarnath be covered in a half-day trip?",
+        answer:
+          "Yes, Sarnath is ideal for a half-day sightseeing trip from Varanasi.",
+      },
+    ],
+
+    tollEstimate: 50,
   },
   {
-    id: "vns-son",
+    id: "vns-sbd",
     slug: "varanasi-to-sonbhadra-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Sonbhadra",
-    distance: 95,
-    duration: "2.5 Hours",
+    distance: 110,
+    duration: "3 Hours",
     description:
-      "Tempo traveller for group trips to the industrial and natural sites of Sonbhadra.",
-    highlights: ["Local expertise", "Sturdy vehicles", "Fixed rates"],
-    faqs: [],
+      "Comfortable tempo traveller service from Varanasi to Sonbhadra for nature trips, industrial visits, and group travel.",
+
+    highlights: ["Hill Area Route", "Scenic Travel", "Group Friendly"],
+
+    faqs: [
+      {
+        question: "How long does it take?",
+        answer: "Around 3 hours depending on road conditions.",
+      },
+    ],
+
+    tollEstimate: 120,
   },
   {
-    id: "vns-dos",
+    id: "vns-deh",
     slug: "varanasi-to-dehri-on-sone-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Dehri-on-Sone",
-    distance: 140,
-    duration: "3 Hours",
+    distance: 180,
+    duration: "4 Hours",
     description:
-      "Direct tempo traveller service for group travel to Dehri-on-Sone from Varanasi.",
-    highlights: ["GT Road experts", "Punctual service", "Reliable cars"],
+      "Comfortable tempo traveller service from Varanasi to Dehri-on-Sone for smooth group travel across Bihar.",
+
+    highlights: [
+      "Comfortable journey",
+      "Affordable group travel",
+      "Experienced drivers",
+    ],
+
     faqs: [],
+    tollEstimate: 150,
   },
   {
-    id: "vns-nam",
+    id: "vns-nai",
     slug: "varanasi-to-naimisharanya-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Naimisharanya",
-    distance: 400,
-    duration: "8 Hours",
+    distance: 450,
+    duration: "9 Hours",
     description:
-      "Spiritual group travel to the holy site of Naimisharanya from Varanasi.",
+      "Group pilgrimage from Varanasi to Naimisharanya, a sacred forest known for Hindu mythology.",
+
     highlights: [
-      "Safe pilgrimage",
-      "Experienced drivers",
-      "Fixed group pricing",
+      "Spiritual destination",
+      "Mythological significance",
+      "Comfortable travel",
     ],
+
     faqs: [],
+    tollEstimate: 350,
   },
   {
     id: "vns-shr",
@@ -782,83 +1474,126 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description:
       "Tempo traveller for Buddhist circuit pilgrimage from Varanasi to Shravasti.",
+
     highlights: ["Pilgrim special", "Reliable transport", "Clean vehicles"],
-    faqs: [],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Shravasti?",
+        answer:
+          "It takes around 8 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Shravasti a Buddhist pilgrimage site?",
+        answer:
+          "Yes, Shravasti is one of the major Buddhist pilgrimage destinations where Lord Buddha spent many years.",
+      },
+    ],
+
+    tollEstimate: 300,
   },
   {
     id: "vns-lum",
     slug: "varanasi-to-lumbini-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Lumbini",
-    distance: 320,
-    duration: "8 Hours",
+    distance: 300,
+    duration: "6-7 Hours",
     description:
-      "Interstate and international border crossing group tempo traveller to Lumbini.",
+      "International pilgrimage trip from Varanasi to Lumbini, the birthplace of Lord Buddha in Nepal.",
+
     highlights: [
-      "Border crossing help",
-      "Group tour special",
-      "Safe and sturdy",
+      "International travel",
+      "Buddhist pilgrimage",
+      "Passport required",
     ],
+
     faqs: [],
+    tollEstimate: 600,
   },
   {
     id: "vns-kol",
     slug: "varanasi-to-kolkata-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Kolkata",
-    distance: 680,
-    duration: "13 Hours",
+    distance: 700,
+    duration: "12 Hours",
     description:
-      "Long distance group travel to the City of Joy from Varanasi by tempo traveller.",
-    highlights: [
-      "GT Road specialists",
-      "AC comfort",
-      "Professional long-trip drivers",
+      "Tempo traveller service from Varanasi to Kolkata for business, tourism, and long-distance travel.",
+
+    highlights: ["Metro City", "Cultural Hub", "Long Drive"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 11 to 12 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 700,
   },
   {
-    id: "vns-jai",
+    id: "vns-jpr",
     slug: "varanasi-to-jaipur-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Jaipur",
-    distance: 950,
-    duration: "16 Hours",
+    distance: 900,
+    duration: "15-16 Hours",
     description:
-      "Explore the Pink City with your group in our premium tempo traveller from Varanasi.",
-    highlights: [
-      "Tourist hub experts",
-      "Multi-day rental",
-      "Comfortable seating",
+      "Tempo traveller service from Varanasi to Jaipur for tourism, weddings, and royal Rajasthan trips.",
+
+    highlights: ["Pink City", "Heritage Travel", "Long Drive"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 15 to 16 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 900,
   },
   {
     id: "vns-mat",
     slug: "varanasi-to-mathura-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Mathura",
-    distance: 650,
-    duration: "11 Hours",
+    distance: 600,
+    duration: "10-11 Hours",
     description:
-      "Group pilgrimage to the land of Krishna from Varanasi by reliable tempo traveller.",
+      "Comfortable tempo traveller service from Varanasi to Mathura, the sacred birthplace of Lord Krishna, ideal for family and group pilgrimage.",
+
     highlights: [
-      "Temple circuit special",
-      "Hassle-free booking",
-      "Reliable drivers",
+      "Krishna Janmabhoomi pilgrimage",
+      "Comfortable long-distance travel",
+      "Experienced drivers",
     ],
-    faqs: [],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Mathura?",
+        answer:
+          "It takes around 10 to 11 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Mathura suitable for a one-day trip?",
+        answer:
+          "Mathura can be covered in a day, but an overnight stay is recommended for a relaxed darshan.",
+      },
+    ],
+
+    tollEstimate: 700,
   },
   {
     id: "vns-khj",
     slug: "varanasi-to-khajuraho-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Khajuraho",
-    distance: 400,
+    distance: 420,
     duration: "9 Hours",
     description:
-      "Discover the heritage of Khajuraho with our group tempo traveller service.",
-    highlights: ["UNESCO site tour", "Comfortable ride", "Experienced drivers"],
+      "Comfortable tempo traveller service from Varanasi to Khajuraho for temple visits and heritage tours.",
+    highlights: ["Heritage tour", "UNESCO site visit", "Comfortable travel"],
     faqs: [],
   },
   {
@@ -866,11 +1601,11 @@ export const ROUTES: TaxiRoute[] = [
     slug: "varanasi-to-orchha-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Orchha",
-    distance: 550,
-    duration: "11 Hours",
+    distance: 480,
+    duration: "10 Hours",
     description:
-      "Heritage group travel to the historical town of Orchha from Varanasi.",
-    highlights: ["Safe travel", "Reliable vehicles", "Fixed fare"],
+      "Tempo traveller service from Varanasi to Orchha for exploring historical forts and temples.",
+    highlights: ["Heritage destination", "Peaceful travel", "Comfort ride"],
     faqs: [],
   },
   {
@@ -878,11 +1613,11 @@ export const ROUTES: TaxiRoute[] = [
     slug: "varanasi-to-amarkantak-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Amarkantak",
-    distance: 450,
-    duration: "10 Hours",
+    distance: 550,
+    duration: "12 Hours",
     description:
-      "Tempo traveller for group trips to the source of Narmada, Amarkantak from Varanasi.",
-    highlights: ["Hill driving experts", "Group friendly", "Safe journey"],
+      "Group travel from Varanasi to Amarkantak, the origin of rivers Narmada and Sone.",
+    highlights: ["Spiritual destination", "Nature trip", "Group travel"],
     faqs: [],
   },
   {
@@ -890,119 +1625,124 @@ export const ROUTES: TaxiRoute[] = [
     slug: "varanasi-to-auli-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Auli",
-    distance: 950,
-    duration: "20 Hours",
+    distance: 900,
+    duration: "16-18 Hours",
     description:
-      "Experience the snow peaks of Auli with our experienced mountain group drivers.",
-    highlights: [
-      "Snow mountain experts",
-      "Premium vehicles",
-      "Safe mountain driving",
+      "Tempo traveller service from Varanasi to Auli for snow trips, skiing, and scenic Himalayan travel.",
+
+    highlights: ["Snow Destination", "Skiing Spot", "Mountain Views"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 16 to 18 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 900,
   },
   {
     id: "vns-rnk",
     slug: "varanasi-to-ranikhet-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Ranikhet",
-    distance: 850,
-    duration: "17 Hours",
+    distance: 800,
+    duration: "16 Hours",
     description:
-      "Leisure group trip to Ranikhet from Varanasi by comfortable tempo traveller.",
-    highlights: ["Hill station special", "Cooling comfort", "Trusted drivers"],
+      "Tempo traveller service from Varanasi to Ranikhet for a peaceful hill station trip.",
+    highlights: ["Hill station", "Scenic journey", "Relaxing trip"],
     faqs: [],
   },
   {
-    id: "vns-kau",
+    id: "vns-kus",
     slug: "varanasi-to-kausani-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Kausani",
-    distance: 870,
-    duration: "18 Hours",
-    description:
-      "Explore the Switzerland of India, Kausani with your group from Varanasi.",
-    highlights: [
-      "Scenic route experts",
-      "Reliable tempo travellers",
-      "Professional service",
-    ],
+    distance: 780,
+    duration: "15 Hours",
+    description: "Travel from Varanasi to Kausani with scenic Himalayan views.",
+    highlights: ["Himalayan views", "Nature trip", "Comfort travel"],
     faqs: [],
   },
   {
-    id: "vns-uda",
+    id: "vns-udp",
     slug: "varanasi-to-udaipur-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Udaipur",
-    distance: 1150,
+    distance: 1200,
     duration: "20 Hours",
     description:
-      "Group trip to the City of Lakes, Udaipur from Varanasi by premium tempo traveller.",
-    highlights: [
-      "Luxury travel",
-      "Long distance reliability",
-      "Verified drivers",
+      "Tempo traveller service from Varanasi to Udaipur for luxury trips, weddings, and tourism.",
+
+    highlights: ["Lake City", "Luxury Travel", "Destination Weddings"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 20 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 1200,
   },
   {
-    id: "vns-mab",
+    id: "vns-mta",
     slug: "varanasi-to-mount-abu-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Mount Abu",
-    distance: 1300,
+    distance: 1250,
     duration: "22 Hours",
     description:
-      "Cool off in the hill station of Rajasthan with a group trip from Varanasi.",
-    highlights: [
-      "Hill-driving experts",
-      "Safe for long trips",
-      "All-inclusive prices",
-    ],
+      "Long-distance tempo traveller service from Varanasi to Mount Abu hill station.",
+    highlights: ["Pan-India travel", "AC comfort", "Hill station"],
     faqs: [],
   },
   {
-    id: "vns-jod",
+    id: "vns-jdp",
     slug: "varanasi-to-jodhpur-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Jodhpur",
-    distance: 1150,
-    duration: "20 Hours",
+    distance: 1100,
+    duration: "19 Hours",
     description:
-      "Direct group tempo traveller service to the Blue City, Jodhpur from Varanasi.",
-    highlights: [
-      "Safe interstate travel",
-      "Reliable vehicles",
-      "Corporate and family trips",
+      "Tempo traveller service from Varanasi to Jodhpur for desert tourism and heritage travel.",
+
+    highlights: ["Blue City", "Fort Views", "Desert Travel"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 18 to 19 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 1100,
   },
   {
-    id: "vns-jsl",
+    id: "vns-jai",
     slug: "varanasi-to-jaisalmer-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Jaisalmer",
     distance: 1400,
     duration: "24 Hours",
     description:
-      "Long haul group adventure to the Golden City, Jaisalmer from Varanasi.",
-    highlights: [
-      "Desert safari support",
-      "Large groups special",
-      "Verified drivers",
-    ],
+      "Adventure and desert trip from Varanasi to Jaisalmer, the golden city of Rajasthan.",
+
+    highlights: ["Desert safari", "Cultural trip", "Group travel"],
+
     faqs: [],
+    tollEstimate: 1500,
   },
   {
     id: "vns-net",
     slug: "varanasi-to-netarhat-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Netarhat",
-    distance: 250,
-    duration: "6 Hours",
+    distance: 420,
+    duration: "9 Hours",
     description:
-      "Scenic group trip to the Queen of Chotanagpur, Netarhat from Varanasi.",
-    highlights: ["Hill driving special", "Group friendly", "Best rates"],
+      "Tempo traveller service from Varanasi to Netarhat, known for its sunrise and sunset points.",
+    highlights: ["Hill station", "Sunrise views", "Nature trip"],
     faqs: [],
   },
   {
@@ -1010,11 +1750,11 @@ export const ROUTES: TaxiRoute[] = [
     slug: "varanasi-to-giridih-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Giridih",
-    distance: 320,
+    distance: 300,
     duration: "7 Hours",
     description:
-      "Reliable group transport between Varanasi and Giridih for all occasions.",
-    highlights: ["Punctual arrivals", "Clean vehicles", "Fixed fare"],
+      "Tempo traveller service from Varanasi to Giridih for business and pilgrimage travel.",
+    highlights: ["Affordable travel", "Reliable service", "Comfort"],
     faqs: [],
   },
   {
@@ -1022,87 +1762,101 @@ export const ROUTES: TaxiRoute[] = [
     slug: "varanasi-to-parasnath-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Parasnath",
-    distance: 300,
+    distance: 320,
     duration: "7 Hours",
     description:
-      "Tempo traveller for Jain pilgrimage group trips to Sammed Shikharji, Parasnath.",
-    highlights: [
-      "Pilgrim specialists",
-      "Verified vehicles",
-      "Safe night driving",
-    ],
+      "Pilgrimage travel from Varanasi to Parasnath Hills for Jain धार्मिक यात्रा.",
+    highlights: ["Jain pilgrimage", "Peaceful journey", "Safe travel"],
     faqs: [],
   },
   {
-    id: "vns-ran",
+    id: "vns-rnc",
     slug: "varanasi-to-ranchi-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Ranchi",
-    distance: 420,
-    duration: "9 Hours",
+    distance: 450,
+    duration: "8 Hours",
     description:
-      "Direct group tempo traveller service between Varanasi and Ranchi.",
-    highlights: [
-      "Interstate experts",
-      "Verified drivers",
-      "Hassle-free booking",
+      "Tempo traveller service from Varanasi to Ranchi for tourism and business travel.",
+
+    highlights: ["Waterfalls", "Nature", "Short Trip"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 7 to 8 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 400,
   },
   {
-    id: "vns-sdi",
+    id: "vns-shi",
     slug: "varanasi-to-shirdi-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Shirdi",
-    distance: 1300,
-    duration: "24 Hours",
+    distance: 1350,
+    duration: "22-24 Hours",
     description:
-      "Kashi to Shirdi Sai Baba Darshan group pilgrimage by premium tempo traveller.",
-    highlights: [
-      "Long distance specialists",
-      "Safe and comfortable",
-      "Multi-day packages",
-    ],
+      "Long-distance pilgrimage trip from Varanasi to Shirdi for Sai Baba darshan.",
+
+    highlights: ["Sai Baba temple", "Pan-India travel", "Multi-day trip"],
+
     faqs: [],
+    tollEstimate: 1200,
   },
   {
-    id: "vns-dwa",
+    id: "vns-dwk",
     slug: "varanasi-to-dwarka-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Dwarka",
-    distance: 1750,
-    duration: "30 Hours",
+    distance: 1700,
+    duration: "28 Hours",
     description:
-      "Epic pan-India group journey to Dwarka from Varanasi by reliable tempo traveller.",
-    highlights: ["Longest trip experts", "Premium comfort", "Experienced crew"],
-    faqs: [],
+      "Tempo traveller service from Varanasi to Dwarka for Krishna pilgrimage and long-distance travel.",
+
+    highlights: ["Jyotirlinga Route", "Krishna Dham", "Long Pilgrimage"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 28 hours.",
+      },
+    ],
+
+    tollEstimate: 1700,
   },
   {
-    id: "vns-som-guj",
+    id: "vns-smn",
     slug: "varanasi-to-somnath-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Somnath",
-    distance: 1800,
-    duration: "32 Hours",
+    distance: 1600,
+    duration: "26 Hours",
     description:
-      "Holy Jyotirlinga circuit group travel from Kashi to Somnath by tempo traveller.",
-    highlights: [
-      "Jyotirlinga special",
-      "Reliable support",
-      "All-inclusive pricing",
+      "Tempo traveller service from Varanasi to Somnath for Jyotirlinga darshan and long pilgrimage journeys.",
+
+    highlights: ["Jyotirlinga", "Sea Temple", "Religious Tour"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 25 to 26 hours.",
+      },
     ],
-    faqs: [],
+
+    tollEstimate: 1600,
   },
   {
-    id: "vns-kta",
+    id: "vns-kot",
     slug: "varanasi-to-kota-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Kota",
-    distance: 900,
-    duration: "16 Hours",
+    distance: 850,
+    duration: "15 Hours",
     description:
-      "Reliable tempo traveller service to the coaching hub of Kota from Varanasi for groups.",
-    highlights: ["Safe for students", "Direct route", "Verified vehicles"],
+      "Comfortable tempo traveller service from Varanasi to Kota for long-distance group travel.",
+    highlights: ["Long-distance", "AC comfort", "Safe journey"],
     faqs: [],
   },
   {
@@ -1111,11 +1865,30 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Noida",
     distance: 800,
-    duration: "13.5 Hours",
+    duration: "13-14 Hours",
     description:
-      "Professional group travel service to Noida/NCR from Varanasi by tempo traveller.",
-    highlights: ["Expressway route", "Doorstep pickup", "Comfortable seating"],
-    faqs: [],
+      "Reliable tempo traveller service from Varanasi to Noida for group travel, corporate trips, airport transfers, and NCR visits with comfortable seating and professional drivers.",
+
+    highlights: [
+      "Expressway Route",
+      "Direct NCR Connectivity",
+      "Overnight Travel Available",
+    ],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Noida?",
+        answer:
+          "It takes around 13 to 14 hours depending on traffic and expressway conditions.",
+      },
+      {
+        question: "Is overnight travel recommended?",
+        answer:
+          "Yes, overnight travel is ideal to avoid city traffic and reach Noida early morning.",
+      },
+    ],
+
+    tollEstimate: 900,
   },
   {
     id: "vns-ind",
@@ -1123,15 +1896,30 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Indore",
     distance: 1000,
-    duration: "18 Hours",
+    duration: "17-18 Hours",
     description:
-      "Group travel from Varanasi to the cleanest city of India, Indore by tempo traveller.",
+      "Comfortable tempo traveller service from Varanasi to Indore for group travel, Mahakal darshan trips, and long-distance journeys with AC vehicles and experienced drivers.",
+
     highlights: [
-      "Mahakaal circuit special",
-      "Safe long trips",
-      "Professional drivers",
+      "Mahakal Circuit Route",
+      "Comfortable Long-Distance Travel",
+      "Overnight Journey Available",
     ],
-    faqs: [],
+
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Indore?",
+        answer:
+          "It takes around 17 to 18 hours depending on traffic, road conditions, and stopovers.",
+      },
+      {
+        question: "Is this route suitable for overnight travel?",
+        answer:
+          "Yes, overnight travel is recommended for this long-distance route to save time and reach early.",
+      },
+    ],
+
+    tollEstimate: 900,
   },
   {
     id: "vns-bho",
@@ -1139,11 +1927,28 @@ export const ROUTES: TaxiRoute[] = [
     origin: "Varanasi",
     destination: "Bhopal",
     distance: 800,
-    duration: "15 Hours",
+    duration: "14-15 Hours",
     description:
-      "Direct group tempo traveller service from Varanasi to the capital of MP, Bhopal.",
-    highlights: ["Safe journey", "Reliable vehicles", "Clean seating"],
-    faqs: [],
+      "Comfortable tempo traveller service from Varanasi to Bhopal for group travel, business trips, and tourism. Ideal for long-distance journeys with AC vehicles and experienced drivers.",
+
+    highlights: [
+      "Direct Highway Route",
+      "Comfortable Long-Distance Travel",
+      "Same Day Overnight Journey Option",
+    ],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Bhopal?",
+        answer:
+          "It usually takes around 14 to 15 hours depending on traffic, road conditions, and stopovers.",
+      },
+      {
+        question: "Is overnight travel possible?",
+        answer:
+          "Yes, overnight travel is the best option for this route to save time and reach early morning.",
+      },
+    ],
+    tollEstimate: 700,
   },
   {
     id: "lko-vns",
@@ -2756,15 +3561,25 @@ export const ROUTES: TaxiRoute[] = [
     faqs: [],
   },
   {
-    id: "ayu-ckt",
-    slug: "ayodhya-to-chitrakoot-tempo-traveller-fare",
-    origin: "Ayodhya",
+    id: "vns-ctk",
+    slug: "varanasi-to-chitrakoot-tempo-traveller-fare",
+    origin: "Varanasi",
     destination: "Chitrakoot",
-    distance: 260,
+    distance: 270,
     duration: "6 Hours",
-    description: "Spiritual travel from Ayodhya to Chitrakoot.",
-    highlights: ["Pilgrim route", "Comfort", "Safe"],
-    faqs: [],
+    description:
+      "Tempo traveller service from Varanasi to Chitrakoot for spiritual and Ramayana circuit travel.",
+
+    highlights: ["Religious Circuit", "Scenic Route", "Comfort Travel"],
+
+    faqs: [
+      {
+        question: "Travel time?",
+        answer: "Around 6 hours.",
+      },
+    ],
+
+    tollEstimate: 300,
   },
   {
     id: "ayu-alg",
@@ -2989,6 +3804,11 @@ export const ROUTES: TaxiRoute[] = [
   },
 ].map((route) => ({
   ...route,
+  mapEmbedUrl:
+    (route as any).mapEmbedUrl ||
+    `https://www.google.com/maps?q=${encodeURIComponent(route.origin)}+to+${encodeURIComponent(
+      route.destination,
+    )}&output=embed`,
   faqs:
     route.faqs && route.faqs.length >= 10
       ? route.faqs
@@ -3002,6 +3822,8 @@ export const ROUTES: TaxiRoute[] = [
           ),
         ].slice(0, 10),
 }));
+
+ROUTES.forEach(addMediaToRoute);
 
 export const calculateFare = (distance: number, rate: number) => {
   const base = distance * 2 * rate;
