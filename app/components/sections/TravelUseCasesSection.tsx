@@ -58,7 +58,7 @@ export function TravelUseCasesSection({ route }: { route: TaxiRoute }) {
 
         {/* Use Cases Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {values.map((useCase: any, index) => {
+          {values.map((useCase: { type?: string; title: string; description: string; features?: string[]; recommendedSeater?: string }, index) => {
             const Icon =
               iconMap[useCase.type as keyof typeof iconMap] || iconMap.default;
 

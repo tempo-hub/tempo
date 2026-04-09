@@ -6,8 +6,12 @@ import Link from "next/link";
 type Blog = {
   id: string;
   title: string;
-  createdAt: string;
+  slug: string;
+  description: string;
+  keywords: string[];
+  hashtags: string[];
   content: string;
+  createdAt: string;
   image?: string;
 };
 
@@ -37,22 +41,37 @@ export default function BlogsPage() {
       {/* Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {blogs.map((blog) => (
-          <Link key={blog.id} href={`/blogs/${blog.id}`}>
-            <div className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer">
+          <Link key={blog.id} href={`/blogs/${blog.slug}`}>
+            <div className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer bg-white">
               {/* Image */}
               <img
                 src={blog.image || "/default.jpg"}
                 className="h-60 w-full object-cover group-hover:scale-110 transition duration-500"
               />
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-
               {/* Content */}
-              <div className="absolute bottom-0 p-5 text-white">
-                <h2 className="text-lg font-bold line-clamp-2">{blog.title}</h2>
+              <div className="p-4">
+                {/* Title */}
+                <h2 className="text-lg font-bold text-slate-800 line-clamp-2">
+                  {blog.title}
+                </h2>
 
-                <p className="text-xs mt-2 text-gray-300">
+                {/* Slug (URL) */}
+                <Link
+                  href={`${blog.slug}`}
+                  target="_blank"
+                  className="text-xs text-primary mb-2"
+                >
+                  {blog.slug}
+                </Link>
+
+                {/* Description */}
+                <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                  {blog.description}
+                </p>
+
+                {/* Date */}
+                <p className="text-xs mt-3 text-gray-400">
                   {new Date(blog.createdAt).toDateString()}
                 </p>
               </div>

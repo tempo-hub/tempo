@@ -54,7 +54,6 @@ export default async function Page({
 
   return (
     <FarePageClient
-      params={{ slug }}
       route={route}
       fare={fare}
       selectedVehicle={selectedVehicle}

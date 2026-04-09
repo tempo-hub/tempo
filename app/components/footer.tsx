@@ -100,6 +100,14 @@ export const Footer = () => {
                   Refund & Cancellation
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/blogs"
+                  className="hover:text-white transition-colors"
+                >
+                  Blogs
+                </Link>
+              </li>
             </ul>
           </div>
 

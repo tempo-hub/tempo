@@ -122,7 +122,7 @@ export function PricingSection({ route, fare, ratePerKm }: Props) {
           <div className="px-6 py-4 bg-gradient-to-r from-emerald-600 to-emerald-700">
             <h3 className="text-white font-semibold flex items-center gap-2">
               <CheckCircle2 className="w-5 h-5" />
-              What's Included
+              What&apos;s Included
             </h3>
           </div>
 

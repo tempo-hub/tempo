@@ -19,7 +19,7 @@ export interface TaxiRoute {
   distance: number;
   duration: string;
   description: string;
-  routeImage: string;
+  routeImage?: string;
   highlights: string[];
   faqs: { question: string; answer: string }[];
   tollEstimate?: number;
@@ -36,14 +36,14 @@ export interface TaxiRoute {
     keyAttractions?: {
       title: string;
       items: string[];
-      bgColor: string;
-      textColor: string;
+      bgColor?: string;
+      textColor?: string;
     };
     significance?: {
       title: string;
       items: string[];
-      bgColor: string;
-      textColor: string;
+      bgColor?: string;
+      textColor?: string;
     };
     bestTimeToVisit?: string;
     idealDuration?: string;
@@ -249,8 +249,8 @@ function addMediaToRoute(route: TaxiRoute) {
 }
 
 export function getSmartRelatedDestinations(
-  currentRoute: any,
-  allRoutes: any[],
+  currentRoute: TaxiRoute,
+  allRoutes: TaxiRoute[],
   maxResults: number = 4
 ) {
   const currentDistance = currentRoute.distance;
@@ -3805,7 +3805,6 @@ export const ROUTES: TaxiRoute[] = [
 ].map((route) => ({
   ...route,
   mapEmbedUrl:
-    (route as any).mapEmbedUrl ||
     `https://www.google.com/maps?q=${encodeURIComponent(route.origin)}+to+${encodeURIComponent(
       route.destination,
     )}&output=embed`,

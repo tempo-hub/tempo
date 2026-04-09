@@ -20,6 +20,7 @@ export default function AdminDashboard() {
       bgColor: "bg-blue-50 dark:bg-blue-950/30",
       iconColor: "text-blue-600 dark:text-blue-400",
       trend: "up",
+      change: "+0%",
     },
   ];
 
@@ -32,7 +33,7 @@ export default function AdminDashboard() {
             Dashboard Overview
           </h2>
           <p className="text-slate-500 dark:text-slate-400 mt-1">
-            Welcome back! Here's what's happening with your content today.
+            Welcome back! Here&apos;s what&apos;s happening with your content today.
           </p>
         </div>
       </div>

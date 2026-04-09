@@ -44,7 +44,6 @@ interface VehicleType {
 }
 
 interface FarePageClientProps {
-  params: { slug: string };
   route: RouteType;
   fare: number;
   selectedVehicle: VehicleType;
@@ -131,7 +130,6 @@ function StructuredData({ route, fare }: { route: RouteType; fare: number }) {
 
 // Main Page Component - Client Component
 export default function FarePageClient({
-  params,
   route,
   fare,
   selectedVehicle,

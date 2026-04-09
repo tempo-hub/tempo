@@ -1,4 +1,26 @@
-export const CITY_GUIDES: Record<string, any> = {
+interface CityGuide {
+  overview: string;
+  detailedDescription: string;
+  keyAttractions: {
+    title: string;
+    items: string[];
+    bgColor?: string;
+    textColor?: string;
+  };
+  significance: {
+    title: string;
+    items: string[];
+    bgColor?: string;
+    textColor?: string;
+  };
+  bestTimeToVisit: string;
+  idealDuration: string;
+  localFood: string[];
+  festivals: string[];
+  travelTips: string[];
+}
+
+export const CITY_GUIDES: Record<string, CityGuide> = {
   Ayodhya: {
     overview:
       "Ayodhya, the birthplace of Lord Ram, is one of the most sacred cities in Hinduism. Situated on the banks of the holy River Saryu, this ancient city holds immense spiritual significance as the capital of the Kosala Kingdom mentioned in the Ramayana.",
