@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, use } from "react";
 
 interface Blog {
   id: string;
@@ -10,15 +10,16 @@ interface Blog {
   image?: string;
 }
 
-export default function BlogDetails({ params }: { params: { id: string } }) {
+export default function BlogDetails({ params }: { params: Promise<{ id: string }> }) {
+  const unwrappedParams = use(params);
   const [blog, setBlog] = useState<Blog | null>(null);
 
   useEffect(() => {
     const stored = (JSON.parse(localStorage.getItem("blogs") || "[]") ||
       []) as Blog[];
-    const found = stored.find((b) => b.id === params.id);
+    const found = stored.find((b) => b.id === unwrappedParams.id);
     setBlog(found || null);
-  }, [params.id]);
+  }, [unwrappedParams.id]);
 
   if (!blog) {
     return <p className="p-6">Blog not found</p>;
