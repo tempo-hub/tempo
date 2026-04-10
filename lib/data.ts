@@ -386,7 +386,7 @@ export function getRouteGuide(
     distance: `${distance} km`,
     travelTime: estimateTravelTime(distance),
     roadCondition: getRoadCondition(distance),
-    stopovers: getStopovers(origin, destination),
+    stopovers: getStopovers(),
     proTip: getProTip(origin, destination),
     highwayName: highwayName || "State/Express Highway",
     nightTravelSafe: distance < 300, // simple logic
