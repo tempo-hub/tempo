@@ -173,6 +173,8 @@ function RouteCard({ route }: { route: TaxiRoute }) {
       <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity translate-x-2 group-hover:translate-x-0 transition-transform">
         <ArrowRight className="w-5 h-5 text-primary" />
       </div>
+
+      
       <div className="space-y-2">
         <div className="flex items-center gap-2 mb-1">
           <span className="p-1 px-2 bg-slate-50 rounded text-[9px] font-black text-slate-400 uppercase tracking-widest">

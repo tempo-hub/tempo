@@ -97,6 +97,7 @@ export function PricingSection({ route, fare, ratePerKm }: Props) {
                 <div className="text-sm text-blue-800 font-medium mb-2">
                   Calculation Method
                 </div>
+
                 <div className="text-2xl font-bold text-blue-900">
                   {route.distance} km × ₹{ratePerKm}/km
                 </div>
