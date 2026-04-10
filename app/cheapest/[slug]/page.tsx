@@ -1,6 +1,10 @@
 import { notFound } from "next/navigation";
 import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
 import FarePageClient from "./FarePageClient";
+import {
+  generateCheapestSlug,
+  generateCheapestRoute,
+} from "@/lib/cheapestRoutes";
 
 // SEO Metadata
 export async function generateMetadata({
@@ -43,18 +47,24 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const route = ROUTES.find((r) => r.slug === slug);
+  // const route = ROUTES.find((r) => r.slug === slug);
+  const route = ROUTES.find((route) => {
+    const routeSlug = generateCheapestSlug(route.origin, route.destination);
+    return routeSlug === slug;
+  });
 
   if (!route) {
     notFound();
   }
+
+  const data = generateCheapestRoute(route);
 
   const selectedVehicle = VEHICLES[0];
   const fare = calculateFare(route.distance, selectedVehicle.perKmRate);
 
   return (
     <FarePageClient
-      route={route}
+      route={data}
       fare={fare}
       selectedVehicle={selectedVehicle}
     />

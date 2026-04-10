@@ -9,7 +9,7 @@ type Props = {
 };
 
 export function RouteMediaSection({ route }: Props) {
-  const [selectedVehicle, setSelectedVehicle] = useState(VEHICLES[0]);
+  const [selectedVehicle] = useState(VEHICLES[0]);
   const fare = useMemo(() => {
     return calculateFare(route.distance, selectedVehicle.perKmRate);
   }, [route.distance, selectedVehicle]);

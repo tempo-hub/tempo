@@ -2,8 +2,16 @@
 
 import { useState, useMemo } from "react";
 import { ROUTES, calculateFare } from "@/lib/data";
-import { Search, Globe, ShieldCheck, TrendingDown, ArrowRight } from "lucide-react";
+import {
+  Search,
+  Globe,
+  ShieldCheck,
+  TrendingDown,
+  ArrowRight,
+  MapPin,
+} from "lucide-react";
 import { TaxiRoute } from "@/lib/data";
+import { generateCheapestSlug } from "@/lib/cheapestRoutes";
 
 export default function CheapestFaresClient() {
   const [search, setSearch] = useState("");
@@ -94,35 +102,58 @@ export default function CheapestFaresClient() {
       </section>
 
       {/* ROUTES SECTION */}
-      <main className="max-w-7xl mx-auto px-4 py-16 space-y-20">
+      <main className="max-w-7xl mx-auto px-4 py-20">
         {search ? (
           // SEARCH RESULT
-          <div>
-            <h2 className="text-2xl font-bold mb-6">
-              {filteredRoutes.length} Cheapest Routes Found
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {filteredRoutes.map((route) => (
-                <CheapestCard key={route.id} route={route} />
-              ))}
-            </div>
-          </div>
-        ) : (
-          // CITY-WISE CHEAPEST
-          cities.map((city) => (
-            <div key={city} className="space-y-6">
-              <h2 className="text-3xl font-black text-green-600">
-                🔥 Cheapest Tempo Traveller from {city}
+          <div className="space-y-8">
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-black text-secondary">
+                Found {filteredRoutes.length} Results for &quot;{search}
+                &quot;
               </h2>
-
-              <div className="grid md:grid-cols-3 gap-6">
-                {routesByCity[city].map((route) => (
+            </div>
+            {filteredRoutes.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredRoutes.map((route) => (
                   <CheapestCard key={route.id} route={route} />
                 ))}
               </div>
-            </div>
-          ))
+            ) : (
+              <div className="bg-white p-12 rounded-3xl text-center border-2 border-dashed border-slate-200">
+                <p className="text-slate-500 font-bold italic">
+                  No specific route found. Try searching for city names like
+                  &quot;Varanasi&quot; or &quot;Lucknow&quot;.
+                </p>
+              </div>
+            )}
+          </div>
+        ) : (
+          // CITY-WISE CHEAPEST
+          <div className="space-y-24">
+            {cities.map((city) => (
+              <div key={city} className="space-y-16">
+                {/* ================= NORMAL SECTION ================= */}
+                <div className="space-y-10">
+                  <div className="flex items-center gap-4">
+                    <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                      <MapPin className="text-primary w-8 h-8" />
+                      Cheapest Tempo Traveller from {city}
+                    </h2>
+                    <div className="h-px bg-slate-200 flex-1 mt-2" />
+                    <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                      {city.length} Active Routes
+                    </span>
+                  </div>
+
+                  <div className="grid md:grid-cols-3 gap-6">
+                    {routesByCity[city].map((route) => (
+                      <CheapestCard key={route.id} route={route} />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         )}
       </main>
     </div>
@@ -130,24 +161,20 @@ export default function CheapestFaresClient() {
 }
 
 function CheapestCard({ route }: { route: TaxiRoute & { fare: number } }) {
+  const slug = generateCheapestSlug(route.origin, route.destination);
+
   return (
     <a
-      href={`/cheapest/${route.slug}`}
-      className="group bg-white p-6 rounded-3xl border border-green-200 hover:border-green-400 transition-all duration-300 hover:shadow-2xl hover:shadow-green-500/5 relative overflow-hidden"
+      href={`/cheapest/${slug}`}
+      className="group bg-white p-6 rounded-3xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 relative overflow-hidden"
     >
-      {/* Cheapest Badge */}
-      <div className="absolute top-4 left-4">
-        <span className="text-[10px] bg-green-600 text-white px-2 py-1 rounded-full font-black tracking-wider">
-          CHEAPEST
-        </span>
-      </div>
-
       {/* Arrow Icon */}
-      <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity translate-x-2 group-hover:translate-x-0 transition-transform">
-        <ArrowRight className="w-5 h-5 text-green-600" />
+      <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all">
+        <ArrowRight className="w-5 h-5 text-primary" />
       </div>
 
-      <div className="space-y-2 mt-4">
+      <div className="space-y-2">
+        {/* Origin */}
         <div className="flex items-center gap-2 mb-1">
           <span className="p-1 px-2 bg-slate-50 rounded text-[9px] font-black text-slate-400 uppercase tracking-widest">
             {route.origin}
@@ -155,10 +182,12 @@ function CheapestCard({ route }: { route: TaxiRoute & { fare: number } }) {
           <ArrowRight className="w-2 h-2 text-slate-300" />
         </div>
 
-        <h3 className="text-2xl font-black text-green-700 tracking-tight">
+        {/* Destination */}
+        <h3 className="text-2xl font-black text-secondary tracking-tight group-hover:text-primary transition-colors">
           {route.destination}
         </h3>
 
+        {/* Bottom Section */}
         <div className="flex items-center gap-4 pt-4 border-t border-slate-50 mt-4">
           <div>
             <p className="text-[10px] uppercase font-bold text-slate-400 tracking-tighter">
@@ -172,10 +201,10 @@ function CheapestCard({ route }: { route: TaxiRoute & { fare: number } }) {
           <div className="h-8 w-px bg-slate-100" />
 
           <div className="ml-auto text-right">
-            <p className="text-[10px] uppercase font-bold text-green-600 tracking-tighter italic">
+            <p className="text-[10px] uppercase font-bold text-primary tracking-tighter italic">
               Cheapest Fare
             </p>
-            <p className="text-2xl font-black text-green-700 group-hover:scale-110 transition-transform origin-right">
+            <p className="text-2xl font-black text-secondary group-hover:scale-110 transition-transform origin-right">
               ₹{route.fare}
             </p>
           </div>

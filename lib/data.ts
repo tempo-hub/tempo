@@ -251,7 +251,7 @@ function addMediaToRoute(route: TaxiRoute) {
 export function getSmartRelatedDestinations(
   currentRoute: TaxiRoute,
   allRoutes: TaxiRoute[],
-  maxResults: number = 4
+  maxResults: number = 4,
 ) {
   const currentDistance = currentRoute.distance;
 
@@ -261,8 +261,7 @@ export function getSmartRelatedDestinations(
 
       const sameOrigin = route.origin === currentRoute.origin;
 
-      const similarDistance =
-        Math.abs(route.distance - currentDistance) <= 150;
+      const similarDistance = Math.abs(route.distance - currentDistance) <= 150;
 
       return sameOrigin || similarDistance;
     })
@@ -387,7 +386,7 @@ export function getRouteGuide(
     distance: `${distance} km`,
     travelTime: estimateTravelTime(distance),
     roadCondition: getRoadCondition(distance),
-    stopovers: getStopovers(origin, destination),
+    stopovers: getStopovers(),
     proTip: getProTip(origin, destination),
     highwayName: highwayName || "State/Express Highway",
     nightTravelSafe: distance < 300, // simple logic
@@ -406,7 +405,7 @@ function getRoadCondition(distance: number) {
   return "Excellent roads with smooth highways.";
 }
 
-function getStopovers(origin: string, destination: string) {
+function getStopovers() {
   return [
     {
       name: "Midway Stop",
@@ -431,7 +430,7 @@ function getCityGuideForDestination(destination: string) {
 
 export function getPricingDetails(distance: number, isSameDay: boolean = true) {
   const perKmRateMin = 18;
-  const perKmRateMax = 22;
+  const perKmRateMax = 35;
 
   const baseFareMin = distance * perKmRateMin;
   const baseFareMax = distance * perKmRateMax;
@@ -3804,10 +3803,9 @@ export const ROUTES: TaxiRoute[] = [
   },
 ].map((route) => ({
   ...route,
-  mapEmbedUrl:
-    `https://www.google.com/maps?q=${encodeURIComponent(route.origin)}+to+${encodeURIComponent(
-      route.destination,
-    )}&output=embed`,
+  mapEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(route.origin)}+to+${encodeURIComponent(
+    route.destination,
+  )}&output=embed`,
   faqs:
     route.faqs && route.faqs.length >= 10
       ? route.faqs

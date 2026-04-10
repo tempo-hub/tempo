@@ -4,8 +4,6 @@ import { TaxiRoute } from "@/lib/data";
 import {
   Briefcase,
   Users,
-  Luggage,
-  Clock,
   CheckCircle2,
   Sparkles,
   TrendingUp,
@@ -25,7 +23,7 @@ const iconMap = {
 export function TravelUseCasesSection({ route }: { route: TaxiRoute }) {
   const cases = route.travelUseCases || {};
   const values = Object.values(cases);
-  const [selectedVehicle, setSelectedVehicle] = useState(VEHICLES[0]);
+  const [selectedVehicle] = useState(VEHICLES[0]);
   const fare = useMemo(() => {
     return calculateFare(route.distance, selectedVehicle.perKmRate);
   }, [route.distance, selectedVehicle]);
