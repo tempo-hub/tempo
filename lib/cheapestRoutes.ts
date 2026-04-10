@@ -1,4 +1,4 @@
-import { ROUTES } from "./data";
+import { ROUTES, TaxiRoute } from "./data";
 import { generateRouteFaqs } from "./faq-data";
 
 export function generateCheapestSlug(origin: string, destination: string) {
@@ -8,7 +8,7 @@ export function generateCheapestSlug(origin: string, destination: string) {
 }
 
 // Convert route → cheapest route format
-export function generateCheapestRoute(route: any) {
+export function generateCheapestRoute(route: TaxiRoute) {
   return {
     ...route,
     slug: generateCheapestSlug(route.origin, route.destination),

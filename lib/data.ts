@@ -405,7 +405,7 @@ function getRoadCondition(distance: number) {
   return "Excellent roads with smooth highways.";
 }
 
-function getStopovers(origin: string, destination: string) {
+function getStopovers() {
   return [
     {
       name: "Midway Stop",

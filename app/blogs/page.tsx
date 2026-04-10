@@ -44,8 +44,10 @@ export default function BlogsPage() {
           <Link key={blog.id} href={`/blogs/${blog.slug}`}>
             <div className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer bg-white">
               {/* Image */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={blog.image || "/default.jpg"}
+                alt={blog.title}
                 className="h-60 w-full object-cover group-hover:scale-110 transition duration-500"
               />
 

@@ -29,8 +29,10 @@ export default function BlogDetails({ params }: { params: Promise<{ id: string }
     <div className="bg-white min-h-screen">
       {/* Hero Image */}
       <div className="h-80 w-full relative">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={blog.image || "/default.jpg"}
+          alt={blog.title || "Blog cover"}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />

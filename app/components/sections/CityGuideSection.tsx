@@ -24,7 +24,7 @@ export function CityGuideSection({ route }: { route: TaxiRoute }) {
   const [activeTab, setActiveTab] = useState<"attractions" | "significance">(
     "attractions",
   );
-  const [selectedVehicle, setSelectedVehicle] = useState(VEHICLES[0]);
+  const [selectedVehicle] = useState(VEHICLES[0]);
   const fare = useMemo(() => {
     return calculateFare(route.distance, selectedVehicle.perKmRate);
   }, [route.distance, selectedVehicle]);

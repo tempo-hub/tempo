@@ -1,7 +1,6 @@
-import { ROUTES, calculateFare, VEHICLES } from "@/lib/data";
+import { ROUTES, calculateFare } from "@/lib/data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import Link from "next/link";
 import { FareCalculator } from "../../components/fare-calculator";
 import { FareTable } from "../../components/fare-table";
 import { VehicleGallery } from "../../components/vehicle-gallery";
@@ -11,9 +10,7 @@ import {
   FareInclusions,
   ExclusionsNotice,
   SafetySection,
-  HowItWorks,
   OfficeLocation,
-  TrustBadges,
   ExperienceSection,
   TestimonialsSection,
   SocialProof,
@@ -29,40 +26,7 @@ import {
   Clock,
   ShieldCheck,
   Star,
-  Calendar,
   Users,
-  Map,
-  Compass,
-  ArrowRight,
-  CheckCircle,
-  XCircle,
-  DollarSign,
-  ThumbsUp,
-  Camera,
-  Utensils,
-  Church,
-  Heart,
-  Briefcase,
-  Coffee,
-  ShoppingBag,
-  Info,
-  TrendingUp,
-  HelpCircle,
-  Navigation,
-  Award,
-  PhoneCall,
-  Building2,
-  Route,
-  Bus,
-  Wallet,
-  Sun,
-  Moon,
-  Car,
-  Plane,
-  Train,
-  ExternalLink,
-  Gift,
-  Sparkles,
 } from "lucide-react";
 import { Metadata } from "next";
 import { RouteComparisonSection } from "@/app/components/sections/RouteComparisonSection";
