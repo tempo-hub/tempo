@@ -1,0 +1,68 @@
+﻿
+D:\GeogoInfotechPro\tempo\app\blogs\[id]\page.tsx
+  31:9  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  31:9  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+
+D:\GeogoInfotechPro\tempo\app\blogs\page.tsx
+  47:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  47:15  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+
+D:\GeogoInfotechPro\tempo\app\components\sections\CityGuideSection.tsx
+  27:27  warning  'setSelectedVehicle' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\GeogoInfotechPro\tempo\app\components\sections\RouteMediaSection.tsx
+  12:27  warning  'setSelectedVehicle' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\GeogoInfotechPro\tempo\app\components\sections\TravelUseCasesSection.tsx
+   7:3   warning  'Luggage' is defined but never used                      @typescript-eslint/no-unused-vars
+   8:3   warning  'Clock' is defined but never used                        @typescript-eslint/no-unused-vars
+  28:27  warning  'setSelectedVehicle' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\GeogoInfotechPro\tempo\app\fare\[slug]\page.tsx
+   1:33  warning  'VEHICLES' is defined but never used      @typescript-eslint/no-unused-vars
+   4:8   warning  'Link' is defined but never used          @typescript-eslint/no-unused-vars
+  14:3   warning  'HowItWorks' is defined but never used    @typescript-eslint/no-unused-vars
+  16:3   warning  'TrustBadges' is defined but never used   @typescript-eslint/no-unused-vars
+  32:3   warning  'Calendar' is defined but never used      @typescript-eslint/no-unused-vars
+  34:3   warning  'Map' is defined but never used           @typescript-eslint/no-unused-vars
+  35:3   warning  'Compass' is defined but never used       @typescript-eslint/no-unused-vars
+  36:3   warning  'ArrowRight' is defined but never used    @typescript-eslint/no-unused-vars
+  37:3   warning  'CheckCircle' is defined but never used   @typescript-eslint/no-unused-vars
+  38:3   warning  'XCircle' is defined but never used       @typescript-eslint/no-unused-vars
+  39:3   warning  'DollarSign' is defined but never used    @typescript-eslint/no-unused-vars
+  40:3   warning  'ThumbsUp' is defined but never used      @typescript-eslint/no-unused-vars
+  41:3   warning  'Camera' is defined but never used        @typescript-eslint/no-unused-vars
+  42:3   warning  'Utensils' is defined but never used      @typescript-eslint/no-unused-vars
+  43:3   warning  'Church' is defined but never used        @typescript-eslint/no-unused-vars
+  44:3   warning  'Heart' is defined but never used         @typescript-eslint/no-unused-vars
+  45:3   warning  'Briefcase' is defined but never used     @typescript-eslint/no-unused-vars
+  46:3   warning  'Coffee' is defined but never used        @typescript-eslint/no-unused-vars
+  47:3   warning  'ShoppingBag' is defined but never used   @typescript-eslint/no-unused-vars
+  48:3   warning  'Info' is defined but never used          @typescript-eslint/no-unused-vars
+  49:3   warning  'TrendingUp' is defined but never used    @typescript-eslint/no-unused-vars
+  50:3   warning  'HelpCircle' is defined but never used    @typescript-eslint/no-unused-vars
+  51:3   warning  'Navigation' is defined but never used    @typescript-eslint/no-unused-vars
+  52:3   warning  'Award' is defined but never used         @typescript-eslint/no-unused-vars
+  53:3   warning  'PhoneCall' is defined but never used     @typescript-eslint/no-unused-vars
+  54:3   warning  'Building2' is defined but never used     @typescript-eslint/no-unused-vars
+  55:3   warning  'Route' is defined but never used         @typescript-eslint/no-unused-vars
+  56:3   warning  'Bus' is defined but never used           @typescript-eslint/no-unused-vars
+  57:3   warning  'Wallet' is defined but never used        @typescript-eslint/no-unused-vars
+  58:3   warning  'Sun' is defined but never used           @typescript-eslint/no-unused-vars
+  59:3   warning  'Moon' is defined but never used          @typescript-eslint/no-unused-vars
+  60:3   warning  'Car' is defined but never used           @typescript-eslint/no-unused-vars
+  61:3   warning  'Plane' is defined but never used         @typescript-eslint/no-unused-vars
+  62:3   warning  'Train' is defined but never used         @typescript-eslint/no-unused-vars
+  63:3   warning  'ExternalLink' is defined but never used  @typescript-eslint/no-unused-vars
+  64:3   warning  'Gift' is defined but never used          @typescript-eslint/no-unused-vars
+  65:3   warning  'Sparkles' is defined but never used      @typescript-eslint/no-unused-vars
+
+D:\GeogoInfotechPro\tempo\lib\data.ts
+  409:23  warning  'origin' is defined but never used       @typescript-eslint/no-unused-vars
+  409:39  warning  'destination' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\GeogoInfotechPro\tempo\test_import.js
+  2:20  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+Γ£û 49 problems (1 error, 48 warnings)
+
