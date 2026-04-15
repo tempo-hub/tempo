@@ -1,5 +1,5 @@
+import { notFound, redirect } from "next/navigation";
 import { ROUTES, calculateFare } from "@/lib/data";
-import { notFound } from "next/navigation";
 import Image from "next/image";
 import { FareCalculator } from "../../components/fare-calculator";
 import { FareTable } from "../../components/fare-table";
@@ -21,13 +21,7 @@ import {
   Offer,
   FAQPage,
 } from "../../components/schemas";
-import {
-  MapPin,
-  Clock,
-  ShieldCheck,
-  Star,
-  Users,
-} from "lucide-react";
+import { MapPin, Clock, ShieldCheck, Star, Users } from "lucide-react";
 import { Metadata } from "next";
 import { RouteComparisonSection } from "@/app/components/sections/RouteComparisonSection";
 import { RelatedRoutesSection } from "@/app/components/sections/RelatedRoutesSection";
@@ -52,7 +46,22 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const route = ROUTES.find((r) => r.slug === slug);
-  if (!route) return {};
+  
+  if (!route) {
+    // Fix wrong slug if someone hits cheapest format
+    const fixedSlug = slug.replace(
+      "-cheapest-tempo-traveller-fare",
+      "-tempo-traveller-fare",
+    );
+
+    const fixedRoute = ROUTES.find((r) => r.slug === fixedSlug);
+
+    if (fixedRoute) {
+      redirect(`/fare/${fixedSlug}`);
+    }
+
+    notFound();
+  }
 
   const fare = calculateFare(route.distance, 18);
   const title = `${route.origin} to ${route.destination} Tempo Traveller Fare | Round Trip ₹${fare}`;

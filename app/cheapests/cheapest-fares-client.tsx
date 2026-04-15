@@ -125,7 +125,7 @@ export default function CheapestFaresClient() {
             {filteredRoutes.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredRoutes.map((route) => (
-                  <CheapestCard key={route.id} route={route} />
+                  <CheapestCard key={route.slug} route={route} />
                 ))}
               </div>
             ) : (

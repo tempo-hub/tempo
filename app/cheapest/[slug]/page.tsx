@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { VEHICLES, calculateFare } from "@/lib/data";
 import FarePageClient from "./FarePageClient";
 import {
@@ -65,6 +65,18 @@ export default async function Page({
   const route = ALL_CHEAPEST_ROUTES.find((r) => r.slug === slug);
 
   if (!route) {
+    // Fix old slug automatically
+    const fixedSlug = slug.replace(
+      "-tempo-traveller-fare",
+      "-cheapest-tempo-traveller-fare",
+    );
+
+    const fixedRoute = ALL_CHEAPEST_ROUTES.find((r) => r.slug === fixedSlug);
+
+    if (fixedRoute) {
+      redirect(`/cheapest/${fixedSlug}`);
+    }
+
     notFound();
   }
 

@@ -9,7 +9,7 @@ import {
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://yatratempotraveller.com";
 
-  // ✅ Fare Routes
+  // Fare Routes
   const fareUrls = ROUTES.map((route) => ({
     url: `${baseUrl}/fare/${route.slug}`,
     lastModified: new Date(),
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // ✅ Cheapest Routes
+  // Cheapest Routes
   const ALL_CHEAPEST_ROUTES = [
     ...PRAYAGRAJ_CHEAPEST_ROUTES,
     ...AYODHYA_CHEAPEST_ROUTES,
@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // ✅ Static Pages
+  // Static Pages
   const staticUrls = [
     {
       url: baseUrl,
