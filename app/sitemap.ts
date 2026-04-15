@@ -1,18 +1,37 @@
 import { MetadataRoute } from "next";
 import { ROUTES } from "@/lib/data";
+import {
+  PRAYAGRAJ_CHEAPEST_ROUTES,
+  AYODHYA_CHEAPEST_ROUTES,
+  VARANASI_CHEAPEST_ROUTES,
+} from "@/lib/cheapestRoute";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://yatratempotraveller.com";
 
-  // Dynamic routes from ROUTES array
-  const routeUrls = ROUTES.map((route) => ({
+  // ✅ Fare Routes
+  const fareUrls = ROUTES.map((route) => ({
     url: `${baseUrl}/fare/${route.slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
 
-  // Static routes
+  // ✅ Cheapest Routes
+  const ALL_CHEAPEST_ROUTES = [
+    ...PRAYAGRAJ_CHEAPEST_ROUTES,
+    ...AYODHYA_CHEAPEST_ROUTES,
+    ...VARANASI_CHEAPEST_ROUTES,
+  ];
+
+  const cheapestUrls = ALL_CHEAPEST_ROUTES.map((route) => ({
+    url: `${baseUrl}/cheapest/${route.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  // ✅ Static Pages
   const staticUrls = [
     {
       url: baseUrl,
@@ -22,6 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/fares`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/cheapest`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.9,
@@ -40,5 +65,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...staticUrls, ...routeUrls];
+  return [...staticUrls, ...fareUrls, ...cheapestUrls];
 }

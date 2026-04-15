@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
+import { VEHICLES, calculateFare } from "@/lib/data";
 import FarePageClient from "./FarePageClient";
 import {
   PRAYAGRAJ_CHEAPEST_ROUTES,
