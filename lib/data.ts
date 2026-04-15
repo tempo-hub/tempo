@@ -3260,18 +3260,6 @@ export const ROUTES: TaxiRoute[] = [
     faqs: [],
   },
   {
-    id: "ayu-gkp",
-    slug: "ayodhya-to-gorakhpur-tempo-traveller-fare",
-    origin: "Ayodhya",
-    destination: "Gorakhpur",
-    distance: 140,
-    duration: "3 Hours",
-    description:
-      "Smooth ride for families traveling between Ayodhya and Gorakhpur.",
-    highlights: ["Clean vehicles", "Budget friendly", "Safe ride"],
-    faqs: [],
-  },
-  {
     id: "ayu-knp",
     slug: "ayodhya-to-kanpur-tempo-traveller-fare",
     origin: "Ayodhya",
@@ -3338,7 +3326,6 @@ export const ROUTES: TaxiRoute[] = [
     highlights: ["Quick ride", "Low fares", "Doorstep pickup"],
     faqs: [],
   },
-
   {
     id: "ayu-blr",
     slug: "ayodhya-to-ballia-tempo-traveller-fare",
@@ -3403,17 +3390,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Reliable tempo traveller service.",
     highlights: ["Safe ride", "Comfort seats", "Affordable"],
-    faqs: [],
-  },
-  {
-    id: "ayu-fzb",
-    slug: "ayodhya-to-faizabad-tempo-traveller-fare",
-    origin: "Ayodhya",
-    destination: "Faizabad",
-    distance: 10,
-    duration: "30 mins",
-    description: "Local travel service for city rides.",
-    highlights: ["Local service", "Quick ride", "Low fare"],
     faqs: [],
   },
   {
@@ -3745,17 +3721,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Airport transfer service from Ayodhya to Varanasi Airport.",
     highlights: ["On-time pickup", "Airport service", "Comfort ride"],
-    faqs: [],
-  },
-  {
-    id: "ayu-lka",
-    slug: "ayodhya-to-lucknow-airport-tempo-traveller-fare",
-    origin: "Ayodhya",
-    destination: "Lucknow Airport",
-    distance: 140,
-    duration: "2.5 Hours",
-    description: "Reliable airport transfer for groups and families.",
-    highlights: ["On-time service", "Safe", "Comfort"],
     faqs: [],
   },
   {

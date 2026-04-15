@@ -992,30 +992,6 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     tollEstimate: 250,
   },
   {
-    id: "ayu-gkp",
-    slug: "ayodhya-to-gorakhpur-cheapest-tempo-traveller-fare",
-    origin: "Ayodhya",
-    destination: "Gorakhpur",
-    distance: 140,
-    duration: "3.5 Hours",
-    description:
-      "Budget-friendly tempo traveller from Ayodhya to Gorakhpur for group travel.",
-    highlights: [
-      "Comfort Travel",
-      "Affordable Fare",
-      "Safe Ride",
-      "Local Drivers",
-      "Quick Booking",
-    ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Gorakhpur?",
-        answer: "Fare starts from ₹" + 140 * VEHICLES[0].perKmRate,
-      },
-    ],
-    tollEstimate: 250,
-  },
-  {
     id: "ayu-bst",
     slug: "ayodhya-to-basti-cheapest-tempo-traveller-fare",
     origin: "Ayodhya",
@@ -1060,29 +1036,6 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       },
     ],
     tollEstimate: 150,
-  },
-  {
-    id: "ayu-fzd",
-    slug: "ayodhya-to-faizabad-cheapest-tempo-traveller-fare",
-    origin: "Ayodhya",
-    destination: "Faizabad",
-    distance: 10,
-    duration: "30 Minutes",
-    description: "Very short and cheapest ride from Ayodhya to Faizabad.",
-    highlights: [
-      "Ultra Short Trip",
-      "Lowest Price",
-      "Quick Pickup",
-      "Local Drivers",
-      "Fast Service",
-    ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Faizabad?",
-        answer: "Fare starts from ₹" + 10 * VEHICLES[0].perKmRate,
-      },
-    ],
-    tollEstimate: 0,
   },
   {
     id: "ayu-amethi",
@@ -1433,23 +1386,6 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       },
     ],
     tollEstimate: 400,
-  },
-  {
-    id: "ayu-lucknow-airport",
-    slug: "ayodhya-to-lucknow-airport-cheapest-tempo-traveller-fare",
-    origin: "Ayodhya",
-    destination: "Lucknow Airport",
-    distance: 140,
-    duration: "3.5 Hours",
-    description: "Airport transfer from Ayodhya to Lucknow Airport.",
-    highlights: ["Airport Drop", "Comfort", "Safe", "Affordable", "On Time"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Lucknow Airport?",
-        answer: "Fare starts from ₹" + 140 * VEHICLES[0].perKmRate,
-      },
-    ],
-    tollEstimate: 250,
   },
   {
     id: "ayu-delhi",
