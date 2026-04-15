@@ -121,6 +121,7 @@ export const FareTable = ({ route }: { route: TaxiRoute }) => {
           </tbody>
         </table>
       </div>
+
       <div className="bg-slate-50 p-4 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="flex items-center gap-2 text-[11px] text-muted-foreground font-medium">
           <Info className="h-3.5 w-3.5 text-primary" />

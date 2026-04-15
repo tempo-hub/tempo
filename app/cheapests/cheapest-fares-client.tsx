@@ -12,13 +12,24 @@ import {
 } from "lucide-react";
 import { TaxiRoute } from "@/lib/data";
 import { generateCheapestSlug } from "@/lib/cheapestRoutes";
+import {
+  PRAYAGRAJ_CHEAPEST_ROUTES,
+  AYODHYA_CHEAPEST_ROUTES,
+  VARANASI_CHEAPEST_ROUTES,
+} from "@/lib/cheapestRoute";
 
 export default function CheapestFaresClient() {
   const [search, setSearch] = useState("");
 
+  const ALL_CHEAPEST_ROUTES = [
+    ...PRAYAGRAJ_CHEAPEST_ROUTES,
+    ...AYODHYA_CHEAPEST_ROUTES,
+    ...VARANASI_CHEAPEST_ROUTES,
+  ];
+
   // Sort by cheapest fare
   const sortedRoutes = useMemo(() => {
-    return [...ROUTES]
+    return [...ALL_CHEAPEST_ROUTES]
       .map((route) => ({
         ...route,
         fare: calculateFare(route.distance, 18),
@@ -161,11 +172,9 @@ export default function CheapestFaresClient() {
 }
 
 function CheapestCard({ route }: { route: TaxiRoute & { fare: number } }) {
-  const slug = generateCheapestSlug(route.origin, route.destination);
-
   return (
     <a
-      href={`/cheapest/${slug}`}
+      href={`/cheapest/${route.slug}`}
       className="group bg-white p-6 rounded-3xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 relative overflow-hidden"
     >
       {/* Arrow Icon */}

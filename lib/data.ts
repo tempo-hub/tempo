@@ -499,16 +499,6 @@ export const ROUTES: TaxiRoute[] = [
       "Verified Professional Drivers",
       "Fixed Transparent Pricing",
     ],
-    faqs: [
-      {
-        question: "What is the distance from Varanasi to Ayodhya?",
-        answer: "The road distance is approximately 220 km.",
-      },
-      {
-        question: "Are tolls included in the fare?",
-        answer: "No, tolls and parking are extra as per actuals.",
-      },
-    ],
     tollEstimate: 450,
   },
   {
