@@ -152,19 +152,11 @@ export default function FarePageClient({
           <nav aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-2 text-muted-foreground">
               <li>
-                <Link href="/" className="hover:text-primary transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <span className="text-primary">/</span>
-              </li>
-              <li>
                 <Link
-                  href={`/fare/${route.slug}`}
+                  href="/cheapests"
                   className="hover:text-primary transition-colors"
                 >
-                  Tempo Traveller Fare
+                  Home
                 </Link>
               </li>
               <li>
@@ -175,7 +167,8 @@ export default function FarePageClient({
                   href={`/cheapest/${route.slug}`}
                   className="text-primary font-medium hover:underline"
                 >
-                  {route.origin} to {route.destination}
+                  Cheapest Tempo Traveller from {route.origin} to{" "}
+                  {route.destination}
                 </Link>
               </li>
             </ol>
@@ -737,7 +730,8 @@ export default function FarePageClient({
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-3xl font-black text-center mb-8">
-              {route.origin} to {route.destination} Tempo Traveller Pricing (Per k.m)
+              {route.origin} to {route.destination} Tempo Traveller Pricing (Per
+              k.m)
             </h2>
 
             <VehiclePricingTable />

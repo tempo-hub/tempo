@@ -5,6 +5,11 @@ import {
   generateCheapestSlug,
   generateCheapestRoute,
 } from "@/lib/cheapestRoutes";
+import {
+  PRAYAGRAJ_CHEAPEST_ROUTES,
+  AYODHYA_CHEAPEST_ROUTES,
+  VARANASI_CHEAPEST_ROUTES,
+} from "@/lib/cheapestRoute";
 
 // SEO Metadata
 export async function generateMetadata({
@@ -47,11 +52,14 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  // const route = ROUTES.find((r) => r.slug === slug);
-  const route = ROUTES.find((route) => {
-    const routeSlug = generateCheapestSlug(route.origin, route.destination);
-    return routeSlug === slug;
-  });
+
+  const ALL_CHEAPEST_ROUTES = [
+    ...PRAYAGRAJ_CHEAPEST_ROUTES,
+    ...AYODHYA_CHEAPEST_ROUTES,
+    ...VARANASI_CHEAPEST_ROUTES,
+  ];
+
+  const route = ALL_CHEAPEST_ROUTES.find((r) => r.slug === slug);
 
   if (!route) {
     notFound();
