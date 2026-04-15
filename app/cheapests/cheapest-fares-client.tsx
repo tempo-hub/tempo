@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { ROUTES, calculateFare } from "@/lib/data";
+import { calculateFare } from "@/lib/data";
 import {
   Search,
   Globe,
@@ -11,7 +11,6 @@ import {
   MapPin,
 } from "lucide-react";
 import { TaxiRoute } from "@/lib/data";
-import { generateCheapestSlug } from "@/lib/cheapestRoutes";
 import {
   PRAYAGRAJ_CHEAPEST_ROUTES,
   AYODHYA_CHEAPEST_ROUTES,
