@@ -46,7 +46,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const route = ROUTES.find((r) => r.slug === slug);
-  
+
   if (!route) {
     // Fix wrong slug if someone hits cheapest format
     const fixedSlug = slug.replace(

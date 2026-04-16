@@ -168,6 +168,7 @@ export default function RoutesPage() {
 
         <FAQSection faqs={GLOBAL_FAQS} title="Tempo Traveller Fare FAQs" />
       </div>
+      
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

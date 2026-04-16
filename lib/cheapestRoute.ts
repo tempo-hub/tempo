@@ -944,6 +944,30 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     tollEstimate: 300,
   },
   {
+    id: "ayu-agra",
+    slug: "ayodhya-to-agra-cheapest-tempo-traveller-fare",
+    origin: "Ayodhya",
+    destination: "Agra",
+    distance: 450,
+    duration: "8-9 Hours",
+    description:
+      "Book cheapest tempo traveller from Ayodhya to Agra for comfortable group travel and Taj Mahal visit.",
+    highlights: [
+      "Cheapest Price",
+      "Doorstep Pickup",
+      "Long Distance Comfort",
+      "Professional Driver",
+      "Transparent Pricing",
+    ],
+    faqs: [
+      {
+        question: "What is the fare from Ayodhya to Agra?",
+        answer: "Fare starts from ₹" + 450 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 800,
+  },
+  {
     id: "ayu-vns",
     slug: "ayodhya-to-varanasi-cheapest-tempo-traveller-fare",
     origin: "Ayodhya",
@@ -2430,7 +2454,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
   },
   {
     id: "vns-bodh",
-    slug: "varanasi-to-bodhgaya-cheapest-tempo-traveller-fare",
+    slug: "varanasi-to-bodh-gaya-cheapest-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Bodhgaya",
     distance: 250,
