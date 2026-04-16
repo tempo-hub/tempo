@@ -19,6 +19,7 @@ export default function FaresPage() {
   return (
     <>
       <FaresClient />
+      
       {/* FAQ Schema */}
       <script
         type="application/ld+json"

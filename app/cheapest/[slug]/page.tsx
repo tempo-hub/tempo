@@ -5,6 +5,8 @@ import {
   PRAYAGRAJ_CHEAPEST_ROUTES,
   AYODHYA_CHEAPEST_ROUTES,
   VARANASI_CHEAPEST_ROUTES,
+  UTTARAKHAND_CHEAPEST_ROUTES,
+  MADHYAPRADESH_CHEAPEST_ROUTES,
 } from "@/lib/cheapestRoute";
 
 // SEO Metadata
@@ -60,6 +62,22 @@ export default async function Page({
     ...PRAYAGRAJ_CHEAPEST_ROUTES,
     ...AYODHYA_CHEAPEST_ROUTES,
     ...VARANASI_CHEAPEST_ROUTES,
+    ...UTTARAKHAND_CHEAPEST_ROUTES,
+  ];
+
+  const ALL_VARANASI_ROUTES = [
+    ...VARANASI_CHEAPEST_ROUTES.map((route) => ({
+      ...route,
+      category: "regular",
+    })),
+    ...UTTARAKHAND_CHEAPEST_ROUTES.map((route) => ({
+      ...route,
+      category: "uttarakhand",
+    })),
+    ...MADHYAPRADESH_CHEAPEST_ROUTES.map((route) => ({
+      ...route,
+      category: "madhyapradesh",
+    })),
   ];
 
   const route = ALL_CHEAPEST_ROUTES.find((r) => r.slug === slug);

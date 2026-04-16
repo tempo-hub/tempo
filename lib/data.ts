@@ -28,6 +28,14 @@ export interface TaxiRoute {
   bestTime?: string;
   seasonalNotes?: string;
   comparison?: { transport: string; pros: string; cons: string }[];
+  tehsils?: string[];
+  category?:
+    | "regular"
+    | "uttarakhand"
+    | "madhyapradesh"
+    | "rajasthan"
+    | "bihar"
+    | "delhi-NCR";
 
   // City Guide Section
   cityGuide?: {
@@ -1109,37 +1117,6 @@ export const ROUTES: TaxiRoute[] = [
     tollEstimate: 400,
   },
   {
-    id: "vns-ujj",
-    slug: "varanasi-to-ujjain-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Ujjain",
-    distance: 950,
-    duration: "15.5 - 16 hours",
-    description:
-      "Comfortable long-distance tempo traveller service from Varanasi to Ujjain for Mahakaleshwar Jyotirlinga darshan, offering safe, smooth, and reliable travel for pilgrimage groups.",
-
-    highlights: [
-      "Mahakaleshwar Jyotirlinga Pilgrimage Route",
-      "Night driving experienced drivers",
-      "Safe & comfortable long journey",
-    ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Ujjain?",
-        answer:
-          "It takes around 15.5 to 16 hours depending on traffic, route, and road conditions.",
-      },
-      {
-        question: "Is Ujjain suitable for a same-day trip?",
-        answer:
-          "No, due to the long distance, it is recommended to plan at least a 2-day trip.",
-      },
-    ],
-
-    tollEstimate: 1200,
-  },
-  {
     id: "vns-omk",
     slug: "varanasi-to-omkareshwar-tempo-traveller-fare",
     origin: "Varanasi",
@@ -1200,48 +1177,6 @@ export const ROUTES: TaxiRoute[] = [
     ],
 
     tollEstimate: 300,
-  },
-  {
-    id: "vns-ntl",
-    slug: "varanasi-to-nainital-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Nainital",
-    distance: 900,
-    duration: "16 Hours",
-    description:
-      "Tempo traveller service from Varanasi to Nainital for hill station trips, family vacations, and group tours.",
-
-    highlights: ["Hill Station", "Lake View", "Cool Weather"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 15 to 16 hours.",
-      },
-    ],
-
-    tollEstimate: 900,
-  },
-  {
-    id: "vns-msr",
-    slug: "varanasi-to-mussoorie-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Mussoorie",
-    distance: 850,
-    duration: "15 Hours",
-    description:
-      "Comfortable tempo traveller service from Varanasi to Mussoorie for hill station vacations and group trips.",
-
-    highlights: ["Queen of Hills", "Scenic Views", "Cool Climate"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 14 to 15 hours.",
-      },
-    ],
-
-    tollEstimate: 850,
   },
   {
     id: "vns-shm",
@@ -1305,48 +1240,6 @@ export const ROUTES: TaxiRoute[] = [
     ],
 
     tollEstimate: 1500,
-  },
-  {
-    id: "vns-hrd",
-    slug: "varanasi-to-haridwar-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Haridwar",
-    distance: 820,
-    duration: "14 Hours",
-    description:
-      "Tempo traveller service from Varanasi to Haridwar for Ganga darshan and pilgrimage trips.",
-
-    highlights: ["Pilgrimage Route", "Ganga Aarti", "Long Journey"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 14 hours.",
-      },
-    ],
-
-    tollEstimate: 800,
-  },
-  {
-    id: "vns-rsh",
-    slug: "varanasi-to-rishikesh-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Rishikesh",
-    distance: 830,
-    duration: "14-15 Hours",
-    description:
-      "Comfortable tempo traveller service from Varanasi to Rishikesh for yoga retreats, adventure trips, and spiritual journeys.",
-
-    highlights: ["Yoga Capital", "Adventure Hub", "Ganga River Views"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 14 to 15 hours depending on traffic and stops.",
-      },
-    ],
-
-    tollEstimate: 800,
   },
   {
     id: "vns-del",
@@ -1572,18 +1465,6 @@ export const ROUTES: TaxiRoute[] = [
     ],
 
     tollEstimate: 700,
-  },
-  {
-    id: "vns-khj",
-    slug: "varanasi-to-khajuraho-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Khajuraho",
-    distance: 420,
-    duration: "9 Hours",
-    description:
-      "Comfortable tempo traveller service from Varanasi to Khajuraho for temple visits and heritage tours.",
-    highlights: ["Heritage tour", "UNESCO site visit", "Comfortable travel"],
-    faqs: [],
   },
   {
     id: "vns-orc",
@@ -1878,66 +1759,6 @@ export const ROUTES: TaxiRoute[] = [
     ],
 
     tollEstimate: 900,
-  },
-  {
-    id: "vns-ind",
-    slug: "varanasi-to-indore-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Indore",
-    distance: 1000,
-    duration: "17-18 Hours",
-    description:
-      "Comfortable tempo traveller service from Varanasi to Indore for group travel, Mahakal darshan trips, and long-distance journeys with AC vehicles and experienced drivers.",
-
-    highlights: [
-      "Mahakal Circuit Route",
-      "Comfortable Long-Distance Travel",
-      "Overnight Journey Available",
-    ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Indore?",
-        answer:
-          "It takes around 17 to 18 hours depending on traffic, road conditions, and stopovers.",
-      },
-      {
-        question: "Is this route suitable for overnight travel?",
-        answer:
-          "Yes, overnight travel is recommended for this long-distance route to save time and reach early.",
-      },
-    ],
-
-    tollEstimate: 900,
-  },
-  {
-    id: "vns-bho",
-    slug: "varanasi-to-bhopal-tempo-traveller-fare",
-    origin: "Varanasi",
-    destination: "Bhopal",
-    distance: 800,
-    duration: "14-15 Hours",
-    description:
-      "Comfortable tempo traveller service from Varanasi to Bhopal for group travel, business trips, and tourism. Ideal for long-distance journeys with AC vehicles and experienced drivers.",
-
-    highlights: [
-      "Direct Highway Route",
-      "Comfortable Long-Distance Travel",
-      "Same Day Overnight Journey Option",
-    ],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Bhopal?",
-        answer:
-          "It usually takes around 14 to 15 hours depending on traffic, road conditions, and stopovers.",
-      },
-      {
-        question: "Is overnight travel possible?",
-        answer:
-          "Yes, overnight travel is the best option for this route to save time and reach early morning.",
-      },
-    ],
-    tollEstimate: 700,
   },
   {
     id: "lko-vns",
@@ -3755,6 +3576,790 @@ export const ROUTES: TaxiRoute[] = [
     description: "Long-distance airport transfer service.",
     highlights: ["Airport service", "Comfort ride", "Safe journey"],
     faqs: [],
+  },
+  // Add to your ROUTES array in data.ts
+
+  // ================= UTTARAKHAND ROUTES FROM VARANASI =================
+  {
+    id: "vns-ddn",
+    slug: "varanasi-to-dehradun-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Dehradun",
+    distance: 820,
+    duration: "15 Hours",
+    description:
+      "Comfortable tempo traveller service from Varanasi to Dehradun. Covers tehsils: Dehradun, Rishikesh, Vikasnagar, Doiwala.",
+    highlights: [
+      "Hill Travel",
+      "Scenic Route",
+      "Experienced Drivers",
+      "Group Friendly",
+      "Comfortable Seating",
+    ],
+    tehsils: ["Dehradun", "Rishikesh", "Vikasnagar", "Doiwala"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Dehradun?",
+        answer:
+          "It takes around 15 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is overnight travel recommended?",
+        answer:
+          "Yes, overnight travel is recommended to reach Dehradun early morning.",
+      },
+    ],
+    tollEstimate: 1500,
+  },
+  {
+    id: "vns-hrw",
+    slug: "varanasi-to-haridwar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Haridwar",
+    distance: 900,
+    duration: "15.5 Hours",
+    description:
+      "Affordable tempo traveller service from Varanasi to Haridwar. Covers tehsils: Haridwar, Roorkee, Laksar, Bhagwanpur.",
+    highlights: [
+      "Pilgrimage Route",
+      "Ganga Aarti",
+      "Comfort Travel",
+      "Safe Ride",
+      "Reliable Service",
+    ],
+    tehsils: ["Haridwar", "Roorkee", "Laksar", "Bhagwanpur"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Haridwar?",
+        answer:
+          "It takes around 15.5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is overnight travel available?",
+        answer: "Yes, overnight travel is available with experienced drivers.",
+      },
+    ],
+    tollEstimate: 1700,
+  },
+  {
+    id: "vns-rsk",
+    slug: "varanasi-to-rishikesh-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Rishikesh",
+    distance: 850,
+    duration: "14.5 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Rishikesh. Covers tehsils: Rishikesh, Dehradun, Kalsi.",
+    highlights: [
+      "Yoga Capital",
+      "Ganga Aarti",
+      "Adventure Activities",
+      "Comfort Ride",
+      "Group Friendly",
+    ],
+    tehsils: ["Rishikesh", "Dehradun", "Kalsi"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Rishikesh?",
+        answer:
+          "It takes around 14.5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Can we do river rafting in Rishikesh?",
+        answer:
+          "Yes, Rishikesh is famous for river rafting and adventure sports.",
+      },
+    ],
+    tollEstimate: 1550,
+  },
+  {
+    id: "vns-nnl",
+    slug: "varanasi-to-nainital-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Nainital",
+    distance: 700,
+    duration: "13 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Nainital. Covers tehsils: Nainital, Haldwani, Ramnagar, Kaladhungi.",
+    highlights: [
+      "Hill Station",
+      "Naini Lake",
+      "Boating",
+      "Comfort Travel",
+      "Scenic Views",
+    ],
+    tehsils: ["Nainital", "Haldwani", "Ramnagar", "Kaladhungi"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Nainital?",
+        answer:
+          "It takes around 13 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Nainital good for a family trip?",
+        answer:
+          "Yes, Nainital is perfect for family vacations with beautiful lakes and hills.",
+      },
+    ],
+    tollEstimate: 1300,
+  },
+  {
+    id: "vns-mus",
+    slug: "varanasi-to-mussoorie-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Mussoorie",
+    distance: 850,
+    duration: "15.5 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Mussoorie. Covers tehsils: Dehradun, Dhanaulti, Landour.",
+    highlights: [
+      "Queen of Hills",
+      "Mall Road",
+      "Kempty Falls",
+      "Scenic Route",
+      "Comfort Ride",
+    ],
+    tehsils: ["Dehradun", "Dhanaulti", "Landour"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Mussoorie?",
+        answer:
+          "It takes around 15.5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is the best time to visit Mussoorie?",
+        answer:
+          "Summer (March to June) and Winter (December to February) are best.",
+      },
+    ],
+    tollEstimate: 1600,
+  },
+  {
+    id: "vns-hld",
+    slug: "varanasi-to-haldwani-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Haldwani",
+    distance: 680,
+    duration: "12.5 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Haldwani. Covers tehsils: Haldwani, Nainital, Kaladhungi, Betalghat.",
+    highlights: [
+      "Gateway to Kumaon",
+      "Commercial Hub",
+      "Comfort Travel",
+      "Safe Ride",
+      "Budget Friendly",
+    ],
+    tehsils: ["Haldwani", "Nainital", "Kaladhungi", "Betalghat"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Haldwani?",
+        answer:
+          "It takes around 12.5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Haldwani a good stopover?",
+        answer:
+          "Yes, Haldwani is a great stopover before heading to Nainital and other hill stations.",
+      },
+    ],
+    tollEstimate: 1250,
+  },
+  {
+    id: "vns-rdr",
+    slug: "varanasi-to-rudrapur-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Rudrapur",
+    distance: 650,
+    duration: "12 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Rudrapur. Covers tehsils: Rudrapur, Kichha, Gadarpur, Kashipur.",
+    highlights: [
+      "Industrial Hub",
+      "Comfort Ride",
+      "Safe Travel",
+      "Affordable Pricing",
+      "Group Friendly",
+    ],
+    tehsils: ["Rudrapur", "Kichha", "Gadarpur", "Kashipur"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Rudrapur?",
+        answer:
+          "It takes around 12 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1200,
+  },
+  {
+    id: "vns-ksp",
+    slug: "varanasi-to-kashipur-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kashipur",
+    distance: 620,
+    duration: "11.5 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Kashipur. Covers tehsils: Kashipur, Jaspur, Bajpur, Kichha.",
+    highlights: [
+      "Industrial City",
+      "Educational Hub",
+      "Comfort Travel",
+      "Safe Ride",
+      "Budget Friendly",
+    ],
+    tehsils: ["Kashipur", "Jaspur", "Bajpur", "Kichha"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Kashipur?",
+        answer:
+          "It takes around 11.5 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1150,
+  },
+  {
+    id: "vns-alm",
+    slug: "varanasi-to-almora-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Almora",
+    distance: 750,
+    duration: "14 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Almora. Covers tehsils: Almora, Ranikhet, Dwarahat, Someshwar.",
+    highlights: [
+      "Cultural Heritage",
+      "Scenic Hills",
+      "Kasar Devi Temple",
+      "Comfort Ride",
+      "Experienced Drivers",
+    ],
+    tehsils: ["Almora", "Ranikhet", "Dwarahat", "Someshwar"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Almora?",
+        answer:
+          "It takes around 14 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Almora famous for?",
+        answer:
+          "Almora is famous for its cultural heritage, scenic beauty, and Kasar Devi Temple.",
+      },
+    ],
+    tollEstimate: 1400,
+  },
+  {
+    id: "vns-ptg",
+    slug: "varanasi-to-pithoragarh-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Pithoragarh",
+    distance: 850,
+    duration: "16 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Pithoragarh. Covers tehsils: Pithoragarh, Didihat, Gangolihat, Berinag.",
+    highlights: [
+      "Himalayan Views",
+      "Offbeat Destination",
+      "Scenic Route",
+      "Comfort Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Pithoragarh", "Didihat", "Gangolihat", "Berinag"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Pithoragarh?",
+        answer:
+          "It takes around 16 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1600,
+  },
+  {
+    id: "vns-jos",
+    slug: "varanasi-to-joshimath-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Joshimath",
+    distance: 950,
+    duration: "18 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Joshimath. Covers tehsils: Joshimath, Chamoli, Karnaprayag, Badrinath.",
+    highlights: [
+      "Badrinath Route",
+      "Himalayan Adventure",
+      "Auli Skiing",
+      "Comfort Ride",
+      "Pilgrimage Stop",
+    ],
+    tehsils: ["Joshimath", "Chamoli", "Karnaprayag", "Badrinath"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Joshimath?",
+        answer:
+          "It takes around 18 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "Is Joshimath a stopover for Badrinath?",
+        answer: "Yes, Joshimath is the gateway to Badrinath and Auli.",
+      },
+    ],
+    tollEstimate: 1800,
+  },
+  {
+    id: "vns-ktw",
+    slug: "varanasi-to-kotdwar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kotdwar",
+    distance: 750,
+    duration: "14 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Kotdwar. Covers tehsils: Kotdwar, Lansdowne, Pauri, Satpuli.",
+    highlights: [
+      "Garhwal Region",
+      "Scenic Route",
+      "Lansdowne View",
+      "Comfort Travel",
+      "Budget Friendly",
+    ],
+    tehsils: ["Kotdwar", "Lansdowne", "Pauri", "Satpuli"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Kotdwar?",
+        answer:
+          "It takes around 14 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1400,
+  },
+  // Add to your ROUTES array in data.ts
+
+  // ================= MADHYA PRADESH ROUTES FROM VARANASI =================
+  {
+    id: "vns-bpl",
+    slug: "varanasi-to-bhopal-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bhopal",
+    distance: 720,
+    duration: "13 Hours",
+    description:
+      "Comfortable tempo traveller service from Varanasi to Bhopal. Covers tehsils: Bhopal, Huzur, Berasia, Phanda.",
+    highlights: [
+      "City of Lakes",
+      "Capital City",
+      "Comfort Ride",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Bhopal", "Huzur", "Berasia", "Phanda"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Bhopal?",
+        answer:
+          "It takes around 13 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Bhopal famous for?",
+        answer:
+          "Bhopal is famous for its lakes, Upper Lake, Lower Lake, and Taj-ul-Masjid.",
+      },
+    ],
+    tollEstimate: 1300,
+  },
+  {
+    id: "vns-idr",
+    slug: "varanasi-to-indore-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Indore",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Indore. Covers tehsils: Indore, Mhow, Depalpur, Sanwer.",
+    highlights: [
+      "Commercial Capital",
+      "Cleanest City",
+      "Food Capital",
+      "Comfort Travel",
+      "Budget Friendly",
+    ],
+    tehsils: ["Indore", "Mhow", "Depalpur", "Sanwer"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Indore?",
+        answer:
+          "It takes around 15 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Indore famous for?",
+        answer:
+          "Indore is famous for its street food, Sarafa Bazar, and Rajwada Palace.",
+      },
+    ],
+    tollEstimate: 1550,
+  },
+  {
+    id: "vns-jbp",
+    slug: "varanasi-to-jabalpur-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Jabalpur",
+    distance: 420,
+    duration: "9 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Jabalpur. Covers tehsils: Jabalpur, Panagar, Sihora, Patan.",
+    highlights: [
+      "Marble Rocks",
+      "Narmada River",
+      "Bhedaghat",
+      "Comfort Ride",
+      "Scenic Views",
+    ],
+    tehsils: ["Jabalpur", "Panagar", "Sihora", "Patan"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Jabalpur?",
+        answer:
+          "It takes around 9 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Jabalpur famous for?",
+        answer:
+          "Jabalpur is famous for Marble Rocks at Bhedaghat and Dhuandhar Falls.",
+      },
+    ],
+    tollEstimate: 750,
+  },
+  {
+    id: "vns-gwl",
+    slug: "varanasi-to-gwalior-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Gwalior",
+    distance: 550,
+    duration: "10 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Gwalior. Covers tehsils: Gwalior, Dabra, Bhitarwar, Morar.",
+    highlights: [
+      "Gwalior Fort",
+      "Scindia Heritage",
+      "Tansen Tomb",
+      "Comfort Travel",
+      "Safe Ride",
+    ],
+    tehsils: ["Gwalior", "Dabra", "Bhitarwar", "Morar"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Gwalior?",
+        answer:
+          "It takes around 10 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Gwalior famous for?",
+        answer:
+          "Gwalior is famous for Gwalior Fort, Jai Vilas Palace, and Tansen's Tomb.",
+      },
+    ],
+    tollEstimate: 950,
+  },
+  {
+    id: "vns-ujn",
+    slug: "varanasi-to-ujjain-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Ujjain",
+    distance: 780,
+    duration: "14 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Ujjain. Covers tehsils: Ujjain, Mahidpur, Tarana, Ghatiya.",
+    highlights: [
+      "Mahakaleshwar Jyotirlinga",
+      "Simhastha Kumbh",
+      "Pilgrimage",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Ujjain", "Mahidpur", "Tarana", "Ghatiya"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Ujjain?",
+        answer:
+          "It takes around 14 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Ujjain famous for?",
+        answer:
+          "Ujjain is famous for Mahakaleshwar Jyotirlinga, one of the 12 Jyotirlingas.",
+      },
+    ],
+    tollEstimate: 1400,
+  },
+  {
+    id: "vns-rwa",
+    slug: "varanasi-to-rewa-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Rewa",
+    distance: 260,
+    duration: "6 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Rewa. Covers tehsils: Rewa, Mauganj, Sirmaur, Teonthar.",
+    highlights: [
+      "White Tiger Safari",
+      "Govindgarh Palace",
+      "Vindhya Range",
+      "Comfort Travel",
+      "Budget Friendly",
+    ],
+    tehsils: ["Rewa", "Mauganj", "Sirmaur", "Teonthar"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Rewa?",
+        answer:
+          "It takes around 6 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Rewa famous for?",
+        answer: "Rewa is famous for White Tiger Safari and Govindgarh Palace.",
+      },
+    ],
+    tollEstimate: 400,
+  },
+  {
+    id: "vns-stn",
+    slug: "varanasi-to-satna-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Satna",
+    distance: 280,
+    duration: "6.5 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Satna. Covers tehsils: Satna, Nagod, Ramnagar, Maihar.",
+    highlights: [
+      "Maihar Devi Temple",
+      "Cement City",
+      "Comfort Ride",
+      "Safe Travel",
+      "Pilgrimage Route",
+    ],
+    tehsils: ["Satna", "Nagod", "Ramnagar", "Maihar"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Satna?",
+        answer:
+          "It takes around 6.5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Satna famous for?",
+        answer: "Satna is famous for Maihar Devi Temple and cement industry.",
+      },
+    ],
+    tollEstimate: 450,
+  },
+  {
+    id: "vns-kti",
+    slug: "varanasi-to-katni-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Katni",
+    distance: 380,
+    duration: "8 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Katni. Covers tehsils: Katni, Barhi, Vijayraghavgarh, Bahoriband.",
+    highlights: [
+      "Railway Junction",
+      "Marble City",
+      "Comfort Travel",
+      "Safe Ride",
+      "Budget Friendly",
+    ],
+    tehsils: ["Katni", "Barhi", "Vijayraghavgarh", "Bahoriband"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Katni?",
+        answer:
+          "It takes around 8 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 650,
+  },
+  {
+    id: "vns-sgr",
+    slug: "varanasi-to-sagar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Sagar",
+    distance: 500,
+    duration: "10 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Sagar. Covers tehsils: Sagar, Rehli, Banda, Deori.",
+    highlights: [
+      "Rajharshi Lake",
+      "University Town",
+      "Comfort Ride",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Sagar", "Rehli", "Banda", "Deori"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Sagar?",
+        answer:
+          "It takes around 10 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 850,
+  },
+  {
+    id: "vns-dew",
+    slug: "varanasi-to-dewas-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Dewas",
+    distance: 820,
+    duration: "14.5 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Dewas. Covers tehsils: Dewas, Kannod, Sonkatch, Khategaon.",
+    highlights: [
+      "Industrial City",
+      "Devi Vindhyavasini Temple",
+      "Comfort Travel",
+      "Safe Ride",
+      "Budget Friendly",
+    ],
+    tehsils: ["Dewas", "Kannod", "Sonkatch", "Khategaon"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Dewas?",
+        answer:
+          "It takes around 14.5 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1500,
+  },
+  {
+    id: "vns-kjr",
+    slug: "varanasi-to-khajuraho-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Khajuraho",
+    distance: 420,
+    duration: "9 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Khajuraho. Covers tehsils: Chhatarpur, Bijawar, Bada Malhera, Gaurihar.",
+    highlights: [
+      "UNESCO World Heritage",
+      "Temple City",
+      "Kandariya Mahadev",
+      "Comfort Ride",
+      "Cultural Tour",
+    ],
+    tehsils: ["Chhatarpur", "Bijawar", "Bada Malhera", "Gaurihar"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Khajuraho?",
+        answer:
+          "It takes around 9 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Khajuraho famous for?",
+        answer:
+          "Khajuraho is famous for its UNESCO World Heritage temples with intricate carvings.",
+      },
+    ],
+    tollEstimate: 750,
+  },
+  {
+    id: "vns-chw",
+    slug: "varanasi-to-chhindwara-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Chhindwara",
+    distance: 650,
+    duration: "12 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Chhindwara. Covers tehsils: Chhindwara, Sausar, Parasia, Mohkhed.",
+    highlights: [
+      "Tribal District",
+      "Cotton City",
+      "Patalkot Valley",
+      "Comfort Travel",
+      "Safe Ride",
+    ],
+    tehsils: ["Chhindwara", "Sausar", "Parasia", "Mohkhed"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Chhindwara?",
+        answer:
+          "It takes around 12 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1150,
+  },
+  {
+    id: "vns-bur",
+    slug: "varanasi-to-burhanpur-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Burhanpur",
+    distance: 880,
+    duration: "16 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Burhanpur. Covers tehsils: Burhanpur, Nepanagar, Shahpur, Bhikangaon.",
+    highlights: [
+      "Historical City",
+      "Tapti River",
+      "Shahi Qila",
+      "Comfort Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Burhanpur", "Nepanagar", "Shahpur", "Bhikangaon"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Burhanpur?",
+        answer:
+          "It takes around 16 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1600,
+  },
+  {
+    id: "vns-svp",
+    slug: "varanasi-to-shivpuri-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Shivpuri",
+    distance: 600,
+    duration: "11 Hours",
+    description:
+      "Affordable tempo traveller from Varanasi to Shivpuri. Covers tehsils: Shivpuri, Kolaras, Narwar, Pichhore.",
+    highlights: [
+      "George Castle",
+      "Madhav National Park",
+      "Chhatris",
+      "Comfort Travel",
+      "Safe Ride",
+    ],
+    tehsils: ["Shivpuri", "Kolaras", "Narwar", "Pichhore"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Shivpuri?",
+        answer:
+          "It takes around 11 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1050,
+  },
+  {
+    id: "vns-rtl",
+    slug: "varanasi-to-ratlam-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Ratlam",
+    distance: 880,
+    duration: "16 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Ratlam. Covers tehsils: Ratlam, Sailana, Tal, Piploda.",
+    highlights: [
+      "Malwa Region",
+      "Golden Tobacco",
+      "Ratlami Sev",
+      "Comfort Travel",
+      "Safe Ride",
+    ],
+    tehsils: ["Ratlam", "Sailana", "Tal", "Piploda"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Ratlam?",
+        answer:
+          "It takes around 16 hours depending on traffic and road conditions.",
+      },
+    ],
+    tollEstimate: 1600,
   },
 ].map((route) => ({
   ...route,

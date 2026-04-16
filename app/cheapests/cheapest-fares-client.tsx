@@ -9,22 +9,55 @@ import {
   TrendingDown,
   ArrowRight,
   MapPin,
+  Mountain,
+  Landmark,
 } from "lucide-react";
 import { TaxiRoute } from "@/lib/data";
 import {
   PRAYAGRAJ_CHEAPEST_ROUTES,
   AYODHYA_CHEAPEST_ROUTES,
   VARANASI_CHEAPEST_ROUTES,
+  UTTARAKHAND_CHEAPEST_ROUTES,
+  MADHYAPRADESH_CHEAPEST_ROUTES,
 } from "@/lib/cheapestRoute";
 
 export default function CheapestFaresClient() {
   const [search, setSearch] = useState("");
 
-  const ALL_CHEAPEST_ROUTES = [
-    ...PRAYAGRAJ_CHEAPEST_ROUTES,
-    ...AYODHYA_CHEAPEST_ROUTES,
-    ...VARANASI_CHEAPEST_ROUTES,
-  ];
+  const ALL_CHEAPEST_ROUTES = useMemo(() => {
+    return [
+      // Prayagraj routes (add originCity for grouping)
+      ...PRAYAGRAJ_CHEAPEST_ROUTES.map((route) => ({
+        ...route,
+        originCity: "Prayagraj",
+        category: "regular",
+      })),
+      // Ayodhya routes
+      ...AYODHYA_CHEAPEST_ROUTES.map((route) => ({
+        ...route,
+        originCity: "Ayodhya",
+        category: "regular",
+      })),
+      // Varanasi regular routes (UP only)
+      ...VARANASI_CHEAPEST_ROUTES.map((route) => ({
+        ...route,
+        originCity: "Varanasi",
+        category: "regular",
+      })),
+      // Uttarakhand routes from Varanasi
+      ...UTTARAKHAND_CHEAPEST_ROUTES.map((route) => ({
+        ...route,
+        originCity: "Varanasi",
+        category: "uttarakhand",
+      })),
+      // Madhya Pradesh routes from Varanasi
+      ...MADHYAPRADESH_CHEAPEST_ROUTES.map((route) => ({
+        ...route,
+        originCity: "Varanasi",
+        category: "madhyapradesh",
+      })),
+    ];
+  }, []);
 
   // Sort by cheapest fare
   const sortedRoutes = useMemo(() => {
@@ -34,7 +67,7 @@ export default function CheapestFaresClient() {
         fare: calculateFare(route.distance, 18),
       }))
       .sort((a, b) => a.fare - b.fare);
-  }, []);
+  }, [ALL_CHEAPEST_ROUTES]);
 
   // Search filter
   const filteredRoutes = sortedRoutes.filter((route) =>
@@ -46,8 +79,9 @@ export default function CheapestFaresClient() {
   const routesByCity = useMemo(() => {
     return sortedRoutes.reduce(
       (acc, route) => {
-        if (!acc[route.origin]) acc[route.origin] = [];
-        acc[route.origin].push(route);
+        const cityKey = route.originCity || route.origin;
+        if (!acc[cityKey]) acc[cityKey] = [];
+        acc[cityKey].push(route);
         return acc;
       },
       {} as Record<string, typeof sortedRoutes>,
@@ -55,6 +89,14 @@ export default function CheapestFaresClient() {
   }, [sortedRoutes]);
 
   const cities = Object.keys(routesByCity).sort();
+
+  // Helper to get Varanasi sub-sections
+  const getVaranasiSubSections = (routes: typeof sortedRoutes) => {
+    const regular = routes.filter((r) => r.category === "regular");
+    const uttarakhand = routes.filter((r) => r.category === "uttarakhand");
+    const madhyaPradesh = routes.filter((r) => r.category === "madhyapradesh");
+    return { regular, uttarakhand, madhyaPradesh };
+  };
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -118,8 +160,7 @@ export default function CheapestFaresClient() {
           <div className="space-y-8">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-black text-secondary">
-                Found {filteredRoutes.length} Results for &quot;{search}
-                &quot;
+                Found {filteredRoutes.length} Results for "{search}"
               </h2>
             </div>
             {filteredRoutes.length > 0 ? (
@@ -132,7 +173,7 @@ export default function CheapestFaresClient() {
               <div className="bg-white p-12 rounded-3xl text-center border-2 border-dashed border-slate-200">
                 <p className="text-slate-500 font-bold italic">
                   No specific route found. Try searching for city names like
-                  &quot;Varanasi&quot; or &quot;Lucknow&quot;.
+                  "Varanasi" or "Lucknow".
                 </p>
               </div>
             )}
@@ -140,29 +181,104 @@ export default function CheapestFaresClient() {
         ) : (
           // CITY-WISE CHEAPEST
           <div className="space-y-24">
-            {cities.map((city) => (
-              <div key={city} className="space-y-16">
-                {/* ================= NORMAL SECTION ================= */}
-                <div className="space-y-10">
-                  <div className="flex items-center gap-4">
-                    <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
-                      <MapPin className="text-primary w-8 h-8" />
-                      Cheapest Tempo Traveller from {city}
-                    </h2>
-                    <div className="h-px bg-slate-200 flex-1 mt-2" />
-                    <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
-                      {city.length} Active Routes
-                    </span>
-                  </div>
+            {cities.map((city) => {
+              const cityRoutes = routesByCity[city];
 
-                  <div className="grid md:grid-cols-3 gap-6">
-                    {routesByCity[city].map((route) => (
-                      <CheapestCard key={route.id} route={route} />
-                    ))}
+              if (city === "Varanasi") {
+                const { regular, uttarakhand, madhyaPradesh } =
+                  getVaranasiSubSections(cityRoutes);
+
+                return (
+                  <div key={city} className="space-y-16">
+                    {/* Regular Varanasi Routes (UP) */}
+                    {regular.length > 0 && (
+                      <div className="space-y-10">
+                        <div className="flex items-center gap-4">
+                          <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                            <MapPin className="text-primary w-8 h-8" />
+                            Cheapest Tempo Traveller from {city}
+                          </h2>
+                          <div className="h-px bg-slate-200 flex-1 mt-2" />
+                          <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                            {regular.length} Active Routes
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                          {regular.map((route) => (
+                            <CheapestCard key={route.id} route={route} />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Uttarakhand Hill Routes */}
+                    {uttarakhand.length > 0 && (
+                      <div className="space-y-10">
+                        <div className="flex items-center gap-4">
+                          <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                            <MapPin className="text-primary w-8 h-8" />
+                            From Varanasi to Uttarakhand (Hill Stations)
+                          </h2>
+                          <div className="h-px bg-slate-200 flex-1 mt-2" />
+                          <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                            {uttarakhand.length} Active Routes
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                          {uttarakhand.map((route) => (
+                            <CheapestCard key={route.id} route={route} />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Madhya Pradesh Routes */}
+                    {madhyaPradesh.length > 0 && (
+                      <div className="space-y-10">
+                        <div className="flex items-center gap-4">
+                          <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                            <MapPin className="text-primary w-8 h-8" />
+                            From Varanasi to Madhya Pradesh (Heart of India)
+                          </h2>
+                          <div className="h-px bg-slate-200 flex-1 mt-2" />
+                          <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                            {madhyaPradesh.length} Active Routes
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                          {madhyaPradesh.map((route) => (
+                            <CheapestCard key={route.id} route={route} />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              // For other cities (Prayagraj, Ayodhya)
+              return (
+                <div key={city} className="space-y-16">
+                  <div className="space-y-10">
+                    <div className="flex items-center gap-4">
+                      <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                        <MapPin className="text-primary w-8 h-8" />
+                        Cheapest Tempo Traveller from {city}
+                      </h2>
+                      <div className="h-px bg-slate-200 flex-1 mt-2" />
+                      <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                        {cityRoutes.length} Active Routes
+                      </span>
+                    </div>
+                    <div className="grid md:grid-cols-3 gap-6">
+                      {cityRoutes.map((route) => (
+                        <CheapestCard key={route.id} route={route} />
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </main>
