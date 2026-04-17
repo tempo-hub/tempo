@@ -7,6 +7,9 @@ import {
   VARANASI_CHEAPEST_ROUTES,
   UTTARAKHAND_CHEAPEST_ROUTES,
   MADHYAPRADESH_CHEAPEST_ROUTES,
+  RAJASTHAN_CHEAPEST_ROUTES,
+  BIHAR_CHEAPEST_ROUTES,
+  DELHI_NCR_CHEAPEST_ROUTES,
 } from "@/lib/cheapestRoute";
 
 // SEO Metadata
@@ -21,6 +24,11 @@ export async function generateMetadata({
     ...PRAYAGRAJ_CHEAPEST_ROUTES,
     ...AYODHYA_CHEAPEST_ROUTES,
     ...VARANASI_CHEAPEST_ROUTES,
+    ...UTTARAKHAND_CHEAPEST_ROUTES,
+    ...MADHYAPRADESH_CHEAPEST_ROUTES,
+    ...RAJASTHAN_CHEAPEST_ROUTES,
+    ...BIHAR_CHEAPEST_ROUTES,
+    ...DELHI_NCR_CHEAPEST_ROUTES,
   ];
 
   const route = ALL_CHEAPEST_ROUTES.find((r) => r.slug === slug);
@@ -43,6 +51,11 @@ export async function generateStaticParams() {
     ...PRAYAGRAJ_CHEAPEST_ROUTES,
     ...AYODHYA_CHEAPEST_ROUTES,
     ...VARANASI_CHEAPEST_ROUTES,
+    ...UTTARAKHAND_CHEAPEST_ROUTES,
+    ...MADHYAPRADESH_CHEAPEST_ROUTES,
+    ...RAJASTHAN_CHEAPEST_ROUTES,
+    ...BIHAR_CHEAPEST_ROUTES,
+    ...DELHI_NCR_CHEAPEST_ROUTES,
   ];
 
   return ALL_CHEAPEST_ROUTES.map((route) => ({
@@ -63,21 +76,10 @@ export default async function Page({
     ...AYODHYA_CHEAPEST_ROUTES,
     ...VARANASI_CHEAPEST_ROUTES,
     ...UTTARAKHAND_CHEAPEST_ROUTES,
-  ];
-
-  const ALL_VARANASI_ROUTES = [
-    ...VARANASI_CHEAPEST_ROUTES.map((route) => ({
-      ...route,
-      category: "regular",
-    })),
-    ...UTTARAKHAND_CHEAPEST_ROUTES.map((route) => ({
-      ...route,
-      category: "uttarakhand",
-    })),
-    ...MADHYAPRADESH_CHEAPEST_ROUTES.map((route) => ({
-      ...route,
-      category: "madhyapradesh",
-    })),
+    ...MADHYAPRADESH_CHEAPEST_ROUTES,
+    ...RAJASTHAN_CHEAPEST_ROUTES,
+    ...BIHAR_CHEAPEST_ROUTES,
+    ...DELHI_NCR_CHEAPEST_ROUTES,
   ];
 
   const route = ALL_CHEAPEST_ROUTES.find((r) => r.slug === slug);

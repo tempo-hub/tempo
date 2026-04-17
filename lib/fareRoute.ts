@@ -54,17 +54,59 @@ const RAJASTHAN_DESTINATIONS = [
   "Jaisalmer",
   "Mount Abu",
   "Kota",
+  "Ajmer",
+  "Bikaner",
+  "Alwar",
+  "Bharatpur",
+  "Sikar",
+  "Pali",
+  "Bhilwara",
+  "Chittorgarh",
+  "Hanumangarh",
+  "Sri Ganganagar",
+  "Jhunjhunu",
+  "Nagaur",
+  "Barmer",
+  "Tonk",
+  "Dausa",
+  "Sawai Madhopur",
+  "Bundi",
+  "Baran",
+  "Karauli",
+  "Dholpur",
+  "Sirohi",
+  "Jalore",
+  "Banswara",
+  "Dungarpur",
+  "Rajsamand",
 ];
 
 const BIHAR_DESTINATIONS = [
   "Patna",
-  "Bodh Gaya",
   "Gaya",
-  "Rajgir",
-  "Nalanda",
-  "Buxar",
+  "Bodh Gaya",
+  "Muzaffarpur",
+  "Bhagalpur",
+  "Darbhanga",
+  "Purnia",
+  "Arrah",
+  "Begusarai",
+  "Munger",
   "Sasaram",
-  "Dehri-on-Sone",
+  "Hajipur",
+  "Siwan",
+  "Chapra",
+];
+
+const DELHI_NCR_DESTINATIONS = [
+  "Delhi",
+  "Noida",
+  "Gurugram",
+  "Ghaziabad",
+  "Faridabad",
+  "Greater Noida",
+  "Meerut",
+  "Panipat",
 ];
 
 const ALL_EXCLUDED_DESTINATIONS = [
@@ -72,6 +114,7 @@ const ALL_EXCLUDED_DESTINATIONS = [
   ...MADHYAPRADESH_DESTINATIONS,
   ...RAJASTHAN_DESTINATIONS,
   ...BIHAR_DESTINATIONS,
+  ...DELHI_NCR_DESTINATIONS,
 ];
 
 // Filter routes by origin city for REGULAR FARES
@@ -83,7 +126,7 @@ export const AYODHYA_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) => route.origin === "Ayodhya",
 );
 
-// Varanasi routes EXCLUDING Uttarakhand, MP, Rajasthan, Bihar
+// Varanasi routes EXCLUDING Uttarakhand, MP, Rajasthan, Bihar, Delhi NCR
 export const VARANASI_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) =>
     route.origin === "Varanasi" &&
@@ -120,4 +163,11 @@ export const BIHAR_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) =>
     route.origin === "Varanasi" &&
     BIHAR_DESTINATIONS.includes(route.destination),
+);
+
+// Delhi-NCR routes from Varanasi - Regular Fares
+export const DELHI_NCR_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
+  (route) =>
+    route.origin === "Varanasi" &&
+    DELHI_NCR_DESTINATIONS.includes(route.destination),
 );

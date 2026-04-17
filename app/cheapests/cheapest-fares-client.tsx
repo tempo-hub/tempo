@@ -9,8 +9,6 @@ import {
   TrendingDown,
   ArrowRight,
   MapPin,
-  Mountain,
-  Landmark,
 } from "lucide-react";
 import { TaxiRoute } from "@/lib/data";
 import {
@@ -19,42 +17,63 @@ import {
   VARANASI_CHEAPEST_ROUTES,
   UTTARAKHAND_CHEAPEST_ROUTES,
   MADHYAPRADESH_CHEAPEST_ROUTES,
+  RAJASTHAN_CHEAPEST_ROUTES,
+  BIHAR_CHEAPEST_ROUTES,
+  DELHI_NCR_CHEAPEST_ROUTES,
 } from "@/lib/cheapestRoute";
 
 export default function CheapestFaresClient() {
   const [search, setSearch] = useState("");
 
-  const ALL_CHEAPEST_ROUTES = useMemo(() => {
+  const ALL_CHEAPEST_ROUTES: (TaxiRoute & { originCity?: string })[] = useMemo(() => {
     return [
       // Prayagraj routes (add originCity for grouping)
       ...PRAYAGRAJ_CHEAPEST_ROUTES.map((route) => ({
         ...route,
         originCity: "Prayagraj",
-        category: "regular",
+        category: "regular" as const,
       })),
       // Ayodhya routes
       ...AYODHYA_CHEAPEST_ROUTES.map((route) => ({
         ...route,
         originCity: "Ayodhya",
-        category: "regular",
+        category: "regular" as const,
       })),
       // Varanasi regular routes (UP only)
       ...VARANASI_CHEAPEST_ROUTES.map((route) => ({
         ...route,
         originCity: "Varanasi",
-        category: "regular",
+        category: "regular" as const,
       })),
       // Uttarakhand routes from Varanasi
       ...UTTARAKHAND_CHEAPEST_ROUTES.map((route) => ({
         ...route,
         originCity: "Varanasi",
-        category: "uttarakhand",
+        category: "uttarakhand" as const,
       })),
       // Madhya Pradesh routes from Varanasi
       ...MADHYAPRADESH_CHEAPEST_ROUTES.map((route) => ({
         ...route,
         originCity: "Varanasi",
-        category: "madhyapradesh",
+        category: "madhyapradesh" as const,
+      })),
+      // Rajasthan routes from Varanasi
+      ...RAJASTHAN_CHEAPEST_ROUTES.map((route) => ({
+        ...route,
+        originCity: "Varanasi",
+        category: "rajasthan" as const,
+      })),
+      // Bihar routes from Varanasi
+      ...BIHAR_CHEAPEST_ROUTES.map((route) => ({
+        ...route,
+        originCity: "Varanasi",
+        category: "bihar" as const,
+      })),
+      // Bihar routes from Varanasi
+      ...DELHI_NCR_CHEAPEST_ROUTES.map((route) => ({
+        ...route,
+        originCity: "Varanasi",
+        category: "delhi-NCR" as const,
       })),
     ];
   }, []);
@@ -95,7 +114,10 @@ export default function CheapestFaresClient() {
     const regular = routes.filter((r) => r.category === "regular");
     const uttarakhand = routes.filter((r) => r.category === "uttarakhand");
     const madhyaPradesh = routes.filter((r) => r.category === "madhyapradesh");
-    return { regular, uttarakhand, madhyaPradesh };
+    const rajasthan = routes.filter((r) => r.category === "rajasthan");
+    const bihar = routes.filter((r) => r.category === "bihar");
+    const delhiNCR = routes.filter((r) => r.category === "delhi-NCR");
+    return { regular, uttarakhand, madhyaPradesh, rajasthan, bihar, delhiNCR};
   };
 
   return (
@@ -160,7 +182,7 @@ export default function CheapestFaresClient() {
           <div className="space-y-8">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-black text-secondary">
-                Found {filteredRoutes.length} Results for "{search}"
+                Found {filteredRoutes.length} Results for &quot;{search}&quot;
               </h2>
             </div>
             {filteredRoutes.length > 0 ? (
@@ -173,7 +195,7 @@ export default function CheapestFaresClient() {
               <div className="bg-white p-12 rounded-3xl text-center border-2 border-dashed border-slate-200">
                 <p className="text-slate-500 font-bold italic">
                   No specific route found. Try searching for city names like
-                  "Varanasi" or "Lucknow".
+                  &quot;Varanasi&quot; or &quot;Lucknow&quot;.
                 </p>
               </div>
             )}
@@ -185,7 +207,7 @@ export default function CheapestFaresClient() {
               const cityRoutes = routesByCity[city];
 
               if (city === "Varanasi") {
-                const { regular, uttarakhand, madhyaPradesh } =
+                const { regular, uttarakhand, madhyaPradesh, rajasthan, bihar, delhiNCR } =
                   getVaranasiSubSections(cityRoutes);
 
                 return (
@@ -247,6 +269,69 @@ export default function CheapestFaresClient() {
                         </div>
                         <div className="grid md:grid-cols-3 gap-6">
                           {madhyaPradesh.map((route) => (
+                            <CheapestCard key={route.id} route={route} />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Rajasthan Routes */}
+                    {rajasthan.length > 0 && (
+                      <div className="space-y-10">
+                        <div className="flex items-center gap-4">
+                          <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                            <MapPin className="text-primary w-8 h-8" />
+                            From Varanasi to Rajasthan
+                          </h2>
+                          <div className="h-px bg-slate-200 flex-1 mt-2" />
+                          <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                            {rajasthan.length} Active Routes
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                          {rajasthan.map((route) => (
+                            <CheapestCard key={route.id} route={route} />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Bihar Routes */}
+                    {bihar.length > 0 && (
+                      <div className="space-y-10">
+                        <div className="flex items-center gap-4">
+                          <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                            <MapPin className="text-primary w-8 h-8" />
+                            From Varanasi to Bihar
+                          </h2>
+                          <div className="h-px bg-slate-200 flex-1 mt-2" />
+                          <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                            {bihar.length} Active Routes
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                          {bihar.map((route) => (
+                            <CheapestCard key={route.id} route={route} />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Delhi NCR Routes */}
+                    {delhiNCR.length > 0 && (
+                      <div className="space-y-10">
+                        <div className="flex items-center gap-4">
+                          <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                            <MapPin className="text-primary w-8 h-8" />
+                            From Varanasi to Delhi-NCR
+                          </h2>
+                          <div className="h-px bg-slate-200 flex-1 mt-2" />
+                          <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">
+                            {delhiNCR.length} Active Routes
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                          {delhiNCR.map((route) => (
                             <CheapestCard key={route.id} route={route} />
                           ))}
                         </div>

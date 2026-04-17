@@ -4390,3 +4390,1113 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     tollEstimate: 1600,
   },
 ];
+
+export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
+  // ================= RAJASTHAN CITIES & TEHSILS (VARANASI TO RAJASTHAN) =================
+  {
+    id: "vns-jai",
+    slug: "varanasi-to-jaipur-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Jaipur",
+    distance: 750,
+    duration: "13 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Jaipur. Covers tehsils: Jaipur, Amber, Sanganer, Chomu, Phulera.",
+    highlights: [
+      "Pink City",
+      "Hawa Mahal",
+      "Amber Fort",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Jaipur", "Amber", "Sanganer", "Chomu", "Phulera"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Jaipur?",
+        answer: "Fare starts from ₹" + 750 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1400,
+  },
+  {
+    id: "vns-jdh",
+    slug: "varanasi-to-jodhpur-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Jodhpur",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Jodhpur. Covers tehsils: Jodhpur, Balesar, Bhopalgarh, Luni, Osian.",
+    highlights: [
+      "Blue City",
+      "Mehrangarh Fort",
+      "Jaswant Thada",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Jodhpur", "Balesar", "Bhopalgarh", "Luni", "Osian"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Jodhpur?",
+        answer: "Fare starts from ₹" + 1050 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1950,
+  },
+  {
+    id: "vns-uda",
+    slug: "varanasi-to-udaipur-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Udaipur",
+    distance: 900,
+    duration: "16 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Udaipur. Covers tehsils: Girwa, Mavli, Vallabhnagar, Kherwara, Nathdwara.",
+    highlights: [
+      "City of Lakes",
+      "Lake Pichola",
+      "City Palace",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Girwa", "Mavli", "Vallabhnagar", "Kherwara", "Nathdwara"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Udaipur?",
+        answer: "Fare starts from ₹" + 900 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1650,
+  },
+  {
+    id: "vns-kta",
+    slug: "varanasi-to-kota-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kota",
+    distance: 680,
+    duration: "12 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Kota. Covers tehsils: Kota, Ladpura, Sangod, Ramganj Mandi, Digod.",
+    highlights: [
+      "Coaching Hub",
+      "Chambal River",
+      "Kota Fort",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Kota", "Ladpura", "Sangod", "Ramganj Mandi", "Digod"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Kota?",
+        answer: "Fare starts from ₹" + 680 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1250,
+  },
+  {
+    id: "vns-ajm",
+    slug: "varanasi-to-ajmer-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Ajmer",
+    distance: 820,
+    duration: "14 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Ajmer. Covers tehsils: Ajmer, Pushkar, Kishangarh, Nasirabad, Beawar.",
+    highlights: [
+      "Ajmer Sharif Dargah",
+      "Pushkar Lake",
+      "Brahma Temple",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Ajmer", "Pushkar", "Kishangarh", "Nasirabad", "Beawar"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Ajmer?",
+        answer: "Fare starts from ₹" + 820 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1500,
+  },
+  {
+    id: "vns-bkn",
+    slug: "varanasi-to-bikaner-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bikaner",
+    distance: 980,
+    duration: "17 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Bikaner. Covers tehsils: Bikaner, Nokha, Khajuwala, Lunkaransar, Kolayat.",
+    highlights: [
+      "Junagarh Fort",
+      "Camel Festival",
+      "Karni Mata Temple",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Bikaner", "Nokha", "Khajuwala", "Lunkaransar", "Kolayat"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Bikaner?",
+        answer: "Fare starts from ₹" + 980 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1800,
+  },
+  {
+    id: "vns-alw",
+    slug: "varanasi-to-alwar-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Alwar",
+    distance: 650,
+    duration: "11 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Alwar. Covers tehsils: Alwar, Rajgarh, Ramgarh, Thanagazi, Behror.",
+    highlights: [
+      "Sariska Tiger Reserve",
+      "Bala Quila Fort",
+      "Siliserh Lake",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Alwar", "Rajgarh", "Ramgarh", "Thanagazi", "Behror"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Alwar?",
+        answer: "Fare starts from ₹" + 650 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1150,
+  },
+  {
+    id: "vns-bhr",
+    slug: "varanasi-to-bharatpur-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bharatpur",
+    distance: 580,
+    duration: "10 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Bharatpur. Covers tehsils: Bharatpur, Bayana, Weir, Nadbai, Rupbas.",
+    highlights: [
+      "Keoladeo National Park",
+      "Lohagarh Fort",
+      "Bird Sanctuary",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Bharatpur", "Bayana", "Weir", "Nadbai", "Rupbas"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Bharatpur?",
+        answer: "Fare starts from ₹" + 580 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1050,
+  },
+  {
+    id: "vns-skr",
+    slug: "varanasi-to-sikar-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Sikar",
+    distance: 780,
+    duration: "14 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Sikar. Covers tehsils: Sikar, Danta Ramgarh, Fatehpur, Neem Ka Thana.",
+    highlights: [
+      "Shekhawati Region",
+      "Painted Havelis",
+      "Jeen Mata Temple",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Sikar", "Danta Ramgarh", "Fatehpur", "Neem Ka Thana"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Sikar?",
+        answer: "Fare starts from ₹" + 780 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1450,
+  },
+  {
+    id: "vns-pli",
+    slug: "varanasi-to-pali-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Pali",
+    distance: 900,
+    duration: "16 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Pali. Covers tehsils: Pali, Sojat, Sumerpur, Bali, Desuri, Rani.",
+    highlights: [
+      "Ranakpur Jain Temple",
+      "Om Banna Temple",
+      "Industrial Hub",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Pali", "Sojat", "Sumerpur", "Bali", "Desuri", "Rani"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Pali?",
+        answer: "Fare starts from ₹" + 900 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1650,
+  },
+  {
+    id: "vns-mtb",
+    slug: "varanasi-to-mount-abu-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Mount Abu",
+    distance: 1150,
+    duration: "20 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Mount Abu. Covers tehsils: Abu Road, Pindwara, Sirohi, Reodar.",
+    highlights: [
+      "Dilwara Temples",
+      "Nakki Lake",
+      "Guru Shikhar",
+      "Hill Station",
+      "Comfort Ride",
+    ],
+    tehsils: ["Abu Road", "Pindwara", "Sirohi", "Reodar"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Mount Abu?",
+        answer: "Fare starts from ₹" + 1150 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 2100,
+  },
+  {
+    id: "vns-jsm",
+    slug: "varanasi-to-jaisalmer-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Jaisalmer",
+    distance: 1180,
+    duration: "22 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Jaisalmer. Covers tehsils: Jaisalmer, Pokaran, Ramgarh, Fatehgarh.",
+    highlights: [
+      "Golden City",
+      "Sonar Quila",
+      "Desert Safari",
+      "Sam Sand Dunes",
+      "Comfort Ride",
+    ],
+    tehsils: ["Jaisalmer", "Pokaran", "Ramgarh", "Fatehgarh"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Jaisalmer?",
+        answer: "Fare starts from ₹" + 1180 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 2200,
+  },
+  {
+    id: "vns-bhw",
+    slug: "varanasi-to-bhilwara-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bhilwara",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Bhilwara. Covers tehsils: Bhilwara, Mandal, Asind, Shahpura, Mandalgarh.",
+    highlights: [
+      "Textile City",
+      "Harni Mahadev",
+      "Kyara Ke Balaji",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Bhilwara", "Mandal", "Asind", "Shahpura", "Mandalgarh"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Bhilwara?",
+        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1550,
+  },
+  {
+    id: "vns-ctg",
+    slug: "varanasi-to-chittorgarh-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Chittorgarh",
+    distance: 880,
+    duration: "16 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Chittorgarh. Covers tehsils: Chittorgarh, Nimbahera, Kapasan, Begun.",
+    highlights: [
+      "Chittorgarh Fort",
+      "Vijay Stambh",
+      "Meera Temple",
+      "Rajput Heritage",
+      "Comfort Ride",
+    ],
+    tehsils: ["Chittorgarh", "Nimbahera", "Kapasan", "Begun"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Chittorgarh?",
+        answer: "Fare starts from ₹" + 880 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1620,
+  },
+  {
+    id: "vns-hng",
+    slug: "varanasi-to-hanumangarh-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Hanumangarh",
+    distance: 1000,
+    duration: "18 Hours",
+    description:
+      "Cheapest tempo traveller from Varanasi to Hanumangarh. Covers tehsils: Hanumangarh, Nohar, Bhadra, Pilibanga.",
+    highlights: [
+      "Kalibanga",
+      "Indo-Pak Border",
+      "Brahamani Mata Temple",
+      "Comfort Ride",
+      "Safe Travel",
+    ],
+    tehsils: ["Hanumangarh", "Nohar", "Bhadra", "Pilibanga"],
+    category: "rajasthan",
+    faqs: [
+      {
+        question: "What is the fare from Varanasi to Hanumangarh?",
+        answer: "Fare starts from ₹" + 1000 * VEHICLES[0].perKmRate,
+      },
+    ],
+    tollEstimate: 1850,
+  },
+];
+
+export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
+  {
+    id: "vns-pat",
+    slug: "varanasi-to-patna-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Patna",
+    distance: 255,
+    duration: "5 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Patna. Covers tehsils: Patna Sadar, Danapur, Bihta, Maner, Masaurhi, Phulwari, Punpun.",
+    highlights: [
+      "Lowest Fare",
+      "Fast Route",
+      "Patna City Ride",
+      "AC Traveller",
+      "Family Friendly",
+    ],
+    tehsils: [
+      "Patna Sadar",
+      "Danapur",
+      "Bihta",
+      "Maner",
+      "Masaurhi",
+      "Phulwari",
+      "Punpun",
+    ],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Patna?",
+        answer:
+          "It takes around 5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Patna famous for?",
+        answer:
+          "Patna is famous for Golghar, Takht Sri Patna Sahib, and its rich history.",
+      },
+    ],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "vns-gya",
+    slug: "varanasi-to-gaya-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Gaya",
+    distance: 260,
+    duration: "5 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Gaya. Covers tehsils: Gaya, Bodh Gaya, Imamganj, Wazirganj, Guraru.",
+    highlights: [
+      "Budget Trip",
+      "Pilgrimage Route",
+      "Comfort Ride",
+      "AC Traveller",
+      "Safe Travel",
+    ],
+    tehsils: ["Gaya", "Bodh Gaya", "Imamganj", "Wazirganj", "Guraru"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Gaya?",
+        answer:
+          "It takes around 5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Gaya famous for?",
+        answer:
+          "Gaya is famous for Vishnupad Temple and nearby Bodh Gaya pilgrimage site.",
+      },
+    ],
+    tollEstimate: 420,
+  },
+
+  {
+    id: "vns-bdg",
+    slug: "varanasi-to-bodh-gaya-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bodh Gaya",
+    distance: 255,
+    duration: "5 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Bodh Gaya. Covers tehsils: Gaya, Bodh Gaya, Tan Kuppa, Guraru.",
+    highlights: [
+      "Mahabodhi Temple",
+      "Budget Fare",
+      "Safe Ride",
+      "Pilgrimage Route",
+      "Group Friendly",
+    ],
+    tehsils: ["Gaya", "Bodh Gaya", "Tan Kuppa", "Guraru"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Bodh Gaya?",
+        answer:
+          "It takes around 5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Bodh Gaya famous for?",
+        answer:
+          "Bodh Gaya is famous for Mahabodhi Temple and Lord Buddha enlightenment site.",
+      },
+    ],
+    tollEstimate: 420,
+  },
+
+  {
+    id: "vns-mzp",
+    slug: "varanasi-to-muzaffarpur-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Muzaffarpur",
+    distance: 340,
+    duration: "7 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Muzaffarpur. Covers tehsils: Muzaffarpur, Kanti, Marwan, Minapur, Sahebganj.",
+    highlights: [
+      "Litchi City",
+      "Lowest Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Family Friendly",
+    ],
+    tehsils: ["Muzaffarpur", "Kanti", "Marwan", "Minapur", "Sahebganj"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Muzaffarpur?",
+        answer:
+          "It takes around 7 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Muzaffarpur famous for?",
+        answer:
+          "Muzaffarpur is famous for Shahi litchi and commercial markets.",
+      },
+    ],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "vns-bgp",
+    slug: "varanasi-to-bhagalpur-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bhagalpur",
+    distance: 420,
+    duration: "8 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Bhagalpur. Covers tehsils: Bhagalpur, Sultanganj, Nathnagar, Pirpainti.",
+    highlights: [
+      "Silk City",
+      "Budget Fare",
+      "Comfort Ride",
+      "Safe Journey",
+      "Group Friendly",
+    ],
+    tehsils: ["Bhagalpur", "Sultanganj", "Nathnagar", "Pirpainti"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Bhagalpur?",
+        answer:
+          "It takes around 8 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Bhagalpur famous for?",
+        answer:
+          "Bhagalpur is famous for silk industry and Vikramshila heritage.",
+      },
+    ],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "vns-dbg",
+    slug: "varanasi-to-darbhanga-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Darbhanga",
+    distance: 390,
+    duration: "8 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Darbhanga. Covers tehsils: Darbhanga, Bahadurpur, Benipur, Keotiranway.",
+    highlights: [
+      "Mithila Region",
+      "Lowest Fare",
+      "Comfort Ride",
+      "AC Traveller",
+      "Safe Travel",
+    ],
+    tehsils: ["Darbhanga", "Bahadurpur", "Benipur", "Keotiranway"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Darbhanga?",
+        answer:
+          "It takes around 8 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Darbhanga famous for?",
+        answer:
+          "Darbhanga is famous for Mithila culture, ponds, and royal heritage.",
+      },
+    ],
+    tollEstimate: 620,
+  },
+
+  {
+    id: "vns-pur",
+    slug: "varanasi-to-purnia-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Purnia",
+    distance: 510,
+    duration: "10 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Purnia. Covers tehsils: Purnia, Dagarua, Kasba, Krityanand Nagar.",
+    highlights: [
+      "Budget Route",
+      "Comfort Ride",
+      "Long Trip",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Purnia", "Dagarua", "Kasba", "Krityanand Nagar"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Purnia?",
+        answer:
+          "It takes around 10 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Purnia famous for?",
+        answer:
+          "Purnia is famous for agriculture, tea region access, and eastern Bihar connectivity.",
+      },
+    ],
+    tollEstimate: 780,
+  },
+
+  {
+    id: "vns-arr",
+    slug: "varanasi-to-arrah-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Arrah",
+    distance: 155,
+    duration: "4 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Arrah. Covers tehsils: Arrah, Shahpur, Barhara, Jagdishpur, Piro.",
+    highlights: [
+      "Lowest Fare",
+      "Fast Route",
+      "Comfort Ride",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Arrah", "Shahpur", "Barhara", "Jagdishpur", "Piro"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Arrah?",
+        answer:
+          "It takes around 4 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Arrah famous for?",
+        answer:
+          "Arrah is famous for historical importance and Bhojpur region heritage.",
+      },
+    ],
+    tollEstimate: 280,
+  },
+
+  {
+    id: "vns-bgs",
+    slug: "varanasi-to-begusarai-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Begusarai",
+    distance: 355,
+    duration: "7 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Begusarai. Covers tehsils: Begusarai, Teghra, Balia, Naokothi.",
+    highlights: [
+      "Budget Fare",
+      "Industrial Area",
+      "Comfort Ride",
+      "Safe Travel",
+      "Family Friendly",
+    ],
+    tehsils: ["Begusarai", "Teghra", "Balia", "Naokothi"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Begusarai?",
+        answer:
+          "It takes around 7 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Begusarai famous for?",
+        answer:
+          "Begusarai is famous for industries, agriculture, and Bihar's commercial importance.",
+      },
+    ],
+    tollEstimate: 560,
+  },
+
+  {
+    id: "vns-mng",
+    slug: "varanasi-to-munger-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Munger",
+    distance: 410,
+    duration: "8 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Munger. Covers tehsils: Munger, Kharagpur, Bariarpur, Dharhara.",
+    highlights: [
+      "Historic City",
+      "Budget Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Munger", "Kharagpur", "Bariarpur", "Dharhara"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Munger?",
+        answer:
+          "It takes around 8 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Munger famous for?",
+        answer:
+          "Munger is famous for Bihar School of Yoga, fort, and Ganga riverside heritage.",
+      },
+    ],
+    tollEstimate: 620,
+  },
+
+  {
+    id: "vns-ssr",
+    slug: "varanasi-to-sasaram-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Sasaram",
+    distance: 125,
+    duration: "3 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Sasaram. Covers tehsils: Sasaram, Nokha, Chenari, Rohtas.",
+    highlights: [
+      "Quick Route",
+      "Historic Site",
+      "Comfort Ride",
+      "Safe Travel",
+      "Lowest Fare",
+    ],
+    tehsils: ["Sasaram", "Nokha", "Chenari", "Rohtas"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Sasaram?",
+        answer:
+          "It takes around 3 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Sasaram famous for?",
+        answer:
+          "Sasaram is famous for Sher Shah Suri Tomb and Rohtas region history.",
+      },
+    ],
+    tollEstimate: 220,
+  },
+
+  {
+    id: "vns-hjp",
+    slug: "varanasi-to-hajipur-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Hajipur",
+    distance: 275,
+    duration: "6 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Hajipur. Covers tehsils: Hajipur, Vaishali, Mahua, Raghopur.",
+    highlights: [
+      "Banana City",
+      "Budget Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Family Friendly",
+    ],
+    tehsils: ["Hajipur", "Vaishali", "Mahua", "Raghopur"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Hajipur?",
+        answer:
+          "It takes around 6 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Hajipur famous for?",
+        answer:
+          "Hajipur is famous for bananas, Vaishali heritage, and Patna connectivity.",
+      },
+    ],
+    tollEstimate: 470,
+  },
+
+  {
+    id: "vns-swn",
+    slug: "varanasi-to-siwan-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Siwan",
+    distance: 215,
+    duration: "5 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Siwan. Covers tehsils: Siwan, Maharajganj, Raghunathpur, Darauli.",
+    highlights: [
+      "Lowest Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Fast Route",
+      "Group Friendly",
+    ],
+    tehsils: ["Siwan", "Maharajganj", "Raghunathpur", "Darauli"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Siwan?",
+        answer:
+          "It takes around 5 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Siwan famous for?",
+        answer:
+          "Siwan is famous for agriculture and western Bihar regional trade.",
+      },
+    ],
+    tollEstimate: 360,
+  },
+
+  {
+    id: "vns-chp",
+    slug: "varanasi-to-chapra-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Chapra",
+    distance: 245,
+    duration: "6 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Chapra. Covers tehsils: Chapra, Manjhi, Panapur, Sonepur.",
+    highlights: [
+      "Budget Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Family Friendly",
+      "Popular Route",
+    ],
+    tehsils: ["Chapra", "Manjhi", "Panapur", "Sonepur"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Chapra?",
+        answer:
+          "It takes around 6 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Chapra famous for?",
+        answer:
+          "Chapra is famous for Saran region trade and nearby Sonepur fair access.",
+      },
+    ],
+    tollEstimate: 420,
+  },
+];
+
+export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
+  {
+    id: "vns-del",
+    slug: "varanasi-to-delhi-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Delhi",
+    distance: 820,
+    duration: "13 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Delhi. Covers tehsils: Sadar Bazar, Civil Lines, Karol Bagh, Narela.",
+    highlights: [
+      "Lowest Fare",
+      "Capital Route",
+      "Comfort Ride",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Sadar Bazar", "Civil Lines", "Karol Bagh", "Narela"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Delhi?",
+        answer:
+          "It takes around 13 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Delhi famous for?",
+        answer:
+          "Delhi is famous for India Gate, Red Fort, markets, and political importance.",
+      },
+    ],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "vns-noi",
+    slug: "varanasi-to-noida-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Noida",
+    distance: 800,
+    duration: "13 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Noida. Covers tehsils: Dadri, Jewar, Greater Noida, Noida sectors.",
+    highlights: [
+      "Budget Fare",
+      "IT Hub",
+      "Comfort Ride",
+      "Safe Travel",
+      "Family Friendly",
+    ],
+    tehsils: ["Dadri", "Jewar", "Greater Noida", "Noida"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Noida?",
+        answer:
+          "It takes around 13 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Noida famous for?",
+        answer:
+          "Noida is famous for IT parks, malls, Film City, and expressways.",
+      },
+    ],
+    tollEstimate: 1750,
+  },
+
+  {
+    id: "vns-ggn",
+    slug: "varanasi-to-gurugram-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Gurugram",
+    distance: 845,
+    duration: "14 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Gurugram. Covers tehsils: Gurugram, Sohna, Pataudi, Badshahpur.",
+    highlights: [
+      "Corporate Hub",
+      "Lowest Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Gurugram", "Sohna", "Pataudi", "Badshahpur"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Gurugram?",
+        answer:
+          "It takes around 14 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Gurugram famous for?",
+        answer:
+          "Gurugram is famous for offices, malls, Cyber City, and business centers.",
+      },
+    ],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "vns-ghz",
+    slug: "varanasi-to-ghaziabad-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Ghaziabad",
+    distance: 790,
+    duration: "12 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Ghaziabad. Covers tehsils: Ghaziabad, Loni, Modinagar, Muradnagar.",
+    highlights: [
+      "Fast Route",
+      "Budget Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Popular Route",
+    ],
+    tehsils: ["Ghaziabad", "Loni", "Modinagar", "Muradnagar"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Ghaziabad?",
+        answer:
+          "It takes around 12 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Ghaziabad famous for?",
+        answer:
+          "Ghaziabad is famous for industries and Delhi NCR connectivity.",
+      },
+    ],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "vns-frd",
+    slug: "varanasi-to-faridabad-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Faridabad",
+    distance: 850,
+    duration: "14 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Faridabad. Covers tehsils: Faridabad, Ballabgarh, Badkhal, Tigaon.",
+    highlights: [
+      "Industrial City",
+      "Comfort Ride",
+      "Lowest Fare",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Faridabad", "Ballabgarh", "Badkhal", "Tigaon"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Faridabad?",
+        answer:
+          "It takes around 14 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Faridabad famous for?",
+        answer:
+          "Faridabad is famous for industries and Surajkund area.",
+      },
+    ],
+    tollEstimate: 1880,
+  },
+
+  {
+    id: "vns-grn",
+    slug: "varanasi-to-greater-noida-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Greater Noida",
+    distance: 810,
+    duration: "13 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Greater Noida. Covers tehsils: Greater Noida, Dadri, Jewar, Dankaur.",
+    highlights: [
+      "Planned City",
+      "Budget Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Family Friendly",
+    ],
+    tehsils: ["Greater Noida", "Dadri", "Jewar", "Dankaur"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Greater Noida?",
+        answer:
+          "It takes around 13 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Greater Noida famous for?",
+        answer:
+          "Greater Noida is famous for Expo Mart, universities, and wide roads.",
+      },
+    ],
+    tollEstimate: 1760,
+  },
+
+  {
+    id: "vns-mer",
+    slug: "varanasi-to-meerut-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Meerut",
+    distance: 845,
+    duration: "14 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Meerut. Covers tehsils: Meerut, Mawana, Sardhana, Parikshit Garh.",
+    highlights: [
+      "Sports City",
+      "Comfort Ride",
+      "Lowest Fare",
+      "Safe Travel",
+      "Popular Route",
+    ],
+    tehsils: ["Meerut", "Mawana", "Sardhana", "Parikshit Garh"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Meerut?",
+        answer:
+          "It takes around 14 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Meerut famous for?",
+        answer:
+          "Meerut is famous for sports goods and historical significance.",
+      },
+    ],
+    tollEstimate: 1860,
+  },
+
+  {
+    id: "vns-pan",
+    slug: "varanasi-to-panipat-cheapest-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Panipat",
+    distance: 910,
+    duration: "15 Hours",
+    description:
+      "Affordable cheapest tempo traveller service from Varanasi to Panipat. Covers tehsils: Panipat, Samalkha, Israna, Madlauda.",
+    highlights: [
+      "Historic Battles",
+      "Budget Fare",
+      "Comfort Ride",
+      "Safe Travel",
+      "Group Friendly",
+    ],
+    tehsils: ["Panipat", "Samalkha", "Israna", "Madlauda"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Panipat?",
+        answer:
+          "It takes around 15 hours depending on traffic and road conditions.",
+      },
+      {
+        question: "What is Panipat famous for?",
+        answer:
+          "Panipat is famous for textile industry and historic battles.",
+      },
+    ],
+    tollEstimate: 1950,
+  },
+];

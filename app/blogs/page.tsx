@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 type Blog = {
   id: string;
@@ -44,11 +45,14 @@ export default function BlogsPage() {
           <Link key={blog.id} href={`/blogs/${blog.slug}`}>
             <div className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer bg-white">
               {/* Image */}
-              <img
-                src={blog.image || "/default.jpg"}
-                alt={blog.title}
-                className="h-60 w-full object-cover group-hover:scale-110 transition duration-500"
-              />
+              <div className="relative h-60 w-full overflow-hidden">
+                <Image
+                  src={blog.image || "/default.jpg"}
+                  alt={blog.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition duration-500"
+                />
+              </div>
 
               {/* Content */}
               <div className="p-4">
