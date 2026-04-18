@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   verification: {
     google: "oQQ_e5TI41qZTSRvW6FH-MujeC-sMuhfposrPwFyXkc",
   },
+  icons: {
+    icon: "/ytfavicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +29,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${outfit.variable} font-sans`}>
-        
         {/* Google Analytics - gtag.js */}
         <Script
           strategy="afterInteractive"
@@ -41,7 +43,6 @@ export default function RootLayout({
             gtag('config', 'G-MX3BZ6LBQP');
           `}
         </Script>
-
 
         <Navbar />
         {children}
