@@ -204,34 +204,42 @@ export default async function FarePage({
         </div>{" "}
       </section>
       {/* ==================== FARE TABLE + CALCULATOR ==================== */}
-      <section className="py-16 max-w-7xl mx-auto px-4">
-        <div className="grid lg:grid-cols-3 gap-12">
-          <div className="lg:col-span-2 space-y-12">
-            <div>
-              <h2 className="text-3xl font-black text-secondary">
-                Compare All Tempo Traveller Fares
-              </h2>
-              <p className="text-muted-foreground mt-2">
-                Transparent pricing for {route.origin} to {route.destination}
-              </p>
-            </div>
-            <FareTable route={route} />
-            <ExclusionsNotice origin={route.origin} />
+      <section className="py-10 sm:py-12 md:py-14 lg:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="space-y-10 md:space-y-12">
+          {/* Compare Section Full Width */}
+          <div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-secondary leading-tight">
+              Compare All Tempo Traveller Fares
+            </h2>
+
+            <p className="text-sm sm:text-base text-muted-foreground mt-2">
+              Transparent pricing for {route.origin} to {route.destination}
+            </p>
           </div>
-          <div className="space-y-8">
-            <div className="bg-slate-50 p-8 rounded-3xl border border-border sticky top-24">
-              <h4 className="font-bold text-secondary text-xl mb-4">
-                Fare Inclusions
-              </h4>
-              <FareInclusions />
-              <div className="mt-8 pt-6 border-t border-border">
-                <p className="text-xs font-black text-primary uppercase tracking-widest mb-2">
-                  Fixed Price Guarantee
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  The price shown for the vehicle is final.
-                </p>
-              </div>
+
+          {/* Fare Table */}
+          <div className="overflow-x-auto rounded-2xl border border-border">
+            <FareTable route={route} />
+          </div>
+
+          <ExclusionsNotice origin={route.origin} />
+
+          {/* Fare Inclusion Full Width */}
+          <div className="bg-slate-50 p-4 sm:p-6 md:p-8 rounded-2xl md:rounded-3xl border border-border">
+            <h4 className="font-bold text-secondary text-lg sm:text-xl md:text-2xl mb-5 md:mb-6 text-center md:text-left">
+              Fare Inclusions
+            </h4>
+
+            <FareInclusions />
+
+            <div className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-border text-center md:text-left">
+              <p className="text-[10px] sm:text-xs font-black text-primary uppercase tracking-widest mb-2">
+                Fixed Price Guarantee
+              </p>
+
+              <p className="text-[11px] sm:text-xs md:text-sm text-muted-foreground leading-relaxed">
+                The price shown for the vehicle is final.
+              </p>
             </div>
           </div>
         </div>

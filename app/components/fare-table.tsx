@@ -2,114 +2,158 @@
 
 import { VEHICLES, calculateFare, TaxiRoute } from "@/lib/data";
 import { Button } from "./ui-base";
-import { Info, ArrowUpRight } from "lucide-react";
+import { Info, ArrowUpRight, Phone, ShieldCheck } from "lucide-react";
 
 export const FareTable = ({ route }: { route: TaxiRoute }) => {
   return (
-    <div className="w-full overflow-hidden rounded-2xl border border-border bg-white shadow-sm">
-      <div className="overflow-x-auto">
-        <table className="w-full text-left border-collapse">
-          <thead>
-            <tr className="bg-slate-50 border-b border-border">
-              <th className="px-6 py-5 text-xs font-black uppercase tracking-widest text-secondary">
-                Tempo Traveller
+    <div className="w-full overflow-hidden rounded-2xl border border-border bg-white shadow-xl">
+      {/* Header */}
+      <div className="border-b border-border bg-gradient-to-r from-primary/5 to-white px-4 sm:px-6 py-4">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <div>
+            <h2 className="text-lg sm:text-xl font-black text-secondary">
+              Tempo Traveller Fare List
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              {route.origin} → {route.destination} • Best Prices • Instant
+              Booking
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2 text-xs bg-green-50 text-green-700 px-3 py-2 rounded-xl font-semibold w-fit">
+            <ShieldCheck className="h-4 w-4" />
+            Verified Pricing
+          </div>
+        </div>
+      </div>
+
+      {/* Table */}
+      <div className="w-full overflow-x-auto">
+        <table className="min-w-[1000px] w-full text-left">
+          {/* Sticky Header */}
+          <thead className="sticky top-0 z-10 bg-slate-50 border-b border-border">
+            <tr>
+              <th className="px-4 sm:px-6 py-4 text-xs font-black uppercase tracking-wider text-secondary">
+                Vehicle
               </th>
-              <th className="px-6 py-5 text-xs font-black uppercase tracking-widest text-secondary">
+              <th className="px-4 sm:px-6 py-4 text-xs font-black uppercase tracking-wider text-secondary">
                 Distance
               </th>
-              <th className="px-6 py-5 text-xs font-black uppercase tracking-widest text-secondary">
-                Round-Trip Fare
+              <th className="px-4 sm:px-6 py-4 text-xs font-black uppercase tracking-wider text-secondary">
+                Base Fare
               </th>
-              <th className="px-6 py-5 text-xs font-black uppercase tracking-widest text-secondary">
-                Est. Tolls/Tax
+              <th className="px-4 sm:px-6 py-4 text-xs font-black uppercase tracking-wider text-secondary">
+                Toll / Tax
               </th>
-              <th className="px-6 py-5 text-xs font-black uppercase tracking-widest text-secondary">
-                Total (Approx)
+              <th className="px-4 sm:px-6 py-4 text-xs font-black uppercase tracking-wider text-secondary">
+                Total Fare
               </th>
-              <th className="px-6 py-5 text-xs font-black uppercase tracking-widest text-secondary">
-                Action
+              <th className="px-4 sm:px-6 py-4 text-xs font-black uppercase tracking-wider text-secondary">
+                Booking
               </th>
             </tr>
           </thead>
+
           <tbody className="divide-y divide-border">
             {VEHICLES.map((v) => {
               const fare = calculateFare(route.distance, v.perKmRate);
+              const total = fare + (route.tollEstimate || 450);
               const isCheapest = v.type === "9 Seater";
+
               return (
                 <tr
                   key={v.type}
-                  className={`hover:bg-slate-50/80 transition-colors ${isCheapest ? "bg-primary/5" : ""}`}
+                  className={`transition-all hover:bg-slate-50 hover:shadow-sm ${
+                    isCheapest
+                      ? "bg-green-50/70 border-l-4 border-green-500"
+                      : ""
+                  }`}
                 >
-                  <td className="px-6 py-6">
+                  {/* Vehicle */}
+                  <td className="px-4 sm:px-6 py-5">
                     <div className="flex flex-col">
-                      <div className="flex items-center gap-1.5">
-                        <span className="font-bold text-secondary">
+                      <div className="flex items-center gap-2">
+                        <span className="font-bold text-secondary text-sm sm:text-base">
                           {v.type}
                         </span>
-                        <div className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse" />
+
+                        {isCheapest && (
+                          <span className="text-[10px] bg-green-600 text-white px-2 py-0.5 rounded-full font-bold uppercase">
+                            Best Deal
+                          </span>
+                        )}
                       </div>
-                      <span className="text-[11px] text-muted-foreground">
+
+                      <span className="text-xs text-muted-foreground">
                         {v.name}
                       </span>
                     </div>
                   </td>
-                  <td className="px-6 py-6 font-mono text-sm">
+
+                  {/* Distance */}
+                  <td className="px-4 sm:px-6 py-5 whitespace-nowrap font-medium">
                     {route.distance} km
                   </td>
-                  <td className="px-6 py-6">
+
+                  {/* Fare */}
+                  <td className="px-4 sm:px-6 py-5">
                     <div className="flex flex-col">
                       <span className="text-lg font-black text-secondary">
                         ₹{fare}
                       </span>
-                      <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-tighter">
-                        Fixed Round-Trip
+                      <span className="text-[10px] uppercase text-muted-foreground">
+                        Fixed Fare
                       </span>
                     </div>
                   </td>
-                  <td className="px-6 py-6">
-                    <div className="flex flex-col">
-                      <span className="text-sm font-bold text-amber-600">
-                        ~₹{route.tollEstimate || "450"}
-                      </span>
-                      <span className="text-[10px] text-muted-foreground uppercase font-bold tracking-tighter">
-                        Paid at Tolls
-                      </span>
-                    </div>
+
+                  {/* Toll */}
+                  <td className="px-4 sm:px-6 py-5">
+                    <span className="font-bold text-amber-600">
+                      ₹{route.tollEstimate || 450}
+                    </span>
                   </td>
-                  <td className="px-6 py-6">
+
+                  {/* Total */}
+                  <td className="px-4 sm:px-6 py-5">
                     <div className="flex flex-col">
                       <span className="text-lg font-black text-secondary">
-                        ₹{fare + (route.tollEstimate || 450)}
+                        ₹{total}
                       </span>
+
                       {isCheapest && (
-                        <span className="text-[10px] text-green-600 font-bold uppercase tracking-tighter">
+                        <span className="text-[10px] text-green-600 font-bold uppercase">
                           Lowest Price
                         </span>
                       )}
                     </div>
                   </td>
-                  <td className="px-6 py-6">
-                    <div className="flex gap-2">
+
+                  {/* Action */}
+                  <td className="px-4 sm:px-6 py-5">
+                    <div className="flex flex-col sm:flex-row gap-2 min-w-[180px]">
                       <a
-                        href={`https://api.whatsapp.com/send?phone=+916280820037&text=Booking ${v.type} tempo traveller Round-Trip for ${route.origin} to ${route.destination}`}
+                        href={`https://api.whatsapp.com/send?phone=+916280820037&text=Booking ${v.type} tempo traveller from ${route.origin} to ${route.destination}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <Button
                           size="sm"
                           variant={isCheapest ? "primary" : "secondary"}
-                          className="h-9 px-4 rounded-lg group"
+                          className="h-10 px-4 rounded-xl w-full font-semibold"
                         >
-                          Book{" "}
-                          <ArrowUpRight className="ml-1 h-3 w-3 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                          Book Now
+                          <ArrowUpRight className="ml-1 h-4 w-4" />
                         </Button>
                       </a>
-                      <a href="tel:8448445504" className="hidden sm:block">
+
+                      <a href="tel:8448445504">
                         <Button
                           size="sm"
                           variant="outline"
-                          className="h-9 px-4 rounded-lg"
+                          className="h-10 px-4 rounded-xl w-full"
                         >
+                          <Phone className="mr-1 h-4 w-4" />
                           Call
                         </Button>
                       </a>
@@ -122,14 +166,18 @@ export const FareTable = ({ route }: { route: TaxiRoute }) => {
         </table>
       </div>
 
-      <div className="bg-slate-50 p-4 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-        <div className="flex items-center gap-2 text-[11px] text-muted-foreground font-medium">
-          <Info className="h-3.5 w-3.5 text-primary" />
-          <span>Last Updated: 25 February 2026</span>
+      {/* Bottom Trust Section */}
+      <div className="border-t border-border bg-slate-50 px-4 sm:px-6 py-4">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-3">
+          <div className="flex items-center gap-2 text-xs text-muted-foreground font-medium">
+            <Info className="h-4 w-4 text-primary" />
+            Last Updated: 25 February 2026
+          </div>
+
+          <p className="text-[11px] text-muted-foreground text-center lg:text-right">
+            * GST Included. Toll, State Tax & Parking extra as applicable.
+          </p>
         </div>
-        <p className="text-[10px] text-muted-foreground italic">
-          * Prices inclusive of GST. Toll, State Tax & Parking extra.
-        </p>
       </div>
     </div>
   );

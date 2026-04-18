@@ -218,7 +218,7 @@ export const OfficeLocation = ({
 );
 
 export const FareInclusions = () => (
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
     {[
       { icon: Fuel, title: "Fuel Charges", detail: "Included in base price" },
       {
@@ -239,15 +239,19 @@ export const FareInclusions = () => (
     ].map((item, i) => (
       <div
         key={i}
-        className="p-4 bg-white rounded-2xl border border-border flex flex-col items-center text-center gap-2 group hover:border-primary/50 transition-colors"
+        className="p-4 sm:p-5 bg-white rounded-2xl border border-border flex flex-col items-center text-center gap-3 hover:border-primary/50 transition-all duration-300"
       >
-        <div className="p-2 bg-primary/5 rounded-lg group-hover:bg-primary/10 transition-colors">
-          <item.icon className="h-5 w-5 text-primary" />
+        <div className="p-3 bg-primary/5 rounded-xl">
+          <item.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
         </div>
-        <h5 className="text-xs font-black text-secondary uppercase tracking-tight">
+
+        <h5 className="text-xs sm:text-sm font-black text-secondary uppercase leading-tight">
           {item.title}
         </h5>
-        <p className="text-[10px] text-muted-foreground">{item.detail}</p>
+
+        <p className="text-[11px] sm:text-xs text-muted-foreground leading-relaxed">
+          {item.detail}
+        </p>
       </div>
     ))}
   </div>

@@ -323,7 +323,7 @@ export default function FaresClient() {
                         <div className="flex items-center gap-4">
                           <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
                             <MapPin className="text-primary w-8 h-8" />
-                            Varanasi to delhi-NCR Standard Fares
+                            Varanasi to Delhi-NCR Standard Fares
                           </h2>
                           <div className="h-px bg-slate-200 flex-1 mt-2" />
                           <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
