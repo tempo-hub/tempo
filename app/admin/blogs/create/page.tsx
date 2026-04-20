@@ -22,12 +22,14 @@ export default function CreateBlog() {
     const stored = JSON.parse(localStorage.getItem("blogs") || "[]");
 
     const newBlog = {
+      id: Date.now().toString(),
       title,
       slug,
       description,
       keywords: keywords.split(",").map((k) => k.trim()),
       hashtags: hashtags.split(" ").map((tag) => tag.trim()),
       content: content,
+      createdAt: new Date().toISOString(),
     };
 
     localStorage.setItem("blogs", JSON.stringify([newBlog, ...stored]));

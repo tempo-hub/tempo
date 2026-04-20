@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 type Blog = {
   id: string;
@@ -44,16 +43,7 @@ export default function BlogsPage() {
         {blogs.map((blog) => (
           <Link key={blog.id} href={`/blogs/${blog.slug}`}>
             <div className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer bg-white">
-              {/* Image */}
-              <div className="relative h-60 w-full overflow-hidden">
-                <Image
-                  src={blog.image || "/default.jpg"}
-                  alt={blog.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition duration-500"
-                />
-              </div>
-
+              
               {/* Content */}
               <div className="p-4">
                 {/* Title */}
@@ -62,13 +52,7 @@ export default function BlogsPage() {
                 </h2>
 
                 {/* Slug (URL) */}
-                <Link
-                  href={`${blog.slug}`}
-                  target="_blank"
-                  className="text-xs text-primary mb-2"
-                >
-                  {blog.slug}
-                </Link>
+                <p>{blog.slug}</p>
 
                 {/* Description */}
                 <p className="text-sm text-gray-600 mt-2 line-clamp-2">
@@ -77,7 +61,7 @@ export default function BlogsPage() {
 
                 {/* Date */}
                 <p className="text-xs mt-3 text-gray-400">
-                  {new Date(blog.createdAt).toDateString()}
+                  {new Date(blog.createdAt).toLocaleString("en-IN")}
                 </p>
               </div>
             </div>
