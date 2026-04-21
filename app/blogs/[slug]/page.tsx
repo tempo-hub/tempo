@@ -21,7 +21,6 @@ export default function BlogDetails({
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("blogs") || "[]");
-    console.log("Stored Blogs", stored);
 
     const found = stored.find((b: Blog) => b.slug === slug);
 

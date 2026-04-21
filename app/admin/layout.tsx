@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -13,22 +13,41 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "@/lib/firebase";
+import { useRouter } from "next/navigation";
+import { signOut } from "firebase/auth";
 
 export default function AdminLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const router = useRouter();
   const pathname = usePathname();
-
   const [sidebarOpen, setSidebarOpen] = useState(false); // mobile
   const [collapsed, setCollapsed] = useState(false); // desktop
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        router.push("/admin-login");
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
 
   const navigation = [
     { name: "Dashboard", href: "/admin", icon: LayoutDashboard },
     { name: "Blogs", href: "/admin/blogs", icon: FileText },
     { name: "Create Blog", href: "/admin/blogs/create", icon: PlusCircle },
   ];
+
+  const logout = async () => {
+    await signOut(auth);
+    router.push("/admin-login");
+  };
 
   return (
     <div className="flex min-h-screen bg-slate-100">
@@ -121,7 +140,7 @@ export default function AdminLayout({
             </div>
 
             {/* Logout */}
-            <button className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90">
+            <button className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90" onClick={logout}>
               <LogOut className="w-4 h-4" />
               <span className="hidden sm:inline">Logout</span>
             </button>

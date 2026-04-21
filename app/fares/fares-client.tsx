@@ -27,55 +27,56 @@ export default function FaresClient() {
   const [searchQuery, setSearchQuery] = useState("");
 
   // Combine all fare routes
-  const ALL_FARE_ROUTES: (TaxiRoute & { originCity?: string })[] = useMemo(() => {
-    return [
-      ...PRAYAGRAJ_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Prayagraj",
-        category: "regular" as const,
-      })),
-      ...AYODHYA_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Ayodhya",
-        category: "regular" as const,
-      })),
-      ...VARANASI_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Varanasi",
-        category: "regular" as const,
-      })),
-      ...LUCKNOW_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Lucknow",
-        category: "regular" as const,
-      })),
-      ...UTTARAKHAND_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Varanasi",
-        category: "uttarakhand" as const,
-      })),
-      ...MADHYAPRADESH_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Varanasi",
-        category: "madhyapradesh" as const,
-      })),
-      ...RAJASTHAN_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Varanasi",
-        category: "rajasthan" as const,
-      })),
-      ...BIHAR_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Varanasi",
-        category: "bihar" as const,
-      })),
-      ...DELHI_NCR_FARE_ROUTES.map((route) => ({
-        ...route,
-        originCity: "Varanasi",
-        category: "delhi-NCR" as const,
-      })),
-    ];
-  }, []);
+  const ALL_FARE_ROUTES: (TaxiRoute & { originCity?: string })[] =
+    useMemo(() => {
+      return [
+        ...PRAYAGRAJ_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Prayagraj",
+          category: "regular" as const,
+        })),
+        ...AYODHYA_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Ayodhya",
+          category: "regular" as const,
+        })),
+        ...VARANASI_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Varanasi",
+          category: "regular" as const,
+        })),
+        ...LUCKNOW_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Lucknow",
+          category: "regular" as const,
+        })),
+        ...UTTARAKHAND_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Varanasi",
+          category: "uttarakhand" as const,
+        })),
+        ...MADHYAPRADESH_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Varanasi",
+          category: "madhyapradesh" as const,
+        })),
+        ...RAJASTHAN_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Varanasi",
+          category: "rajasthan" as const,
+        })),
+        ...BIHAR_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Varanasi",
+          category: "bihar" as const,
+        })),
+        ...DELHI_NCR_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Varanasi",
+          category: "delhi-NCR" as const,
+        })),
+      ];
+    }, []);
 
   // Calculate fare and sort
   const sortedRoutes = useMemo(() => {
@@ -223,7 +224,7 @@ export default function FaresClient() {
                         <div className="flex items-center gap-4">
                           <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
                             <MapPin className="text-primary w-8 h-8" />
-                            Standard Tempo Traveller Fares from {city}
+                            Tempo Traveller Fares from {city}
                           </h2>
                           <div className="h-px bg-slate-200 flex-1 mt-2" />
                           <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
@@ -243,7 +244,7 @@ export default function FaresClient() {
                         <div className="flex items-center gap-4">
                           <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
                             <MapPin className="text-primary w-8 h-8" />
-                            Varanasi to Uttarakhand Standard Fares
+                            Varanasi to Uttarakhand Fares
                           </h2>
                           <div className="h-px bg-slate-200 flex-1 mt-2" />
                           <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
@@ -263,7 +264,7 @@ export default function FaresClient() {
                         <div className="flex items-center gap-4">
                           <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
                             <MapPin className="text-primary w-8 h-8" />
-                            Varanasi to Madhya Pradesh Standard Fares
+                            Varanasi to Madhya Pradesh Fares
                           </h2>
                           <div className="h-px bg-slate-200 flex-1 mt-2" />
                           <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
@@ -283,7 +284,7 @@ export default function FaresClient() {
                         <div className="flex items-center gap-4">
                           <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
                             <MapPin className="text-primary w-8 h-8" />
-                            Varanasi to Rajasthan Standard Fares
+                            Varanasi to Rajasthan Fares
                           </h2>
                           <div className="h-px bg-slate-200 flex-1 mt-2" />
                           <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
@@ -303,7 +304,7 @@ export default function FaresClient() {
                         <div className="flex items-center gap-4">
                           <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
                             <MapPin className="text-primary w-8 h-8" />
-                            Varanasi to Bihar Standard Fares
+                            Varanasi to Bihar Fares
                           </h2>
                           <div className="h-px bg-slate-200 flex-1 mt-2" />
                           <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
@@ -323,7 +324,7 @@ export default function FaresClient() {
                         <div className="flex items-center gap-4">
                           <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
                             <MapPin className="text-primary w-8 h-8" />
-                            Varanasi to Delhi-NCR Standard Fares
+                            Varanasi to Delhi-NCR Fares
                           </h2>
                           <div className="h-px bg-slate-200 flex-1 mt-2" />
                           <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
@@ -347,7 +348,7 @@ export default function FaresClient() {
                     <div className="flex items-center gap-4">
                       <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
                         <MapPin className="text-primary w-8 h-8" />
-                        Standard Tempo Traveller Fares from {city}
+                        Tempo Traveller Fares from {city}
                       </h2>
                       <div className="h-px bg-slate-200 flex-1 mt-2" />
                       <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">

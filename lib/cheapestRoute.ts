@@ -5272,6 +5272,23 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
         answer:
           "Delhi is famous for India Gate, Red Fort, markets, and political importance.",
       },
+      {
+        question:
+          "What is the cheapest tempo traveller fare from Varanasi to Delhi?",
+        answer:
+          "Fare depends on traveller size, travel date, tolls, and trip type. Contact us for the latest lowest fare quote.",
+      },
+      {
+        question:
+          "Which tempo traveller options are available for Delhi route?",
+        answer:
+          "We provide 9 seater, 12 seater, 17 seater tempo traveller and Maharaja seater options.",
+      },
+      {
+        question: "Is Delhi route suitable for family group travel?",
+        answer:
+          "Yes, Delhi route is popular for family tours, business trips, wedding travel, and student groups.",
+      },
     ],
     tollEstimate: 1800,
   },
@@ -5303,6 +5320,22 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
         question: "What is Noida famous for?",
         answer:
           "Noida is famous for IT parks, malls, Film City, and expressways.",
+      },
+      {
+        question:
+          "What is the cheapest tempo traveller fare from Varanasi to Noida?",
+        answer:
+          "Fare depends on seating capacity, toll charges, and travel schedule. Contact us for best current pricing.",
+      },
+      {
+        question: "Which traveller vehicles are available for Noida trip?",
+        answer:
+          "We offer 9, 12, and 17 seater tempo traveller with AC and comfortable pushback seats.",
+      },
+      {
+        question: "Is Noida route good for office group travel?",
+        answer:
+          "Yes, Noida route is ideal for corporate teams, family groups, and airport transfers.",
       },
     ],
     tollEstimate: 1750,
@@ -5397,8 +5430,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       },
       {
         question: "What is Faridabad famous for?",
-        answer:
-          "Faridabad is famous for industries and Surajkund area.",
+        answer: "Faridabad is famous for industries and Surajkund area.",
       },
     ],
     tollEstimate: 1880,
@@ -5493,8 +5525,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       },
       {
         question: "What is Panipat famous for?",
-        answer:
-          "Panipat is famous for textile industry and historic battles.",
+        answer: "Panipat is famous for textile industry and historic battles.",
       },
     ],
     tollEstimate: 1950,

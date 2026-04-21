@@ -5,6 +5,7 @@ import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
 import { WhatsAppButton } from "./components/whatsapp-button";
 import Script from "next/script";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -45,7 +46,15 @@ export default function RootLayout({
         </Script>
 
         <Navbar />
+
         {children}
+
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 3000,
+          }}
+        />
         <Footer />
         <WhatsAppButton />
       </body>
