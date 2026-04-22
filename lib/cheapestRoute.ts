@@ -1,4 +1,5 @@
-import { VEHICLES, TaxiRoute } from "./data";
+import { TaxiRoute } from "./data";
+import { generateRouteFaqs } from "./faq-data";
 
 export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
   {
@@ -17,12 +18,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Travel",
       "Transparent Pricing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Ayodhya?",
-        answer: "Fare starts from ₹" + 170 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Ayodhya", 170, "4 Hours"),
     tollEstimate: 300,
   },
   {
@@ -41,12 +37,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Experienced Drivers",
       "Flexible Timing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Varanasi?",
-        answer: "Fare starts from ₹" + 120 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Varanasi", 120, "3 Hours"),
     tollEstimate: 150,
   },
   {
@@ -65,12 +56,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Travel",
       "Affordable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Lucknow?",
-        answer: "Fare starts from ₹" + 200 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Lucknow", 200, "5 Hours"),
     tollEstimate: 350,
   },
   {
@@ -82,12 +68,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Cheap tempo traveller from Prayagraj to Kanpur.",
     highlights: ["Smooth Ride", "Affordable", "Safe", "24/7", "Trusted"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Kanpur?",
-        answer: "Fare starts from ₹" + 210 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Kanpur", 210, "5 Hours"),
     tollEstimate: 350,
   },
   {
@@ -99,12 +80,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Budget tempo traveller from Prayagraj to Mirzapur.",
     highlights: ["Short Trip", "Low Cost", "Fast", "Local Drivers", "Safe"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Mirzapur?",
-        answer: "Fare starts from ₹" + 90 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Mirzapur", 90, "2.5 Hours"),
     tollEstimate: 100,
   },
   {
@@ -116,12 +92,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Affordable travel from Prayagraj to Jaunpur.",
     highlights: ["Comfort", "Flexible", "Budget", "Safe", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Jaunpur?",
-        answer: "Fare starts from ₹" + 110 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Jaunpur", 110, "3 Hours"),
     tollEstimate: 120,
   },
   {
@@ -133,12 +104,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6.5 Hours",
     description: "Long distance cheapest tempo traveller to Gorakhpur.",
     highlights: ["Spacious", "Comfort", "Safe", "Long Trip", "Affordable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Gorakhpur?",
-        answer: "Fare starts from ₹" + 270 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Gorakhpur", 270, "6.5 Hours"),
     tollEstimate: 500,
   },
   {
@@ -150,12 +116,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Quick cheapest ride to Pratapgarh.",
     highlights: ["Short Route", "Low Cost", "Fast", "Easy Booking", "Safe"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Pratapgarh?",
-        answer: "Fare starts from ₹" + 60 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Pratapgarh", 60, "1.5 Hours"),
     tollEstimate: 50,
   },
   {
@@ -167,12 +128,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Affordable ride to Satna.",
     highlights: ["Comfort", "Highway", "Budget", "Safe", "Group"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Satna?",
-        answer: "Fare starts from ₹" + 140 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Satna", 140, "3.5 Hours"),
     tollEstimate: 200,
   },
   {
@@ -190,12 +146,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Local Drivers",
       "Return",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Chitrakoot?",
-        answer: "Fare starts from ₹" + 130 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Chitrakoot", 130, "3.5 Hours"),
     tollEstimate: 150,
   },
   {
@@ -207,12 +158,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Affordable tempo traveller from Prayagraj to Lakhimpur.",
     highlights: ["Long Route", "Comfort", "Budget", "Safe", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Lakhimpur?",
-        answer: "Fare starts from ₹" + 320 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Lakhimpur", 320, "7 Hours"),
     tollEstimate: 500,
   },
   {
@@ -224,12 +170,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6.5 Hours",
     description: "Budget travel from Prayagraj to Sitapur.",
     highlights: ["Budget", "Safe", "Comfort", "Group Travel", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Sitapur?",
-        answer: "Fare starts from ₹" + 300 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Sitapur", 300, "6.5 Hours"),
     tollEstimate: 450,
   },
   {
@@ -241,12 +182,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Long route cheapest ride to Bareilly.",
     highlights: ["Spacious", "Safe", "Long Trip", "Comfort", "Affordable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Bareilly?",
-        answer: "Fare starts from ₹" + 380 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Bareilly", 380, "8 Hours"),
     tollEstimate: 650,
   },
   {
@@ -258,12 +194,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "9 Hours",
     description: "Cheapest tempo traveller for Prayagraj to Agra trips.",
     highlights: ["Tour Route", "Comfort", "Safe", "Affordable", "Group Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Agra?",
-        answer: "Fare starts from ₹" + 470 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Agra", 470, "9 Hours"),
     tollEstimate: 800,
   },
   {
@@ -281,12 +212,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Night Travel",
       "Reliable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Delhi?",
-        answer: "Fare starts from ₹" + 700 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Delhi", 700, "12 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -298,12 +224,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "11 Hours",
     description: "Affordable travel from Prayagraj to Noida.",
     highlights: ["Highway Route", "Comfort", "Safe", "Budget", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Noida?",
-        answer: "Fare starts from ₹" + 680 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Noida", 680, "11 Hours"),
     tollEstimate: 1100,
   },
   {
@@ -315,12 +236,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "12 Hours",
     description: "Budget tempo traveller from Prayagraj to Faridabad.",
     highlights: ["Long Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Faridabad?",
-        answer: "Fare starts from ₹" + 720 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Faridabad", 720, "12 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -332,12 +248,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "11.5 Hours",
     description: "Cheapest tempo traveller from Prayagraj to Ghaziabad.",
     highlights: ["Highway", "Comfort", "Safe", "Affordable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Ghaziabad?",
-        answer: "Fare starts from ₹" + 690 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Ghaziabad", 690, "11.5 Hours"),
     tollEstimate: 1100,
   },
   {
@@ -349,12 +260,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Religious trip from Prayagraj to Haridwar.",
     highlights: ["Pilgrimage", "Safe", "Comfort", "Long Trip", "Affordable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Haridwar?",
-        answer: "Fare starts from ₹" + 800 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Haridwar", 800, "14 Hours"),
     tollEstimate: 1400,
   },
   {
@@ -366,12 +272,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "14.5 Hours",
     description: "Affordable group travel from Prayagraj to Rishikesh.",
     highlights: ["Tour Route", "Comfort", "Safe", "Budget", "Long Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Rishikesh?",
-        answer: "Fare starts from ₹" + 820 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Rishikesh", 820, "14.5 Hours"),
     tollEstimate: 1500,
   },
   {
@@ -383,12 +284,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Affordable tempo traveller from Prayagraj to Ballia.",
     highlights: ["Comfort", "Safe", "Budget", "Reliable", "Group Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Ballia?",
-        answer: "Fare starts from ₹" + 240 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Ballia", 240, "6 Hours"),
     tollEstimate: 300,
   },
   {
@@ -400,12 +296,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Budget ride from Prayagraj to Mughalsarai.",
     highlights: ["Fast Route", "Affordable", "Safe", "Comfort", "Easy Booking"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Mughalsarai?",
-        answer: "Fare starts from ₹" + 130 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Mughalsarai", 130, "3 Hours"),
     tollEstimate: 150,
   },
   {
@@ -417,12 +308,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Cheapest ride from Prayagraj to Ratanpur.",
     highlights: ["Short Trip", "Low Cost", "Fast", "Safe", "Local Drivers"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Ratanpur?",
-        answer: "Fare starts from ₹" + 95 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Ratanpur", 95, "2.5 Hours"),
     tollEstimate: 100,
   },
   {
@@ -434,12 +320,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5.5 Hours",
     description: "Affordable tempo traveller from Prayagraj to Auraiya.",
     highlights: ["Highway Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Auraiya?",
-        answer: "Fare starts from ₹" + 230 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Auraiya", 230, "5.5 Hours"),
     tollEstimate: 300,
   },
   {
@@ -451,12 +332,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6.5 Hours",
     description: "Budget travel from Prayagraj to Etawah.",
     highlights: ["Comfort", "Safe", "Affordable", "Long Route", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Etawah?",
-        answer: "Fare starts from ₹" + 300 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Etawah", 300, "6.5 Hours"),
     tollEstimate: 400,
   },
   {
@@ -468,12 +344,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Affordable ride from Prayagraj to Fatehpur.",
     highlights: ["Short Route", "Budget", "Comfort", "Safe", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Fatehpur?",
-        answer: "Fare starts from ₹" + 120 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Fatehpur", 120, "3 Hours"),
     tollEstimate: 120,
   },
   {
@@ -485,12 +356,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4.5 Hours",
     description: "Cheapest tempo traveller from Prayagraj to Unnao.",
     highlights: ["Comfort", "Affordable", "Safe", "Group Travel", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Unnao?",
-        answer: "Fare starts from ₹" + 190 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Unnao", 190, "4.5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -502,12 +368,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Affordable travel from Prayagraj to Singrauli.",
     highlights: ["Long Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Singrauli?",
-        answer: "Fare starts from ₹" + 260 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Singrauli", 260, "6 Hours"),
     tollEstimate: 350,
   },
   {
@@ -519,12 +380,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Budget-friendly tempo traveller from Prayagraj to Rewa.",
     highlights: ["Comfort", "Safe", "Affordable", "Highway", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Rewa?",
-        answer: "Fare starts from ₹" + 150 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Rewa", 150, "3.5 Hours"),
     tollEstimate: 200,
   },
   {
@@ -536,12 +392,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Affordable ride from Prayagraj to Katni.",
     highlights: ["Comfort", "Safe", "Budget", "Long Trip", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Katni?",
-        answer: "Fare starts from ₹" + 250 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Katni", 250, "6 Hours"),
     tollEstimate: 300,
   },
   {
@@ -553,12 +404,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Cheapest tempo traveller from Prayagraj to Mau.",
     highlights: ["Budget", "Comfort", "Safe", "Reliable", "Group Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Mau?",
-        answer: "Fare starts from ₹" + 200 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Mau", 200, "5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -570,12 +416,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Affordable travel from Prayagraj to Buxar.",
     highlights: ["Short Route", "Fast", "Safe", "Budget", "Comfort"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Buxar?",
-        answer: "Fare starts from ₹" + 140 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Buxar", 140, "3.5 Hours"),
     tollEstimate: 150,
   },
   {
@@ -587,12 +428,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Budget tempo traveller from Prayagraj to Arrah.",
     highlights: ["Comfort", "Safe", "Affordable", "Reliable", "Group"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Arrah?",
-        answer: "Fare starts from ₹" + 200 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Arrah", 200, "5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -604,12 +440,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Cheapest tempo traveller from Prayagraj to Patna.",
     highlights: ["Long Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Patna?",
-        answer: "Fare starts from ₹" + 350 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Patna", 350, "8 Hours"),
     tollEstimate: 600,
   },
   {
@@ -621,12 +452,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Affordable group travel from Prayagraj to Gaya.",
     highlights: ["Comfort", "Safe", "Budget", "Long Route", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Gaya?",
-        answer: "Fare starts from ₹" + 360 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Gaya", 360, "8 Hours"),
     tollEstimate: 600,
   },
   // ================= NEARBY ROUTES =================
@@ -639,12 +465,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Budget tempo traveller from Prayagraj to Kaushambi.",
     highlights: ["Short Trip", "Low Cost", "Fast", "Local Drivers", "Safe"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Kaushambi?",
-        answer: "Fare starts from ₹" + 55 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Kaushambi", 55, "1.5 Hours"),
     tollEstimate: 50,
   },
   {
@@ -656,12 +477,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1 Hour",
     description: "Affordable ride from Prayagraj to Handia.",
     highlights: ["Short Route", "Budget", "Fast", "Safe", "Easy Booking"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Handia?",
-        answer: "Fare starts from ₹" + 45 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Handia", 45, "1 Hours"),
     tollEstimate: 40,
   },
   {
@@ -673,12 +489,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Cheap tempo traveller from Prayagraj to Sirathu.",
     highlights: ["Budget", "Safe", "Fast", "Comfort", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Sirathu?",
-        answer: "Fare starts from ₹" + 60 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Sirathu", 60, "1.5 Hours"),
     tollEstimate: 50,
   },
   {
@@ -690,12 +501,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1 Hour",
     description: "Short trip from Prayagraj to Phulpur.",
     highlights: ["Low Cost", "Fast", "Local Route", "Safe", "Easy Booking"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Phulpur?",
-        answer: "Fare starts from ₹" + 35 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Phulpur", 35, "1 Hours"),
     tollEstimate: 30,
   },
   {
@@ -707,12 +513,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "45 Min",
     description: "Quick ride from Prayagraj to Jhusi.",
     highlights: ["Very Short Trip", "Budget", "Fast", "Safe", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Jhusi?",
-        answer: "Fare starts from ₹" + 20 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Jhusi", 20, "45 Min"),
     tollEstimate: 20,
   },
 
@@ -726,12 +527,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Affordable travel from Prayagraj to Sultanpur.",
     highlights: ["Comfort", "Safe", "Budget", "Reliable", "Group Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Sultanpur?",
-        answer: "Fare starts from ₹" + 160 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Sultanpur", 160, "4 Hours"),
     tollEstimate: 200,
   },
   {
@@ -743,12 +539,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4.5 Hours",
     description: "Budget ride from Prayagraj to Raebareli.",
     highlights: ["Affordable", "Comfort", "Safe", "Highway", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Raebareli?",
-        answer: "Fare starts from ₹" + 180 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Raebareli", 180, "4.5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -760,12 +551,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Affordable tempo traveller from Prayagraj to Amethi.",
     highlights: ["Budget", "Safe", "Comfort", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Amethi?",
-        answer: "Fare starts from ₹" + 170 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Amethi", 170, "4 Hours"),
     tollEstimate: 200,
   },
   {
@@ -777,12 +563,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "13 Hours",
     description: "Long route from Prayagraj to Meerut.",
     highlights: ["Long Trip", "Comfort", "Safe", "Highway", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Meerut?",
-        answer: "Fare starts from ₹" + 750 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Meerut", 750, "13 Hours"),
     tollEstimate: 1200,
   },
 
@@ -796,12 +577,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Religious trip from Prayagraj to Vindhyachal.",
     highlights: ["Pilgrimage", "Safe", "Budget", "Comfort", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Vindhyachal?",
-        answer: "Fare starts from ₹" + 90 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Vindhyachal", 90, "2.5 Hours"),
     tollEstimate: 100,
   },
   {
@@ -819,12 +595,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Affordable",
       "Group Travel",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Vrindavan?",
-        answer: "Fare starts from ₹" + 480 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Vrindavan", 480, "9 Hours"),
     tollEstimate: 800,
   },
   {
@@ -836,12 +607,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "9.5 Hours",
     description: "Religious trip to Govardhan from Prayagraj.",
     highlights: ["Pilgrimage", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Govardhan?",
-        answer: "Fare starts from ₹" + 500 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Govardhan", 500, "9.5 Hours"),
     tollEstimate: 850,
   },
 
@@ -855,12 +621,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Affordable ride to Jabalpur.",
     highlights: ["Comfort", "Safe", "Budget", "Highway", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Jabalpur?",
-        answer: "Fare starts from ₹" + 350 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Jabalpur", 350, "8 Hours"),
     tollEstimate: 500,
   },
   {
@@ -872,12 +633,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4.5 Hours",
     description: "Religious trip to Maihar Mata temple.",
     highlights: ["Temple Visit", "Safe", "Budget", "Comfort", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Maihar?",
-        answer: "Fare starts from ₹" + 180 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Maihar", 180, "4.5 Hours"),
     tollEstimate: 200,
   },
 
@@ -891,12 +647,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Premium long trip from Prayagraj to Jaipur.",
     highlights: ["Luxury", "Comfort", "Safe", "Long Trip", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Jaipur?",
-        answer: "Fare starts from ₹" + 750 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Jaipur", 750, "14 Hours"),
     tollEstimate: 1300,
   },
   {
@@ -908,12 +659,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "15 Hours",
     description: "Long distance travel from Prayagraj to Dehradun.",
     highlights: ["Hill Travel", "Comfort", "Safe", "Reliable", "Group Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Dehradun?",
-        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Dehradun", 850, "15 Hours"),
     tollEstimate: 1500,
   },
   {
@@ -925,12 +671,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Super budget tempo traveller from Prayagraj to Meja Road.",
     highlights: ["Lowest Fare", "Short Trip", "Fast", "Local Route", "Safe"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Meja Road?",
-        answer: "Fare starts from ₹" + 50 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Meja Road", 50, "1.5 Hours"),
     tollEstimate: 30,
   },
   {
@@ -942,12 +683,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Affordable ride from Prayagraj to Lalganj.",
     highlights: ["Budget Friendly", "Short Route", "Comfort", "Fast", "Safe"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Lalganj?",
-        answer: "Fare starts from ₹" + 65 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Lalganj", 65, "1.5 Hours"),
     tollEstimate: 40,
   },
   {
@@ -960,12 +696,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Quickest & cheapest tempo traveller from Prayagraj to Karaundi.",
     highlights: ["Extreme Budget", "Very Short", "Doorstep", "Local", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Karaundi?",
-        answer: "Fare starts from ₹" + 40 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Karaundi", 40, "1 Hour"),
     tollEstimate: 20,
   },
   {
@@ -977,12 +708,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Low cost tempo traveller from Prayagraj to Bharwari.",
     highlights: ["Low Price", "Comfort", "Safe", "Reliable", "On Time"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Bharwari?",
-        answer: "Fare starts from ₹" + 55 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Bharwari", 55, "1.5 Hours"),
     tollEstimate: 30,
   },
   {
@@ -994,12 +720,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2 Hours",
     description: "Affordable group travel from Prayagraj to Manikpur.",
     highlights: ["Budget", "Short Trip", "Safe", "Fast", "Comfort"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Manikpur?",
-        answer: "Fare starts from ₹" + 85 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Manikpur", 85, "2 Hours"),
     tollEstimate: 60,
   },
   {
@@ -1011,12 +732,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Cheapest tempo traveller for Prayagraj to Shahganj.",
     highlights: ["Low Cost", "Comfortable", "Safe", "Reliable", "Group"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Shahganj?",
-        answer: "Fare starts from ₹" + 95 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Shahganj", 95, "2.5 Hours"),
     tollEstimate: 80,
   },
   {
@@ -1028,12 +744,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Budget travel from Prayagraj to Chhibramau.",
     highlights: ["Affordable", "Comfort", "Safe", "Highway", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Chhibramau?",
-        answer: "Fare starts from ₹" + 220 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Chhibramau", 220, "5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -1045,12 +756,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Cheap ride from Prayagraj to Faizabad (near Ayodhya).",
     highlights: ["Budget", "Religious", "Safe", "Comfort", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Faizabad?",
-        answer: "Fare starts from ₹" + 165 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Faizabad", 165, "4 Hours"),
     tollEstimate: 200,
   },
   {
@@ -1062,12 +768,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4.5 Hours",
     description: "Affordable tempo traveller from Prayagraj to Banda.",
     highlights: ["Low Price", "Safe", "Comfort", "Highway", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Banda?",
-        answer: "Fare starts from ₹" + 180 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Banda", 180, "4.5 Hours"),
     tollEstimate: 220,
   },
   {
@@ -1079,12 +780,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Budget group travel from Prayagraj to Hamirpur.",
     highlights: ["Comfort", "Safe", "Affordable", "Long Route", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Hamirpur?",
-        answer: "Fare starts from ₹" + 200 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Hamirpur", 200, "5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -1096,12 +792,7 @@ export const PRAYAGRAJ_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Cheapest ride to Madhogarh from Prayagraj.",
     highlights: ["Low Cost", "Fast", "Safe", "Comfort", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Prayagraj to Madhogarh?",
-        answer: "Fare starts from ₹" + 140 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Prayagraj", "Madhogarh", 140, "3.5 Hours"),
     tollEstimate: 150,
   },
 ];
@@ -1123,12 +814,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Travel",
       "Transparent Pricing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Prayagraj?",
-        answer: "Fare starts from ₹" + 170 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Prayagraj", 170, "4 Hours"),
     tollEstimate: 300,
   },
   {
@@ -1147,12 +833,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Professional Driver",
       "Transparent Pricing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Agra?",
-        answer: "Fare starts from ₹" + 450 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Agra", 450, "8-9 Hours"),
     tollEstimate: 800,
   },
   {
@@ -1171,12 +852,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Experienced Drivers",
       "Budget Friendly",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Varanasi?",
-        answer: "Fare starts from ₹" + 220 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Varanasi", 220, "4.5 Hours"),
     tollEstimate: 450,
   },
   {
@@ -1195,12 +871,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
       "Affordable Pricing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Lucknow?",
-        answer: "Fare starts from ₹" + 135 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Lucknow", 135, "3.5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -1218,12 +889,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Easy Booking",
       "Reliable Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Basti?",
-        answer: "Fare starts from ₹" + 70 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Basti", 70, "2 Hours"),
     tollEstimate: 100,
   },
   {
@@ -1241,12 +907,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Flexible Timing",
       "Trusted Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Sultanpur?",
-        answer: "Fare starts from ₹" + 110 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Sultanpur", 110, "3 Hours"),
     tollEstimate: 150,
   },
   {
@@ -1265,12 +926,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
       "Reliable Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Amethi?",
-        answer: "Fare starts from ₹" + 140 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Amethi", 140, "4 Hours"),
     tollEstimate: 200,
   },
   {
@@ -1289,12 +945,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Travel",
       "On Time Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Pratapgarh?",
-        answer: "Fare starts from ₹" + 160 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Pratapgarh", 160, "4 Hours"),
     tollEstimate: 250,
   },
   {
@@ -1313,12 +964,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Affordable Rates",
       "Group Friendly",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Kanpur?",
-        answer: "Fare starts from ₹" + 230 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Kanpur", 230, "5.5 Hours"),
     tollEstimate: 400,
   },
   {
@@ -1330,12 +976,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Affordable tempo traveller from Ayodhya to Bareilly.",
     highlights: ["Long Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Bareilly?",
-        answer: "Fare starts from ₹" + 320 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Bareilly", 320, "7 Hours"),
     tollEstimate: 500,
   },
   {
@@ -1347,12 +988,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Budget-friendly travel from Ayodhya to Sitapur.",
     highlights: ["Budget", "Comfort", "Safe", "Reliable", "Group Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Sitapur?",
-        answer: "Fare starts from ₹" + 220 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Sitapur", 220, "5 Hours"),
     tollEstimate: 300,
   },
   {
@@ -1364,12 +1000,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Cheapest tempo traveller from Ayodhya to Lakhimpur.",
     highlights: ["Comfort", "Safe", "Affordable", "Long Trip", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Lakhimpur?",
-        answer: "Fare starts from ₹" + 260 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Lakhimpur", 260, "6 Hours"),
     tollEstimate: 350,
   },
   {
@@ -1381,12 +1012,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Quick and affordable ride from Ayodhya to Gonda.",
     highlights: ["Short Route", "Low Cost", "Fast", "Safe", "Easy Booking"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Gonda?",
-        answer: "Fare starts from ₹" + 60 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Gonda", 60, "1.5 Hours"),
     tollEstimate: 80,
   },
   {
@@ -1398,12 +1024,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4.5 Hours",
     description: "Cheapest tempo traveller from Ayodhya to Mau.",
     highlights: ["Comfort", "Safe", "Affordable", "Fast", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Mau?",
-        answer: "Fare starts from ₹" + 180 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Mau", 180, "4.5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -1421,12 +1042,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Flexible Timing",
       "Reliable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Azamgarh?",
-        answer: "Fare starts from ₹" + 160 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Azamgarh", 160, "4 Hours"),
     tollEstimate: 200,
   },
   {
@@ -1438,12 +1054,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Affordable travel from Ayodhya to Buxar.",
     highlights: ["Long Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Buxar?",
-        answer: "Fare starts from ₹" + 240 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Buxar", 240, "6 Hours"),
     tollEstimate: 350,
   },
   {
@@ -1455,12 +1066,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Cheapest tempo traveller from Ayodhya to Patna.",
     highlights: ["Long Distance", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Patna?",
-        answer: "Fare starts from ₹" + 300 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Patna", 300, "7 Hours"),
     tollEstimate: 500,
   },
   {
@@ -1472,12 +1078,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "7.5 Hours",
     description: "Affordable group travel from Ayodhya to Gaya.",
     highlights: ["Comfort", "Safe", "Budget", "Long Route", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Gaya?",
-        answer: "Fare starts from ₹" + 320 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Gaya", 320, "7.5 Hours"),
     tollEstimate: 550,
   },
   {
@@ -1489,12 +1090,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "9 Hours",
     description: "Affordable tempo traveller from Ayodhya to Jhansi.",
     highlights: ["Long Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Jhansi?",
-        answer: "Fare starts from ₹" + 420 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Jhansi", 420, "9 Hours"),
     tollEstimate: 700,
   },
   {
@@ -1506,12 +1102,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Budget travel from Ayodhya to Banda.",
     highlights: ["Budget", "Comfort", "Safe", "Long Route", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Banda?",
-        answer: "Fare starts from ₹" + 300 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Banda", 300, "7 Hours"),
     tollEstimate: 400,
   },
   {
@@ -1523,12 +1114,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Affordable ride from Ayodhya to Deoria.",
     highlights: ["Comfort", "Safe", "Affordable", "Fast", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Deoria?",
-        answer: "Fare starts from ₹" + 170 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Deoria", 170, "4 Hours"),
     tollEstimate: 250,
   },
   {
@@ -1540,12 +1126,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4.5 Hours",
     description: "Cheapest tempo traveller from Ayodhya to Kushinagar.",
     highlights: ["Religious Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Kushinagar?",
-        answer: "Fare starts from ₹" + 190 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Kushinagar", 190, "4.5 Hours"),
     tollEstimate: 280,
   },
   {
@@ -1557,12 +1138,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Affordable tempo traveller from Ayodhya to Bhadohi.",
     highlights: ["Budget", "Comfort", "Safe", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Bhadohi?",
-        answer: "Fare starts from ₹" + 210 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Bhadohi", 210, "5 Hours"),
     tollEstimate: 300,
   },
   {
@@ -1574,12 +1150,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Long distance ride from Ayodhya to Sonbhadra.",
     highlights: ["Long Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Sonbhadra?",
-        answer: "Fare starts from ₹" + 320 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Sonbhadra", 320, "7 Hours"),
     tollEstimate: 450,
   },
   {
@@ -1591,12 +1162,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Airport transfer from Ayodhya to Varanasi Airport.",
     highlights: ["Airport Pickup", "On Time", "Comfort", "Safe", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Varanasi Airport?",
-        answer: "Fare starts from ₹" + 230 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Varanasi Airport", 230, "5 Hours"),
     tollEstimate: 400,
   },
   {
@@ -1608,12 +1174,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "11 Hours",
     description: "Long distance travel from Ayodhya to Delhi.",
     highlights: ["Night Travel", "Comfort", "Safe", "Long Route", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Delhi?",
-        answer: "Fare starts from ₹" + 650 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Delhi", 650, "11 Hours"),
     tollEstimate: 1100,
   },
   {
@@ -1625,12 +1186,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "11 Hours",
     description: "Affordable travel from Ayodhya to Noida.",
     highlights: ["Highway Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Noida?",
-        answer: "Fare starts from ₹" + 640 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Noida", 640, "11 Hours"),
     tollEstimate: 1100,
   },
   {
@@ -1648,12 +1204,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable",
       "Affordable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Gurgaon?",
-        answer: "Fare starts from ₹" + 670 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Gurgaon", 670, "12 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -1665,12 +1216,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "13 Hours",
     description: "Long route travel from Ayodhya to Jaipur.",
     highlights: ["Tour Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Jaipur?",
-        answer: "Fare starts from ₹" + 750 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Jaipur", 750, "13 Hours"),
     tollEstimate: 1300,
   },
   {
@@ -1682,12 +1228,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "12 Hours",
     description: "Affordable travel from Ayodhya to Bhopal.",
     highlights: ["Long Route", "Comfort", "Safe", "Reliable", "Budget"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Bhopal?",
-        answer: "Fare starts from ₹" + 700 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Bhopal", 700, "12 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -1699,12 +1240,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "15 Hours",
     description: "Premium long distance route from Ayodhya to Indore.",
     highlights: ["Premium Route", "Comfort", "Safe", "Long Travel", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Indore?",
-        answer: "Fare starts from ₹" + 900 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Indore", 900, "15 Hours"),
     tollEstimate: 1600,
   },
   {
@@ -1716,12 +1252,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "24 Hours",
     description: "Very long distance travel from Ayodhya to Mumbai.",
     highlights: ["Ultra Long Route", "Comfort", "Safe", "Premium", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Mumbai?",
-        answer: "Fare starts from ₹" + 1400 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Mumbai", 1400, "24 Hours"),
     tollEstimate: 2500,
   },
   {
@@ -1733,12 +1264,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "16 Hours",
     description: "Affordable long route from Ayodhya to Kolkata.",
     highlights: ["Long Route", "Comfort", "Safe", "Reliable", "Affordable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Kolkata?",
-        answer: "Fare starts from ₹" + 900 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Kolkata", 900, "16 Hours"),
     tollEstimate: 1500,
   },
   {
@@ -1750,12 +1276,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "26 Hours",
     description: "Long distance group travel from Ayodhya to Hyderabad.",
     highlights: ["Ultra Long Route", "Comfort", "Safe", "Premium", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Hyderabad?",
-        answer: "Fare starts from ₹" + 1500 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Hyderabad", 1500, "26 Hours"),
     tollEstimate: 2600,
   },
   {
@@ -1767,12 +1288,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "12 Hours",
     description: "Affordable travel from Ayodhya to Dhanbad.",
     highlights: ["Long Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Dhanbad?",
-        answer: "Fare starts from ₹" + 600 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Dhanbad", 600, "12 Hours"),
     tollEstimate: 1000,
   },
   {
@@ -1784,12 +1300,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Budget travel from Ayodhya to Balrampur.",
     highlights: ["Budget", "Comfort", "Safe", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Balrampur?",
-        answer: "Fare starts from ₹" + 120 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Balrampur", 120, "3 Hours"),
     tollEstimate: 150,
   },
   {
@@ -1801,12 +1312,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Affordable ride from Ayodhya to Bahraich.",
     highlights: ["Comfort", "Safe", "Affordable", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Bahraich?",
-        answer: "Fare starts from ₹" + 160 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Bahraich", 160, "4 Hours"),
     tollEstimate: 200,
   },
   {
@@ -1818,12 +1324,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Cheap tempo traveller from Ayodhya to Ambedkar Nagar.",
     highlights: ["Short Route", "Affordable", "Safe", "Fast", "Comfort"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Ambedkar Nagar?",
-        answer: "Fare starts from ₹" + 90 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Ambedkar Nagar", 90, "2.5 Hours"),
     tollEstimate: 120,
   },
   {
@@ -1835,12 +1336,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Affordable travel from Ayodhya to Barabanki.",
     highlights: ["Comfort", "Safe", "Budget", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Barabanki?",
-        answer: "Fare starts from ₹" + 110 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Barabanki", 110, "3 Hours"),
     tollEstimate: 150,
   },
   {
@@ -1852,12 +1348,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Budget-friendly travel from Ayodhya to Raebareli.",
     highlights: ["Comfort", "Safe", "Affordable", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Raebareli?",
-        answer: "Fare starts from ₹" + 150 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Raebareli", 150, "4 Hours"),
     tollEstimate: 200,
   },
   {
@@ -1869,12 +1360,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Religious and budget travel from Ayodhya to Shravasti.",
     highlights: ["Pilgrimage", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Shravasti?",
-        answer: "Fare starts from ₹" + 130 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Shravasti", 130, "3.5 Hours"),
     tollEstimate: 180,
   },
   {
@@ -1886,12 +1372,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Affordable travel from Ayodhya to Ghazipur.",
     highlights: ["Comfort", "Safe", "Budget", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Ghazipur?",
-        answer: "Fare starts from ₹" + 210 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Ghazipur", 210, "5 Hours"),
     tollEstimate: 300,
   },
   {
@@ -1903,12 +1384,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Religious trip from Ayodhya to Vindhyachal.",
     highlights: ["Pilgrimage", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Vindhyachal?",
-        answer: "Fare starts from ₹" + 260 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Vindhyachal", 260, "6 Hours"),
     tollEstimate: 350,
   },
   {
@@ -1920,12 +1396,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Religious travel from Ayodhya to Sitamarhi.",
     highlights: ["Pilgrimage", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Sitamarhi?",
-        answer: "Fare starts from ₹" + 350 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Sitamarhi", 350, "8 Hours"),
     tollEstimate: 500,
   },
   {
@@ -1937,12 +1408,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Affordable travel from Ayodhya to Arrah.",
     highlights: ["Comfort", "Safe", "Budget", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Arrah?",
-        answer: "Fare starts from ₹" + 260 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Arrah", 260, "6 Hours"),
     tollEstimate: 350,
   },
   {
@@ -1954,12 +1420,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "10 Hours",
     description: "Long route from Ayodhya to Jabalpur.",
     highlights: ["Long Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Jabalpur?",
-        answer: "Fare starts from ₹" + 500 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Jabalpur", 500, "10 Hours"),
     tollEstimate: 800,
   },
   {
@@ -1971,12 +1432,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Premium travel from Ayodhya to Dehradun.",
     highlights: ["Long Route", "Comfort", "Safe", "Premium", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Dehradun?",
-        answer: "Fare starts from ₹" + 800 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Dehradun", 800, "14 Hours"),
     tollEstimate: 1400,
   },
   {
@@ -1988,12 +1444,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "11.5 Hours",
     description: "Cheapest tempo traveller from Ayodhya to Ghaziabad.",
     highlights: ["Fast Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Ghaziabad?",
-        answer: "Fare starts from ₹" + 680 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Ghaziabad", 680, "11.5 Hours"),
     tollEstimate: 1100,
   },
   {
@@ -2005,12 +1456,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "12 Hours",
     description: "Affordable tempo traveller from Ayodhya to Faridabad.",
     highlights: ["Long Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Faridabad?",
-        answer: "Fare starts from ₹" + 710 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Faridabad", 710, "12 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -2022,12 +1468,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Religious trip from Ayodhya to Haridwar.",
     highlights: ["Pilgrimage", "Safe", "Comfort", "Affordable", "Long Trip"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Haridwar?",
-        answer: "Fare starts from ₹" + 780 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Haridwar", 780, "14 Hours"),
     tollEstimate: 1400,
   },
   {
@@ -2039,12 +1480,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "14.5 Hours",
     description: "Affordable group travel from Ayodhya to Rishikesh.",
     highlights: ["Tour Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Rishikesh?",
-        answer: "Fare starts from ₹" + 800 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Rishikesh", 800, "14.5 Hours"),
     tollEstimate: 1500,
   },
   {
@@ -2057,12 +1493,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Long-distance cheapest tempo traveller from Ayodhya to Chandigarh.",
     highlights: ["Long Route", "Comfort", "Safe", "Premium Travel", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Chandigarh?",
-        answer: "Fare starts from ₹" + 950 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Chandigarh", 950, "16 Hours"),
     tollEstimate: 1600,
   },
   {
@@ -2074,12 +1505,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "10 Hours",
     description: "Affordable tempo traveller from Ayodhya to Aligarh.",
     highlights: ["Comfort", "Safe", "Budget", "Reliable", "Long Route"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Aligarh?",
-        answer: "Fare starts from ₹" + 550 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Aligarh", 550, "10 Hours"),
     tollEstimate: 900,
   },
   {
@@ -2091,12 +1517,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "12 Hours",
     description: "Cheapest tempo traveller from Ayodhya to Meerut.",
     highlights: ["Long Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Meerut?",
-        answer: "Fare starts from ₹" + 720 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Meerut", 720, "12 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -2108,12 +1529,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Affordable travel from Ayodhya to Saharanpur.",
     highlights: ["Long Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Saharanpur?",
-        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Saharanpur", 850, "14 Hours"),
     tollEstimate: 1400,
   },
   {
@@ -2125,12 +1541,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "11 Hours",
     description: "Religious trip from Ayodhya to Mathura.",
     highlights: ["Pilgrimage", "Comfort", "Safe", "Affordable", "Group Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Mathura?",
-        answer: "Fare starts from ₹" + 620 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Mathura", 620, "11 Hours"),
     tollEstimate: 1000,
   },
   {
@@ -2142,12 +1553,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "11 Hours",
     description: "Affordable tempo traveller from Ayodhya to Vrindavan.",
     highlights: ["Religious Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Vrindavan?",
-        answer: "Fare starts from ₹" + 630 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Vrindavan", 630, "11 Hours"),
     tollEstimate: 1000,
   },
   {
@@ -2159,12 +1565,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "9.5 Hours",
     description: "Affordable travel from Ayodhya to Orchha.",
     highlights: ["Tour Route", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Orchha?",
-        answer: "Fare starts from ₹" + 520 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Orchha", 520, "9.5 Hours"),
     tollEstimate: 850,
   },
   {
@@ -2182,12 +1583,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Affordable",
       "Reliable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Nagpur?",
-        answer: "Fare starts from ₹" + 1000 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Nagpur", 1000, "17 Hours"),
     tollEstimate: 1700,
   },
   {
@@ -2199,12 +1595,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Cheapest tempo traveller from Ayodhya to Ranchi.",
     highlights: ["Comfort", "Safe", "Affordable", "Long Route", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Ranchi?",
-        answer: "Fare starts from ₹" + 750 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Ranchi", 750, "14 Hours"),
     tollEstimate: 1300,
   },
   {
@@ -2222,12 +1613,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Premium Travel",
       "Reliable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Jagdalpur?",
-        answer: "Fare starts from ₹" + 1100 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Jagdalpur", 1100, "20 Hours"),
     tollEstimate: 1800,
   },
   {
@@ -2245,12 +1631,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Very Long Travel",
       "Reliable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Ahmedabad?",
-        answer: "Fare starts from ₹" + 1400 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Ahmedabad", 1400, "24 Hours"),
     tollEstimate: 2500,
   },
   {
@@ -2262,12 +1643,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "26 Hours",
     description: "Long-distance travel from Ayodhya to Surat.",
     highlights: ["Premium", "Comfort", "Safe", "Long Route", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Surat?",
-        answer: "Fare starts from ₹" + 1500 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Surat", 1500, "26 Hours"),
     tollEstimate: 2600,
   },
   {
@@ -2279,12 +1655,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "27 Hours",
     description: "Affordable travel from Ayodhya to Pune.",
     highlights: ["Long Route", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Pune?",
-        answer: "Fare starts from ₹" + 1550 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Pune", 1550, "27 Hours"),
     tollEstimate: 2700,
   },
   {
@@ -2302,12 +1673,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Luxury Travel",
       "Reliable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Bangalore?",
-        answer: "Fare starts from ₹" + 1900 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Bangalore", 1900, "32 Hours"),
     tollEstimate: 3200,
   },
   {
@@ -2325,12 +1691,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Premium Travel",
       "Reliable",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Chennai?",
-        answer: "Fare starts from ₹" + 2100 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Chennai", 2100, "36 Hours"),
     tollEstimate: 3500,
   },
   {
@@ -2342,12 +1703,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "34 Hours",
     description: "Affordable long-distance travel from Ayodhya to Goa.",
     highlights: ["Tour Route", "Comfort", "Safe", "Premium", "Long Travel"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Goa?",
-        answer: "Fare starts from ₹" + 2000 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Goa", 2000, "34 Hours"),
     tollEstimate: 3300,
   },
   {
@@ -2359,12 +1715,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "26 Hours",
     description: "Religious trip from Ayodhya to Shirdi.",
     highlights: ["Pilgrimage", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Shirdi?",
-        answer: "Fare starts from ₹" + 1500 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Shirdi", 1500, "26 Hours"),
     tollEstimate: 2600,
   },
   {
@@ -2376,12 +1727,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "15 Hours",
     description: "Religious travel from Ayodhya to Ujjain.",
     highlights: ["Pilgrimage", "Comfort", "Safe", "Affordable", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Ujjain?",
-        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Ujjain", 850, "15 Hours"),
     tollEstimate: 1400,
   },
   {
@@ -2393,12 +1739,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "16 Hours",
     description: "Affordable religious travel from Ayodhya to Omkareshwar.",
     highlights: ["Pilgrimage", "Comfort", "Safe", "Budget", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Omkareshwar?",
-        answer: "Fare starts from ₹" + 900 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Omkareshwar", 900, "16 Hours"),
     tollEstimate: 1500,
   },
   // ================= EXTRA CHEAPEST ROUTES FROM AYODHYA (Short Distance / Low Fare) =================
@@ -2418,12 +1759,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Fast Travel",
       "Local Experts",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Faizabad?",
-        answer: "Fare starts from ₹" + 7 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Faizabad", 7, "15 Min"),
     tollEstimate: 0,
   },
   {
@@ -2436,12 +1772,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Budget tempo traveller from Ayodhya to Katra (Ayodhya Cantt area).",
     highlights: ["Very Short Trip", "Low Cost", "Fast", "Local Route", "Safe"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Katra?",
-        answer: "Fare starts from ₹" + 25 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Katra", 25, "45 Min"),
     tollEstimate: 0,
   },
   {
@@ -2454,12 +1785,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Affordable ride from Ayodhya to Rudauli for local group travel.",
     highlights: ["Short Route", "Budget", "Fast", "Safe", "Easy Booking"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Rudauli?",
-        answer: "Fare starts from ₹" + 45 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Rudauli", 45, "1 Hour"),
     tollEstimate: 30,
   },
   {
@@ -2471,12 +1797,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "50 Min",
     description: "Cheapest tempo traveller from Ayodhya to Ramnagar.",
     highlights: ["Lowest Price", "Short Trip", "Comfort", "Fast", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Ramnagar?",
-        answer: "Fare starts from ₹" + 30 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Ramnagar", 30, "50 Min"),
     tollEstimate: 0,
   },
   {
@@ -2488,12 +1809,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Budget group travel from Ayodhya to Mawai.",
     highlights: ["Affordable", "Comfort", "Safe", "Fast", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Mawai?",
-        answer: "Fare starts from ₹" + 55 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Mawai", 55, "1.5 Hours"),
     tollEstimate: 40,
   },
   {
@@ -2505,12 +1821,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Cheap tempo traveller from Ayodhya to Bikapur.",
     highlights: ["Low Cost", "Fast", "Safe", "Comfort", "Local Route"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Bikapur?",
-        answer: "Fare starts from ₹" + 50 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Bikapur", 50, "1.5 Hours"),
     tollEstimate: 30,
   },
   {
@@ -2522,12 +1833,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1 Hour",
     description: "Quick & cheapest ride from Ayodhya to Dostpur.",
     highlights: ["Shortest Route", "Budget", "Fast", "Safe", "Easy Booking"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Dostpur?",
-        answer: "Fare starts from ₹" + 35 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Dostpur", 35, "1 Hour"),
     tollEstimate: 0,
   },
   {
@@ -2539,12 +1845,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2 Hours",
     description: "Affordable tempo traveller from Ayodhya to Tanda.",
     highlights: ["Budget Friendly", "Comfort", "Safe", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Tanda?",
-        answer: "Fare starts from ₹" + 65 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Tanda", 65, "2 Hours"),
     tollEstimate: 50,
   },
   {
@@ -2556,12 +1857,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Cheapest tempo traveller from Ayodhya to Akbarpur.",
     highlights: ["Low Cost", "Comfort", "Safe", "Fast", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Akbarpur?",
-        answer: "Fare starts from ₹" + 85 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Akbarpur (Ambedkar Nagar)", 85, "2.5 Hours"),
     tollEstimate: 70,
   },
   {
@@ -2573,12 +1869,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Budget travel from Ayodhya to Khalilabad.",
     highlights: ["Affordable", "Comfort", "Safe", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Khalilabad?",
-        answer: "Fare starts from ₹" + 95 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Khalilabad", 95, "2.5 Hours"),
     tollEstimate: 80,
   },
   {
@@ -2590,12 +1881,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Cheapest ride from Ayodhya to Nanpara.",
     highlights: ["Low Price", "Comfort", "Safe", "Fast", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Nanpara?",
-        answer: "Fare starts from ₹" + 90 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Nanpara", 90, "2.5 Hours"),
     tollEstimate: 80,
   },
   {
@@ -2607,12 +1893,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2 Hours",
     description: "Affordable tempo traveller from Ayodhya to Aiser.",
     highlights: ["Budget", "Comfort", "Safe", "Fast", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Aiser?",
-        answer: "Fare starts from ₹" + 70 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Aiser", 70, "2 Hours"),
     tollEstimate: 60,
   },
   {
@@ -2624,12 +1905,7 @@ export const AYODHYA_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1 Hour",
     description: "Quick & cheapest tempo traveller from Ayodhya to Gosainganj.",
     highlights: ["Very Short", "Low Cost", "Fast", "Safe", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Ayodhya to Gosainganj?",
-        answer: "Fare starts from ₹" + 40 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Ayodhya", "Gosainganj", 40, "1 Hour"),
     tollEstimate: 0,
   },
 ];
@@ -2652,12 +1928,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Comfort Travel",
       "Transparent Pricing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Ayodhya?",
-        answer: "Fare starts from ₹" + 220 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ayodhya", 220, "4.5 Hours"),
     tollEstimate: 450,
   },
   {
@@ -2676,12 +1947,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Flexible Timing",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Prayagraj?",
-        answer: "Fare starts from ₹" + 120 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Prayagraj", 120, "3 Hours"),
     tollEstimate: 150,
   },
   {
@@ -2699,12 +1965,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Local Drivers",
       "Safe Ride",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Ghazipur?",
-        answer: "Fare starts from ₹" + 80 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ghazipur", 80, "2 Hours"),
     tollEstimate: 100,
   },
   {
@@ -2723,12 +1984,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Easy Booking",
       "Reliable Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Mirzapur?",
-        answer: "Fare starts from ₹" + 65 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Mirzapur", 65, "1.5 Hours"),
     tollEstimate: 80,
   },
   {
@@ -2747,12 +2003,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Comfort Ride",
       "Trusted Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Jaunpur?",
-        answer: "Fare starts from ₹" + 60 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Jaunpur", 60, "1.5 Hours"),
     tollEstimate: 80,
   },
   {
@@ -2770,12 +2021,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Local Drivers",
       "Fast Travel",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Bhadohi?",
-        answer: "Fare starts from ₹" + 45 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Bhadohi", 45, "1 Hour"),
     tollEstimate: 50,
   },
   {
@@ -2794,12 +2040,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Affordable Pricing",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Gorakhpur?",
-        answer: "Fare starts from ₹" + 220 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Gorakhpur", 220, "5 Hours"),
     tollEstimate: 400,
   },
   {
@@ -2817,12 +2058,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Flexible Timing",
       "Reliable Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Azamgarh?",
-        answer: "Fare starts from ₹" + 100 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Azamgarh", 100, "2.5 Hours"),
     tollEstimate: 120,
   },
   {
@@ -2840,12 +2076,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Local Drivers",
       "Fast Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Sarnath?",
-        answer: "Fare starts from ₹" + 12 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Sarnath", 12, "30 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -2864,12 +2095,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Travel",
       "Affordable Rates",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Lucknow?",
-        answer: "Fare starts from ₹" + 320 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Lucknow", 320, "6.5 Hours"),
     tollEstimate: 500,
   },
   {
@@ -2887,12 +2113,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Ride",
       "Group Friendly",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kanpur?",
-        answer: "Fare starts from ₹" + 330 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kanpur", 330, "7 Hours"),
     tollEstimate: 550,
   },
   {
@@ -2910,12 +2131,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Flexible Timing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Fatehpur?",
-        answer: "Fare starts from ₹" + 240 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Fatehpur", 240, "5 Hours"),
     tollEstimate: 300,
   },
   {
@@ -2933,12 +2149,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Flexible Timing",
       "Reliable Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Pratapgarh?",
-        answer: "Fare starts from ₹" + 140 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Pratapgarh", 140, "3.5 Hours"),
     tollEstimate: 150,
   },
   {
@@ -2956,12 +2167,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Sultanpur?",
-        answer: "Fare starts from ₹" + 160 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Sultanpur", 160, "4 Hours"),
     tollEstimate: 200,
   },
   {
@@ -2979,12 +2185,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Flexible Timing",
       "Reliable Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Ambedkar Nagar?",
-        answer: "Fare starts from ₹" + 180 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ambedkar Nagar", 180, "4.5 Hours"),
     tollEstimate: 250,
   },
   {
@@ -2996,12 +2197,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Affordable tempo traveller from Varanasi to Mau.",
     highlights: ["Budget", "Comfort", "Safe", "Fast", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Mau?",
-        answer: "Fare starts from ₹" + 85 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Mau", 85, "2.5 Hours"),
     tollEstimate: 100,
   },
   {
@@ -3019,12 +2215,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Flexible Timing",
       "Reliable Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Ballia?",
-        answer: "Fare starts from ₹" + 140 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ballia", 140, "3.5 Hours"),
     tollEstimate: 200,
   },
   {
@@ -3042,12 +2233,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Ride",
       "Group Friendly",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Deoria?",
-        answer: "Fare starts from ₹" + 230 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Deoria", 230, "5 Hours"),
     tollEstimate: 400,
   },
   {
@@ -3065,12 +2251,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Basti?",
-        answer: "Fare starts from ₹" + 240 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Basti", 240, "5.5 Hours"),
     tollEstimate: 450,
   },
   {
@@ -3088,12 +2269,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Ride",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kushinagar?",
-        answer: "Fare starts from ₹" + 270 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kushinagar", 270, "6 Hours"),
     tollEstimate: 450,
   },
   {
@@ -3111,12 +2287,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Flexible Timing",
       "Reliable Service",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Sonbhadra?",
-        answer: "Fare starts from ₹" + 180 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Sonbhadra", 180, "4.5 Hours"),
     tollEstimate: 300,
   },
   {
@@ -3134,12 +2305,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Etawah?",
-        answer: "Fare starts from ₹" + 500 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Etawah", 500, "9.5 Hours"),
     tollEstimate: 850,
   },
   {
@@ -3157,12 +2323,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Flexible Timing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Mainpuri?",
-        answer: "Fare starts from ₹" + 560 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Mainpuri", 560, "10.5 Hours"),
     tollEstimate: 950,
   },
   {
@@ -3180,12 +2341,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Farrukhabad?",
-        answer: "Fare starts from ₹" + 580 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Farrukhabad", 580, "11 Hours"),
     tollEstimate: 1000,
   },
   {
@@ -3203,12 +2359,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Ride",
       "Group Friendly",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Shahjahanpur?",
-        answer: "Fare starts from ₹" + 520 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Shahjahanpur", 520, "10 Hours"),
     tollEstimate: 900,
   },
   {
@@ -3226,12 +2377,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Bareilly?",
-        answer: "Fare starts from ₹" + 600 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Bareilly", 600, "11 Hours"),
     tollEstimate: 1100,
   },
   {
@@ -3249,12 +2395,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Ride",
       "Group Friendly",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Moradabad?",
-        answer: "Fare starts from ₹" + 700 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Moradabad", 700, "12 Hours"),
     tollEstimate: 1300,
   },
   {
@@ -3272,12 +2413,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Aligarh?",
-        answer: "Fare starts from ₹" + 650 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Aligarh", 650, "11 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -3295,12 +2431,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Ride",
       "Group Friendly",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Pilibhit?",
-        answer: "Fare starts from ₹" + 650 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Pilibhit", 650, "12 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -3318,12 +2449,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Lakhimpur Kheri?",
-        answer: "Fare starts from ₹" + 700 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Lakhimpur Kheri", 700, "13 Hours"),
     tollEstimate: 1300,
   },
   {
@@ -3341,12 +2467,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Flexible Timing",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Sitapur?",
-        answer: "Fare starts from ₹" + 450 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Sitapur", 450, "9 Hours"),
     tollEstimate: 800,
   },
   {
@@ -3364,12 +2485,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
       "Experienced Drivers",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Hardoi?",
-        answer: "Fare starts from ₹" + 480 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Hardoi", 480, "9.5 Hours"),
     tollEstimate: 850,
   },
   {
@@ -3388,12 +2504,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Fast Travel",
       "Local Experts",
     ],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Ramnagar?",
-        answer: "Fare starts from ₹" + 14 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ramnagar", 14, "30 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3406,12 +2517,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Budget tempo traveller from Varanasi to Chandauli for local group travel.",
     highlights: ["Very Short Trip", "Low Cost", "Fast", "Local Route", "Safe"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Chandauli?",
-        answer: "Fare starts from ₹" + 25 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Chandauli", 25, "45 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3424,12 +2530,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Affordable ride from Varanasi to Kachhwa for Mirzapur road travelers.",
     highlights: ["Short Route", "Budget", "Fast", "Safe", "Easy Booking"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kachhwa?",
-        answer: "Fare starts from ₹" + 35 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kachhwa", 35, "1 Hour"),
     tollEstimate: 30,
   },
   {
@@ -3442,12 +2543,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Cheapest tempo traveller from Varanasi to Chunar (Chunar Fort).",
     highlights: ["Lowest Price", "Short Trip", "Comfort", "Fast", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Chunar?",
-        answer: "Fare starts from ₹" + 40 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Chunar", 40, "1 Hour"),
     tollEstimate: 30,
   },
   {
@@ -3460,12 +2556,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Budget group travel from Varanasi to Gyanpur (Bhadohi district).",
     highlights: ["Affordable", "Comfort", "Safe", "Fast", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Gyanpur?",
-        answer: "Fare starts from ₹" + 50 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Gyanpur", 50, "1.5 Hours"),
     tollEstimate: 40,
   },
   {
@@ -3477,12 +2568,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Cheap tempo traveller from Varanasi to Zeradei.",
     highlights: ["Low Cost", "Fast", "Safe", "Comfort", "Local Route"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Zeradei?",
-        answer: "Fare starts from ₹" + 55 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Zeradei", 55, "1.5 Hours"),
     tollEstimate: 40,
   },
   {
@@ -3494,12 +2580,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "35 Minutes",
     description: "Quick & cheapest ride from Varanasi to Rajatalab.",
     highlights: ["Shortest Route", "Budget", "Fast", "Safe", "Easy Booking"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Rajatalab?",
-        answer: "Fare starts from ₹" + 18 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Rajatalab", 18, "35 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3512,12 +2593,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Affordable tempo traveller from Varanasi to Babatpur (near Airport).",
     highlights: ["Budget Friendly", "Comfort", "Safe", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Babatpur?",
-        answer: "Fare starts from ₹" + 22 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Babatpur", 22, "40 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3529,12 +2605,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "30 Minutes",
     description: "Cheapest tempo traveller from Varanasi to Lohta.",
     highlights: ["Low Cost", "Comfort", "Safe", "Fast", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Lohta?",
-        answer: "Fare starts from ₹" + 15 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Lohta", 15, "30 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3546,12 +2617,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "50 Minutes",
     description: "Budget travel from Varanasi to Kapsethi.",
     highlights: ["Affordable", "Comfort", "Safe", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kapsethi?",
-        answer: "Fare starts from ₹" + 28 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kapsethi", 28, "50 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3563,12 +2629,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "55 Minutes",
     description: "Cheapest ride from Varanasi to Sewapur.",
     highlights: ["Low Price", "Comfort", "Safe", "Fast", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Sewapur?",
-        answer: "Fare starts from ₹" + 32 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Sewapur", 32, "55 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3580,12 +2641,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "1.25 Hours",
     description: "Affordable tempo traveller from Varanasi to Marui.",
     highlights: ["Budget", "Comfort", "Safe", "Fast", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Marui?",
-        answer: "Fare starts from ₹" + 45 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Marui", 45, "1.25 Hours"),
     tollEstimate: 35,
   },
   {
@@ -3598,12 +2654,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     description:
       "Quick & cheapest tempo traveller from Varanasi to Narayanpur.",
     highlights: ["Very Short", "Low Cost", "Fast", "Safe", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Narayanpur?",
-        answer: "Fare starts from ₹" + 48 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Narayanpur", 48, "1.5 Hours"),
     tollEstimate: 40,
   },
   {
@@ -3615,12 +2666,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "40 Minutes",
     description: "Airport transfer from Varanasi city to Varanasi Airport.",
     highlights: ["Airport Transfer", "On Time", "Comfort", "Safe", "Reliable"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Airport?",
-        answer: "Fare starts from ₹" + 22 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Varanasi Airport (Babatpur)", 22, "40 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3632,12 +2678,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "20 Minutes",
     description: "Shortest ride from Varanasi city to BHU campus.",
     highlights: ["Ultra Short Trip", "Lowest Fare", "Fast", "Safe", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to BHU?",
-        answer: "Fare starts from ₹" + 8 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Varanasi Airport (Babatpur)", 22, "40 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3649,12 +2690,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "15 Minutes",
     description: "Ultra short ride to Kashi Vishwanath Temple for pilgrims.",
     highlights: ["Pilgrimage", "Lowest Price", "Fast", "Safe", "Local Experts"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kashi Vishwanath?",
-        answer: "Fare starts from ₹" + 5 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kashi Vishwanath Temple", 5, "15 Minutes"),
     tollEstimate: 0,
   },
   {
@@ -3666,12 +2702,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2 Hours",
     description: "Cheapest ride from Varanasi to Kopaganj.",
     highlights: ["Low Cost", "Comfort", "Safe", "Fast", "Local"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kopaganj?",
-        answer: "Fare starts from ₹" + 75 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kopaganj", 75, "15 Minutes"),
     tollEstimate: 80,
   },
   {
@@ -3683,12 +2714,7 @@ export const VARANASI_CHEAPEST_ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Budget travel from Varanasi to Rasra.",
     highlights: ["Affordable", "Comfort", "Safe", "Reliable", "Fast"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Rasra?",
-        answer: "Fare starts from ₹" + 95 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Rasra", 95, "2.5 Hours"),
     tollEstimate: 120,
   },
 ];
@@ -3712,12 +2738,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Dehradun", "Rishikesh", "Vikasnagar", "Doiwala"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Dehradun?",
-        answer: "Fare starts from ₹" + 820 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Dehradun", 820, "15 Hours"),
     tollEstimate: 1500,
   },
   {
@@ -3737,12 +2758,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
     ],
     tehsils: ["Haridwar", "Roorkee", "Laksar", "Bhagwanpur"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Haridwar?",
-        answer: "Fare starts from ₹" + 900 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Haridwar", 900, "15.5 Hours"),
     tollEstimate: 1700,
   },
   {
@@ -3762,12 +2778,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Rishikesh", "Dehradun", "Kalsi"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Rishikesh?",
-        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Rishikesh", 850, "14.5 Hours"),
     tollEstimate: 1550,
   },
   {
@@ -3787,12 +2798,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Experienced Drivers",
     ],
     tehsils: ["Nainital", "Haldwani", "Ramnagar", "Kaladhungi"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Nainital?",
-        answer: "Fare starts from ₹" + 700 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Nainital", 700, "13 Hours"),
     tollEstimate: 1300,
   },
   {
@@ -3812,12 +2818,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Scenic Route",
     ],
     tehsils: ["Dehradun", "Dhanaulti", "Landour"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Mussoorie?",
-        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Mussoorie", 850, "15.5 Hours"),
     tollEstimate: 1600,
   },
   {
@@ -3837,12 +2838,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
     ],
     tehsils: ["Haldwani", "Nainital", "Kaladhungi", "Betalghat"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Haldwani?",
-        answer: "Fare starts from ₹" + 680 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Haldwani", 680, "12.5 Hours"),
     tollEstimate: 1250,
   },
   {
@@ -3862,12 +2858,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Rudrapur", "Kichha", "Gadarpur", "Kashipur"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Rudrapur?",
-        answer: "Fare starts from ₹" + 650 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Rudrapur", 650, "12 Hours"),
     tollEstimate: 1200,
   },
   {
@@ -3887,12 +2878,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Reliable Service",
     ],
     tehsils: ["Kashipur", "Jaspur", "Bajpur", "Kichha"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kashipur?",
-        answer: "Fare starts from ₹" + 620 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kashipur", 620, "11.5 Hours"),
     tollEstimate: 1150,
   },
   {
@@ -3912,12 +2898,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Experienced Drivers",
     ],
     tehsils: ["Almora", "Ranikhet", "Dwarahat", "Someshwar"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Almora?",
-        answer: "Fare starts from ₹" + 750 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Almora", 750, "14 Hours"),
     tollEstimate: 1400,
   },
   {
@@ -3937,12 +2918,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Pithoragarh", "Didihat", "Gangolihat", "Berinag"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Pithoragarh?",
-        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Pithoragarh", 850, "16 Hours"),
     tollEstimate: 1600,
   },
   {
@@ -3962,12 +2938,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Pilgrimage Stop",
     ],
     tehsils: ["Joshimath", "Chamoli", "Karnaprayag", "Badrinath"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Joshimath?",
-        answer: "Fare starts from ₹" + 950 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Joshimath", 950, "18 Hours"),
     tollEstimate: 1800,
   },
   {
@@ -3987,12 +2958,7 @@ export const UTTARAKHAND_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Budget Friendly",
     ],
     tehsils: ["Kotdwar", "Lansdowne", "Pauri", "Satpuli"],
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kotdwar?",
-        answer: "Fare starts from ₹" + 750 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kotdwar", 750, "14 Hours"),
     tollEstimate: 1400,
   },
 ];
@@ -4017,12 +2983,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Bhopal", "Huzur", "Berasia", "Phanda"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Bhopal?",
-        answer: "Fare starts from ₹" + 720 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Bhopal", 720, "13 Hours"),
     tollEstimate: 1300,
   },
   {
@@ -4043,12 +3004,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Indore", "Mhow", "Depalpur", "Sanwer"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Indore?",
-        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Indore", 850, "15 Hours"),
     tollEstimate: 1550,
   },
   {
@@ -4069,12 +3025,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Jabalpur", "Panagar", "Sihora", "Patan"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Jabalpur?",
-        answer: "Fare starts from ₹" + 420 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Jabalpur", 420, "9 Hours"),
     tollEstimate: 750,
   },
   {
@@ -4095,12 +3046,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Gwalior", "Dabra", "Bhitarwar", "Morar"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Gwalior?",
-        answer: "Fare starts from ₹" + 550 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Gwalior", 550, "10 Hours"),
     tollEstimate: 950,
   },
   {
@@ -4121,12 +3067,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Ujjain", "Mahidpur", "Tarana", "Ghatiya"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Ujjain?",
-        answer: "Fare starts from ₹" + 780 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ujjain", 780, "14 Hours"),
     tollEstimate: 1400,
   },
   {
@@ -4147,12 +3088,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Rewa", "Mauganj", "Sirmaur", "Teonthar"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Rewa?",
-        answer: "Fare starts from ₹" + 260 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Rewa", 260, "6 Hours"),
     tollEstimate: 400,
   },
   {
@@ -4173,12 +3109,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Satna", "Nagod", "Ramnagar", "Maihar"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Satna?",
-        answer: "Fare starts from ₹" + 280 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Satna", 280, "6.5 Hours"),
     tollEstimate: 450,
   },
   {
@@ -4199,12 +3130,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Katni", "Barhi", "Vijayraghavgarh", "Bahoriband"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Katni?",
-        answer: "Fare starts from ₹" + 380 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Katni", 380, "8 Hours"),
     tollEstimate: 650,
   },
   {
@@ -4225,12 +3151,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Sagar", "Rehli", "Banda", "Deori"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Sagar?",
-        answer: "Fare starts from ₹" + 500 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Sagar", 500, "10 Hours"),
     tollEstimate: 850,
   },
   {
@@ -4251,12 +3172,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Dewas", "Kannod", "Sonkatch", "Khategaon"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Dewas?",
-        answer: "Fare starts from ₹" + 820 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Dewas", 820, "14.5 Hours"),
     tollEstimate: 1500,
   },
   {
@@ -4277,12 +3193,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Chhatarpur", "Bijawar", "Bada Malhera", "Gaurihar"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Khajuraho?",
-        answer: "Fare starts from ₹" + 420 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Khajuraho", 420, "9 Hours"),
     tollEstimate: 750,
   },
   {
@@ -4303,12 +3214,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Chhindwara", "Sausar", "Parasia", "Mohkhed"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Chhindwara?",
-        answer: "Fare starts from ₹" + 650 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Chhindwara", 650, "12 Hours"),
     tollEstimate: 1150,
   },
   {
@@ -4329,12 +3235,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Burhanpur", "Nepanagar", "Shahpur", "Bhikangaon"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Burhanpur?",
-        answer: "Fare starts from ₹" + 880 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Burhanpur", 880, "16 Hours"),
     tollEstimate: 1600,
   },
   {
@@ -4355,12 +3256,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Shivpuri", "Kolaras", "Narwar", "Pichhore"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Shivpuri?",
-        answer: "Fare starts from ₹" + 600 * VEHICLES[0].perKmRate,
-      },
-    ],
+     faqs: generateRouteFaqs("Varanasi", "Shivpuri", 600, "11 Hours"),
     tollEstimate: 1050,
   },
   {
@@ -4381,12 +3277,7 @@ export const MADHYAPRADESH_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Ratlam", "Sailana", "Tal", "Piploda"],
     category: "madhyapradesh",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Ratlam?",
-        answer: "Fare starts from ₹" + 880 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ratlam", 880, "16 Hours"),
     tollEstimate: 1600,
   },
 ];
@@ -4411,12 +3302,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Jaipur", "Amber", "Sanganer", "Chomu", "Phulera"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Jaipur?",
-        answer: "Fare starts from ₹" + 750 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Jaipur", 750, "13 Hours"),
     tollEstimate: 1400,
   },
   {
@@ -4437,12 +3323,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Jodhpur", "Balesar", "Bhopalgarh", "Luni", "Osian"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Jodhpur?",
-        answer: "Fare starts from ₹" + 1050 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Jodhpur", 1050, "18 Hours"),
     tollEstimate: 1950,
   },
   {
@@ -4463,12 +3344,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Girwa", "Mavli", "Vallabhnagar", "Kherwara", "Nathdwara"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Udaipur?",
-        answer: "Fare starts from ₹" + 900 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Udaipur", 900, "16 Hours"),
     tollEstimate: 1650,
   },
   {
@@ -4489,12 +3365,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Kota", "Ladpura", "Sangod", "Ramganj Mandi", "Digod"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Kota?",
-        answer: "Fare starts from ₹" + 680 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Kota", 680, "12 Hours"),
     tollEstimate: 1250,
   },
   {
@@ -4515,12 +3386,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Ajmer", "Pushkar", "Kishangarh", "Nasirabad", "Beawar"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Ajmer?",
-        answer: "Fare starts from ₹" + 820 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ajmer", 820, "14 Hours"),
     tollEstimate: 1500,
   },
   {
@@ -4541,12 +3407,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Bikaner", "Nokha", "Khajuwala", "Lunkaransar", "Kolayat"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Bikaner?",
-        answer: "Fare starts from ₹" + 980 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Bikaner", 980, "17 Hours"),
     tollEstimate: 1800,
   },
   {
@@ -4567,12 +3428,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Alwar", "Rajgarh", "Ramgarh", "Thanagazi", "Behror"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Alwar?",
-        answer: "Fare starts from ₹" + 650 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Alwar", 650, "11 Hours"),
     tollEstimate: 1150,
   },
   {
@@ -4593,12 +3449,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Bharatpur", "Bayana", "Weir", "Nadbai", "Rupbas"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Bharatpur?",
-        answer: "Fare starts from ₹" + 580 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Bharatpur", 580, "10 Hours"),
     tollEstimate: 1050,
   },
   {
@@ -4619,12 +3470,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Sikar", "Danta Ramgarh", "Fatehpur", "Neem Ka Thana"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Sikar?",
-        answer: "Fare starts from ₹" + 780 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Sikar", 780, "14 Hours"),
     tollEstimate: 1450,
   },
   {
@@ -4645,12 +3491,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Pali", "Sojat", "Sumerpur", "Bali", "Desuri", "Rani"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Pali?",
-        answer: "Fare starts from ₹" + 900 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Pali", 900, "16 Hours"),
     tollEstimate: 1650,
   },
   {
@@ -4671,12 +3512,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Abu Road", "Pindwara", "Sirohi", "Reodar"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Mount Abu?",
-        answer: "Fare starts from ₹" + 1150 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Mount Abu", 1150, "20 Hours"),
     tollEstimate: 2100,
   },
   {
@@ -4697,12 +3533,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Jaisalmer", "Pokaran", "Ramgarh", "Fatehgarh"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Jaisalmer?",
-        answer: "Fare starts from ₹" + 1180 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Jaisalmer", 1180, "22 Hours"),
     tollEstimate: 2200,
   },
   {
@@ -4723,12 +3554,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Bhilwara", "Mandal", "Asind", "Shahpura", "Mandalgarh"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Bhilwara?",
-        answer: "Fare starts from ₹" + 850 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Bhilwara", 850, "15 Hours"),
     tollEstimate: 1550,
   },
   {
@@ -4749,12 +3575,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Chittorgarh", "Nimbahera", "Kapasan", "Begun"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Chittorgarh?",
-        answer: "Fare starts from ₹" + 880 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Chittorgarh", 880, "16 Hours"),
     tollEstimate: 1620,
   },
   {
@@ -4775,12 +3596,7 @@ export const RAJASTHAN_CHEAPEST_ROUTES: TaxiRoute[] = [
     ],
     tehsils: ["Hanumangarh", "Nohar", "Bhadra", "Pilibanga"],
     category: "rajasthan",
-    faqs: [
-      {
-        question: "What is the fare from Varanasi to Hanumangarh?",
-        answer: "Fare starts from ₹" + 1000 * VEHICLES[0].perKmRate,
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Hanumangarh", 1000, "18 Hours"),
     tollEstimate: 1850,
   },
 ];
@@ -4811,18 +3627,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Phulwari",
       "Punpun",
     ],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Patna?",
-        answer:
-          "It takes around 5 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Patna famous for?",
-        answer:
-          "Patna is famous for Golghar, Takht Sri Patna Sahib, and its rich history.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Patna", 255, "5 Hours"),
     tollEstimate: 450,
   },
 
@@ -4843,18 +3648,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Travel",
     ],
     tehsils: ["Gaya", "Bodh Gaya", "Imamganj", "Wazirganj", "Guraru"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Gaya?",
-        answer:
-          "It takes around 5 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Gaya famous for?",
-        answer:
-          "Gaya is famous for Vishnupad Temple and nearby Bodh Gaya pilgrimage site.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Gaya", 260, "5 Hours"),
     tollEstimate: 420,
   },
 
@@ -4875,18 +3669,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Gaya", "Bodh Gaya", "Tan Kuppa", "Guraru"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Bodh Gaya?",
-        answer:
-          "It takes around 5 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Bodh Gaya famous for?",
-        answer:
-          "Bodh Gaya is famous for Mahabodhi Temple and Lord Buddha enlightenment site.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Bodh Gaya", 255, "5 Hours"),
     tollEstimate: 420,
   },
 
@@ -4907,18 +3690,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Family Friendly",
     ],
     tehsils: ["Muzaffarpur", "Kanti", "Marwan", "Minapur", "Sahebganj"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Muzaffarpur?",
-        answer:
-          "It takes around 7 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Muzaffarpur famous for?",
-        answer:
-          "Muzaffarpur is famous for Shahi litchi and commercial markets.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Muzaffarpur", 340, "7 Hours"),
     tollEstimate: 550,
   },
 
@@ -4939,18 +3711,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Bhagalpur", "Sultanganj", "Nathnagar", "Pirpainti"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Bhagalpur?",
-        answer:
-          "It takes around 8 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Bhagalpur famous for?",
-        answer:
-          "Bhagalpur is famous for silk industry and Vikramshila heritage.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Bhagalpur", 420, "8 Hours"),
     tollEstimate: 650,
   },
 
@@ -4971,18 +3732,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Safe Travel",
     ],
     tehsils: ["Darbhanga", "Bahadurpur", "Benipur", "Keotiranway"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Darbhanga?",
-        answer:
-          "It takes around 8 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Darbhanga famous for?",
-        answer:
-          "Darbhanga is famous for Mithila culture, ponds, and royal heritage.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Darbhanga", 390, "8 Hours"),
     tollEstimate: 620,
   },
 
@@ -5003,18 +3753,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Purnia", "Dagarua", "Kasba", "Krityanand Nagar"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Purnia?",
-        answer:
-          "It takes around 10 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Purnia famous for?",
-        answer:
-          "Purnia is famous for agriculture, tea region access, and eastern Bihar connectivity.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Purnia", 510, "10 Hours"),
     tollEstimate: 780,
   },
 
@@ -5035,18 +3774,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Arrah", "Shahpur", "Barhara", "Jagdishpur", "Piro"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Arrah?",
-        answer:
-          "It takes around 4 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Arrah famous for?",
-        answer:
-          "Arrah is famous for historical importance and Bhojpur region heritage.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Arrah", 155, "4 Hours"),
     tollEstimate: 280,
   },
 
@@ -5067,18 +3795,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Family Friendly",
     ],
     tehsils: ["Begusarai", "Teghra", "Balia", "Naokothi"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Begusarai?",
-        answer:
-          "It takes around 7 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Begusarai famous for?",
-        answer:
-          "Begusarai is famous for industries, agriculture, and Bihar's commercial importance.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Begusarai", 355, "7 Hours"),
     tollEstimate: 560,
   },
 
@@ -5099,18 +3816,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Munger", "Kharagpur", "Bariarpur", "Dharhara"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Munger?",
-        answer:
-          "It takes around 8 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Munger famous for?",
-        answer:
-          "Munger is famous for Bihar School of Yoga, fort, and Ganga riverside heritage.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Munger", 410, "8 Hours"),
     tollEstimate: 620,
   },
 
@@ -5131,18 +3837,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Lowest Fare",
     ],
     tehsils: ["Sasaram", "Nokha", "Chenari", "Rohtas"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Sasaram?",
-        answer:
-          "It takes around 3 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Sasaram famous for?",
-        answer:
-          "Sasaram is famous for Sher Shah Suri Tomb and Rohtas region history.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Sasaram", 125, "3 Hours"),
     tollEstimate: 220,
   },
 
@@ -5163,18 +3858,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Family Friendly",
     ],
     tehsils: ["Hajipur", "Vaishali", "Mahua", "Raghopur"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Hajipur?",
-        answer:
-          "It takes around 6 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Hajipur famous for?",
-        answer:
-          "Hajipur is famous for bananas, Vaishali heritage, and Patna connectivity.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Hajipur", 275, "6 Hours"),
     tollEstimate: 470,
   },
 
@@ -5195,18 +3879,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Siwan", "Maharajganj", "Raghunathpur", "Darauli"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Siwan?",
-        answer:
-          "It takes around 5 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Siwan famous for?",
-        answer:
-          "Siwan is famous for agriculture and western Bihar regional trade.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Siwan", 215, "5 Hours"),
     tollEstimate: 360,
   },
 
@@ -5227,18 +3900,7 @@ export const BIHAR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Popular Route",
     ],
     tehsils: ["Chapra", "Manjhi", "Panapur", "Sonepur"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Chapra?",
-        answer:
-          "It takes around 6 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Chapra famous for?",
-        answer:
-          "Chapra is famous for Saran region trade and nearby Sonepur fair access.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Chapra", 245, "6 Hours"),
     tollEstimate: 420,
   },
 ];
@@ -5261,35 +3923,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Sadar Bazar", "Civil Lines", "Karol Bagh", "Narela"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Delhi?",
-        answer:
-          "It takes around 13 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Delhi famous for?",
-        answer:
-          "Delhi is famous for India Gate, Red Fort, markets, and political importance.",
-      },
-      {
-        question:
-          "What is the cheapest tempo traveller fare from Varanasi to Delhi?",
-        answer:
-          "Fare depends on traveller size, travel date, tolls, and trip type. Contact us for the latest lowest fare quote.",
-      },
-      {
-        question:
-          "Which tempo traveller options are available for Delhi route?",
-        answer:
-          "We provide 9 seater, 12 seater, 17 seater tempo traveller and Maharaja seater options.",
-      },
-      {
-        question: "Is Delhi route suitable for family group travel?",
-        answer:
-          "Yes, Delhi route is popular for family tours, business trips, wedding travel, and student groups.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Delhi", 820, "13 Hours"),
     tollEstimate: 1800,
   },
 
@@ -5310,34 +3944,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Family Friendly",
     ],
     tehsils: ["Dadri", "Jewar", "Greater Noida", "Noida"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Noida?",
-        answer:
-          "It takes around 13 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Noida famous for?",
-        answer:
-          "Noida is famous for IT parks, malls, Film City, and expressways.",
-      },
-      {
-        question:
-          "What is the cheapest tempo traveller fare from Varanasi to Noida?",
-        answer:
-          "Fare depends on seating capacity, toll charges, and travel schedule. Contact us for best current pricing.",
-      },
-      {
-        question: "Which traveller vehicles are available for Noida trip?",
-        answer:
-          "We offer 9, 12, and 17 seater tempo traveller with AC and comfortable pushback seats.",
-      },
-      {
-        question: "Is Noida route good for office group travel?",
-        answer:
-          "Yes, Noida route is ideal for corporate teams, family groups, and airport transfers.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Noida", 800, "13 Hours"),
     tollEstimate: 1750,
   },
 
@@ -5358,18 +3965,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Gurugram", "Sohna", "Pataudi", "Badshahpur"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Gurugram?",
-        answer:
-          "It takes around 14 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Gurugram famous for?",
-        answer:
-          "Gurugram is famous for offices, malls, Cyber City, and business centers.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Gurugram", 845, "14 Hours"),
     tollEstimate: 1850,
   },
 
@@ -5390,18 +3986,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Popular Route",
     ],
     tehsils: ["Ghaziabad", "Loni", "Modinagar", "Muradnagar"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Ghaziabad?",
-        answer:
-          "It takes around 12 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Ghaziabad famous for?",
-        answer:
-          "Ghaziabad is famous for industries and Delhi NCR connectivity.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Ghaziabad", 790, "12 Hours"),
     tollEstimate: 1700,
   },
 
@@ -5422,17 +4007,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Faridabad", "Ballabgarh", "Badkhal", "Tigaon"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Faridabad?",
-        answer:
-          "It takes around 14 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Faridabad famous for?",
-        answer: "Faridabad is famous for industries and Surajkund area.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Faridabad", 850, "14 Hours"),
     tollEstimate: 1880,
   },
 
@@ -5453,18 +4028,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Family Friendly",
     ],
     tehsils: ["Greater Noida", "Dadri", "Jewar", "Dankaur"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Greater Noida?",
-        answer:
-          "It takes around 13 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Greater Noida famous for?",
-        answer:
-          "Greater Noida is famous for Expo Mart, universities, and wide roads.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Greater Noida", 810, "13 Hours"),
     tollEstimate: 1760,
   },
 
@@ -5485,18 +4049,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Popular Route",
     ],
     tehsils: ["Meerut", "Mawana", "Sardhana", "Parikshit Garh"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Meerut?",
-        answer:
-          "It takes around 14 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Meerut famous for?",
-        answer:
-          "Meerut is famous for sports goods and historical significance.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Meerut", 845, "14 Hours"),
     tollEstimate: 1860,
   },
 
@@ -5517,17 +4070,7 @@ export const DELHI_NCR_CHEAPEST_ROUTES: TaxiRoute[] = [
       "Group Friendly",
     ],
     tehsils: ["Panipat", "Samalkha", "Israna", "Madlauda"],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Panipat?",
-        answer:
-          "It takes around 15 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "What is Panipat famous for?",
-        answer: "Panipat is famous for textile industry and historic battles.",
-      },
-    ],
+    faqs: generateRouteFaqs("Varanasi", "Panipat", 910, "15 Hours"),
     tollEstimate: 1950,
   },
 ];

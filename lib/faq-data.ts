@@ -5,55 +5,65 @@ export interface FAQ {
 
 export const GLOBAL_FAQS: FAQ[] = [
   {
-    question: "What is the per km cost of a tempo traveller in Varanasi?",
+    question: "What is the starting fare of a tempo traveller in Varanasi?",
     answer:
-      "The per km cost starts at ₹18/km for a 9-seater tempo traveller. For larger vehicles like the 12, 17, or 26-seater models, the rates vary between ₹22/km to ₹35/km. Our pricing is fixed and transparent with no hidden commissions.",
+      "Our tempo traveller rental fare in Varanasi starts from an affordable ₹18/km for a 9-seater vehicle. We offer fixed transparent pricing with no hidden charges, making group travel budget-friendly and convenient.",
   },
   {
-    question: "How do I find the cheapest tempo traveller for a group trip?",
+    question: "Why should I book a tempo traveller instead of multiple cars?",
     answer:
-      "To get the cheapest tempo traveller, always look for local service providers like YatraTempoTraveller. Renting directly from a local agency in Varanasi saves you up to 25% compared to booking through national aggregators who charge heavy commissions.",
+      "Booking a tempo traveller is more economical, comfortable, and practical than hiring multiple cars. Your entire group travels together, luggage stays in one vehicle, and the journey becomes more enjoyable and hassle-free.",
   },
   {
-    question: "Is there a budget tempo traveller option for pilgrims?",
+    question: "Which tempo traveller is best for family trips and pilgrimages?",
     answer:
-      "Yes, our 9-seater and 12-seater models are perfect budget tempo traveller options for family pilgrimages to Ayodhya or Prayagraj. They offer comfort and AC at a highly competitive fixed price.",
-  },
-  {
-    question: "What are the common seating capacities available?",
-    answer:
-      "We offer a wide range of seating capacities including 9+1, 12+1, 15+1, 17+1, 20+1, and 26+1 seater tempo travellers to accommodate groups of all sizes.",
-  },
-  {
-    question: "Are toll taxes and parking included in the fare?",
-    answer:
-      "No, to keep our base per km cost low and transparent, we do not include tolls, state entry taxes, or parking fees in the initial quote. These are charged at actuals during the journey.",
+      "For family trips, temple tours, and pilgrimages, our 9-seater and 12-seater tempo travellers are the most popular choices. They offer comfortable seating, AC travel, and enough luggage space for long journeys.",
   },
   {
     question:
-      "Are the drivers experienced with long-distance outstation routes?",
+      "Do you provide luxury tempo travellers for weddings and VIP travel?",
     answer:
-      "Absolutely. All our drivers are local experts with over 8+ years of experience on North Indian highways, specifically routes connecting Varanasi to Ayodhya, Lucknow, Bodhgaya, and Nepal.",
+      "Yes, we provide premium Maharaja and luxury tempo travellers with push-back seats, charging points, music system, spacious interiors, and elegant comfort—ideal for weddings, corporate groups, and VIP travel.",
   },
   {
-    question: "Is air conditioning available in all vehicles?",
+    question: "Are your tempo traveller prices fixed or negotiable?",
     answer:
-      "Yes, every tempo traveller in our fleet is fully air-conditioned (both front and rear units) to ensures a comfortable journey even during peak summer months.",
+      "We offer fair and competitive market rates with transparent billing. For multi-day tours, wedding bookings, and large group travel, special discounted package pricing is available.",
   },
   {
-    question: "How much luggage space is available in a tempo traveller?",
+    question: "Is driver charge included in the booking fare?",
     answer:
-      "All our vehicles come with dedicated luggage carriers on the roof and ample space in the rear cabin, making them ideal for carrying heavy bags during long group tours.",
+      "Yes, standard driver allowance is included in most route packages. Any extra night stay or special itinerary charges, if applicable, are discussed clearly before booking confirmation.",
   },
   {
-    question: "Can I book a tempo traveller for a one-way trip?",
+    question: "Are your drivers experienced and verified?",
     answer:
-      "While we specialize in round-trip packages to offer the best value, we do provide one-way drops on specific routes. Please WhatsApp our support team for a custom one-way quote.",
+      "Absolutely. Our drivers are experienced, professional, route-trained, and verified. They are familiar with major tourist, pilgrimage, and outstation routes for a safe and smooth journey.",
   },
   {
-    question: "What is the process for booking a vehicle?",
+    question: "Can I book a tempo traveller for one day or same-day return?",
     answer:
-      "Booking is simple: Use our online fare calculator to check the price, then click the 'WhatsApp Support' button to confirm your dates and pay a small advance to secure your vehicle.",
+      "Yes, we provide one-day rental, same-day return, local sightseeing, and outstation round-trip packages according to your travel plan and group size.",
+  },
+  {
+    question: "Do all vehicles have AC and push-back seats?",
+    answer:
+      "Yes, most of our tempo travellers come with powerful air conditioning, comfortable push-back seats, charging points, and clean interiors for relaxed long-distance travel.",
+  },
+  {
+    question: "How early should I book a tempo traveller to get the best fare?",
+    answer:
+      "We recommend booking 3 to 7 days in advance to get the best vehicle choice and lowest fare. During wedding season, holidays, and weekends, early booking is strongly advised.",
+  },
+  {
+    question: "Can I get doorstep pickup and drop service?",
+    answer:
+      "Yes, we provide convenient doorstep pickup and drop service from home, hotel, railway station, airport, or any preferred location for maximum comfort.",
+  },
+  {
+    question: "How do I confirm my booking quickly?",
+    answer:
+      "Booking is simple. Share your travel date, route, and group size on WhatsApp or call us directly. Once availability is confirmed, pay a small advance to secure your vehicle instantly.",
   },
 ];
 
@@ -66,47 +76,43 @@ export function generateRouteFaqs(
   return [
     {
       question: `What is the cheapest tempo traveller fare from ${origin} to ${destination}?`,
-      answer: `The cheapest fare for a round trip from ${origin} to ${destination} starts at a fixed price calculated at ₹18/km for a 9-seater vehicle. For this ${distance}km journey, we offer the most competitive rates in the market.`,
+      answer: `The cheapest fare from ${origin} to ${destination} starts from ₹18/km for a 9-seater vehicle. For ${distance} km travel, we provide one of the best market prices.`,
     },
     {
-      question: `How much is the per km cost for ${origin} to ${destination} group travel?`,
-      answer: `The per km cost for the ${origin}-${destination} route varies from ₹18 to ₹35 depending on the vehicle size (9 to 26 seats). This rate includes fuel and driver allowance but excludes tolls.`,
+      question: `What is the budget tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `Budget travellers for the ${origin} to ${destination} route are available in 9-seater and 12-seater options with affordable fixed pricing and comfortable AC travel.`,
     },
     {
-      question: `Is a budget tempo traveller available for the ${origin} to ${destination} route?`,
-      answer: `Yes, we have several budget tempo traveller options for this route. Our 12-seater model is highly popular among groups looking for a balance between comfort and cost-effectiveness for the ${duration} journey.`,
+      question: `What is the luxury tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `Luxury Maharaja and premium tempo travellers for ${origin} to ${destination} come with push-back seats, charging points, music system, and extra comfort. Fare depends on seating capacity.`,
     },
     {
-      question: `How long does it take to reach ${destination} from ${origin} by tempo traveller?`,
-      answer: `The journey typically takes about ${duration} to cover the ${distance} km distance, depending on traffic and road conditions on the highway.`,
+      question: `What is the 9 seater tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `The 9-seater fare from ${origin} to ${destination} starts from ₹18/km and is ideal for small family trips or pilgrim groups.`,
     },
     {
-      question: `What is the best time to start the journey from ${origin} to ${destination}?`,
-      answer:
-        "We recommend starting early in the morning, around 5:00 AM or 6:00 AM, to beat the city traffic and reach your destination comfortably by midday.",
+      question: `What is the 12 seater tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `The 12-seater fare for ${origin} to ${destination} starts from ₹22/km and is one of the most popular choices for medium-size groups.`,
     },
     {
-      question: `Can we stop for breaks on the way to ${destination}?`,
-      answer:
-        "Yes, our drivers are flexible and will stop at clean, family-friendly restaurants or dhabas for breakfast and tea breaks as per your group's preference.",
+      question: `What is the 17 seater tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `The 17-seater traveller fare for ${origin} to ${destination} starts from ₹26/km and is suitable for wedding groups and tours.`,
     },
     {
-      question: `Are there any hidden charges for the ${origin} to ${destination} trip?`,
-      answer:
-        "No, YatraTempoTraveller follows a strict 'No Hidden Charges' policy. Your quote will clearly state the per km cost and what is included.",
+      question: `What is the 26 seater tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `The 26-seater fare for ${origin} to ${destination} starts from ₹35/km and is best for large groups, school tours, and events.`,
     },
     {
-      question: `How many seats should I book for a group of 10 people to ${destination}?`,
-      answer:
-        "For a group of 10 people, we recommend booking a 12-seater tempo traveller. This ensures everyone has a comfortable seat and there is enough room for luggage during the trip.",
+      question: `How much is the per km fare from ${origin} to ${destination}?`,
+      answer: `The per km fare from ${origin} to ${destination} ranges between ₹18/km to ₹35/km depending on the vehicle type and seating capacity.`,
     },
     {
-      question: "Do the vehicles have push-back seats for long journeys?",
-      answer: `Yes, all our tempo travellers for the ${origin} to ${destination} route are equipped with comfortable push-back reclining seats and ample legroom.`,
+      question: `How long does it take to reach ${destination} from ${origin}?`,
+      answer: `The journey from ${origin} to ${destination} usually takes around ${duration} for ${distance} km depending on traffic and road conditions.`,
     },
     {
-      question: `How do I book a tempo traveller specifically for this ${destination} route?`,
-      answer: `You can book instantly by using our fare calculator on this page and connecting with us via WhatsApp to confirm the vehicle availability for your dates.`,
+      question: `How do I book cheapest fare for ${origin} to ${destination}?`,
+      answer: `You can instantly book the cheapest fare for ${origin} to ${destination} through our website fare calculator or WhatsApp support.`,
     },
   ];
 }

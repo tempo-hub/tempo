@@ -1,4 +1,4 @@
-import { generateRouteFaqs } from "./faq-data";
+import { generateRouteFaqs, GLOBAL_FAQS } from "./faq-data";
 import { CITY_GUIDES } from "./cityGuides";
 
 export interface VehicleFare {
@@ -249,6 +249,10 @@ function addMediaToRoute(route: TaxiRoute) {
     route.destination,
     route.distance,
   );
+
+  route.faqs = [
+    ...GLOBAL_FAQS
+  ];
 
   // Add city guide dynamically
   route.cityGuide = getCityGuideForDestination(route.destination);
@@ -524,7 +528,6 @@ export const ROUTES: TaxiRoute[] = [
       "Sangam Drop Service",
       "Same Day Return Available",
     ],
-
     faqs: [
       {
         question: "How long does it take from Varanasi to Prayagraj?",
@@ -536,7 +539,6 @@ export const ROUTES: TaxiRoute[] = [
         answer: "Yes, you can comfortably complete a round trip in one day.",
       },
     ],
-
     tollEstimate: 200,
   },
   {
