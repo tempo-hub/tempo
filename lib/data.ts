@@ -250,9 +250,7 @@ function addMediaToRoute(route: TaxiRoute) {
     route.distance,
   );
 
-  route.faqs = [
-    ...GLOBAL_FAQS
-  ];
+  route.faqs = [...GLOBAL_FAQS];
 
   // Add city guide dynamically
   route.cityGuide = getCityGuideForDestination(route.destination);
@@ -528,17 +526,6 @@ export const ROUTES: TaxiRoute[] = [
       "Sangam Drop Service",
       "Same Day Return Available",
     ],
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Prayagraj?",
-        answer:
-          "It takes around 2.5 to 3 hours depending on traffic and stops.",
-      },
-      {
-        question: "Is same-day return possible?",
-        answer: "Yes, you can comfortably complete a round trip in one day.",
-      },
-    ],
     tollEstimate: 200,
   },
   {
@@ -552,18 +539,6 @@ export const ROUTES: TaxiRoute[] = [
       "Comfortable tempo traveller service from Varanasi to Lucknow for family trips, business travel, and tourism.",
 
     highlights: ["Expressway Route", "Smooth Highway Drive", "Same Day Travel"],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Lucknow?",
-        answer: "It takes around 6 to 7 hours depending on traffic.",
-      },
-      {
-        question: "Is this route safe for night travel?",
-        answer: "Yes, it is safe with well-maintained highways.",
-      },
-    ],
-
     tollEstimate: 400,
   },
   {
@@ -577,14 +552,6 @@ export const ROUTES: TaxiRoute[] = [
       "Reliable tempo traveller service from Varanasi to Gorakhpur for family trips, religious visits, and group travel.",
 
     highlights: ["Highway Route", "Comfort Travel", "Affordable Pricing"],
-
-    faqs: [
-      {
-        question: "How long does it take?",
-        answer: "Around 5 hours depending on traffic.",
-      },
-    ],
-
     tollEstimate: 250,
   },
   {
@@ -598,14 +565,6 @@ export const ROUTES: TaxiRoute[] = [
       "Comfortable tempo traveller service from Varanasi to Ghazipur for family and local trips.",
 
     highlights: ["Short Distance", "Quick Travel", "Affordable"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 2 hours.",
-      },
-    ],
-
     tollEstimate: 80,
   },
   {
@@ -619,14 +578,6 @@ export const ROUTES: TaxiRoute[] = [
       "Affordable tempo traveller service from Varanasi to Azamgarh for family visits and local travel.",
 
     highlights: ["Short Route", "Quick Travel", "Budget Friendly"],
-
-    faqs: [
-      {
-        question: "How long does it take?",
-        answer: "Around 2 to 3 hours.",
-      },
-    ],
-
     tollEstimate: 100,
   },
   {
@@ -640,14 +591,6 @@ export const ROUTES: TaxiRoute[] = [
       "Quick tempo traveller service from Varanasi to Jaunpur for heritage and local travel.",
 
     highlights: ["Short Route", "Historic City", "Quick Travel"],
-
-    faqs: [
-      {
-        question: "How long does it take?",
-        answer: "Around 1.5 hours.",
-      },
-    ],
-
     tollEstimate: 70,
   },
   {
@@ -661,14 +604,6 @@ export const ROUTES: TaxiRoute[] = [
       "Quick and comfortable tempo traveller service from Varanasi to Mirzapur for Vindhyachal temple visits.",
 
     highlights: ["Short Distance", "Temple Route", "Same Day Return"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 1.5 hours.",
-      },
-    ],
-
     tollEstimate: 100,
   },
   {
@@ -686,20 +621,6 @@ export const ROUTES: TaxiRoute[] = [
       "Corporate & Group Friendly",
       "Same Day Return Possible",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Kanpur?",
-        answer:
-          "It takes around 6.5 to 7 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Can I do a same-day return trip?",
-        answer:
-          "Yes, same-day return is possible with early departure from Varanasi.",
-      },
-    ],
-
     tollEstimate: 400,
   },
   {
@@ -717,20 +638,6 @@ export const ROUTES: TaxiRoute[] = [
       "Taj Mahal Tour Special",
       "Overnight Travel Available",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Agra?",
-        answer:
-          "It takes around 10 to 11 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Is overnight travel a good option?",
-        answer:
-          "Yes, starting at night helps you reach Agra early morning for Taj Mahal visit.",
-      },
-    ],
-
     tollEstimate: 700,
   },
   {
@@ -748,20 +655,6 @@ export const ROUTES: TaxiRoute[] = [
       "Temple Pickup & Drop",
       "Quick Highway Route",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Vindhyachal?",
-        answer:
-          "It takes around 1.5 to 2 hours depending on traffic conditions.",
-      },
-      {
-        question: "Is same-day return possible?",
-        answer:
-          "Yes, Vindhyachal is perfect for a same-day pilgrimage trip from Varanasi.",
-      },
-    ],
-
     tollEstimate: 100,
   },
   {
@@ -779,20 +672,6 @@ export const ROUTES: TaxiRoute[] = [
       "Peaceful Pilgrimage Journey",
       "Same Day Return Possible",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Kushinagar?",
-        answer:
-          "It takes around 5 to 6 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Is Kushinagar suitable for a one-day trip?",
-        answer:
-          "Yes, you can visit Kushinagar and return the same day with proper planning.",
-      },
-    ],
-
     tollEstimate: 300,
   },
   {
@@ -810,19 +689,6 @@ export const ROUTES: TaxiRoute[] = [
       "Same Day Return Available",
       "Budget Friendly Travel",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Buxar?",
-        answer:
-          "It takes around 3 to 3.5 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Is same-day return possible?",
-        answer: "Yes, Buxar is ideal for a same-day trip from Varanasi.",
-      },
-    ],
-
     tollEstimate: 150,
   },
   {
@@ -834,16 +700,7 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description:
       "Affordable tempo traveller service from Varanasi to Ballia for family trips and local travel.",
-
     highlights: ["Riverside Route", "Comfort Travel", "Budget Friendly"],
-
-    faqs: [
-      {
-        question: "How long does it take?",
-        answer: "Around 3 to 4 hours depending on traffic.",
-      },
-    ],
-
     tollEstimate: 150,
   },
   {
@@ -857,14 +714,6 @@ export const ROUTES: TaxiRoute[] = [
       "Comfortable tempo traveller service from Varanasi to Deoria for family and regional travel.",
 
     highlights: ["Smooth Route", "Affordable Travel", "Group Friendly"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 4 to 5 hours.",
-      },
-    ],
-
     tollEstimate: 200,
   },
   {
@@ -878,14 +727,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Mau for quick and comfortable regional travel.",
 
     highlights: ["Short Route", "Quick Travel", "Affordable"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 2.5 hours.",
-      },
-    ],
-
     tollEstimate: 100,
   },
   {
@@ -899,14 +740,6 @@ export const ROUTES: TaxiRoute[] = [
       "Quick and affordable tempo traveller service from Varanasi to Chandauli for local and business travel.",
 
     highlights: ["Very Short Route", "Quick Travel", "Budget Friendly"],
-
-    faqs: [
-      {
-        question: "How long does it take?",
-        answer: "Around 1 hour.",
-      },
-    ],
-
     tollEstimate: 50,
   },
   {
@@ -920,14 +753,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Robertsganj for Sonbhadra region travel and business trips.",
 
     highlights: ["Hill Edge Route", "Smooth Travel", "Budget Friendly"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 2.5 hours.",
-      },
-    ],
-
     tollEstimate: 100,
   },
   {
@@ -941,14 +766,6 @@ export const ROUTES: TaxiRoute[] = [
       "Affordable tempo traveller service from Varanasi to Sultanpur for family and business travel.",
 
     highlights: ["Highway Route", "Comfort Travel", "Budget Friendly"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 4 hours.",
-      },
-    ],
-
     tollEstimate: 180,
   },
   {
@@ -962,14 +779,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Raebareli for business, family, and political visits.",
 
     highlights: ["Long Route", "Comfort Travel", "Highway Drive"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 6 hours.",
-      },
-    ],
-
     tollEstimate: 300,
   },
   {
@@ -983,14 +792,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Faizabad for religious and family travel.",
 
     highlights: ["Temple Route", "Smooth Travel", "Affordable"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 4.5 hours.",
-      },
-    ],
-
     tollEstimate: 200,
   },
   {
@@ -1008,20 +809,6 @@ export const ROUTES: TaxiRoute[] = [
       "Safe & Comfortable Travel",
       "Same Day Return Possible",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Rajgir?",
-        answer:
-          "It takes around 5.5 to 6 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Is Rajgir suitable for a same-day trip?",
-        answer:
-          "Yes, it is possible, but overnight travel is recommended for a relaxed pilgrimage experience.",
-      },
-    ],
-
     tollEstimate: 350,
   },
   {
@@ -1039,20 +826,6 @@ export const ROUTES: TaxiRoute[] = [
       "Safe & Comfortable Travel",
       "Educational & Group Tours",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Nalanda?",
-        answer:
-          "It takes around 6 to 6.5 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Is Nalanda suitable for a same-day trip?",
-        answer:
-          "Yes, it can be covered in a day, but overnight stay is recommended for better exploration.",
-      },
-    ],
-
     tollEstimate: 400,
   },
   {
@@ -1070,20 +843,6 @@ export const ROUTES: TaxiRoute[] = [
       "Pan-India permits available",
       "AC comfort for long journey",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Omkareshwar?",
-        answer:
-          "It takes around 17.5 to 18 hours depending on route, traffic, and stops.",
-      },
-      {
-        question: "Is this a one-day trip?",
-        answer:
-          "No, due to the long distance, it is recommended to plan a 2–3 day pilgrimage trip.",
-      },
-    ],
-
     tollEstimate: 1400,
   },
   {
@@ -1101,20 +860,6 @@ export const ROUTES: TaxiRoute[] = [
       "Comfortable & safe travel",
       "Experienced drivers for highway journey",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Deoghar?",
-        answer:
-          "It takes around 6.5 to 7 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Is Deoghar suitable for a same-day trip?",
-        answer:
-          "Yes, it can be covered in a day, but an overnight stay is recommended for a relaxed pilgrimage experience.",
-      },
-    ],
-
     tollEstimate: 300,
   },
   {
@@ -1128,14 +873,6 @@ export const ROUTES: TaxiRoute[] = [
       "Comfortable tempo traveller service from Varanasi to Shimla for hill station vacations and group tours.",
 
     highlights: ["Hill Station", "Snow Views", "Scenic Drive"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 17 to 18 hours.",
-      },
-    ],
-
     tollEstimate: 1000,
   },
   {
@@ -1149,14 +886,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Manali for snow trips, honeymoon travel, and adventure tours.",
 
     highlights: ["Snow Destination", "Adventure Hub", "Long Drive"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 20 to 22 hours.",
-      },
-    ],
-
     tollEstimate: 1200,
   },
   {
@@ -1170,14 +899,6 @@ export const ROUTES: TaxiRoute[] = [
       "Complete Char Dham Yatra tempo traveller package from Varanasi covering Yamunotri, Gangotri, Kedarnath, and Badrinath.",
 
     highlights: ["Spiritual Yatra", "All 4 Dhams", "Group Package"],
-
-    faqs: [
-      {
-        question: "How many days required?",
-        answer: "10 to 12 days for full Char Dham Yatra.",
-      },
-    ],
-
     tollEstimate: 1500,
   },
   {
@@ -1191,19 +912,6 @@ export const ROUTES: TaxiRoute[] = [
       "Local group sightseeing to the historical Buddhist site of Sarnath from Varanasi.",
 
     highlights: ["Half-day packages", "Local guide drivers", "Quick transit"],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Sarnath?",
-        answer: "It takes around 30 minutes depending on traffic conditions.",
-      },
-      {
-        question: "Can Sarnath be covered in a half-day trip?",
-        answer:
-          "Yes, Sarnath is ideal for a half-day sightseeing trip from Varanasi.",
-      },
-    ],
-
     tollEstimate: 50,
   },
   {
@@ -1217,14 +925,6 @@ export const ROUTES: TaxiRoute[] = [
       "Comfortable tempo traveller service from Varanasi to Sonbhadra for nature trips, industrial visits, and group travel.",
 
     highlights: ["Hill Area Route", "Scenic Travel", "Group Friendly"],
-
-    faqs: [
-      {
-        question: "How long does it take?",
-        answer: "Around 3 hours depending on road conditions.",
-      },
-    ],
-
     tollEstimate: 120,
   },
   {
@@ -1242,8 +942,6 @@ export const ROUTES: TaxiRoute[] = [
       "Affordable group travel",
       "Experienced drivers",
     ],
-
-    faqs: [],
     tollEstimate: 150,
   },
   {
@@ -1261,8 +959,6 @@ export const ROUTES: TaxiRoute[] = [
       "Mythological significance",
       "Comfortable travel",
     ],
-
-    faqs: [],
     tollEstimate: 350,
   },
   {
@@ -1276,20 +972,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller for Buddhist circuit pilgrimage from Varanasi to Shravasti.",
 
     highlights: ["Pilgrim special", "Reliable transport", "Clean vehicles"],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Shravasti?",
-        answer:
-          "It takes around 8 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Is Shravasti a Buddhist pilgrimage site?",
-        answer:
-          "Yes, Shravasti is one of the major Buddhist pilgrimage destinations where Lord Buddha spent many years.",
-      },
-    ],
-
     tollEstimate: 300,
   },
   {
@@ -1307,8 +989,6 @@ export const ROUTES: TaxiRoute[] = [
       "Buddhist pilgrimage",
       "Passport required",
     ],
-
-    faqs: [],
     tollEstimate: 600,
   },
   {
@@ -1322,14 +1002,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Kolkata for business, tourism, and long-distance travel.",
 
     highlights: ["Metro City", "Cultural Hub", "Long Drive"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 11 to 12 hours.",
-      },
-    ],
-
     tollEstimate: 700,
   },
   {
@@ -1347,20 +1019,6 @@ export const ROUTES: TaxiRoute[] = [
       "Comfortable long-distance travel",
       "Experienced drivers",
     ],
-
-    faqs: [
-      {
-        question: "How long does it take from Varanasi to Mathura?",
-        answer:
-          "It takes around 10 to 11 hours depending on traffic and road conditions.",
-      },
-      {
-        question: "Is Mathura suitable for a one-day trip?",
-        answer:
-          "Mathura can be covered in a day, but an overnight stay is recommended for a relaxed darshan.",
-      },
-    ],
-
     tollEstimate: 700,
   },
   {
@@ -1373,7 +1031,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Tempo traveller service from Varanasi to Orchha for exploring historical forts and temples.",
     highlights: ["Heritage destination", "Peaceful travel", "Comfort ride"],
-    faqs: [],
   },
   {
     id: "vns-amk",
@@ -1385,7 +1042,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Group travel from Varanasi to Amarkantak, the origin of rivers Narmada and Sone.",
     highlights: ["Spiritual destination", "Nature trip", "Group travel"],
-    faqs: [],
   },
   {
     id: "vns-aul",
@@ -1398,14 +1054,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Auli for snow trips, skiing, and scenic Himalayan travel.",
 
     highlights: ["Snow Destination", "Skiing Spot", "Mountain Views"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 16 to 18 hours.",
-      },
-    ],
-
     tollEstimate: 900,
   },
   {
@@ -1418,7 +1066,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Tempo traveller service from Varanasi to Ranikhet for a peaceful hill station trip.",
     highlights: ["Hill station", "Scenic journey", "Relaxing trip"],
-    faqs: [],
   },
   {
     id: "vns-kus",
@@ -1429,7 +1076,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "15 Hours",
     description: "Travel from Varanasi to Kausani with scenic Himalayan views.",
     highlights: ["Himalayan views", "Nature trip", "Comfort travel"],
-    faqs: [],
   },
   {
     id: "vns-net",
@@ -1441,7 +1087,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Tempo traveller service from Varanasi to Netarhat, known for its sunrise and sunset points.",
     highlights: ["Hill station", "Sunrise views", "Nature trip"],
-    faqs: [],
   },
   {
     id: "vns-gir",
@@ -1453,7 +1098,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Tempo traveller service from Varanasi to Giridih for business and pilgrimage travel.",
     highlights: ["Affordable travel", "Reliable service", "Comfort"],
-    faqs: [],
   },
   {
     id: "vns-par",
@@ -1465,7 +1109,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Pilgrimage travel from Varanasi to Parasnath Hills for Jain धार्मिक यात्रा.",
     highlights: ["Jain pilgrimage", "Peaceful journey", "Safe travel"],
-    faqs: [],
   },
   {
     id: "vns-rnc",
@@ -1478,14 +1121,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Ranchi for tourism and business travel.",
 
     highlights: ["Waterfalls", "Nature", "Short Trip"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 7 to 8 hours.",
-      },
-    ],
-
     tollEstimate: 400,
   },
   {
@@ -1499,8 +1134,6 @@ export const ROUTES: TaxiRoute[] = [
       "Long-distance pilgrimage trip from Varanasi to Shirdi for Sai Baba darshan.",
 
     highlights: ["Sai Baba temple", "Pan-India travel", "Multi-day trip"],
-
-    faqs: [],
     tollEstimate: 1200,
   },
   {
@@ -1514,14 +1147,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Dwarka for Krishna pilgrimage and long-distance travel.",
 
     highlights: ["Jyotirlinga Route", "Krishna Dham", "Long Pilgrimage"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 28 hours.",
-      },
-    ],
-
     tollEstimate: 1700,
   },
   {
@@ -1535,14 +1160,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller service from Varanasi to Somnath for Jyotirlinga darshan and long pilgrimage journeys.",
 
     highlights: ["Jyotirlinga", "Sea Temple", "Religious Tour"],
-
-    faqs: [
-      {
-        question: "Travel time?",
-        answer: "Around 25 to 26 hours.",
-      },
-    ],
-
     tollEstimate: 1600,
   },
   {
@@ -1559,7 +1176,6 @@ export const ROUTES: TaxiRoute[] = [
       "Doorstep Pickup",
       "Verified Drivers",
     ],
-    faqs: [],
   },
   {
     id: "lko-ayu",
@@ -1571,7 +1187,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Quick and comfortable group travel from Lucknow to Ayodhya Ram Mandir.",
     highlights: ["Expressway route", "Same day return", "Pilgrim friendly"],
-    faqs: [],
   },
   {
     id: "lko-pry",
@@ -1583,7 +1198,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Reliable tempo traveller for Sangam Snan and group trips to Prayagraj.",
     highlights: ["Safe travel", "Experienced drivers", "Fixed fare"],
-    faqs: [],
   },
   {
     id: "lko-del",
@@ -1595,7 +1209,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Interstate group travel from Lucknow to Delhi via Agra-Lucknow Expressway.",
     highlights: ["Expressway experts", "Ample luggage space", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-knp",
@@ -1607,7 +1220,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Daily group travel service between Lucknow and Kanpur. Ideal for business and families.",
     highlights: ["Frequent service", "City to City", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-agr",
@@ -1619,7 +1231,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Travel via Agra-Lucknow Expressway for the fastest group trip to Taj Mahal.",
     highlights: ["Expressway route", "Professional drivers", "Clean vehicles"],
-    faqs: [],
   },
   {
     id: "lko-mth",
@@ -1631,58 +1242,7 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Braj Bhoomi pilgrimage special. Group travel from Lucknow to Mathura/Vrindavan.",
     highlights: ["Pilgrim special", "Safe travel", "Fixed fare"],
-    faqs: [
-      {
-        question: "What is the distance from Lucknow to Mathura?",
-        answer:
-          "The road distance is approximately 400 km via Agra-Lucknow Expressway.",
-      },
-      {
-        question: "How long does it take by tempo traveller?",
-        answer: "It takes about 6-7 hours depending on the number of breaks.",
-      },
-    ],
     tollEstimate: 850,
-    itinerary: [
-      { time: "05:00 AM", activity: "Early morning pickup from Lucknow" },
-      {
-        time: "08:30 AM",
-        activity: "Breakfast break on Agra-Lucknow Expressway",
-      },
-      {
-        time: "11:30 AM",
-        activity: "Arrival in Mathura, Shri Krishna Janmabhoomi visit",
-      },
-      {
-        time: "02:00 PM",
-        activity: "Lunch and visit to Vrindavan (Banke Bihari Temple)",
-      },
-      { time: "05:30 PM", activity: "Evening Aarti at ISKCON or Prem Mandir" },
-      { time: "07:30 PM", activity: "Overnight stay or late departure" },
-    ],
-    roadConditions:
-      "Excellent via Agra-Lucknow Expressway and Yamuna Expressway. Fastest connectivity in UP.",
-    bestTime:
-      "Holi Festival (World famous), Janmashtami, and Winters (Nov-Feb).",
-    seasonalNotes:
-      "During Holi, book 1 month in advance. Traffic in Vrindavan narrow lanes is heavy on weekends.",
-    comparison: [
-      {
-        transport: "Tempo Traveller",
-        pros: "Agra Expressway expertise, extra luggage space for long trips, flexible for Vrindavan local sightseeing",
-        cons: "Higher cost for small families",
-      },
-      {
-        transport: "Train",
-        pros: "Comfortable overnight",
-        cons: "Last minute tickets impossible, local Mathura commute is difficult for groups",
-      },
-      {
-        transport: "Bus",
-        pros: "UP Roadways available",
-        cons: "Very slow, no direct reach to many temples",
-      },
-    ],
   },
   {
     id: "lko-noi",
@@ -1694,7 +1254,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Fastest group connectivity between Lucknow and Noida/NCR via Expressway.",
     highlights: ["Expressway travel", "Doorstep pickup", "Comfortable ride"],
-    faqs: [],
   },
   {
     id: "lko-ghz",
@@ -1706,7 +1265,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Direct group tempo traveller service to Ghaziabad from Lucknow.",
     highlights: ["Professional drivers", "Safe long trips", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-mrt",
@@ -1718,7 +1276,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Group travel from the state capital to the historical city of Meerut.",
     highlights: ["Expressway route", "Reliable service", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "lko-bly",
@@ -1730,7 +1287,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Reliable tempo traveller service connecting Lucknow and Bareilly.",
     highlights: ["Highway route", "Trained drivers", "Clean seating"],
-    faqs: [],
   },
   {
     id: "lko-gkp",
@@ -1746,7 +1302,6 @@ export const ROUTES: TaxiRoute[] = [
       "Same day pickup",
       "Pilgrim friendly",
     ],
-    faqs: [],
   },
   {
     id: "lko-jhs",
@@ -1758,7 +1313,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Explore the historical city of Jhansi with our group tempo traveller service.",
     highlights: ["Bundelkhand route", "Safe travel", "Comfortable buses"],
-    faqs: [],
   },
   {
     id: "lko-gwl",
@@ -1770,7 +1324,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Interstate group travel from Lucknow to Gwalior fort and city.",
     highlights: ["Trained drivers", "AC luxury", "Fixed rates"],
-    faqs: [],
   },
   {
     id: "lko-jai",
@@ -1786,7 +1339,6 @@ export const ROUTES: TaxiRoute[] = [
       "Safe night travel",
       "Professional service",
     ],
-    faqs: [],
   },
   {
     id: "lko-uda",
@@ -1798,7 +1350,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Long distance luxury group travel from Lucknow to the City of Lakes, Udaipur.",
     highlights: ["Luxury tempo travellers", "Expert drivers", "Full AC"],
-    faqs: [],
   },
   {
     id: "lko-chd",
@@ -1810,7 +1361,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Professional group travel service to Chandigarh from Lucknow.",
     highlights: ["Safe long journey", "Comfortable seating", "Fixed fare"],
-    faqs: [],
   },
   {
     id: "lko-ddn",
@@ -1822,7 +1372,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Group travel from Lucknow to the foothills of Himalayas in Dehradun.",
     highlights: ["Hill driving experts", "Reliable vehicles", "Clean interior"],
-    faqs: [],
   },
   {
     id: "lko-hrd",
@@ -1834,7 +1383,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Pilgrimage special tempo traveller service to Haridwar from Lucknow.",
     highlights: ["Ganga Snan special", "Doorstep pickup", "Verified drivers"],
-    faqs: [],
   },
   {
     id: "lko-rsh",
@@ -1846,7 +1394,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Adventure and spiritual group travel to Rishikesh from Lucknow by tempo traveller.",
     highlights: ["Yoga capital special", "Professional drivers", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-nai",
@@ -1862,7 +1409,6 @@ export const ROUTES: TaxiRoute[] = [
       "Reliable vehicles",
       "Comfortable seating",
     ],
-    faqs: [],
   },
   {
     id: "lko-pat",
@@ -1874,7 +1420,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Direct group tempo traveller service between Lucknow and Patna.",
     highlights: ["Interstate experts", "Safe night travel", "AC luxury"],
-    faqs: [],
   },
   {
     id: "lko-gay",
@@ -1885,7 +1430,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "10.5 Hours",
     description: "Pilgrimage group travel from Lucknow to Gaya/Bodhgaya.",
     highlights: ["Pilgrim friendly", "Comfortable ride", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "lko-ran",
@@ -1897,7 +1441,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Long distance group travel from Lucknow to Ranchi, Jharkhand.",
     highlights: ["Safe long trips", "Professional drivers", "Regular breaks"],
-    faqs: [],
   },
   {
     id: "lko-jsd",
@@ -1909,7 +1452,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Connect Lucknow to the Steel City with our reliable tempo traveller service.",
     highlights: ["Experienced drivers", "Luxury seating", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-ngp",
@@ -1920,7 +1462,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "16 Hours",
     description: "Interstate group travel from Lucknow to Nagpur, Maharashtra.",
     highlights: ["Safe journey", "Reliable vehicles", "Fixed rates"],
-    faqs: [],
   },
   {
     id: "lko-bho",
@@ -1931,7 +1472,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "11 Hours",
     description: "Group travel from Lucknow to the City of Lakes, Bhopal.",
     highlights: ["Capital to Capital", "Safe travel", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-ind",
@@ -1943,7 +1483,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Long distance group tempo traveller service to Indore from Lucknow.",
     highlights: ["Comfortable seating", "Experienced drivers", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "lko-jbp",
@@ -1955,7 +1494,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Connect Lucknow to Jabalpur with our professional group travel service.",
     highlights: ["Marble Rocks tour", "Safe travel", "Reliable service"],
-    faqs: [],
   },
   {
     id: "lko-rew",
@@ -1971,7 +1509,6 @@ export const ROUTES: TaxiRoute[] = [
       "Professional drivers",
       "Fixed fare",
     ],
-    faqs: [],
   },
   {
     id: "lko-stn",
@@ -1982,7 +1519,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Group travel from Lucknow to Satna/Maihar Shrine.",
     highlights: ["Maihar Devi special", "Safe travel", "Verified drivers"],
-    faqs: [],
   },
   {
     id: "lko-khj",
@@ -1994,7 +1530,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Explore the temples of Khajuraho with our group tempo traveller service.",
     highlights: ["UNESCO site tour", "Comfortable buses", "Trained drivers"],
-    faqs: [],
   },
   {
     id: "lko-chk",
@@ -2006,7 +1541,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Pilgrimage group travel from Lucknow to the holy land of Chitrakoot.",
     highlights: ["Religious tour expert", "Safe travel", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-azm",
@@ -2022,7 +1556,6 @@ export const ROUTES: TaxiRoute[] = [
       "Experienced drivers",
       "Clean seating",
     ],
-    faqs: [],
   },
   {
     id: "lko-bst",
@@ -2034,7 +1567,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Group travel from Lucknow to Basti. Reliable and fixed price service.",
     highlights: ["Highway route", "AC comfort", "Professional drivers"],
-    faqs: [],
   },
   {
     id: "lko-gnd",
@@ -2045,7 +1577,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Reliable tempo traveller service between Lucknow and Gonda.",
     highlights: ["Fast transit", "Safe travel", "Fixed fare"],
-    faqs: [],
   },
   {
     id: "lko-brh",
@@ -2057,7 +1588,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Connect Lucknow to Bahraich with our professional group travel service.",
     highlights: ["Experienced drivers", "Reliable vehicles", "Clean seating"],
-    faqs: [],
   },
   {
     id: "lko-stp",
@@ -2068,7 +1598,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "2 Hours",
     description: "Quick and easy group travel from Lucknow to Sitapur.",
     highlights: ["Frequent service", "City to City", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-hrd-dist",
@@ -2080,7 +1609,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Reliable tempo traveller service connecting Lucknow and Hardoi.",
     highlights: ["Safe travel", "Trained drivers", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "lko-unn",
@@ -2091,7 +1619,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Fastest group connectivity between Lucknow and Unnao.",
     highlights: ["Short distance expert", "Reliable service", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-rbl",
@@ -2103,7 +1630,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Group travel from the capital to Rae Bareli by tempo traveller.",
     highlights: ["Frequent service", "Professional drivers", "Clean vehicles"],
-    faqs: [],
   },
   {
     id: "lko-amt",
@@ -2114,7 +1640,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Reliable tempo traveller service between Lucknow and Amethi.",
     highlights: ["Safe long trips", "AC comfort", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "lko-sln",
@@ -2125,7 +1650,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Direct group travel from Lucknow to Sultanpur city.",
     highlights: ["Highway route", "Reliable vehicles", "Fixed fare"],
-    faqs: [],
   },
   {
     id: "lko-ptg",
@@ -2137,7 +1661,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Connect Lucknow to Pratapgarh with our professional group travel service.",
     highlights: ["Experienced drivers", "Safe journey", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-mzp",
@@ -2149,7 +1672,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Direct group tempo traveller service to Mirzapur from Lucknow.",
     highlights: ["Vindhyachal special", "Professional drivers", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-jnp",
@@ -2160,7 +1682,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "5.5 Hours",
     description: "Group travel from Lucknow to the historical city of Jaunpur.",
     highlights: ["Safe travel", "Experienced drivers", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "lko-gzp",
@@ -2172,7 +1693,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Reliable tempo traveller service connecting Lucknow and Ghazipur.",
     highlights: ["Purvanchal Expressway", "Trained drivers", "Clean seating"],
-    faqs: [],
   },
   {
     id: "lko-bal",
@@ -2183,7 +1703,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Group travel from Lucknow to Ballia by tempo traveller.",
     highlights: ["Long distance expert", "Safe travel", "Fixed fare"],
-    faqs: [],
   },
   {
     id: "lko-mau",
@@ -2194,7 +1713,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "6.5 Hours",
     description: "Direct group travel from Lucknow to Mau city.",
     highlights: ["Purvanchal Expressway", "Reliable vehicles", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-deo",
@@ -2205,7 +1723,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "6.5 Hours",
     description: "Reliable tempo traveller service between Lucknow and Deoria.",
     highlights: ["Highway route", "Experienced drivers", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "lko-ksn",
@@ -2217,7 +1734,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Pilgrimage group travel from Lucknow to the holy city of Kushinagar.",
     highlights: ["Buddhist circuit expert", "Safe travel", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-alg",
@@ -2229,7 +1745,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Direct group tempo traveller service to Aligarh from Lucknow.",
     highlights: ["Safe journey", "Reliable vehicles", "Fixed rates"],
-    faqs: [],
   },
   {
     id: "lko-mzf",
@@ -2241,7 +1756,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Connect Lucknow to Muzaffarnagar with our professional group travel service.",
     highlights: ["Interstate experts", "Safe travel", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-sah",
@@ -2253,7 +1767,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Reliable long distance group travel to Saharanpur from Lucknow.",
     highlights: ["Safe long trips", "Professional drivers", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "lko-hpr",
@@ -2264,7 +1777,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Direct group tempo traveller service from Lucknow to Hapur.",
     highlights: ["Expressway route", "Reliable vehicles", "AC comfort"],
-    faqs: [],
   },
   {
     id: "lko-bul",
@@ -2275,7 +1787,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8.5 Hours",
     description: "Group travel from Lucknow to Bulandshahr by tempo traveller.",
     highlights: ["Safe travel", "Verified drivers", "Fixed fare"],
-    faqs: [],
   },
   {
     id: "pry-vns",
@@ -2287,7 +1798,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Reliable tempo traveller service from Prayagraj to the spiritual capital Varanasi.",
     highlights: ["Highway route", "Express pickup", "Fixed pricing"],
-    faqs: [],
   },
   {
     id: "pry-lko",
@@ -2299,7 +1809,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Comfortable journey from Prayagraj to Lucknow with professional drivers.",
     highlights: ["Smooth highway", "AC vehicles", "Affordable fare"],
-    faqs: [],
   },
   {
     id: "pry-ayy",
@@ -2310,7 +1819,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Safe and convenient ride to the holy city Ayodhya.",
     highlights: ["Pilgrimage route", "Flexible timing", "Clean vehicles"],
-    faqs: [],
   },
   {
     id: "pry-knp",
@@ -2321,7 +1829,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Book tempo traveller from Prayagraj to Kanpur at best price.",
     highlights: ["Fast route", "Experienced drivers", "Door pickup"],
-    faqs: [],
   },
   {
     id: "pry-mir",
@@ -2333,7 +1840,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Quick and affordable ride to Mirzapur with comfortable seating.",
     highlights: ["Short trip", "Budget friendly", "Local drivers"],
-    faqs: [],
   },
   {
     id: "pry-bhd",
@@ -2344,7 +1850,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Easy ride from Prayagraj to Bhadohi.",
     highlights: ["Local route", "Affordable", "Quick travel"],
-    faqs: [],
   },
   {
     id: "pry-jnp",
@@ -2355,7 +1860,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Comfortable travel to Jaunpur.",
     highlights: ["Smooth road", "Reliable service", "AC ride"],
-    faqs: [],
   },
   {
     id: "pry-slp",
@@ -2366,7 +1870,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Affordable group travel to Sultanpur.",
     highlights: ["Budget ride", "Safe journey", "Clean vehicle"],
-    faqs: [],
   },
   {
     id: "pry-fth",
@@ -2377,7 +1880,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Quick ride to Fatehpur.",
     highlights: ["Short route", "Affordable fare", "Comfortable seats"],
-    faqs: [],
   },
   {
     id: "pry-rbl",
@@ -2388,7 +1890,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Smooth travel to Raebareli.",
     highlights: ["Reliable drivers", "Budget friendly", "Quick booking"],
-    faqs: [],
   },
   {
     id: "pry-gkp",
@@ -2399,7 +1900,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Long route travel to Gorakhpur.",
     highlights: ["Comfort seats", "Safe drive", "On-time service"],
-    faqs: [],
   },
   {
     id: "pry-bnd",
@@ -2410,7 +1910,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Reliable ride to Banda.",
     highlights: ["Local drivers", "Flexible stops", "Affordable"],
-    faqs: [],
   },
   {
     id: "pry-ckt",
@@ -2421,7 +1920,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Spiritual trip to Chitrakoot.",
     highlights: ["Pilgrimage route", "Clean vehicle", "Safe ride"],
-    faqs: [],
   },
   {
     id: "pry-stn",
@@ -2432,7 +1930,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Comfortable ride to Satna.",
     highlights: ["AC vehicle", "Safe travel", "Group friendly"],
-    faqs: [],
   },
   {
     id: "pry-rwa",
@@ -2443,7 +1940,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Affordable trip to Rewa.",
     highlights: ["Budget ride", "Clean interiors", "Flexible timing"],
-    faqs: [],
   },
   {
     id: "pry-dlh",
@@ -2454,7 +1950,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "10-12 Hours",
     description: "Long-distance travel to Delhi.",
     highlights: ["Night travel", "Pushback seats", "Experienced drivers"],
-    faqs: [],
   },
   {
     id: "pry-agr",
@@ -2465,7 +1960,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8-9 Hours",
     description: "Travel to Agra comfortably.",
     highlights: ["Tourist route", "AC comfort", "Group travel"],
-    faqs: [],
   },
   {
     id: "pry-mtr",
@@ -2476,7 +1970,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "10 Hours",
     description: "Religious trip to Mathura.",
     highlights: ["Pilgrimage route", "Comfort ride", "Safe travel"],
-    faqs: [],
   },
   {
     id: "pry-vrn",
@@ -2487,7 +1980,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "10 Hours",
     description: "Group travel to Vrindavan.",
     highlights: ["Temple visits", "AC vehicle", "Flexible stops"],
-    faqs: [],
   },
   {
     id: "pry-hrd",
@@ -2498,7 +1990,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Spiritual journey to Haridwar.",
     highlights: ["Long route", "Safe ride", "Experienced drivers"],
-    faqs: [],
   },
   {
     id: "pry-rsh",
@@ -2509,7 +2000,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Travel to Rishikesh with comfort.",
     highlights: ["Hill route", "Safe driving", "Group friendly"],
-    faqs: [],
   },
   {
     id: "pry-jpr",
@@ -2520,7 +2010,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "12 Hours",
     description: "Travel to Jaipur with ease.",
     highlights: ["Tourist route", "Comfort ride", "Flexible stops"],
-    faqs: [],
   },
   {
     id: "pry-bpl",
@@ -2531,7 +2020,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "11 Hours",
     description: "Smooth travel to Bhopal.",
     highlights: ["Long drive", "AC vehicle", "Safe ride"],
-    faqs: [],
   },
   {
     id: "pry-ind",
@@ -2542,7 +2030,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Reliable travel to Indore.",
     highlights: ["Comfort seats", "Safe journey", "Flexible timing"],
-    faqs: [],
   },
   {
     id: "pry-ptn",
@@ -2553,7 +2040,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Travel from Prayagraj to Patna.",
     highlights: ["Highway route", "Safe ride", "Affordable"],
-    faqs: [],
   },
   {
     id: "pry-gya",
@@ -2564,7 +2050,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "9 Hours",
     description: "Comfortable ride to Gaya.",
     highlights: ["Religious route", "AC travel", "Safe journey"],
-    faqs: [],
   },
   {
     id: "pry-rnc",
@@ -2575,7 +2060,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "12 Hours",
     description: "Long distance travel to Ranchi.",
     highlights: ["Safe ride", "Comfort seats", "Flexible stops"],
-    faqs: [],
   },
   {
     id: "pry-kol",
@@ -2586,7 +2070,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "16 Hours",
     description: "Travel to Kolkata with ease.",
     highlights: ["Long route", "Comfort ride", "Experienced drivers"],
-    faqs: [],
   },
   {
     id: "pry-ald-air",
@@ -2597,7 +2080,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "30 Minutes",
     description: "Quick and comfortable ride to Allahabad Airport.",
     highlights: ["Airport pickup", "On-time service", "Local drivers"],
-    faqs: [],
   },
   {
     id: "pry-vns-air",
@@ -2608,7 +2090,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Reliable airport transfer to Varanasi Airport.",
     highlights: ["Highway route", "Timely drop", "Comfort ride"],
-    faqs: [],
   },
   {
     id: "pry-mau",
@@ -2619,7 +2100,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Comfortable journey to Mau.",
     highlights: ["Smooth travel", "AC vehicle", "Safe ride"],
-    faqs: [],
   },
   {
     id: "pry-azm",
@@ -2630,7 +2110,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "6-7 Hours",
     description: "Affordable travel to Azamgarh.",
     highlights: ["Budget friendly", "Reliable drivers", "Comfort seating"],
-    faqs: [],
   },
   {
     id: "pry-bll",
@@ -2641,7 +2120,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Long route travel to Ballia.",
     highlights: ["Safe journey", "Comfort ride", "Flexible stops"],
-    faqs: [],
   },
   {
     id: "pry-der",
@@ -2652,7 +2130,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Travel easily to Deoria.",
     highlights: ["AC travel", "Safe ride", "Affordable"],
-    faqs: [],
   },
   {
     id: "pry-ghz",
@@ -2663,7 +2140,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "5-6 Hours",
     description: "Comfortable ride to Ghazipur.",
     highlights: ["Smooth route", "Reliable service", "Budget ride"],
-    faqs: [],
   },
   {
     id: "pry-snb",
@@ -2674,7 +2150,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Travel to Sonbhadra with ease.",
     highlights: ["Hill route", "Safe driving", "Comfort seating"],
-    faqs: [],
   },
   {
     id: "pry-rnk",
@@ -2685,7 +2160,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "6-7 Hours",
     description: "Reliable service to Renukoot.",
     highlights: ["Long route", "Comfort ride", "Experienced drivers"],
-    faqs: [],
   },
   {
     id: "pry-obr",
@@ -2696,7 +2170,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "6 Hours",
     description: "Affordable ride to Obra.",
     highlights: ["Safe travel", "Budget fare", "Clean vehicle"],
-    faqs: [],
   },
   {
     id: "pry-pry-air",
@@ -2707,7 +2180,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "30 Minutes",
     description: "Quick airport transfer within Prayagraj.",
     highlights: ["Fast pickup", "On-time drop", "Local drivers"],
-    faqs: [],
   },
   {
     id: "pry-jhs",
@@ -2718,7 +2190,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "7-8 Hours",
     description: "Comfortable travel to Jhansi.",
     highlights: ["Long route", "AC vehicle", "Safe ride"],
-    faqs: [],
   },
   {
     id: "pry-ltp",
@@ -2729,7 +2200,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Reliable journey to Lalitpur.",
     highlights: ["Smooth highway", "Comfort seats", "Flexible stops"],
-    faqs: [],
   },
   {
     id: "pry-ujj",
@@ -2740,7 +2210,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "12 Hours",
     description: "Spiritual journey to Ujjain.",
     highlights: ["Temple route", "Safe ride", "Comfort travel"],
-    faqs: [],
   },
   {
     id: "pry-jbp",
@@ -2751,7 +2220,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Smooth travel to Jabalpur.",
     highlights: ["Highway route", "Comfort ride", "Affordable"],
-    faqs: [],
   },
   {
     id: "pry-ngp",
@@ -2762,7 +2230,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "14 Hours",
     description: "Long-distance travel to Nagpur.",
     highlights: ["Night travel", "Pushback seats", "Experienced drivers"],
-    faqs: [],
   },
   {
     id: "pry-vdh",
@@ -2773,7 +2240,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Short spiritual trip to Vidhyanchal.",
     highlights: ["Pilgrimage route", "Quick travel", "Affordable"],
-    faqs: [],
   },
   {
     id: "pry-srn",
@@ -2784,7 +2250,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Comfortable ride to Sarnath.",
     highlights: ["Tourist route", "AC vehicle", "Safe journey"],
-    faqs: [],
   },
   {
     id: "pry-shr",
@@ -2795,7 +2260,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "7 Hours",
     description: "Travel to Shravasti with ease.",
     highlights: ["Religious route", "Comfort ride", "Flexible stops"],
-    faqs: [],
   },
   {
     id: "pry-kus",
@@ -2806,7 +2270,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "8 Hours",
     description: "Reliable service to Kushinagar.",
     highlights: ["Pilgrimage route", "Safe ride", "Comfort seating"],
-    faqs: [],
   },
   {
     id: "pry-hld",
@@ -2817,7 +2280,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "16 Hours",
     description: "Long-distance journey to Haldia.",
     highlights: ["Extended route", "Comfort travel", "Experienced drivers"],
-    faqs: [],
   },
   {
     id: "pry-dhn",
@@ -2828,7 +2290,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "13 Hours",
     description: "Travel to Dhanbad comfortably.",
     highlights: ["Highway travel", "Safe ride", "Affordable fare"],
-    faqs: [],
   },
   {
     id: "ayu-vns",
@@ -2840,7 +2301,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Group travel from the city of Ram to the city of Shiva. Pilgrimage special service.",
     highlights: ["Pilgrim friendly", "Doorstep pickup", "Comfortable ride"],
-    faqs: [],
   },
   {
     id: "ayu-lko",
@@ -2852,7 +2312,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Quick transit between Ayodhya and Lucknow for groups and families.",
     highlights: ["Same day return", "Expert drivers", "Fixed price"],
-    faqs: [],
   },
   {
     id: "ayu-pry",
@@ -2863,7 +2322,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Comfortable group travel from Ayodhya to Prayagraj.",
     highlights: ["AC vehicles", "Safe journey", "On-time pickup"],
-    faqs: [],
   },
   {
     id: "ayu-knp",
@@ -2874,7 +2332,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "5 Hours",
     description: "Convenient travel for groups heading to Kanpur.",
     highlights: ["Comfort seats", "Affordable fares", "Safe drivers"],
-    faqs: [],
   },
   {
     id: "ayu-agr",
@@ -2886,7 +2343,6 @@ export const ROUTES: TaxiRoute[] = [
     description:
       "Travel comfortably from Ayodhya to Agra for sightseeing trips.",
     highlights: ["Long distance comfort", "Luggage space", "Expert drivers"],
-    faqs: [],
   },
   {
     id: "ayu-dlh",
@@ -2897,7 +2353,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "11 Hours",
     description: "Reliable group travel service from Ayodhya to Delhi.",
     highlights: ["Highway experts", "Safe night travel", "Spacious seating"],
-    faqs: [],
   },
   {
     id: "ayu-mir",
@@ -2908,7 +2363,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "5.5 Hours",
     description: "Easy group trip from Ayodhya to Mirzapur.",
     highlights: ["AC vehicles", "Budget rides", "Safe journey"],
-    faqs: [],
   },
   {
     id: "ayu-son",
@@ -2919,7 +2373,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "6.5 Hours",
     description: "Comfortable long-distance travel to Sonbhadra.",
     highlights: ["Hill route experts", "Smooth journey", "Spacious seats"],
-    faqs: [],
   },
   {
     id: "ayu-azm",
@@ -2930,7 +2383,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "2.5 Hours",
     description: "Short and comfortable rides from Ayodhya.",
     highlights: ["Quick ride", "Low fares", "Doorstep pickup"],
-    faqs: [],
   },
   {
     id: "ayu-blr",
@@ -2941,7 +2393,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "4 Hours",
     description: "Safe and affordable group travel to Ballia.",
     highlights: ["Clean vehicles", "Affordable", "Safe drivers"],
-    faqs: [],
   },
   {
     id: "ayu-deo",
@@ -2952,7 +2403,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3.5 Hours",
     description: "Comfortable ride options for Deoria route.",
     highlights: ["AC options", "On-time", "Budget friendly"],
-    faqs: [],
   },
   {
     id: "ayu-ghz",
@@ -2963,7 +2413,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "4.5 Hours",
     description: "Group travel made easy from Ayodhya.",
     highlights: ["Comfort ride", "Safe journey", "Expert drivers"],
-    faqs: [],
   },
   {
     id: "ayu-jnp",
@@ -2974,7 +2423,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "3 Hours",
     description: "Enjoy smooth travel between Ayodhya and Jaunpur.",
     highlights: ["Fast travel", "AC buses", "Low cost"],
-    faqs: [],
   },
   {
     id: "ayu-sln",
@@ -2985,7 +2433,6 @@ export const ROUTES: TaxiRoute[] = [
     duration: "1.5 Hours",
     description: "Quick and easy travel for short trips.",
     highlights: ["Short distance", "Budget ride", "Quick booking"],
-    faqs: [],
   },
   {
     id: "ayu-brb",

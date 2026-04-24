@@ -53,10 +53,22 @@ export function FAQPage(faqs: { question: string; answer: string }[]) {
 export const Offer = (price: number, route: string) => ({
   "@context": "https://schema.org",
   "@type": "Offer",
+
   price: price,
   priceCurrency: "INR",
+  availability: "https://schema.org/InStock",
+  url: "https://yatratempotraveller.com",
+
   itemOffered: {
     "@type": "Service",
     name: `Tempo Traveller Service ${route}`,
+    description: `Book luxury tempo traveller for ${route} at affordable fare with AC seating and professional driver.`,
+
+    provider: {
+      "@type": "LocalBusiness",
+      name: "Chiku Cab"
+    },
+
+    image: "https://yatratempotraveller.com/vehicles/12-seater-chiku.jpg"
   },
 });
