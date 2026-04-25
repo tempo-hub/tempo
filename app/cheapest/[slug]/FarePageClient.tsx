@@ -22,6 +22,7 @@ import { FAQSection } from "@/app/components/sections";
 import { VehicleGallery } from "@/app/components/vehicle-gallery";
 import Link from "next/link";
 import { VehiclePricingTable } from "@/app/components/VehiclePricingTable";
+import { Offer } from "@/app/components/schemas";
 
 // Define proper types
 interface RouteType {
@@ -91,24 +92,11 @@ function StructuredData({ route, fare }: { route: RouteType; fare: number }) {
     })),
   };
 
-  const productData = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: `${route.origin} to ${route.destination} Tempo Traveller`,
-    description: `Book tempo traveller from ${route.origin} to ${route.destination}. Best price guaranteed.`,
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "INR",
-      price: fare,
-      availability: "https://schema.org/InStock",
-      validFrom: new Date().toISOString(),
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "2500",
-    },
-  };
+  const productData = Offer(
+    fare,
+    `${route.origin} to ${route.destination}`,
+    `cheapest/${route.slug}`,
+  );
 
   return (
     <>

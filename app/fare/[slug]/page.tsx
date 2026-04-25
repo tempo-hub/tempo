@@ -133,11 +133,10 @@ export default async function FarePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            Offer(fare, `${route.origin} to ${route.destination}`),
+            Offer(fare, `${route.origin} to ${route.destination}`, `fare/${route.slug}`),
           ),
         }}
       />
-      
       {/* ==================== HERO SECTION (Fare + CTA) ==================== */}
       <section className="pt-12 pb-20 bg-gradient-to-br from-slate-900 via-slate-800 to-secondary border-b border-border relative overflow-hidden">
         {" "}

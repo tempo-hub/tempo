@@ -50,25 +50,27 @@ export function FAQPage(faqs: { question: string; answer: string }[]) {
   };
 }
 
-export const Offer = (price: number, route: string) => ({
+export const Offer = (price: number, route: string, slug: string) => ({
   "@context": "https://schema.org",
-  "@type": "Offer",
+  "@type": "Service",
 
-  price: price,
-  priceCurrency: "INR",
-  availability: "https://schema.org/InStock",
-  url: "https://yatratempotraveller.com",
+  name: `Tempo Traveller Booking ${route}`,
+  description: `Book luxury tempo traveller for ${route} at affordable fare with AC seating and professional driver.`,
 
-  itemOffered: {
-    "@type": "Service",
-    name: `Tempo Traveller Service ${route}`,
-    description: `Book luxury tempo traveller for ${route} at affordable fare with AC seating and professional driver.`,
-
-    provider: {
-      "@type": "LocalBusiness",
-      name: "Chiku Cab"
-    },
-
-    image: "https://yatratempotraveller.com/vehicles/12-seater-chiku.jpg"
+  provider: {
+    "@type": "LocalBusiness",
+    name: "Chiku Cab",
+    url: "https://yatratempotraveller.com",
+    areaServed: "Uttar Pradesh",
   },
+
+  offers: {
+    "@type": "Offer",
+    price: price,
+    priceCurrency: "INR",
+    availability: "https://schema.org/InStock",
+    url: `https://yatratempotraveller.com/${slug}`,
+  },
+
+  image: "https://yatratempotraveller.com/vehicles/12-seater-chiku.jpg",
 });
