@@ -30,20 +30,23 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} ${outfit.variable} font-sans`}>
-        {/* Google Analytics - gtag.js */}
+        {/* Google Analytics */}
         <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MX3BZ6LBQP"
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-MX3BZ6LBQP`}
         />
 
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-MX3BZ6LBQP');
-          `}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MX3BZ6LBQP');
+    `}
         </Script>
+
+        {/* Example Chat Widget */}
+        <Script src="https://widget.js" strategy="lazyOnload" />
 
         <Navbar />
 

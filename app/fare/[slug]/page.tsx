@@ -6,7 +6,6 @@ import { FareTable } from "../../components/fare-table";
 import { VehicleGallery } from "../../components/vehicle-gallery";
 import {
   TrustSection,
-  FAQSection,
   FareInclusions,
   ExclusionsNotice,
   SafetySection,
@@ -14,6 +13,7 @@ import {
   ExperienceSection,
   TestimonialsSection,
   SocialProof,
+  FAQSection,
 } from "../../components/sections";
 import {
   BreadcrumbList,
@@ -30,6 +30,7 @@ import { CityGuideSection } from "@/app/components/sections/CityGuideSection";
 import { RouteGuideSection } from "@/app/components/sections/RouteGuideSection";
 import { TravelUseCasesSection } from "@/app/components/sections/TravelUseCasesSection";
 import { PricingSection } from "@/app/components/sections/PricingSection";
+import { generateFareFaqs } from "../../components/sections";
 
 export const revalidate = 86400;
 
@@ -109,6 +110,8 @@ export default async function FarePage({
   };
 
   const ratePerKm = getRatePerKm(route.distance);
+  const faqs = generateFareFaqs(route.origin, route.destination);
+  FAQPage(faqs);
 
   return (
     <div className="min-h-screen bg-white">
@@ -133,7 +136,11 @@ export default async function FarePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
-            Offer(fare, `${route.origin} to ${route.destination}`, `fare/${route.slug}`),
+            Offer(
+              fare,
+              `${route.origin} to ${route.destination}`,
+              `fare/${route.slug}`,
+            ),
           ),
         }}
       />
@@ -209,11 +216,21 @@ export default async function FarePage({
           {/* Compare Section Full Width */}
           <div>
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-secondary leading-tight">
-              Compare All Tempo Traveller Fares
+              Compare Tempo Traveller Price from {route.origin} to{" "}
+              {route.destination}
             </h2>
 
-            <p className="text-sm sm:text-base text-muted-foreground mt-2">
-              Transparent pricing for {route.origin} to {route.destination}
+            <p className="text-sm sm:text-base text-muted-foreground mt-2 leading-relaxed">
+              Get transparent and affordable tempo traveller pricing for{" "}
+              {route.origin} to {route.destination} with no hidden charges. Our
+              fares are based on distance, trip duration, vehicle type, and
+              seating capacity, ensuring you receive the best value for your
+              journey. Choose from 9 seater, 12 seater, 15 seater, 16 seater, 20
+              seater and 26 seater for family trips, corporate tours, weddings,
+              and group travel. Every booking includes a professional driver and
+              well-maintained vehicle for a safe ride. Compare all available
+              fare options and book your {route.origin} to {route.destination}{" "}
+              tempo traveller at the best price today.
             </p>
           </div>
 
@@ -279,7 +296,7 @@ export default async function FarePage({
       <TrustSection origin={route.origin} />
       <TestimonialsSection origin={route.origin} />
       <OfficeLocation origin={route.origin} />
-      <FAQSection faqs={route.faqs} />
+      <FAQSection faqs={faqs} />
     </div>
   );
 }

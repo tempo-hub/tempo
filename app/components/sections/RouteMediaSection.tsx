@@ -9,6 +9,7 @@ type Props = {
 };
 
 export function RouteMediaSection({ route }: Props) {
+  const [showMap, setShowMap] = useState(false);
   const [selectedVehicle] = useState(VEHICLES[0]);
   const fare = useMemo(() => {
     return calculateFare(route.distance, selectedVehicle.perKmRate);
@@ -20,6 +21,7 @@ export function RouteMediaSection({ route }: Props) {
       Estimated Fare: ₹${fare}`;
 
   const whatsappUrl = `https://api.whatsapp.com/send?phone=+916280820037&text=${encodeURIComponent(whatsappMessage)}`;
+
   return (
     <section className="py-20 bg-gradient-to-b from-white to-slate-50">
       {/* Heading */}
@@ -77,19 +79,35 @@ export function RouteMediaSection({ route }: Props) {
         <div className="relative group">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-purple-500/20 blur-2xl rounded-3xl"></div>
 
-          <div className="relative w-full h-[320px] md:h-[380px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
-            {route.media?.mapEmbedUrl ? (
+          <div className="relative w-full h-[320px] md:h-[380px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
+            {showMap ? (
               <iframe
-                src={route.media.mapEmbedUrl}
+                src={route.media?.mapEmbedUrl}
                 className="w-full h-full border-0"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title={`${route.origin} to ${route.destination} route map`}
               />
             ) : (
-              <div className="h-full flex items-center justify-center bg-slate-200 text-slate-600">
-                Map not available
-              </div>
+              <button
+                onClick={() => setShowMap(true)}
+                className="w-full h-full flex flex-col items-center justify-center text-center px-6 hover:bg-slate-50 transition"
+              >
+                <div className="text-5xl mb-4">🗺️</div>
+
+                <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  View Route Map
+                </h3>
+
+                <p className="text-slate-600 text-sm max-w-sm">
+                  Click to load live Google Map for {route.origin} to{" "}
+                  {route.destination}
+                </p>
+
+                <span className="cursor-pointer mt-5 px-5 py-3 bg-primary text-white rounded-xl font-semibold">
+                  Show Map
+                </span>
+              </button>
             )}
           </div>
         </div>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   LayoutDashboard,
   FileText,
@@ -12,11 +12,15 @@ import {
   LogOut,
   ChevronLeft,
   ChevronRight,
+  ShieldCheck,
 } from "lucide-react";
-import { onAuthStateChanged } from "firebase/auth";
+
+import {
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
+
 import { auth } from "@/lib/firebase";
-import { useRouter } from "next/navigation";
-import { signOut } from "firebase/auth";
 
 export default function AdminLayout({
   children,
@@ -25,9 +29,11 @@ export default function AdminLayout({
 }) {
   const router = useRouter();
   const pathname = usePathname();
-  const [sidebarOpen, setSidebarOpen] = useState(false); // mobile
-  const [collapsed, setCollapsed] = useState(false); // desktop
 
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+
+  /* Protect Admin Routes */
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (!user) {
@@ -36,38 +42,70 @@ export default function AdminLayout({
     });
 
     return () => unsubscribe();
-  }, []);
+  }, [router]);
 
-  const navigation = [
-    { name: "Dashboard", href: "/admin", icon: LayoutDashboard },
-    { name: "Blogs", href: "/admin/blogs", icon: FileText },
-    { name: "Create Blog", href: "/admin/blogs/create", icon: PlusCircle },
-  ];
-
+  /* Logout */
   const logout = async () => {
     await signOut(auth);
     router.push("/admin-login");
   };
 
+  /* Sidebar Links */
+  const navigation = [
+    {
+      name: "Dashboard",
+      href: "/admin",
+      icon: LayoutDashboard,
+    },
+    {
+      name: "Blogs",
+      href: "/admin/blogs",
+      icon: FileText,
+    },
+    {
+      name: "Create Blog",
+      href: "/admin/blogs/create",
+      icon: PlusCircle,
+    },
+  ];
+
   return (
     <div className="flex min-h-screen bg-slate-100">
-      {/* ================= Sidebar ================= */}
+      {/* =====================================================
+          SIDEBAR
+      ===================================================== */}
       <aside
         className={`
-          fixed inset-y-0 left-0 z-30 transform bg-slate-900 text-white transition-all duration-300
+          fixed inset-y-0 left-0 z-40 bg-slate-950 text-white
+          transform transition-all duration-300
           ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0 lg:static
-          ${collapsed ? "lg:w-20" : "lg:w-64"} w-64
+          ${collapsed ? "lg:w-20" : "lg:w-72"} w-72
         `}
       >
-        {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-slate-700">
-          {!collapsed && <h2 className="text-lg font-bold">Admin Panel</h2>}
+        {/* Logo */}
+        <div className="h-20 border-b border-slate-800 px-5 flex items-center justify-between">
+          {!collapsed && (
+            <div className="flex items-center gap-3">
+              <div className="w-11 h-11 rounded-xl bg-primary flex items-center justify-center shadow-md">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
 
-          {/* Desktop collapse button */}
+              <div>
+                <h2 className="font-bold text-lg">
+                  Admin Panel
+                </h2>
+                <p className="text-xs text-slate-400">
+                  Secure Dashboard
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Desktop Collapse */}
           <button
             onClick={() => setCollapsed(!collapsed)}
-            className="hidden lg:block p-2 hover:bg-slate-800 rounded"
+            className="hidden lg:flex p-2 rounded hover:bg-slate-800"
           >
             {collapsed ? (
               <ChevronRight className="w-5 h-5" />
@@ -76,57 +114,65 @@ export default function AdminLayout({
             )}
           </button>
 
-          {/* Mobile close */}
+          {/* Mobile Close */}
           <button
             onClick={() => setSidebarOpen(false)}
-            className="lg:hidden p-2 hover:bg-slate-800 rounded"
+            className="lg:hidden p-2 rounded hover:bg-slate-800"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Nav */}
+        {/* Navigation */}
         <nav className="p-4 space-y-2">
           {navigation.map((item) => {
-            const isActive = pathname === item.href;
+            const active = pathname === item.href;
             const Icon = item.icon;
 
             return (
               <Link
                 key={item.name}
                 href={item.href}
-                onClick={() => setSidebarOpen(false)} // close on mobile click
-                className={`flex items-center gap-3 px-3 py-2 rounded-lg transition
+                onClick={() => setSidebarOpen(false)}
+                className={`
+                  flex items-center gap-3 px-4 py-3 rounded-xl transition-all
                   ${
-                    isActive
-                      ? "bg-primary text-white"
+                    active
+                      ? "bg-primary text-white shadow-md"
                       : "text-slate-300 hover:bg-slate-800"
                   }
                 `}
               >
-                <Icon className="w-5 h-5" />
-                {!collapsed && <span>{item.name}</span>}
+                <Icon className="w-5 h-5 shrink-0" />
+
+                {!collapsed && (
+                  <span className="font-medium">
+                    {item.name}
+                  </span>
+                )}
               </Link>
             );
           })}
         </nav>
       </aside>
 
-      {/* ================= Overlay (Mobile) ================= */}
+      {/* Mobile Overlay */}
       {sidebarOpen && (
         <div
-          className="fixed inset-0 bg-black/40 z-20 lg:hidden"
+          className="fixed inset-0 bg-black/50 z-30 lg:hidden"
           onClick={() => setSidebarOpen(false)}
         />
       )}
 
-      {/* ================= Main ================= */}
+      {/* =====================================================
+          MAIN SECTION
+      ===================================================== */}
       <div className="flex-1 flex flex-col">
-        {/* Topbar */}
-        <header className="sticky top-0 z-10 bg-white border-b shadow-sm">
-          <div className="flex items-center justify-between px-4 lg:px-6 py-4">
+        {/* Header */}
+        <header className="sticky top-0 z-20 bg-white border-b shadow-sm">
+          <div className="h-20 px-4 lg:px-8 flex items-center justify-between">
+            {/* Left */}
             <div className="flex items-center gap-3">
-              {/* Mobile menu */}
               <button
                 onClick={() => setSidebarOpen(true)}
                 className="lg:hidden p-2 rounded hover:bg-slate-100"
@@ -134,22 +180,33 @@ export default function AdminLayout({
                 <Menu className="w-5 h-5" />
               </button>
 
-              <h1 className="text-lg lg:text-xl font-semibold">
-                Admin Dashboard
-              </h1>
+              <div>
+                <h1 className="text-lg lg:text-xl font-bold text-slate-800">
+                  Admin Dashboard
+                </h1>
+
+                <p className="text-xs sm:text-sm text-slate-500">
+                  Manage blogs & website content
+                </p>
+              </div>
             </div>
 
-            {/* Logout */}
-            <button className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg hover:opacity-90" onClick={logout}>
+            {/* Right */}
+            <button
+              onClick={logout}
+              className="hidden sm:flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-xl hover:opacity-90 transition"
+            >
               <LogOut className="w-4 h-4" />
-              <span className="hidden sm:inline">Logout</span>
+              Logout
             </button>
           </div>
         </header>
 
-        {/* Content */}
+        {/* Page Content */}
         <main className="flex-1 p-4 sm:p-6 lg:p-8">
-          <div className="max-w-7xl mx-auto">{children}</div>
+          <div className="max-w-7xl mx-auto">
+            {children}
+          </div>
         </main>
       </div>
     </div>

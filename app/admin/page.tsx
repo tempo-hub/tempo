@@ -1,14 +1,27 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FileText, ArrowUp, ArrowDown } from "lucide-react";
+import {
+  FileText,
+  ArrowUp,
+  CalendarDays,
+  PenSquare,
+  FolderKanban,
+} from "lucide-react";
+
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/lib/firebase";
 
 export default function AdminDashboard() {
   const [blogsCount, setBlogsCount] = useState(0);
 
   useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem("blogs") || "[]");
-    setBlogsCount(stored.length);
+    const fetchDashboardData = async () => {
+      const snap = await getDocs(collection(db, "blogs"));
+      setBlogsCount(snap.size);
+    };
+
+    fetchDashboardData();
   }, []);
 
   const statsCards = [
@@ -16,67 +29,102 @@ export default function AdminDashboard() {
       title: "Total Blogs",
       value: blogsCount,
       icon: FileText,
-      color: "bg-primary",
-      bgColor: "bg-blue-50 dark:bg-blue-950/30",
-      iconColor: "text-blue-600 dark:text-blue-400",
-      trend: "up",
+      bgColor: "bg-blue-50",
+      iconColor: "text-blue-600",
+      border: "from-blue-500 to-cyan-500",
+      change: "+100%",
+    },
+    {
+      title: "Published",
+      value: blogsCount,
+      icon: PenSquare,
+      bgColor: "bg-green-50",
+      iconColor: "text-green-600",
+      border: "from-green-500 to-emerald-500",
+      change: "+100%",
+    },
+    {
+      title: "Categories",
+      value: 6,
+      icon: FolderKanban,
+      bgColor: "bg-purple-50",
+      iconColor: "text-purple-600",
+      border: "from-purple-500 to-pink-500",
       change: "+0%",
+    },
+    {
+      title: "This Month",
+      value: blogsCount,
+      icon: CalendarDays,
+      bgColor: "bg-orange-50",
+      iconColor: "text-orange-600",
+      border: "from-orange-500 to-red-500",
+      change: "+100%",
     },
   ];
 
   return (
     <div className="space-y-8">
-      {/* Page Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      {/* =====================================================
+          Header
+      ===================================================== */}
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 dark:from-white dark:to-slate-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-800">
             Dashboard Overview
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 mt-1">
-            Welcome back! Here&apos;s what&apos;s happening with your content today.
+
+          <p className="text-slate-500 mt-2 text-sm sm:text-base">
+            Welcome back! Manage your blog content easily.
           </p>
+        </div>
+
+        <div className="bg-white px-5 py-3 rounded-2xl shadow-sm border">
+          <p className="text-xs text-slate-500">Status</p>
+
+          <p className="font-semibold text-green-600">System Active</p>
         </div>
       </div>
 
-      {/* Stats Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* =====================================================
+          Stats Cards
+      ===================================================== */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         {statsCards.map((stat, index) => {
           const Icon = stat.icon;
+
           return (
             <div
               key={index}
-              className="group relative bg-white dark:bg-slate-800 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden"
+              className="group relative bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden"
             >
+              {/* Top Border */}
+              <div className={`h-1 w-full bg-gradient-to-r ${stat.border}`} />
+
               <div className="p-6">
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`p-3 rounded-xl ${stat.bgColor}`}>
+                {/* Top */}
+                <div className="flex items-center justify-between">
+                  <div
+                    className={`w-14 h-14 rounded-2xl flex items-center justify-center ${stat.bgColor}`}
+                  >
                     <Icon className={`w-6 h-6 ${stat.iconColor}`} />
                   </div>
-                  <span
-                    className={`flex items-center gap-1 text-xs font-medium px-2 py-1 rounded-full ${
-                      stat.trend === "up"
-                        ? "text-green-700 dark:text-green-400 bg-green-100 dark:bg-green-950/50"
-                        : "text-red-700 dark:text-red-400 bg-red-100 dark:bg-red-950/50"
-                    }`}
-                  >
-                    {stat.trend === "up" ? (
-                      <ArrowUp className="w-3 h-3" />
-                    ) : (
-                      <ArrowDown className="w-3 h-3" />
-                    )}
+
+                  <span className="flex items-center gap-1 text-xs font-semibold text-green-600 bg-green-50 px-2 py-1 rounded-full">
+                    <ArrowUp className="w-3 h-3" />
                     {stat.change}
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-800 dark:text-white">
-                  {stat.value}
-                </h3>
-                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-                  {stat.title}
-                </p>
+
+                {/* Content */}
+                <div className="mt-5">
+                  <h3 className="text-3xl font-bold text-slate-800">
+                    {stat.value}
+                  </h3>
+
+                  <p className="text-sm text-slate-500 mt-1">{stat.title}</p>
+                </div>
               </div>
-              <div
-                className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${stat.color} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300`}
-              />
             </div>
           );
         })}

@@ -21,6 +21,8 @@ import {
   BIHAR_CHEAPEST_ROUTES,
   DELHI_NCR_CHEAPEST_ROUTES,
 } from "@/lib/cheapestRoute";
+import { FAQSection } from "../components/sections";
+import { GLOBAL_FAQS } from "@/lib/faq-data";
 
 export default function CheapestFaresClient() {
   const [search, setSearch] = useState("");
@@ -373,6 +375,11 @@ export default function CheapestFaresClient() {
             })}
           </div>
         )}
+
+        <FAQSection
+          faqs={GLOBAL_FAQS}
+          title="Cheapest Tempo Traveller Fare & Booking FAQs"
+        />
       </main>
     </div>
   );

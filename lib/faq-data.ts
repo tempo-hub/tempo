@@ -67,52 +67,39 @@ export const GLOBAL_FAQS: FAQ[] = [
   },
 ];
 
-export function generateRouteFaqs(
-  origin: string,
-  destination: string,
-  distance: number,
-  duration: string,
-): FAQ[] {
+export function generateRouteFaqs(origin: string, destination: string): FAQ[] {
   return [
     {
-      question: `What is the cheapest tempo traveller fare from ${origin} to ${destination}?`,
-      answer: `The cheapest fare from ${origin} to ${destination} starts from ₹18/km for a 9-seater vehicle. For ${distance} km travel, we provide one of the best market prices.`,
+      question: `What is cheapest tempo traveller fare in ${origin} to ${destination}?`,
+      answer: `We offer some of the cheapest tempo traveller fares from ${origin} to ${destination} with clean vehicles, experienced drivers, and transparent pricing.`,
     },
     {
-      question: `What is the budget tempo traveller fare from ${origin} to ${destination}?`,
-      answer: `Budget travellers for the ${origin} to ${destination} route are available in 9-seater and 12-seater options with affordable fixed pricing and comfortable AC travel.`,
+      question: `How to get lowest tempo traveller cost in ${origin} to ${destination}?`,
+      answer: `To get the lowest tempo traveller cost from ${origin} to ${destination}, book early, travel on weekdays, and choose the right seating capacity for your group.`,
     },
     {
-      question: `What is the luxury tempo traveller fare from ${origin} to ${destination}?`,
-      answer: `Luxury Maharaja and premium tempo travellers for ${origin} to ${destination} come with push-back seats, charging points, music system, and extra comfort. Fare depends on seating capacity.`,
+      question: `Which is budget tempo traveller in ${origin} to ${destination}?`,
+      answer: `Budget tempo travellers from ${origin} to ${destination} are usually standard AC models with comfortable seating and economical pricing.`,
     },
     {
-      question: `What is the 9 seater tempo traveller fare from ${origin} to ${destination}?`,
-      answer: `The 9-seater fare from ${origin} to ${destination} starts from ₹18/km and is ideal for small family trips or pilgrim groups.`,
+      question: `Do you provide cheap tempo traveller with driver in ${origin} to ${destination}?`,
+      answer: `Yes, we provide affordable tempo traveller booking from ${origin} to ${destination} with professional driver service included.`,
     },
     {
-      question: `What is the 12 seater tempo traveller fare from ${origin} to ${destination}?`,
-      answer: `The 12-seater fare for ${origin} to ${destination} starts from ₹22/km and is one of the most popular choices for medium-size groups.`,
+      question: `What is minimum cheapest package for ${origin} to ${destination}?`,
+      answer: `Minimum cheapest package from ${origin} to ${destination} depends on trip distance, days, and vehicle type. Contact us for current offers.`,
     },
     {
-      question: `What is the 17 seater tempo traveller fare from ${origin} to ${destination}?`,
-      answer: `The 17-seater traveller fare for ${origin} to ${destination} starts from ₹26/km and is suitable for wedding groups and tours.`,
+      question: `Can I book cheap tempo traveller online in ${origin} to ${destination}?`,
+      answer: `Yes, you can book cheap tempo traveller online from ${origin} to ${destination} through our website or WhatsApp booking support.`,
     },
     {
-      question: `What is the 26 seater tempo traveller fare from ${origin} to ${destination}?`,
-      answer: `The 26-seater fare for ${origin} to ${destination} starts from ₹35/km and is best for large groups, school tours, and events.`,
+      question: `Is cheap tempo traveller safe in ${origin} to ${destination}?`,
+      answer: `Yes, our budget tempo traveller services from ${origin} to ${destination} are safe, sanitized, and driven by experienced chauffeurs.`,
     },
     {
-      question: `How much is the per km fare from ${origin} to ${destination}?`,
-      answer: `The per km fare from ${origin} to ${destination} ranges between ₹18/km to ₹35/km depending on the vehicle type and seating capacity.`,
-    },
-    {
-      question: `How long does it take to reach ${destination} from ${origin}?`,
-      answer: `The journey from ${origin} to ${destination} usually takes around ${duration} for ${distance} km depending on traffic and road conditions.`,
-    },
-    {
-      question: `How do I book cheapest fare for ${origin} to ${destination}?`,
-      answer: `You can instantly book the cheapest fare for ${origin} to ${destination} through our website fare calculator or WhatsApp support.`,
+      question: `Do cheapest fares include driver in ${origin} to ${destination}?`,
+      answer: `Yes, most cheapest tempo traveller fare packages from ${origin} to ${destination} include driver service. Additional charges may apply for tolls or extra days.`,
     },
   ];
 }

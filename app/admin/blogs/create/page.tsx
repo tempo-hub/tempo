@@ -3,137 +3,208 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "@/lib/firebase";
+import { toast } from "react-hot-toast";
 
 const JoditEditor = dynamic(() => import("jodit-react"), { ssr: false });
 
 export default function CreateBlog() {
+  const router = useRouter();
+
   const [title, setTitle] = useState("");
   const [slug, setSlug] = useState("");
   const [description, setDescription] = useState("");
   const [keywords, setKeywords] = useState("");
   const [hashtags, setHashtags] = useState("");
   const [content, setContent] = useState("");
-  const router = useRouter();
+  const [category, setCategory] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = () => {
-    if (!title || !slug || !description || !keywords || !hashtags || !content)
-      return;
+  // auto generate slug
+  const generateSlug = (text: string) => {
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-");
+  };
 
-    const stored = JSON.parse(localStorage.getItem("blogs") || "[]");
-
-    const newBlog = {
-      id: Date.now().toString(),
-      title,
-      slug,
-      description,
-      keywords: keywords.split(",").map((k) => k.trim()),
-      hashtags: hashtags.split(" ").map((tag) => tag.trim()),
-      content: content,
-      createdAt: new Date().toISOString(),
-    };
-
-    localStorage.setItem("blogs", JSON.stringify([newBlog, ...stored]));
-
-    // reset
+  const resetForm = () => {
     setTitle("");
     setSlug("");
     setDescription("");
     setKeywords("");
     setHashtags("");
     setContent("");
+    setCategory("");
+  };
 
-    // redirect to blogs list
-    router.push("/admin/blogs");
+  const handleSubmit = async () => {
+    if (
+      !title ||
+      !slug ||
+      !description ||
+      !keywords ||
+      !hashtags ||
+      !content ||
+      !category
+    ) {
+      toast.error("Please fill all fields");
+      return;
+    }
+
+    try {
+      setLoading(true);
+      console.log("1. Submit started");
+
+      const docRef = await addDoc(collection(db, "blogs"), {
+        title: title.trim(),
+        slug: slug.trim(),
+        category,
+        description: description.trim(),
+        keywords: keywords
+          .split(",")
+          .map((i) => i.trim())
+          .filter(Boolean),
+        hashtags: hashtags
+          .split(",")
+          .map((i) => i.trim())
+          .filter(Boolean),
+        content,
+        createdAt: serverTimestamp(),
+      });
+
+      console.log("2. Saved:", docRef.id);
+
+      toast.success("Blog Published Successfully 🎉");
+
+      resetForm();
+
+      router.push("/admin/blogs");
+    } catch (error) {
+      console.error("Publish error:", error);
+      toast.error("Something went wrong");
+    } finally {
+      console.log("3. Finished");
+      setLoading(false);
+    }
   };
 
   return (
-    <div className="min-h-screen bg-slate-100 flex justify-center items-start py-10 px-4">
-      <div className="w-full max-w-4xl bg-white rounded-2xl shadow-lg p-8">
+    <div className="min-h-screen bg-slate-100 py-10 px-4">
+      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         {/* Header */}
-        <div className="mb-6">
-          <h2 className="text-3xl font-bold text-slate-800">
+        <div className="mb-8">
+          <h1 className="text-3xl font-bold text-slate-800">
             📝 Create New Blog
-          </h2>
-          <p className="text-sm text-slate-500 mt-1">
-            Write and publish a new blog for your travel portal
+          </h1>
+          <p className="text-slate-500 mt-2">
+            Create SEO optimized blog for your website
           </p>
         </div>
 
-        {/* Title Input */}
+        {/* Title */}
         <div className="mb-5">
-          <label className="block text-sm font-semibold text-slate-600 mb-2">
-            Blog Title
-          </label>
+          <label className="block text-sm font-semibold mb-2">Blog Title</label>
+
           <input
             type="text"
-            placeholder="Enter blog title..."
-            className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition"
+            placeholder="Enter blog title"
             value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => {
+              setTitle(e.target.value);
+              setSlug(generateSlug(e.target.value));
+            }}
+            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
           />
         </div>
 
-        {/* Blog Url */}
+        {/* Slug */}
         <div className="mb-5">
-          <label className="block text-sm font-semibold text-slate-600 mb-2">
-            Blog URL (Slug)
+          <label className="block text-sm font-semibold mb-2">
+            Blog URL Slug
           </label>
+
           <input
             type="text"
-            placeholder="example: delhi-to-agra-taxi"
-            className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            placeholder="blog-url-slug"
             value={slug}
             onChange={(e) => setSlug(e.target.value)}
+            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
           />
+        </div>
+
+        {/* Category */}
+        <div className="mb-5">
+          <label className="block text-sm font-semibold mb-2">Category</label>
+
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            className="w-full p-3 border border-primary rounded-lg bg-white"
+          >
+            <option value="">Select Category</option>
+            <option value="Travel Guide">Travel Guide</option>
+            <option value="Taxi Fare">Taxi Fare</option>
+            <option value="Tempo Traveller">Tempo Traveller</option>
+            <option value="Pilgrimage Tour">Pilgrimage Tour</option>
+            <option value="Outstation Trip">Outstation Trip</option>
+            <option value="Local Sightseeing">Local Sightseeing</option>
+          </select>
         </div>
 
         {/* Meta Description */}
         <div className="mb-5">
-          <label className="block text-sm font-semibold text-slate-600 mb-2">
+          <label className="block text-sm font-semibold mb-2">
             Meta Description
           </label>
+
           <textarea
-            rows={3}
-            placeholder="Write short SEO description..."
-            className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            rows={4}
+            placeholder="Write SEO description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
           />
         </div>
 
         {/* Keywords */}
         <div className="mb-5">
-          <label className="block text-sm font-semibold text-slate-600 mb-2">
+          <label className="block text-sm font-semibold mb-2">
             Keywords (comma separated)
           </label>
+
           <input
             type="text"
-            placeholder="taxi, delhi to agra, cab service"
-            className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            placeholder="varanasi taxi, ayodhya cab, traveller rent"
             value={keywords}
             onChange={(e) => setKeywords(e.target.value)}
+            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
           />
         </div>
 
         {/* Hashtags */}
         <div className="mb-5">
-          <label className="block text-sm font-semibold text-slate-600 mb-2">
-            Hashtags
+          <label className="block text-sm font-semibold mb-2">
+            Hashtags (comma separated)
           </label>
+
           <input
             type="text"
-            placeholder="#taxi #travel #agra"
-            className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            placeholder="#travel, #taxi, #varanasi"
             value={hashtags}
             onChange={(e) => setHashtags(e.target.value)}
+            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
           />
         </div>
 
-        {/* Editor */}
+        {/* Content */}
         <div className="mb-6">
-          <label className="block text-sm font-semibold text-slate-600 mb-2">
+          <label className="block text-sm font-semibold mb-2">
             Blog Content
           </label>
+
           <div className="border border-primary rounded-lg overflow-hidden">
             <JoditEditor
               value={content}
@@ -142,27 +213,21 @@ export default function CreateBlog() {
           </div>
         </div>
 
-        {/* Action Buttons */}
+        {/* Buttons */}
         <div className="flex justify-end gap-3">
           <button
-            className="px-5 py-2 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-100 transition"
-            onClick={() => {
-              setTitle("");
-              setSlug("");
-              setDescription("");
-              setKeywords("");
-              setHashtags("");
-              setContent("");
-            }}
+            onClick={resetForm}
+            className="px-5 py-2 border rounded-lg text-slate-600 hover:bg-slate-100"
           >
             Cancel
           </button>
 
           <button
             onClick={handleSubmit}
-            className="px-6 py-2 rounded-lg bg-primary text-white font-medium shadow hover:opacity-90 transition cursor-pointer"
+            disabled={loading}
+            className="px-6 py-2 bg-primary text-white rounded-lg hover:opacity-90 disabled:opacity-60"
           >
-            Publish Blog
+            {loading ? "Publishing..." : "Publish Blog"}
           </button>
         </div>
       </div>

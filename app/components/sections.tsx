@@ -383,32 +383,39 @@ export const FAQSection = ({
   faqs: { question: string; answer: string }[];
   title?: string;
 }) => (
-  <section className="py-24 bg-white border-t border-border">
-    <div className="max-w-4xl mx-auto px-4">
-      <div className="text-center mb-16 space-y-4">
-        <h2 className="text-4xl font-extrabold text-secondary tracking-tight">
+  <section className="py-20 md:py-24 bg-white border-t border-border">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6">
+      {/* Heading */}
+      <div className="text-center mb-12 md:mb-16 space-y-4">
+        <h2 className="text-3xl md:text-4xl font-black text-secondary tracking-tight leading-tight">
           {title}
         </h2>
+
         <div className="h-1.5 w-20 bg-primary mx-auto rounded-full" />
-        <p className="text-muted-foreground">
+
+        <p className="text-sm md:text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           Everything you need to know about booking our tempo traveller service.
         </p>
       </div>
-      <div className="grid gap-4">
+
+      {/* FAQ Items */}
+      <div className="space-y-4">
         {faqs.map((faq, i) => (
           <details
             key={i}
-            className="group border border-border rounded-2xl px-8 py-5 [&_summary::-webkit-details-marker]:hidden bg-slate-50/30 hover:bg-white hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+            className="group rounded-2xl border border-border bg-slate-50 px-5 md:px-7 py-5 hover:bg-white hover:shadow-xl hover:border-primary/20 transition-all duration-300"
           >
-            <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-secondary">
-              <h3 className="text-lg font-bold group-hover:text-primary transition-colors">
+            <summary className="flex cursor-pointer items-center justify-between gap-4 list-none">
+              <h3 className="text-base md:text-lg font-bold text-secondary group-hover:text-primary transition-colors">
                 {faq.question}
               </h3>
-              <div className="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 group-hover:bg-primary/10 transition-colors">
-                <ChevronDown className="h-5 w-5 shrink-0 transition duration-300 group-open:-rotate-180 group-hover:text-primary" />
+
+              <div className="h-9 w-9 rounded-full bg-white border flex items-center justify-center shrink-0 group-open:bg-primary/10">
+                <ChevronDown className="h-5 w-5 transition-transform duration-300 group-open:rotate-180 text-secondary group-hover:text-primary" />
               </div>
             </summary>
-            <div className="mt-5 text-slate-600 leading-relaxed pl-1 border-l-2 border-primary/20">
+
+            <div className="mt-4 pl-4 border-l-2 border-primary/20 text-sm md:text-base text-muted-foreground leading-7">
               {faq.answer}
             </div>
           </details>
@@ -417,6 +424,44 @@ export const FAQSection = ({
     </div>
   </section>
 );
+
+// Dynamic FAQ Generator for Fare Pages
+export const generateFareFaqs = (origin: string, destination: string) => {
+  return [
+    {
+      question: `What is tempo traveller fare in ${origin} to ${destination}?`,
+      answer: `Tempo traveller fare from ${origin} to ${destination} depends on vehicle type, seating capacity, trip duration, and travel season. Contact us for the latest best price and instant quote.`,
+    },
+    {
+      question: `How much does tempo traveller cost in ${origin} to ${destination}?`,
+      answer: `The cost of a tempo traveller from ${origin} to ${destination} usually depends on total kilometers, route type, toll tax, driver allowance, and number of travel days. We provide affordable and transparent pricing.`,
+    },
+    {
+      question: `What is per km rate of tempo traveller in ${origin} to ${destination}?`,
+      answer: `Tempo traveller per km rate from ${origin} to ${destination} varies based on 9 seater, 12 seater, 16 seater, or Maharaja traveller. Contact us for updated per kilometer rates.`,
+    },
+    {
+      question: `Is driver included in tempo traveller fare ${origin} to ${destination}?`,
+      answer: `Yes, professional driver service is generally included in tempo traveller fare from ${origin} to ${destination}. Driver allowance may apply depending on trip duration.`,
+    },
+    {
+      question: `What is minimum charge for tempo traveller in ${origin} to ${destination}?`,
+      answer: `Minimum charge for tempo traveller from ${origin} to ${destination} depends on base kilometers, vehicle type, and route policy. Call us for the lowest available package fare.`,
+    },
+    {
+      question: `How to book tempo traveller in ${origin} to ${destination}?`,
+      answer: `You can book a tempo traveller from ${origin} to ${destination} by calling us, sending a WhatsApp inquiry, or filling the booking form on our website for quick confirmation.`,
+    },
+    {
+      question: `Which is cheapest tempo traveller in ${origin} to ${destination}?`,
+      answer: `The cheapest tempo traveller from ${origin} to ${destination} is usually the standard non-luxury model based on seating needs. We offer budget-friendly options for family and group travel.`,
+    },
+    {
+      question: `Tempo traveller fare in ${origin} with driver to ${destination}?`,
+      answer: `Tempo traveller fare from ${origin} to ${destination} with driver depends on vehicle model, total distance, and trip duration. We provide complete fare packages with driver included.`,
+    },
+  ];
+};
 
 export const TrustBadges = ({ origin = "Varanasi" }: { origin?: string }) => (
   <section className="bg-white py-12 border-y border-border">

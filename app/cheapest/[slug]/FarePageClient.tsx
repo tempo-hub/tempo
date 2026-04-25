@@ -359,13 +359,22 @@ export default function FarePageClient({
               id="price-comparison-heading"
               className="text-3xl font-bold text-center mb-4"
             >
-              Price Comparison: {route.origin} to {route.destination}
+              Compare Tempo Traveller Price from {route.origin} to{" "}
+              {route.destination}
             </h2>
 
-            <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
-              We&apos;ve analyzed top providers to bring you the most affordable
-              and transparent pricing. Below is a direct comparison of total
-              costs, hidden fees, and cancellation policies.
+            <p className="text-sm sm:text-base text-muted-foreground my-4 leading-relaxed">
+              Find the cheapest tempo traveller fare for {route.origin} to{" "}
+              {route.destination} without compromising on comfort and safety. We
+              offer budget-friendly pricing with clean vehicles, experienced
+              drivers, and transparent charges for every trip. Choose from 9
+              seater, 12 seater, 15 seater, 16 seater, 20 seater, 26 seater and
+              group travel options perfect for family tours, pilgrimages,
+              weddings, and corporate journeys. Our lowest fare packages are
+              designed to give maximum value with reliable service and no hidden
+              costs. Compare all affordable options and book your {route.origin}{" "}
+              to {route.destination} tempo traveller at the best cheapest price
+              today.
             </p>
 
             <div className="overflow-x-auto shadow-lg rounded-xl border border-gray-200">

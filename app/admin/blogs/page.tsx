@@ -2,298 +2,386 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import JoditEditor from "jodit-react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
+import {
+  collection,
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  doc,
+  serverTimestamp,
+  query,
+  orderBy,
+} from "firebase/firestore";
+import { db } from "@/lib/firebase";
+import { toast } from "react-hot-toast";
+
+const JoditEditor = dynamic(() => import("jodit-react"), { ssr: false });
 
 interface Blog {
   id: string;
   title: string;
   slug: string;
+  category: string;
   description: string;
   keywords: string[];
   hashtags: string[];
   content: string;
-  createdAt: string;
+  createdAt?: any;
 }
 
 export default function AdminBlogs() {
   const router = useRouter();
+
   const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
+
   const [title, setTitle] = useState("");
   const [slug, setSlug] = useState("");
+  const [category, setCategory] = useState("");
   const [description, setDescription] = useState("");
-  const [keywords, setKeywords] = useState<string[]>([]);
-  const [hashtags, setHashtags] = useState<string[]>([]);
+  const [keywords, setKeywords] = useState("");
+  const [hashtags, setHashtags] = useState("");
   const [content, setContent] = useState("");
+
   const [editingId, setEditingId] = useState<string | null>(null);
 
-  // Load blogs from localStorage
-  useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem("blogs") || "[]") || [];
-    setBlogs(stored);
-  }, []);
-
-  // Save blogs to localStorage
-  const saveBlogs = (data: Blog[]) => {
-    localStorage.setItem("blogs", JSON.stringify(data));
-    setBlogs(data);
+  // Generate Slug
+  const createSlug = (text: string) => {
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-");
   };
 
-  // Create / Update Blog
-  const handleSubmit = () => {
-    if (!title || !slug || !description || !keywords || !hashtags || !content)
-      return;
-
-    if (editingId) {
-      const updated = blogs.map((blog) =>
-        blog.id === editingId
-          ? { ...blog, title, slug, description, keywords, hashtags, content }
-          : blog,
-      );
-      saveBlogs(updated);
-    } else {
-      const newBlog = {
-        id: Date.now().toString(),
-        title,
-        slug,
-        description,
-        keywords,
-        hashtags,
-        content,
-        createdAt: new Date().toISOString(),
-      };
-      saveBlogs([newBlog, ...blogs]);
-    }
-
+  // Reset Form
+  const resetForm = () => {
     setTitle("");
     setSlug("");
+    setCategory("");
     setDescription("");
-    setKeywords([]);
-    setHashtags([]);
+    setKeywords("");
+    setHashtags("");
     setContent("");
     setEditingId(null);
   };
 
+  // Fetch Blogs
+  const fetchBlogs = async () => {
+    try {
+      setLoading(true);
+
+      const q = query(collection(db, "blogs"), orderBy("createdAt", "desc"));
+      const snap = await getDocs(q);
+
+      const data = snap.docs.map((item) => ({
+        id: item.id,
+        ...item.data(),
+      })) as Blog[];
+
+      setBlogs(data);
+    } catch (error) {
+      toast.error("Failed to load blogs");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
+
+  // Create / Update Blog
+  const handleSubmit = async () => {
+    if (
+      !title ||
+      !slug ||
+      !category ||
+      !description ||
+      !keywords ||
+      !hashtags ||
+      !content
+    ) {
+      toast.error("Please fill all fields");
+      return;
+    }
+
+    try {
+      setSubmitting(true);
+
+      const payload = {
+        title: title.trim(),
+        slug: slug.trim(),
+        category,
+        description: description.trim(),
+        keywords: keywords
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean),
+
+        hashtags: hashtags
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean),
+
+        content,
+      };
+
+      if (editingId) {
+        await updateDoc(doc(db, "blogs", editingId), payload);
+        toast.success("Blog Updated Successfully");
+      } else {
+        await addDoc(collection(db, "blogs"), {
+          ...payload,
+          createdAt: serverTimestamp(),
+        });
+
+        toast.success("Blog Published Successfully");
+      }
+
+      resetForm();
+      fetchBlogs();
+    } catch (error) {
+      toast.error("Something went wrong");
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   // Delete Blog
-  const handleDelete = (id: string) => {
-    const filtered = blogs.filter((blog) => blog.id !== id);
-    saveBlogs(filtered);
+  const handleDelete = async (id: string) => {
+    const confirmDelete = confirm("Delete this blog?");
+    if (!confirmDelete) return;
+
+    try {
+      await deleteDoc(doc(db, "blogs", id));
+      toast.success("Blog Deleted");
+      fetchBlogs();
+    } catch {
+      toast.error("Delete failed");
+    }
   };
 
   // Edit Blog
   const handleEdit = (blog: Blog) => {
     setTitle(blog.title);
     setSlug(blog.slug);
+    setCategory(blog.category);
     setDescription(blog.description);
-    setKeywords(blog.keywords);
-    setHashtags(blog.hashtags);
+    setKeywords(blog.keywords.join(", "));
+    setHashtags(blog.hashtags.join(", "));
     setContent(blog.content);
     setEditingId(blog.id);
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <div className="min-h-screen bg-slate-100 flex justify-center items-start py-10 px-4">
-      <div className="w-full max-w-4xl bg-white rounded-2xl shadow-lg p-8">
+    <div className="min-h-screen bg-slate-100 py-10 px-4">
+      <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         {/* Header */}
         <h1 className="text-3xl font-bold text-slate-800 mb-8">
           📝 Admin Blog Dashboard
         </h1>
 
-        {/* Form Card */}
-        <div className="p-6 mb-10">
-          <h2 className="text-xl font-semibold mb-4 text-slate-700">
+        {/* Form */}
+        <div className="mb-12">
+          <h2 className="text-xl font-semibold text-slate-700 mb-5">
             {editingId ? "Edit Blog" : "Create New Blog"}
           </h2>
 
-          {/* Title Input */}
+          {/* Title */}
           <div className="mb-5">
-            <label className="block text-sm font-semibold text-slate-600 mb-2">
+            <label className="block mb-2 text-sm font-semibold">
               Blog Title
             </label>
+
             <input
               type="text"
-              placeholder="Enter blog title..."
-              className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition"
               value={title}
-              onChange={(e) => setTitle(e.target.value)}
+              placeholder="Enter blog title"
+              onChange={(e) => {
+                setTitle(e.target.value);
+                setSlug(createSlug(e.target.value));
+              }}
+              className="w-full p-3 border border-primary rounded-lg outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
-          {/* Blog Url */}
+          {/* Slug */}
           <div className="mb-5">
-            <label className="block text-sm font-semibold text-slate-600 mb-2">
-              Blog URL (Slug)
+            <label className="block mb-2 text-sm font-semibold">
+              Blog URL Slug
             </label>
+
             <input
               type="text"
-              placeholder="example: delhi-to-agra-taxi"
-              className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               value={slug}
               onChange={(e) => setSlug(e.target.value)}
+              className="w-full p-3 border border-primary rounded-lg outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
-          {/* Meta Description */}
+          {/* Category */}
           <div className="mb-5">
-            <label className="block text-sm font-semibold text-slate-600 mb-2">
+            <label className="block mb-2 text-sm font-semibold">Category</label>
+
+            <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              className="w-full p-3 border border-primary rounded-lg"
+            >
+              <option value="">Select Category</option>
+              <option value="Travel Guide">Travel Guide</option>
+              <option value="Taxi Fare">Taxi Fare</option>
+              <option value="Tempo Traveller">Tempo Traveller</option>
+              <option value="Pilgrimage Tour">Pilgrimage Tour</option>
+              <option value="Outstation Trip">Outstation Trip</option>
+              <option value="Local Sightseeing">Local Sightseeing</option>
+            </select>
+          </div>
+
+          {/* Description */}
+          <div className="mb-5">
+            <label className="block mb-2 text-sm font-semibold">
               Meta Description
             </label>
+
             <textarea
-              rows={3}
-              placeholder="Write short SEO description..."
-              className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              rows={4}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
+              className="w-full p-3 border border-primary rounded-lg outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
           {/* Keywords */}
           <div className="mb-5">
-            <label className="block text-sm font-semibold text-slate-600 mb-2">
-              Keywords (comma separated)
-            </label>
+            <label className="block mb-2 text-sm font-semibold">Keywords</label>
+
             <input
               type="text"
-              placeholder="taxi, delhi to agra, cab service"
-              className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              value={keywords.join(", ")}
-              onChange={(e) =>
-                setKeywords(e.target.value.split(",").map((k) => k.trim()))
-              }
+              value={keywords}
+              onChange={(e) => setKeywords(e.target.value)}
+              placeholder="seo, travel, taxi"
+              className="w-full p-3 border border-primary rounded-lg outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
           {/* Hashtags */}
           <div className="mb-5">
-            <label className="block text-sm font-semibold text-slate-600 mb-2">
-              Hashtags
-            </label>
+            <label className="block mb-2 text-sm font-semibold">Hashtags</label>
+
             <input
               type="text"
-              placeholder="#taxi #travel #agra"
-              className="w-full p-3 border border-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              value={hashtags.join(", ")}
-              onChange={(e) =>
-                setHashtags(e.target.value.split(",").map((h) => h.trim()))
-              }
+              value={hashtags}
+              onChange={(e) => setHashtags(e.target.value)}
+              placeholder="#travel, #cab"
+              className="w-full p-3 border border-primary rounded-lg outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
           {/* Editor */}
-          <div className="border border-primary rounded-lg overflow-hidden">
-            <JoditEditor
-              value={content}
-              onBlur={(newContent) => setContent(newContent)}
-            />
+          <div className="mb-6">
+            <label className="block mb-2 text-sm font-semibold">
+              Blog Content
+            </label>
+
+            <div className="border border-primary rounded-lg overflow-hidden">
+              <JoditEditor
+                value={content}
+                onChange={(newContent) => setContent(newContent)}
+              />
+            </div>
           </div>
 
-          {/* Button */}
-          <div className="flex justify-end mt-5">
+          {/* Buttons */}
+          <div className="flex gap-3 justify-end">
+            {editingId && (
+              <button
+                onClick={resetForm}
+                className="px-5 py-2 border rounded-lg"
+              >
+                Cancel
+              </button>
+            )}
+
             <button
               onClick={handleSubmit}
-              className="bg-primary cursor-pointer text-white px-6 py-2 rounded-lg shadow hover:opacity-90 transition"
+              disabled={submitting}
+              className="px-6 py-2 bg-primary text-white rounded-lg hover:opacity-90"
             >
-              {editingId ? "Update Blog" : "Publish Blog"}
+              {submitting
+                ? "Saving..."
+                : editingId
+                  ? "Update Blog"
+                  : "Publish Blog"}
             </button>
           </div>
         </div>
 
         {/* Blog List */}
-        {blogs.length > 0 ? (
-          <div>
-            <h2 className="text-2xl font-semibold text-slate-800 mb-4">
-              📚 All Blogs
-            </h2>
+        <h2 className="text-2xl font-semibold text-slate-800 mb-6">
+          📚 All Blogs
+        </h2>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {blogs.map((blog) => (
-                <div
-                  key={blog.id}
-                  className="bg-white rounded-2xl shadow-md p-5 hover:shadow-lg transition"
-                >
-                  {/* Title */}
-                  <h3 className="text-lg font-bold text-slate-800 mb-1">
-                    {blog.title}
-                  </h3>
-
-                  {/* Slug (URL) */}
-                  <Link
-                    href={`${blog.slug}`}
-                    target="_blank"
-                    className="text-xs text-primary mb-2"
-                  >
-                    {blog.slug}
-                  </Link>
-
-                  {/* Description */}
-                  <p className="text-sm text-slate-600 mb-3 line-clamp-2">
-                    {blog.description}
-                  </p>
-
-                  {/* Content Preview */}
-                  <div
-                    className="text-sm text-slate-500 line-clamp-2 mb-3"
-                    dangerouslySetInnerHTML={{ __html: blog.content }}
-                  />
-
-                  {/* Keywords */}
-                  <div className="flex flex-wrap gap-2 mb-3">
-                    {blog.keywords?.map((key, index) => (
-                      <span
-                        key={index}
-                        className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded"
-                      >
-                        {key}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Hashtags */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {blog.hashtags?.map((tag, index) => (
-                      <span
-                        key={index}
-                        className="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Actions */}
-                  <div className="flex justify-between items-center">
-                    <button
-                      onClick={() => handleEdit(blog)}
-                      className="text-sm px-4 py-1 rounded-md bg-blue-50 text-blue-600 hover:bg-blue-100 transition cursor-pointer"
-                    >
-                      ✏️ Edit
-                    </button>
-
-                    <button
-                      onClick={() => handleDelete(blog.id)}
-                      className="text-sm px-4 py-1 rounded-md bg-red-50 text-red-600 hover:bg-red-100 transition cursor-pointer"
-                    >
-                      🗑 Delete
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
+        {loading ? (
+          <p>Loading blogs...</p>
+        ) : blogs.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-slate-500">No blogs found</p>
           </div>
         ) : (
-          <div className="text-center py-20">
-            <p className="text-lg font-semibold text-gray-500">
-              No blogs available
-            </p>
-            <p className="text-sm text-gray-400 mt-2">
-              Start by creating your first blog ✍️
-            </p>
-            <button
-              onClick={() => router.push("/admin/blogs/create")}
-              className="mt-4 px-5 py-2 bg-primary text-white rounded-lg cursor-pointer"
-            >
-              + Create Blog
-            </button>
+          <div className="grid md:grid-cols-2 gap-6">
+            {blogs.map((blog) => (
+              <div
+                key={blog.id}
+                className="bg-slate-50 rounded-2xl p-5 shadow hover:shadow-lg transition"
+              >
+                <h3 className="text-lg font-bold text-slate-800">
+                  {blog.title}
+                </h3>
+
+                <p className="text-xs text-primary mt-1">{blog.category}</p>
+
+                <Link
+                  href={`/${blog.slug}`}
+                  target="_blank"
+                  className="text-sm text-primary block mt-1"
+                >
+                  /{blog.slug}
+                </Link>
+
+                <p className="text-sm text-slate-600 mt-3 line-clamp-2">
+                  {blog.description}
+                </p>
+
+                <div
+                  className="text-sm text-slate-500 mt-3 line-clamp-2"
+                  dangerouslySetInnerHTML={{ __html: blog.content }}
+                />
+
+                <div className="flex gap-2 mt-4">
+                  <button
+                    onClick={() => handleEdit(blog)}
+                    className="px-4 py-1 text-sm bg-blue-100 text-blue-600 rounded-lg"
+                  >
+                    Edit
+                  </button>
+
+                  <button
+                    onClick={() => handleDelete(blog.id)}
+                    className="px-4 py-1 text-sm bg-red-100 text-red-600 rounded-lg"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         )}
       </div>
