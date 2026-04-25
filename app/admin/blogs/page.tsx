@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import {
@@ -29,11 +28,11 @@ interface Blog {
   keywords: string[];
   hashtags: string[];
   content: string;
-  createdAt?: any;
+  createdAt?: { seconds: number; nanoseconds: number };
 }
 
 export default function AdminBlogs() {
-  const router = useRouter();
+
 
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
@@ -84,7 +83,7 @@ export default function AdminBlogs() {
       })) as Blog[];
 
       setBlogs(data);
-    } catch (error) {
+    } catch {
       toast.error("Failed to load blogs");
     } finally {
       setLoading(false);
@@ -145,7 +144,7 @@ export default function AdminBlogs() {
 
       resetForm();
       fetchBlogs();
-    } catch (error) {
+    } catch {
       toast.error("Something went wrong");
     } finally {
       setSubmitting(false);

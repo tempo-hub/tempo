@@ -11,7 +11,7 @@ type Blog = {
   slug: string;
   description: string;
   content: string;
-  createdAt?: any;
+  createdAt?: { seconds: number; nanoseconds: number };
 };
 
 export default function BlogDetails({

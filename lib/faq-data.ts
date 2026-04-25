@@ -67,11 +67,13 @@ export const GLOBAL_FAQS: FAQ[] = [
   },
 ];
 
-export function generateRouteFaqs(origin: string, destination: string): FAQ[] {
+export function generateRouteFaqs(origin: string, destination: string, distance?: number, duration?: string): FAQ[] {
+  const distanceInfo = distance ? ` (approx ${distance} km)` : "";
+  const durationInfo = duration ? ` in around ${duration}` : "";
   return [
     {
       question: `What is cheapest tempo traveller fare in ${origin} to ${destination}?`,
-      answer: `We offer some of the cheapest tempo traveller fares from ${origin} to ${destination} with clean vehicles, experienced drivers, and transparent pricing.`,
+      answer: `We offer some of the cheapest tempo traveller fares from ${origin} to ${destination}${distanceInfo} with clean vehicles, experienced drivers, and transparent pricing.`,
     },
     {
       question: `How to get lowest tempo traveller cost in ${origin} to ${destination}?`,
@@ -83,7 +85,7 @@ export function generateRouteFaqs(origin: string, destination: string): FAQ[] {
     },
     {
       question: `Do you provide cheap tempo traveller with driver in ${origin} to ${destination}?`,
-      answer: `Yes, we provide affordable tempo traveller booking from ${origin} to ${destination} with professional driver service included.`,
+      answer: `Yes, we provide affordable tempo traveller booking from ${origin} to ${destination}${distanceInfo}${durationInfo} with professional driver service included.`,
     },
     {
       question: `What is minimum cheapest package for ${origin} to ${destination}?`,
