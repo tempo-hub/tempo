@@ -58,11 +58,32 @@ export const Offer = (price: number, route: string, slug: string) => ({
   description: `Book luxury tempo traveller for ${route} at affordable fare with AC seating and professional driver.`,
 
   provider: {
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "TaxiService"],
     name: "Chiku Cab",
     url: "https://yatratempotraveller.com",
-    areaServed: "Uttar Pradesh",
+    telephone: "+916280820037",
+    priceRange: "Starts ₹18/km",
+
+    image: "https://yatratempotraveller.com/ytfavicon.png",
+
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Varanasi",
+      addressRegion: "Uttar Pradesh",
+      addressCountry: "IN",
+      postalCode: "221001"
+    },
+
+    areaServed: [
+      "Varanasi",
+      "Lucknow",
+      "Ayodhya",
+      "Prayagraj",
+      "Uttar Pradesh"
+    ]
   },
+
+  areaServed: "Uttar Pradesh",
 
   offers: {
     "@type": "Offer",
@@ -70,7 +91,9 @@ export const Offer = (price: number, route: string, slug: string) => ({
     priceCurrency: "INR",
     availability: "https://schema.org/InStock",
     url: `https://yatratempotraveller.com/${slug}`,
+    itemCondition: "https://schema.org/NewCondition"
   },
 
   image: "https://yatratempotraveller.com/vehicles/12-seater-chiku.jpg",
+  url: `https://yatratempotraveller.com/${slug}`
 });
