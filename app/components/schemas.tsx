@@ -68,10 +68,11 @@ export const Offer = (price: number, route: string, slug: string) => ({
 
     address: {
       "@type": "PostalAddress",
+      streetAddress: "D 63/59 Shivpurwa, Mahmoorganj, Varanasi, Uttar Pradesh 221010",
       addressLocality: "Varanasi",
       addressRegion: "Uttar Pradesh",
       addressCountry: "IN",
-      postalCode: "221001"
+      postalCode: "221010"
     },
 
     areaServed: [
