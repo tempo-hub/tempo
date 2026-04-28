@@ -3,11 +3,12 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import Image from "next/image";
 import { toast } from "react-hot-toast";
 
-const JoditEditor = dynamic(() => import("jodit-react"), { ssr: false });
+const JoditEditor = dynamic(() => import("jodit-react"), {
+  ssr: false,
+});
 
 export default function CreateBlog() {
   const router = useRouter();
@@ -19,9 +20,13 @@ export default function CreateBlog() {
   const [hashtags, setHashtags] = useState("");
   const [content, setContent] = useState("");
   const [category, setCategory] = useState("");
+
+  const [image, setImage] = useState<File | null>(null);
+  const [preview, setPreview] = useState("");
+
   const [loading, setLoading] = useState(false);
 
-  // auto generate slug
+  /* Generate Slug */
   const generateSlug = (text: string) => {
     return text
       .toLowerCase()
@@ -30,6 +35,7 @@ export default function CreateBlog() {
       .replace(/\s+/g, "-");
   };
 
+  /* Reset Form */
   const resetForm = () => {
     setTitle("");
     setSlug("");
@@ -38,17 +44,76 @@ export default function CreateBlog() {
     setHashtags("");
     setContent("");
     setCategory("");
+    setImage(null);
+    setPreview("");
   };
 
+  /* Handle Image */
+  const handleImage = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+
+    if (!file) return;
+
+    /* Validate Type */
+    if (!file.type.startsWith("image/")) {
+      toast.error("Only image files allowed");
+      return;
+    }
+
+    /* Validate Size (2MB) */
+    if (file.size > 2 * 1024 * 1024) {
+      toast.error("Image must be under 2MB");
+      return;
+    }
+
+    setImage(file);
+    setPreview(URL.createObjectURL(file));
+  };
+
+  /* Upload Image To Cloudinary */
+  const uploadImageToCloudinary = async () => {
+    if (!image) return "";
+
+    const formData = new FormData();
+    formData.append("file", image);
+    formData.append(
+      "upload_preset",
+      process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET!,
+    );
+
+    const res = await fetch(
+      `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`,
+      {
+        method: "POST",
+        body: formData,
+      },
+    );
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.error?.message || "Image upload failed");
+    }
+
+    return data.secure_url;
+  };
+
+  /* Submit Blog */
   const handleSubmit = async () => {
+    const cleanContent = content
+      .replace(/<[^>]*>/g, "")
+      .replace(/&nbsp;/g, "")
+      .trim();
+
     if (
-      !title ||
-      !slug ||
-      !description ||
-      !keywords ||
-      !hashtags ||
-      !content ||
-      !category
+      !title.trim() ||
+      !slug.trim() ||
+      !description.trim() ||
+      !keywords.trim() ||
+      !hashtags.trim() ||
+      !category.trim() ||
+      !image ||
+      !cleanContent
     ) {
       toast.error("Please fill all fields");
       return;
@@ -56,37 +121,56 @@ export default function CreateBlog() {
 
     try {
       setLoading(true);
-      console.log("1. Submit started");
 
-      const docRef = await addDoc(collection(db, "blogs"), {
-        title: title.trim(),
-        slug: slug.trim(),
-        category,
-        description: description.trim(),
-        keywords: keywords
-          .split(",")
-          .map((i) => i.trim())
-          .filter(Boolean),
-        hashtags: hashtags
-          .split(",")
-          .map((i) => i.trim())
-          .filter(Boolean),
-        content,
-        createdAt: serverTimestamp(),
+      /* Upload Image */
+      const imageURL = await uploadImageToCloudinary();
+
+      /* Save Blog */
+      const res = await fetch("/api/blogs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+
+        body: JSON.stringify({
+          title: title.trim(),
+          slug: slug.trim(),
+          description: description.trim(),
+          category,
+          content,
+          image: imageURL,
+
+          keywords: keywords
+            .split(",")
+            .map((item) => item.trim())
+            .filter(Boolean),
+
+          hashtags: hashtags
+            .split(",")
+            .map((item) => item.trim())
+            .filter(Boolean),
+        }),
       });
 
-      console.log("2. Saved:", docRef.id);
+      const data = await res.json();
+      console.log("Create Blogs Data", data);
+
+      if (!res.ok) {
+        throw new Error(data.message || "Failed to publish");
+      }
 
       toast.success("Blog Published Successfully 🎉");
 
       resetForm();
 
       router.push("/admin/blogs");
-    } catch (error) {
-      console.error("Publish error:", error);
-      toast.error("Something went wrong");
+      router.refresh();
+    } catch (error: unknown) {
+      console.log(error);
+      const message =
+        error instanceof Error ? error.message : "Something went wrong";
+      toast.error(message);
     } finally {
-      console.log("3. Finished");
       setLoading(false);
     }
   };
@@ -94,142 +178,123 @@ export default function CreateBlog() {
   return (
     <div className="min-h-screen bg-slate-100 py-10 px-4">
       <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-        {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-slate-800">
-            📝 Create New Blog
-          </h1>
-          <p className="text-slate-500 mt-2">
-            Create SEO optimized blog for your website
-          </p>
-        </div>
+        {/* Heading */}
+        <h1 className="text-3xl font-bold text-slate-800 mb-8">
+          Create New Blog
+        </h1>
 
         {/* Title */}
-        <div className="mb-5">
-          <label className="block text-sm font-semibold mb-2">Blog Title</label>
-
-          <input
-            type="text"
-            placeholder="Enter blog title"
-            value={title}
-            onChange={(e) => {
-              setTitle(e.target.value);
-              setSlug(generateSlug(e.target.value));
-            }}
-            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
-          />
-        </div>
+        <input
+          type="text"
+          placeholder="Blog Title"
+          value={title}
+          onChange={(e) => {
+            setTitle(e.target.value);
+            setSlug(generateSlug(e.target.value));
+          }}
+          className="w-full p-3 border rounded-xl mb-4 outline-none focus:ring-2 focus:ring-primary"
+        />
 
         {/* Slug */}
-        <div className="mb-5">
-          <label className="block text-sm font-semibold mb-2">
-            Blog URL Slug
-          </label>
-
-          <input
-            type="text"
-            placeholder="blog-url-slug"
-            value={slug}
-            onChange={(e) => setSlug(e.target.value)}
-            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
-          />
-        </div>
+        <input
+          type="text"
+          placeholder="Blog Slug"
+          value={slug}
+          onChange={(e) => setSlug(generateSlug(e.target.value))}
+          className="w-full p-3 border rounded-xl mb-4 outline-none focus:ring-2 focus:ring-primary"
+        />
 
         {/* Category */}
-        <div className="mb-5">
-          <label className="block text-sm font-semibold mb-2">Category</label>
+        <select
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+          className="w-full p-3 border rounded-xl mb-4 outline-none focus:ring-2 focus:ring-primary"
+        >
+          <option value="">Select Category</option>
+          <option value="Travel Guide">Travel Guide</option>
+          <option value="Taxi Fare">Taxi Fare</option>
+          <option value="Tempo Traveller">Tempo Traveller</option>
+          <option value="Tour Package">Tour Package</option>
+          <option value="Outstation Taxi">Outstation Taxi</option>
+        </select>
 
-          <select
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            className="w-full p-3 border border-primary rounded-lg bg-white"
-          >
-            <option value="">Select Category</option>
-            <option value="Travel Guide">Travel Guide</option>
-            <option value="Taxi Fare">Taxi Fare</option>
-            <option value="Tempo Traveller">Tempo Traveller</option>
-            <option value="Pilgrimage Tour">Pilgrimage Tour</option>
-            <option value="Outstation Trip">Outstation Trip</option>
-            <option value="Local Sightseeing">Local Sightseeing</option>
-          </select>
-        </div>
-
-        {/* Meta Description */}
-        <div className="mb-5">
-          <label className="block text-sm font-semibold mb-2">
-            Meta Description
-          </label>
-
-          <textarea
-            rows={4}
-            placeholder="Write SEO description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
-          />
-        </div>
+        {/* Description */}
+        <textarea
+          rows={4}
+          placeholder="Meta Description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          className="w-full p-3 border rounded-xl mb-4 outline-none focus:ring-2 focus:ring-primary"
+        />
 
         {/* Keywords */}
-        <div className="mb-5">
-          <label className="block text-sm font-semibold mb-2">
-            Keywords (comma separated)
-          </label>
-
-          <input
-            type="text"
-            placeholder="varanasi taxi, ayodhya cab, traveller rent"
-            value={keywords}
-            onChange={(e) => setKeywords(e.target.value)}
-            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
-          />
-        </div>
+        <input
+          type="text"
+          placeholder="keyword1, keyword2, keyword3"
+          value={keywords}
+          onChange={(e) => setKeywords(e.target.value)}
+          className="w-full p-3 border rounded-xl mb-4 outline-none focus:ring-2 focus:ring-primary"
+        />
 
         {/* Hashtags */}
+        <input
+          type="text"
+          placeholder="#travel, #taxi, #varanasi"
+          value={hashtags}
+          onChange={(e) => setHashtags(e.target.value)}
+          className="w-full p-3 border rounded-xl mb-4 outline-none focus:ring-2 focus:ring-primary"
+        />
+
+        {/* Image */}
         <div className="mb-5">
-          <label className="block text-sm font-semibold mb-2">
-            Hashtags (comma separated)
-          </label>
+          <label className="block font-semibold mb-2">Blog Image</label>
 
           <input
-            type="text"
-            placeholder="#travel, #taxi, #varanasi"
-            value={hashtags}
-            onChange={(e) => setHashtags(e.target.value)}
-            className="w-full p-3 border border-primary rounded-lg focus:ring-2 focus:ring-primary outline-none"
+            type="file"
+            accept="image/*"
+            onChange={handleImage}
+            className="w-full p-3 border rounded-xl"
+          />
+
+          {preview && (
+            <div className="relative w-full h-60 mt-4 rounded-xl overflow-hidden border">
+              <Image
+                src={preview}
+                alt="Preview"
+                fill
+                className="object-cover"
+              />
+            </div>
+          )}
+        </div>
+
+        {/* Editor */}
+        <div className="mb-6 border rounded-xl overflow-hidden">
+          <JoditEditor
+            value={content}
+            config={{
+              readonly: false,
+              height: 600,
+              toolbarAdaptive: false,
+              askBeforePasteHTML: false,
+              askBeforePasteFromWord: false,
+              defaultActionOnPaste: "insert_as_html",
+              cleanHTML: {
+                removeEmptyElements: false,
+              },
+            }}
+            onBlur={(newContent) => setContent(newContent)}
           />
         </div>
 
-        {/* Content */}
-        <div className="mb-6">
-          <label className="block text-sm font-semibold mb-2">
-            Blog Content
-          </label>
-
-          <div className="border border-primary rounded-lg overflow-hidden">
-            <JoditEditor
-              value={content}
-              onChange={(newContent) => setContent(newContent)}
-            />
-          </div>
-        </div>
-
-        {/* Buttons */}
-        <div className="flex justify-end gap-3">
-          <button
-            onClick={resetForm}
-            className="px-5 py-2 border rounded-lg text-slate-600 hover:bg-slate-100"
-          >
-            Cancel
-          </button>
-
-          <button
-            onClick={handleSubmit}
-            disabled={loading}
-            className="px-6 py-2 bg-primary text-white rounded-lg hover:opacity-90 disabled:opacity-60"
-          >
-            {loading ? "Publishing..." : "Publish Blog"}
-          </button>
-        </div>
+        {/* Submit */}
+        <button
+          onClick={handleSubmit}
+          disabled={loading}
+          className="px-6 py-3 bg-primary text-white rounded-xl hover:opacity-90 transition disabled:opacity-60 cursor-pointer"
+        >
+          {loading ? "Publishing..." : "Publish Blog"}
+        </button>
       </div>
     </div>
   );

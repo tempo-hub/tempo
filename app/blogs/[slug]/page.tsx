@@ -1,117 +1,65 @@
-"use client";
+import { notFound } from "next/navigation";
+import { connectDB } from "@/lib/mongodb";
+import Blog from "@/models/Blog";
+import Image from "next/image";
 
-import { useEffect, useState, use } from "react";
-import Link from "next/link";
-import { collection, getDocs, query, where } from "firebase/firestore";
-import { db } from "@/lib/firebase";
-
-type Blog = {
-  id: string;
-  title: string;
-  slug: string;
-  description: string;
-  content: string;
-  createdAt?: { seconds: number; nanoseconds: number };
-};
-
-export default function BlogDetails({
+export default async function BlogDetailPage({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const { slug } = use(params);
+  const { slug } = await params;
 
-  const [blog, setBlog] = useState<Blog | null>(null);
-  const [loading, setLoading] = useState(true);
+  await connectDB();
 
-  useEffect(() => {
-    const fetchBlog = async () => {
-      try {
-        const q = query(collection(db, "blogs"), where("slug", "==", slug));
-
-        const snapshot = await getDocs(q);
-
-        if (!snapshot.empty) {
-          const doc = snapshot.docs[0];
-
-          setBlog({
-            id: doc.id,
-            ...doc.data(),
-          } as Blog);
-        } else {
-          setBlog(null);
-        }
-      } catch (error) {
-        console.log(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchBlog();
-  }, [slug]);
-
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <p className="text-slate-500">Loading blog...</p>
-      </div>
-    );
-  }
+  const blog = await Blog.findOne({ slug }).lean();
 
   if (!blog) {
-    return (
-      <div className="min-h-screen flex flex-col items-center justify-center px-4">
-        <h2 className="text-3xl font-bold text-slate-800 mb-3">
-          Blog Not Found
-        </h2>
-
-        <p className="text-slate-500 mb-6 text-center">
-          The blog you are looking for does not exist.
-        </p>
-
-        <Link
-          href="/blogs"
-          className="px-6 py-2 bg-primary text-white rounded-lg"
-        >
-          Back to Blogs
-        </Link>
-      </div>
-    );
+    notFound();
   }
 
   return (
     <div className="bg-slate-50 min-h-screen py-10 px-4">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm p-8">
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-slate-800 leading-tight">
-          {blog.title}
-        </h1>
+      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+        {/* Blog Image */}
+        {blog.image && (
+          <div className="relative w-full aspect-video bg-gray-100">
+            <Image
+              src={blog.image}
+              alt={blog.title}
+              fill
+              className="object-contain"
+              sizes="(max-width: 1024px) 100vw, 1024px"
+            />
+          </div>
+        )}
 
-        {/* Description */}
-        <p className="text-slate-500 mt-3 text-lg">{blog.description}</p>
+        {/* Content Wrapper */}
+        <div className="p-6 md:p-10">
+          {/* Title */}
+          <h1 className="text-3xl md:text-5xl font-black text-slate-800 leading-tight mb-4">
+            {blog.title}
+          </h1>
 
-        {/* Date */}
-        <p className="text-sm text-slate-400 mt-4 border-b pb-6">
-          {blog.createdAt?.seconds
-            ? new Date(blog.createdAt.seconds * 1000).toLocaleDateString(
-                "en-IN",
-                {
-                  day: "numeric",
-                  month: "long",
-                  year: "numeric",
-                },
-              )
-            : "Recently Published"}
-        </p>
+          {/* Meta */}
+          <div className="flex flex-wrap gap-3 text-sm text-gray-500 mb-8 border-b pb-5">
+            <span>{new Date(blog.createdAt).toLocaleDateString("en-IN")}</span>
 
-        {/* Content */}
-        <div
-          className="prose prose-slate max-w-none mt-8"
-          dangerouslySetInnerHTML={{
-            __html: blog.content,
-          }}
-        />
+            {blog.category && (
+              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">
+                {blog.category}
+              </span>
+            )}
+          </div>
+
+          {/* Blog Content */}
+          <div
+            className="blog-content max-w-none overflow-x-auto"
+            dangerouslySetInnerHTML={{
+              __html: blog.content,
+            }}
+          />
+        </div>
       </div>
     </div>
   );

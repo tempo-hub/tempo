@@ -4,7 +4,7 @@ import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
-import { Lock, Mail, ShieldCheck } from "lucide-react";
+import { Lock, Mail, ShieldCheck, Eye, EyeOff } from "lucide-react";
 import { toast } from "react-hot-toast";
 
 export default function Login() {
@@ -13,6 +13,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   const login = async () => {
     try {
@@ -79,12 +80,24 @@ export default function Login() {
               <Lock className="w-5 h-5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
 
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 placeholder="Enter password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full border border-slate-300 rounded-xl pl-10 pr-4 py-3 outline-none focus:ring-2 focus:ring-primary"
               />
+
+              <button
+               type="button"
+               onClick={() => setShowPassword(!showPassword)}
+               className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-700"
+    >
+              {showPassword ? (
+                  <EyeOff className="w-5 h-5" />
+                   ) : (
+                   <Eye className="w-5 h-5" />
+                   )}
+              </button>
             </div>
           </div>
 

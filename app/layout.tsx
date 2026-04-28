@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.yatratempotraveller.com"),
   title: "YatraTempoTraveller.com | Best Tempo Traveller Service",
   description:
     "Book tempo travellers in Varanasi for group pilgrimages, weddings & tours. 9 to 26 seater tempo travellers to Ayodhya, Prayagraj, Lucknow & more at fixed prices.",
@@ -44,9 +45,6 @@ export default function RootLayout({
       gtag('config', 'G-MX3BZ6LBQP');
     `}
         </Script>
-
-        {/* Example Chat Widget */}
-        <Script src="https://widget.js" strategy="lazyOnload" />
 
         <Navbar />
 

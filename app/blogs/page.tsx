@@ -2,19 +2,19 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { collection, getDocs, orderBy, query } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import Image from "next/image";
 
 type Blog = {
-  id: string;
+  _id: string;
   title: string;
   slug: string;
+  category?: string;
   description: string;
   keywords: string[];
   hashtags: string[];
   content: string;
-  createdAt?: { seconds: number; nanoseconds: number };
   image?: string;
+  createdAt?: string;
 };
 
 export default function BlogsPage() {
@@ -24,21 +24,14 @@ export default function BlogsPage() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const q = query(
-          collection(db, "blogs"),
-          orderBy("createdAt", "desc")
-        );
+        setLoading(true);
 
-        const snapshot = await getDocs(q);
+        const res = await fetch("/api/blogs");
+        const data = await res.json();
 
-        const data = snapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        })) as Blog[];
-
-        setBlogs(data);
+        setBlogs(data.blogs || []);
       } catch (error) {
-        console.log(error);
+        console.log("Error fetching blogs:", error);
       } finally {
         setLoading(false);
       }
@@ -49,65 +42,80 @@ export default function BlogsPage() {
 
   return (
     <div className="bg-gradient-to-b from-slate-50 to-white min-h-screen py-12 px-6">
-      {/* Heading */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-black text-slate-800">
           Travel Blogs
         </h1>
-
         <p className="text-slate-500 mt-2">
           Explore routes, tips & travel guides
         </p>
       </div>
 
-      {/* Loading */}
       {loading && (
         <p className="text-center text-gray-400">
           Loading blogs...
         </p>
       )}
 
-      {/* Empty */}
       {!loading && blogs.length === 0 && (
         <p className="text-center text-gray-400">
           No blogs available
         </p>
       )}
 
-      {/* Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        {blogs.map((blog) => (
-          <Link key={blog.id} href={`/blogs/${blog.slug}`}>
-            <div className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 cursor-pointer bg-white">
+        {blogs.map((blog) => {
+          const categorySlug = blog.category
+            ?.toLowerCase()
+            .trim()
+            .replace(/\s+/g, "-");
 
+          return (
+            <div
+              key={blog._id}
+              className="group rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition bg-white"
+            >
+              {/* Image */}
+              <Link href={`/blogs/${blog.slug}`}>
+                <div className="relative w-full h-56 overflow-hidden">
+                  <Image
+                    src={blog.image || "/default-blog.jpg"}
+                    alt={blog.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition"
+                  />
+                </div>
+              </Link>
+
+              {/* Content */}
               <div className="p-5">
-                {/* Title */}
-                <h2 className="text-lg font-bold text-slate-800 line-clamp-2">
-                  {blog.title}
-                </h2>
+                {blog.category && (
+                  <Link href={`/blogs/category/${categorySlug}`}>
+                    <p className="text-sm text-primary font-semibold mb-2 hover:underline">
+                      {blog.category}
+                    </p>
+                  </Link>
+                )}
 
-                {/* Slug */}
-                <p className="text-xs text-primary mt-1">
-                  {blog.slug}
-                </p>
+                <Link href={`/blogs/${blog.slug}`}>
+                  <h2 className="text-lg font-bold text-slate-800 line-clamp-2 hover:text-primary">
+                    {blog.title}
+                  </h2>
+                </Link>
 
-                {/* Description */}
                 <p className="text-sm text-gray-600 mt-2 line-clamp-2">
                   {blog.description}
                 </p>
 
-                {/* Date */}
                 <p className="text-xs mt-3 text-gray-400">
-                  {blog.createdAt?.seconds
-                    ? new Date(
-                        blog.createdAt.seconds * 1000
-                      ).toLocaleDateString("en-IN")
+                  {blog.createdAt
+                    ? new Date(blog.createdAt).toLocaleDateString("en-IN")
                     : "Recently"}
                 </p>
               </div>
             </div>
-          </Link>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
