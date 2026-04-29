@@ -70,32 +70,25 @@ export default function CreateBlog() {
     setPreview(URL.createObjectURL(file));
   };
 
-  /* Upload Image To Cloudinary */
-  const uploadImageToCloudinary = async () => {
+  const uploadImageToMongoDB = async () => {
     if (!image) return "";
 
     const formData = new FormData();
-    formData.append("file", image);
-    formData.append(
-      "upload_preset",
-      process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET!,
-    );
+    formData.append("image", image);
 
-    const res = await fetch(
-      `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`,
-      {
-        method: "POST",
-        body: formData,
-      },
-    );
+    const res = await fetch("/api/upload", {
+      method: "POST",
+      body: formData,
+    });
 
     const data = await res.json();
+    console.log(data);
 
     if (!res.ok) {
-      throw new Error(data.error?.message || "Image upload failed");
+      throw new Error(data.error || "Image upload failed");
     }
 
-    return data.secure_url;
+    return data.imageId;
   };
 
   /* Submit Blog */
@@ -123,7 +116,7 @@ export default function CreateBlog() {
       setLoading(true);
 
       /* Upload Image */
-      const imageURL = await uploadImageToCloudinary();
+      const imageId = await uploadImageToMongoDB();
 
       /* Save Blog */
       const res = await fetch("/api/blogs", {
@@ -138,7 +131,7 @@ export default function CreateBlog() {
           description: description.trim(),
           category,
           content,
-          image: imageURL,
+          imageId,
 
           keywords: keywords
             .split(",")
@@ -152,17 +145,24 @@ export default function CreateBlog() {
         }),
       });
 
-      const data = await res.json();
-      console.log("Create Blogs Data", data);
+      const text = await res.text();
+
+      let data;
+
+      try {
+        data = JSON.parse(text);
+      } catch {
+        console.log("Server Response:", text);
+        throw new Error("Invalid server response");
+      }
 
       if (!res.ok) {
-        throw new Error(data.message || "Failed to publish");
+        throw new Error(data.message || "Publish failed");
       }
 
       toast.success("Blog Published Successfully 🎉");
 
       resetForm();
-
       router.push("/admin/blogs");
       router.refresh();
     } catch (error: unknown) {

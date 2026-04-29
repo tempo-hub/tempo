@@ -9,10 +9,10 @@ export default async function BlogDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-
   await connectDB();
 
   const blog = await Blog.findOne({ slug }).lean();
+  console.log("Blog", blog);
 
   if (!blog) {
     notFound();
@@ -22,14 +22,15 @@ export default async function BlogDetailPage({
     <div className="bg-slate-50 min-h-screen py-10 px-4">
       <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
         {/* Blog Image */}
-        {blog.image && (
+        {blog.imageId && (
           <div className="relative w-full aspect-video bg-gray-100">
             <Image
-              src={blog.image}
+              src={`/api/image/${blog.imageId.toString()}`}
               alt={blog.title}
               fill
               className="object-contain"
               sizes="(max-width: 1024px) 100vw, 1024px"
+              unoptimized
             />
           </div>
         )}

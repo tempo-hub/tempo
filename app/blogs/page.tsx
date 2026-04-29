@@ -13,7 +13,7 @@ type Blog = {
   keywords: string[];
   hashtags: string[];
   content: string;
-  image?: string;
+  imageId?: string;
   createdAt?: string;
 };
 
@@ -43,24 +43,16 @@ export default function BlogsPage() {
   return (
     <div className="bg-gradient-to-b from-slate-50 to-white min-h-screen py-12 px-6">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-black text-slate-800">
-          Travel Blogs
-        </h1>
+        <h1 className="text-4xl font-black text-slate-800">Travel Blogs</h1>
         <p className="text-slate-500 mt-2">
           Explore routes, tips & travel guides
         </p>
       </div>
 
-      {loading && (
-        <p className="text-center text-gray-400">
-          Loading blogs...
-        </p>
-      )}
+      {loading && <p className="text-center text-gray-400">Loading blogs...</p>}
 
       {!loading && blogs.length === 0 && (
-        <p className="text-center text-gray-400">
-          No blogs available
-        </p>
+        <p className="text-center text-gray-400">No blogs available</p>
       )}
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -79,10 +71,14 @@ export default function BlogsPage() {
               <Link href={`/blogs/${blog.slug}`}>
                 <div className="relative w-full h-56 overflow-hidden">
                   <Image
-                    src={blog.image || "/default-blog.jpg"}
+                    src={
+                      blog.imageId
+                        ? `/api/image/${blog.imageId}`
+                        : "/default-blog.jpg"
+                    }
                     alt={blog.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition"
+                    className="object-cover transition"
                   />
                 </div>
               </Link>

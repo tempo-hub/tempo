@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
 
 const JoditEditor = dynamic(() => import("jodit-react"), {
@@ -18,11 +19,13 @@ interface Blog {
   keywords: string[];
   hashtags: string[];
   content: string;
-  image?: string;
+  imageId?: string;
   createdAt?: string;
 }
 
 export default function AdminBlogs() {
+  const router = useRouter();
+
   const [blogs, setBlogs] = useState<Blog[]>([]);
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
@@ -40,7 +43,7 @@ export default function AdminBlogs() {
   const [image, setImage] = useState<File | null>(null);
   const [preview, setPreview] = useState("");
 
-  /* Generate Slug */
+  /* Slug */
   const generateSlug = (text: string) => {
     return text
       .toLowerCase()
@@ -84,31 +87,24 @@ export default function AdminBlogs() {
   };
 
   /* Upload Image */
-  const uploadImageToCloudinary = async () => {
+  const uploadImageToMongoDB = async () => {
     if (!image) return "";
 
     const formData = new FormData();
-    formData.append("file", image);
-    formData.append(
-      "upload_preset",
-      process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET!,
-    );
+    formData.append("image", image);
 
-    const res = await fetch(
-      `https://api.cloudinary.com/v1_1/${process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}/image/upload`,
-      {
-        method: "POST",
-        body: formData,
-      },
-    );
+    const res = await fetch("/api/upload", {
+      method: "POST",
+      body: formData,
+    });
 
     const data = await res.json();
 
     if (!res.ok) {
-      throw new Error("Image upload failed");
+      throw new Error(data.error || "Image upload failed");
     }
 
-    return data.secure_url;
+    return data.imageId;
   };
 
   /* Fetch Blogs */
@@ -131,16 +127,21 @@ export default function AdminBlogs() {
     fetchBlogs();
   }, []);
 
-  /* Create / Update Blog */
+  /* Submit */
   const handleSubmit = async () => {
+    const cleanContent = content
+      .replace(/<[^>]*>/g, "")
+      .replace(/&nbsp;/g, "")
+      .trim();
+
     if (
-      !title ||
-      !slug ||
-      !category ||
-      !description ||
-      !keywords ||
-      !hashtags ||
-      !content
+      !title.trim() ||
+      !slug.trim() ||
+      !category.trim() ||
+      !description.trim() ||
+      !keywords.trim() ||
+      !hashtags.trim() ||
+      !cleanContent
     ) {
       toast.error("Please fill all fields");
       return;
@@ -149,10 +150,17 @@ export default function AdminBlogs() {
     try {
       setSubmitting(true);
 
-      let imageURL = preview;
+      let imageId = "";
 
+      /* New image selected */
       if (image) {
-        imageURL = await uploadImageToCloudinary();
+        imageId = await uploadImageToMongoDB();
+      }
+
+      /* Edit mode + no new image */
+      if (editingId && !image) {
+        const oldBlog = blogs.find((item) => item._id === editingId);
+        imageId = oldBlog?.imageId || "";
       }
 
       const payload = {
@@ -161,7 +169,7 @@ export default function AdminBlogs() {
         category,
         description: description.trim(),
         content,
-        image: imageURL,
+        imageId,
 
         keywords: keywords
           .split(",")
@@ -187,6 +195,11 @@ export default function AdminBlogs() {
 
         toast.success("Blog Updated Successfully");
       } else {
+        if (!imageId) {
+          toast.error("Please upload image");
+          return;
+        }
+
         res = await fetch("/api/blogs", {
           method: "POST",
           headers: {
@@ -206,18 +219,21 @@ export default function AdminBlogs() {
 
       resetForm();
       fetchBlogs();
+      router.refresh();
     } catch (error: unknown) {
       const message =
         error instanceof Error ? error.message : "Something went wrong";
+
       toast.error(message);
     } finally {
       setSubmitting(false);
     }
   };
 
-  /* Delete Blog */
+  /* Delete */
   const handleDelete = async (id: string) => {
     const confirmDelete = confirm("Delete this blog?");
+
     if (!confirmDelete) return;
 
     try {
@@ -235,11 +251,12 @@ export default function AdminBlogs() {
       fetchBlogs();
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : "Delete failed";
+
       toast.error(message);
     }
   };
 
-  /* Edit Blog */
+  /* Edit */
   const handleEdit = (blog: Blog) => {
     setTitle(blog.title);
     setSlug(blog.slug);
@@ -250,8 +267,13 @@ export default function AdminBlogs() {
     setContent(blog.content);
 
     setEditingId(blog._id);
-    setPreview(blog.image || "");
     setImage(null);
+
+    if (blog.imageId) {
+      setPreview(`/api/image/${blog.imageId}`);
+    } else {
+      setPreview("");
+    }
 
     window.scrollTo({
       top: 0,
@@ -262,7 +284,6 @@ export default function AdminBlogs() {
   return (
     <div className="min-h-screen bg-slate-100 py-10 px-4">
       <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-        {/* Heading */}
         <h1 className="text-3xl font-bold text-slate-800 mb-8">
           Admin Blog Dashboard
         </h1>
@@ -273,7 +294,6 @@ export default function AdminBlogs() {
             {editingId ? "Edit Blog" : "Create New Blog"}
           </h2>
 
-          {/* Title */}
           <input
             type="text"
             placeholder="Blog title"
@@ -285,12 +305,48 @@ export default function AdminBlogs() {
             className="w-full p-3 border rounded-xl mb-4"
           />
 
-          {/* Slug */}
           <input
             type="text"
-            placeholder="slug"
+            placeholder="Slug"
             value={slug}
             onChange={(e) => setSlug(generateSlug(e.target.value))}
+            className="w-full p-3 border rounded-xl mb-4"
+          />
+
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            className="w-full p-3 border rounded-xl mb-4"
+          >
+            <option value="">Select Category</option>
+            <option value="Travel Guide">Travel Guide</option>
+            <option value="Taxi Fare">Taxi Fare</option>
+            <option value="Tempo Traveller">Tempo Traveller</option>
+            <option value="Tour Package">Tour Package</option>
+            <option value="Outstation Taxi">Outstation Taxi</option>
+          </select>
+
+          <textarea
+            rows={4}
+            placeholder="Meta Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            className="w-full p-3 border rounded-xl mb-4"
+          />
+
+          <input
+            type="text"
+            placeholder="keyword1, keyword2"
+            value={keywords}
+            onChange={(e) => setKeywords(e.target.value)}
+            className="w-full p-3 border rounded-xl mb-4"
+          />
+
+          <input
+            type="text"
+            placeholder="#travel, #taxi"
+            value={hashtags}
+            onChange={(e) => setHashtags(e.target.value)}
             className="w-full p-3 border rounded-xl mb-4"
           />
 
@@ -317,47 +373,6 @@ export default function AdminBlogs() {
             )}
           </div>
 
-          {/* Category */}
-          <select
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
-            className="w-full p-3 border rounded-xl mb-4 outline-none focus:ring-2 focus:ring-primary"
-          >
-            <option value="">Select Category</option>
-            <option value="Travel Guide">Travel Guide</option>
-            <option value="Taxi Fare">Taxi Fare</option>
-            <option value="Tempo Traveller">Tempo Traveller</option>
-            <option value="Tour Package">Tour Package</option>
-            <option value="Outstation Taxi">Outstation Taxi</option>
-          </select>
-
-          {/* Description */}
-          <textarea
-            rows={4}
-            placeholder="Meta description"
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            className="w-full p-3 border rounded-xl mb-4"
-          />
-
-          {/* Keywords */}
-          <input
-            type="text"
-            placeholder="keyword1, keyword2"
-            value={keywords}
-            onChange={(e) => setKeywords(e.target.value)}
-            className="w-full p-3 border rounded-xl mb-4"
-          />
-
-          {/* Hashtags */}
-          <input
-            type="text"
-            placeholder="#travel, #taxi"
-            value={hashtags}
-            onChange={(e) => setHashtags(e.target.value)}
-            className="w-full p-3 border rounded-xl mb-4"
-          />
-
           {/* Editor */}
           <div className="mb-6 border rounded-xl overflow-hidden">
             <JoditEditor
@@ -365,33 +380,6 @@ export default function AdminBlogs() {
               config={{
                 readonly: false,
                 height: 600,
-                toolbarAdaptive: false,
-                askBeforePasteHTML: false,
-                askBeforePasteFromWord: false,
-                defaultActionOnPaste: "insert_as_html",
-                beautifyHTML: false,
-                cleanHTML: {
-                  removeEmptyElements: false,
-                  fillEmptyParagraph: false,
-                },
-                buttons: [
-                  "source",
-                  "|",
-                  "paragraph",
-                  "bold",
-                  "italic",
-                  "underline",
-                  "|",
-                  "ul",
-                  "ol",
-                  "|",
-                  "table",
-                  "link",
-                  "image",
-                  "|",
-                  "undo",
-                  "redo",
-                ],
               }}
               onBlur={(newContent) => setContent(newContent)}
             />
@@ -436,10 +424,10 @@ export default function AdminBlogs() {
                 key={blog._id}
                 className="bg-slate-50 rounded-2xl p-5 shadow"
               >
-                {blog.image && (
+                {blog.imageId && (
                   <div className="relative w-full h-48 rounded-xl overflow-hidden mb-4">
                     <Image
-                      src={blog.image}
+                      src={`/api/image/${blog.imageId}`}
                       alt={blog.title}
                       fill
                       className="object-cover"

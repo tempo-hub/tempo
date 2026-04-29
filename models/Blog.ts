@@ -8,7 +8,7 @@ const BlogSchema = new mongoose.Schema({
   keywords: [String],
   hashtags: [String],
   content: String,
-  image: String,
+  imageId: String,
   createdAt: {
     type: Date,
     default: Date.now,

@@ -8,6 +8,13 @@ export async function POST(req: Request) {
 
     const body = await req.json();
 
+    if (!body.title || !body.slug || !body.imageId) {
+      return NextResponse.json(
+        { success: false, message: "Missing required fields" },
+        { status: 400 },
+      );
+    }
+
     const blog = await Blog.create(body);
 
     return NextResponse.json({
@@ -17,15 +24,8 @@ export async function POST(req: Request) {
   } catch (err: unknown) {
     const message =
       err instanceof Error ? err.message : "Failed to create blog";
-    console.error("POST BLOG ERROR:", message);
 
-    return NextResponse.json(
-      {
-        success: false,
-        message,
-      },
-      { status: 500 },
-    );
+    return NextResponse.json({ success: false, message }, { status: 500 });
   }
 }
 
@@ -33,7 +33,9 @@ export async function GET() {
   try {
     await connectDB();
 
-    const blogs = await Blog.find().sort({ createdAt: -1 });
+    const blogs = await Blog.find().sort({
+      createdAt: -1,
+    });
 
     return NextResponse.json({
       success: true,
@@ -42,14 +44,7 @@ export async function GET() {
   } catch (err: unknown) {
     const message =
       err instanceof Error ? err.message : "Failed to fetch blogs";
-    console.error("GET BLOG ERROR:", message);
 
-    return NextResponse.json(
-      {
-        success: false,
-        message,
-      },
-      { status: 500 },
-    );
+    return NextResponse.json({ success: false, message }, { status: 500 });
   }
 }
