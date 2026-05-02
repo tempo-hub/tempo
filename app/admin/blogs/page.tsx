@@ -399,7 +399,7 @@ export default function AdminBlogs() {
                   method: "POST",
                   filesVariableName: "image",
 
-                  process: (resp: any) => {
+                  process: (resp: { imageId: string }) => {
                     return {
                       files: [`/api/image/${resp.imageId}`],
                       path: "",
