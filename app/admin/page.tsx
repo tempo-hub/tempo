@@ -82,9 +82,7 @@ export default function AdminDashboard() {
 
         <div className="bg-white px-5 py-3 rounded-2xl shadow-sm border">
           <p className="text-xs text-slate-500">Status</p>
-          <p className="font-semibold text-green-600">
-            System Active
-          </p>
+          <p className="font-semibold text-green-600">System Active</p>
         </div>
       </div>
 

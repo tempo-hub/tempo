@@ -4,7 +4,7 @@ import { GridFSBucket, ObjectId } from "mongodb";
 
 export async function GET(
   _req: Request,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
     await connectDB();
@@ -20,10 +20,7 @@ export async function GET(
       .toArray();
 
     if (!files.length) {
-      return new Response(
-        "Image not found",
-        { status: 404 }
-      );
+      return new Response("Image not found", { status: 404 });
     }
 
     const file = files[0] as {
@@ -36,23 +33,17 @@ export async function GET(
       bucketName: "images",
     });
 
-    const stream =
-      bucket.openDownloadStream(fileId);
+    const stream = bucket.openDownloadStream(fileId);
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return new Response(stream as any, {
       headers: {
         "Content-Type":
-          file.metadata?.contentType ||
-          "application/octet-stream",
-        "Cache-Control":
-          "public, max-age=31536000, immutable",
+          file.metadata?.contentType || "application/octet-stream",
+        "Cache-Control": "public, max-age=31536000, immutable",
       },
     });
   } catch {
-    return new Response(
-      "Invalid image",
-      { status: 400 }
-    );
+    return new Response("Invalid image", { status: 400 });
   }
 }

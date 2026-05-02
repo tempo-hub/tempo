@@ -144,6 +144,7 @@ export default async function FarePage({
           ),
         }}
       />
+      
       {/* ==================== HERO SECTION (Fare + CTA) ==================== */}
       <section className="pt-12 pb-20 bg-gradient-to-br from-slate-900 via-slate-800 to-secondary border-b border-border relative overflow-hidden">
         {" "}

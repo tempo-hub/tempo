@@ -251,7 +251,6 @@ export default function AdminBlogs() {
       fetchBlogs();
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : "Delete failed";
-
       toast.error(message);
     }
   };
@@ -265,7 +264,6 @@ export default function AdminBlogs() {
     setKeywords(blog.keywords.join(", "));
     setHashtags(blog.hashtags.join(", "));
     setContent(blog.content);
-
     setEditingId(blog._id);
     setImage(null);
 
@@ -380,6 +378,38 @@ export default function AdminBlogs() {
               config={{
                 readonly: false,
                 height: 600,
+                toolbarAdaptive: false,
+
+                askBeforePasteHTML: false,
+                askBeforePasteFromWord: false,
+                defaultActionOnPaste: "insert_as_html",
+
+                cleanHTML: {
+                  removeEmptyElements: false,
+                  fillEmptyParagraph: false,
+                },
+
+                /* Enable HTML mode */
+                buttons:
+                  "source,bold,italic,underline,|,ul,ol,|,image,link,|,align,|,undo,redo",
+
+                /* Image Upload */
+                uploader: {
+                  url: "/api/upload",
+                  method: "POST",
+                  filesVariableName: "image",
+
+                  process: (resp: any) => {
+                    return {
+                      files: [`/api/image/${resp.imageId}`],
+                      path: "",
+                      baseurl: "",
+                    };
+                  },
+                },
+
+                /* Prevent HTML cleaning issues */
+                disablePlugins: ["clean-html"],
               }}
               onBlur={(newContent) => setContent(newContent)}
             />
@@ -387,19 +417,17 @@ export default function AdminBlogs() {
 
           {/* Buttons */}
           <div className="flex gap-3 justify-end">
-            {editingId && (
-              <button
-                onClick={resetForm}
-                className="px-5 py-2 border rounded-xl"
-              >
-                Cancel
-              </button>
-            )}
+            <button
+              onClick={resetForm}
+              className="px-5 py-2 border rounded-xl cursor-pointer"
+            >
+              Cancel
+            </button>
 
             <button
               onClick={handleSubmit}
               disabled={submitting}
-              className="px-6 py-2 bg-primary text-white rounded-xl"
+              className="px-6 py-2 bg-primary text-white rounded-xl cursor-pointer"
             >
               {submitting
                 ? "Saving..."
@@ -413,6 +441,7 @@ export default function AdminBlogs() {
         {/* Blog List */}
         <h2 className="text-2xl font-semibold mb-6">All Blogs</h2>
 
+        {/* Blog Cards */}
         {loading ? (
           <p>Loading blogs...</p>
         ) : blogs.length === 0 ? (

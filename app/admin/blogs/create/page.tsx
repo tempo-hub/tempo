@@ -276,25 +276,59 @@ export default function CreateBlog() {
               readonly: false,
               height: 600,
               toolbarAdaptive: false,
+
               askBeforePasteHTML: false,
               askBeforePasteFromWord: false,
               defaultActionOnPaste: "insert_as_html",
+
               cleanHTML: {
                 removeEmptyElements: false,
+                fillEmptyParagraph: false,
               },
+
+              /* Enable HTML mode */
+              buttons:
+                "source,bold,italic,underline,|,ul,ol,|,image,link,|,align,|,undo,redo",
+
+              /* Image Upload */
+              uploader: {
+                url: "/api/upload",
+                method: "POST",
+                filesVariableName: "image",
+
+                process: (resp: any) => {
+                  return {
+                    files: [`/api/image/${resp.imageId}`],
+                    path: "",
+                    baseurl: "",
+                  };
+                },
+              },
+
+              /* Prevent HTML cleaning issues */
+              disablePlugins: ["clean-html"],
             }}
             onBlur={(newContent) => setContent(newContent)}
           />
         </div>
 
-        {/* Submit */}
-        <button
-          onClick={handleSubmit}
-          disabled={loading}
-          className="px-6 py-3 bg-primary text-white rounded-xl hover:opacity-90 transition disabled:opacity-60 cursor-pointer"
-        >
-          {loading ? "Publishing..." : "Publish Blog"}
-        </button>
+        {/* Submit and Cancel*/}
+        <div className="flex justify-end gap-4 mt-4">
+          <button
+            onClick={resetForm}
+            className="px-5 py-2 border rounded-xl cursor-pointer"
+          >
+            Cancel
+          </button>
+
+          <button
+            onClick={handleSubmit}
+            disabled={loading}
+            className="px-6 py-3 bg-primary text-white rounded-xl hover:opacity-90 transition disabled:opacity-60 cursor-pointer"
+          >
+            {loading ? "Publishing..." : "Publish Blog"}
+          </button>
+        </div>
       </div>
     </div>
   );

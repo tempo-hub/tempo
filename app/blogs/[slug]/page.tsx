@@ -12,7 +12,6 @@ export default async function BlogDetailPage({
   await connectDB();
 
   const blog = await Blog.findOne({ slug }).lean();
-  console.log("Blog", blog);
 
   if (!blog) {
     notFound();

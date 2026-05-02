@@ -460,6 +460,34 @@ export const generateFareFaqs = (origin: string, destination: string) => {
       question: `Tempo traveller fare in ${origin} with driver to ${destination}?`,
       answer: `Tempo traveller fare from ${origin} to ${destination} with driver depends on vehicle model, total distance, and trip duration. We provide complete fare packages with driver included.`,
     },
+    {
+      question: `Are toll taxes included in tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `Toll taxes, parking charges, and state taxes are usually not included in the base fare for tempo traveller from ${origin} to ${destination}. These charges are paid extra as per actuals during the trip.`,
+    },
+    {
+      question: `Is night charge applicable for tempo traveller from ${origin} to ${destination}?`,
+      answer: `Yes, night charges may apply if the journey continues between late night hours. The charges depend on travel duration and route conditions.`,
+    },
+    {
+      question: `What are the seating options available for tempo traveller from ${origin} to ${destination}?`,
+      answer: `You can choose from multiple seating options like 9 seater, 12 seater, 16 seater, 20 seater, and luxury Maharaja tempo traveller for travel from ${origin} to ${destination}.`,
+    },
+    {
+      question: `Is AC included in tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `Yes, most tempo travellers come with AC facility. However, in hilly areas, AC may not be used due to vehicle performance and safety reasons.`,
+    },
+    {
+      question: `What is the cancellation policy for tempo traveller booking from ${origin} to ${destination}?`,
+      answer: `Cancellation policy depends on the booking terms. Usually, cancellations made 24–48 hours before the journey may get partial refund or adjustment.`,
+    },
+    {
+      question: `Can I book one-way tempo traveller from ${origin} to ${destination}?`,
+      answer: `Yes, one-way tempo traveller booking is available from ${origin} to ${destination}. However, charges may be calculated based on round trip distance or minimum km policy.`,
+    },
+    {
+      question: `Is advance payment required to book tempo traveller from ${origin} to ${destination}?`,
+      answer: `Yes, a small advance payment is required to confirm your tempo traveller booking from ${origin} to ${destination}. Remaining amount can be paid during or after the trip.`,
+    },
   ];
 };
 

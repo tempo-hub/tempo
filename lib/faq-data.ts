@@ -67,9 +67,15 @@ export const GLOBAL_FAQS: FAQ[] = [
   },
 ];
 
-export function generateRouteFaqs(origin: string, destination: string, distance?: number, duration?: string): FAQ[] {
+export function generateRouteFaqs(
+  origin: string,
+  destination: string,
+  distance?: number,
+  duration?: string,
+): FAQ[] {
   const distanceInfo = distance ? ` (approx ${distance} km)` : "";
   const durationInfo = duration ? ` in around ${duration}` : "";
+
   return [
     {
       question: `What is cheapest tempo traveller fare in ${origin} to ${destination}?`,
@@ -102,6 +108,34 @@ export function generateRouteFaqs(origin: string, destination: string, distance?
     {
       question: `Do cheapest fares include driver in ${origin} to ${destination}?`,
       answer: `Yes, most cheapest tempo traveller fare packages from ${origin} to ${destination} include driver service. Additional charges may apply for tolls or extra days.`,
+    },
+    {
+      question: `Are there any discounts on tempo traveller from ${origin} to ${destination}?`,
+      answer: `Yes, we offer seasonal discounts and group booking offers for tempo traveller from ${origin} to ${destination}. Contact us to get the best deal available.`,
+    },
+    {
+      question: `What is best time to book cheap tempo traveller from ${origin} to ${destination}?`,
+      answer: `The best time to book a cheap tempo traveller from ${origin} to ${destination} is during weekdays or off-season when demand is lower and prices are more affordable.`,
+    },
+    {
+      question: `Can I get special price for group booking from ${origin} to ${destination}?`,
+      answer: `Yes, we provide special discounted pricing for group bookings from ${origin} to ${destination}, especially for family trips, tours, and events.`,
+    },
+    {
+      question: `Do you provide round trip discount from ${origin} to ${destination}?`,
+      answer: `Yes, round trip bookings from ${origin} to ${destination}${distanceInfo} often come with better pricing compared to one-way bookings.`,
+    },
+    {
+      question: `Is advance booking cheaper for ${origin} to ${destination}?`,
+      answer: `Yes, advance booking for tempo traveller from ${origin} to ${destination} helps you get better vehicle availability and lower pricing.`,
+    },
+    {
+      question: `Do you provide fixed rate packages from ${origin} to ${destination}?`,
+      answer: `Yes, we offer fixed rate packages for tempo traveller from ${origin} to ${destination}${distanceInfo}${durationInfo}, which include clear pricing without hidden costs.`,
+    },
+    {
+      question: `Can I negotiate tempo traveller fare from ${origin} to ${destination}?`,
+      answer: `We already provide competitive pricing, but you can contact us directly to check for ongoing offers or customized pricing for your trip.`,
     },
   ];
 }

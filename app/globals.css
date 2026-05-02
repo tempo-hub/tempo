@@ -235,6 +235,50 @@
   margin-bottom: 10px;
 }
 
+/* BLOG CONTENT STYLING */
+
+.blog-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.blog-content .blog-img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+/* CTA BUTTON */
+.blog-content .cta-btn {
+  display: inline-block;
+  background: #ff6347;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 20px 0;
+  transition: 0.3s ease;
+}
+
+.blog-content .cta-btn:hover {
+  opacity: 0.9;
+}
+
+/* Typography */
+.blog-content h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.blog-content p {
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .blog-content {
