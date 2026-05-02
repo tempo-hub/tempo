@@ -4,16 +4,18 @@ import { GridFSBucket, ObjectId } from "mongodb";
 
 export async function GET(
   _req: Request,
-  { params }: { params: Promise<{ id: string }> },
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    await connectDB();
     const { id } = await params;
+    await connectDB();
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const db = mongoose.connection.db as any;
+    const db = mongoose.connection.db;
+    if (!db) throw new Error("DB not connected");
+
     const fileId = new ObjectId(id);
 
+    // get file info
     const files = await db
       .collection("images.files")
       .find({ _id: fileId })
@@ -23,27 +25,33 @@ export async function GET(
       return new Response("Image not found", { status: 404 });
     }
 
-    const file = files[0] as {
-      metadata?: {
-        contentType?: string;
-      };
-    };
+    const file = files[0];
 
-    const bucket = new GridFSBucket(db, {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const bucket = new GridFSBucket(db as any, {
       bucketName: "images",
     });
 
     const stream = bucket.openDownloadStream(fileId);
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return new Response(stream as any, {
+    // convert stream → buffer
+    const chunks: Uint8Array[] = [];
+
+    for await (const chunk of stream) {
+      chunks.push(chunk);
+    }
+
+    const buffer = Buffer.concat(chunks);
+
+    return new Response(buffer, {
       headers: {
         "Content-Type":
-          file.metadata?.contentType || "application/octet-stream",
+          file.metadata?.contentType || "image/jpeg",
         "Cache-Control": "public, max-age=31536000, immutable",
       },
     });
-  } catch {
+  } catch (error) {
+    console.error("IMAGE FETCH ERROR:", error);
     return new Response("Invalid image", { status: 400 });
   }
 }

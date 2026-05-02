@@ -395,16 +395,29 @@ export default function AdminBlogs() {
 
                 /* Image Upload */
                 uploader: {
-                  url: "/api/upload",
+                  url: `/api/upload`,
                   method: "POST",
-                  filesVariableName: "image",
+
+                  filesVariableName: () => "image",
+
+                  isSuccess: (resp: { success: boolean }) => {
+                    console.log("UPLOAD SUCCESS:", resp);
+                    return resp.success === true;
+                  },
 
                   process: (resp: { imageId: string }) => {
+                    console.log("UPLOAD RESPONSE:", resp);
+
                     return {
                       files: [`/api/image/${resp.imageId}`],
+                      isImages: [true],
                       path: "",
                       baseurl: "",
                     };
+                  },
+
+                  error: (e: Error) => {
+                    console.log("UPLOAD ERROR:", e);
                   },
                 },
 
