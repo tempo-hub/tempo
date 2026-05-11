@@ -56,6 +56,7 @@ export default function RootLayout({
             duration: 3000,
           }}
         />
+        
         <Footer />
         <WhatsAppButton />
       </body>

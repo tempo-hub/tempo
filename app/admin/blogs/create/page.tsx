@@ -26,7 +26,6 @@ export default function CreateBlog() {
 
   const [loading, setLoading] = useState(false);
 
-
   /* Generate Slug */
   const generateSlug = (text: string) => {
     return text

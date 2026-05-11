@@ -139,3 +139,41 @@ export function generateRouteFaqs(
     },
   ];
 }
+
+export function generatePerKmFareFAQs(
+  startCity: string,
+  destinationCity: string,
+  vehicle: string,
+) {
+  return [
+    {
+      question: `What is the ${vehicle} per km fare from ${startCity} to ${destinationCity}?`,
+      answer: `The ${vehicle} per km fare from ${startCity} to ${destinationCity} usually starts from ₹18 per kilometer. Final pricing depends on total distance, trip duration, toll tax, parking charges, and vehicle type.`,
+    },
+
+    {
+      question: `Can I book ${vehicle} from ${startCity} to ${destinationCity} for a family trip?`,
+      answer: `Yes, you can book ${vehicle} from ${startCity} to ${destinationCity} for family tours, group travel, weddings, corporate trips, and outstation journeys with professional drivers and comfortable seating.`,
+    },
+
+    {
+      question: `Is driver allowance included in ${startCity} to ${destinationCity} fare?`,
+      answer: `Driver charges are generally included for normal trips. However, for multi-day tours or long-distance routes from ${startCity} to ${destinationCity}, additional driver allowance may apply.`,
+    },
+
+    {
+      question: `Which Tempo Traveller options are available for ${startCity} to ${destinationCity}?`,
+      answer: `We provide 9 seater, 12 seater, 14 seater, 17 seater, 20 seater Maharaja Tempo Traveller and Force Urbania booking options for routes between ${startCity} and ${destinationCity}.`,
+    },
+
+    {
+      question: `How can I book ${vehicle} from ${startCity} to ${destinationCity}?`,
+      answer: `You can easily book ${vehicle} from ${startCity} to ${destinationCity} through WhatsApp, phone call, or online inquiry form by sharing your travel date and passenger details.`,
+    },
+
+    {
+      question: `Is one-way booking available from ${startCity} to ${destinationCity}?`,
+      answer: `Yes, one-way ${vehicle} booking is available from ${startCity} to ${destinationCity} on selected routes. Pricing may vary depending on route availability and return distance.`,
+    },
+  ];
+}

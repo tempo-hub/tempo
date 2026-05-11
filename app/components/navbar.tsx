@@ -14,6 +14,7 @@ export const Navbar = () => {
     { name: "Fare Calculator", href: "/calculator" },
     { name: "All Fares", href: "/fares" },
     { name: "All Cheapest Fares", href: "/cheapests" },
+    { name: "All PerKm Fares", href: "/per-km-fare" },
     { name: "Blogs", href: "/blogs" },
   ];
 
