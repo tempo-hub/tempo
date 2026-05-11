@@ -14,6 +14,7 @@ import {
   Phone,
   MessageCircle,
   CheckCircle,
+  XCircle,
   Heart,
 } from "lucide-react";
 import PerKmFareSection from "../shared/PerKmFareSection";
@@ -484,9 +485,7 @@ Estimated Fare: ₹${estimatedFare}`,
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
-                  <div className="h-6 w-6 text-red-600 text-xl font-bold">
-                    ✕
-                  </div>
+                  <XCircle className="h-6 w-6 text-red-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900">
                   What&apos;s Excluded
