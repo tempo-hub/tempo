@@ -4013,7 +4013,7 @@ export const ROUTES: TaxiRoute[] = [
 
   {
     id: "vns-bdg",
-    slug: "varanasi-to-bodh-gaya-tempo-traveller-fare",
+    slug: "varanasi-to-bodhgaya-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Bodh Gaya",
     distance: 255,
