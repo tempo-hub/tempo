@@ -10,6 +10,25 @@ import {
 } from "lucide-react";
 
 export const Footer = () => {
+  const routes = [
+    {
+      name: "Varanasi to Ayodhya",
+      slug: "varanasi-to-ayodhya-tempo-traveller-fare",
+    },
+    {
+      name: "Varanasi to Prayagraj",
+      slug: "varanasi-to-prayagraj-tempo-traveller-fare",
+    },
+    {
+      name: "Varanasi to Lucknow",
+      slug: "varanasi-to-lucknow-tempo-traveller-fare",
+    },
+    {
+      name: "Varanasi to Bodh Gaya",
+      slug: "varanasi-to-bodhgaya-tempo-traveller-fare",
+    },
+  ];
+
   return (
     <footer className="bg-secondary text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,18 +63,13 @@ export const Footer = () => {
               Popular Routes
             </h4>
             <ul className="space-y-4">
-              {[
-                "Varanasi to Ayodhya",
-                "Varanasi to Prayagraj",
-                "Varanasi to Lucknow",
-                "Varanasi to Bodh Gaya",
-              ].map((route) => (
-                <li key={route}>
+              {routes.map((route) => (
+                <li key={route.slug}>
                   <Link
-                    href={`/fare/${route.toLowerCase().replace(/ /g, "-")}-tempo-traveller-fare`}
+                    href={`/fare/${route.slug}`}
                     className="text-slate-400 hover:text-white transition-colors"
                   >
-                    {route} Tempo Traveller
+                    {route.name} Tempo Traveller
                   </Link>
                 </li>
               ))}
