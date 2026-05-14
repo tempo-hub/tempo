@@ -442,11 +442,13 @@ export function getPricingDetails(distance: number, isSameDay: boolean = true) {
   const perKmRateMin = 18;
   const perKmRateMax = 35;
 
-  const baseFareMin = distance * perKmRateMin;
-  const baseFareMax = distance * perKmRateMax;
+  const calculatedDistance = distance > 250 ? 250 : distance;
+
+  const baseFareMin = calculatedDistance * perKmRateMin;
+  const baseFareMax = calculatedDistance * perKmRateMax;
 
   return {
-    perKmRateDescription: `₹${perKmRateMin}-${perKmRateMax}/km (diesel + driver) – perfect for ${distance} km journey`,
+    perKmRateDescription: `₹${perKmRateMin}-${perKmRateMax}/km (diesel + driver) – perfect for ${calculatedDistance} km journey`,
 
     nightHaltAllowance: isSameDay
       ? "Not needed for same day return"
@@ -456,7 +458,7 @@ export function getPricingDetails(distance: number, isSameDay: boolean = true) {
 
     parkingCharges: "Free parking at most temples and tourist spots",
 
-    tollCharges: estimateToll(distance),
+    tollCharges: estimateToll(calculatedDistance),
 
     includedFree: [
       "Driver charges for 10 hours",
@@ -465,7 +467,7 @@ export function getPricingDetails(distance: number, isSameDay: boolean = true) {
       "Parking at temples (up to 2 hours)",
     ],
 
-    whyPerKmBetter: `For ${distance} km journey, per-km pricing saves up to 30-40% compared to fixed rental rates.`,
+    whyPerKmBetter: `For ${calculatedDistance} km journey, per-km pricing saves up to 30-40% compared to fixed rental rates.`,
 
     nightStayNote: isSameDay
       ? "Same day return possible. Early morning departure recommended."
