@@ -442,7 +442,7 @@ export function getPricingDetails(distance: number, isSameDay: boolean = true) {
   const perKmRateMin = 18;
   const perKmRateMax = 35;
 
-  const calculatedDistance = distance > 250 ? 250 : distance;
+  const calculatedDistance = getCalculatedDistance(distance);
 
   const baseFareMin = calculatedDistance * perKmRateMin;
   const baseFareMax = calculatedDistance * perKmRateMax;
@@ -493,6 +493,10 @@ function estimateToll(distance: number) {
   if (distance < 500) return "₹300 - ₹800";
   return "₹500 - ₹1500 (depending on route)";
 }
+
+export const getCalculatedDistance = (distance: number) => {
+  return distance > 250 ? 250 : distance;
+};
 
 export const ROUTES: TaxiRoute[] = [
   {
@@ -4665,7 +4669,10 @@ export const ROUTES: TaxiRoute[] = [
 ROUTES.forEach(addMediaToRoute);
 
 export const calculateFare = (distance: number, rate: number) => {
-  const base = distance * 2 * rate;
-  const surcharge = 500; // Flat service fee for tempo traveller
-  return Math.round(base + surcharge);
+  const calculatedDistance = getCalculatedDistance(distance);
+
+  const base = calculatedDistance * rate;
+  // const surcharge = 500;
+
+  return Math.round(base);
 };

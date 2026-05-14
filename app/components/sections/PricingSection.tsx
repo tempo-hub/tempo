@@ -25,6 +25,8 @@ export function PricingSection({ route, fare, ratePerKm }: Props) {
     "Clean and sanitized cars",
   ];
 
+  const actualDistance = route.distance;
+
   return (
     <section className="py-20 bg-gradient-to-br from-slate-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,22 +55,19 @@ export function PricingSection({ route, fare, ratePerKm }: Props) {
                 <div className="text-5xl font-bold text-slate-900 mb-2">
                   ₹{fare.toLocaleString()}
                 </div>
-                <p className="text-slate-500 text-sm">
-                  Inclusive of all taxes and charges
-                </p>
               </div>
 
               <div className="space-y-3 pt-4 border-t border-slate-100">
                 <div className="flex justify-between items-center">
                   <span className="text-slate-600">Base Fare</span>
                   <span className="font-semibold text-slate-900">
-                    ₹{ratePerKm.toFixed(2)}/km
+                    ₹{ratePerKm}/km
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-slate-600">Total Distance</span>
                   <span className="font-semibold text-slate-900">
-                    {route.distance} km
+                    {actualDistance} km
                   </span>
                 </div>
                 <div className="flex justify-between items-center pt-2 border-t border-slate-100">
@@ -111,7 +110,7 @@ export function PricingSection({ route, fare, ratePerKm }: Props) {
               </div>
 
               <div className="text-sm text-slate-500 flex items-center justify-between">
-                <span>Per kilometer rate</span>
+                <span>Base Per kilometer rate</span>
                 <span className="font-mono font-semibold">₹{ratePerKm}</span>
               </div>
             </div>

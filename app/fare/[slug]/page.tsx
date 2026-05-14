@@ -101,15 +101,7 @@ export default async function FarePage({
     },
   ];
 
-  // Pricing logic
-  const getRatePerKm = (distance: number) => {
-    if (distance > 300) return 12;
-    if (distance > 200) return 14;
-    if (distance > 100) return 16;
-    return 18;
-  };
-
-  const ratePerKm = getRatePerKm(route.distance);
+  const ratePerKm = 18
   const faqs = generateFareFaqs(route.origin, route.destination);
   FAQPage(faqs);
 
