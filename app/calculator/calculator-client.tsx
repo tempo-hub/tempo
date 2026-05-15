@@ -10,12 +10,15 @@ import {
   PhoneCall,
 } from "lucide-react";
 import { Button, Card } from "../components/ui-base";
+import { getCalculatedDistance } from "@/lib/data";
 
 export default function CalculatorClient() {
   const [distance, setDistance] = useState<number>(100);
   const [vehicleSize, setVehicleSize] = useState<number>(18); // Default rate for 17-20 seater
 
-  const fare = calculateFare(distance, vehicleSize);
+  const calculatedDistance = getCalculatedDistance(distance);
+
+  const fare = calculateFare(calculatedDistance, vehicleSize);
 
   const vehicleTypes = [
     { name: "9-12 Seater", rate: 16, desc: "Small groups & families" },
@@ -142,7 +145,7 @@ export default function CalculatorClient() {
 
               <div className="space-y-4">
                 <a
-                  href={`https://wa.me/919999999999?text=Hi, I want to book a ${vehicleSize} seater tempo traveller for a ${distance} KM round trip.`}
+                  href={`https://wa.me/916280820037?text=Hi, I want to book a ${vehicleSize} seater tempo traveller for a ${distance} KM round trip.`}
                 >
                   <Button className="w-full h-14 text-lg font-bold gap-3 rounded-xl shadow-lg shadow-primary/20">
                     <PhoneCall className="h-5 w-5" /> Book on WhatsApp

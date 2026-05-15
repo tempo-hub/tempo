@@ -438,6 +438,10 @@ function getCityGuideForDestination(destination: string) {
   return CITY_GUIDES[destination] || null;
 }
 
+export const getCalculatedDistance = (distance: number) => {
+  return distance < 250 ? 250 : distance;
+};
+
 export function getPricingDetails(distance: number, isSameDay: boolean = true) {
   const perKmRateMin = 18;
   const perKmRateMax = 35;
@@ -493,10 +497,6 @@ function estimateToll(distance: number) {
   if (distance < 500) return "₹300 - ₹800";
   return "₹500 - ₹1500 (depending on route)";
 }
-
-export const getCalculatedDistance = (distance: number) => {
-  return distance > 250 ? 250 : distance;
-};
 
 export const ROUTES: TaxiRoute[] = [
   {

@@ -1,24 +1,33 @@
-import { Metadata } from "next"
-import CalculatorClient from "./calculator-client"
+import { Metadata } from "next";
+import CalculatorClient from "./calculator-client";
 
 export const metadata: Metadata = {
-    title: "Tempo Traveller Fare Calculator | Instant Fixed Price Check",
-    description: "Calculate the exact fixed fare for your group trip from Varanasi. Select your vehicle size and distance for a transparent, no-advance quote.",
-    keywords: ["fare calculator", "taxi fare estimator", "Varanasi tempo traveller rate", "group travel price", "fixed cab fares"]
-}
+  title: "Tempo Traveller Fare Calculator | Instant Fixed Price Check",
+  description:
+    "Calculate the exact fixed fare for your group trip from Varanasi. Select your vehicle size and distance for a transparent, no-advance quote.",
+  keywords: [
+    "fare calculator",
+    "taxi fare estimator",
+    "Varanasi tempo traveller rate",
+    "group travel price",
+    "fixed cab fares",
+  ],
+};
 
 export default function CalculatorPage() {
-    return (
-        <>
-            <CalculatorClient />
-            {/* FAQ Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQPage(GLOBAL_FAQS)) }}
-            />
-        </>
-    )
+  return (
+    <>
+      <CalculatorClient />
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(FAQPage(GLOBAL_FAQS)),
+        }}
+      />
+    </>
+  );
 }
 
-import { FAQPage } from "../components/schemas"
-import { GLOBAL_FAQS } from "@/lib/faq-data"
+import { FAQPage } from "../components/schemas";
+import { GLOBAL_FAQS } from "@/lib/faq-data";

@@ -20,6 +20,7 @@ import {
 import PerKmFareSection from "../shared/PerKmFareSection";
 import { FAQSection } from "../sections";
 import { generatePerKmFareFAQs } from "@/lib/faq-data";
+import { getCalculatedDistance } from "@/lib/data";
 
 interface RouteProps {
   origin: string;
@@ -49,6 +50,8 @@ const ServiceTemplate = ({ route }: ServiceTemplateProps) => {
     route.destination,
     route.vehicle,
   );
+
+  const calculatedDistance = getCalculatedDistance(route.distance);
 
   // Structured data for SEO
   const structuredData = {
@@ -333,7 +336,7 @@ const ServiceTemplate = ({ route }: ServiceTemplateProps) => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {vehicleOptions.map((vehicle, index) => {
-              const estimatedFare = route.distance * 2 * vehicle.price;
+              const estimatedFare = calculatedDistance * vehicle.price;
 
               return (
                 <div
@@ -585,12 +588,12 @@ Estimated Fare: ₹${estimatedFare}`,
               </p>
 
               <p>
-                Whether you&apos;re traveling for a family vacation, corporate event,
-                wedding guest transportation, or a pilgrimage tour, our fleet of
-                well-maintained tempo travellers provides the ideal balance of
-                comfort and affordability. With prices starting at just{" "}
-                <strong>₹18 per kilometer</strong>, we offer transparent pricing
-                with no hidden charges.
+                Whether you&apos;re traveling for a family vacation, corporate
+                event, wedding guest transportation, or a pilgrimage tour, our
+                fleet of well-maintained tempo travellers provides the ideal
+                balance of comfort and affordability. With prices starting at
+                just <strong>₹18 per kilometer</strong>, we offer transparent
+                pricing with no hidden charges.
               </p>
 
               <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">
