@@ -10,7 +10,6 @@ import {
   ArrowRight,
   MapPin,
 } from "lucide-react";
-
 import { TaxiRoute, calculateFare } from "@/lib/data";
 
 import {

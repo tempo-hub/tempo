@@ -383,7 +383,7 @@ export const FAQSection = ({
   faqs: { question: string; answer: string }[];
   title?: string;
 }) => (
-  <section className="py-20 md:py-24 bg-white border-t border-border">
+  <section className="py-20 md:py-24 bg-white border-t border-border mt-4">
     <div className="max-w-4xl mx-auto px-4 sm:px-6">
       {/* Heading */}
       <div className="text-center mb-12 md:mb-16 space-y-4">

@@ -15,6 +15,7 @@ export const Navbar = () => {
     { name: "All Fares", href: "/fares" },
     { name: "All Cheapest Fares", href: "/cheapests" },
     { name: "All PerKm Fares", href: "/per-km-fare" },
+    { name: "All Urbania Fares", href: "/urbania" },
     { name: "Blogs", href: "/blogs" },
   ];
 
