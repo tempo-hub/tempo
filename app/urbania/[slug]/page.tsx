@@ -8,7 +8,6 @@ import {
   Users,
   Star,
   ShieldCheck,
-  Snowflake,
   ChevronRight,
   CheckCircle,
 } from "lucide-react";

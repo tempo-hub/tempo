@@ -25,18 +25,9 @@ import {
   DELHI_NCR_CHEAPEST_ROUTES,
 } from "@/lib/cheapestRoute";
 
-export const ALL_ROUTES = [
-  ...PRAYAGRAJ_CHEAPEST_ROUTES,
-  ...AYODHYA_CHEAPEST_ROUTES,
-  ...VARANASI_CHEAPEST_ROUTES,
-  ...UTTARAKHAND_CHEAPEST_ROUTES,
-  ...MADHYAPRADESH_CHEAPEST_ROUTES,
-  ...RAJASTHAN_CHEAPEST_ROUTES,
-  ...BIHAR_CHEAPEST_ROUTES,
-  ...DELHI_NCR_CHEAPEST_ROUTES,
-];
 
-export const URBANIA_FAQS = [
+
+const URBANIA_FAQS = [
   {
     question: "What is Force Urbania fare per kilometer?",
     answer:
