@@ -60,12 +60,12 @@ export default async function UrbaniaPage({ params }: Props) {
     {
       title: "12 Seater Urbania",
       price: "₹28/km",
-      image: "/vehicles/12-seater-urbania.png",
+      image: "/vehicles/12-Seater-Urbania.png",
     },
     {
       title: "17 Seater Urbania",
       price: "₹32/km",
-      image: "/vehicles/17-seater-urbania.png",
+      image: "/vehicles/17-Seater-Urbania.png",
     },
   ];
 
