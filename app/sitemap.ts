@@ -65,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Static Pages
+  // ----------Static Pages------------
   const staticUrls = [
     {
       url: baseUrl,
