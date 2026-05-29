@@ -25,8 +25,6 @@ import {
   DELHI_NCR_CHEAPEST_ROUTES,
 } from "@/lib/cheapestRoute";
 
-
-
 const URBANIA_FAQS = [
   {
     question: "What is Force Urbania fare per kilometer?",

@@ -41,6 +41,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // Per KM Fare URLs
+  const perKmFareUrls = ALL_CHEAPEST_ROUTES.map((route) => ({
+    url: `${baseUrl}/price/${route.origin
+      .toLowerCase()
+      .replace(/\s+/g, "-")}-to-${route.destination
+      .toLowerCase()
+      .replace(/\s+/g, "-")}-tempo-traveller-per-km-fare`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  // Urbania URLs
+  const urbaniaUrls = ALL_CHEAPEST_ROUTES.map((route) => ({
+    url: `${baseUrl}/urbania/${route.origin
+      .toLowerCase()
+      .replace(/\s+/g, "-")}-to-${route.destination
+      .toLowerCase()
+      .replace(/\s+/g, "-")}-urbania-fare`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
   // Static Pages
   const staticUrls = [
     {
@@ -62,6 +86,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/per-km-fare`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/urbania`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/calculator`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
@@ -75,5 +111,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...staticUrls, ...fareUrls, ...cheapestUrls];
+  return [
+    ...staticUrls,
+    ...fareUrls,
+    ...cheapestUrls,
+    ...perKmFareUrls,
+    ...urbaniaUrls,
+  ];
 }

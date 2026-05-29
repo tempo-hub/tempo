@@ -39,10 +39,48 @@ export async function generateMetadata({ params }: Props) {
     return {};
   }
 
-  return {
-    title: `${route.origin} to ${route.destination} Urbania Fare`,
+  const url = `https://yatratempotraveller.com/urbania/${slug}`;
 
-    description: `Book ${route.origin} to ${route.destination} Force Urbania rental service at best price.`,
+  const title = `${route.origin} to ${route.destination} Urbania Fare | Force Urbania Rent`;
+
+  const description = `Book ${route.origin} to ${route.destination} Force Urbania rental service at best price. Luxury 12 & 17 Seater Urbania available for weddings, family tours, airport transfers and outstation trips.`;
+
+  return {
+    title,
+    description,
+
+    keywords: [
+      `${route.origin} to ${route.destination} urbania fare`,
+      `${route.origin} to ${route.destination} urbania rent`,
+      `${route.origin} to ${route.destination} force urbania`,
+      `${route.origin} to ${route.destination} urbania booking`,
+      "12 seater urbania",
+      "17 seater urbania",
+      "urbania on rent",
+      "luxury urbania rental",
+      "force urbania booking",
+    ],
+
+    alternates: {
+      canonical: url,
+    },
+
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: "Yatra Tempo Traveller",
+      images: [
+        {
+          url: "https://yatratempotraveller.com/vehicles/urbania-hero-img.png",
+          width: 1200,
+          height: 630,
+          alt: "Force Urbania Rental",
+        },
+      ],
+      locale: "en_IN",
+      type: "website",
+    },
   };
 }
 
@@ -77,8 +115,74 @@ export default async function UrbaniaPage({ params }: Props) {
     notFound();
   }
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://yatratempotraveller.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Urbania",
+            item: "https://yatratempotraveller.com/urbania",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: `${route.origin} to ${route.destination}`,
+            item: `https://yatratempotraveller.com/urbania/${slug}`,
+          },
+        ],
+      },
+
+      {
+        "@type": "Service",
+        serviceType: "Force Urbania Rental",
+        provider: {
+          "@type": "Organization",
+          name: "Yatra Tempo Traveller",
+          url: "https://yatratempotraveller.com",
+        },
+
+        areaServed: {
+          "@type": "Place",
+          name: route.destination,
+        },
+
+        description: `Luxury Force Urbania rental from ${route.origin} to ${route.destination}.`,
+      },
+
+      {
+        "@type": "FAQPage",
+        mainEntity: route.faqs.map((faq: any) => ({
+          "@type": "Question",
+          name: faq.question,
+
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      },
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-[white] text-black">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData),
+        }}
+      />
+
       {/* HERO SECTION */}
       <section className="relative overflow-hidden bg-[#0B0B15] text-white">
         <div className="absolute inset-0">
