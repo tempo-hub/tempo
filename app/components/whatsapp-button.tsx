@@ -1,40 +1,27 @@
 "use client";
 
-import { MessageCircle } from "lucide-react";
 import { Button } from "./ui-base";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import BookingModal from "./shared/BookingModal";
 
-export const WhatsAppButton = ({
-  message = "Hi YatraTempoTraveller, I want to book a taxi.",
-}) => {
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=+916280820037&text=${encodeURIComponent(message)}`;
+export const WhatsAppButton = ({}) => {
+  const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
-      <AnimatePresence>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          className="bg-white px-4 py-2 rounded-full shadow-lg border border-border text-sm font-medium mb-1 hidden md:block"
-        >
-          Need help? <span className="text-[#25D366]">Chat with us</span>
-        </motion.div>
-      </AnimatePresence>
-
-      <motion.a
-        href={whatsappUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
+    <>
+      <div className="fixed bottom-6 right-6 z-50">
         <Button
           variant="whatsapp"
-          className="rounded-full h-16 w-16 p-0 shadow-2xl"
+          className="rounded-full h-16 w-16 p-0 shadow-2xl cursor-pointer"
+          onClick={() => setOpen(true)}
         >
-          <MessageCircle className="h-8 w-8 fill-current" />
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
+            <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16.004c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.9 15.9 0 0016.004 32C24.826 32 32 24.826 32 16.004S24.826 0 16.004 0zm9.35 22.616c-.392 1.1-1.938 2.016-3.16 2.282-.838.18-1.934.322-5.624-1.208-4.718-1.958-7.756-6.744-7.994-7.058-.228-.314-1.912-2.546-1.912-4.858 0-2.312 1.21-3.45 1.64-3.92.392-.428 1.028-.626 1.636-.626.196 0 .374.01.534.018.47.02.706.048 1.016.786.388.926 1.332 3.244 1.45 3.48.118.238.236.556.078.87-.148.322-.278.466-.516.738-.238.27-.464.478-.702.77-.22.254-.466.528-.198.998.268.466 1.194 1.966 2.562 3.186 1.762 1.572 3.248 2.058 3.71 2.288.47.236.742.198 1.016-.118.278-.318 1.186-1.382 1.502-1.856.314-.47.632-.392 1.066-.236.436.158 2.756 1.298 3.226 1.534.47.236.784.354.9.548.118.196.118 1.128-.274 2.228z" />
+          </svg>
         </Button>
-      </motion.a>
-    </div>
+      </div>
+
+      <BookingModal isOpen={open} onClose={() => setOpen(false)} />
+    </>
   );
 };
