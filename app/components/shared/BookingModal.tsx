@@ -65,8 +65,8 @@ export default function BookingModal({
 
   const handleSubmit = () => {
     const requiredFields = [
-      { value: formData.from, label: "From City" },
-      { value: formData.to, label: "To City" },
+      { value: formData.from, label: "Pickup City" },
+      { value: formData.to, label: "Destination City" },
       { value: formData.travelDate, label: "Travel Date" },
       { value: formData.pickupTime, label: "Pickup Time" },
       { value: formData.name, label: "Name" },
@@ -120,20 +120,6 @@ _Sent via YatraTempoTraveller.com booking form_
           <button onClick={onClose} className="text-xl font-bold">
             ✕
           </button>
-        </div>
-
-        <div className="flex flex-wrap gap-2 mt-4 mb-6">
-          <span className="bg-green-50 text-green-700 text-xs font-medium px-3 py-1 rounded-full">
-            ✓ Instant WhatsApp Quote
-          </span>
-
-          <span className="bg-blue-50 text-blue-700 text-xs font-medium px-3 py-1 rounded-full">
-            ✓ Professional Drivers
-          </span>
-
-          <span className="bg-orange-50 text-orange-700 text-xs font-medium px-3 py-1 rounded-full">
-            ✓ No Hidden Charges
-          </span>
         </div>
 
         <div className="grid md:grid-cols-2 gap-5">
@@ -221,7 +207,7 @@ _Sent via YatraTempoTraveller.com booking form_
               name="pickupTime"
               value={formData.pickupTime}
               onChange={handleChange}
-              className="w-full border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-100 p-3 rounded-lg outline-none"
+              className="w-full min-w-0 text-sm sm:text-base border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-100 p-3 rounded-lg outline-none"
             >
               <option value="">Select Pickup Time</option>
 

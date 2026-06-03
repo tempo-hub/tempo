@@ -161,15 +161,17 @@ export default async function UrbaniaPage({ params }: Props) {
 
       {
         "@type": "FAQPage",
-        mainEntity: route.faqs.map((faq: { question: string; answer: string }) => ({
-          "@type": "Question",
-          name: faq.question,
+        mainEntity: route.faqs.map(
+          (faq: { question: string; answer: string }) => ({
+            "@type": "Question",
+            name: faq.question,
 
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.answer,
-          },
-        })),
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          }),
+        ),
       },
     ],
   };
