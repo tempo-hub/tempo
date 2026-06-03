@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { FAQSection } from "@/app/components/sections";
 import Link from "next/link";
+import UrbaniaCTA from "@/app/components/shared/UrbaniaCTA";
 
 type Props = {
   params: Promise<{
@@ -272,17 +273,10 @@ export default async function UrbaniaPage({ params }: Props) {
                   Call Now
                 </a>
 
-                <a
-                  href={`https://wa.me/916280820037?text=${encodeURIComponent(
-                    `Hello Yatra Tempo Traveller, I want to book Force Urbania from ${route.origin} to ${route.destination}. Please share fare details.`,
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-green-500 hover:bg-green-600 px-6 py-4 rounded-xl font-semibold flex items-center gap-2 transition"
-                >
-                  <MessageCircle size={20} />
-                  WhatsApp
-                </a>
+                <UrbaniaCTA
+                  buttonText="WhatsApp"
+                  className="bg-green-500 hover:bg-green-600 px-6 py-4 rounded-xl font-semibold flex items-center gap-2 transition text-white"
+                />
               </div>
             </div>
 
@@ -478,17 +472,10 @@ export default async function UrbaniaPage({ params }: Props) {
                       Call Now
                     </a>
 
-                    <a
-                      href={`https://wa.me/916280820037?text=${encodeURIComponent(
-                        `Hello Yatra Tempo Traveller, I want to book Force Urbania from ${route.origin} to ${route.destination}. Please share fare details.`,
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-green-500 hover:bg-green-600 px-6 py-4 rounded-xl font-semibold text-white flex items-center gap-2 transition"
-                    >
-                      <MessageCircle size={20} />
-                      WhatsApp
-                    </a>
+                    <UrbaniaCTA
+                      buttonText="WhatsApp"
+                      className="bg-green-500 hover:bg-green-600 px-6 py-4 rounded-xl font-semibold flex items-center gap-2 transition text-white"
+                    />
                   </div>
                 </div>
               </div>
@@ -497,12 +484,10 @@ export default async function UrbaniaPage({ params }: Props) {
 
           {/* Bottom CTA */}
           <div className="mt-16 text-center">
-            <a
-              href="tel:+916280820037"
+            <UrbaniaCTA
+              buttonText="Book Luxury Urbania Now"
               className="inline-flex items-center justify-center rounded-2xl bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105"
-            >
-              Book Luxury Urbania Now
-            </a>
+            />
           </div>
         </div>
       </section>
@@ -628,16 +613,10 @@ export default async function UrbaniaPage({ params }: Props) {
 
           {/* Bottom CTA */}
           <div className="mt-16 text-center">
-            <a
-              href={`https://wa.me/916280820037?text=${encodeURIComponent(
-                `Hello Yatra Tempo Traveller, I want to book Force Urbania from ${route.origin} to ${route.destination}.`,
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-2xl bg-primary hover:opacity-90 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/20"
-            >
-              Book Luxury Urbania Now
-            </a>
+            <UrbaniaCTA
+              buttonText="Book Luxury Urbania Now"
+              className="inline-flex items-center justify-center rounded-2xl bg-primary px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105"
+            />
           </div>
         </div>
       </section>
@@ -730,14 +709,10 @@ export default async function UrbaniaPage({ params }: Props) {
                   Call Now
                 </a>
 
-                <a
-                  href="https://wa.me/916280820037?text=Hello%20Yatra%20Tempo%20Traveller,%20I%20want%20to%20book%20Urbania."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-2xl border border-green-500/30 bg-green-500 hover:bg-green-600 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 shadow-lg shadow-green-500/20"
-                >
-                  WhatsApp
-                </a>
+                <UrbaniaCTA
+                  buttonText="WhatsApp"
+                  className="bg-green-500 hover:bg-green-600 px-6 py-4 rounded-xl font-semibold flex items-center gap-2 transition text-white"
+                />
               </div>
             </div>
           </div>
