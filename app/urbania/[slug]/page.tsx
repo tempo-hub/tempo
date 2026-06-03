@@ -4,7 +4,6 @@ import { ALL_ROUTES } from "@/lib/allRoutes";
 import Image from "next/image";
 import {
   Phone,
-  MessageCircle,
   Users,
   Star,
   ShieldCheck,

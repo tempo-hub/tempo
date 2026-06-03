@@ -9,8 +9,7 @@ import {
   TrendingUp,
   Crown,
 } from "lucide-react";
-import { useState, useMemo } from "react";
-import { calculateFare, VEHICLES } from "@/lib/data";
+import { useState } from "react";
 import BookingModal from "../shared/BookingModal";
 
 const iconMap = {
@@ -24,18 +23,7 @@ const iconMap = {
 export function TravelUseCasesSection({ route }: { route: TaxiRoute }) {
   const cases = route.travelUseCases || {};
   const values = Object.values(cases);
-  const [selectedVehicle] = useState(VEHICLES[0]);
-  const fare = useMemo(() => {
-    return calculateFare(route.distance, selectedVehicle.perKmRate);
-  }, [route.distance, selectedVehicle]);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-
-  const whatsappMessage = `Hi YatraTempoTraveller, I want to book a tempo traveller from ${route.origin} to ${route.destination}. 
-    Vehicle: ${selectedVehicle.name} (${selectedVehicle.type})
-    Trip Type: Round Trip
-    Estimated Fare: ₹${fare}`;
-
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=+916280820037&text=${encodeURIComponent(whatsappMessage)}`;
 
   if (values.length === 0) return null;
 

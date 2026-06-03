@@ -122,7 +122,7 @@ _Sent via YatraTempoTraveller.com booking form_
               Book Your Tempo Traveller
             </h2>
             <p className="text-xs text-gray-500 mt-0.5">
-              Varanasi's most trusted group transport
+              Varanasi&apos;s most trusted group transport
             </p>
           </div>
           <button
@@ -297,7 +297,7 @@ _Sent via YatraTempoTraveller.com booking form_
               onChange={handleChange}
             />
             <p className="text-xs text-gray-500 mt-1">
-              You'll receive confirmation on WhatsApp
+              You&apos;ll receive confirmation on WhatsApp
             </p>
           </div>
 
@@ -330,7 +330,7 @@ _Sent via YatraTempoTraveller.com booking form_
               onChange={handleChange}
             />
             <p className="text-xs text-gray-500 mt-1">
-              We'll accommodate all requests — just let us know!
+              We&apos;ll accommodate all requests — just let us know!
             </p>
           </div>
         </div>

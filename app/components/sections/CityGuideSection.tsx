@@ -16,8 +16,6 @@ import {
   Heart,
 } from "lucide-react";
 import { useState } from "react";
-import { VEHICLES, calculateFare } from "@/lib/data";
-import { useMemo } from "react";
 import BookingModal from "../shared/BookingModal";
 
 export function CityGuideSection({ route }: { route: TaxiRoute }) {
@@ -25,18 +23,7 @@ export function CityGuideSection({ route }: { route: TaxiRoute }) {
   const [activeTab, setActiveTab] = useState<"attractions" | "significance">(
     "attractions",
   );
-  const [selectedVehicle] = useState(VEHICLES[0]);
-  const fare = useMemo(() => {
-    return calculateFare(route.distance, selectedVehicle.perKmRate);
-  }, [route.distance, selectedVehicle]);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-
-  const whatsappMessage = `Hi YatraTempoTraveller, I want to book a tempo traveller from ${route.origin} to ${route.destination}. 
-  Vehicle: ${selectedVehicle.name} (${selectedVehicle.type})
-  Trip Type: Round Trip
-  Estimated Fare: ₹${fare}`;
-
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=+916280820037&text=${encodeURIComponent(whatsappMessage)}`;
 
   if (!guide) return null;
 

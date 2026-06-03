@@ -22,7 +22,6 @@ import {
 import PerKmFareSection from "../shared/PerKmFareSection";
 import { FAQSection } from "../sections";
 import { generatePerKmFareFAQs } from "@/lib/faq-data";
-import { getCalculatedDistance } from "@/lib/data";
 import { useState } from "react";
 import BookingModal from "../shared/BookingModal";
 
@@ -57,8 +56,6 @@ const ServiceTemplate = ({ route }: ServiceTemplateProps) => {
     route.destination,
     route.vehicle,
   );
-
-  const calculatedDistance = getCalculatedDistance(route.distance);
 
   // Structured data for SEO
   const structuredData = {
@@ -349,8 +346,6 @@ const ServiceTemplate = ({ route }: ServiceTemplateProps) => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {vehicleOptions.map((vehicle, index) => {
-                const estimatedFare = calculatedDistance * vehicle.price;
-
                 return (
                   <div
                     key={index}

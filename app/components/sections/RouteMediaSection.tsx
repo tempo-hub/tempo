@@ -1,8 +1,8 @@
 "use client";
 
-import { TaxiRoute, calculateFare, VEHICLES } from "@/lib/data";
+import { TaxiRoute } from "@/lib/data";
 import { MapPin, ShieldCheck, Star } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import BookingModal from "../shared/BookingModal";
 
 type Props = {
@@ -11,18 +11,7 @@ type Props = {
 
 export function RouteMediaSection({ route }: Props) {
   const [showMap, setShowMap] = useState(false);
-  const [selectedVehicle] = useState(VEHICLES[0]);
-  const fare = useMemo(() => {
-    return calculateFare(route.distance, selectedVehicle.perKmRate);
-  }, [route.distance, selectedVehicle]);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-
-  const whatsappMessage = `Hi YatraTempoTraveller, I want to book a tempo traveller from ${route.origin} to ${route.destination}. 
-      Vehicle: ${selectedVehicle.name} (${selectedVehicle.type})
-      Trip Type: Round Trip
-      Estimated Fare: ₹${fare}`;
-
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=+916280820037&text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <>

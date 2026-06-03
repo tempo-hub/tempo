@@ -14,13 +14,6 @@ export const FareCalculator = ({ route }: { route: TaxiRoute }) => {
   }, [route.distance, selectedVehicle]);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
 
-  const whatsappMessage = `Hi YatraTempoTraveller, I want to book a tempo traveller from ${route.origin} to ${route.destination}. 
-Vehicle: ${selectedVehicle.name} (${selectedVehicle.type})
-Trip Type: Round Trip
-Estimated Fare: ₹${fare}`;
-
-  const whatsappUrl = `https://api.whatsapp.com/send?phone=+916280820037&text=${encodeURIComponent(whatsappMessage)}`;
-
   return (
     <>
       <Card className="p-6 md:p-8 lg:p-10 shadow-xl border-primary/20 bg-gradient-to-br from-white to-slate-50">
