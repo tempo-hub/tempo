@@ -4442,4 +4442,2276 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Avoid carrying valuables in crowded areas",
     ],
   },
+  "Khatu Shyam Ji": {
+    overview:
+      "Khatu Shyam Ji is one of the most revered pilgrimage destinations in Rajasthan, dedicated to Barbarika, worshipped as Khatu Shyam. The temple attracts millions of devotees seeking blessings, faith, and spiritual peace.",
+
+    detailedDescription:
+      "Located in the Sikar district of Rajasthan, Khatu Shyam Ji Temple is dedicated to Barbarika, the grandson of Bhima from the Mahabharata. According to legend, Lord Krishna granted Barbarika the boon that he would be worshipped in the Kaliyuga as Shyam. Today, Khatu Shyam Ji is a major spiritual center where devotees visit to seek blessings for prosperity, success, and fulfillment of wishes. The temple town is known for its devotional atmosphere, bhajans, and grand annual fairs.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Khatu Shyam Ji Temple",
+        "Shyam Kund",
+        "Gourishankar Temple",
+        "Khatu Market",
+        "Salasar Balaji Temple (Nearby)",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Spiritual Significance",
+      items: [
+        "Dedicated to Barbarika, worshipped as Khatu Shyam",
+        "Major pilgrimage site in Rajasthan",
+        "Believed to fulfill devotees' wishes",
+        "Associated with the Mahabharata and Lord Krishna",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March (Pleasant weather, 10-28°C)",
+
+    idealDuration: "1-2 days for temple darshan and local sightseeing",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Rajasthani Thali",
+      "Kachori and Samosa",
+      "Rabri and Ghevar",
+      "Traditional Rajasthani sweets",
+    ],
+
+    festivals: [
+      "Falgun Mela (Largest annual fair)",
+      "Janmashtami",
+      "Ekadashi celebrations",
+      "Shyam Jayanti",
+    ],
+
+    travelTips: [
+      "Book accommodation early during Falgun Mela",
+      "Visit temple early morning for quicker darshan",
+      "Carry water during summer months",
+      "Follow temple dress and decorum guidelines",
+      "Keep cash handy for local purchases and offerings",
+    ],
+  },
+  "Salasar Balaji": {
+    overview:
+      "Salasar Balaji is one of Rajasthan's most famous Hanuman temples, attracting devotees from across India.",
+
+    detailedDescription:
+      "Located in Churu district, Salasar Balaji Temple is dedicated to Lord Hanuman. The temple is known for its unique idol with beard and moustache and is visited by millions of devotees seeking blessings and fulfillment of wishes.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Salasar Balaji Temple",
+        "Hanuman Murti",
+        "Anjani Mata Temple",
+        "Temple Market",
+        "Khatu Shyam Ji (Nearby)",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Religious Significance",
+      items: [
+        "Famous Hanuman pilgrimage site",
+        "Unique Balaji idol",
+        "Popular among devotees across India",
+        "Associated with miracle stories",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "1 Day",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Kachori",
+      "Rabri",
+      "Ghevar",
+      "Rajasthani Thali",
+    ],
+
+    festivals: ["Hanuman Jayanti", "Chaitra Purnima Fair", "Sharad Purnima"],
+
+    travelTips: [
+      "Visit early morning",
+      "Book accommodation during fairs",
+      "Carry cash for offerings",
+      "Avoid peak afternoon crowds",
+    ],
+  },
+  Pushkar: {
+    overview:
+      "Pushkar is a sacred pilgrimage town famous for the world's rare Brahma Temple and holy Pushkar Lake.",
+
+    detailedDescription:
+      "Pushkar is one of India's oldest pilgrimage destinations. The town is centered around Pushkar Lake and is home to the famous Brahma Temple. It is also internationally known for the Pushkar Camel Fair.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Brahma Temple",
+        "Pushkar Lake",
+        "Savitri Temple",
+        "Varaha Temple",
+        "Camel Fair Ground",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Spiritual Significance",
+      items: [
+        "Rare Brahma Temple",
+        "Sacred Pushkar Lake",
+        "Important Hindu pilgrimage",
+        "Holy bathing ghats",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "1-2 Days",
+
+    localFood: ["Malpua", "Kachori", "Lassi", "Falafel", "Rajasthani Thali"],
+
+    festivals: ["Pushkar Camel Fair", "Kartik Purnima", "Diwali"],
+
+    travelTips: [
+      "Visit ghats respectfully",
+      "Sunrise at lake is beautiful",
+      "Book hotels early during fair",
+      "Carry comfortable footwear",
+    ],
+  },
+  Nathdwara: {
+    overview:
+      "Nathdwara is one of the most sacred Krishna pilgrimage destinations, home to Shrinathji Temple.",
+
+    detailedDescription:
+      "Located near Udaipur, Nathdwara is famous for the Shrinathji Temple dedicated to Lord Krishna. Devotees visit throughout the year for darshan and religious celebrations.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Shrinathji Temple",
+        "Eklingji Temple",
+        "Nathdwara Market",
+        "Charbhuja Temple",
+        "Statue of Belief",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Religious Significance",
+      items: [
+        "Major Krishna pilgrimage",
+        "Pushtimarg headquarters",
+        "Ancient temple traditions",
+        "Daily darshan ceremonies",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "1-2 Days",
+
+    localFood: [
+      "Peda",
+      "Kachori",
+      "Rabri",
+      "Rajasthani Thali",
+      "Temple Prasad",
+    ],
+
+    festivals: ["Janmashtami", "Annakut", "Holi", "Diwali"],
+
+    travelTips: [
+      "Check darshan timings",
+      "Visit early morning",
+      "Dress modestly",
+      "Avoid festival rush periods",
+    ],
+  },
+  "Ranakpur Jain Temple": {
+    overview:
+      "Ranakpur Jain Temple is one of India's most magnificent Jain pilgrimage sites, renowned for its intricate marble architecture and spiritual significance.",
+
+    detailedDescription:
+      "Located in the Pali district of Rajasthan, Ranakpur Jain Temple is dedicated to Lord Adinath, the first Tirthankara of Jainism. Built during the 15th century, the temple is famous for its 1,444 uniquely carved marble pillars and stunning architecture. Surrounded by the Aravalli Hills, Ranakpur attracts pilgrims, architecture enthusiasts, and tourists from across the world.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Chaumukha Temple",
+        "Marble Pillars",
+        "Surya Temple",
+        "Ranakpur Dam",
+        "Aravalli Hills",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Religious Significance",
+      items: [
+        "Major Jain pilgrimage site",
+        "Dedicated to Lord Adinath",
+        "Masterpiece of Jain architecture",
+        "Important spiritual center in Rajasthan",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "1 Day",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Gatte Ki Sabzi",
+      "Kachori",
+      "Jain Meals",
+      "Rabri",
+    ],
+
+    festivals: ["Mahavir Jayanti", "Paryushan", "Diwali", "Kartik Purnima"],
+
+    travelTips: [
+      "Wear modest clothing",
+      "Photography may be restricted in some areas",
+      "Visit early morning",
+      "Carry water during summer",
+      "Maintain silence inside temple premises",
+    ],
+  },
+  "Eklingji Temple": {
+    overview:
+      "Eklingji Temple is a revered Shiva temple near Udaipur and one of Rajasthan's most important pilgrimage destinations.",
+
+    detailedDescription:
+      "Situated in Kailashpuri near Udaipur, Eklingji Temple is dedicated to Lord Shiva and is believed to be the ruling deity of the Mewar dynasty. The temple complex contains more than 100 shrines and is famous for its four-faced black marble Shiva idol.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Eklingji Temple",
+        "Four-faced Shiva Idol",
+        "Temple Complex",
+        "Indra Sagar Lake",
+        "Ancient Sculptures",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Spiritual Significance",
+      items: [
+        "Dedicated to Lord Shiva",
+        "Patron deity of Mewar rulers",
+        "Ancient Hindu pilgrimage site",
+        "Historic temple complex",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "Half Day",
+
+    localFood: [
+      "Rajasthani Thali",
+      "Dal Baati",
+      "Mirchi Vada",
+      "Kachori",
+      "Ghevar",
+    ],
+
+    festivals: [
+      "Mahashivratri",
+      "Shravan Month Celebrations",
+      "Navratri",
+      "Diwali",
+    ],
+
+    travelTips: [
+      "Visit during morning aarti",
+      "Dress modestly",
+      "Carry cash for offerings",
+      "Avoid peak festival crowds if seeking peaceful darshan",
+      "Combine with Udaipur sightseeing",
+    ],
+  },
+  "Amer Fort": {
+    overview:
+      "Amer Fort is one of Rajasthan's most iconic heritage monuments and a UNESCO World Heritage Site known for its royal architecture.",
+
+    detailedDescription:
+      "Located near Jaipur, Amer Fort was built by Raja Man Singh and served as the royal residence of the Kachwaha rulers. The fort showcases a blend of Rajput and Mughal architecture with grand courtyards, palaces, and artistic interiors.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Sheesh Mahal",
+        "Diwan-e-Aam",
+        "Ganesh Pol",
+        "Maota Lake",
+        "Royal Courtyards",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "UNESCO World Heritage Site",
+        "Rajput architecture",
+        "Former royal residence",
+        "Major tourist attraction of Jaipur",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "3-4 Hours",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Pyaz Kachori",
+      "Ghevar",
+      "Laal Maas",
+      "Rajasthani Thali",
+    ],
+
+    festivals: [
+      "Jaipur Literature Festival",
+      "Diwali",
+      "Gangaur Festival",
+      "Teej Festival",
+    ],
+
+    travelTips: [
+      "Visit early morning",
+      "Wear comfortable shoes",
+      "Carry sunscreen",
+      "Book guide for historical insights",
+      "Enjoy evening light show",
+    ],
+  },
+  "Kumbhalgarh Fort": {
+    overview:
+      "Kumbhalgarh Fort is a UNESCO World Heritage Site famous for having the second-longest wall in the world after the Great Wall of China.",
+
+    detailedDescription:
+      "Located in the Rajsamand district of Rajasthan, Kumbhalgarh Fort was built by Rana Kumbha in the 15th century. The fort is known for its massive defensive walls stretching over 36 kilometers and offers spectacular views of the Aravalli Hills.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Kumbhalgarh Wall",
+        "Badal Mahal",
+        "Kumbha Palace",
+        "Ancient Temples",
+        "Light and Sound Show",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "Birthplace of Maharana Pratap",
+        "UNESCO World Heritage Site",
+        "Second-longest wall in the world",
+        "Major Rajput stronghold",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "Half Day to Full Day",
+
+    localFood: [
+      "Dal Baati",
+      "Ker Sangri",
+      "Gatte Ki Sabzi",
+      "Kachori",
+      "Ghevar",
+    ],
+
+    festivals: ["Kumbhalgarh Festival", "Diwali", "Navratri", "Gangaur"],
+
+    travelTips: [
+      "Visit during sunset",
+      "Wear comfortable shoes",
+      "Carry water",
+      "Attend evening light show",
+      "Combine with Ranakpur visit",
+    ],
+  },
+  "Mehandipur Balaji": {
+    overview:
+      "Mehandipur Balaji is one of India's most famous Hanuman temples and an important spiritual destination in Rajasthan.",
+
+    detailedDescription:
+      "Located in Dausa district, Mehandipur Balaji Temple is dedicated to Lord Hanuman. The temple is widely known for devotees seeking relief from negative energies and spiritual disturbances. Thousands of pilgrims visit every day for darshan and prayers.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Balaji Temple",
+        "Pretraj Temple",
+        "Bhairav Temple",
+        "Temple Complex",
+        "Devotional Atmosphere",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Religious Significance",
+      items: [
+        "Dedicated to Lord Hanuman",
+        "Famous pilgrimage site",
+        "Believed to remove negative energies",
+        "Visited by millions annually",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "1 Day",
+
+    localFood: [
+      "Kachori",
+      "Poha",
+      "Rajasthani Thali",
+      "Rabri",
+      "Traditional Sweets",
+    ],
+
+    festivals: ["Hanuman Jayanti", "Navratri", "Diwali", "Ram Navami"],
+
+    travelTips: [
+      "Visit early morning",
+      "Expect large crowds",
+      "Follow temple rules",
+      "Carry water",
+      "Book accommodation in advance on weekends",
+    ],
+  },
+  "Karni Mata Temple": {
+    overview:
+      "Karni Mata Temple is one of Rajasthan's most unique and revered pilgrimage destinations, dedicated to Karni Mata, a revered Hindu sage believed to be an incarnation of Goddess Durga.",
+
+    detailedDescription:
+      "Located in Deshnok near Bikaner, Karni Mata Temple is famous worldwide for its thousands of sacred rats, locally known as 'kabbas', which are considered holy and are protected within the temple premises. Built in beautiful Rajput architectural style with intricately carved marble and silver gates, the temple attracts devotees, tourists, and photographers from across India and abroad. Pilgrims visit the temple seeking blessings for prosperity, protection, and fulfillment of wishes.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Karni Mata Temple",
+        "Sacred Rats (Kabbas)",
+        "Silver Temple Gates",
+        "Marble Architecture",
+        "Deshnok Temple Complex",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Spiritual Significance",
+      items: [
+        "Dedicated to Karni Mata, considered an incarnation of Goddess Durga",
+        "One of Rajasthan's most famous pilgrimage sites",
+        "Sacred rats are worshipped and protected",
+        "Believed to grant blessings, prosperity, and protection",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather, ideal for temple visits and sightseeing)",
+
+    idealDuration:
+      "Half Day to 1 Day for temple darshan and nearby sightseeing",
+
+    localFood: [
+      "Bikaneri Bhujia",
+      "Dal Baati Churma",
+      "Kachori",
+      "Ghevar",
+      "Rabri",
+    ],
+
+    festivals: [
+      "Karni Mata Fair",
+      "Navratri",
+      "Durga Ashtami",
+      "Diwali",
+      "Sharad Purnima",
+    ],
+
+    travelTips: [
+      "Remove footwear before entering the temple",
+      "Respect temple customs regarding sacred rats",
+      "Visit early morning for a peaceful darshan experience",
+      "Carry drinking water during summer months",
+      "Combine your trip with Bikaner sightseeing attractions",
+    ],
+  },
+  "Dilwara Temples": {
+    overview:
+      "Dilwara Temples are one of the most magnificent Jain pilgrimage sites in India, world-famous for their extraordinary marble craftsmanship and spiritual atmosphere.",
+
+    detailedDescription:
+      "Located near Mount Abu in Rajasthan, the Dilwara Temples are a group of five Jain temples built between the 11th and 13th centuries by Vastupala and Tejpal. These temples are dedicated to different Jain Tirthankaras and are renowned for their incredibly detailed marble carvings, which are considered among the finest in the world. Despite their simple exterior, the interiors are richly decorated with intricate carvings on ceilings, pillars, and walls, showcasing unmatched craftsmanship and devotion. The temples attract pilgrims, historians, and architecture lovers from across the globe.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Vimal Vasahi Temple",
+        "Luna Vasahi Temple",
+        "Pittalhar Temple",
+        "Parshvanath Temple",
+        "Mahavir Swami Temple",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Spiritual Significance",
+      items: [
+        "Sacred Jain pilgrimage site dedicated to Tirthankaras",
+        "Symbol of non-violence and spiritual purity in Jainism",
+        "Renowned for unmatched marble craftsmanship",
+        "Important center of Jain faith and heritage",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October to March (pleasant weather ideal for Mount Abu region sightseeing)",
+
+    idealDuration:
+      "2–3 hours for temple visit, or half day including Mount Abu exploration",
+
+    localFood: [
+      "Jain Thali",
+      "Dal Baati Churma",
+      "Gatte Ki Sabzi",
+      "Kadhi",
+      "Traditional Rajasthani sweets",
+    ],
+
+    festivals: [
+      "Mahavir Jayanti",
+      "Paryushan Parva",
+      "Diwali",
+      "Kartik Purnima",
+    ],
+
+    travelTips: [
+      "Photography is strictly prohibited inside temples",
+      "Maintain silence and dress modestly",
+      "Remove footwear before entering temple premises",
+      "Visit early morning to avoid crowd",
+      "Combine visit with Mount Abu sightseeing",
+    ],
+  },
+  "Govind Dev Ji Temple": {
+    overview:
+      "Govind Dev Ji Temple is one of the most revered Lord Krishna temples in Rajasthan, attracting thousands of devotees daily for darshan, aarti, and spiritual gatherings.",
+
+    detailedDescription:
+      "Located within the City Palace complex in Jaipur, Govind Dev Ji Temple is dedicated to Lord Krishna and holds immense religious significance among Vaishnav devotees. The idol of Govind Dev Ji is believed to closely resemble Lord Krishna's original appearance. Established by Maharaja Sawai Jai Singh II, the temple is famous for its vibrant devotional atmosphere, daily aartis, and grand celebrations during Janmashtami and other Vaishnav festivals. Devotees from across India visit the temple to seek blessings, spiritual peace, and divine grace.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Govind Dev Ji Temple",
+        "Daily Mangla Aarti",
+        "City Palace Complex",
+        "Temple Gardens",
+        "Janmashtami Celebrations",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Spiritual Significance",
+      items: [
+        "Dedicated to Lord Krishna",
+        "One of Rajasthan's most important Vaishnav temples",
+        "Idol believed to resemble Lord Krishna's actual appearance",
+        "Major center for Krishna devotion and bhajan-kirtan",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather ideal for temple visits and Jaipur sightseeing)",
+
+    idealDuration:
+      "2-4 hours for darshan, aarti participation, and nearby sightseeing",
+
+    localFood: [
+      "Rajasthani Thali",
+      "Dal Baati Churma",
+      "Pyaz Kachori",
+      "Ghevar",
+      "Mawa Kachori",
+    ],
+
+    festivals: ["Janmashtami", "Radhashtami", "Holi", "Jhulan Utsav", "Diwali"],
+
+    travelTips: [
+      "Attend Mangla Aarti for a memorable spiritual experience",
+      "Arrive early during festivals due to large crowds",
+      "Dress modestly while visiting the temple",
+      "Combine your visit with City Palace and Jantar Mantar",
+      "Follow temple photography and decorum guidelines",
+    ],
+  },
+  "Ranthambore National Park": {
+    overview:
+      "Ranthambore National Park is one of India's most famous wildlife destinations, renowned for its Bengal tiger population, thrilling safari experiences, and rich natural heritage.",
+
+    detailedDescription:
+      "Located in Sawai Madhopur district of Rajasthan, Ranthambore National Park is among the best places in India to spot Bengal tigers in their natural habitat. Spread across vast forests, grasslands, lakes, and ancient ruins, the park offers an unforgettable wildlife experience. The historic Ranthambore Fort, a UNESCO World Heritage Site, adds cultural significance to the destination. Visitors can enjoy jeep safaris, birdwatching, nature photography, and encounters with diverse wildlife including leopards, sloth bears, crocodiles, and deer.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Tiger Safari",
+        "Ranthambore Fort",
+        "Padam Talao",
+        "Jogi Mahal",
+        "Rajbagh Ruins",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Wildlife Significance",
+      items: [
+        "One of India's premier tiger reserves",
+        "Part of Project Tiger conservation initiative",
+        "Home to diverse wildlife and bird species",
+        "Combines wildlife tourism with historical heritage",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-June (Tiger sightings are highest from March to June)",
+
+    idealDuration: "2-3 days for multiple safaris and local sightseeing",
+
+    localFood: [
+      "Rajasthani Thali",
+      "Dal Baati Churma",
+      "Gatte Ki Sabzi",
+      "Laal Maas",
+      "Kachori",
+    ],
+
+    festivals: [
+      "Ranthambore Festival",
+      "Diwali",
+      "Holi",
+      "Gangaur Festival",
+      "Teej Festival",
+    ],
+
+    travelTips: [
+      "Book safari permits well in advance",
+      "Carry binoculars and a camera for wildlife viewing",
+      "Wear earth-toned clothing during safaris",
+      "Follow all forest department guidelines",
+      "Morning safaris generally offer better wildlife sightings",
+    ],
+  },
+  "Sariska National Park": {
+    overview:
+      "Sariska National Park is one of Rajasthan's premier wildlife reserves, famous for its Bengal tiger population, rich biodiversity, scenic Aravalli landscapes, and exciting jungle safaris.",
+
+    detailedDescription:
+      "Located in the Alwar district of Rajasthan, Sariska National Park spans over 800 square kilometers of forests, grasslands, rocky hills, and valleys. Originally a royal hunting ground of the Alwar rulers, it was later declared a wildlife sanctuary and became part of Project Tiger. The park is home to Bengal tigers, leopards, striped hyenas, jackals, sambar deer, nilgai, wild boars, and hundreds of bird species. Apart from wildlife, visitors can explore historic sites such as Kankwari Fort and the famous Pandupol Hanuman Temple located within the reserve.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Tiger Safari",
+        "Kankwari Fort",
+        "Pandupol Hanuman Temple",
+        "Siliserh Lake",
+        "Aravalli Hills Landscape",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Wildlife Significance",
+      items: [
+        "Important Tiger Reserve under Project Tiger",
+        "Home to diverse wildlife and bird species",
+        "One of Rajasthan's leading eco-tourism destinations",
+        "Historic forest region with conservation importance",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather and excellent safari experience)",
+
+    idealDuration:
+      "1-2 days for safari tours, wildlife photography, and sightseeing",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Gatte Ki Sabzi",
+      "Ker Sangri",
+      "Kachori",
+      "Ghevar",
+    ],
+
+    festivals: [
+      "Diwali",
+      "Holi",
+      "Gangaur Festival",
+      "Teej Festival",
+      "Makar Sankranti",
+    ],
+
+    travelTips: [
+      "Book safari permits in advance during peak season",
+      "Carry binoculars for wildlife and bird watching",
+      "Wear comfortable clothing in natural colors",
+      "Choose morning safaris for better wildlife sightings",
+      "Follow all forest and wildlife safety guidelines",
+    ],
+  },
+  "Keoladeo National Park": {
+    overview:
+      "Keoladeo National Park, also known as Bharatpur Bird Sanctuary, is one of the world's most renowned bird-watching destinations and a UNESCO World Heritage Site famous for its rich avian biodiversity.",
+
+    detailedDescription:
+      "Located in Bharatpur, Rajasthan, Keoladeo National Park is a globally recognized wetland ecosystem that attracts thousands of resident and migratory birds every year. Spread across lush marshlands, woodlands, and grasslands, the park is home to over 370 species of birds, including painted storks, pelicans, cranes, eagles, and various waterfowl. Originally developed as a royal duck-hunting reserve by the Maharajas of Bharatpur, the sanctuary is now one of India's most important wildlife conservation areas and a paradise for birdwatchers, photographers, and nature enthusiasts.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Bharatpur Bird Sanctuary",
+        "Migratory Bird Viewing",
+        "Keoladeo Temple",
+        "Nature Trails",
+        "Cycling and Rickshaw Safaris",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Wildlife Significance",
+      items: [
+        "UNESCO World Heritage Site",
+        "One of Asia's most important bird sanctuaries",
+        "Home to over 370 bird species",
+        "Major destination for migratory birds during winter",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Peak bird-watching season with migratory birds arriving from different parts of the world)",
+
+    idealDuration:
+      "1 Full Day for bird watching, photography, and nature exploration",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Bharatpur Kachori",
+      "Rajasthani Thali",
+      "Ghevar",
+      "Rabri",
+    ],
+
+    festivals: [
+      "Bharatpur Bird Festival",
+      "World Wetlands Day Events",
+      "Diwali",
+      "Holi",
+      "Gangaur Festival",
+    ],
+
+    travelTips: [
+      "Carry binoculars for better bird viewing",
+      "Visit early morning for maximum bird activity",
+      "Hire a local guide for bird identification",
+      "Carry a camera with a zoom lens for wildlife photography",
+      "Wear comfortable walking shoes and light clothing",
+    ],
+  },
+  "Nakki Lake": {
+    overview:
+      "Nakki Lake is the most famous attraction in Mount Abu and one of Rajasthan's most scenic freshwater lakes, known for its natural beauty, boating experiences, and picturesque surroundings.",
+
+    detailedDescription:
+      "Situated in the heart of Mount Abu, Rajasthan's only hill station, Nakki Lake is surrounded by the Aravalli Hills and offers breathtaking views throughout the year. According to local legends, the lake was dug by gods using their nails, which is how it got its name 'Nakki'. The lake serves as a popular destination for boating, photography, family outings, and nature walks. Visitors can enjoy stunning sunset views, explore nearby rock formations, and experience the cool climate that makes Mount Abu unique in Rajasthan.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Nakki Lake Boating",
+        "Toad Rock",
+        "Sunset Point",
+        "Raghunath Temple",
+        "Mount Abu Market",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Most popular attraction in Mount Abu",
+        "Rajasthan's famous hill station destination",
+        "Known for boating and scenic beauty",
+        "Associated with local mythology and legends",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather ideal for sightseeing and boating)",
+
+    idealDuration:
+      "Half Day to 1 Day for boating, sightseeing, and local exploration",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Rajasthani Thali",
+      "Rabri",
+      "Kachori",
+      "Traditional Mount Abu Street Food",
+    ],
+
+    festivals: [
+      "Summer Festival Mount Abu",
+      "Diwali",
+      "Holi",
+      "Navratri",
+      "New Year Celebrations",
+    ],
+
+    travelTips: [
+      "Visit during sunset for the best lake views",
+      "Enjoy paddle boat and shikara boat rides",
+      "Carry light jackets during winter evenings",
+      "Visit Toad Rock for panoramic photography",
+      "Combine your trip with Dilwara Temples and Guru Shikhar",
+    ],
+  },
+  "Sam Sand Dunes": {
+    overview:
+      "Sam Sand Dunes is Rajasthan's most famous desert destination, offering golden sand dunes, camel safaris, cultural performances, and unforgettable desert camping experiences near Jaisalmer.",
+
+    detailedDescription:
+      "Located around 40 km from Jaisalmer, Sam Sand Dunes showcases the beauty of the Thar Desert. Visitors can enjoy camel rides, jeep safaris, folk dance performances, traditional Rajasthani cuisine, and overnight desert camps. The area is especially popular during sunset when the golden sands create breathtaking views.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Camel Safari",
+        "Jeep Safari",
+        "Desert Camping",
+        "Sunset Point",
+        "Cultural Folk Shows",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Most famous desert tourism destination in Rajasthan",
+        "Authentic Thar Desert experience",
+        "Popular for adventure and camping",
+        "Center of desert cultural activities",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather and ideal desert conditions)",
+
+    idealDuration: "1-2 Days for safari, camping, and cultural experiences",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Ker Sangri",
+      "Gatte Ki Sabzi",
+      "Bajra Roti",
+      "Traditional Desert Cuisine",
+    ],
+
+    festivals: ["Desert Festival Jaisalmer", "Diwali", "Holi", "Navratri"],
+
+    travelTips: [
+      "Visit during sunset for stunning views",
+      "Carry sunglasses and sunscreen",
+      "Book desert camps in advance",
+      "Experience local folk performances",
+      "Carry warm clothes during winter nights",
+    ],
+  },
+  "City Palace Udaipur": {
+    overview:
+      "City Palace Udaipur is Rajasthan's largest palace complex, showcasing royal architecture, museums, courtyards, and panoramic views of Lake Pichola.",
+
+    detailedDescription:
+      "Built by the Mewar rulers, City Palace Udaipur is one of India's most magnificent palace complexes. Overlooking Lake Pichola, the palace features beautiful balconies, royal rooms, museums, and intricate Rajput architecture. It remains a symbol of Udaipur's royal heritage.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "City Palace Museum",
+        "Mor Chowk",
+        "Crystal Gallery",
+        "Lake Pichola View",
+        "Royal Courtyards",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "Largest palace complex in Rajasthan",
+        "Symbol of Mewar dynasty",
+        "Historic royal residence",
+        "Architectural masterpiece",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March (Pleasant weather for sightseeing)",
+
+    idealDuration: "Half Day to Full Day for palace exploration",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Laal Maas",
+      "Rajasthani Thali",
+      "Kachori",
+      "Ghevar",
+    ],
+
+    festivals: ["Mewar Festival", "Diwali", "Holi", "Gangaur Festival"],
+
+    travelTips: [
+      "Visit early morning to avoid crowds",
+      "Carry camera for palace views",
+      "Combine with Lake Pichola visit",
+      "Hire guide for historical insights",
+      "Wear comfortable walking shoes",
+    ],
+  },
+  "Lake Pichola": {
+    overview:
+      "Lake Pichola is Udaipur's most iconic lake, famous for boat rides, scenic views, and its surrounding royal palaces.",
+
+    detailedDescription:
+      "Constructed in the 14th century, Lake Pichola enhances the beauty of Udaipur with its tranquil waters and stunning island palaces. Visitors enjoy boat cruises, photography, and spectacular sunset views while exploring attractions like Jag Mandir and Lake Palace.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Boat Ride",
+        "Lake Palace",
+        "Jag Mandir",
+        "Sunset Point",
+        "Gangaur Ghat",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Most famous lake in Udaipur",
+        "Known for scenic beauty",
+        "Surrounded by heritage monuments",
+        "Major attraction for tourists",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "2-4 Hours for boating and sightseeing",
+
+    localFood: [
+      "Rajasthani Thali",
+      "Dal Baati Churma",
+      "Kachori",
+      "Ghevar",
+      "Local Street Food",
+    ],
+
+    festivals: ["Mewar Festival", "Diwali", "Gangaur Festival"],
+
+    travelTips: [
+      "Take evening boat rides",
+      "Visit during sunset",
+      "Carry camera",
+      "Explore nearby ghats",
+      "Combine with City Palace visit",
+    ],
+  },
+  "Hawa Mahal": {
+    overview:
+      "Hawa Mahal is Jaipur's iconic landmark known for its unique honeycomb architecture and royal heritage.",
+
+    detailedDescription:
+      "Built in 1799 by Maharaja Sawai Pratap Singh, Hawa Mahal features 953 windows designed to allow royal women to observe street life while maintaining privacy. It remains one of Rajasthan's most photographed monuments.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Honeycomb Facade",
+        "Royal Windows",
+        "Museum",
+        "City View",
+        "Old Jaipur Market",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "Icon of Jaipur",
+        "Unique Rajput architecture",
+        "Historic royal monument",
+        "Famous photography location",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+
+    idealDuration: "1-2 Hours",
+
+    localFood: [
+      "Pyaaz Kachori",
+      "Ghevar",
+      "Dal Baati",
+      "Lassi",
+      "Rajasthani Snacks",
+    ],
+
+    festivals: ["Teej Festival", "Gangaur Festival", "Diwali"],
+
+    travelTips: [
+      "Visit early morning",
+      "Explore nearby markets",
+      "Carry camera",
+      "Combine with City Palace",
+      "Avoid afternoon crowds",
+    ],
+  },
+  "Jantar Mantar Jaipur": {
+    overview:
+      "Jantar Mantar Jaipur is a UNESCO World Heritage Site and one of the world's largest astronomical observatories, showcasing remarkable scientific achievements of ancient India.",
+
+    detailedDescription:
+      "Built by Maharaja Sawai Jai Singh II in the 18th century, Jantar Mantar consists of nineteen astronomical instruments designed to measure time, predict eclipses, and track celestial bodies. It remains one of Jaipur's most important heritage attractions.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Samrat Yantra",
+        "Jai Prakash Yantra",
+        "Ram Yantra",
+        "Astronomical Instruments",
+        "UNESCO Heritage Complex",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Scientific Significance",
+      items: [
+        "UNESCO World Heritage Site",
+        "Largest stone observatory in India",
+        "Ancient astronomical research center",
+        "Engineering masterpiece",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "1-2 Hours",
+    localFood: ["Pyaaz Kachori", "Dal Baati Churma", "Ghevar", "Lassi"],
+    festivals: ["Jaipur Literature Festival", "Teej Festival", "Gangaur"],
+    travelTips: [
+      "Hire a guide to understand instruments",
+      "Visit in morning hours",
+      "Carry water during summer",
+      "Combine with City Palace visit",
+      "Photography is allowed",
+    ],
+  },
+  "Jaigarh Fort": {
+    overview:
+      "Jaigarh Fort is a magnificent hilltop fortress in Jaipur known for military architecture and the world's largest cannon on wheels.",
+
+    detailedDescription:
+      "Constructed in 1726 by Maharaja Jai Singh II, Jaigarh Fort overlooks Amer Fort and protected the royal treasury. It offers panoramic views of Jaipur and houses Jaivana Cannon, a major attraction.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Jaivana Cannon",
+        "Fort Ramparts",
+        "Watch Towers",
+        "Armory Museum",
+        "Panoramic City Views",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "Military stronghold of Jaipur rulers",
+        "Home to world's largest cannon on wheels",
+        "Historic defense fort",
+        "Architectural masterpiece",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "2-3 Hours",
+    localFood: ["Kachori", "Dal Baati", "Ghevar", "Rajasthani Thali"],
+    festivals: ["Diwali", "Teej", "Gangaur"],
+    travelTips: [
+      "Wear comfortable shoes",
+      "Carry camera for views",
+      "Visit with Amer Fort",
+      "Avoid afternoon heat",
+      "Explore museum sections",
+    ],
+  },
+  "Nahargarh Fort": {
+    overview:
+      "Nahargarh Fort is a historic hilltop fort famous for breathtaking sunset views and Jaipur city panoramas.",
+
+    detailedDescription:
+      "Built in 1734 by Maharaja Sawai Jai Singh II, Nahargarh Fort formed part of Jaipur's defense system. Today it is one of the most popular sunset destinations in Rajasthan.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Sunset Point",
+        "Madhavendra Palace",
+        "Fort Walls",
+        "Jaipur City View",
+        "Photography Spots",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Best sunset viewpoint in Jaipur",
+        "Historic Rajput fort",
+        "Popular photography destination",
+        "Part of Jaipur's defensive forts",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "2-3 Hours",
+    localFood: ["Dal Baati", "Kachori", "Ghevar", "Lassi"],
+    festivals: ["Diwali", "Teej", "Gangaur"],
+    travelTips: [
+      "Visit before sunset",
+      "Carry camera",
+      "Wear comfortable footwear",
+      "Avoid peak afternoon heat",
+      "Combine with Jaigarh Fort",
+    ],
+  },
+  "Jal Mahal": {
+    overview:
+      "Jal Mahal is Jaipur's iconic water palace situated in the middle of Man Sagar Lake, admired for its stunning architecture and scenic beauty.",
+
+    detailedDescription:
+      "Built in Rajput style architecture, Jal Mahal appears to float on the lake's surface. It is among Jaipur's most photographed landmarks and offers beautiful sunrise and sunset views.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Water Palace",
+        "Man Sagar Lake",
+        "Photography Point",
+        "Bird Watching",
+        "Scenic Views",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Architectural Significance",
+      items: [
+        "Unique palace in a lake",
+        "Iconic Jaipur landmark",
+        "Rajput architectural beauty",
+        "Popular tourist attraction",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "1-2 Hours",
+    localFood: ["Kachori", "Ghevar", "Dal Baati", "Lassi"],
+    festivals: ["Teej", "Gangaur", "Diwali"],
+    travelTips: [
+      "Visit during sunrise or sunset",
+      "Carry camera",
+      "Enjoy lake views",
+      "Explore nearby attractions",
+      "Best photography spot in Jaipur",
+    ],
+  },
+  "Fateh Sagar Lake": {
+    overview:
+      "Fateh Sagar Lake is one of Udaipur's most beautiful lakes, famous for boating, scenic surroundings, and peaceful ambiance.",
+
+    detailedDescription:
+      "Nestled amidst the Aravalli Hills, Fateh Sagar Lake attracts visitors with its calm waters, boating facilities, and picturesque viewpoints. It is among the most visited attractions in Udaipur.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Boating",
+        "Nehru Park",
+        "Lake Drive",
+        "Sunset Point",
+        "Photography Spots",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Popular Udaipur lake",
+        "Known for boating",
+        "Scenic mountain views",
+        "Major leisure destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "2-4 Hours",
+    localFood: ["Dal Baati", "Kachori", "Ghevar", "Rabri"],
+    festivals: ["Mewar Festival", "Diwali", "Holi"],
+    travelTips: [
+      "Take boat rides",
+      "Visit during evening",
+      "Carry camera",
+      "Explore nearby attractions",
+      "Enjoy lakeside views",
+    ],
+  },
+  "Junagarh Fort": {
+    overview:
+      "Junagarh Fort is one of Rajasthan's finest forts, famous for its impressive architecture and rich royal history.",
+
+    detailedDescription:
+      "Located in Bikaner, Junagarh Fort was built in the 16th century and is known for beautiful palaces, courtyards, temples, and museums inside the fort complex.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Anup Mahal",
+        "Phool Mahal",
+        "Fort Museum",
+        "Royal Courtyards",
+        "Historic Temples",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "Major Bikaner landmark",
+        "Rajput military architecture",
+        "Royal residence",
+        "Well-preserved heritage fort",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-February",
+    idealDuration: "2-3 Hours",
+    localFood: ["Bikaneri Bhujia", "Kachori", "Rasgulla", "Dal Baati"],
+    festivals: ["Camel Festival", "Diwali", "Holi"],
+    travelTips: [
+      "Hire a guide",
+      "Explore museum galleries",
+      "Carry water",
+      "Visit during winter",
+      "Photography is allowed",
+    ],
+  },
+  "Patwon Ki Haveli": {
+    overview:
+      "Patwon Ki Haveli is the most famous haveli complex in Jaisalmer, renowned for intricate carvings and architectural excellence.",
+
+    detailedDescription:
+      "Built by wealthy traders in the 19th century, Patwon Ki Haveli consists of five havelis decorated with beautiful balconies, mirror work, and sandstone carvings.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Sandstone Architecture",
+        "Historic Museum",
+        "Carved Balconies",
+        "Mirror Work",
+        "Photography Spots",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Heritage Significance",
+      items: [
+        "Most famous haveli in Jaisalmer",
+        "Excellent craftsmanship",
+        "Historic merchant residence",
+        "Architectural masterpiece",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-February",
+    idealDuration: "1-2 Hours",
+    localFood: ["Dal Baati", "Ker Sangri", "Gatte Ki Sabzi", "Kachori"],
+    festivals: ["Desert Festival", "Diwali", "Holi"],
+    travelTips: [
+      "Visit early morning",
+      "Carry camera",
+      "Explore nearby havelis",
+      "Hire local guide",
+      "Avoid summer afternoons",
+    ],
+  },
+
+  "Rani Sati Temple": {
+    overview:
+      "Rani Sati Temple in Jhunjhunu is one of Rajasthan's most revered religious destinations dedicated to Rani Sati Dadi.",
+
+    detailedDescription:
+      "Known for its beautiful marble architecture, the temple attracts thousands of devotees from across India seeking blessings and spiritual peace.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Main Temple",
+        "Marble Architecture",
+        "Prayer Hall",
+        "Temple Complex",
+        "Religious Events",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Religious Significance",
+      items: [
+        "Major pilgrimage destination",
+        "Dedicated to Rani Sati Dadi",
+        "Important spiritual center",
+        "Popular among devotees",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "Half Day",
+    localFood: ["Rajasthani Thali", "Kachori", "Ghevar", "Rabri"],
+    festivals: ["Rani Sati Mela", "Navratri", "Diwali"],
+    travelTips: [
+      "Visit early morning",
+      "Maintain temple decorum",
+      "Carry cash for donations",
+      "Avoid festival crowds if needed",
+      "Explore Jhunjhunu heritage sites",
+    ],
+  },
+
+  "Desert National Park": {
+    overview:
+      "Desert National Park is one of India's largest national parks, showcasing the unique ecosystem of the Thar Desert.",
+
+    detailedDescription:
+      "Spread across Jaisalmer and Barmer districts, the park is home to rare wildlife including the Great Indian Bustard, desert foxes, and numerous migratory birds.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Wildlife Safari",
+        "Great Indian Bustard",
+        "Sand Dunes",
+        "Desert Landscape",
+        "Bird Watching",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Environmental Significance",
+      items: [
+        "Protected desert ecosystem",
+        "Habitat of Great Indian Bustard",
+        "Largest desert park in Rajasthan",
+        "Important wildlife reserve",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "1 Day",
+    localFood: ["Ker Sangri", "Dal Baati", "Bajra Roti", "Gatte Ki Sabzi"],
+    festivals: ["Desert Festival", "Diwali", "Holi"],
+    travelTips: [
+      "Carry binoculars",
+      "Visit early morning",
+      "Carry sunscreen",
+      "Hire local guides",
+      "Carry sufficient water",
+    ],
+  },
+
+  Osian: {
+    overview:
+      "Osian is an ancient desert town famous for historic Hindu and Jain temples along with desert safari experiences.",
+
+    detailedDescription:
+      "Often called the Khajuraho of Rajasthan, Osian is known for beautifully carved temples dating back to the 8th century and serves as a gateway to desert tourism near Jodhpur.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Sachiya Mata Temple",
+        "Jain Temples",
+        "Camel Safari",
+        "Desert Camps",
+        "Ancient Architecture",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Heritage Significance",
+      items: [
+        "Ancient temple town",
+        "Important Jain pilgrimage site",
+        "Historic architecture",
+        "Popular desert destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-February",
+    idealDuration: "1 Day",
+    localFood: ["Dal Baati", "Ker Sangri", "Bajra Roti", "Mawa Kachori"],
+    festivals: ["Navratri", "Diwali", "Desert Festival"],
+    travelTips: [
+      "Visit temples early morning",
+      "Combine with desert safari",
+      "Carry water",
+      "Wear comfortable clothing",
+      "Explore local culture",
+    ],
+  },
+
+  "Chand Baori Abhaneri": {
+    overview:
+      "Chand Baori is one of India's deepest and most spectacular stepwells, renowned for its geometric architecture.",
+
+    detailedDescription:
+      "Built over a thousand years ago in Abhaneri village, Chand Baori features 3,500 symmetrical steps descending into a massive water reservoir and remains an architectural wonder.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Stepwell Structure",
+        "Harshat Mata Temple",
+        "Ancient Architecture",
+        "Photography Spots",
+        "Historical Complex",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "One of India's largest stepwells",
+        "Architectural masterpiece",
+        "Ancient water conservation system",
+        "Popular heritage attraction",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "1-2 Hours",
+    localFood: ["Dal Baati", "Kachori", "Ghevar", "Rajasthani Thali"],
+    festivals: ["Diwali", "Holi", "Navratri"],
+    travelTips: [
+      "Carry camera",
+      "Visit during daylight",
+      "Read historical information",
+      "Combine with Jaipur trip",
+      "Wear comfortable footwear",
+    ],
+  },
+
+  "Bhangarh Fort": {
+    overview:
+      "Bhangarh Fort is a historic fort complex known for its ruins, architecture, and fascinating legends.",
+
+    detailedDescription:
+      "Located in Alwar district, Bhangarh Fort contains temples, palaces, markets, and gateways that offer insight into Rajasthan's medieval history.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Fort Ruins",
+        "Ancient Temples",
+        "Royal Palace",
+        "Historic Marketplace",
+        "Photography Spots",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "Important archaeological site",
+        "Historic Rajput settlement",
+        "Popular heritage destination",
+        "Known for local folklore",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "2-3 Hours",
+    localFood: ["Dal Baati", "Kachori", "Ghevar", "Lassi"],
+    festivals: ["Diwali", "Holi", "Navratri"],
+    travelTips: [
+      "Visit during daytime",
+      "Carry water",
+      "Wear comfortable shoes",
+      "Explore nearby Sariska",
+      "Carry camera",
+    ],
+  },
+
+  "Jaisamand Lake": {
+    overview:
+      "Jaisamand Lake is one of Asia's largest artificial lakes, known for scenic beauty, boating, and wildlife surroundings.",
+
+    detailedDescription:
+      "Located near Udaipur, Jaisamand Lake was built by Maharana Jai Singh and features islands, marble embankments, and stunning natural landscapes.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Lake Views",
+        "Boating",
+        "Jaisamand Wildlife Sanctuary",
+        "Marble Embankments",
+        "Island Scenery",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "One of Asia's largest artificial lakes",
+        "Major nature destination",
+        "Popular boating attraction",
+        "Rich biodiversity area",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March",
+    idealDuration: "Half Day to Full Day",
+    localFood: ["Dal Baati", "Kachori", "Rabri", "Ghevar"],
+    festivals: ["Mewar Festival", "Diwali", "Holi"],
+    travelTips: [
+      "Take boat rides",
+      "Visit during morning or evening",
+      "Carry camera",
+      "Explore wildlife sanctuary",
+      "Enjoy lakeside viewpoints",
+    ],
+  },
+
+  Bharatpur: {
+    overview:
+      "Bharatpur is a historic city in eastern Rajasthan, famous for Keoladeo National Park, a UNESCO World Heritage Site renowned for birdwatching, wetlands, and rich biodiversity.",
+
+    detailedDescription:
+      "Located in the Braj region of Rajasthan, Bharatpur is widely recognized as one of India's premier birdwatching destinations. The city is home to Keoladeo National Park, which attracts thousands of migratory birds from across the world. Bharatpur also boasts a rich royal heritage with magnificent forts, temples, and palaces reflecting its glorious past under the Jat rulers. Visitors can enjoy wildlife experiences, historical sightseeing, cultural exploration, and traditional Rajasthani hospitality. The city serves as an important stop on Rajasthan's tourism circuit and offers a perfect blend of nature and history.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Keoladeo National Park",
+        "Lohagarh Fort",
+        "Government Museum Bharatpur",
+        "Ganga Mandir",
+        "Deeg Palace",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Home to UNESCO-listed Keoladeo National Park",
+        "One of India's top birdwatching destinations",
+        "Rich Jat royal heritage and architecture",
+        "Major wildlife and eco-tourism center in Rajasthan",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Ideal weather and peak migratory bird season)",
+
+    idealDuration:
+      "2-3 Days for wildlife safari, birdwatching, and heritage sightseeing",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Bharatpur Kachori",
+      "Rajasthani Thali",
+      "Ghevar",
+      "Rabri and Traditional Sweets",
+    ],
+
+    festivals: [
+      "Brij Festival",
+      "Gangaur Festival",
+      "Teej Festival",
+      "Diwali",
+      "Makar Sankranti",
+    ],
+
+    travelTips: [
+      "Visit Keoladeo National Park early morning for bird sightings",
+      "Carry binoculars and a camera for birdwatching",
+      "Winter is the best season for migratory birds",
+      "Explore Lohagarh Fort for historical insights",
+      "Combine your trip with Deeg Palace and Mathura-Vrindavan",
+    ],
+  },
+
+  Alwar: {
+    overview:
+      "Alwar is a historic city in Rajasthan known for its majestic forts, royal palaces, wildlife sanctuaries, and proximity to the Aravalli Hills, making it a popular mix of heritage and nature tourism.",
+
+    detailedDescription:
+      "Located between Delhi and Jaipur, Alwar is one of the oldest cities in Rajasthan with deep historical roots in the Rajput and Mughal eras. The city is famous for its stunning Alwar Fort (Bala Qila), City Palace, and the scenic Siliserh Lake. Alwar also serves as a gateway to the Sariska Tiger Reserve, attracting wildlife enthusiasts from across India. The region beautifully blends royal heritage, natural landscapes, and spiritual sites, making it a well-rounded tourist destination. Its cultural charm is reflected in forts, temples, lakes, and traditional Rajasthani lifestyle.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Bala Qila (Alwar Fort)",
+        "City Palace Alwar",
+        "Sariska Tiger Reserve",
+        "Siliserh Lake",
+        "Moosi Maharani Ki Chhatri",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Gateway to Sariska Tiger Reserve",
+        "Important heritage city of Rajasthan",
+        "Blend of wildlife, lakes, and forts",
+        "Strategic historical city between Delhi and Jaipur",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather ideal for sightseeing and wildlife safaris)",
+
+    idealDuration: "2-3 Days for forts, lakes, and Sariska wildlife safari",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Alwar Kalakand (famous sweet)",
+      "Kachori and Samosa",
+      "Rajasthani Thali",
+      "Traditional sweets and snacks",
+    ],
+
+    festivals: [
+      "Alwar Festival",
+      "Teej Festival",
+      "Gangaur Festival",
+      "Diwali",
+      "Holi",
+    ],
+
+    travelTips: [
+      "Visit Sariska Tiger Reserve early morning for best wildlife sightings",
+      "Explore Bala Qila for panoramic city views",
+      "Try famous Alwar Kalakand sweet",
+      "Carry light woolens during winter months",
+      "Combine Alwar trip with Neemrana Fort or Jaipur",
+    ],
+  },
+
+  Chittorgarh: {
+    overview:
+      "Chittorgarh is one of Rajasthan’s most iconic historical cities, famous for the majestic Chittorgarh Fort, Rajput valor, and rich tales of sacrifice, bravery, and heritage.",
+
+    detailedDescription:
+      "Located in southern Rajasthan, Chittorgarh is a symbol of Rajput pride and history. The city is home to the largest fort in India, Chittorgarh Fort, which stands as a UNESCO World Heritage Site. The fort complex includes grand palaces, temples, towers, and gates that narrate stories of legendary rulers like Maharana Pratap and Rani Padmini. Chittorgarh is deeply rooted in history, especially known for Jauhar and Rajput resistance against invasions. Today, it attracts history lovers, photographers, and cultural tourists from around the world.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Chittorgarh Fort",
+        "Vijay Stambh (Victory Tower)",
+        "Kirti Stambh",
+        "Rana Kumbha Palace",
+        "Padmini Palace",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical Significance",
+      items: [
+        "Largest fort in India and UNESCO World Heritage Site",
+        "Symbol of Rajput bravery and sacrifice",
+        "Associated with Maharana Pratap and Rani Padmini",
+        "Important center of medieval Rajput history",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather ideal for fort exploration and sightseeing)",
+
+    idealDuration: "1-2 Days for fort exploration and nearby temples",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Gatte Ki Sabzi",
+      "Kachori",
+      "Mirchi Bada",
+      "Rajasthani Thali",
+    ],
+
+    festivals: [
+      "Gangaur Festival",
+      "Teej Festival",
+      "Diwali",
+      "Holi",
+      "Rajasthan Heritage Festival",
+    ],
+
+    travelTips: [
+      "Start fort visit early morning to avoid heat",
+      "Wear comfortable shoes for walking inside the fort",
+      "Hire a local guide for historical insights",
+      "Carry water and sun protection",
+      "Visit light and sound show in the evening",
+    ],
+  },
+
+  Sikar: {
+    overview:
+      "Sikar is a culturally rich city in Rajasthan known for its grand havelis, historic temples, Shekhawati fresco art, and its importance as an education hub in North India.",
+
+    detailedDescription:
+      "Located in the Shekhawati region of Rajasthan, Sikar is often called an open-air art gallery due to its beautifully painted havelis and fresco artwork. The city has a strong historical background linked to Rajput clans and merchant communities who built grand mansions decorated with intricate murals. Apart from heritage tourism, Sikar is also known as an emerging education hub, producing students for India’s top competitive exams. The region offers a blend of spirituality, history, architecture, and rural Rajasthani culture.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Jeen Mata Temple",
+        "Khatu Shyam Ji (Nearby)",
+        "Laxmangarh Fort",
+        "Madho Niwas Kothi",
+        "Shekhawati Fresco Havelis",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Part of the famous Shekhawati fresco region",
+        "Important pilgrimage base for Khatu Shyam Ji devotees",
+        "Rich heritage of havelis and mural art",
+        "Emerging educational hub of Rajasthan",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Best weather for heritage exploration and temple visits)",
+
+    idealDuration: "1-2 Days for temples, forts, and heritage havelis",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Kachori and Samosa",
+      "Ghevar",
+      "Rabri",
+      "Rajasthani Thali",
+    ],
+
+    festivals: [
+      "Jeen Mata Fair",
+      "Gangaur Festival",
+      "Teej Festival",
+      "Diwali",
+      "Holi",
+    ],
+
+    travelTips: [
+      "Explore fresco-painted havelis in nearby Shekhawati towns",
+      "Visit Jeen Mata Temple early morning during festivals",
+      "Combine Sikar trip with Khatu Shyam Ji darshan",
+      "Carry cash for rural markets",
+      "Best explored with a local guide for heritage insights",
+    ],
+  },
+
+  Ajmer: {
+    overview:
+      "Ajmer is a historic and spiritual city in Rajasthan known for the revered Ajmer Sharif Dargah, Ana Sagar Lake, and its deep cultural and religious significance attracting devotees from all faiths.",
+
+    detailedDescription:
+      "Located in the heart of Rajasthan, Ajmer is one of the most important pilgrimage and heritage cities in India. It is globally famous for the Ajmer Sharif Dargah of Khwaja Moinuddin Chishti, which attracts millions of devotees every year. The city reflects a unique blend of Mughal history, Rajput architecture, and spiritual harmony. Ajmer also serves as a gateway to Pushkar, another major pilgrimage destination. With scenic lakes, forts, temples, and bustling markets, Ajmer offers a balanced mix of spirituality, history, and local culture.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Ajmer Sharif Dargah",
+        "Ana Sagar Lake",
+        "Adhai Din Ka Jhonpra",
+        "Taragarh Fort",
+        "Akbari Fort & Museum",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Spiritual & Historical Significance",
+      items: [
+        "One of India’s most important Sufi pilgrimage sites",
+        "Strong Mughal and Rajput historical influence",
+        "Gateway to Pushkar pilgrimage town",
+        "Symbol of communal harmony and devotion",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather ideal for sightseeing and pilgrimage visits)",
+
+    idealDuration: "1-2 Days for dargah visit, lakes, and nearby Pushkar tour",
+
+    localFood: [
+      "Kadhi Kachori",
+      "Samosa and Chaat",
+      "Dal Baati Churma",
+      "Rajasthani Thali",
+      "Mawa Kachori (famous sweet)",
+    ],
+
+    festivals: [
+      "Urs Festival at Ajmer Sharif Dargah",
+      "Pushkar Fair (nearby)",
+      "Diwali",
+      "Eid Celebrations",
+      "Holi",
+    ],
+
+    travelTips: [
+      "Dress modestly when visiting Ajmer Sharif Dargah",
+      "Expect large crowds during Urs festival",
+      "Combine Ajmer trip with Pushkar (only 30 minutes away)",
+      "Visit Ana Sagar Lake during sunset for best views",
+      "Hire local guides for historical insights",
+    ],
+  },
+
+  Bhilwara: {
+    overview:
+      "Bhilwara is a prominent industrial and cultural city in Rajasthan, known as the 'Textile City of India' and also famous for its temples, heritage sites, and nearby tourist attractions.",
+
+    detailedDescription:
+      "Located in southern Rajasthan, Bhilwara is widely recognized for its textile industry, earning the nickname 'Textile City of India'. Beyond its industrial identity, the city has deep cultural and historical significance with ancient temples, forts, and stepwells. Bhilwara also serves as a gateway to nearby spiritual and heritage destinations like Harni Mahadev Temple and Mandalgarh Fort. The region reflects a mix of modern development and traditional Rajasthani culture, making it both an economic hub and a growing tourism destination.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Harni Mahadev Temple",
+        "Badnore Fort",
+        "Mandalgarh Fort",
+        "Meja Dam",
+        "Pur Udan Chatri",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism & Industrial Significance",
+      items: [
+        "Known as Textile City of India",
+        "Important industrial hub in Rajasthan",
+        "Spiritual center with several temples",
+        "Gateway to nearby forts and heritage sites",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather ideal for sightseeing and temple visits)",
+
+    idealDuration: "1-2 Days for temples, forts, and nearby attractions",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Gatte Ki Sabzi",
+      "Kachori and Samosa",
+      "Rajasthani Thali",
+      "Traditional sweets like Ghevar and Rabri",
+    ],
+
+    festivals: [
+      "Gangaur Festival",
+      "Teej Festival",
+      "Diwali",
+      "Holi",
+      "Mahashivratri (Harni Mahadev Temple fair)",
+    ],
+
+    travelTips: [
+      "Visit Harni Mahadev Temple during Shivratri for grand celebrations",
+      "Explore textile markets for local shopping",
+      "Carry light clothing in summer and warm clothes in winter",
+      "Hire local transport for nearby forts",
+      "Combine Bhilwara with Chittorgarh or Udaipur trip",
+    ],
+  },
+
+  Hanumangarh: {
+    overview:
+      "Hanumangarh is a historic city in northern Rajasthan known for its ancient Indus Valley Civilization sites, agricultural importance, and religious landmarks dedicated to Lord Hanuman.",
+
+    detailedDescription:
+      "Located on the banks of the Ghaggar River, Hanumangarh is one of the oldest regions in Rajasthan with strong historical roots dating back to the Indus Valley Civilization. The city is named after the famous Bhatner Fort, later renamed Hanumangarh after Lord Hanuman. Today, it is an important agricultural hub and also attracts visitors for its archaeological sites, temples, and forts. The region offers a unique blend of ancient history, rural culture, and spiritual significance.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Bhatner Fort",
+        "Kalibangan Archaeological Site",
+        "Gurudwara Shri Kabootar Sahib",
+        "Bhadrakali Temple",
+        "Gogamedi Temple",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Historical & Cultural Significance",
+      items: [
+        "One of the oldest historical regions in Rajasthan",
+        "Important Indus Valley Civilization archaeological site (Kalibangan)",
+        "Religious significance for Hindus and Sikhs",
+        "Major agricultural and canal-irrigated region",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Pleasant weather ideal for sightseeing and historical exploration)",
+
+    idealDuration: "1-2 Days for forts, temples, and archaeological sites",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Bajra Roti with Ghee",
+      "Kachori and Samosa",
+      "Rajasthani Thali",
+      "Traditional sweets like Ghevar and Rabri",
+    ],
+
+    festivals: [
+      "Gogamedi Fair",
+      "Navratri",
+      "Diwali",
+      "Holi",
+      "Basant Panchami",
+    ],
+
+    travelTips: [
+      "Visit Kalibangan early for best archaeological experience",
+      "Carry water and sun protection due to semi-arid climate",
+      "Explore Bhatner Fort for historical insights",
+      "Attend Gogamedi fair if visiting during festival season",
+      "Combine trip with nearby Punjab border towns for cultural experience",
+    ],
+  },
+
+  Pali: {
+    overview:
+      "Pali is a historic and industrial city in Rajasthan known for its textile industries, ancient temples, and proximity to the Aravalli hills, offering a blend of culture, spirituality, and rural heritage.",
+
+    detailedDescription:
+      "Located in western Rajasthan, Pali is an important industrial hub especially known for its textile and dyeing industries. Along with its modern industrial identity, the city holds deep cultural and religious significance with ancient Jain temples, Shiva temples, and historic stepwells. Pali is also a gateway to the Marwar region and nearby tourist destinations like Ranakpur and Kumbhalgarh. The city reflects traditional Rajasthani lifestyle combined with growing urban development.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Nimbo Ka Nath Temple",
+        "Somnath Mandir (Pali)",
+        "Bangur Museum",
+        "Jawai Dam (Leopard Safari nearby)",
+        "Parshuram Mahadev Temple (nearby)",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism & Industrial Significance",
+      items: [
+        "Major textile and industrial hub of Rajasthan",
+        "Gateway to Ranakpur and Kumbhalgarh tourism circuit",
+        "Important spiritual center with ancient temples",
+        "Known for rural landscapes and leopard conservation areas nearby",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Ideal weather for temple visits and wildlife experiences)",
+
+    idealDuration: "1-2 Days for temples, nearby dams, and safari experiences",
+
+    localFood: [
+      "Dal Baati Churma",
+      "Gatte Ki Sabzi",
+      "Bajra Roti with Ghee",
+      "Kachori and Mirchi Bada",
+      "Rajasthani Thali",
+    ],
+
+    festivals: [
+      "Gangaur Festival",
+      "Teej Festival",
+      "Diwali",
+      "Holi",
+      "Navratri",
+    ],
+
+    travelTips: [
+      "Visit Jawai Dam for leopard sightings early morning or evening",
+      "Combine Pali trip with Ranakpur and Kumbhalgarh",
+      "Carry light clothing in summer due to heat",
+      "Explore local temples for cultural experience",
+      "Hire local guides for wildlife safari near Jawai",
+    ],
+  },
+
+  Bikaner: {
+    overview:
+      "Bikaner is a royal desert city in Rajasthan known for its magnificent forts, camel breeding farms, golden sand dunes, and rich cultural heritage of the Thar Desert region.",
+
+    detailedDescription:
+      "Located in the northwestern part of Rajasthan, Bikaner is a historic city founded by Rao Bika in the 15th century. It is famous for its grand Junagarh Fort, Karni Mata Temple, and vibrant desert culture. The city lies on the edge of the Thar Desert and is known for its camel festival, traditional havelis, and delicious snacks like Bikaneri Bhujia. Bikaner offers a unique mix of royal architecture, desert landscapes, and traditional Rajasthani lifestyle, making it a must-visit destination for heritage and desert tourism.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Junagarh Fort",
+        "Karni Mata Temple (Rat Temple)",
+        "National Research Centre on Camel",
+        "Lalgarh Palace",
+        "Rampuria Havelis",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Major desert city in Rajasthan",
+        "Famous for Junagarh Fort and royal heritage",
+        "Camel breeding and desert safari hub",
+        "Known worldwide for Bikaneri Bhujia snack",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (Best for desert safaris and sightseeing in pleasant weather)",
+
+    idealDuration: "2-3 Days for forts, temples, and desert experiences",
+
+    localFood: [
+      "Bikaneri Bhujia",
+      "Dal Baati Churma",
+      "Gatte Ki Sabzi",
+      "Ker Sangri",
+      "Rajasthani Thali",
+    ],
+
+    festivals: [
+      "Bikaner Camel Festival",
+      "Gangaur Festival",
+      "Teej Festival",
+      "Diwali",
+      "Holi",
+    ],
+
+    travelTips: [
+      "Visit Junagarh Fort early morning for detailed exploration",
+      "Try authentic Bikaneri Bhujia and snacks",
+      "Attend Camel Festival if visiting in January",
+      "Carry sunscreen and water for desert climate",
+      "Combine Bikaner trip with Jaisalmer or Deshnok (Karni Mata Temple)",
+    ],
+  },
 };

@@ -134,26 +134,6 @@ _Sent via YatraTempoTraveller.com booking form_
           </button>
         </div>
 
-        {/* Trust Badge */}
-        <div className="mb-6 bg-orange-50 rounded-xl p-3 flex items-center justify-between border border-orange-100">
-          <div className="flex items-center gap-2">
-            <span className="text-[#FE6A01] text-sm">✓</span>
-            <span className="text-xs text-gray-700">
-              Fixed price • No surge
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-[#FE6A01] text-sm">✓</span>
-            <span className="text-xs text-gray-700">
-              WhatsApp booking in 60s
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-[#FE6A01] text-sm">✓</span>
-            <span className="text-xs text-gray-700">9–26 seater available</span>
-          </div>
-        </div>
-
         <div className="grid md:grid-cols-2 gap-5">
           {/* From City - Varanasi focused */}
           <div>
