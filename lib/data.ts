@@ -35,7 +35,8 @@ export interface TaxiRoute {
     | "madhyapradesh"
     | "rajasthan"
     | "bihar"
-    | "delhi-NCR";
+    | "delhi-NCR"
+    | "himachal-pradesh";
 
   // City Guide Section
   cityGuide?: {
