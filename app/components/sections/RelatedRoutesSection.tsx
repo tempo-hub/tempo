@@ -24,7 +24,7 @@ export function RelatedRoutesSection({ route, allRoutes }: Props) {
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-black mb-10 text-center">
           Popular Routes from{" "}
-          <span className="text-primary">{route.origin}</span>
+          <span className="text-primary capitalize">{route.origin}</span>
         </h2>
 
         {/* Routes Grid */}
@@ -32,7 +32,7 @@ export function RelatedRoutesSection({ route, allRoutes }: Props) {
           {visibleRoutes.map((r) => (
             <a key={r.slug} href={`/fare/${r.slug}`} className="group">
               <div className="p-5 bg-white rounded-2xl border shadow-sm hover:shadow-xl transition-all duration-300 group-hover:-translate-y-1">
-                <p className="text-sm text-slate-500">{r.origin}</p>
+                <p className="text-sm text-slate-500 capitalize">{r.origin}</p>
 
                 <p className="text-lg font-bold flex items-center gap-2">
                   → {r.destination}
