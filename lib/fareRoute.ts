@@ -131,6 +131,58 @@ const BIHAR_DESTINATIONS = [
   "Chapra",
 ];
 
+const HIMACHAL_PRADESH_DESTINATIONS = [
+  "Shimla",
+  "Manali",
+  "Dharamshala",
+  "Kullu",
+  "Solan",
+  "Mandi",
+  "Bilaspur",
+  "Hamirpur",
+  "Una",
+  "Nahan",
+  "Chamba",
+  "Palampur",
+  "Kangra",
+  "Baddi",
+  "Paonta Sahib",
+  "Nurpur",
+  "McLeodganj",
+  "Dalhousie",
+  "Khajjiar",
+  "Kasauli",
+  "Chail",
+  "Spiti Valley",
+  "Kasol",
+  "Lahaul Valley",
+  "Sangla Valley",
+  "Kalpa",
+  "Kaza",
+  "Narkanda",
+  "Kufri",
+  "Mashobra",
+  "Shoja",
+  "Barot Valley",
+  "Fagu",
+  "Naldehra",
+  "Bhuntar",
+  "Naggar",
+  "Jibhi",
+  "Banjar",
+  "Tosh",
+  "Sainj",
+  "Baijnath",
+  "Bir Billing",
+  "Chamunda",
+  "Jawalamukhi",
+  "Banikhet",
+  "Pangi Valley",
+  "Chitkul",
+  "Nako",
+  "Dhankar",
+];
+
 const DELHI_NCR_DESTINATIONS = [
   "Delhi",
   "Noida",
@@ -148,6 +200,7 @@ const ALL_EXCLUDED_DESTINATIONS = [
   ...RAJASTHAN_DESTINATIONS,
   ...BIHAR_DESTINATIONS,
   ...DELHI_NCR_DESTINATIONS,
+  ...HIMACHAL_PRADESH_DESTINATIONS,
 ];
 
 // Filter routes by origin city for REGULAR FARES
@@ -203,4 +256,11 @@ export const DELHI_NCR_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) =>
     route.origin === "Varanasi" &&
     DELHI_NCR_DESTINATIONS.includes(route.destination),
+);
+
+// Himachal Pradesh routes from Varanasi - Regular Fares
+export const HIMACHAL_PRADESH_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
+  (route) =>
+    route.origin === "Varanasi" &&
+    HIMACHAL_PRADESH_DESTINATIONS.includes(route.destination),
 );

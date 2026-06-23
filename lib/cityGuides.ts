@@ -6714,4 +6714,2572 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Combine Bikaner trip with Jaisalmer or Deshnok (Karni Mata Temple)",
     ],
   },
+
+  Dharamshala: {
+    overview:
+      "Dharamshala is a scenic hill station in Himachal Pradesh known for its Tibetan culture, Buddhist monasteries, breathtaking Himalayan views, and peaceful mountain atmosphere.",
+
+    detailedDescription:
+      "Nestled in the Kangra Valley of Himachal Pradesh, Dharamshala is one of India's most popular hill destinations. It serves as the residence of His Holiness the Dalai Lama and is the center of Tibetan culture in India. The town is divided into Lower Dharamshala and McLeod Ganj, which attracts travelers from around the world for its monasteries, cafes, trekking routes, and spiritual ambiance. Surrounded by the majestic Dhauladhar mountain range, Dharamshala offers a perfect blend of nature, adventure, spirituality, and cultural experiences.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "McLeod Ganj",
+        "Namgyal Monastery",
+        "Dalai Lama Temple Complex",
+        "Bhagsu Nag Temple & Waterfall",
+        "Naddi View Point",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Home of the Dalai Lama and Tibetan Government-in-Exile",
+        "Major spiritual and cultural destination",
+        "Popular Himalayan trekking base",
+        "Famous for Tibetan heritage and monasteries",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (Ideal weather for sightseeing and outdoor activities)",
+
+    idealDuration:
+      "3-4 Days for monasteries, sightseeing, trekking, and local experiences",
+
+    localFood: [
+      "Tibetan Momos",
+      "Thukpa",
+      "Tingmo",
+      "Butter Tea",
+      "Himachali Dham",
+    ],
+
+    festivals: [
+      "Losar Festival",
+      "Buddha Purnima",
+      "Dalai Lama Teachings",
+      "Tibetan New Year",
+      "Dharamshala International Film Festival",
+    ],
+
+    travelTips: [
+      "Visit McLeod Ganj and Namgyal Monastery early to avoid crowds",
+      "Carry light woolens even during summer evenings",
+      "Explore local Tibetan markets for handicrafts and souvenirs",
+      "Plan a trek to Triund for stunning mountain views",
+      "Use comfortable footwear for walking on hilly terrain",
+    ],
+  },
+
+  Kullu: {
+    overview:
+      "Kullu is a beautiful valley town in Himachal Pradesh known as the 'Valley of Gods', famous for its scenic landscapes, Beas River, snow-capped mountains, and adventure tourism.",
+
+    detailedDescription:
+      "Nestled in the lap of the Himalayas along the banks of the Beas River, Kullu is one of Himachal Pradesh’s most picturesque destinations. It is widely known for its lush green valleys, apple orchards, ancient temples, and vibrant cultural traditions. Kullu is also a major hub for adventure activities like river rafting, trekking, and paragliding. The town becomes especially lively during the famous Kullu Dussehra festival, which attracts visitors from across the world. It also serves as a gateway to Manali and other high-altitude destinations in the region.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Beas River",
+        "Raghunath Temple",
+        "Great Himalayan National Park",
+        "Bijli Mahadev Temple",
+        "Kasol (Nearby)",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Gateway to Manali and Parvati Valley",
+        "Center of Kullu Dussehra Festival",
+        "Popular hub for adventure tourism",
+        "Rich Himalayan culture and traditions",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and October-February (for snowfall and pleasant weather)",
+
+    idealDuration:
+      "2-3 Days for sightseeing, adventure activities, and nearby exploration",
+
+    localFood: ["Siddu", "Madra", "Babru", "Trout Fish", "Himachali Dham"],
+
+    festivals: [
+      "Kullu Dussehra",
+      "Shivratri Fair",
+      "Baisakhi Festival",
+      "Winter Carnival",
+      "Local Temple Fairs",
+    ],
+
+    travelTips: [
+      "Carry warm clothes even in summer evenings",
+      "Book river rafting and adventure sports in advance",
+      "Avoid traveling during heavy snowfall without updates",
+      "Explore nearby villages for authentic Himachali culture",
+      "Keep buffer time for hilly road travel delays",
+    ],
+  },
+
+  Solan: {
+    overview:
+      "Solan is a peaceful hill town in Himachal Pradesh known as the 'Mushroom City of India' and 'City of Red Gold' due to its tomato production. It is surrounded by lush green hills and offers a calm Himalayan travel experience.",
+
+    detailedDescription:
+      "Located between Chandigarh and Shimla, Solan is a charming hill station in Himachal Pradesh known for its pleasant climate, scenic landscapes, and agricultural importance. The city is famous for mushroom farming and tomato production, earning it the nickname 'Mushroom City of India'. Solan is also home to several ancient temples, monasteries, and trekking trails. Its location on the Kalka–Shimla highway makes it a popular stopover for travelers heading to Shimla, Kasauli, and nearby hill destinations.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Shoolini Mata Temple",
+        "Mohan Shakti Heritage Park",
+        "Jatoli Shiv Temple",
+        "Karol Tibba Trek",
+        "Solan Brewery",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Known as Mushroom City of India",
+        "Important stop on Chandigarh–Shimla route",
+        "Blend of spirituality and nature tourism",
+        "Gateway to Kasauli and Shimla hills",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (pleasant weather for sightseeing and travel)",
+
+    idealDuration: "1-2 Days for sightseeing and nearby hill exploration",
+
+    localFood: [
+      "Siddu",
+      "Himachali Dham",
+      "Chana Madra",
+      "Local street snacks",
+      "Fresh dairy products",
+    ],
+
+    festivals: [
+      "Shoolini Fair",
+      "Baisakhi Festival",
+      "Navratri Celebrations",
+      "Local Temple Fairs",
+      "Winter Cultural Events",
+    ],
+
+    travelTips: [
+      "Perfect stopover between Chandigarh and Shimla",
+      "Carry light woolens in summer evenings",
+      "Visit temples early morning for peaceful experience",
+      "Avoid monsoon landslides on hilly routes",
+      "Try local Himachali food during your stay",
+    ],
+  },
+
+  Mandi: {
+    overview:
+      "Mandi is a historic town in Himachal Pradesh known as the 'Varanasi of Hills' due to its numerous ancient temples, situated along the banks of the Beas River surrounded by scenic mountains.",
+
+    detailedDescription:
+      "Located in the heart of Himachal Pradesh, Mandi is a culturally rich and historically significant town often called the 'Varanasi of Hills' because of its 80+ ancient stone temples. It lies along the banks of the Beas River and serves as a gateway to popular destinations like Manali, Kullu, and Rewalsar. Mandi is known for its spiritual heritage, colonial architecture, and beautiful river valleys. The town also hosts the famous International Shivratri Fair, attracting devotees and tourists from across India.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Bhutnath Temple",
+        "Triloknath Temple",
+        "Rewalsar Lake",
+        "Barot Valley",
+        "Prashar Lake",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Known as 'Varanasi of Hills' for its temples",
+        "Major cultural and spiritual hub in Himachal Pradesh",
+        "Gateway to Kullu and Manali",
+        "Famous for Shivratri Fair and religious tourism",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (pleasant weather for sightseeing and lake visits)",
+
+    idealDuration: "2-3 Days for temples, lakes, and nearby valley exploration",
+
+    localFood: ["Siddu", "Madra", "Dham", "Babru", "Local river fish dishes"],
+
+    festivals: [
+      "International Shivratri Fair",
+      "Baisakhi Festival",
+      "Local Temple Fairs",
+      "Himachal Winter Festival",
+      "Cultural Melas",
+    ],
+
+    travelTips: [
+      "Visit Prashar Lake for breathtaking mountain views",
+      "Explore temples early morning for peaceful experience",
+      "Carry warm clothes even in summer nights",
+      "Avoid monsoon travel due to landslide risks",
+      "Plan extra time for hilly road journeys",
+    ],
+  },
+
+  Bilaspur: {
+    overview:
+      "Bilaspur is a scenic town in Himachal Pradesh located near the beautiful Govind Sagar Lake, known for its calm water views, hill surroundings, and peaceful environment.",
+
+    detailedDescription:
+      "Bilaspur is a picturesque district in Himachal Pradesh situated along the banks of the Govind Sagar Lake, which was formed by the Bhakra Dam on the Sutlej River. The town is known for its serene landscapes, water-based activities, and surrounding green hills. Bilaspur offers a calm escape from city life and is a growing tourist destination for nature lovers and road travelers heading towards higher Himalayan regions. It also holds historical significance with ancient temples and cultural heritage sites scattered across the region.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Govind Sagar Lake",
+        "Bhakra Dam",
+        "Naina Devi Temple",
+        "Kandrour Bridge",
+        "Bandla Hills",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Famous for Govind Sagar Lake tourism",
+        "Important hydroelectric power region (Bhakra Dam)",
+        "Religious tourism due to Naina Devi Temple",
+        "Gateway to inner Himachal hill regions",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (ideal weather for lake views and sightseeing)",
+
+    idealDuration:
+      "1-2 Days for lake visits, temple darshan, and nearby exploration",
+
+    localFood: [
+      "Siddu",
+      "Chana Madra",
+      "Dham",
+      "Local Himachali Thali",
+      "Fresh river fish dishes",
+    ],
+
+    festivals: [
+      "Naina Devi Fair",
+      "Baisakhi Festival",
+      "Local Temple Fairs",
+      "Navratri Celebrations",
+      "Himachali Cultural Events",
+    ],
+
+    travelTips: [
+      "Visit Govind Sagar Lake early morning for best views",
+      "Combine trip with Naina Devi Temple visit",
+      "Carry light woolens in winter months",
+      "Roads are scenic but winding, drive carefully",
+      "Good stopover for long Himalayan road journeys",
+    ],
+  },
+
+  Hamirpur: {
+    overview:
+      "Hamirpur is a small but important town in Himachal Pradesh known for its pleasant climate, peaceful environment, and strong educational and administrative presence in the region.",
+
+    detailedDescription:
+      "Hamirpur is located in the lower hills of Himachal Pradesh and is known for its clean surroundings, good connectivity, and calm lifestyle. It is often referred to as one of the most educated districts of Himachal Pradesh due to a high literacy rate. Surrounded by scenic hills and valleys, Hamirpur serves as a peaceful stopover for travelers heading towards Kangra, Bilaspur, and other Himachal destinations. The region is also culturally rich with several ancient temples and nearby pilgrimage sites attracting devotees throughout the year.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Awah Devi Temple",
+        "Sujanpur Tira Fort",
+        "Nadaun Town (Beas River Views)",
+        "Deotsidh Baba Balak Nath Temple (Nearby)",
+        "Tauni Devi Temple",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Known for temples and religious tourism",
+        "Peaceful hill-town with scenic surroundings",
+        "Gateway between Kangra and Bilaspur regions",
+        "Important administrative and educational hub of Himachal Pradesh",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (pleasant weather for sightseeing and temple visits)",
+
+    idealDuration:
+      "1-2 Days for temples, forts, and nearby river valley exploration",
+
+    localFood: ["Siddu", "Madra", "Chana Dham", "Babru", "Himachali Thali"],
+
+    festivals: [
+      "Baba Balak Nath Fair",
+      "Navratri Celebrations",
+      "Local Temple Melas",
+      "Baisakhi Festival",
+      "Himachali Cultural Events",
+    ],
+
+    travelTips: [
+      "Visit Awah Devi Temple early morning for peaceful experience",
+      "Combine trip with Sujanpur Tira Fort exploration",
+      "Carry light woolens in winter evenings",
+      "Roads are smooth but hilly in some sections",
+      "Perfect stopover between Bilaspur and Kangra routes",
+    ],
+  },
+
+  Una: {
+    overview:
+      "Una is a gateway town in Himachal Pradesh known for its religious significance, industrial development, and easy access to Punjab border regions.",
+
+    detailedDescription:
+      "Una is located in the southwestern part of Himachal Pradesh and serves as an important entry point to the state from Punjab. Unlike the high Himalayan regions, Una lies in lower hills with relatively warmer climate. The district is well known for its religious sites, especially the famous Baba Balak Nath Temple, which attracts thousands of devotees throughout the year. Una also plays a key role in trade, transport, and connectivity between Himachal Pradesh and neighboring states.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Baba Balak Nath Temple (Deotsidh)",
+        "Chintpurni Temple (Nearby)",
+        "Dera Baba Bharbhag Singh",
+        "Gobind Sagar Lake Region",
+        "Pong Dam Wetlands (Nearby)",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Major religious pilgrimage hub in Himachal Pradesh",
+        "Gateway between Punjab and Himachal",
+        "Famous for temples and spiritual tourism",
+        "Important transport and trade district",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "October-March (pleasant weather for temple visits and sightseeing)",
+
+    idealDuration:
+      "1-2 Days for temple visits and nearby spiritual destinations",
+
+    localFood: [
+      "Himachali Dham",
+      "Siddu",
+      "Madra",
+      "Chana Bhatura",
+      "Local Punjabi-Himachali fusion food",
+    ],
+
+    festivals: [
+      "Baba Balak Nath Fair",
+      "Chintpurni Navratri Mela",
+      "Baisakhi Festival",
+      "Local Temple Festivals",
+      "Himachali Cultural Events",
+    ],
+
+    travelTips: [
+      "Visit Baba Balak Nath Temple early morning to avoid rush",
+      "Expect heavy crowds during Navratri season",
+      "Carry light clothes in summer and warm layers in winter",
+      "Road connectivity is excellent from Punjab side",
+      "Plan extra time during pilgrimage seasons due to traffic",
+    ],
+  },
+
+  Nahan: {
+    overview:
+      "Nahan is a peaceful hill town in Himachal Pradesh known for its clean environment, historical significance, and scenic views of the Shivalik Hills.",
+
+    detailedDescription:
+      "Nahan is a charming and less crowded hill station located in the Sirmaur district of Himachal Pradesh. Founded in the 17th century, Nahan is known for its well-planned town structure, calm lakes, temples, and panoramic views of the Shivalik range. It serves as a perfect getaway for travelers seeking peace away from crowded tourist destinations like Shimla and Manali. The town also holds historical importance due to its royal heritage and ancient architecture.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Renuka Lake",
+        "Rani Tal Garden",
+        "Jaitak Fort",
+        "Trilokpur Temple",
+        "Shivalik Hills Viewpoints",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "One of the cleanest and well-planned hill towns in Himachal",
+        "Gateway to Sirmaur district tourism",
+        "Famous for lakes and religious sites",
+        "Less crowded alternative to popular hill stations",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (pleasant weather for sightseeing and lake visits)",
+
+    idealDuration: "1-2 Days for lakes, temples, and nature exploration",
+
+    localFood: [
+      "Siddu",
+      "Madra",
+      "Chana Dham",
+      "Himachali Thali",
+      "Local sweets and snacks",
+    ],
+
+    festivals: [
+      "Renuka Fair",
+      "Baisakhi Festival",
+      "Diwali Celebrations",
+      "Local Temple Fairs",
+      "Himachali Cultural Events",
+    ],
+
+    travelTips: [
+      "Visit Renuka Lake early morning for peaceful views",
+      "Carry light woolens even in summer evenings",
+      "Ideal for short weekend trips",
+      "Roads are scenic but winding in hill areas",
+      "Avoid peak monsoon due to slippery roads",
+    ],
+  },
+
+  Chamba: {
+    overview:
+      "Chamba is a historic hill town in Himachal Pradesh known for its ancient temples, rich cultural heritage, and stunning views of the Ravi River valley.",
+
+    detailedDescription:
+      "Chamba is one of the oldest towns in Himachal Pradesh, located on the banks of the Ravi River and surrounded by the majestic Dhauladhar and Zanskar ranges. It is famous for its temples, miniature-style paintings, and untouched natural beauty. Chamba offers a perfect blend of spirituality, history, and Himalayan landscapes. The town is also known for its vibrant fairs and traditional handicrafts that reflect the rich cultural heritage of the region.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Lakshmi Narayan Temple",
+        "Chamera Lake",
+        "Khajjiar (Mini Switzerland of India)",
+        "Rang Mahal",
+        "Manimahesh Lake (Pilgrimage Site)",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Known for ancient temples and cultural heritage",
+        "Gateway to Khajjiar and high-altitude lakes",
+        "Famous for Chamba paintings and handicrafts",
+        "Important spiritual pilgrimage destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (pleasant weather for sightseeing and nature exploration)",
+
+    idealDuration: "2-3 Days for lakes, temples, and nearby hill destinations",
+
+    localFood: [
+      "Siddu",
+      "Madra",
+      "Dham",
+      "Chana Rajma",
+      "Local river fish dishes",
+    ],
+
+    festivals: [
+      "Minjar Fair",
+      "Manimahesh Yatra",
+      "Baisakhi Festival",
+      "Suhi Mata Festival",
+      "Local Cultural Melas",
+    ],
+
+    travelTips: [
+      "Visit Khajjiar early morning for clear views",
+      "Carry warm clothes even in summer nights",
+      "Roads are hilly and may take extra travel time",
+      "Plan pilgrimage visits carefully during Manimahesh Yatra",
+      "Ideal destination for nature and photography lovers",
+    ],
+  },
+
+  Palampur: {
+    overview:
+      "Palampur is a beautiful hill town in Himachal Pradesh known for its tea gardens, pleasant climate, and stunning views of the Dhauladhar mountain range.",
+
+    detailedDescription:
+      "Palampur is a scenic town located in the Kangra Valley of Himachal Pradesh. It is widely known as the 'Tea Capital of North India' due to its lush green tea estates spread across rolling hills. Surrounded by pine forests and snow-covered Dhauladhar ranges, Palampur offers a calm and refreshing environment. The town is also a gateway to trekking routes, monasteries, and nearby hill destinations like Bir Billing, famous for paragliding.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Tea Gardens of Palampur",
+        "Saurabh Van Vihar",
+        "Baijnath Temple",
+        "Andretta Artists Village",
+        "Tashi Jong Monastery",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Famous for tea plantations and natural beauty",
+        "Gateway to Bir Billing paragliding site",
+        "Surrounded by Dhauladhar mountain range",
+        "Popular for peaceful hill tourism and photography",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (pleasant weather for sightseeing and outdoor activities)",
+
+    idealDuration:
+      "2-3 Days for tea gardens, nearby villages, and adventure spots",
+
+    localFood: [
+      "Siddu",
+      "Madra",
+      "Himachali Dham",
+      "Thukpa",
+      "Local tea and snacks",
+    ],
+
+    festivals: [
+      "Palampur Holi Festival",
+      "Baijnath Shivratri Fair",
+      "Baisakhi Festival",
+      "Local Temple Fairs",
+      "Cultural Himachali Events",
+    ],
+
+    travelTips: [
+      "Visit tea gardens early morning for best views",
+      "Combine trip with Bir Billing for paragliding experience",
+      "Carry light woolens even in summer evenings",
+      "Ideal for peaceful and less crowded travel",
+      "Roads are scenic but narrow in some areas",
+    ],
+  },
+
+  Kangra: {
+    overview:
+      "Kangra is a historic district in Himachal Pradesh known for its ancient temples, lush valleys, tea gardens, and the famous Kangra Fort.",
+
+    detailedDescription:
+      "Kangra is one of the most culturally rich regions in Himachal Pradesh, located in the foothills of the Dhauladhar range. It is famous for its historical significance, especially the ancient Kangra Fort, one of the oldest forts in India. The region is blessed with green valleys, tea gardens, and river landscapes. Kangra also holds deep spiritual importance with many ancient temples and pilgrimage sites, making it a blend of history, culture, and natural beauty.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Kangra Fort",
+        "Masroor Rock Cut Temple",
+        "Kangra Art Museum",
+        "Brajeshwari Devi Temple (Kangra Devi)",
+        "Kareri Lake (Nearby Trek)",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Home to one of the oldest forts in India",
+        "Important religious and pilgrimage destination",
+        "Famous for Kangra miniature paintings",
+        "Gateway to Dharamshala and McLeod Ganj region",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit:
+      "March-June and September-November (pleasant weather for sightseeing and trekking)",
+
+    idealDuration:
+      "2-3 Days for temples, forts, and nearby natural attractions",
+
+    localFood: ["Siddu", "Madra", "Dham", "Babru", "Local Himachali Thali"],
+
+    festivals: [
+      "Kangra Devi Fair",
+      "Navratri Celebrations",
+      "Baisakhi Festival",
+      "Shivratri Festival",
+      "Local Cultural Melas",
+    ],
+
+    travelTips: [
+      "Visit Kangra Fort early morning for best views",
+      "Combine trip with Dharamshala and McLeod Ganj",
+      "Carry comfortable shoes for fort exploration",
+      "Best time for photography is during clear weather",
+      "Avoid monsoon due to slippery hill roads",
+    ],
+  },
+
+  Baddi: {
+    overview:
+      "Baddi is one of the largest industrial towns in Himachal Pradesh, known for its pharmaceutical, manufacturing, and corporate hubs.",
+
+    detailedDescription:
+      "Baddi is a major industrial town located in Solan district of Himachal Pradesh. It is one of Asia’s largest pharmaceutical manufacturing hubs, hosting hundreds of national and international companies. Unlike other tourist destinations in Himachal, Baddi is more focused on business, trade, and industrial development. Its proximity to Chandigarh makes it a key economic zone in North India.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Pharma Industrial Zone",
+        "Nalagarh Fort (Nearby)",
+        "Chandigarh Proximity",
+        "River Sirsa Views",
+        "Local Temples",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Largest industrial hub of Himachal Pradesh",
+        "Pharmaceutical manufacturing center",
+        "Business and corporate tourism destination",
+        "Gateway to Solan and Chandigarh region",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March for comfortable business travel",
+
+    idealDuration: "1-2 Days for industrial visits and meetings",
+
+    localFood: [
+      "North Indian Cuisine",
+      "Punjabi Thali",
+      "Street Snacks",
+      "Dhabas Food",
+      "Simple Home-style meals",
+    ],
+
+    festivals: [
+      "Local Industrial Events",
+      "Himachal Cultural Fairs",
+      "Baisakhi Celebrations",
+      "Diwali Festivals",
+      "Corporate Events",
+    ],
+
+    travelTips: [
+      "Mostly business-focused destination",
+      "Stay near Baddi-Barotiwala industrial belt",
+      "Easy access from Chandigarh airport",
+      "Plan meetings in advance",
+      "Limited tourist attractions",
+    ],
+  },
+
+  "Paonta Sahib": {
+    overview:
+      "Paonta Sahib is a sacred Sikh pilgrimage town located on the banks of the Yamuna River in Himachal Pradesh.",
+
+    detailedDescription:
+      "Paonta Sahib is one of the most important Sikh religious sites in India, associated with Guru Gobind Singh Ji. It is situated on the banks of the Yamuna River in Sirmaur district. The town is known for its peaceful spiritual atmosphere, historic Gurudwara, and scenic river surroundings.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Gurudwara Paonta Sahib",
+        "Yamuna River Ghat",
+        "Assan Barrage",
+        "Fossil Park",
+        "Shivalik Hills Views",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Major Sikh pilgrimage site",
+        "Associated with Guru Gobind Singh Ji",
+        "Religious and spiritual tourism hub",
+        "River-side sacred destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-March for pleasant weather and river views",
+
+    idealDuration: "1-2 Days for Gurudwara visit and nearby sightseeing",
+
+    localFood: [
+      "Langar Food",
+      "Punjabi Dishes",
+      "Kadhi Chawal",
+      "Simple Vegetarian Meals",
+      "Sweet Prasad",
+    ],
+
+    festivals: [
+      "Guru Gobind Singh Jayanti",
+      "Baisakhi",
+      "Gurpurab Celebrations",
+      "Diwali at Gurudwara",
+      "Religious Melas",
+    ],
+
+    travelTips: [
+      "Follow dress code inside Gurudwara",
+      "Try Langar meal experience",
+      "Maintain silence in prayer areas",
+      "Avoid rush hours during festivals",
+      "Respect religious customs",
+    ],
+  },
+
+  Nurpur: {
+    overview:
+      "Nurpur is a historic town in Himachal Pradesh known for its ancient fort and views of the Kangra Valley.",
+
+    detailedDescription:
+      "Nurpur is a heritage town in Kangra district famous for the ancient Nurpur Fort built during the royal era. Surrounded by hills and rivers, it offers a peaceful environment and rich historical significance.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Nurpur Fort",
+        "Dharamshala Views Nearby",
+        "River Chakki",
+        "Ancient Temples",
+        "Kangra Valley Scenery",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Historic royal fort destination",
+        "Part of Kangra heritage tourism",
+        "Gateway to Dharamshala region",
+        "Peaceful offbeat destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1 Day for fort and local sightseeing",
+
+    localFood: [
+      "Himachali Dham",
+      "Siddu",
+      "Madra",
+      "Local Snacks",
+      "Tea and Pakoras",
+    ],
+
+    festivals: [
+      "Local Temple Fairs",
+      "Baisakhi",
+      "Navratri",
+      "Cultural Melas",
+      "Heritage Events",
+    ],
+
+    travelTips: [
+      "Visit fort early morning",
+      "Carry water and snacks",
+      "Hire local guide for history",
+      "Combine with Kangra trip",
+      "Avoid monsoon slippery routes",
+    ],
+  },
+
+  McLeodganj: {
+    overview:
+      "McLeodganj is a famous Tibetan settlement in Himachal Pradesh known as the residence of the Dalai Lama.",
+
+    detailedDescription:
+      "McLeodganj is a vibrant hill town near Dharamshala known for Tibetan culture, monasteries, cafes, and global tourism. It is the residence of His Holiness the Dalai Lama and attracts travelers from all over the world.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Dalai Lama Temple",
+        "Namgyal Monastery",
+        "Bhagsu Waterfall",
+        "Triund Trek",
+        "Naddi View Point",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Global Tibetan culture center",
+        "Spiritual tourism destination",
+        "Trekking hub (Triund)",
+        "Backpacker hotspot",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "3-4 Days for trekking and exploration",
+
+    localFood: [
+      "Tibetan Momos",
+      "Thukpa",
+      "Butter Tea",
+      "Cafe Food",
+      "Israeli Cuisine",
+    ],
+
+    festivals: [
+      "Tibetan New Year (Losar)",
+      "Dalai Lama Teachings",
+      "Buddha Purnima",
+      "Cultural Events",
+      "Film Festivals",
+    ],
+
+    travelTips: [
+      "Start Triund trek early",
+      "Respect monastery rules",
+      "Carry warm clothes",
+      "Book stay in advance",
+      "Explore local cafes",
+    ],
+  },
+
+  Dalhousie: {
+    overview:
+      "Dalhousie is a colonial-era hill station in Himachal Pradesh known for pine forests, churches, and mountain views.",
+
+    detailedDescription:
+      "Dalhousie is a peaceful hill station spread across five hills in Himachal Pradesh. It is known for its colonial architecture, churches, pine valleys, and scenic viewpoints.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Khajjiar",
+        "Panchpula",
+        "Kalatop Wildlife Sanctuary",
+        "St. John Church",
+        "Dainkund Peak",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Colonial hill station charm",
+        "Gateway to Khajjiar",
+        "Nature and forest tourism",
+        "Peaceful honeymoon destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and October-December",
+
+    idealDuration: "2-3 Days for sightseeing and nature walks",
+
+    localFood: [
+      "Siddu",
+      "Himachali Dham",
+      "Momos",
+      "Local Bakery Items",
+      "Tea and Snacks",
+    ],
+
+    festivals: [
+      "Summer Festival",
+      "Christmas Celebrations",
+      "Local Fairs",
+      "Baisakhi",
+      "Cultural Events",
+    ],
+
+    travelTips: [
+      "Carry warm clothes",
+      "Visit Khajjiar early morning",
+      "Avoid heavy monsoon travel",
+      "Walk around town for best experience",
+      "Book hotels in advance",
+    ],
+  },
+
+  Khajjiar: {
+    overview:
+      "Khajjiar is a beautiful meadow in Himachal Pradesh known as the 'Mini Switzerland of India'.",
+
+    detailedDescription:
+      "Khajjiar is a scenic hill destination surrounded by dense forests and snow-capped mountains. It features a large green meadow with a lake in the center, making it one of the most photogenic locations in India.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Khajjiar Lake",
+        "Golden Meadow",
+        "Kalatop Wildlife Sanctuary",
+        "Adventure Sports",
+        "Forest Trails",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Known as Mini Switzerland of India",
+        "Popular photography destination",
+        "Adventure tourism spot",
+        "Part of Dalhousie circuit",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1 Day for sightseeing and photography",
+
+    localFood: ["Momos", "Maggi", "Tea", "Himachali Snacks", "Street Food"],
+
+    festivals: [
+      "Local Fairs",
+      "Tourism Events",
+      "Baisakhi",
+      "Cultural Celebrations",
+      "Seasonal Festivals",
+    ],
+
+    travelTips: [
+      "Visit early morning for clear views",
+      "Carry warm clothes",
+      "Avoid foggy winter days",
+      "Try adventure activities",
+      "Keep camera ready",
+    ],
+  },
+
+  Kasauli: {
+    overview:
+      "Kasauli is a quiet colonial-era hill station in Himachal Pradesh known for its pine forests, calm environment, and scenic viewpoints.",
+
+    detailedDescription:
+      "Kasauli is a small and peaceful hill station located in Solan district. It is known for its British-era charm, clean air, dense pine forests, and slow-paced lifestyle. Unlike crowded hill stations, Kasauli offers a relaxed atmosphere perfect for nature walks and weekend getaways.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Monkey Point",
+        "Christ Church",
+        "Gilbert Trail",
+        "Sunset Point",
+        "Kasauli Brewery",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Peaceful colonial hill station",
+        "Nature and photography destination",
+        "Weekend getaway from Chandigarh",
+        "Eco-tourism hotspot",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1-2 Days for sightseeing and walks",
+
+    localFood: [
+      "Maggi",
+      "Momos",
+      "Hot Tea",
+      "Himachali Snacks",
+      "Bakery Items",
+    ],
+
+    festivals: [
+      "Christmas Celebrations",
+      "Summer Festivals",
+      "Local Fairs",
+      "Baisakhi",
+      "Cultural Events",
+    ],
+
+    travelTips: [
+      "Walk on Gilbert Trail for best views",
+      "Avoid peak tourist weekends",
+      "Carry light woolens",
+      "Park vehicles outside main town",
+      "Enjoy sunset at Sunset Point",
+    ],
+  },
+
+  Chail: {
+    overview:
+      "Chail is a peaceful hill station in Himachal Pradesh famous for its palace, forests, and the world’s highest cricket ground.",
+
+    detailedDescription:
+      "Chail is located in the Shimla district and is known for its royal heritage and calm surroundings. It was once the summer capital of the Maharaja of Patiala and still carries a regal charm. Surrounded by dense forests and mountains, Chail is perfect for nature lovers and peaceful retreats.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Chail Palace",
+        "Chail Cricket Ground",
+        "Kali Ka Tibba",
+        "Sadhupul",
+        "Chail Wildlife Sanctuary",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Royal heritage hill station",
+        "Highest cricket ground in the world",
+        "Nature and wildlife tourism",
+        "Peaceful alternative to Shimla",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1-2 Days for palace and nature exploration",
+
+    localFood: ["Siddu", "Himachali Dham", "Maggi", "Tea", "Local Snacks"],
+
+    festivals: [
+      "Local Temple Fairs",
+      "Baisakhi",
+      "Navratri",
+      "Cultural Events",
+      "Winter Festivals",
+    ],
+
+    travelTips: [
+      "Visit Chail Palace early morning",
+      "Drive carefully on hilly roads",
+      "Carry warm clothes",
+      "Perfect for quiet stays",
+      "Avoid monsoon travel",
+    ],
+  },
+
+  "Spiti Valley": {
+    overview:
+      "Spiti Valley is a cold desert mountain region in Himachal Pradesh known for its dramatic landscapes, monasteries, and adventure roads.",
+
+    detailedDescription:
+      "Spiti Valley is a high-altitude cold desert region located in the Himalayas. It is famous for its barren mountains, ancient Buddhist monasteries, and extreme road journeys. Often called 'Little Tibet', Spiti offers one of the most adventurous travel experiences in India.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Key Monastery",
+        "Kaza Town",
+        "Tabo Monastery",
+        "Dhankar Monastery",
+        "Chandratal Lake",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Cold desert adventure destination",
+        "Buddhist cultural heritage region",
+        "High-altitude road trip experience",
+        "Photography and trekking hotspot",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "June-September (road accessibility period)",
+
+    idealDuration: "5-7 Days for full valley exploration",
+
+    localFood: [
+      "Thukpa",
+      "Momos",
+      "Butter Tea",
+      "Dal Chawal",
+      "Simple Tibetan food",
+    ],
+
+    festivals: [
+      "Losar Festival",
+      "Buddha Purnima",
+      "Monastery Festivals",
+      "Local Cultural Events",
+      "Folk Celebrations",
+    ],
+
+    travelTips: [
+      "Acclimatize before travel",
+      "Carry extra fuel and cash",
+      "Avoid winter travel",
+      "Roads are rough and remote",
+      "Carry warm heavy clothing",
+    ],
+  },
+
+  Kasol: {
+    overview:
+      "Kasol is a popular backpacker destination in Himachal Pradesh known for Parvati Valley views and peaceful riverside vibes.",
+
+    detailedDescription:
+      "Kasol is a small village located in Parvati Valley, famous among backpackers for its scenic river views, cafes, and trekking routes. It is also known as the 'Mini Israel of India' due to its Israeli tourists and culture.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Parvati River",
+        "Chalal Village",
+        "Manikaran Sahib",
+        "Kheerganga Trek",
+        "Riverside Cafes",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Backpacking destination",
+        "Trekking hub in Parvati Valley",
+        "Riverside café culture",
+        "International tourist hotspot",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "2-3 Days for trekking and relaxation",
+
+    localFood: ["Israeli Food", "Momos", "Maggi", "Shakes", "Cafe Cuisine"],
+
+    festivals: [
+      "Local Music Festivals",
+      "Cultural Gatherings",
+      "Holi Celebrations",
+      "Baisakhi",
+      "Tourist Events",
+    ],
+
+    travelTips: [
+      "Trekking shoes required",
+      "Avoid monsoon landslides",
+      "Book riverside stays early",
+      "Respect local culture",
+      "Try trekking to Kheerganga",
+    ],
+  },
+
+  "Lahaul Valley": {
+    overview:
+      "Lahaul Valley is a remote Himalayan region known for its dramatic landscapes, monasteries, and adventure routes.",
+
+    detailedDescription:
+      "Lahaul Valley is a cold desert region in Himachal Pradesh connected with Spiti and Ladakh routes. It is known for its barren mountains, glaciers, rivers, and Buddhist culture.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Keylong",
+        "Jispa Village",
+        "Baralacha Pass",
+        "Suraj Tal Lake",
+        "Shashur Monastery",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Gateway to Ladakh route",
+        "High-altitude adventure destination",
+        "Buddhist cultural region",
+        "Extreme landscape tourism",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "June-September",
+
+    idealDuration: "3-5 Days for valley exploration",
+
+    localFood: [
+      "Thukpa",
+      "Momos",
+      "Butter Tea",
+      "Rice Dishes",
+      "Simple Tibetan Food",
+    ],
+
+    festivals: [
+      "Lahaul Cultural Festival",
+      "Losar",
+      "Monastery Events",
+      "Buddhist Celebrations",
+      "Local Fairs",
+    ],
+
+    travelTips: [
+      "Carry oxygen support if needed",
+      "Avoid winter travel",
+      "Roads may close due to snow",
+      "Carry cash and essentials",
+      "Prepare for extreme weather",
+    ],
+  },
+
+  "Sangla Valley": {
+    overview:
+      "Sangla Valley is a picturesque valley in Kinnaur known for apple orchards, rivers, and stunning Himalayan landscapes.",
+
+    detailedDescription:
+      "Sangla Valley is located in Kinnaur district and is famous for its beautiful Baspa River, apple orchards, and traditional wooden houses. It is one of the most scenic valleys in Himachal Pradesh.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Chitkul Village",
+        "Kamru Fort",
+        "Baspa River",
+        "Rakcham Village",
+        "Apple Orchards",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "One of the most beautiful valleys in Himachal",
+        "Gateway to Indo-Tibet border villages",
+        "Apple orchard tourism hub",
+        "Remote Himalayan experience",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "April-June and September-October",
+
+    idealDuration: "3-4 Days for valley exploration",
+
+    localFood: [
+      "Siddu",
+      "Rajma Chawal",
+      "Apple-based products",
+      "Himachali Dham",
+      "Local snacks",
+    ],
+
+    festivals: [
+      "Losar Festival",
+      "Apple Harvest Festival",
+      "Baisakhi",
+      "Local Temple Fairs",
+      "Cultural Events",
+    ],
+
+    travelTips: [
+      "Carry warm clothes even in summer",
+      "Roads can be narrow and tricky",
+      "Avoid winter snowfall period",
+      "Try local apples and food",
+      "Stay in homestays for best experience",
+    ],
+  },
+  Kalpa: {
+    overview:
+      "Kalpa is a picturesque Himalayan village in Kinnaur district known for breathtaking views of the Kinner Kailash mountain range.",
+
+    detailedDescription:
+      "Kalpa is one of the most beautiful destinations in Himachal Pradesh, situated at an altitude of about 2,960 meters. Surrounded by apple orchards, deodar forests, and snow-covered peaks, it offers spectacular views of the sacred Kinner Kailash range. The village is famous for its traditional Kinnauri culture, wooden architecture, and peaceful atmosphere.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Kinner Kailash Viewpoint",
+        "Suicide Point",
+        "Narayan-Nagini Temple",
+        "Apple Orchards",
+        "Roghi Village",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Gateway to Kinnaur tourism",
+        "Famous Kinner Kailash views",
+        "Rich Kinnauri culture",
+        "Popular mountain photography destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "April-June and September-October",
+
+    idealDuration: "2-3 Days",
+
+    localFood: [
+      "Siddu",
+      "Thukpa",
+      "Madra",
+      "Kinnauri Rajma",
+      "Local Apple Products",
+    ],
+
+    festivals: [
+      "Losar Festival",
+      "Fulaich Festival",
+      "Baisakhi",
+      "Local Temple Fairs",
+    ],
+
+    travelTips: [
+      "Carry warm clothing throughout the year",
+      "Enjoy sunrise views of Kinner Kailash",
+      "Visit nearby Roghi village",
+      "Keep extra travel time for mountain roads",
+    ],
+  },
+  Kaza: {
+    overview:
+      "Kaza is the administrative headquarters of Spiti Valley and a major base for exploring the cold desert region.",
+
+    detailedDescription:
+      "Located in the heart of Spiti Valley, Kaza is a high-altitude town known for its dramatic landscapes, Buddhist monasteries, and adventure tourism. It serves as the main center for travelers visiting Langza, Hikkim, Komic, and Key Monastery.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Key Monastery",
+        "Langza Village",
+        "Hikkim Post Office",
+        "Komic Village",
+        "Chandratal Lake",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Heart of Spiti Valley tourism",
+        "Ancient Buddhist heritage",
+        "Adventure and road-trip destination",
+        "Gateway to remote Himalayan villages",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "June-September",
+
+    idealDuration: "4-5 Days",
+
+    localFood: [
+      "Momos",
+      "Thukpa",
+      "Butter Tea",
+      "Tibetan Bread",
+      "Local Spitian Cuisine",
+    ],
+
+    festivals: [
+      "Losar Festival",
+      "Ladarcha Fair",
+      "Buddhist Cultural Festivals",
+    ],
+
+    travelTips: [
+      "Allow time for acclimatization",
+      "Carry warm clothes",
+      "Keep cash available",
+      "Road conditions can be challenging",
+    ],
+  },
+  Narkanda: {
+    overview:
+      "Narkanda is a charming hill station famous for apple orchards, skiing, and panoramic Himalayan views.",
+
+    detailedDescription:
+      "Situated along the Hindustan-Tibet Road, Narkanda is one of Himachal Pradesh's most scenic hill destinations. It attracts visitors for snow activities, apple farming, and mountain landscapes.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Hatu Peak",
+        "Hatu Temple",
+        "Apple Orchards",
+        "Skiing Slopes",
+        "Tannu Jubbar Lake",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Popular skiing destination",
+        "Apple-growing region",
+        "Scenic Himalayan viewpoints",
+        "Gateway to Kinnaur",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and December-February",
+
+    idealDuration: "2 Days",
+
+    localFood: ["Siddu", "Madra", "Dham", "Rajma Chawal"],
+
+    festivals: ["Baisakhi", "Local Fairs", "Winter Festivals"],
+
+    travelTips: [
+      "Visit Hatu Peak early morning",
+      "Carry warm clothes in winter",
+      "Book hotels in advance during snowfall season",
+    ],
+  },
+  Kufri: {
+    overview:
+      "Kufri is a popular hill destination near Shimla known for adventure sports, horse riding, and snowfall.",
+
+    detailedDescription:
+      "Kufri Located about 16 km from Shimla, Kufri is a favorite tourist destination offering beautiful mountain views, adventure activities, and winter snowfall experiences.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Kufri Fun World",
+        "Mahasu Peak",
+        "Himalayan Nature Park",
+        "Adventure Activities",
+        "Horse Riding Trails",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Popular family destination",
+        "Adventure tourism center",
+        "Snowfall attraction near Shimla",
+        "Mountain viewpoint destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-February and March-June",
+
+    idealDuration: "1-2 Days",
+
+    localFood: ["Maggi", "Momos", "Siddu", "Tea"],
+
+    festivals: ["Winter Festival", "Baisakhi", "Local Fairs"],
+
+    travelTips: [
+      "Visit early to avoid crowds",
+      "Wear proper shoes in snow",
+      "Carry jackets even in summer evenings",
+    ],
+  },
+  Mashobra: {
+    overview:
+      "Mashobra is a peaceful hill retreat near Shimla known for pine forests and natural beauty.",
+
+    detailedDescription:
+      "Mashobra is surrounded by dense forests, apple orchards, and mountain landscapes. It offers a tranquil atmosphere away from crowded tourist spots.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Craignano Nature Park",
+        "Reserve Forest Sanctuary",
+        "Apple Orchards",
+        "Mountain Trails",
+        "Mahasu Peak",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Nature tourism destination",
+        "Peaceful alternative to Shimla",
+        "Popular for eco-tourism",
+        "Known for scenic forests",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1-2 Days",
+
+    localFood: ["Siddu", "Madra", "Tea", "Local Snacks"],
+
+    festivals: ["Baisakhi", "Local Cultural Events"],
+
+    travelTips: [
+      "Ideal for nature walks",
+      "Carry light woolens",
+      "Explore nearby villages",
+    ],
+  },
+  Shoja: {
+    overview:
+      "Shoja is a hidden Himalayan village known for untouched natural beauty and peaceful surroundings.",
+
+    detailedDescription:
+      "Located in Seraj Valley, Shoja is an offbeat destination offering dense forests, waterfalls, and breathtaking mountain views.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Jalori Pass",
+        "Serolsar Lake",
+        "Raghupur Fort",
+        "Forest Trails",
+        "Scenic Viewpoints",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Offbeat mountain destination",
+        "Nature and trekking tourism",
+        "Gateway to Jalori Pass",
+        "Photography hotspot",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "2 Days",
+
+    localFood: ["Siddu", "Dham", "Tea", "Local Cuisine"],
+
+    festivals: ["Local Fairs", "Baisakhi"],
+
+    travelTips: [
+      "Visit Jalori Pass",
+      "Carry trekking shoes",
+      "Book accommodation early",
+    ],
+  },
+  BarotValley: {
+    overview:
+      "Barot Valley is a beautiful riverside destination known for trout fishing and lush green landscapes.",
+
+    detailedDescription:
+      "Barot Valley is situated in Mandi district and offers stunning river views, forests, and outdoor adventure opportunities.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Uhl River",
+        "Trout Fish Farm",
+        "Nargu Wildlife Sanctuary",
+        "Barot Dam",
+        "Forest Trails",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Famous trout fishing destination",
+        "Eco-tourism location",
+        "Popular among nature lovers",
+        "Adventure and camping hub",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "2 Days",
+
+    localFood: ["Trout Fish", "Siddu", "Madra", "Himachali Dham"],
+
+    festivals: ["Local Fairs", "Baisakhi"],
+
+    travelTips: [
+      "Try trout fishing",
+      "Carry outdoor gear",
+      "Ideal for camping",
+    ],
+  },
+  Fagu: {
+    overview:
+      "Fagu is a serene hill destination in Himachal Pradesh known for its apple orchards, snow-covered landscapes, and panoramic Himalayan views.",
+
+    detailedDescription:
+      "Located near Shimla, Fagu is a peaceful hill station surrounded by forests, orchards, and majestic mountain ranges. The destination is popular among travelers seeking a quiet retreat away from crowded tourist areas. Its elevated location provides stunning views of the Himalayas and beautiful sunrise and sunset experiences.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Apple Orchards",
+        "Himalayan Viewpoints",
+        "Nature Trails",
+        "Snowfall Points",
+        "Forest Walks",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Peaceful alternative to Shimla",
+        "Famous for apple cultivation",
+        "Excellent Himalayan viewpoints",
+        "Popular nature getaway",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and October-February",
+
+    idealDuration: "1-2 Days",
+
+    localFood: ["Siddu", "Madra", "Apple Products", "Tea", "Himachali Dham"],
+
+    festivals: ["Baisakhi", "Apple Harvest Festivals", "Local Cultural Events"],
+
+    travelTips: [
+      "Visit during sunrise for best mountain views",
+      "Carry warm clothing in winter",
+      "Explore nearby orchards",
+    ],
+  },
+  Naldehra: {
+    overview:
+      "Naldehra is a scenic hill station famous for its historic golf course, cedar forests, and pleasant weather.",
+
+    detailedDescription:
+      "Situated near Shimla, Naldehra is known for its lush green meadows, towering cedar trees, and one of India's oldest golf courses. The destination offers peaceful surroundings and beautiful landscapes, making it a favorite among nature lovers and families.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Naldehra Golf Course",
+        "Cedar Forests",
+        "Horse Riding Trails",
+        "Nature Walks",
+        "Mountain Viewpoints",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Home to a historic golf course",
+        "Popular family destination",
+        "Known for scenic landscapes",
+        "Peaceful hill retreat",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1-2 Days",
+
+    localFood: ["Siddu", "Madra", "Dham", "Tea", "Local Snacks"],
+
+    festivals: ["Baisakhi", "Summer Festivals", "Local Cultural Events"],
+
+    travelTips: [
+      "Visit the golf course early morning",
+      "Carry comfortable walking shoes",
+      "Enjoy horse riding activities",
+    ],
+  },
+  Bhuntar: {
+    overview:
+      "Bhuntar is an important gateway town to Kullu, Manali, and Parvati Valley, located along the Beas River.",
+
+    detailedDescription:
+      "Bhuntar serves as the entry point to some of Himachal Pradesh's most famous tourist destinations. Located at the confluence of the Beas and Parvati rivers, the town is known for its scenic surroundings and strategic location for travelers heading toward Kullu, Manali, Kasol, and Manikaran.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Beas River",
+        "Parvati River",
+        "Basheshwar Mahadev Temple",
+        "Nearby Kullu Valley",
+        "Scenic Riverside Areas",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Gateway to Kullu and Manali",
+        "Access point to Parvati Valley",
+        "Important transportation hub",
+        "Popular stop for travelers",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1 Day",
+
+    localFood: ["Siddu", "Madra", "Dham", "Trout Fish", "Local Snacks"],
+
+    festivals: ["Kullu Dussehra", "Baisakhi", "Local Temple Festivals"],
+
+    travelTips: [
+      "Ideal stop before Manali or Kasol",
+      "Explore nearby temples",
+      "Carry warm clothes during winter",
+    ],
+  },
+  Naggar: {
+    overview:
+      "Naggar is a heritage village in Kullu Valley famous for Naggar Castle, ancient temples, and stunning Himalayan views.",
+
+    detailedDescription:
+      "Once the capital of the Kullu Kingdom, Naggar is rich in history and culture. The village is known for traditional Himachali architecture, scenic mountain landscapes, and artistic heritage. It offers a perfect blend of history, nature, and spirituality.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Naggar Castle",
+        "Nicholas Roerich Art Gallery",
+        "Tripura Sundari Temple",
+        "Gauri Shankar Temple",
+        "Kullu Valley Views",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Former capital of Kullu Kingdom",
+        "Important heritage destination",
+        "Famous for architecture and art",
+        "Popular photography location",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1-2 Days",
+
+    localFood: ["Siddu", "Madra", "Dham", "Trout Fish", "Local Cuisine"],
+
+    festivals: ["Kullu Dussehra", "Baisakhi", "Temple Festivals"],
+
+    travelTips: [
+      "Visit Naggar Castle at sunset",
+      "Explore local temples",
+      "Carry a camera for valley views",
+    ],
+  },
+  Jibhi: {
+    overview:
+      "Jibhi is a picturesque village in Himachal Pradesh known for waterfalls, pine forests, and peaceful mountain scenery.",
+
+    detailedDescription:
+      "Located in the Tirthan Valley region, Jibhi is a hidden gem attracting travelers looking for tranquility and nature. The village features wooden houses, flowing streams, dense forests, and excellent trekking opportunities.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Jibhi Waterfall",
+        "Jalori Pass",
+        "Serolsar Lake",
+        "Mini Thailand",
+        "Forest Trails",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Popular offbeat destination",
+        "Nature and trekking hub",
+        "Part of Tirthan Valley circuit",
+        "Ideal for eco-tourism",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "2-3 Days",
+
+    localFood: ["Siddu", "Dham", "Tea", "Local Trout Fish", "Mountain Cuisine"],
+
+    festivals: ["Baisakhi", "Local Village Festivals", "Cultural Fairs"],
+
+    travelTips: [
+      "Carry trekking shoes",
+      "Visit waterfalls early morning",
+      "Book stays in advance during peak season",
+    ],
+  },
+  Banjar: {
+    overview:
+      "Banjar is a scenic town in the Tirthan Valley region known for natural beauty, rivers, and adventure tourism.",
+
+    detailedDescription:
+      "Banjar serves as a gateway to the Tirthan Valley and Great Himalayan National Park. The region is famous for lush green landscapes, trout fishing, trekking, and peaceful village life.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Tirthan Valley",
+        "Great Himalayan National Park",
+        "Jalori Pass",
+        "River Trails",
+        "Traditional Villages",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Gateway to Tirthan Valley",
+        "Adventure tourism destination",
+        "Eco-tourism hotspot",
+        "Nature lover's paradise",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "2-3 Days",
+
+    localFood: [
+      "Siddu",
+      "Madra",
+      "Dham",
+      "Trout Fish",
+      "Local Village Cuisine",
+    ],
+
+    festivals: ["Baisakhi", "Village Festivals", "Local Cultural Events"],
+
+    travelTips: [
+      "Explore nearby villages",
+      "Visit Great Himalayan National Park",
+      "Carry outdoor gear",
+    ],
+  },
+  Tosh: {
+    overview:
+      "Tosh is a scenic Himalayan village in Parvati Valley known for breathtaking mountain views, trekking trails, and backpacker culture.",
+
+    detailedDescription:
+      "Located at the end of Parvati Valley, Tosh is famous for its snow-capped peaks, peaceful atmosphere, and stunning landscapes. The village attracts trekkers, nature lovers, and travelers seeking an authentic Himalayan experience.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Parvati Valley Views",
+        "Tosh Waterfalls",
+        "Trekking Trails",
+        "Mountain Viewpoints",
+        "Traditional Village Life",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Popular trekking destination",
+        "Part of Parvati Valley tourism",
+        "Backpacker hotspot",
+        "Known for scenic landscapes",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "2-3 Days",
+
+    localFood: ["Momos", "Thukpa", "Local Café Cuisine", "Siddu", "Tea"],
+
+    festivals: ["Local Village Festivals", "Baisakhi", "Cultural Events"],
+
+    travelTips: [
+      "Carry trekking shoes",
+      "Prepare for steep walking paths",
+      "Book accommodation in advance",
+    ],
+  },
+  Sainj: {
+    overview:
+      "Sainj Valley is a beautiful Himalayan valley known for untouched nature, traditional villages, and peaceful surroundings.",
+
+    detailedDescription:
+      "Situated near the Great Himalayan National Park, Sainj Valley offers pristine forests, rivers, and mountain scenery. It remains one of Himachal Pradesh's lesser-explored destinations.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Great Himalayan National Park",
+        "Sainj River",
+        "Traditional Villages",
+        "Forest Trails",
+        "Mountain Landscapes",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Eco-tourism destination",
+        "Gateway to national park",
+        "Offbeat travel experience",
+        "Rich natural biodiversity",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "2-3 Days",
+
+    localFood: ["Siddu", "Madra", "Dham", "Local Village Cuisine", "Tea"],
+
+    festivals: ["Baisakhi", "Village Festivals", "Cultural Celebrations"],
+
+    travelTips: [
+      "Perfect for nature lovers",
+      "Carry outdoor gear",
+      "Respect local culture and environment",
+    ],
+  },
+  Baijnath: {
+    overview:
+      "Baijnath is a historic town famous for the ancient Baijnath Shiva Temple and spiritual significance.",
+
+    detailedDescription:
+      "Located in Kangra district, Baijnath is home to one of India's most revered Shiva temples. The town combines religious importance with beautiful mountain scenery and traditional Himachali culture.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Baijnath Shiva Temple",
+        "Binwa River",
+        "Tea Gardens",
+        "Dhauladhar Views",
+        "Nearby Palampur",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Major Shiva pilgrimage destination",
+        "Ancient temple architecture",
+        "Religious tourism hub",
+        "Cultural heritage site",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1-2 Days",
+
+    localFood: ["Siddu", "Madra", "Dham", "Local Sweets", "Tea"],
+
+    festivals: ["Mahashivratri", "Navratri", "Temple Festivals"],
+
+    travelTips: [
+      "Visit temple early morning",
+      "Dress modestly for religious visits",
+      "Combine with Palampur sightseeing",
+    ],
+  },
+  BirBilling: {
+    overview:
+      "Bir Billing is one of the world's top paragliding destinations, known for adventure sports and scenic mountain views.",
+
+    detailedDescription:
+      "Located in Kangra district, Bir Billing attracts adventure enthusiasts from around the world. Apart from paragliding, it is known for monasteries, peaceful surroundings, and Tibetan culture.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Paragliding Site",
+        "Billing Take-off Point",
+        "Bir Landing Site",
+        "Tibetan Monasteries",
+        "Deer Park Institute",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "World-famous paragliding destination",
+        "Adventure tourism hub",
+        "Tibetan cultural center",
+        "International tourist attraction",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and October-November",
+
+    idealDuration: "2-3 Days",
+
+    localFood: ["Momos", "Thukpa", "Siddu", "Café Cuisine", "Tea"],
+
+    festivals: [
+      "Paragliding Events",
+      "Tibetan Festivals",
+      "Local Cultural Programs",
+    ],
+
+    travelTips: [
+      "Book paragliding in advance",
+      "Check weather conditions",
+      "Carry comfortable outdoor clothing",
+    ],
+  },
+  Chamunda: {
+    overview:
+      "Chamunda is a sacred pilgrimage destination known for the famous Chamunda Devi Temple and spiritual significance.",
+
+    detailedDescription:
+      "Situated near Dharamshala, Chamunda attracts thousands of devotees every year. The temple is dedicated to Goddess Chamunda and is surrounded by scenic Himalayan landscapes.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Chamunda Devi Temple",
+        "Baner River",
+        "Temple Complex",
+        "Mountain Views",
+        "Meditation Areas",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Major Shakti Peeth destination",
+        "Important pilgrimage center",
+        "Religious tourism hub",
+        "Spiritual significance",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "Throughout the year",
+
+    idealDuration: "1 Day",
+
+    localFood: ["Temple Prasad", "Himachali Dham", "Tea", "Local Snacks"],
+
+    festivals: ["Navratri", "Durga Puja", "Temple Celebrations"],
+
+    travelTips: [
+      "Visit early morning",
+      "Expect crowds during Navratri",
+      "Follow temple guidelines",
+    ],
+  },
+  Jawalamukhi: {
+    overview:
+      "Jawalamukhi is a renowned pilgrimage destination famous for the eternal flames of Jawalamukhi Temple.",
+
+    detailedDescription:
+      "The town is home to the revered Jawalamukhi Temple, where natural flames emerge continuously from rock fissures. It is one of the most important Shakti Peeths in India.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Jawalamukhi Temple",
+        "Temple Complex",
+        "Local Markets",
+        "Pilgrimage Sites",
+        "Scenic Hills",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Famous Shakti Peeth",
+        "Known for eternal flames",
+        "Major pilgrimage center",
+        "Religious heritage destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "October-April",
+
+    idealDuration: "1 Day",
+
+    localFood: ["Temple Prasad", "Himachali Dishes", "Tea", "Local Snacks"],
+
+    festivals: ["Navratri", "Temple Festivals", "Religious Fairs"],
+
+    travelTips: [
+      "Visit during morning hours",
+      "Avoid peak festival crowds if preferred",
+      "Respect temple customs",
+    ],
+  },
+  Banikhet: {
+    overview:
+      "Banikhet is a scenic hill town near Dalhousie known for panoramic Himalayan views and peaceful surroundings.",
+
+    detailedDescription:
+      "Located close to Dalhousie, Banikhet offers pleasant weather, pine forests, and beautiful mountain scenery. It serves as an excellent base for exploring the Chamba region.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Himalayan Viewpoints",
+        "Pine Forests",
+        "Dalhousie Nearby",
+        "Nature Trails",
+        "Scenic Landscapes",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Gateway to Dalhousie",
+        "Nature tourism destination",
+        "Peaceful hill retreat",
+        "Photography hotspot",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "March-June and September-November",
+
+    idealDuration: "1-2 Days",
+
+    localFood: ["Siddu", "Madra", "Dham", "Tea", "Local Snacks"],
+
+    festivals: ["Baisakhi", "Local Cultural Fairs", "Temple Festivals"],
+
+    travelTips: [
+      "Combine trip with Dalhousie",
+      "Carry warm clothes",
+      "Explore nearby viewpoints",
+    ],
+  },
+  "Pangi Valley": {
+    overview:
+      "Pangi Valley is one of the most remote and unexplored regions of Himachal Pradesh, known for its rugged mountains, deep gorges, and untouched natural beauty.",
+
+    detailedDescription:
+      "Located in the Chamba district of Himachal Pradesh, Pangi Valley is a hidden Himalayan treasure surrounded by towering peaks, glaciers, and pristine rivers. Due to its remote location and challenging terrain, the valley has preserved its unique culture, traditions, and natural landscapes. Adventure seekers visit Pangi Valley for its breathtaking scenery, off-road journeys, trekking opportunities, and authentic Himalayan village experiences.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Killar Town",
+        "Sach Pass",
+        "Hudan Valley",
+        "Sural Bhatori Village",
+        "Chandrabhaga River Views",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "One of Himachal Pradesh's most remote valleys",
+        "Popular among adventure travelers",
+        "Rich tribal culture and traditions",
+        "Spectacular mountain landscapes",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "June-September (when mountain roads remain accessible)",
+
+    idealDuration: "3-5 Days for exploration and adventure travel",
+
+    localFood: [
+      "Rajma Chawal",
+      "Siddu",
+      "Local Tribal Cuisine",
+      "Madra",
+      "Traditional Himalayan Dishes",
+    ],
+
+    festivals: [
+      "Phulaich Festival",
+      "Local Tribal Fairs",
+      "Harvest Festivals",
+      "Cultural Celebrations",
+    ],
+
+    travelTips: [
+      "Road conditions can be challenging",
+      "Carry essential medicines and supplies",
+      "Travel with experienced drivers",
+      "Keep extra travel time for mountain routes",
+      "Check weather conditions before departure",
+    ],
+  },
+  Chitkul: {
+    overview:
+      "Chitkul is the last inhabited village near the Indo-Tibet border, famous for its stunning Himalayan scenery and Baspa River views.",
+
+    detailedDescription:
+      "Situated in the Sangla Valley of Kinnaur district, Chitkul is often referred to as the last village on the old Indo-Tibet trade route. Surrounded by snow-capped mountains, lush meadows, and the Baspa River, it offers one of the most scenic landscapes in Himachal Pradesh. The village is known for its wooden houses, traditional Kinnauri culture, and peaceful atmosphere.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Baspa River",
+        "Chitkul Village",
+        "Mathi Temple",
+        "Indo-Tibet Border Views",
+        "Rakcham Valley",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Last inhabited village near Indo-Tibet border",
+        "Part of the famous Sangla Valley circuit",
+        "Known for Kinnauri culture and traditions",
+        "Popular photography and camping destination",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "April-June and September-October",
+
+    idealDuration: "1-2 Days for sightseeing and nature exploration",
+
+    localFood: [
+      "Siddu",
+      "Rajma Chawal",
+      "Kinnauri Cuisine",
+      "Local Apple Products",
+      "Traditional Village Meals",
+    ],
+
+    festivals: [
+      "Fulaich Festival",
+      "Losar Festival",
+      "Local Temple Fairs",
+      "Cultural Celebrations",
+    ],
+
+    travelTips: [
+      "Carry warm clothes throughout the year",
+      "Start sightseeing early for clear mountain views",
+      "Respect local customs and traditions",
+      "Keep cash available due to limited facilities",
+      "Ideal destination for photography enthusiasts",
+    ],
+  },
+  Nako: {
+    overview:
+      "Nako is a picturesque high-altitude village in Kinnaur known for its tranquil lake, ancient monastery, and dramatic mountain landscapes.",
+
+    detailedDescription:
+      "Located near the Indo-Tibet border, Nako is a serene Himalayan village situated at an altitude of over 3,600 meters. The village is famous for Nako Lake, traditional mud-brick houses, and ancient Buddhist heritage. Surrounded by barren mountains and scenic valleys, Nako serves as an important stop for travelers heading toward Spiti Valley.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Nako Lake",
+        "Nako Monastery",
+        "Mountain Viewpoints",
+        "Traditional Village Architecture",
+        "Ancient Buddhist Sites",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Important stop on the Spiti route",
+        "Known for Buddhist heritage",
+        "High-altitude Himalayan destination",
+        "Popular among road-trip enthusiasts",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "May-October",
+
+    idealDuration: "1-2 Days for lake and monastery visits",
+
+    localFood: [
+      "Thukpa",
+      "Momos",
+      "Butter Tea",
+      "Tibetan Bread",
+      "Local Himalayan Cuisine",
+    ],
+
+    festivals: [
+      "Losar Festival",
+      "Buddhist Cultural Celebrations",
+      "Village Festivals",
+      "Harvest Festivals",
+    ],
+
+    travelTips: [
+      "Acclimatize properly due to high altitude",
+      "Carry warm clothing",
+      "Keep cash and essentials available",
+      "Stay hydrated during travel",
+      "Plan overnight stay for better experience",
+    ],
+  },
+  Dhankar: {
+    overview:
+      "Dhankar is a historic village in Spiti Valley famous for its ancient monastery perched dramatically on a cliff overlooking the valley.",
+
+    detailedDescription:
+      "Dhankar is one of the most iconic destinations in Spiti Valley, known for the centuries-old Dhankar Monastery and breathtaking views of the Spiti and Pin Rivers. Once the capital of the Spiti kingdom, the village offers a unique blend of history, spirituality, and Himalayan adventure. Its dramatic cliffside setting makes it one of the most photographed locations in Himachal Pradesh.",
+
+    keyAttractions: {
+      title: "Key Attractions",
+      items: [
+        "Dhankar Monastery",
+        "Dhankar Lake",
+        "Spiti Valley Viewpoints",
+        "Pin River Confluence",
+        "Ancient Fort Remains",
+      ],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+
+    significance: {
+      title: "Tourism Significance",
+      items: [
+        "Former capital of the Spiti Kingdom",
+        "One of the oldest monasteries in the region",
+        "Major Buddhist pilgrimage destination",
+        "Iconic viewpoint of Spiti Valley",
+      ],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+
+    bestTimeToVisit: "June-September",
+
+    idealDuration: "1-2 Days for monastery visits and trekking",
+
+    localFood: [
+      "Thukpa",
+      "Momos",
+      "Butter Tea",
+      "Tibetan Cuisine",
+      "Simple Himalayan Meals",
+    ],
+
+    festivals: [
+      "Losar Festival",
+      "Monastery Festivals",
+      "Buddhist Cultural Events",
+      "Local Celebrations",
+    ],
+
+    travelTips: [
+      "Allow time for altitude acclimatization",
+      "Carry warm clothing even in summer",
+      "Visit Dhankar Lake for panoramic views",
+      "Keep sufficient fuel and cash for remote travel",
+      "Start sightseeing early for clear mountain views",
+    ],
+  },
 };

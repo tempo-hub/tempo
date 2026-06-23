@@ -5251,6 +5251,636 @@ export const ROUTES: TaxiRoute[] = [
     ],
     tollEstimate: 1950,
   },
+
+  // ================= HIMACHAL PRADESH ROUTES FROM VARANASI =================
+  {
+    id: "vns-dhm",
+    slug: "varanasi-to-dharamshala-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Dharamshala",
+    distance: 1120,
+    duration: "19 Hours",
+    description:
+      "Comfortable tempo traveller service from Varanasi to Dharamshala. Covers major areas including Dharamshala, McLeod Ganj, Naddi, Bhagsu Nag, and Kangra. Ideal for family trips, group tours, and pilgrimage travel to Himachal Pradesh.",
+    highlights: [
+      "Hill Station",
+      "Scenic Journey",
+      "Safe Travel",
+      "Buddhist Culture",
+      "Group Tour",
+    ],
+    tehsils: ["Dharamshala", "McLeod Ganj", "Naddi", "Bhagsu Nag", "Kangra"],
+    faqs: [
+      {
+        question: "How long does it take from Varanasi to Dharamshala?",
+        answer:
+          "It takes around 19 hours depending on traffic, weather, and road conditions.",
+      },
+      {
+        question: "What is Dharamshala famous for?",
+        answer:
+          "Dharamshala is famous for its Himalayan views, Tibetan culture, monasteries, and the residence of the Dalai Lama in McLeod Ganj.",
+      },
+    ],
+    tollEstimate: 2600,
+  },
+
+  {
+    id: "vns-kul",
+    slug: "varanasi-to-kullu-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kullu",
+    distance: 1180,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller service from Varanasi to Kullu valley known for rivers, mountains, and nature tourism.",
+    highlights: ["Valley", "River View", "Nature", "Tourism"],
+    tehsils: ["Kullu"],
+  },
+
+  {
+    id: "vns-sln",
+    slug: "varanasi-to-solan-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Solan",
+    distance: 980,
+    duration: "16 Hours",
+    description:
+      "Comfortable travel from Varanasi to Solan known as the Mushroom City of Himachal Pradesh.",
+    highlights: ["Hill Town", "Nature", "Peaceful Travel"],
+    tehsils: ["Solan"],
+  },
+
+  {
+    id: "vns-mdp",
+    slug: "varanasi-to-mandi-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Mandi",
+    distance: 1050,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller service from Varanasi to Mandi, gateway to Himachal valleys.",
+    highlights: ["Valley Gateway", "Scenic Route"],
+    tehsils: ["Mandi"],
+  },
+
+  {
+    id: "vns-blp",
+    slug: "varanasi-to-bilaspur-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bilaspur",
+    distance: 920,
+    duration: "15 Hours",
+    description:
+      "Comfortable journey from Varanasi to Bilaspur near Govind Sagar Lake.",
+    highlights: ["Lake View", "Nature", "Hill Region"],
+    tehsils: ["Bilaspur"],
+  },
+
+  {
+    id: "vns-hmr",
+    slug: "varanasi-to-hamirpur-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Hamirpur",
+    distance: 890,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller service from Varanasi to Hamirpur in Himachal Pradesh.",
+    highlights: ["Hill District", "Local Travel"],
+    tehsils: ["Hamirpur"],
+  },
+
+  {
+    id: "vns-una",
+    slug: "varanasi-to-una-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Una",
+    distance: 880,
+    duration: "14 Hours",
+    description: "Comfortable travel from Varanasi to Una near Punjab border.",
+    highlights: ["Border City", "Easy Access"],
+    tehsils: ["Una"],
+  },
+
+  {
+    id: "vns-nhn",
+    slug: "varanasi-to-nahan-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Nahan",
+    distance: 930,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller service from Varanasi to Nahan, a peaceful hill town.",
+    highlights: ["Hill Town", "Peaceful", "Nature"],
+    tehsils: ["Nahan"],
+  },
+
+  {
+    id: "vns-cba",
+    slug: "varanasi-to-chamba-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Chamba",
+    distance: 1180,
+    duration: "20 Hours",
+    description:
+      "Travel from Varanasi to Chamba valley known for temples and natural beauty.",
+    highlights: ["Valley", "Temples", "Heritage"],
+    tehsils: ["Chamba"],
+  },
+
+  {
+    id: "vns-plm",
+    slug: "varanasi-to-palampur-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Palampur",
+    distance: 1120,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller service from Varanasi to Palampur tea gardens and scenic views.",
+    highlights: ["Tea Gardens", "Hill Station"],
+    tehsils: ["Palampur"],
+  },
+
+  {
+    id: "vns-kgr",
+    slug: "varanasi-to-kangra-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kangra",
+    distance: 1110,
+    duration: "18 Hours",
+    description:
+      "Travel from Varanasi to Kangra valley famous for forts and temples.",
+    highlights: ["Heritage", "Valley", "Culture"],
+    tehsils: ["Kangra"],
+  },
+
+  {
+    id: "vns-bdi",
+    slug: "varanasi-to-baddi-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Baddi",
+    distance: 1020,
+    duration: "17 Hours",
+    description:
+      "Travel from Varanasi to Baddi industrial hub of Himachal Pradesh, known for pharma and manufacturing units.",
+    highlights: ["Industrial Hub", "Business Travel", "Easy Access"],
+    tehsils: ["Baddi"],
+  },
+
+  {
+    id: "vns-psh",
+    slug: "varanasi-to-paonta-sahib-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Paonta Sahib",
+    distance: 950,
+    duration: "15 Hours",
+    description:
+      "Comfortable journey from Varanasi to Paonta Sahib, a famous Sikh pilgrimage site on the banks of Yamuna River.",
+    highlights: ["Pilgrimage", "Religious", "River Side"],
+    tehsils: ["Paonta Sahib"],
+  },
+
+  {
+    id: "vns-nur",
+    slug: "varanasi-to-nurpur-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Nurpur",
+    distance: 1080,
+    duration: "18 Hours",
+    description:
+      "Travel from Varanasi to Nurpur, known for historical forts and Kangra valley views.",
+    highlights: ["Heritage", "Fort", "Valley"],
+    tehsils: ["Nurpur"],
+  },
+
+  {
+    id: "vns-mcg",
+    slug: "varanasi-to-mcleodganj-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "McLeodganj",
+    distance: 1120,
+    duration: "19 Hours",
+    description:
+      "Journey from Varanasi to McLeodganj, the Tibetan culture hub and residence of the Dalai Lama.",
+    highlights: ["Buddhist Culture", "Hill Station", "Tourism"],
+    tehsils: ["McLeodganj"],
+  },
+
+  {
+    id: "vns-dal",
+    slug: "varanasi-to-dalhousie-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Dalhousie",
+    distance: 1180,
+    duration: "20 Hours",
+    description:
+      "Travel from Varanasi to Dalhousie, a colonial-era hill station with pine forests and scenic views.",
+    highlights: ["Hill Station", "Colonial", "Nature"],
+    tehsils: ["Dalhousie"],
+  },
+
+  {
+    id: "vns-kha",
+    slug: "varanasi-to-khajjiar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Khajjiar",
+    distance: 1200,
+    duration: "20 Hours",
+    description:
+      "Journey from Varanasi to Khajjiar, often called Mini Switzerland of India.",
+    highlights: ["Meadow", "Scenic", "Tourism"],
+    tehsils: ["Khajjiar"],
+  },
+
+  {
+    id: "vns-kas",
+    slug: "varanasi-to-kasauli-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kasauli",
+    distance: 980,
+    duration: "16 Hours",
+    description:
+      "Travel from Varanasi to Kasauli, a peaceful hill station known for British-era charm.",
+    highlights: ["Hill Station", "Peaceful", "Colonial"],
+    tehsils: ["Kasauli"],
+  },
+
+  {
+    id: "vns-cha",
+    slug: "varanasi-to-chail-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Chail",
+    distance: 960,
+    duration: "16 Hours",
+    description:
+      "Journey from Varanasi to Chail, famous for its palace and highest cricket ground.",
+    highlights: ["Hill Station", "Heritage", "Nature"],
+    tehsils: ["Chail"],
+  },
+
+  {
+    id: "vns-spi",
+    slug: "varanasi-to-spiti-valley-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Spiti Valley",
+    distance: 1450,
+    duration: "28 Hours",
+    description:
+      "Adventure journey from Varanasi to Spiti Valley, a cold desert mountain region of Himachal Pradesh.",
+    highlights: ["Adventure", "Cold Desert", "Monasteries"],
+    tehsils: ["Kaza", "Tabo", "Dhankar"],
+  },
+
+  {
+    id: "vns-kas",
+    slug: "varanasi-to-kasol-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kasol",
+    distance: 1250,
+    duration: "21 Hours",
+    description:
+      "Travel from Varanasi to Kasol, a popular backpacker destination in Parvati Valley.",
+    highlights: ["Backpacking", "Parvati Valley", "Nature"],
+    tehsils: ["Kasol"],
+  },
+
+  {
+    id: "vns-lah",
+    slug: "varanasi-to-lahaul-valley-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Lahaul Valley",
+    distance: 1350,
+    duration: "24 Hours",
+    description:
+      "Journey from Varanasi to Lahaul Valley, a remote Himalayan region known for dramatic landscapes.",
+    highlights: ["Remote Valley", "Mountains", "Adventure"],
+    tehsils: ["Keylong", "Jispa", "Udaipur"],
+  },
+
+  {
+    id: "vns-san",
+    slug: "varanasi-to-sangla-valley-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Sangla Valley",
+    distance: 1280,
+    duration: "22 Hours",
+    description:
+      "Travel from Varanasi to Sangla Valley in Kinnaur, known for apple orchards and scenic beauty.",
+    highlights: ["Valley", "Apple Orchards", "Nature"],
+    tehsils: ["Sangla", "Rakcham", "Chitkul"],
+  },
+
+  {
+    id: "vns-klp",
+    slug: "varanasi-to-kalpa-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kalpa",
+    distance: 1300,
+    duration: "23 Hours",
+    description:
+      "Travel from Varanasi to Kalpa, a scenic Kinnaur destination known for breathtaking views of the Kinner Kailash range.",
+    highlights: ["Kinner Kailash", "Mountain Views", "Nature"],
+    tehsils: ["Kalpa", "Reckong Peo"],
+  },
+
+  {
+    id: "vns-kza",
+    slug: "varanasi-to-kaza-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kaza",
+    distance: 1450,
+    duration: "28 Hours",
+    description:
+      "Comfortable tempo traveller service from Varanasi to Kaza, the headquarters of Spiti Valley.",
+    highlights: ["Spiti Valley", "Adventure", "Monasteries"],
+    tehsils: ["Kaza", "Langza", "Hikkim", "Komic"],
+  },
+
+  {
+    id: "vns-nkd",
+    slug: "varanasi-to-narkanda-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Narkanda",
+    distance: 1180,
+    duration: "20 Hours",
+    description:
+      "Travel from Varanasi to Narkanda, a beautiful hill station famous for apple orchards and snow views.",
+    highlights: ["Apple Orchards", "Snow View", "Hill Station"],
+    tehsils: ["Narkanda"],
+  },
+
+  {
+    id: "vns-kuf",
+    slug: "varanasi-to-kufri-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Kufri",
+    distance: 1160,
+    duration: "19 Hours",
+    description:
+      "Journey from Varanasi to Kufri, a popular tourist destination near Shimla known for adventure activities.",
+    highlights: ["Adventure", "Snow", "Tourism"],
+    tehsils: ["Kufri"],
+  },
+
+  {
+    id: "vns-mas",
+    slug: "varanasi-to-mashobra-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Mashobra",
+    distance: 1165,
+    duration: "19 Hours",
+    description:
+      "Travel from Varanasi to Mashobra, a peaceful retreat surrounded by pine forests near Shimla.",
+    highlights: ["Pine Forests", "Nature", "Peaceful"],
+    tehsils: ["Mashobra"],
+  },
+
+  {
+    id: "vns-sho",
+    slug: "varanasi-to-shoja-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Shoja",
+    distance: 1240,
+    duration: "21 Hours",
+    description:
+      "Comfortable journey from Varanasi to Shoja, a hidden gem in Seraj Valley known for pristine landscapes.",
+    highlights: ["Hidden Gem", "Valley", "Nature"],
+    tehsils: ["Shoja"],
+  },
+
+  {
+    id: "vns-brv",
+    slug: "varanasi-to-barot-valley-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Barot Valley",
+    distance: 1190,
+    duration: "20 Hours",
+    description:
+      "Travel from Varanasi to Barot Valley, famous for trout fishing and lush green surroundings.",
+    highlights: ["Valley", "Fishing", "Nature"],
+    tehsils: ["Barot"],
+  },
+
+  {
+    id: "vns-fag",
+    slug: "varanasi-to-fagu-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Fagu",
+    distance: 1170,
+    duration: "19 Hours",
+    description:
+      "Journey from Varanasi to Fagu, a serene hill destination offering panoramic Himalayan views.",
+    highlights: ["Hill Station", "Scenic Views", "Nature"],
+    tehsils: ["Fagu"],
+  },
+
+  {
+    id: "vns-nal",
+    slug: "varanasi-to-naldehra-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Naldehra",
+    distance: 1150,
+    duration: "19 Hours",
+    description:
+      "Travel from Varanasi to Naldehra, known for its famous golf course and cedar forests.",
+    highlights: ["Golf Course", "Nature", "Hill Station"],
+    tehsils: ["Naldehra"],
+  },
+
+  {
+    id: "vns-bhu",
+    slug: "varanasi-to-bhuntar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bhuntar",
+    distance: 1200,
+    duration: "20 Hours",
+    description:
+      "Comfortable journey from Varanasi to Bhuntar, gateway to Kullu and Parvati Valley.",
+    highlights: ["Gateway Town", "Valley Access", "Tourism"],
+    tehsils: ["Bhuntar"],
+  },
+
+  {
+    id: "vns-ngr",
+    slug: "varanasi-to-naggar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Naggar",
+    distance: 1210,
+    duration: "20 Hours",
+    description:
+      "Travel from Varanasi to Naggar, known for Naggar Castle and Himalayan heritage.",
+    highlights: ["Heritage", "Castle", "Mountain Views"],
+    tehsils: ["Naggar"],
+  },
+
+  {
+    id: "vns-jib",
+    slug: "varanasi-to-jibhi-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Jibhi",
+    distance: 1240,
+    duration: "21 Hours",
+    description:
+      "Travel from Varanasi to Jibhi, a picturesque village surrounded by forests and waterfalls.",
+    highlights: ["Waterfalls", "Nature", "Village Tourism"],
+    tehsils: ["Jibhi"],
+  },
+
+  {
+    id: "vns-bnj",
+    slug: "varanasi-to-banjar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Banjar",
+    distance: 1230,
+    duration: "21 Hours",
+    description:
+      "Comfortable journey from Varanasi to Banjar in the beautiful Tirthan Valley region.",
+    highlights: ["Tirthan Valley", "Nature", "Adventure"],
+    tehsils: ["Banjar"],
+  },
+
+  {
+    id: "vns-tsh",
+    slug: "varanasi-to-tosh-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Tosh",
+    distance: 1280,
+    duration: "22 Hours",
+    description:
+      "Travel from Varanasi to Tosh, a scenic village in Parvati Valley popular among trekkers.",
+    highlights: ["Trekking", "Parvati Valley", "Nature"],
+    tehsils: ["Tosh"],
+  },
+
+  {
+    id: "vns-snj",
+    slug: "varanasi-to-sainj-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Sainj",
+    distance: 1230,
+    duration: "21 Hours",
+    description:
+      "Journey from Varanasi to Sainj Valley, known for its untouched natural beauty.",
+    highlights: ["Valley", "Nature", "Peaceful"],
+    tehsils: ["Sainj"],
+  },
+
+  {
+    id: "vns-bjn",
+    slug: "varanasi-to-baijnath-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Baijnath",
+    distance: 1140,
+    duration: "19 Hours",
+    description:
+      "Travel from Varanasi to Baijnath, famous for the ancient Baijnath Shiva Temple.",
+    highlights: ["Temple", "Pilgrimage", "Heritage"],
+    tehsils: ["Baijnath"],
+  },
+
+  {
+    id: "vns-bbl",
+    slug: "varanasi-to-bir-billing-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Bir Billing",
+    distance: 1160,
+    duration: "19 Hours",
+    description:
+      "Journey from Varanasi to Bir Billing, one of the world's best paragliding destinations.",
+    highlights: ["Paragliding", "Adventure", "Tourism"],
+    tehsils: ["Bir", "Billing"],
+  },
+
+  {
+    id: "vns-chm",
+    slug: "varanasi-to-chamunda-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Chamunda",
+    distance: 1130,
+    duration: "19 Hours",
+    description:
+      "Travel from Varanasi to Chamunda Devi Temple, a revered pilgrimage site in Himachal Pradesh.",
+    highlights: ["Pilgrimage", "Temple", "Religious"],
+    tehsils: ["Chamunda"],
+  },
+
+  {
+    id: "vns-jwm",
+    slug: "varanasi-to-jawalamukhi-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Jawalamukhi",
+    distance: 1090,
+    duration: "18 Hours",
+    description:
+      "Comfortable journey from Varanasi to Jawalamukhi Temple, famous for its eternal flames.",
+    highlights: ["Temple", "Pilgrimage", "Heritage"],
+    tehsils: ["Jawalamukhi"],
+  },
+
+  {
+    id: "vns-bnk",
+    slug: "varanasi-to-banikhet-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Banikhet",
+    distance: 1170,
+    duration: "20 Hours",
+    description:
+      "Travel from Varanasi to Banikhet, a scenic town near Dalhousie offering Himalayan views.",
+    highlights: ["Hill Town", "Nature", "Scenic"],
+    tehsils: ["Banikhet"],
+  },
+
+  {
+    id: "vns-pgv",
+    slug: "varanasi-to-pangi-valley-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Pangi Valley",
+    distance: 1400,
+    duration: "26 Hours",
+    description:
+      "Adventure trip from Varanasi to Pangi Valley, one of Himachal Pradesh's most remote regions.",
+    highlights: ["Remote Valley", "Adventure", "Mountains"],
+    tehsils: ["Killar", "Sural", "Hudan"],
+  },
+
+  {
+    id: "vns-ctk",
+    slug: "varanasi-to-chitkul-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Chitkul",
+    distance: 1320,
+    duration: "23 Hours",
+    description:
+      "Travel from Varanasi to Chitkul, the last inhabited village near the Indo-Tibet border.",
+    highlights: ["Border Village", "Nature", "Mountains"],
+    tehsils: ["Chitkul"],
+  },
+
+  {
+    id: "vns-nak",
+    slug: "varanasi-to-nako-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Nako",
+    distance: 1380,
+    duration: "25 Hours",
+    description:
+      "Journey from Varanasi to Nako, a picturesque Himalayan village famous for Nako Lake.",
+    highlights: ["Lake", "Village", "Mountains"],
+    tehsils: ["Nako"],
+  },
+
+  {
+    id: "vns-dhk",
+    slug: "varanasi-to-dhankar-tempo-traveller-fare",
+    origin: "Varanasi",
+    destination: "Dhankar",
+    distance: 1430,
+    duration: "27 Hours",
+    description:
+      "Travel from Varanasi to Dhankar, known for its ancient monastery and stunning Spiti Valley landscapes.",
+    highlights: ["Monastery", "Spiti Valley", "Adventure"],
+    tehsils: ["Dhankar"],
+  },
 ].map((route) => ({
   ...route,
   mapEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(route.origin)}+to+${encodeURIComponent(

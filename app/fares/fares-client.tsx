@@ -20,6 +20,7 @@ import {
   RAJASTHAN_FARE_ROUTES,
   BIHAR_FARE_ROUTES,
   DELHI_NCR_FARE_ROUTES,
+  HIMACHAL_PRADESH_FARE_ROUTES,
 } from "@/lib/fareRoute";
 import { useMemo } from "react";
 
@@ -75,6 +76,11 @@ export default function FaresClient() {
           originCity: "Varanasi",
           category: "delhi-NCR" as const,
         })),
+        ...HIMACHAL_PRADESH_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Varanasi",
+          category: "himachal-pradesh" as const,
+        })),
       ];
     }, []);
 
@@ -118,7 +124,8 @@ export default function FaresClient() {
     const rajasthan = routes.filter((r) => r.category === "rajasthan");
     const bihar = routes.filter((r) => r.category === "bihar");
     const delhiNCR = routes.filter((r) => r.category === "delhi-NCR");
-    return { regular, uttarakhand, madhyaPradesh, rajasthan, bihar, delhiNCR };
+    const himachalPradesh = routes.filter((r) => r.category === "himachal-pradesh");
+    return { regular, uttarakhand, madhyaPradesh, rajasthan, bihar, delhiNCR, himachalPradesh };
   };
 
   return (
@@ -215,6 +222,7 @@ export default function FaresClient() {
                   rajasthan,
                   bihar,
                   delhiNCR,
+                  himachalPradesh,
                 } = getVaranasiSubSections(cityRoutes);
 
                 return (
@@ -333,6 +341,26 @@ export default function FaresClient() {
                         </div>
                         <div className="grid md:grid-cols-3 gap-6">
                           {delhiNCR.map((route) => (
+                            <FareCard key={route.id} route={route} />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {himachalPradesh.length > 0 && (
+                      <div className="space-y-10">
+                        <div className="flex items-center gap-4">
+                          <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                            <MapPin className="text-primary w-8 h-8" />
+                            Varanasi to Himachal Pradesh Fares
+                          </h2>
+                          <div className="h-px bg-slate-200 flex-1 mt-2" />
+                          <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
+                            {himachalPradesh.length} Active Routes
+                          </span>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                          {himachalPradesh.map((route) => (
                             <FareCard key={route.id} route={route} />
                           ))}
                         </div>
