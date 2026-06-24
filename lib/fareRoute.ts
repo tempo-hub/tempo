@@ -194,6 +194,44 @@ const DELHI_NCR_DESTINATIONS = [
   "Panipat",
 ];
 
+const KOLKATA_DESTINATIONS = [
+  "Kolkata",
+  "Howrah",
+  "Durgapur",
+  "Asansol",
+  "Siliguri",
+  "Darjeeling",
+  "Kalimpong",
+  "Kharagpur",
+  "Shantiniketan",
+  "Malda",
+  "Cooch Behar",
+  "Jalpaiguri",
+  "Alipurduar",
+  "Murshidabad",
+  "Krishnanagar",
+  "Nabadwip",
+  "Mayapur",
+  "Tarapith",
+  "Digha",
+  "Bishnupur",
+  "Bardhaman",
+  "Haldia",
+  "Purulia",
+  "Raiganj",
+  "Balurghat",
+  "Bankura",
+  "Midnapore",
+  "Kalyani",
+  "Barasat",
+  "Serampore",
+  "Chandannagar",
+  "Bongaon",
+  "Habra",
+  "Santipur",
+  "Berhampore",
+];
+
 const ALL_EXCLUDED_DESTINATIONS = [
   ...UTTARAKHAND_DESTINATIONS,
   ...MADHYAPRADESH_DESTINATIONS,
@@ -201,6 +239,7 @@ const ALL_EXCLUDED_DESTINATIONS = [
   ...BIHAR_DESTINATIONS,
   ...DELHI_NCR_DESTINATIONS,
   ...HIMACHAL_PRADESH_DESTINATIONS,
+  ...KOLKATA_DESTINATIONS,
 ];
 
 // Filter routes by origin city for REGULAR FARES
@@ -263,4 +302,8 @@ export const HIMACHAL_PRADESH_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) =>
     route.origin === "Varanasi" &&
     HIMACHAL_PRADESH_DESTINATIONS.includes(route.destination),
+);
+
+export const KOLKATA_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
+  (route) => route.origin === "Varanasi" && KOLKATA_DESTINATIONS.includes(route.destination),
 );
