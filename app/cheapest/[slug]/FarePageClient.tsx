@@ -17,6 +17,11 @@ import {
   Gift,
   TrendingDown,
   Zap,
+  IndianRupee,
+  Headphones,
+  Bus,
+  ClipboardCheck,
+  Smile,
 } from "lucide-react";
 import { FAQSection } from "@/app/components/sections";
 import { VehicleGallery } from "@/app/components/vehicle-gallery";
@@ -722,6 +727,100 @@ export default function FarePageClient({
             </div>
           </section>
 
+          {/* Simple Booking Process */}
+          <section className="py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50">
+            <div className="max-w-7xl mx-auto px-4">
+
+              <div className="text-center max-w-3xl mx-auto mb-16">
+                <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  Book in 5 Easy Steps
+                </span>
+
+                <h2 className="text-4xl font-black mb-4">
+                  Simple Booking Process
+                </h2>
+
+                <p className="text-muted-foreground text-lg">
+                  Book your {route.origin} to {route.destination} Tempo Traveller in just
+                  a few minutes.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-5 gap-8 relative">
+                {/* Connecting Line */}
+                <div className="hidden md:block absolute top-10 left-[10%] right-[10%] border-t-2 border-dashed border-primary/30"></div>
+
+                {[
+                  {
+                    number: "01",
+                    icon: MapPin,
+                    title: "Choose Route",
+                    desc: "Select pickup & destination.",
+                  },
+                  {
+                    number: "02",
+                    icon: Bus,
+                    title: "Select Vehicle",
+                    desc: "Pick your preferred traveller.",
+                  },
+                  {
+                    number: "03",
+                    icon: ClipboardCheck,
+                    title: "Confirm Booking",
+                    desc: "Verify travel details.",
+                  },
+                  {
+                    number: "04",
+                    icon: IndianRupee,
+                    title: "Pay Advance",
+                    desc: "Secure your booking instantly.",
+                  },
+                  {
+                    number: "05",
+                    icon: Smile,
+                    title: "Enjoy Your Trip",
+                    desc: "Travel safely with our driver.",
+                  },
+                ].map((step) => (
+                  <div
+                    key={step.number}
+                    className="relative text-center group z-10"
+                  >
+
+                    {/* Number */}
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold rounded-full px-2 py-1 shadow-lg">
+                      {step.number}
+                    </div>
+
+                    {/* Icon */}
+                    <div className="w-20 h-20 bg-white border-4 border-primary rounded-full mx-auto flex items-center justify-center shadow-lg group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                      <step.icon className="h-9 w-9" />
+                    </div>
+
+                    <h3 className="mt-6 text-xl font-bold">
+                      {step.title}
+                    </h3>
+
+                    <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                      {step.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Bottom CTA */}
+              <div className="mt-16 text-center">
+                <button
+                  onClick={() => setIsBookingOpen(true)}
+                  className="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-all shadow-lg hover:scale-105"
+                >
+                  <Phone className="h-5 w-5" />
+                  Book Your Tempo Traveller Now
+                </button>
+              </div>
+            </div>
+          </section>
+
           {/* Vehicle Options */}
           <section className="py-24 bg-slate-50 border-y border-border">
             <div className="max-w-7xl mx-auto px-4">
@@ -816,6 +915,149 @@ export default function FarePageClient({
 
           {/* FAQ Section */}
           <FAQSection faqs={route.faqs} />
+
+          {/* Final CTA Section */}
+          <section className="py-20 bg-gradient-to-r from-primary via-primary/95 to-primary text-white relative overflow-hidden">
+            {/* Background Decoration */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-white"></div>
+              <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-white"></div>
+            </div>
+
+            <div className="relative max-w-6xl mx-auto px-4 text-center">
+
+              <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-6">
+                <Sparkles className="h-5 w-5" />
+                <span className="font-semibold">
+                  Lowest Price Guaranteed
+                </span>
+              </div>
+
+              <h2 className="text-4xl lg:text-5xl font-black leading-tight mb-6">
+                Ready to Book Your <br />
+                <span className="text-yellow-300">
+                  {route.origin} to {route.destination}
+                </span>
+                <br />
+                Tempo Traveller?
+              </h2>
+
+              <p className="text-lg lg:text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Get the cheapest tempo traveller fare with experienced drivers,
+                clean vehicles, transparent pricing and instant confirmation.
+                Book today and save up to{" "}
+                <strong>₹{savings}</strong> on your journey.
+              </p>
+
+              {/* CTA Cards */}
+              <div className="grid md:grid-cols-4 gap-5 mb-12">
+
+                <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                  <Shield className="h-10 w-10 mx-auto mb-3 text-yellow-300" />
+                  <h3 className="font-bold mb-2">
+                    Safe Journey
+                  </h3>
+                  <p className="text-sm text-white/80">
+                    Verified drivers & fully insured vehicles.
+                  </p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                  <IndianRupee className="h-10 w-10 mx-auto mb-3 text-yellow-300" />
+                  <h3 className="font-bold mb-2">
+                    Best Fare
+                  </h3>
+                  <p className="text-sm text-white/80">
+                    No hidden charges. Lowest market price.
+                  </p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                  <Clock className="h-10 w-10 mx-auto mb-3 text-yellow-300" />
+                  <h3 className="font-bold mb-2">
+                    Instant Booking
+                  </h3>
+                  <p className="text-sm text-white/80">
+                    Confirmation within a few minutes.
+                  </p>
+                </div>
+
+                <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+                  <Headphones className="h-10 w-10 mx-auto mb-3 text-yellow-300" />
+                  <h3 className="font-bold mb-2">
+                    24×7 Support
+                  </h3>
+                  <p className="text-sm text-white/80">
+                    We're always available for assistance.
+                  </p>
+                </div>
+              </div>
+
+              {/* Price */}
+              <div className="bg-white text-gray-900 rounded-2xl shadow-2xl p-8 max-w-3xl mx-auto mb-10">
+
+                <p className="text-lg text-gray-600 mb-2">
+                  Starting Fare
+                </p>
+
+                <h3 className="text-5xl font-black text-primary mb-2">
+                  ₹{fare}
+                </h3>
+
+                <p className="text-gray-500">
+                  Save ₹{savings} compared to other operators.
+                </p>
+
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row justify-center gap-5">
+
+                <button
+                  onClick={() => setIsBookingOpen(true)}
+                  className="bg-yellow-400 hover:bg-yellow-300 text-black px-10 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-xl"
+                >
+                  <Phone className="h-6 w-6" />
+                  Book Now @ ₹{fare}
+                </button>
+
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-xl font-black text-lg flex items-center justify-center gap-3 transition-all hover:scale-105 shadow-xl"
+                >
+                  <MessageCircle className="h-6 w-6" />
+                  WhatsApp Now
+                </a>
+              </div>
+
+              {/* Trust Badges */}
+              <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-white/90">
+
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-300" />
+                  Instant Confirmation
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-300" />
+                  Free Cancellation
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-300" />
+                  No Hidden Charges
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-green-300" />
+                  Trusted by 2,500+ Customers
+                </div>
+
+              </div>
+            </div>
+          </section>
         </div>
       </div>
 

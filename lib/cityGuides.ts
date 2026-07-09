@@ -5863,7 +5863,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Avoid summer afternoons",
     ],
   },
-
   "Rani Sati Temple": {
     overview:
       "Rani Sati Temple in Jhunjhunu is one of Rajasthan's most revered religious destinations dedicated to Rani Sati Dadi.",
@@ -5908,7 +5907,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Explore Jhunjhunu heritage sites",
     ],
   },
-
   "Desert National Park": {
     overview:
       "Desert National Park is one of India's largest national parks, showcasing the unique ecosystem of the Thar Desert.",
@@ -5953,7 +5951,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Carry sufficient water",
     ],
   },
-
   Osian: {
     overview:
       "Osian is an ancient desert town famous for historic Hindu and Jain temples along with desert safari experiences.",
