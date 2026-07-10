@@ -988,7 +988,7 @@ export default function FarePageClient({
                     24×7 Support
                   </h3>
                   <p className="text-sm text-white/80">
-                    We're always available for assistance.
+                    We&apos;re always available for assistance.
                   </p>
                 </div>
               </div>

@@ -21,7 +21,7 @@ import {
   Offer,
   FAQPage,
 } from "../../components/schemas";
-import { MapPin, Clock, ShieldCheck, Star, Users, Bus, ClipboardCheck, IndianRupee, Smile, Phone } from "lucide-react";
+import { MapPin, Clock, ShieldCheck, Star, Users, Bus, ClipboardCheck, IndianRupee, Smile } from "lucide-react";
 import { Metadata } from "next";
 import { RouteComparisonSection } from "@/app/components/sections/RouteComparisonSection";
 import { RelatedRoutesSection } from "@/app/components/sections/RelatedRoutesSection";
