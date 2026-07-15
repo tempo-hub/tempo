@@ -17,15 +17,16 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import BookingModal from "../shared/BookingModal";
+import { CITY_GUIDES } from "@/lib/cityGuides";
 
 export function CityGuideSection({ route }: { route: TaxiRoute }) {
-  const guide = route.cityGuide;
+  const guide = CITY_GUIDES[route.destination];
+
+  if (!guide) return null;
   const [activeTab, setActiveTab] = useState<"attractions" | "significance">(
     "attractions",
   );
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-
-  if (!guide) return null;
 
   const ICONS = {
     bestTime: Calendar,

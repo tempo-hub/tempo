@@ -1,6 +1,6 @@
 "use client";
 
-import { ROUTES, VEHICLES, calculateFare } from "@/lib/data";
+import { ROUTES, VEHICLES, calculateFare, type TaxiRoute } from "@/lib/data";
 import {
   Phone,
   MessageCircle,
@@ -30,6 +30,7 @@ import { VehiclePricingTable } from "@/app/components/VehiclePricingTable";
 import { Offer } from "@/app/components/schemas";
 import { useState } from "react";
 import BookingModal from "@/app/components/shared/BookingModal";
+import { CityGuideSection } from "@/app/components/sections/CityGuideSection";
 
 // Define proper types
 interface RouteType {
@@ -52,7 +53,7 @@ interface VehicleType {
 }
 
 interface FarePageClientProps {
-  route: RouteType;
+  route: TaxiRoute;
   fare: number;
   selectedVehicle: VehicleType;
 }
@@ -123,7 +124,7 @@ function StructuredData({ route, fare }: { route: RouteType; fare: number }) {
   );
 }
 
-// Main Page Component - Client Component
+// Main Page Component - Cheapest Client Component
 export default function FarePageClient({
   route,
   fare,
@@ -821,6 +822,8 @@ export default function FarePageClient({
             </div>
           </section>
 
+          <CityGuideSection route={route} />
+
           {/* Vehicle Options */}
           <section className="py-24 bg-slate-50 border-y border-border">
             <div className="max-w-7xl mx-auto px-4">
@@ -838,7 +841,7 @@ export default function FarePageClient({
             </div>
           </section>
 
-          {/* vehicle pricing table */}
+          {/* Vehicle Pricing Table */}
           <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4">
               <h2 className="text-3xl font-black text-center mb-8">
