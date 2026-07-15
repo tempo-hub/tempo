@@ -20,13 +20,14 @@ import BookingModal from "../shared/BookingModal";
 import { CITY_GUIDES } from "@/lib/cityGuides";
 
 export function CityGuideSection({ route }: { route: TaxiRoute }) {
-  const guide = CITY_GUIDES[route.destination];
-
-  if (!guide) return null;
   const [activeTab, setActiveTab] = useState<"attractions" | "significance">(
     "attractions",
   );
   const [isBookingOpen, setIsBookingOpen] = useState(false);
+
+  const guide = CITY_GUIDES[route.destination];
+
+  if (!guide) return null;
 
   const ICONS = {
     bestTime: Calendar,
@@ -133,11 +134,10 @@ export function CityGuideSection({ route }: { route: TaxiRoute }) {
             <div className="flex gap-2 mb-8 border-b border-slate-200">
               <button
                 onClick={() => setActiveTab("attractions")}
-                className={`px-6 py-3 font-semibold transition-all relative ${
-                  activeTab === "attractions"
+                className={`px-6 py-3 font-semibold transition-all relative ${activeTab === "attractions"
                     ? "text-primary"
                     : "text-slate-500 hover:text-slate-700"
-                }`}
+                  }`}
               >
                 <span className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
@@ -150,11 +150,10 @@ export function CityGuideSection({ route }: { route: TaxiRoute }) {
 
               <button
                 onClick={() => setActiveTab("significance")}
-                className={`px-6 py-3 font-semibold transition-all relative ${
-                  activeTab === "significance"
+                className={`px-6 py-3 font-semibold transition-all relative ${activeTab === "significance"
                     ? "text-primary"
                     : "text-slate-500 hover:text-slate-700"
-                }`}
+                  }`}
               >
                 <span className="flex items-center gap-2">
                   <Landmark className="w-4 h-4" />
