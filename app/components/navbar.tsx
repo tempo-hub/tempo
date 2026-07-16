@@ -12,10 +12,10 @@ export const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Fare Calculator", href: "/calculator" },
-    { name: "All Fares", href: "/fares" },
-    { name: "All Cheapest Fares", href: "/cheapests" },
-    { name: "All PerKm Fares", href: "/per-km-fare" },
-    { name: "All Urbania Fares", href: "/urbania" },
+    { name: "Fares", href: "/fares" },
+    { name: "Cheapest Fares", href: "/cheapests" },
+    { name: "PerKm Fares", href: "/per-km-fare" },
+    { name: "Urbania Fares", href: "/urbania" },
     { name: "Blogs", href: "/blogs" },
   ];
 

@@ -450,8 +450,8 @@ export function getPricingDetails(distance: number, isSameDay: boolean = true) {
 
   const calculatedDistance = getCalculatedDistance(distance);
 
-  const baseFareMin = calculatedDistance * perKmRateMin;
-  const baseFareMax = calculatedDistance * perKmRateMax;
+  const baseFareMin = (calculatedDistance * 2 * perKmRateMin) + 500;
+  const baseFareMax = (calculatedDistance * 2 * perKmRateMax) + 500;
 
   return {
     perKmRateDescription: `₹${perKmRateMin}-${perKmRateMax}/km (diesel + driver) – perfect for ${calculatedDistance} km journey`,
@@ -6767,7 +6767,7 @@ ROUTES.forEach(addMediaToRoute);
 export const calculateFare = (distance: number, rate: number) => {
   const calculatedDistance = getCalculatedDistance(distance);
 
-  const base = calculatedDistance * rate;
+  const base = (calculatedDistance * 2 * rate) + 500;
   // const surcharge = 500;
 
   return Math.round(base);

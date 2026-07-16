@@ -6,7 +6,7 @@ export const BASE_FARE_RATE = 18;
 
 // Calculate fare for a route
 export const calculateRouteFare = (distance: number) => {
-  return distance * BASE_FARE_RATE;
+  return (distance * 2 * BASE_FARE_RATE) + 500;
 };
 
 // List of destinations to EXCLUDE from regular Varanasi routes
