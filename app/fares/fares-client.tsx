@@ -21,7 +21,8 @@ import {
   BIHAR_FARE_ROUTES,
   DELHI_NCR_FARE_ROUTES,
   HIMACHAL_PRADESH_FARE_ROUTES,
-  KOLKATA_FARE_ROUTES
+  KOLKATA_FARE_ROUTES,
+  DELHI_FARE_ROUTES,
 } from "@/lib/fareRoute";
 import { useMemo } from "react";
 
@@ -45,6 +46,11 @@ export default function FaresClient() {
         ...VARANASI_FARE_ROUTES.map((route) => ({
           ...route,
           originCity: "Varanasi",
+          category: "regular" as const,
+        })),
+        ...DELHI_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Delhi",
           category: "regular" as const,
         })),
         ...LUCKNOW_FARE_ROUTES.map((route) => ({
@@ -130,9 +136,20 @@ export default function FaresClient() {
     const rajasthan = routes.filter((r) => r.category === "rajasthan");
     const bihar = routes.filter((r) => r.category === "bihar");
     const delhiNCR = routes.filter((r) => r.category === "delhi-NCR");
-    const himachalPradesh = routes.filter((r) => r.category === "himachal-pradesh");
+    const himachalPradesh = routes.filter(
+      (r) => r.category === "himachal-pradesh",
+    );
     const kolkata = routes.filter((r) => r.category === "kolkata");
-    return { regular, uttarakhand, madhyaPradesh, rajasthan, bihar, delhiNCR, himachalPradesh, kolkata };
+    return {
+      regular,
+      uttarakhand,
+      madhyaPradesh,
+      rajasthan,
+      bihar,
+      delhiNCR,
+      himachalPradesh,
+      kolkata,
+    };
   };
 
   return (
@@ -221,6 +238,7 @@ export default function FaresClient() {
             {cities.map((city) => {
               const cityRoutes = routesByCity[city];
 
+              // Special handling for Varanasi
               if (city === "Varanasi") {
                 const {
                   regular,
@@ -398,6 +416,32 @@ export default function FaresClient() {
                 );
               }
 
+              // Special handling for Delhi
+              if (city === "Delhi") {
+                return (
+                  <div key={city} className="space-y-16">
+                    <div className="space-y-10">
+                      <div className="flex items-center gap-4">
+                        <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                          <MapPin className="text-primary w-8 h-8" />
+                          Tempo Traveller Fares from {city}
+                        </h2>
+                        <div className="h-px bg-slate-200 flex-1 mt-2" />
+                        <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
+                          {cityRoutes.length} Active Routes
+                        </span>
+                      </div>
+                      <div className="grid md:grid-cols-3 gap-6">
+                        {cityRoutes.map((route) => (
+                          <FareCard key={route.id} route={route} />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+
+              // Default rendering for all other cities
               return (
                 <div key={city} className="space-y-16">
                   <div className="space-y-10">
