@@ -563,7 +563,7 @@ export const ROUTES: TaxiRoute[] = [
     tollEstimate: 250,
   },
   {
-    id: "vns-ghz",
+    id: "vns-ghzp",
     slug: "varanasi-to-ghazipur-tempo-traveller-fare",
     origin: "Varanasi",
     destination: "Ghazipur",
@@ -14678,6 +14678,4354 @@ export const ROUTES: TaxiRoute[] = [
     highlights: ["Brijghat", "Ganga Ghat", "Mukteshwar Mahadev Temple"],
     tollEstimate: 350,
   },
+
+  // ROUTES FROM GURUGRAM
+  {
+    id: "gur-haridwar",
+    slug: "gurugram-to-haridwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Haridwar",
+    distance: 225,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Haridwar for pilgrimage tours, Ganga Aarti, family trips, and group travel.",
+    highlights: ["Har Ki Pauri", "Mansa Devi Temple", "Chandi Devi Temple"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "gur-rishikesh",
+    slug: "gurugram-to-rishikesh-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Rishikesh",
+    distance: 245,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Rishikesh for adventure tours, yoga retreats, rafting trips, and family vacations.",
+    highlights: ["Laxman Jhula", "Ram Jhula", "Triveni Ghat"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "gur-dehradun",
+    slug: "gurugram-to-dehradun-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dehradun",
+    distance: 260,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Dehradun for business trips, educational tours, and family vacations.",
+    highlights: ["Robber's Cave", "Sahastradhara", "Forest Research Institute"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "gur-mussoorie",
+    slug: "gurugram-to-mussoorie-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Mussoorie",
+    distance: 295,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Mussoorie for hill station holidays, honeymoon trips, and group tours.",
+    highlights: ["Kempty Falls", "Mall Road", "Gun Hill"],
+    tollEstimate: 950,
+  },
+
+  {
+    id: "gur-dhanaulti",
+    slug: "gurugram-to-dhanaulti-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dhanaulti",
+    distance: 325,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Dhanaulti for peaceful hill vacations, camping, and family outings.",
+    highlights: ["Eco Park", "Surkanda Devi Temple", "Potato Farm"],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "gur-kanatal",
+    slug: "gurugram-to-kanatal-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kanatal",
+    distance: 335,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kanatal for camping, adventure activities, and weekend getaways.",
+    highlights: ["Kaudia Forest", "Surkanda Devi Temple", "Tehri Lake"],
+    tollEstimate: 1050,
+  },
+
+  {
+    id: "gur-auli",
+    slug: "gurugram-to-auli-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Auli",
+    distance: 505,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Auli for skiing holidays, snow tours, and Uttarakhand group trips.",
+    highlights: ["Auli Ropeway", "Gurso Bugyal", "Joshimath"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-chopta",
+    slug: "gurugram-to-chopta-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chopta",
+    distance: 415,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chopta for trekking, camping, and spiritual journeys to Tungnath.",
+    highlights: ["Tungnath Temple", "Chandrashila Trek", "Deoria Tal"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "gur-nainital",
+    slug: "gurugram-to-nainital-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Nainital",
+    distance: 320,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Nainital for lake tours, family vacations, and weekend getaways.",
+    highlights: ["Naini Lake", "Naina Devi Temple", "Snow View Point"],
+    tollEstimate: 1100,
+  },
+  {
+    id: "gur-bhimtal",
+    slug: "gurugram-to-bhimtal-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bhimtal",
+    distance: 345,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bhimtal for lake holidays, family vacations, and group tours.",
+    highlights: ["Bhimtal Lake", "Victoria Dam", "Bhimtal Aquarium Island"],
+    tollEstimate: 1150,
+  },
+
+  {
+    id: "gur-sattal",
+    slug: "gurugram-to-sattal-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sattal",
+    distance: 355,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sattal for nature retreats, bird watching, and camping trips.",
+    highlights: ["Sattal Lake", "Butterfly Museum", "Boating"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "gur-naukuchiatal",
+    slug: "gurugram-to-naukuchiatal-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Naukuchiatal",
+    distance: 360,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Naukuchiatal for peaceful lake vacations and adventure activities.",
+    highlights: ["Naukuchiatal Lake", "Paragliding", "Boating"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "gur-mukteshwar",
+    slug: "gurugram-to-mukteshwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Mukteshwar",
+    distance: 390,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Mukteshwar for hill station holidays, temple visits, and scenic road trips.",
+    highlights: ["Mukteshwar Temple", "Chauli Ki Jali", "Bhalu Gaad Waterfall"],
+    tollEstimate: 1300,
+  },
+
+  {
+    id: "gur-ranikhet",
+    slug: "gurugram-to-ranikhet-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ranikhet",
+    distance: 395,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ranikhet for family vacations, nature tours, and weekend getaways.",
+    highlights: ["Jhula Devi Temple", "Chaubatia Gardens", "Golf Course"],
+    tollEstimate: 1300,
+  },
+
+  {
+    id: "gur-kausani",
+    slug: "gurugram-to-kausani-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kausani",
+    distance: 430,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kausani for Himalayan views, nature holidays, and family trips.",
+    highlights: ["Anasakti Ashram", "Baijnath Temple", "Tea Gardens"],
+    tollEstimate: 1450,
+  },
+
+  {
+    id: "gur-binsar",
+    slug: "gurugram-to-binsar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Binsar",
+    distance: 445,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Binsar for wildlife tours, forest retreats, and mountain vacations.",
+    highlights: [
+      "Binsar Wildlife Sanctuary",
+      "Zero Point",
+      "Binsar Mahadev Temple",
+    ],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "gur-almora",
+    slug: "gurugram-to-almora-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Almora",
+    distance: 410,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Almora for cultural tours, family vacations, and hill station trips.",
+    highlights: [
+      "Kasar Devi Temple",
+      "Bright End Corner",
+      "Chitai Golu Devta Temple",
+    ],
+    tollEstimate: 1350,
+  },
+
+  {
+    id: "gur-chaukori",
+    slug: "gurugram-to-chaukori-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chaukori",
+    distance: 500,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chaukori for Himalayan sunrise views, tea gardens, and peaceful holidays.",
+    highlights: ["Tea Gardens", "Nag Mandir", "Panchachuli Viewpoint"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-munsiyari",
+    slug: "gurugram-to-munsiyari-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Munsiyari",
+    distance: 625,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Munsiyari for adventure expeditions, trekking, and Himalayan sightseeing.",
+    highlights: ["Panchachuli Peaks", "Birthi Falls", "Khaliya Top"],
+    tollEstimate: 2200,
+  },
+  {
+    id: "gur-jim-corbett",
+    slug: "gurugram-to-jim-corbett-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jim Corbett National Park (Dhikala/Bijrani)",
+    distance: 285,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jim Corbett National Park for wildlife safaris, family vacations, and corporate group tours.",
+    highlights: ["Dhikala Zone", "Bijrani Zone", "Garjiya Devi Temple"],
+    tollEstimate: 950,
+  },
+
+  {
+    id: "gur-rajaji-national-park",
+    slug: "gurugram-to-rajaji-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Rajaji National Park",
+    distance: 245,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Rajaji National Park for jungle safaris, wildlife photography, and nature trips.",
+    highlights: ["Chilla Range", "Motichur Range", "Elephant Safari"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "gur-valley-of-flowers",
+    slug: "gurugram-to-valley-of-flowers-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Valley of Flowers (Base Ghangaria)",
+    distance: 520,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Valley of Flowers (Ghangaria) for trekking, nature tours, and Himalayan adventures.",
+    highlights: ["Ghangaria", "Valley of Flowers", "Govindghat"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "gur-hemkund-sahib",
+    slug: "gurugram-to-hemkund-sahib-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Hemkund Sahib",
+    distance: 525,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Hemkund Sahib for Sikh pilgrimage, trekking, and Uttarakhand group tours.",
+    highlights: ["Hemkund Sahib Gurudwara", "Ghangaria", "Govindghat"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "gur-badrinath",
+    slug: "gurugram-to-badrinath-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Badrinath",
+    distance: 535,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Badrinath for Char Dham Yatra, religious tours, and family pilgrimages.",
+    highlights: ["Badrinath Temple", "Mana Village", "Tapt Kund"],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "gur-kedarnath",
+    slug: "gurugram-to-kedarnath-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kedarnath",
+    distance: 455,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kedarnath (Gaurikund) for Char Dham pilgrimage and spiritual group travel.",
+    highlights: ["Gaurikund", "Kedarnath Temple", "Sonprayag"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-yamunotri",
+    slug: "gurugram-to-yamunotri-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Yamunotri",
+    distance: 435,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Yamunotri for Char Dham pilgrimage and religious family tours.",
+    highlights: ["Janki Chatti", "Yamunotri Temple", "Surya Kund"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "gur-gangotri",
+    slug: "gurugram-to-gangotri-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Gangotri",
+    distance: 500,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Gangotri for Char Dham pilgrimage, spiritual journeys, and Himalayan road trips.",
+    highlights: ["Gangotri Temple", "Bhagirathi River", "Harsil Valley"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-char-dham-circuit",
+    slug: "gurugram-to-char-dham-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Char Dham Circuit (Yamunotri-Gangotri-Kedarnath-Badrinath)",
+    distance: 1650,
+    duration: "10-12 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the complete Char Dham Yatra covering Yamunotri, Gangotri, Kedarnath, and Badrinath with comfortable group travel.",
+    highlights: ["Yamunotri", "Gangotri", "Kedarnath", "Badrinath"],
+    tollEstimate: 6500,
+  },
+
+  {
+    id: "gur-do-dham-circuit",
+    slug: "gurugram-to-do-dham-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Do Dham Circuit (Kedarnath-Badrinath)",
+    distance: 980,
+    duration: "5-6 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Do Dham Yatra covering Kedarnath and Badrinath with safe and comfortable group transportation.",
+    highlights: ["Kedarnath Temple", "Badrinath Temple", "Joshimath"],
+    tollEstimate: 3800,
+  },
+  {
+    id: "gur-panch-kedar-circuit",
+    slug: "gurugram-to-panch-kedar-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Panch Kedar Circuit",
+    distance: 1250,
+    duration: "8-10 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Panch Kedar pilgrimage covering Kedarnath, Tungnath, Rudranath, Madhyamaheshwar, and Kalpeshwar.",
+    highlights: [
+      "Kedarnath",
+      "Tungnath",
+      "Rudranath",
+      "Madhyamaheshwar",
+      "Kalpeshwar",
+    ],
+    tollEstimate: 5200,
+  },
+
+  {
+    id: "gur-panch-prayag-circuit",
+    slug: "gurugram-to-panch-prayag-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination:
+      "Panch Prayag Circuit (Devprayag, Rudraprayag, Karnaprayag, Nandaprayag, Vishnuprayag)",
+    distance: 780,
+    duration: "5-6 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Panch Prayag Circuit covering the five sacred confluences of Uttarakhand.",
+    highlights: [
+      "Devprayag",
+      "Rudraprayag",
+      "Karnaprayag",
+      "Nandaprayag",
+      "Vishnuprayag",
+    ],
+    tollEstimate: 3200,
+  },
+
+  {
+    id: "gur-chakrata",
+    slug: "gurugram-to-chakrata-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chakrata",
+    distance: 330,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chakrata for nature escapes, waterfalls, trekking, and weekend getaways.",
+    highlights: ["Tiger Falls", "Deoban", "Chilmiri Neck"],
+    tollEstimate: 1100,
+  },
+
+  {
+    id: "gur-landour",
+    slug: "gurugram-to-landour-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Landour",
+    distance: 300,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Landour for peaceful hill vacations, cafés, and scenic mountain views.",
+    highlights: ["Lal Tibba", "Char Dukan", "St. Paul's Church"],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "gur-harsil",
+    slug: "gurugram-to-harsil-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Harsil",
+    distance: 485,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Harsil for Himalayan retreats, Gangotri tours, and family holidays.",
+    highlights: ["Harsil Valley", "Bhagirathi River", "Dharali Village"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-khirsu",
+    slug: "gurugram-to-khirsu-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Khirsu",
+    distance: 385,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Khirsu for peaceful hill station vacations and Himalayan sightseeing.",
+    highlights: ["Khirsu Viewpoint", "Ghandiyal Temple", "Apple Orchards"],
+    tollEstimate: 1300,
+  },
+
+  {
+    id: "gur-pauri",
+    slug: "gurugram-to-pauri-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pauri",
+    distance: 345,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pauri for family vacations, temple visits, and nature getaways.",
+    highlights: ["Kandoliya Temple", "Khirsu", "Nag Dev Temple"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "gur-lansdowne",
+    slug: "gurugram-to-lansdowne-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Lansdowne",
+    distance: 270,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Lansdowne for weekend trips, hill station holidays, and corporate outings.",
+    highlights: ["Bhulla Tal", "Tip-in-Top", "St. Mary's Church"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "gur-pithoragarh",
+    slug: "gurugram-to-pithoragarh-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pithoragarh",
+    distance: 565,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pithoragarh for Kumaon tours, adventure trips, and family vacations.",
+    highlights: ["Pithoragarh Fort", "Kapileshwar Cave", "Askot Sanctuary"],
+    tollEstimate: 1900,
+  },
+
+  {
+    id: "gur-abbott-mount",
+    slug: "gurugram-to-abbott-mount-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Abbott Mount",
+    distance: 510,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Abbott Mount for peaceful holidays, colonial heritage tours, and Himalayan views.",
+    highlights: ["Abbott Mount Church", "Lohaghat", "Mayawati Ashram"],
+    tollEstimate: 1750,
+  },
+  {
+    id: "gur-bageshwar",
+    slug: "gurugram-to-bageshwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bageshwar",
+    distance: 465,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bageshwar for temple visits, Kumaon tours, and family vacations.",
+    highlights: ["Bagnath Temple", "Saryu River", "Gomati Sangam"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-baijnath-temple",
+    slug: "gurugram-to-baijnath-temple-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Baijnath Temple (Uttarakhand)",
+    distance: 445,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Baijnath Temple for religious tours, heritage visits, and family trips.",
+    highlights: ["Baijnath Temple", "Gomati River", "Kausani"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "gur-jageshwar-dham",
+    slug: "gurugram-to-jageshwar-dham-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jageshwar Dham",
+    distance: 445,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jageshwar Dham for spiritual journeys, temple tours, and family pilgrimages.",
+    highlights: [
+      "Jageshwar Temple Complex",
+      "Dandeshwar Temple",
+      "Deodar Forest",
+    ],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "gur-kainchi-dham",
+    slug: "gurugram-to-kainchi-dham-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kainchi Dham (Neem Karoli Baba Ashram)",
+    distance: 340,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kainchi Dham for spiritual retreats, temple visits, and family tours.",
+    highlights: ["Neem Karoli Baba Ashram", "Kainchi Dham", "Bhowali"],
+    tollEstimate: 1150,
+  },
+
+  {
+    id: "gur-patal-bhuvaneshwar",
+    slug: "gurugram-to-patal-bhuvaneshwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Patal Bhuvaneshwar",
+    distance: 545,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Patal Bhuvaneshwar for cave temple tours, spiritual journeys, and Kumaon travel.",
+    highlights: ["Patal Bhuvaneshwar Cave", "Gangolihat", "Sheshnag Formation"],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "gur-kartik-swami",
+    slug: "gurugram-to-kartik-swami-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kartik Swami Temple",
+    distance: 410,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kartik Swami Temple for trekking, pilgrimage, and Himalayan sightseeing.",
+    highlights: ["Kartik Swami Temple", "Kanak Chauri", "Himalayan Viewpoint"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "gur-tehri-lake",
+    slug: "gurugram-to-tehri-lake-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Tehri Lake",
+    distance: 325,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Tehri Lake for water sports, camping, and family vacations.",
+    highlights: ["Boating", "Jet Ski", "Water Sports"],
+    tollEstimate: 1100,
+  },
+
+  {
+    id: "gur-new-tehri",
+    slug: "gurugram-to-new-tehri-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "New Tehri",
+    distance: 330,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to New Tehri for scenic holidays, lake tours, and adventure activities.",
+    highlights: ["Tehri Dam", "Tehri Lake", "Viewpoints"],
+    tollEstimate: 1150,
+  },
+
+  {
+    id: "gur-surkanda-devi-temple",
+    slug: "gurugram-to-surkanda-devi-temple-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Surkanda Devi Temple",
+    distance: 315,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Surkanda Devi Temple for pilgrimage, trekking, and Himalayan sightseeing.",
+    highlights: ["Surkanda Devi Temple", "Kaddukhal", "Himalayan Views"],
+    tollEstimate: 1050,
+  },
+
+  {
+    id: "gur-kunjapuri-temple",
+    slug: "gurugram-to-kunjapuri-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kunjapuri Temple",
+    distance: 270,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kunjapuri Temple for sunrise tours, spiritual trips, and family outings.",
+    highlights: ["Kunjapuri Temple", "Sunrise Viewpoint", "Rishikesh Valley"],
+    tollEstimate: 900,
+  },
+  {
+    id: "gur-shimla",
+    slug: "gurugram-to-shimla-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Shimla",
+    distance: 355,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Shimla for family vacations, corporate trips, honeymoon tours, and weekend getaways.",
+    highlights: ["Mall Road", "The Ridge", "Jakhoo Temple"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "gur-manali",
+    slug: "gurugram-to-manali-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Manali",
+    distance: 540,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Manali for honeymoon trips, adventure tours, family holidays, and group travel.",
+    highlights: ["Solang Valley", "Hadimba Temple", "Mall Road"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "gur-kullu",
+    slug: "gurugram-to-kullu-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kullu",
+    distance: 495,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kullu for river rafting, sightseeing, and family vacations.",
+    highlights: [
+      "Raghunath Temple",
+      "Beas River",
+      "Great Himalayan National Park",
+    ],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-kasol",
+    slug: "gurugram-to-kasol-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kasol",
+    distance: 515,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kasol for camping, trekking, backpacking, and group holidays.",
+    highlights: ["Parvati Valley", "Chalal Village", "Kasol Market"],
+    tollEstimate: 1750,
+  },
+
+  {
+    id: "gur-manikaran-sahib",
+    slug: "gurugram-to-manikaran-sahib-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Manikaran Sahib",
+    distance: 520,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Manikaran Sahib for Sikh pilgrimage, hot springs, and family tours.",
+    highlights: [
+      "Manikaran Sahib Gurudwara",
+      "Hot Water Springs",
+      "Parvati River",
+    ],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "gur-dharamshala",
+    slug: "gurugram-to-dharamshala-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dharamshala",
+    distance: 480,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Dharamshala for spiritual retreats, family vacations, and mountain holidays.",
+    highlights: ["Dalai Lama Temple", "HPCA Stadium", "War Memorial"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-mcleodganj",
+    slug: "gurugram-to-mcleodganj-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "McLeodganj",
+    distance: 490,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to McLeodganj for Buddhist monasteries, trekking, and scenic vacations.",
+    highlights: ["Namgyal Monastery", "Bhagsu Waterfall", "Dal Lake"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "gur-dalhousie",
+    slug: "gurugram-to-dalhousie-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dalhousie",
+    distance: 570,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Dalhousie for hill station holidays, family tours, and honeymoon trips.",
+    highlights: ["Gandhi Chowk", "Panchpula", "Satdhara Falls"],
+    tollEstimate: 1900,
+  },
+
+  {
+    id: "gur-khajjiar",
+    slug: "gurugram-to-khajjiar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Khajjiar",
+    distance: 595,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Khajjiar for meadow tours, family vacations, and adventure trips.",
+    highlights: ["Khajjiar Lake", "Khajji Nag Temple", "Adventure Activities"],
+    tollEstimate: 2000,
+  },
+
+  {
+    id: "gur-chamba",
+    slug: "gurugram-to-chamba-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chamba",
+    distance: 610,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chamba for heritage tours, temple visits, and Himalayan family vacations.",
+    highlights: [
+      "Lakshmi Narayan Temple",
+      "Chamera Lake",
+      "Bhuri Singh Museum",
+    ],
+    tollEstimate: 2050,
+  },
+  {
+    id: "gur-bir-billing",
+    slug: "gurugram-to-bir-billing-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bir Billing",
+    distance: 500,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bir Billing for paragliding, adventure trips, camping, and group vacations.",
+    highlights: ["Billing Paragliding Site", "Bir Monastery", "Landing Site"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-palampur",
+    slug: "gurugram-to-palampur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Palampur",
+    distance: 470,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Palampur for tea garden tours, family holidays, and scenic mountain trips.",
+    highlights: ["Tea Gardens", "Saurabh Van Vihar", "Baijnath Temple"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-jibhi",
+    slug: "gurugram-to-jibhi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jibhi",
+    distance: 455,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jibhi for riverside stays, nature retreats, trekking, and weekend getaways.",
+    highlights: ["Jibhi Waterfall", "Mini Thailand", "Chehni Kothi"],
+    tollEstimate: 1550,
+  },
+
+  {
+    id: "gur-tirthan-valley",
+    slug: "gurugram-to-tirthan-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Tirthan Valley",
+    distance: 470,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Tirthan Valley for trout fishing, trekking, camping, and family vacations.",
+    highlights: [
+      "Great Himalayan National Park",
+      "Tirthan River",
+      "Jalori Pass",
+    ],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-shoja",
+    slug: "gurugram-to-shoja-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Shoja",
+    distance: 480,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Shoja for mountain retreats, photography tours, and camping trips.",
+    highlights: ["Jalori Pass", "Serolsar Lake", "Waterfall Point"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "gur-spiti-valley-circuit",
+    slug: "gurugram-to-spiti-valley-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Spiti Valley Circuit (Shimla-Kinnaur-Spiti-Manali)",
+    distance: 1350,
+    duration: "8-10 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the complete Spiti Valley Circuit via Shimla, Kinnaur, Spiti, and Manali, ideal for adventure and road trip enthusiasts.",
+    highlights: [
+      "Shimla",
+      "Kaza",
+      "Key Monastery",
+      "Chandratal Lake",
+      "Manali",
+    ],
+    tollEstimate: 5200,
+  },
+
+  {
+    id: "gur-narkanda",
+    slug: "gurugram-to-narkanda-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Narkanda",
+    distance: 420,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Narkanda for skiing, apple orchard tours, and family vacations.",
+    highlights: ["Hatu Peak", "Hatu Temple", "Apple Orchards"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "gur-sangla-valley",
+    slug: "gurugram-to-sangla-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sangla Valley",
+    distance: 610,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sangla Valley for Himalayan road trips, camping, and nature holidays.",
+    highlights: ["Baspa River", "Kamru Fort", "Rakcham Village"],
+    tollEstimate: 2200,
+  },
+
+  {
+    id: "gur-chitkul",
+    slug: "gurugram-to-chitkul-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chitkul",
+    distance: 635,
+    duration: "13.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chitkul for adventure tours, photography, and Himalayan sightseeing.",
+    highlights: ["Last Indian Village", "Baspa River", "Mathi Temple"],
+    tollEstimate: 2300,
+  },
+
+  {
+    id: "gur-kalpa",
+    slug: "gurugram-to-kalpa-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kalpa",
+    distance: 580,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kalpa for Kinnaur tours, mountain vacations, and scenic road trips.",
+    highlights: ["Kinnaur Kailash View", "Suicide Point", "Roghi Village"],
+    tollEstimate: 2100,
+  },
+  {
+    id: "gur-kaza",
+    slug: "gurugram-to-kaza-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kaza",
+    distance: 720,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kaza for Spiti Valley expeditions, photography tours, and adventure road trips.",
+    highlights: ["Key Monastery", "Kibber Village", "Kaza Market"],
+    tollEstimate: 2600,
+  },
+
+  {
+    id: "gur-chandratal-lake",
+    slug: "gurugram-to-chandratal-lake-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chandratal Lake",
+    distance: 780,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chandratal Lake for camping, high-altitude adventures, and Himalayan road trips.",
+    highlights: ["Chandratal Lake", "Batal", "Camping Site"],
+    tollEstimate: 2800,
+  },
+
+  {
+    id: "gur-kheerganga",
+    slug: "gurugram-to-kheerganga-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kheerganga",
+    distance: 545,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kheerganga (Barshaini) for trekking, hot springs, and adventure holidays.",
+    highlights: ["Kheerganga Trek", "Hot Water Springs", "Barshaini"],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "gur-malana",
+    slug: "gurugram-to-malana-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Malana",
+    distance: 520,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Malana for trekking, village exploration, and Himalayan adventure trips.",
+    highlights: ["Malana Village", "Jamlu Devta Temple", "Malana Trek"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "gur-tosh",
+    slug: "gurugram-to-tosh-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Tosh",
+    distance: 535,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Tosh for backpacking, camping, and Parvati Valley adventures.",
+    highlights: ["Tosh Village", "Parvati Valley", "Scenic Viewpoints"],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "gur-pulga",
+    slug: "gurugram-to-pulga-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pulga",
+    distance: 530,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pulga for nature retreats, forest walks, and peaceful mountain holidays.",
+    highlights: ["Fairy Forest", "Pulga Village", "Parvati Valley"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "gur-parvati-valley-circuit",
+    slug: "gurugram-to-parvati-valley-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Parvati Valley Circuit",
+    distance: 620,
+    duration: "4-5 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Parvati Valley Circuit covering Kasol, Manikaran, Tosh, Pulga, and nearby attractions.",
+    highlights: ["Kasol", "Manikaran Sahib", "Tosh", "Pulga", "Kheerganga"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "gur-mandi",
+    slug: "gurugram-to-mandi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Mandi",
+    distance: 440,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Mandi for heritage tours, temple visits, and family vacations.",
+    highlights: ["Bhootnath Temple", "Rewalsar Lake", "Pandoh Dam"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "gur-rewalsar-lake",
+    slug: "gurugram-to-rewalsar-lake-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Rewalsar Lake",
+    distance: 465,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Rewalsar Lake for Buddhist pilgrimage, spiritual retreats, and sightseeing.",
+    highlights: ["Rewalsar Lake", "Monasteries", "Guru Padmasambhava Statue"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-prashar-lake",
+    slug: "gurugram-to-prashar-lake-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Prashar Lake",
+    distance: 490,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Prashar Lake for trekking, camping, and Himalayan nature tours.",
+    highlights: ["Prashar Lake", "Prashar Rishi Temple", "Dhauladhar Views"],
+    tollEstimate: 1650,
+  },
+  {
+    id: "gur-barot-valley",
+    slug: "gurugram-to-barot-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Barot Valley",
+    distance: 530,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Barot Valley for camping, trout fishing, trekking, and family vacations.",
+    highlights: ["Uhl River", "Barot Dam", "Nargu Wildlife Sanctuary"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "gur-kasauli",
+    slug: "gurugram-to-kasauli-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kasauli",
+    distance: 285,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kasauli for weekend getaways, family holidays, and corporate outings.",
+    highlights: ["Mall Road", "Sunset Point", "Christ Church"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "gur-chail",
+    slug: "gurugram-to-chail-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chail",
+    distance: 340,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chail for peaceful hill station holidays, nature trips, and family vacations.",
+    highlights: [
+      "Chail Palace",
+      "Kali Ka Tibba",
+      "World's Highest Cricket Ground",
+    ],
+    tollEstimate: 1150,
+  },
+
+  {
+    id: "gur-solan",
+    slug: "gurugram-to-solan-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Solan",
+    distance: 315,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Solan for sightseeing, temple visits, and family tours.",
+    highlights: [
+      "Mohan Shakti Heritage Park",
+      "Shoolini Mata Temple",
+      "Kasauli Brewery",
+    ],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "gur-nahan",
+    slug: "gurugram-to-nahan-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Nahan",
+    distance: 245,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Nahan for weekend trips, heritage sightseeing, and family outings.",
+    highlights: ["Rani Tal", "Suketi Fossil Park", "Jagannath Temple"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "gur-renuka-lake",
+    slug: "gurugram-to-renuka-lake-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Renuka Lake",
+    distance: 285,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Renuka Lake for family picnics, boating, and nature holidays.",
+    highlights: ["Renuka Lake", "Renuka Ji Temple", "Mini Zoo"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "gur-paonta-sahib",
+    slug: "gurugram-to-paonta-sahib-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Paonta Sahib",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Paonta Sahib for Sikh pilgrimage, spiritual tours, and family travel.",
+    highlights: ["Paonta Sahib Gurudwara", "Yamuna River", "Sirmour Heritage"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "gur-kinnaur-circuit",
+    slug: "gurugram-to-kinnaur-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kinnaur Circuit (Sarahan-Sangla-Kalpa)",
+    distance: 950,
+    duration: "5-6 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Kinnaur Circuit covering Sarahan, Sangla Valley, and Kalpa with comfortable group travel.",
+    highlights: ["Sarahan", "Sangla Valley", "Chitkul", "Kalpa"],
+    tollEstimate: 3600,
+  },
+
+  {
+    id: "gur-triund-trek-base",
+    slug: "gurugram-to-triund-trek-base-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Triund Trek Base",
+    distance: 490,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Triund Trek Base for trekking, camping, and adventure holidays.",
+    highlights: ["McLeodganj", "Bhagsu Nag", "Triund Trail"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "gur-kareri-lake-base",
+    slug: "gurugram-to-kareri-lake-base-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kareri Lake Base",
+    distance: 500,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kareri Lake Base for trekking, camping, and Himalayan adventure tours.",
+    highlights: ["Kareri Village", "Kareri Lake Trek", "Dhauladhar Range"],
+    tollEstimate: 1700,
+  },
+  {
+    id: "gur-indrahar-pass-base",
+    slug: "gurugram-to-indrahar-pass-base-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Indrahar Pass Base",
+    distance: 495,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Indrahar Pass Base for trekking expeditions, camping, and adventure group tours.",
+    highlights: ["McLeodganj", "Triund", "Laka Glacier"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-hampta-pass-base",
+    slug: "gurugram-to-hampta-pass-base-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Hampta Pass Base (from Manali side)",
+    distance: 545,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Hampta Pass Base for trekking, camping, and Himalayan adventure tours.",
+    highlights: ["Jobra", "Hampta Pass Trek", "Manali"],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "gur-bhrigu-lake-base",
+    slug: "gurugram-to-bhrigu-lake-base-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bhrigu Lake Base",
+    distance: 545,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bhrigu Lake Base for trekking, alpine lake adventures, and camping trips.",
+    highlights: ["Gulaba", "Bhrigu Lake", "Manali"],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "gur-jaipur",
+    slug: "gurugram-to-jaipur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jaipur",
+    distance: 240,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jaipur for sightseeing, weddings, corporate travel, and family vacations.",
+    highlights: ["Hawa Mahal", "Amber Fort", "City Palace"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "gur-udaipur",
+    slug: "gurugram-to-udaipur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Udaipur",
+    distance: 660,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Udaipur for royal heritage tours, destination weddings, and family holidays.",
+    highlights: ["City Palace", "Lake Pichola", "Fateh Sagar Lake"],
+    tollEstimate: 2300,
+  },
+
+  {
+    id: "gur-jodhpur",
+    slug: "gurugram-to-jodhpur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jodhpur",
+    distance: 600,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jodhpur for heritage tours, family vacations, and Rajasthan group trips.",
+    highlights: ["Mehrangarh Fort", "Umaid Bhawan Palace", "Clock Tower"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "gur-jaisalmer",
+    slug: "gurugram-to-jaisalmer-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jaisalmer",
+    distance: 810,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jaisalmer for desert safaris, heritage tours, and Rajasthan vacations.",
+    highlights: ["Jaisalmer Fort", "Sam Sand Dunes", "Patwon Ki Haveli"],
+    tollEstimate: 2900,
+  },
+
+  {
+    id: "gur-bikaner",
+    slug: "gurugram-to-bikaner-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bikaner",
+    distance: 470,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bikaner for heritage tours, family trips, and cultural sightseeing.",
+    highlights: ["Junagarh Fort", "Karni Mata Temple", "Lalgarh Palace"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-pushkar",
+    slug: "gurugram-to-pushkar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pushkar",
+    distance: 385,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pushkar for pilgrimage, cultural tours, and family vacations.",
+    highlights: ["Brahma Temple", "Pushkar Lake", "Savitri Temple"],
+    tollEstimate: 1300,
+  },
+
+  {
+    id: "gur-ajmer",
+    slug: "gurugram-to-ajmer-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ajmer (Ajmer Sharif Dargah)",
+    distance: 370,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ajmer Sharif Dargah for pilgrimage, religious tours, and family travel.",
+    highlights: [
+      "Ajmer Sharif Dargah",
+      "Ana Sagar Lake",
+      "Adhai Din Ka Jhonpra",
+    ],
+    tollEstimate: 1250,
+  },
+  {
+    id: "gur-mount-abu",
+    slug: "gurugram-to-mount-abu-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Mount Abu",
+    distance: 760,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Mount Abu for hill station holidays, honeymoon trips, and family vacations.",
+    highlights: ["Nakki Lake", "Dilwara Temples", "Guru Shikhar"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "gur-ranthambore-national-park",
+    slug: "gurugram-to-ranthambore-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ranthambore National Park",
+    distance: 365,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ranthambore National Park for tiger safaris, wildlife photography, and family tours.",
+    highlights: ["Safari Zones", "Ranthambore Fort", "Padam Talao"],
+    tollEstimate: 1250,
+  },
+
+  {
+    id: "gur-sariska-tiger-reserve",
+    slug: "gurugram-to-sariska-tiger-reserve-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sariska Tiger Reserve",
+    distance: 185,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sariska Tiger Reserve for wildlife safaris, weekend getaways, and nature trips.",
+    highlights: ["Safari Zone", "Pandupol Hanuman Temple", "Siliserh Lake"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "gur-bharatpur",
+    slug: "gurugram-to-bharatpur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bharatpur (Keoladeo National Park)",
+    distance: 205,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bharatpur for bird watching, wildlife tours, and family outings.",
+    highlights: ["Keoladeo National Park", "Bharatpur Fort", "Lohagarh Fort"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "gur-alwar",
+    slug: "gurugram-to-alwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Alwar",
+    distance: 155,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Alwar for heritage tours, weekend trips, and family vacations.",
+    highlights: ["Bala Quila", "City Palace", "Siliserh Lake"],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "gur-mandawa",
+    slug: "gurugram-to-mandawa-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Mandawa (Shekhawati Region)",
+    distance: 235,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Mandawa for heritage tours, haveli sightseeing, and Rajasthan cultural trips.",
+    highlights: ["Mandawa Fort", "Painted Havelis", "Shekhawati Art"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "gur-nawalgarh",
+    slug: "gurugram-to-nawalgarh-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Nawalgarh",
+    distance: 245,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Nawalgarh for heritage tours, museums, and family travel.",
+    highlights: ["Podar Haveli Museum", "Aath Haveli", "Roop Niwas Palace"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "gur-fatehpur",
+    slug: "gurugram-to-fatehpur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Fatehpur",
+    distance: 260,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Fatehpur for Shekhawati heritage tours and cultural sightseeing.",
+    highlights: [
+      "Fresco Havelis",
+      "Jagannath Singhania Haveli",
+      "Shekhawati Architecture",
+    ],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "gur-jhunjhunu",
+    slug: "gurugram-to-jhunjhunu-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jhunjhunu",
+    distance: 220,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jhunjhunu for heritage tourism, temple visits, and family trips.",
+    highlights: ["Rani Sati Temple", "Khetri Mahal", "Badalgarh Fort"],
+    tollEstimate: 750,
+  },
+  {
+    id: "gur-chittorgarh",
+    slug: "gurugram-to-chittorgarh-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chittorgarh",
+    distance: 585,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chittorgarh for heritage tours, historical sightseeing, and Rajasthan family trips.",
+    highlights: ["Chittorgarh Fort", "Vijay Stambh", "Kirti Stambh"],
+    tollEstimate: 2000,
+  },
+
+  {
+    id: "gur-kumbhalgarh",
+    slug: "gurugram-to-kumbhalgarh-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kumbhalgarh",
+    distance: 700,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kumbhalgarh for heritage tours, wildlife visits, and family vacations.",
+    highlights: [
+      "Kumbhalgarh Fort",
+      "Kumbhalgarh Wildlife Sanctuary",
+      "Badal Mahal",
+    ],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "gur-ranakpur",
+    slug: "gurugram-to-ranakpur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ranakpur",
+    distance: 720,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ranakpur for Jain pilgrimage, temple visits, and Rajasthan heritage tours.",
+    highlights: [
+      "Ranakpur Jain Temple",
+      "Surya Narayan Temple",
+      "Aravalli Hills",
+    ],
+    tollEstimate: 2600,
+  },
+
+  {
+    id: "gur-bundi",
+    slug: "gurugram-to-bundi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bundi",
+    distance: 470,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bundi for heritage tours, palace visits, and cultural sightseeing.",
+    highlights: ["Taragarh Fort", "Garh Palace", "Raniji Ki Baori"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-kota",
+    slug: "gurugram-to-kota-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kota",
+    distance: 485,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kota for educational travel, sightseeing, and family trips.",
+    highlights: ["Seven Wonders Park", "Chambal Garden", "Garadia Mahadev"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "gur-sawai-madhopur",
+    slug: "gurugram-to-sawai-madhopur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sawai Madhopur",
+    distance: 355,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sawai Madhopur for wildlife safaris, family vacations, and Ranthambore tours.",
+    highlights: [
+      "Ranthambore National Park",
+      "Ranthambore Fort",
+      "Ganesh Temple",
+    ],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "gur-dausa",
+    slug: "gurugram-to-dausa-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dausa (Abhaneri Stepwell)",
+    distance: 230,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Dausa for heritage tours, stepwell visits, and Rajasthan sightseeing.",
+    highlights: ["Chand Baori", "Harshat Mata Temple", "Abhaneri Village"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "gur-bhangarh-fort",
+    slug: "gurugram-to-bhangarh-fort-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bhangarh Fort",
+    distance: 220,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bhangarh Fort for heritage exploration, photography, and weekend trips.",
+    highlights: ["Bhangarh Fort", "Hanuman Temple", "Archaeological Ruins"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "gur-siliserh-lake",
+    slug: "gurugram-to-siliserh-lake-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Siliserh Lake",
+    distance: 165,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Siliserh Lake for boating, picnics, and family outings.",
+    highlights: ["Siliserh Lake", "Siliserh Palace", "Boating"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "gur-deeg-palace",
+    slug: "gurugram-to-deeg-palace-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Deeg Palace",
+    distance: 185,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Deeg Palace for heritage tours, palace visits, and family sightseeing.",
+    highlights: ["Deeg Palace", "Royal Gardens", "Fountains"],
+    tollEstimate: 650,
+  },
+  {
+    id: "gur-tal-chhapar-sanctuary",
+    slug: "gurugram-to-tal-chhapar-sanctuary-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Tal Chhapar Sanctuary",
+    distance: 330,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Tal Chhapar Sanctuary for wildlife safaris, blackbuck sightings, and bird watching tours.",
+    highlights: ["Blackbuck Sanctuary", "Bird Watching", "Grassland Safari"],
+    tollEstimate: 1150,
+  },
+
+  {
+    id: "gur-desert-national-park",
+    slug: "gurugram-to-desert-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Desert National Park",
+    distance: 825,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Desert National Park for desert wildlife tours, photography, and Rajasthan expeditions.",
+    highlights: ["Great Indian Bustard", "Sand Dunes", "Desert Safari"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "gur-osian",
+    slug: "gurugram-to-osian-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Osian",
+    distance: 640,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Osian for desert safaris, heritage temples, and Rajasthan cultural tours.",
+    highlights: ["Sachiya Mata Temple", "Camel Safari", "Osian Sand Dunes"],
+    tollEstimate: 2250,
+  },
+
+  {
+    id: "gur-khimsar",
+    slug: "gurugram-to-khimsar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Khimsar",
+    distance: 560,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Khimsar for heritage stays, desert safaris, and family vacations.",
+    highlights: ["Khimsar Fort", "Sand Dunes", "Nagaur Region"],
+    tollEstimate: 1950,
+  },
+
+  {
+    id: "gur-barmer",
+    slug: "gurugram-to-barmer-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Barmer",
+    distance: 760,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Barmer for heritage tours, handicraft shopping, and desert travel.",
+    highlights: ["Kiradu Temples", "Barmer Fort", "Local Handicrafts"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "gur-jhalawar",
+    slug: "gurugram-to-jhalawar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jhalawar",
+    distance: 610,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jhalawar for heritage sightseeing, forts, and Rajasthan family tours.",
+    highlights: ["Gagron Fort", "Jhalawar Fort", "Chandrabhaga Temple"],
+    tollEstimate: 2150,
+  },
+
+  {
+    id: "gur-dungarpur",
+    slug: "gurugram-to-dungarpur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dungarpur",
+    distance: 760,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Dungarpur for palace tours, lakes, and heritage vacations.",
+    highlights: ["Udai Bilas Palace", "Gaib Sagar Lake", "Juna Mahal"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "gur-banswara",
+    slug: "gurugram-to-banswara-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Banswara",
+    distance: 810,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Banswara for nature tours, temples, and heritage sightseeing.",
+    highlights: ["Mahi Dam", "Anand Sagar Lake", "Tripura Sundari Temple"],
+    tollEstimate: 2900,
+  },
+
+  {
+    id: "gur-sam-sand-dunes",
+    slug: "gurugram-to-sam-sand-dunes-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sam Sand Dunes (near Jaisalmer)",
+    distance: 850,
+    duration: "14.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sam Sand Dunes for camel safaris, desert camping, and cultural evenings.",
+    highlights: ["Camel Safari", "Desert Camp", "Sunset Point"],
+    tollEstimate: 3100,
+  },
+
+  {
+    id: "gur-longewala-tanot-mata",
+    slug: "gurugram-to-longewala-tanot-mata-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Longewala/Tanot Mata (Jaisalmer Extension)",
+    distance: 960,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Longewala and Tanot Mata for border tourism, patriotic tours, and Rajasthan expeditions.",
+    highlights: [
+      "Longewala War Memorial",
+      "Tanot Mata Temple",
+      "India-Pakistan Border",
+    ],
+    tollEstimate: 3500,
+  },
+  {
+    id: "gur-golden-triangle-circuit",
+    slug: "gurugram-to-golden-triangle-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Golden Triangle Circuit (Delhi-Agra-Jaipur)",
+    distance: 750,
+    duration: "4-5 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Golden Triangle Circuit covering Delhi, Agra, and Jaipur with comfortable group travel.",
+    highlights: ["India Gate", "Taj Mahal", "Amber Fort"],
+    tollEstimate: 2800,
+  },
+
+  {
+    id: "gur-royal-rajasthan-circuit",
+    slug: "gurugram-to-royal-rajasthan-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Royal Rajasthan Circuit (Jaipur-Jodhpur-Udaipur)",
+    distance: 1450,
+    duration: "6-7 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Royal Rajasthan Circuit covering Jaipur, Jodhpur, and Udaipur.",
+    highlights: ["Amber Fort", "Mehrangarh Fort", "City Palace Udaipur"],
+    tollEstimate: 5400,
+  },
+
+  {
+    id: "gur-desert-triangle",
+    slug: "gurugram-to-desert-triangle-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Desert Triangle (Jodhpur-Jaisalmer-Bikaner)",
+    distance: 1650,
+    duration: "6-7 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Desert Triangle covering Jodhpur, Jaisalmer, and Bikaner.",
+    highlights: ["Mehrangarh Fort", "Sam Sand Dunes", "Junagarh Fort"],
+    tollEstimate: 6200,
+  },
+
+  {
+    id: "gur-mewar-circuit",
+    slug: "gurugram-to-mewar-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Mewar Circuit (Udaipur-Chittorgarh-Kumbhalgarh)",
+    distance: 1550,
+    duration: "6-7 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Mewar Circuit covering Udaipur, Chittorgarh, and Kumbhalgarh.",
+    highlights: ["City Palace Udaipur", "Chittorgarh Fort", "Kumbhalgarh Fort"],
+    tollEstimate: 5800,
+  },
+
+  {
+    id: "gur-dhundhar-circuit",
+    slug: "gurugram-to-dhundhar-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dhundhar Circuit (Jaipur-Shekhawati-Alwar)",
+    distance: 760,
+    duration: "4-5 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Dhundhar Circuit covering Jaipur, Shekhawati, and Alwar.",
+    highlights: ["Hawa Mahal", "Mandawa Havelis", "Bala Quila"],
+    tollEstimate: 2900,
+  },
+
+  {
+    id: "gur-braj-bhoomi-circuit",
+    slug: "gurugram-to-braj-bhoomi-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Braj Bhoomi Circuit (Mathura-Vrindavan-Bharatpur-Deeg)",
+    distance: 430,
+    duration: "2-3 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Braj Bhoomi Circuit covering Mathura, Vrindavan, Bharatpur, and Deeg.",
+    highlights: [
+      "Krishna Janmabhoomi",
+      "Banke Bihari Temple",
+      "Keoladeo National Park",
+      "Deeg Palace",
+    ],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-agra",
+    slug: "gurugram-to-agra-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Agra (Taj Mahal)",
+    distance: 215,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Agra for Taj Mahal tours, family vacations, and corporate outings.",
+    highlights: ["Taj Mahal", "Agra Fort", "Mehtab Bagh"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "gur-mathura",
+    slug: "gurugram-to-mathura-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Mathura (Krishna Janmabhoomi)",
+    distance: 165,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Mathura for pilgrimage, temple visits, and family tours.",
+    highlights: ["Krishna Janmabhoomi", "Dwarkadhish Temple", "Vishram Ghat"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "gur-vrindavan",
+    slug: "gurugram-to-vrindavan-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Vrindavan",
+    distance: 175,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Vrindavan for spiritual tours, temple visits, and group pilgrimages.",
+    highlights: ["Banke Bihari Temple", "Prem Mandir", "ISKCON Temple"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "gur-varanasi",
+    slug: "gurugram-to-varanasi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Varanasi (Kashi Vishwanath)",
+    distance: 840,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Varanasi for Kashi Vishwanath darshan, Ganga Aarti, pilgrimage, and family tours.",
+    highlights: ["Kashi Vishwanath Temple", "Dashashwamedh Ghat", "Sarnath"],
+    tollEstimate: 3000,
+  },
+  {
+    id: "gur-prayagraj",
+    slug: "gurugram-to-prayagraj-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Prayagraj (Triveni Sangam)",
+    distance: 690,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Prayagraj for Triveni Sangam, Kumbh pilgrimage, and family tours.",
+    highlights: ["Triveni Sangam", "Anand Bhavan", "Allahabad Fort"],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "gur-ayodhya",
+    slug: "gurugram-to-ayodhya-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ayodhya (Ram Janmabhoomi)",
+    distance: 700,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ayodhya for Ram Mandir darshan, pilgrimage, and religious group tours.",
+    highlights: ["Shri Ram Janmabhoomi Mandir", "Hanuman Garhi", "Saryu Ghat"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "gur-lucknow",
+    slug: "gurugram-to-lucknow-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Lucknow",
+    distance: 540,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Lucknow for business trips, heritage tours, and family vacations.",
+    highlights: ["Bara Imambara", "Rumi Darwaza", "Ambedkar Memorial Park"],
+    tollEstimate: 1900,
+  },
+
+  {
+    id: "gur-kushinagar",
+    slug: "gurugram-to-kushinagar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kushinagar",
+    distance: 880,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kushinagar for Buddhist pilgrimage, heritage tours, and spiritual journeys.",
+    highlights: ["Mahaparinirvana Temple", "Ramabhar Stupa", "Meditation Park"],
+    tollEstimate: 3200,
+  },
+
+  {
+    id: "gur-sarnath",
+    slug: "gurugram-to-sarnath-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sarnath",
+    distance: 850,
+    duration: "13.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sarnath for Buddhist pilgrimage, heritage tours, and educational trips.",
+    highlights: ["Dhamek Stupa", "Mulagandha Kuti Vihar", "Sarnath Museum"],
+    tollEstimate: 3050,
+  },
+
+  {
+    id: "gur-dudhwa-national-park",
+    slug: "gurugram-to-dudhwa-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dudhwa National Park",
+    distance: 520,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Dudhwa National Park for wildlife safaris, birdwatching, and nature holidays.",
+    highlights: ["Tiger Safari", "Rhino Zone", "Bird Watching"],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "gur-chitrakoot",
+    slug: "gurugram-to-chitrakoot-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chitrakoot",
+    distance: 700,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chitrakoot for pilgrimage, Ramayana circuit tours, and family travel.",
+    highlights: ["Kamadgiri", "Ram Ghat", "Gupt Godavari"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "gur-naimisharanya",
+    slug: "gurugram-to-naimisharanya-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Naimisharanya",
+    distance: 470,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Naimisharanya for spiritual tours, temple visits, and religious group travel.",
+    highlights: ["Chakra Tirth", "Lalita Devi Temple", "Hanuman Garhi"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "gur-bateshwar",
+    slug: "gurugram-to-bateshwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bateshwar",
+    distance: 245,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bateshwar for temple visits, heritage tours, and family pilgrimages.",
+    highlights: [
+      "Bateshwar Temple Complex",
+      "Yamuna River Ghats",
+      "Ancient Shiva Temples",
+    ],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "gur-barsana",
+    slug: "gurugram-to-barsana-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Barsana",
+    distance: 160,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Barsana for Radha Rani Temple darshan, Holi celebrations, and Braj pilgrimage.",
+    highlights: ["Shri Radha Rani Temple", "Kusum Sarovar", "Prem Sarovar"],
+    tollEstimate: 550,
+  },
+  {
+    id: "gur-gokul",
+    slug: "gurugram-to-gokul-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Gokul",
+    distance: 170,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Gokul for Krishna pilgrimage, temple visits, and family tours.",
+    highlights: ["Raman Reti", "Gokul Nath Temple", "Brahmand Ghat"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "gur-govardhan",
+    slug: "gurugram-to-govardhan-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Govardhan",
+    distance: 155,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Govardhan for Govardhan Parikrama, pilgrimage, and Braj spiritual tours.",
+    highlights: ["Govardhan Hill", "Kusum Sarovar", "Radha Kund"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "gur-fatehpur-sikri",
+    slug: "gurugram-to-fatehpur-sikri-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Fatehpur Sikri",
+    distance: 225,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Fatehpur Sikri for Mughal heritage tours, sightseeing, and family vacations.",
+    highlights: ["Buland Darwaza", "Jama Masjid", "Tomb of Salim Chishti"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "gur-meerut",
+    slug: "gurugram-to-meerut-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Meerut",
+    distance: 95,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Meerut for business trips, family travel, and local sightseeing.",
+    highlights: ["Augarnath Temple", "St. John's Church", "Gandhi Bagh"],
+    tollEstimate: 350,
+  },
+
+  {
+    id: "gur-hastinapur",
+    slug: "gurugram-to-hastinapur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Hastinapur",
+    distance: 135,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Hastinapur for Mahabharata circuit tours, Jain pilgrimage, and family outings.",
+    highlights: [
+      "Pandeshwar Temple",
+      "Jambudweep Jain Temple",
+      "Kailash Parvat",
+    ],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "gur-bithoor",
+    slug: "gurugram-to-bithoor-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bithoor",
+    distance: 455,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bithoor for religious tours, heritage visits, and Ganga ghat sightseeing.",
+    highlights: ["Brahmavart Ghat", "Valmiki Ashram", "Dhruv Teela"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "gur-jhansi",
+    slug: "gurugram-to-jhansi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jhansi",
+    distance: 465,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jhansi for historical tours, business travel, and family vacations.",
+    highlights: ["Jhansi Fort", "Rani Mahal", "Government Museum"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "gur-orchh",
+    slug: "gurugram-to-orchha-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Orchha (MP border, often paired with UP)",
+    distance: 485,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Orchha for heritage tours, palace visits, and riverside sightseeing.",
+    highlights: ["Orchha Fort", "Chaturbhuj Temple", "Raja Ram Temple"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-mirzapur",
+    slug: "gurugram-to-mirzapur-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Mirzapur (Vindhyachal Dham)",
+    distance: 815,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Mirzapur for Vindhyachal Dham pilgrimage, temple visits, and family tours.",
+    highlights: [
+      "Vindhyavasini Temple",
+      "Ashtabhuja Temple",
+      "Kali Khoh Temple",
+    ],
+    tollEstimate: 2900,
+  },
+
+  {
+    id: "gur-pilibhit-tiger-reserve",
+    slug: "gurugram-to-pilibhit-tiger-reserve-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pilibhit Tiger Reserve",
+    distance: 395,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pilibhit Tiger Reserve for wildlife safaris, birdwatching, and nature tours.",
+    highlights: ["Tiger Safari", "Chuka Beach", "Dense Forests"],
+    tollEstimate: 1400,
+  },
+  {
+    id: "gur-kaushambi",
+    slug: "gurugram-to-kaushambi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kaushambi",
+    distance: 705,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kaushambi for Buddhist heritage tours, archaeological visits, and family travel.",
+    highlights: ["Ashokan Pillar", "Ancient Ruins", "Ghositaram Monastery"],
+    tollEstimate: 2550,
+  },
+  {
+    id: "gur-shravasti",
+    slug: "gurugram-to-shravasti-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Shravasti",
+    distance: 675,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Shravasti for Buddhist pilgrimage, heritage tours, and spiritual journeys.",
+    highlights: ["Jetavana Monastery", "Anand Bodhi Tree", "Angulimala Stupa"],
+    tollEstimate: 2450,
+  },
+  {
+    id: "gur-sankisa",
+    slug: "gurugram-to-sankisa-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sankisa",
+    distance: 355,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sankisa for Buddhist pilgrimage, archaeological exploration, and educational tours.",
+    highlights: ["Ashokan Pillar", "Buddhist Temple", "Ancient Ruins"],
+    tollEstimate: 1250,
+  },
+  {
+    id: "gur-kampil",
+    slug: "gurugram-to-kampil-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kampil",
+    distance: 285,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kampil for Jain pilgrimage, heritage tours, and religious travel.",
+    highlights: ["Jain Temples", "Ancient Kampilya", "Archaeological Sites"],
+    tollEstimate: 1000,
+  },
+  {
+    id: "gur-ahichhatra",
+    slug: "gurugram-to-ahichhatra-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ahichhatra",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ahichhatra for archaeological tours, Buddhist heritage, and historical sightseeing.",
+    highlights: [
+      "Ancient Fort Ruins",
+      "Archaeological Mounds",
+      "Excavation Site",
+    ],
+    tollEstimate: 900,
+  },
+  {
+    id: "gur-buddhist-circuit",
+    slug: "gurugram-to-buddhist-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Buddhist Circuit (Sarnath-Kushinagar-Shravasti-Sankisa)",
+    distance: 1850,
+    duration: "7-8 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Buddhist Circuit covering Sarnath, Kushinagar, Shravasti, and Sankisa.",
+    highlights: ["Sarnath", "Kushinagar", "Shravasti", "Sankisa"],
+    tollEstimate: 6800,
+  },
+  {
+    id: "gur-ramayana-circuit",
+    slug: "gurugram-to-ramayana-circuit-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ramayana Circuit (Ayodhya-Chitrakoot-Naimisharanya)",
+    distance: 1450,
+    duration: "5-6 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the Ramayana Circuit covering Ayodhya, Chitrakoot, and Naimisharanya.",
+    highlights: ["Ram Janmabhoomi", "Ram Ghat", "Chakra Tirth"],
+    tollEstimate: 5200,
+  },
+  {
+    id: "gur-braj-84-kos-parikrama",
+    slug: "gurugram-to-braj-84-kos-parikrama-route-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Braj 84 Kos Parikrama Route",
+    distance: 450,
+    duration: "3-4 Days",
+    description:
+      "Tempo traveller booking from Gurugram for the complete Braj 84 Kos Parikrama covering the sacred sites associated with Lord Krishna.",
+    highlights: ["Mathura", "Vrindavan", "Govardhan", "Barsana", "Gokul"],
+    tollEstimate: 1700,
+  },
+  {
+    id: "gur-amritsar",
+    slug: "gurugram-to-amritsar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Amritsar (Golden Temple, Wagah Border)",
+    distance: 455,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Amritsar for Golden Temple darshan, Wagah Border ceremony, and family tours.",
+    highlights: ["Golden Temple", "Wagah Border", "Jallianwala Bagh"],
+    tollEstimate: 1600,
+  },
+  {
+    id: "gur-chandigarh",
+    slug: "gurugram-to-chandigarh-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chandigarh",
+    distance: 275,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chandigarh for business travel, family vacations, and weekend getaways.",
+    highlights: ["Rock Garden", "Sukhna Lake", "Rose Garden"],
+    tollEstimate: 950,
+  },
+  {
+    id: "gur-ludhiana",
+    slug: "gurugram-to-ludhiana-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ludhiana",
+    distance: 330,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ludhiana for business travel, family trips, and corporate tours.",
+    highlights: [
+      "Punjab Agricultural University Museum",
+      "Nehru Rose Garden",
+      "Phillaur Fort",
+    ],
+    tollEstimate: 1150,
+  },
+
+  {
+    id: "gur-jalandhar",
+    slug: "gurugram-to-jalandhar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jalandhar",
+    distance: 385,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jalandhar for business travel, family vacations, and sightseeing.",
+    highlights: [
+      "Devi Talab Mandir",
+      "Wonderland Theme Park",
+      "Pushpa Gujral Science City",
+    ],
+    tollEstimate: 1350,
+  },
+
+  {
+    id: "gur-patiala",
+    slug: "gurugram-to-patiala-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Patiala",
+    distance: 255,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Patiala for heritage tours, weddings, and family outings.",
+    highlights: ["Qila Mubarak", "Sheesh Mahal", "Baradari Gardens"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "gur-kapurthala",
+    slug: "gurugram-to-kapurthala-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kapurthala",
+    distance: 410,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kapurthala for heritage sightseeing, palace tours, and family travel.",
+    highlights: ["Jagatjit Palace", "Moorish Mosque", "Panch Mandir"],
+    tollEstimate: 1450,
+  },
+
+  {
+    id: "gur-anandpur-sahib",
+    slug: "gurugram-to-anandpur-sahib-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Anandpur Sahib",
+    distance: 360,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Anandpur Sahib for Sikh pilgrimage, religious tours, and family travel.",
+    highlights: [
+      "Takht Sri Kesgarh Sahib",
+      "Virasat-e-Khalsa",
+      "Anandgarh Fort",
+    ],
+    tollEstimate: 1250,
+  },
+
+  {
+    id: "gur-fatehgarh-sahib",
+    slug: "gurugram-to-fatehgarh-sahib-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Fatehgarh Sahib",
+    distance: 285,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Fatehgarh Sahib for Sikh pilgrimage and heritage tours.",
+    highlights: [
+      "Gurdwara Fatehgarh Sahib",
+      "Aam Khas Bagh",
+      "Historic Memorials",
+    ],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "gur-goindwal-sahib",
+    slug: "gurugram-to-goindwal-sahib-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Goindwal Sahib",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Goindwal Sahib for Sikh pilgrimage, spiritual tours, and family travel.",
+    highlights: [
+      "Gurdwara Baoli Sahib",
+      "Baoli with 84 Steps",
+      "Goindwal Heritage",
+    ],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "gur-tarn-taran",
+    slug: "gurugram-to-tarn-taran-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Tarn Taran",
+    distance: 465,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Tarn Taran for Sikh pilgrimage and religious group tours.",
+    highlights: [
+      "Gurdwara Sri Tarn Taran Sahib",
+      "Holy Sarovar",
+      "Historic Gurudwaras",
+    ],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "gur-sirhind",
+    slug: "gurugram-to-sirhind-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sirhind",
+    distance: 270,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sirhind for heritage tours, Sikh pilgrimage, and family travel.",
+    highlights: [
+      "Fatehgarh Sahib",
+      "Aam Khas Bagh",
+      "Historic Mughal Monuments",
+    ],
+    tollEstimate: 950,
+  },
+
+  {
+    id: "gur-bhatinda",
+    slug: "gurugram-to-bhatinda-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bhatinda (Qila Mubarak)",
+    distance: 395,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bhatinda for heritage tours, business travel, and family vacations.",
+    highlights: ["Qila Mubarak", "Rose Garden", "Bathinda Lake"],
+    tollEstimate: 1400,
+  },
+  {
+    id: "gur-pathankot",
+    slug: "gurugram-to-pathankot-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pathankot (Gateway to Himachal/J&K)",
+    distance: 490,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pathankot for family vacations, business travel, and trips to Himachal Pradesh and Jammu & Kashmir.",
+    highlights: ["Mukteshwar Temple", "Ranjit Sagar Dam", "Kathgarh Temple"],
+    tollEstimate: 1750,
+  },
+
+  {
+    id: "gur-nangal-dam",
+    slug: "gurugram-to-nangal-dam-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Nangal Dam",
+    distance: 340,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Nangal Dam for sightseeing, engineering tours, and family outings.",
+    highlights: ["Nangal Dam", "Bhakra Dam View", "Satluj River"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "gur-ropar",
+    slug: "gurugram-to-ropar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ropar (Indus Valley Site)",
+    distance: 300,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ropar for archaeological tours, heritage visits, and family travel.",
+    highlights: [
+      "Ropar Archaeological Museum",
+      "Indus Valley Site",
+      "Satluj River",
+    ],
+    tollEstimate: 1050,
+  },
+
+  {
+    id: "gur-virasat-e-khalsa",
+    slug: "gurugram-to-virasat-e-khalsa-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Virasat-e-Khalsa (Anandpur Sahib)",
+    distance: 360,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Virasat-e-Khalsa for Sikh heritage tours, museum visits, and family travel.",
+    highlights: [
+      "Virasat-e-Khalsa Museum",
+      "Takht Sri Kesgarh Sahib",
+      "Anandpur Sahib",
+    ],
+    tollEstimate: 1250,
+  },
+
+  {
+    id: "gur-chhatbir-zoo",
+    slug: "gurugram-to-chhatbir-zoo-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chhatbir Zoo",
+    distance: 285,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chhatbir Zoo for wildlife visits, educational tours, and family outings.",
+    highlights: [
+      "Mahendra Chaudhary Zoological Park",
+      "Lion Safari",
+      "Bird Enclosures",
+    ],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "gur-muktsar",
+    slug: "gurugram-to-muktsar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Muktsar",
+    distance: 420,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Muktsar for Sikh pilgrimage, heritage tours, and family travel.",
+    highlights: [
+      "Muktsar Sahib Gurudwara",
+      "Sacred Sarovar",
+      "Historic Sikh Sites",
+    ],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "gur-faridkot",
+    slug: "gurugram-to-faridkot-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Faridkot",
+    distance: 410,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Faridkot for heritage sightseeing, palace visits, and family tours.",
+    highlights: ["Faridkot Fort", "Raj Mahal", "Gurudwara Tilla Baba Farid"],
+    tollEstimate: 1450,
+  },
+
+  {
+    id: "gur-talwandi-sabo",
+    slug: "gurugram-to-talwandi-sabo-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Talwandi Sabo (Takht Sri Damdama Sahib)",
+    distance: 425,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Talwandi Sabo for Sikh pilgrimage, spiritual tours, and family travel.",
+    highlights: [
+      "Takht Sri Damdama Sahib",
+      "Historic Gurudwara",
+      "Sacred Complex",
+    ],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "gur-dera-baba-nanak",
+    slug: "gurugram-to-dera-baba-nanak-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Dera Baba Nanak (Kartarpur Corridor Viewpoint)",
+    distance: 500,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Dera Baba Nanak for Sikh pilgrimage and Kartarpur Corridor visits.",
+    highlights: [
+      "Kartarpur Corridor Viewpoint",
+      "Gurdwara Sri Darbar Sahib",
+      "Ravi River",
+    ],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "gur-jammu",
+    slug: "gurugram-to-jammu-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Jammu (Vaishno Devi base Katra)",
+    distance: 600,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Jammu for Vaishno Devi pilgrimage, family tours, and business travel.",
+    highlights: ["Raghunath Temple", "Bahu Fort", "Katra Gateway"],
+    tollEstimate: 2200,
+  },
+  {
+    id: "gur-katra",
+    slug: "gurugram-to-katra-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Katra",
+    distance: 635,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Katra for Vaishno Devi pilgrimage, family tours, and group travel.",
+    highlights: ["Vaishno Devi Shrine", "Banganga", "Ardhkuwari Temple"],
+    tollEstimate: 2300,
+  },
+
+  {
+    id: "gur-patnitop",
+    slug: "gurugram-to-patnitop-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Patnitop",
+    distance: 680,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Patnitop for hill station holidays, adventure activities, and family vacations.",
+    highlights: ["Nathatop", "Skyview Gondola", "Patnitop Meadows"],
+    tollEstimate: 2450,
+  },
+
+  {
+    id: "gur-srinagar",
+    slug: "gurugram-to-srinagar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Srinagar",
+    distance: 830,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Srinagar for Kashmir holidays, family vacations, and honeymoon trips.",
+    highlights: ["Dal Lake", "Mughal Gardens", "Shankaracharya Temple"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "gur-gulmarg",
+    slug: "gurugram-to-gulmarg-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Gulmarg",
+    distance: 885,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Gulmarg for skiing, gondola rides, and Kashmir sightseeing.",
+    highlights: ["Gulmarg Gondola", "Apharwat Peak", "Golf Course"],
+    tollEstimate: 3200,
+  },
+
+  {
+    id: "gur-pahalgam",
+    slug: "gurugram-to-pahalgam-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pahalgam",
+    distance: 915,
+    duration: "15.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pahalgam for Kashmir holidays, Amarnath Yatra, and family vacations.",
+    highlights: ["Betaab Valley", "Aru Valley", "Lidder River"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "gur-sonamarg",
+    slug: "gurugram-to-sonamarg-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sonamarg",
+    distance: 915,
+    duration: "15.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sonamarg for glacier tours, sightseeing, and Kashmir holidays.",
+    highlights: ["Thajiwas Glacier", "Sindh River", "Zoji La"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "gur-yusmarg",
+    slug: "gurugram-to-yusmarg-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Yusmarg",
+    distance: 860,
+    duration: "14.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Yusmarg for nature holidays, trekking, and family vacations.",
+    highlights: ["Nilnag Lake", "Doodh Ganga River", "Meadows"],
+    tollEstimate: 3100,
+  },
+
+  {
+    id: "gur-doodhpathri",
+    slug: "gurugram-to-doodhpathri-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Doodhpathri",
+    distance: 855,
+    duration: "14.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Doodhpathri for scenic meadows, picnics, and Kashmir sightseeing.",
+    highlights: ["Doodhpathri Meadows", "Shaliganga River", "Pine Forests"],
+    tollEstimate: 3100,
+  },
+
+  {
+    id: "gur-bhaderwah",
+    slug: "gurugram-to-bhaderwah-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bhaderwah",
+    distance: 700,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bhaderwah for valley tours, trekking, and family holidays.",
+    highlights: ["Jai Valley", "Padri Pass", "Bhaderwah Fort"],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "gur-kishtwar",
+    slug: "gurugram-to-kishtwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kishtwar",
+    distance: 780,
+    duration: "13.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kishtwar for adventure tours, trekking, and nature holidays.",
+    highlights: ["Kishtwar National Park", "Sinthan Top", "Chenab River"],
+    tollEstimate: 2800,
+  },
+  {
+    id: "gur-aharbal-falls",
+    slug: "gurugram-to-aharbal-falls-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Aharbal Falls",
+    distance: 905,
+    duration: "15.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Aharbal Falls for Kashmir sightseeing, photography, and family vacations.",
+    highlights: ["Aharbal Waterfall", "Veshu River", "Pine Forests"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "gur-leh-via-manali",
+    slug: "gurugram-to-leh-via-manali-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Leh (via Manali)",
+    distance: 1030,
+    duration: "2 Days",
+    description:
+      "Tempo traveller booking from Gurugram to Leh via Manali for Ladakh road trips, adventure expeditions, and group tours.",
+    highlights: ["Atal Tunnel", "Sarchu", "Tanglang La", "Leh Palace"],
+    tollEstimate: 3900,
+  },
+
+  {
+    id: "gur-leh-via-srinagar",
+    slug: "gurugram-to-leh-via-srinagar-kargil-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Leh (via Srinagar-Kargil)",
+    distance: 1220,
+    duration: "2-3 Days",
+    description:
+      "Tempo traveller booking from Gurugram to Leh via Srinagar and Kargil for scenic Ladakh expeditions and family road trips.",
+    highlights: ["Dal Lake", "Zoji La", "Kargil", "Leh Palace"],
+    tollEstimate: 4600,
+  },
+
+  {
+    id: "gur-kargil",
+    slug: "gurugram-to-kargil-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kargil",
+    distance: 1080,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kargil for adventure tours, memorial visits, and Ladakh road trips.",
+    highlights: ["Kargil War Memorial", "Drass", "Suru Valley"],
+    tollEstimate: 4100,
+  },
+
+  {
+    id: "gur-lamayuru",
+    slug: "gurugram-to-lamayuru-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Lamayuru",
+    distance: 1160,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Lamayuru for Buddhist monastery tours and Ladakh expeditions.",
+    highlights: ["Lamayuru Monastery", "Moonland", "Ancient Gompa"],
+    tollEstimate: 4400,
+  },
+
+  {
+    id: "gur-nubra-valley",
+    slug: "gurugram-to-nubra-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Nubra Valley (Diskit-Hunder)",
+    distance: 1250,
+    duration: "2-3 Days",
+    description:
+      "Tempo traveller booking from Gurugram to Nubra Valley for Himalayan road trips, desert landscapes, and family adventures.",
+    highlights: ["Khardung La", "Diskit Monastery", "Hunder Sand Dunes"],
+    tollEstimate: 4800,
+  },
+
+  {
+    id: "gur-pangong-tso",
+    slug: "gurugram-to-pangong-tso-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pangong Tso",
+    distance: 1310,
+    duration: "2-3 Days",
+    description:
+      "Tempo traveller booking from Gurugram to Pangong Tso for high-altitude lake tours, photography, and Ladakh adventures.",
+    highlights: ["Pangong Lake", "Chang La Pass", "Lukung"],
+    tollEstimate: 5000,
+  },
+
+  {
+    id: "gur-tso-moriri",
+    slug: "gurugram-to-tso-moriri-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Tso Moriri",
+    distance: 1380,
+    duration: "3 Days",
+    description:
+      "Tempo traveller booking from Gurugram to Tso Moriri for remote Himalayan expeditions and wildlife photography.",
+    highlights: ["Tso Moriri Lake", "Korzok Monastery", "Changthang Plateau"],
+    tollEstimate: 5300,
+  },
+
+  {
+    id: "gur-tso-kar",
+    slug: "gurugram-to-tso-kar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Tso Kar",
+    distance: 1335,
+    duration: "3 Days",
+    description:
+      "Tempo traveller booking from Gurugram to Tso Kar for birdwatching, Himalayan road trips, and Ladakh exploration.",
+    highlights: ["Tso Kar Lake", "Salt Marshes", "Nomadic Settlements"],
+    tollEstimate: 5100,
+  },
+
+  {
+    id: "gur-zanskar-valley",
+    slug: "gurugram-to-zanskar-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Zanskar Valley",
+    distance: 1360,
+    duration: "3 Days",
+    description:
+      "Tempo traveller booking from Gurugram to Zanskar Valley for adventure expeditions, monasteries, and Himalayan road trips.",
+    highlights: ["Padum", "Zanskar River", "Karsha Monastery"],
+    tollEstimate: 5200,
+  },
+  {
+    id: "gur-drass",
+    slug: "gurugram-to-drass-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Drass",
+    distance: 1015,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Drass for Kargil War Memorial visits, adventure tours, and Ladakh road trips.",
+    highlights: ["Kargil War Memorial", "Tiger Hill View", "Drass Valley"],
+    tollEstimate: 3900,
+  },
+
+  {
+    id: "gur-uleytokpo",
+    slug: "gurugram-to-uleytokpo-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Uleytokpo",
+    distance: 1185,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Uleytokpo for scenic camping, Ladakh sightseeing, and adventure tours.",
+    highlights: ["Uleytokpo Camps", "Indus River", "Mountain Landscapes"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "gur-alchi",
+    slug: "gurugram-to-alchi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Alchi",
+    distance: 1170,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Alchi for Buddhist heritage tours, monastery visits, and Ladakh exploration.",
+    highlights: ["Alchi Monastery", "Ancient Wall Paintings", "Indus Valley"],
+    tollEstimate: 4450,
+  },
+
+  {
+    id: "gur-basgo",
+    slug: "gurugram-to-basgo-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Basgo",
+    distance: 1160,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Basgo for heritage tours, monastery visits, and Ladakh sightseeing.",
+    highlights: ["Basgo Monastery", "Basgo Fort", "Ancient Ruins"],
+    tollEstimate: 4400,
+  },
+
+  {
+    id: "gur-hemis-monastery",
+    slug: "gurugram-to-hemis-monastery-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Hemis Monastery",
+    distance: 1245,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Hemis Monastery for Buddhist pilgrimage, cultural tours, and Ladakh travel.",
+    highlights: ["Hemis Monastery", "Hemis Festival", "Museum"],
+    tollEstimate: 4750,
+  },
+
+  {
+    id: "gur-thiksey-monastery",
+    slug: "gurugram-to-thiksey-monastery-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Thiksey Monastery",
+    distance: 1235,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Thiksey Monastery for Buddhist heritage tours and Ladakh sightseeing.",
+    highlights: ["Thiksey Monastery", "Maitreya Buddha Statue", "Indus Valley"],
+    tollEstimate: 4700,
+  },
+
+  {
+    id: "gur-stok-kangri-base",
+    slug: "gurugram-to-stok-kangri-base-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Stok Kangri Base",
+    distance: 1245,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Stok Kangri Base for trekking expeditions and Himalayan adventure tours.",
+    highlights: ["Stok Village", "Stok Palace", "Trekking Base Camp"],
+    tollEstimate: 4750,
+  },
+
+  {
+    id: "gur-suru-valley",
+    slug: "gurugram-to-suru-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Suru Valley",
+    distance: 1125,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Suru Valley for scenic road trips, trekking, and Himalayan adventures.",
+    highlights: ["Nun Kun Peaks", "Suru River", "Panikhar Village"],
+    tollEstimate: 4300,
+  },
+
+  {
+    id: "gur-warwan-valley",
+    slug: "gurugram-to-warwan-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Warwan Valley",
+    distance: 960,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Warwan Valley for offbeat Himalayan adventures, trekking, and nature tours.",
+    highlights: ["Warwan River", "Mountain Villages", "Alpine Meadows"],
+    tollEstimate: 3650,
+  },
+
+  {
+    id: "gur-tulail-valley",
+    slug: "gurugram-to-tulail-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Tulail Valley",
+    distance: 930,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Tulail Valley for remote Kashmir exploration, trekking, and scenic holidays.",
+    highlights: ["Tulail Valley", "Kishanganga River", "Mountain Landscapes"],
+    tollEstimate: 3550,
+  },
+  {
+    id: "gur-gurez-valley",
+    slug: "gurugram-to-gurez-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Gurez Valley",
+    distance: 960,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Gurez Valley for offbeat Kashmir tours, trekking, and family adventures.",
+    highlights: ["Habba Khatoon Peak", "Kishanganga River", "Dawar Village"],
+    tollEstimate: 3700,
+  },
+
+  {
+    id: "gur-lolab-valley",
+    slug: "gurugram-to-lolab-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Lolab Valley",
+    distance: 900,
+    duration: "15.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Lolab Valley for nature holidays, photography, and Kashmir sightseeing.",
+    highlights: ["Fruit Orchards", "Pine Forests", "Lolab Meadows"],
+    tollEstimate: 3400,
+  },
+
+  {
+    id: "gur-bangus-valley",
+    slug: "gurugram-to-bangus-valley-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bangus Valley",
+    distance: 920,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bangus Valley for offbeat travel, camping, and scenic Himalayan tours.",
+    highlights: ["Bangus Meadows", "Dense Forests", "Snow-capped Peaks"],
+    tollEstimate: 3500,
+  },
+
+  {
+    id: "gur-gwalior",
+    slug: "gurugram-to-gwalior-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Gwalior",
+    distance: 340,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Gwalior for heritage tours, business trips, and family vacations.",
+    highlights: ["Gwalior Fort", "Jai Vilas Palace", "Sas Bahu Temple"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "gur-orchha",
+    slug: "gurugram-to-orchha-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Orchha",
+    distance: 485,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Orchha for heritage tours, palace visits, and riverside sightseeing.",
+    highlights: ["Orchha Fort", "Raja Ram Temple", "Chaturbhuj Temple"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "gur-khajuraho",
+    slug: "gurugram-to-khajuraho-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Khajuraho",
+    distance: 650,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Khajuraho for UNESCO heritage tours, temple visits, and family vacations.",
+    highlights: [
+      "Western Group of Temples",
+      "Kandariya Mahadev Temple",
+      "Light & Sound Show",
+    ],
+    tollEstimate: 2300,
+  },
+
+  {
+    id: "gur-bhopal",
+    slug: "gurugram-to-bhopal-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bhopal",
+    distance: 760,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bhopal for business travel, heritage tours, and family vacations.",
+    highlights: ["Upper Lake", "Van Vihar National Park", "Bharat Bhavan"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "gur-sanchi",
+    slug: "gurugram-to-sanchi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Sanchi",
+    distance: 810,
+    duration: "13.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Sanchi for Buddhist heritage tours, educational trips, and family travel.",
+    highlights: ["Sanchi Stupa", "Ashoka Pillar", "Archaeological Museum"],
+    tollEstimate: 2900,
+  },
+
+  {
+    id: "gur-ujjain",
+    slug: "gurugram-to-ujjain-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Ujjain (Mahakaleshwar)",
+    distance: 800,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Ujjain for Mahakaleshwar Jyotirlinga darshan, pilgrimage, and family tours.",
+    highlights: ["Mahakaleshwar Temple", "Kal Bhairav Temple", "Ram Ghat"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "gur-omkareshwar",
+    slug: "gurugram-to-omkareshwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Omkareshwar",
+    distance: 930,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Omkareshwar for Jyotirlinga pilgrimage, spiritual tours, and family travel.",
+    highlights: ["Omkareshwar Temple", "Mamleshwar Temple", "Narmada River"],
+    tollEstimate: 3350,
+  },
+  {
+    id: "gur-maheshwar",
+    slug: "gurugram-to-maheshwar-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Maheshwar",
+    distance: 900,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Maheshwar for heritage tours, Narmada riverside sightseeing, and family vacations.",
+    highlights: ["Maheshwar Fort", "Ahilya Ghat", "Kashi Vishwanath Temple"],
+    tollEstimate: 3250,
+  },
+
+  {
+    id: "gur-indore",
+    slug: "gurugram-to-indore-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Indore",
+    distance: 810,
+    duration: "13.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Indore for business travel, family vacations, and city sightseeing.",
+    highlights: ["Rajwada Palace", "Sarafa Bazaar", "Lal Bagh Palace"],
+    tollEstimate: 2900,
+  },
+
+  {
+    id: "gur-pachmarhi",
+    slug: "gurugram-to-pachmarhi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pachmarhi",
+    distance: 930,
+    duration: "15.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pachmarhi for hill station holidays, waterfalls, and nature adventures.",
+    highlights: ["Bee Falls", "Dhoopgarh", "Jata Shankar Cave"],
+    tollEstimate: 3350,
+  },
+
+  {
+    id: "gur-kanha-national-park",
+    slug: "gurugram-to-kanha-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Kanha National Park",
+    distance: 1050,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Kanha National Park for wildlife safaris, jungle holidays, and family tours.",
+    highlights: ["Kanha Safari", "Bamni Dadar", "Kisli Zone"],
+    tollEstimate: 3800,
+  },
+
+  {
+    id: "gur-bandhavgarh-national-park",
+    slug: "gurugram-to-bandhavgarh-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Bandhavgarh National Park",
+    distance: 920,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Bandhavgarh National Park for tiger safaris, wildlife photography, and family vacations.",
+    highlights: ["Bandhavgarh Safari", "Bandhavgarh Fort", "Tala Zone"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "gur-pench-national-park",
+    slug: "gurugram-to-pench-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Pench National Park",
+    distance: 980,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Pench National Park for jungle safaris, wildlife tours, and nature holidays.",
+    highlights: ["Pench Safari", "Turia Gate", "Jungle Trails"],
+    tollEstimate: 3550,
+  },
+
+  {
+    id: "gur-satpura-national-park",
+    slug: "gurugram-to-satpura-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Satpura National Park",
+    distance: 950,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Satpura National Park for wildlife safaris, boat rides, and eco-tourism.",
+    highlights: ["Satpura Safari", "Denwa River", "Madhai Gate"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "gur-panna-national-park",
+    slug: "gurugram-to-panna-national-park-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Panna National Park",
+    distance: 720,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Panna National Park for tiger safaris, wildlife holidays, and family tours.",
+    highlights: ["Panna Tiger Reserve", "Pandav Falls", "Ken River"],
+    tollEstimate: 2600,
+  },
+
+  {
+    id: "gur-chanderi",
+    slug: "gurugram-to-chanderi-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Chanderi",
+    distance: 520,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Chanderi for heritage tours, fort visits, and textile tourism.",
+    highlights: ["Chanderi Fort", "Badal Mahal Gate", "Koshak Mahal"],
+    tollEstimate: 1850,
+  },
+
+  {
+    id: "gur-datia",
+    slug: "gurugram-to-datia-tempo-traveller-fare",
+    origin: "Gurugram",
+    destination: "Datia",
+    distance: 430,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Gurugram to Datia for temple visits, heritage tours, and family travel.",
+    highlights: ["Datia Palace", "Pitambara Peeth", "Sonagiri Jain Temples"],
+    tollEstimate: 1550,
+  },
+  {
+  id: "gur-shivpuri",
+  slug: "gurugram-to-shivpuri-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Shivpuri",
+  distance: 410,
+  duration: "7.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Shivpuri for wildlife tours, heritage sightseeing, and family vacations.",
+  highlights: ["Madhav National Park", "George Castle", "Sakhya Sagar Lake"],
+  tollEstimate: 1500,
+},
+
+{
+  id: "gur-jabalpur",
+  slug: "gurugram-to-jabalpur-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Jabalpur (Bhedaghat Marble Rocks)",
+  distance: 900,
+  duration: "15 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Jabalpur for Marble Rocks sightseeing, waterfalls, and family tours.",
+  highlights: ["Bhedaghat Marble Rocks", "Dhuandhar Falls", "Chausath Yogini Temple"],
+  tollEstimate: 3250,
+},
+
+{
+  id: "gur-amarkantak",
+  slug: "gurugram-to-amarkantak-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Amarkantak",
+  distance: 1040,
+  duration: "17 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Amarkantak for pilgrimage, nature holidays, and spiritual journeys.",
+  highlights: ["Narmada Udgam Kund", "Kapil Dhara", "Ancient Temples"],
+  tollEstimate: 3750,
+},
+
+{
+  id: "gur-chitrakoot-mp",
+  slug: "gurugram-to-chitrakoot-mp-side-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Chitrakoot (MP side)",
+  distance: 680,
+  duration: "11.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Chitrakoot (MP side) for Ramayana circuit tours, pilgrimage, and family travel.",
+  highlights: ["Gupt Godavari", "Hanuman Dhara", "Sati Anusuya Ashram"],
+  tollEstimate: 2450,
+},
+
+{
+  id: "gur-mandu",
+  slug: "gurugram-to-mandu-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Mandu",
+  distance: 860,
+  duration: "14.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Mandu for heritage tours, palace visits, and photography trips.",
+  highlights: ["Jahaz Mahal", "Hindola Mahal", "Rani Roopmati Pavilion"],
+  tollEstimate: 3100,
+},
+
+{
+  id: "gur-burhanpur",
+  slug: "gurugram-to-burhanpur-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Burhanpur",
+  distance: 930,
+  duration: "15.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Burhanpur for Mughal heritage tours, religious travel, and family vacations.",
+  highlights: ["Shahi Qila", "Asirgarh Fort", "Dargah-e-Hakimi"],
+  tollEstimate: 3350,
+},
+
+{
+  id: "gur-bhimbetka",
+  slug: "gurugram-to-bhimbetka-rock-shelters-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Bhimbetka Rock Shelters",
+  distance: 800,
+  duration: "13.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Bhimbetka Rock Shelters for UNESCO heritage tours, archaeology visits, and family travel.",
+  highlights: ["Rock Shelters", "Prehistoric Cave Paintings", "Raisen Forest"],
+  tollEstimate: 2900,
+},
+
+{
+  id: "gur-tamia",
+  slug: "gurugram-to-tamia-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Tamia",
+  distance: 960,
+  duration: "16 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Tamia for hill station holidays, nature photography, and family vacations.",
+  highlights: ["Tamia Hills", "Sunset Point", "Patalkot Viewpoint"],
+  tollEstimate: 3450,
+},
+
+{
+  id: "gur-patalkot",
+  slug: "gurugram-to-patalkot-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Patalkot",
+  distance: 980,
+  duration: "16.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Patalkot for tribal tourism, trekking, and eco-adventure trips.",
+  highlights: ["Patalkot Valley", "Tribal Villages", "Scenic Viewpoints"],
+  tollEstimate: 3550,
+},
+
+{
+  id: "gur-hanuwantiya-island",
+  slug: "gurugram-to-hanuwantiya-island-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Hanuwantiya Island",
+  distance: 950,
+  duration: "16 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Hanuwantiya Island for water sports, lakeside holidays, and family vacations.",
+  highlights: ["Indira Sagar Lake", "Water Sports", "Floating Resort"],
+  tollEstimate: 3450,
+},
+{
+  id: "gur-sailani-island",
+  slug: "gurugram-to-sailani-island-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Sailani Island",
+  distance: 910,
+  duration: "15 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Sailani Island for riverside holidays, nature trips, and family outings.",
+  highlights: ["Narmada River", "Island Resort", "Scenic Boating"],
+  tollEstimate: 3300,
+},
+
+{
+  id: "gur-gandhisagar-lake",
+  slug: "gurugram-to-gandhisagar-lake-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Gandhisagar Lake",
+  distance: 640,
+  duration: "11 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Gandhisagar Lake for boating, wildlife tours, and family vacations.",
+  highlights: ["Gandhi Sagar Dam", "Reservoir", "Scenic Viewpoints"],
+  tollEstimate: 2300,
+},
+
+{
+  id: "gur-tawa-reservoir",
+  slug: "gurugram-to-tawa-reservoir-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Tawa Reservoir",
+  distance: 930,
+  duration: "15.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Tawa Reservoir for eco-tourism, boating, and lakeside holidays.",
+  highlights: ["Tawa Dam", "Boating", "Satpura Landscape"],
+  tollEstimate: 3350,
+},
+
+{
+  id: "gur-ahmedabad",
+  slug: "gurugram-to-ahmedabad-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Ahmedabad",
+  distance: 920,
+  duration: "15 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Ahmedabad for business travel, heritage sightseeing, and family vacations.",
+  highlights: ["Sabarmati Ashram", "Adalaj Stepwell", "Kankaria Lake"],
+  tollEstimate: 3300,
+},
+
+{
+  id: "gur-somnath-temple",
+  slug: "gurugram-to-somnath-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Somnath Temple",
+  distance: 1380,
+  duration: "22 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Somnath Temple for Jyotirlinga pilgrimage, coastal tours, and family travel.",
+  highlights: ["Somnath Jyotirlinga", "Triveni Sangam", "Somnath Beach"],
+  tollEstimate: 5000,
+},
+
+{
+  id: "gur-dwarkadhish-temple",
+  slug: "gurugram-to-dwarkadhish-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Dwarkadhish Temple",
+  distance: 1450,
+  duration: "23 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Dwarkadhish Temple for Krishna pilgrimage, Char Dham Yatra, and family tours.",
+  highlights: ["Dwarkadhish Temple", "Gomti Ghat", "Dwarka Beach"],
+  tollEstimate: 5250,
+},
+
+{
+  id: "gur-nageshwar-jyotirlinga",
+  slug: "gurugram-to-nageshwar-jyotirlinga-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Nageshwar Jyotirlinga",
+  distance: 1470,
+  duration: "23.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Nageshwar Jyotirlinga for Shiva pilgrimage and religious group tours.",
+  highlights: ["Nageshwar Temple", "Giant Shiva Statue", "Dwarka Region"],
+  tollEstimate: 5350,
+},
+
+{
+  id: "gur-beyt-dwarka",
+  slug: "gurugram-to-beyt-dwarka-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Beyt Dwarka",
+  distance: 1485,
+  duration: "24 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Beyt Dwarka for Krishna pilgrimage, island visits, and coastal sightseeing.",
+  highlights: ["Beyt Dwarka Temple", "Ferry Ride", "Arabian Sea"],
+  tollEstimate: 5400,
+},
+
+{
+  id: "gur-porbandar",
+  slug: "gurugram-to-porbandar-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Porbandar",
+  distance: 1410,
+  duration: "22.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Porbandar for heritage tours, coastal sightseeing, and family vacations.",
+  highlights: ["Kirti Mandir", "Sudama Temple", "Porbandar Beach"],
+  tollEstimate: 5100,
+},
+
+{
+  id: "gur-gir-national-park",
+  slug: "gurugram-to-gir-national-park-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Gir National Park (Sasan Gir)",
+  distance: 1360,
+  duration: "22 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Gir National Park for Asiatic lion safaris, wildlife photography, and nature tours.",
+  highlights: ["Gir Safari", "Devalia Safari Park", "Kamleshwar Dam"],
+  tollEstimate: 4950,
+},
+{
+  id: "gur-rann-of-kutch",
+  slug: "gurugram-to-rann-of-kutch-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Rann of Kutch (White Desert - Dhordo)",
+  distance: 1310,
+  duration: "21 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to the Rann of Kutch for White Desert tours, Rann Utsav, and family vacations.",
+  highlights: ["White Rann", "Dhordo Tent City", "Rann Utsav"],
+  tollEstimate: 4750,
+},
+
+{
+  id: "gur-bhuj",
+  slug: "gurugram-to-bhuj-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Bhuj",
+  distance: 1230,
+  duration: "20 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Bhuj for heritage tours, Kutch sightseeing, and business travel.",
+  highlights: ["Aina Mahal", "Prag Mahal", "Hamirsar Lake"],
+  tollEstimate: 4450,
+},
+
+{
+  id: "gur-mandvi-beach",
+  slug: "gurugram-to-mandvi-beach-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Mandvi Beach",
+  distance: 1290,
+  duration: "21 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Mandvi Beach for coastal holidays, beach trips, and family vacations.",
+  highlights: ["Mandvi Beach", "Vijay Vilas Palace", "Wind Farms"],
+  tollEstimate: 4700,
+},
+
+{
+  id: "gur-dholavira",
+  slug: "gurugram-to-dholavira-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Dholavira (Indus Valley Site)",
+  distance: 1280,
+  duration: "21 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Dholavira for UNESCO heritage tours, archaeology, and educational trips.",
+  highlights: ["Indus Valley Ruins", "Archaeological Museum", "Ancient Reservoirs"],
+  tollEstimate: 4650,
+},
+
+{
+  id: "gur-surat",
+  slug: "gurugram-to-surat-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Surat",
+  distance: 1130,
+  duration: "18 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Surat for business travel, family vacations, and city sightseeing.",
+  highlights: ["Dumas Beach", "Dutch Garden", "Science Centre"],
+  tollEstimate: 4100,
+},
+
+{
+  id: "gur-vadodara",
+  slug: "gurugram-to-vadodara-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Vadodara (Baroda)",
+  distance: 980,
+  duration: "16 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Vadodara for business trips, heritage tours, and family travel.",
+  highlights: ["Laxmi Vilas Palace", "Sayaji Garden", "Kirti Mandir"],
+  tollEstimate: 3550,
+},
+
+{
+  id: "gur-champaner-pavagadh",
+  slug: "gurugram-to-champaner-pavagadh-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Champaner-Pavagadh",
+  distance: 1020,
+  duration: "16.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Champaner-Pavagadh for UNESCO heritage tours and temple visits.",
+  highlights: ["Pavagadh Temple", "Champaner Fort", "Jami Masjid"],
+  tollEstimate: 3700,
+},
+
+{
+  id: "gur-statue-of-unity",
+  slug: "gurugram-to-statue-of-unity-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Statue of Unity (Kevadia)",
+  distance: 1070,
+  duration: "17 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to the Statue of Unity for family vacations, sightseeing, and educational tours.",
+  highlights: ["Statue of Unity", "Valley of Flowers", "Sardar Sarovar Dam"],
+  tollEstimate: 3900,
+},
+
+{
+  id: "gur-saputara",
+  slug: "gurugram-to-saputara-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Saputara",
+  distance: 1160,
+  duration: "18.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Saputara for hill station holidays, boating, and family vacations.",
+  highlights: ["Saputara Lake", "Sunset Point", "Ropeway"],
+  tollEstimate: 4200,
+},
+
+{
+  id: "gur-ambaji",
+  slug: "gurugram-to-ambaji-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Ambaji",
+  distance: 890,
+  duration: "14.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Ambaji for Shakti Peeth pilgrimage, temple visits, and family tours.",
+  highlights: ["Ambaji Temple", "Gabbar Hill", "Mansarovar"],
+  tollEstimate: 3200,
+},
+{
+  id: "gur-modhera-sun-temple",
+  slug: "gurugram-to-modhera-sun-temple-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Modhera Sun Temple",
+  distance: 910,
+  duration: "15 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Modhera Sun Temple for heritage tours, architecture lovers, and family vacations.",
+  highlights: ["Sun Temple", "Surya Kund", "Ancient Carvings"],
+  tollEstimate: 3300,
+},
+
+{
+  id: "gur-patan",
+  slug: "gurugram-to-patan-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Patan (Rani ki Vav)",
+  distance: 930,
+  duration: "15.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Patan for UNESCO heritage tours, stepwell visits, and cultural trips.",
+  highlights: ["Rani ki Vav", "Patan Patola Heritage", "Sahasralinga Talav"],
+  tollEstimate: 3350,
+},
+
+{
+  id: "gur-palitana",
+  slug: "gurugram-to-palitana-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Palitana",
+  distance: 1290,
+  duration: "21 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Palitana for Jain pilgrimage, temple visits, and spiritual tours.",
+  highlights: ["Shatrunjaya Hills", "Jain Temples", "Taleti"],
+  tollEstimate: 4700,
+},
+
+{
+  id: "gur-diu",
+  slug: "gurugram-to-diu-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Diu (Union Territory, often paired)",
+  distance: 1370,
+  duration: "22 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Diu for beach holidays, heritage sightseeing, and family vacations.",
+  highlights: ["Diu Fort", "Nagoa Beach", "St. Paul's Church"],
+  tollEstimate: 5000,
+},
+
+{
+  id: "gur-silvassa",
+  slug: "gurugram-to-silvassa-dadra-and-nagar-haveli-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Silvassa/Dadra and Nagar Haveli (paired)",
+  distance: 1170,
+  duration: "19 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Silvassa for nature holidays, tribal culture tours, and family vacations.",
+  highlights: ["Vanganga Lake", "Tribal Museum", "Lion Safari Park"],
+  tollEstimate: 4250,
+},
+
+{
+  id: "gur-daman",
+  slug: "gurugram-to-daman-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Daman (paired)",
+  distance: 1200,
+  duration: "19.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Daman for beach vacations, Portuguese heritage tours, and family travel.",
+  highlights: ["Devka Beach", "Moti Daman Fort", "Jampore Beach"],
+  tollEstimate: 4350,
+},
+
+{
+  id: "gur-lothal",
+  slug: "gurugram-to-lothal-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Lothal (Indus Valley Site)",
+  distance: 980,
+  duration: "16 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Lothal for archaeological tours, educational trips, and heritage exploration.",
+  highlights: ["Lothal Ruins", "Archaeological Museum", "Ancient Dockyard"],
+  tollEstimate: 3550,
+},
+
+{
+  id: "gur-velavadar-blackbuck-national-park",
+  slug: "gurugram-to-velavadar-blackbuck-national-park-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Velavadar Blackbuck National Park",
+  distance: 1160,
+  duration: "18.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Velavadar Blackbuck National Park for wildlife safaris and nature photography.",
+  highlights: ["Blackbuck Safari", "Grasslands", "Migratory Birds"],
+  tollEstimate: 4200,
+},
+
+{
+  id: "gur-marine-national-park",
+  slug: "gurugram-to-marine-national-park-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Marine National Park (Jamnagar)",
+  distance: 1340,
+  duration: "21.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Marine National Park for marine wildlife tours, island visits, and eco-tourism.",
+  highlights: ["Marine Sanctuary", "Coral Reefs", "Narara Island"],
+  tollEstimate: 4850,
+},
+
+{
+  id: "gur-junagadh",
+  slug: "gurugram-to-junagadh-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Junagadh",
+  distance: 1320,
+  duration: "21 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Junagadh for heritage tours, Gir region travel, and family vacations.",
+  highlights: ["Uparkot Fort", "Girnar Hills", "Mahabat Maqbara"],
+  tollEstimate: 4800,
+},
+{
+  id: "gur-bhavnagar",
+  slug: "gurugram-to-bhavnagar-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Bhavnagar",
+  distance: 1230,
+  duration: "20 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Bhavnagar for business travel, coastal sightseeing, and family vacations.",
+  highlights: ["Takhteshwar Temple", "Victoria Park", "Nishkalank Mahadev"],
+  tollEstimate: 4450,
+},
+
+{
+  id: "gur-rajkot",
+  slug: "gurugram-to-rajkot-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Rajkot",
+  distance: 1160,
+  duration: "19 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Rajkot for business trips, heritage tours, and family travel.",
+  highlights: ["Kaba Gandhi No Delo", "Watson Museum", "Race Course Ground"],
+  tollEstimate: 4200,
+},
+
+{
+  id: "gur-taranga-hills",
+  slug: "gurugram-to-taranga-hills-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Taranga Hills",
+  distance: 930,
+  duration: "15.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Taranga Hills for Jain pilgrimage, trekking, and heritage tours.",
+  highlights: ["Taranga Jain Temple", "Hill Trek", "Ancient Temples"],
+  tollEstimate: 3350,
+},
+
+{
+  id: "gur-zainabad",
+  slug: "gurugram-to-zainabad-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Zainabad (Little Rann of Kutch, Wild Ass Sanctuary)",
+  distance: 1080,
+  duration: "17.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Zainabad for wildlife safaris, Little Rann of Kutch tours, and birdwatching.",
+  highlights: ["Wild Ass Sanctuary", "Little Rann of Kutch", "Desert Safari"],
+  tollEstimate: 3900,
+},
+
+{
+  id: "gur-sultanpur-bird-sanctuary",
+  slug: "gurugram-to-sultanpur-bird-sanctuary-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Sultanpur Bird Sanctuary (Gurgaon)",
+  distance: 28,
+  duration: "45 Minutes",
+  description:
+    "Tempo traveller booking from Gurugram to Sultanpur Bird Sanctuary for birdwatching, school trips, and family outings.",
+  highlights: ["Bird Sanctuary", "Watch Towers", "Nature Trails"],
+  tollEstimate: 100,
+},
+
+{
+  id: "gur-damdama-lake",
+  slug: "gurugram-to-damdama-lake-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Damdama Lake (Gurgaon)",
+  distance: 25,
+  duration: "40 Minutes",
+  description:
+    "Tempo traveller booking from Gurugram to Damdama Lake for picnics, boating, and corporate outings.",
+  highlights: ["Boating", "Adventure Activities", "Lakeside Resort"],
+  tollEstimate: 100,
+},
+
+{
+  id: "gur-sohna",
+  slug: "gurugram-to-sohna-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Sohna",
+  distance: 25,
+  duration: "40 Minutes",
+  description:
+    "Tempo traveller booking from Gurugram to Sohna for weekend getaways, hot springs, and family trips.",
+  highlights: ["Sohna Hot Springs", "Shiva Temple", "Aravalli Hills"],
+  tollEstimate: 100,
+},
+
+{
+  id: "gur-manesar",
+  slug: "gurugram-to-manesar-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Manesar",
+  distance: 22,
+  duration: "35 Minutes",
+  description:
+    "Tempo traveller booking from Gurugram to Manesar for corporate travel, resorts, and family outings.",
+  highlights: ["Heritage Resorts", "Adventure Camps", "Aravalli Views"],
+  tollEstimate: 100,
+},
+
+{
+  id: "gur-pataudi-palace",
+  slug: "gurugram-to-pataudi-palace-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Pataudi Palace",
+  distance: 35,
+  duration: "1 Hour",
+  description:
+    "Tempo traveller booking from Gurugram to Pataudi Palace for heritage tours, photography, and weekend trips.",
+  highlights: ["Pataudi Palace", "Heritage Architecture", "Royal Estate"],
+  tollEstimate: 150,
+},
+
+{
+  id: "gur-faridabad",
+  slug: "gurugram-to-faridabad-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Faridabad (Surajkund)",
+  distance: 35,
+  duration: "1 Hour",
+  description:
+    "Tempo traveller booking from Gurugram to Faridabad for Surajkund visits, business travel, and family outings.",
+  highlights: ["Surajkund", "Badkhal Lake", "Raja Nahar Singh Palace"],
+  tollEstimate: 150,
+},
+{
+  id: "gur-badkhal-lake",
+  slug: "gurugram-to-badkhal-lake-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Badkhal Lake",
+  distance: 32,
+  duration: "50 Minutes",
+  description:
+    "Tempo traveller booking from Gurugram to Badkhal Lake for family outings, picnics, and weekend trips.",
+  highlights: ["Badkhal Lake", "Aravalli Hills", "Scenic Views"],
+  tollEstimate: 100,
+},
+
+{
+  id: "gur-asola-bhatti-wildlife-sanctuary",
+  slug: "gurugram-to-asola-bhatti-wildlife-sanctuary-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Asola Bhatti Wildlife Sanctuary",
+  distance: 35,
+  duration: "1 Hour",
+  description:
+    "Tempo traveller booking from Gurugram to Asola Bhatti Wildlife Sanctuary for nature walks, birdwatching, and eco-tourism.",
+  highlights: ["Nature Trails", "Butterfly Park", "Wildlife Sanctuary"],
+  tollEstimate: 100,
+},
+
+{
+  id: "gur-noida",
+  slug: "gurugram-to-noida-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Noida (Worlds of Wonder, Okhla Bird Sanctuary)",
+  distance: 45,
+  duration: "1.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Noida for corporate travel, family outings, and sightseeing.",
+  highlights: ["Worlds of Wonder", "Okhla Bird Sanctuary", "DLF Mall of India"],
+  tollEstimate: 150,
+},
+
+{
+  id: "gur-greater-noida",
+  slug: "gurugram-to-greater-noida-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Greater Noida (Night Safari, F1 Circuit)",
+  distance: 65,
+  duration: "1.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Greater Noida for business trips, family outings, and entertainment.",
+  highlights: ["Buddh International Circuit", "Noida International Airport Region", "India Expo Mart"],
+  tollEstimate: 250,
+},
+
+{
+  id: "gur-ghaziabad",
+  slug: "gurugram-to-ghaziabad-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Ghaziabad",
+  distance: 55,
+  duration: "1.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Ghaziabad for business travel, family functions, and city transfers.",
+  highlights: ["City Forest", "ISKCON Temple", "Drizzling Land"],
+  tollEstimate: 200,
+},
+
+{
+  id: "gur-dudhwa-wetlands",
+  slug: "gurugram-to-dudhwa-wetlands-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Dudhwa (Dadri) Wetlands",
+  distance: 75,
+  duration: "2 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Dudhwa (Dadri) Wetlands for birdwatching, photography, and nature tours.",
+  highlights: ["Wetlands", "Migratory Birds", "Nature Trails"],
+  tollEstimate: 250,
+},
+
+{
+  id: "gur-kuchesar",
+  slug: "gurugram-to-kuchesar-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Kuchesar (Mud Fort)",
+  distance: 120,
+  duration: "2.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Kuchesar for heritage stays, weekend trips, and family vacations.",
+  highlights: ["Mud Fort", "Heritage Resort", "Village Experience"],
+  tollEstimate: 400,
+},
+
+{
+  id: "gur-bulandshahr",
+  slug: "gurugram-to-bulandshahr-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Bulandshahr",
+  distance: 105,
+  duration: "2.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Bulandshahr for business travel, family trips, and local sightseeing.",
+  highlights: ["Kalyani Devi Temple", "Anupshahr Ganga Ghat", "Historical Sites"],
+  tollEstimate: 350,
+},
+
+{
+  id: "gur-aligarh",
+  slug: "gurugram-to-aligarh-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Aligarh",
+  distance: 155,
+  duration: "3.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Aligarh for educational tours, business travel, and family visits.",
+  highlights: ["Aligarh Muslim University", "Aligarh Fort", "Shekha Lake"],
+  tollEstimate: 550,
+},
+
+{
+  id: "gur-sambhal",
+  slug: "gurugram-to-sambhal-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Sambhal",
+  distance: 185,
+  duration: "4 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Sambhal for business trips, religious visits, and family travel.",
+  highlights: ["Jama Masjid", "Harihar Temple", "Historic Town"],
+  tollEstimate: 650,
+},
+{
+  id: "gur-moradabad",
+  slug: "gurugram-to-moradabad-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Moradabad",
+  distance: 185,
+  duration: "4 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Moradabad for business travel, brass handicraft shopping, and family trips.",
+  highlights: ["Brass Market", "Prem Wonderland", "Sai Temple"],
+  tollEstimate: 650,
+},
+
+{
+  id: "gur-rampur",
+  slug: "gurugram-to-rampur-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Rampur",
+  distance: 215,
+  duration: "4.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Rampur for heritage tours, business travel, and family outings.",
+  highlights: ["Raza Library", "Rampur Fort", "Kosi River"],
+  tollEstimate: 750,
+},
+
+{
+  id: "gur-bareilly",
+  slug: "gurugram-to-bareilly-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Bareilly",
+  distance: 275,
+  duration: "5.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Bareilly for business travel, religious visits, and family vacations.",
+  highlights: ["Alakhnath Temple", "Fun City", "Trivati Nath Temple"],
+  tollEstimate: 950,
+},
+
+{
+  id: "gur-pilibhit",
+  slug: "gurugram-to-pilibhit-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Pilibhit (Tiger Reserve)",
+  distance: 330,
+  duration: "6.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Pilibhit Tiger Reserve for wildlife safaris, birdwatching, and nature tours.",
+  highlights: ["Pilibhit Tiger Reserve", "Jungle Safari", "Sharda River"],
+  tollEstimate: 1150,
+},
+
+{
+  id: "gur-muzaffarnagar",
+  slug: "gurugram-to-muzaffarnagar-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Muzaffarnagar (Shukdev Ashram)",
+  distance: 125,
+  duration: "2.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Muzaffarnagar for religious tours, business travel, and family trips.",
+  highlights: ["Shukdev Ashram", "Ganeshdham", "Historical Sites"],
+  tollEstimate: 450,
+},
+
+{
+  id: "gur-saharanpur",
+  slug: "gurugram-to-saharanpur-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Saharanpur (Shakumbhari Devi)",
+  distance: 190,
+  duration: "4 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Saharanpur for Shakumbhari Devi pilgrimage, business travel, and family outings.",
+  highlights: ["Shakumbhari Devi Temple", "Company Garden", "Wood Carving Market"],
+  tollEstimate: 650,
+},
+
+{
+  id: "gur-karnal",
+  slug: "gurugram-to-karnal-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Karnal",
+  distance: 140,
+  duration: "2.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Karnal for business travel, family outings, and historical sightseeing.",
+  highlights: ["Karna Lake", "Kalander Shah Tomb", "Cantonment Church Tower"],
+  tollEstimate: 500,
+},
+
+{
+  id: "gur-kurukshetra",
+  slug: "gurugram-to-kurukshetra-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Kurukshetra",
+  distance: 180,
+  duration: "3.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Kurukshetra for Mahabharata pilgrimage, heritage tours, and family travel.",
+  highlights: ["Brahma Sarovar", "Jyotisar", "Sri Krishna Museum"],
+  tollEstimate: 650,
+},
+
+{
+  id: "gur-panipat",
+  slug: "gurugram-to-panipat-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Panipat",
+  distance: 100,
+  duration: "2 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Panipat for historical tours, business travel, and family trips.",
+  highlights: ["Panipat Museum", "Kabuli Bagh Mosque", "Kala Amb"],
+  tollEstimate: 350,
+},
+
+{
+  id: "gur-sonipat",
+  slug: "gurugram-to-sonipat-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Sonipat",
+  distance: 70,
+  duration: "1.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Sonipat for business travel, educational visits, and family outings.",
+  highlights: ["Khwaja Khizr Tomb", "Mojoland", "Murthal Food Hub"],
+  tollEstimate: 250,
+},
+{
+  id: "gur-rohtak",
+  slug: "gurugram-to-rohtak-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Rohtak",
+  distance: 85,
+  duration: "2 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Rohtak for business travel, educational visits, and family outings.",
+  highlights: ["Tilyar Lake", "Mansarovar Park", "Rohtak Zoo"],
+  tollEstimate: 300,
+},
+
+{
+  id: "gur-bhiwani",
+  slug: "gurugram-to-bhiwani-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Bhiwani",
+  distance: 130,
+  duration: "3 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Bhiwani for business trips, temple visits, and family travel.",
+  highlights: ["Star Monument", "Jogiwala Mandir", "Local Heritage"],
+  tollEstimate: 450,
+},
+
+{
+  id: "gur-hisar",
+  slug: "gurugram-to-hisar-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Hisar",
+  distance: 175,
+  duration: "3.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Hisar for business travel, heritage tours, and family visits.",
+  highlights: ["Firoz Shah Palace", "Blue Bird Lake", "Agroha Dham"],
+  tollEstimate: 600,
+},
+
+{
+  id: "gur-sirsa",
+  slug: "gurugram-to-sirsa-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Sirsa",
+  distance: 270,
+  duration: "5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Sirsa for business travel, religious visits, and family trips.",
+  highlights: ["Dera Sacha Sauda", "Tara Baba Kutiya", "Historic Sites"],
+  tollEstimate: 950,
+},
+
+{
+  id: "gur-hansi",
+  slug: "gurugram-to-hansi-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Hansi",
+  distance: 145,
+  duration: "3 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Hansi for heritage tours, business travel, and family outings.",
+  highlights: ["Hansi Fort", "Asigarh Fort", "Ancient Gates"],
+  tollEstimate: 500,
+},
+
+{
+  id: "gur-kaithal",
+  slug: "gurugram-to-kaithal-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Kaithal",
+  distance: 180,
+  duration: "3.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Kaithal for religious tours, business travel, and family visits.",
+  highlights: ["Kapal Mochan", "Ancient Temples", "Local Heritage"],
+  tollEstimate: 650,
+},
+
+{
+  id: "gur-rewari",
+  slug: "gurugram-to-rewari-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Rewari (Heritage Steam Loco Shed)",
+  distance: 45,
+  duration: "1 Hour",
+  description:
+    "Tempo traveller booking from Gurugram to Rewari for railway heritage tours, business travel, and family outings.",
+  highlights: ["Heritage Steam Loco Shed", "Rewari Museum", "Historic Railway Yard"],
+  tollEstimate: 150,
+},
+
+{
+  id: "gur-narnaul",
+  slug: "gurugram-to-narnaul-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Narnaul (Dharuhera-Chopta Valley)",
+  distance: 95,
+  duration: "2 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Narnaul for heritage tours, weekend trips, and family outings.",
+  highlights: ["Jal Mahal", "Chor Gumbad", "Ancient Forts"],
+  tollEstimate: 350,
+},
+
+{
+  id: "gur-bhiwadi",
+  slug: "gurugram-to-bhiwadi-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Bhiwadi",
+  distance: 40,
+  duration: "1 Hour",
+  description:
+    "Tempo traveller booking from Gurugram to Bhiwadi for business travel, industrial visits, and corporate trips.",
+  highlights: ["Industrial Hub", "Local Parks", "Shopping Areas"],
+  tollEstimate: 150,
+},
+
+{
+  id: "gur-neemrana",
+  slug: "gurugram-to-neemrana-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Neemrana (Midway point detailed again due to popularity)",
+  distance: 90,
+  duration: "2 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Neemrana for heritage stays, ziplining, and weekend getaways.",
+  highlights: ["Neemrana Fort Palace", "Zipline", "Heritage Resort"],
+  tollEstimate: 300,
+},
+
+{
+  id: "gur-neem",
+  slug: "gurugram-to-neemrana-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Neemrana",
+  distance: 90,
+  duration: "2 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Neemrana for heritage stays, corporate outings, weddings, sightseeing, and weekend getaways.",
+  highlights: [
+    "Neemrana Fort Palace",
+    "Flying Fox Zipline",
+    "Baori (Stepwell)",
+    "Heritage Hotels",
+    "Neemrana Market"
+  ],
+  tollEstimate: 300,
+},
+
+{
+  id: "gur-kesroli",
+  slug: "gurugram-to-kesroli-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Kesroli",
+  distance: 110,
+  duration: "2.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Kesroli for heritage stays, family outings, and weekend vacations.",
+  highlights: ["Hill Fort Kesroli", "Heritage Resort", "Scenic Countryside"],
+  tollEstimate: 400,
+},
+
+{
+  id: "gur-jind",
+  slug: "gurugram-to-jind-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Jind",
+  distance: 140,
+  duration: "3 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Jind for business travel, temple visits, and family trips.",
+  highlights: ["Rani Talab", "Jayanti Devi Temple", "Pandu Pindara"],
+  tollEstimate: 500,
+},
+
+{
+  id: "gur-baghpat",
+  slug: "gurugram-to-baghpat-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Baghpat (Pura Mahadev)",
+  distance: 90,
+  duration: "2 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Baghpat for religious tours, Ganga region travel, and family outings.",
+  highlights: ["Pura Mahadev Temple", "Yamuna River", "Historic Sites"],
+  tollEstimate: 300,
+},
+
+{
+  id: "gur-meerut-cantt",
+  slug: "gurugram-to-meerut-cantt-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Meerut Cantt (Augharnath Mandir)",
+  distance: 95,
+  duration: "2.5 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Meerut Cantt for temple visits, historical tours, and family travel.",
+  highlights: ["Augharnath Temple", "1857 Memorial", "Meerut Cantonment"],
+  tollEstimate: 350,
+},
+
+{
+  id: "gur-hapur",
+  slug: "gurugram-to-hapur-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Hapur",
+  distance: 85,
+  duration: "2 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Hapur for business trips, family travel, and nearby sightseeing.",
+  highlights: ["Ganga Canal", "Local Markets", "Pilkhuwa Textile Hub"],
+  tollEstimate: 300,
+},
+
+{
+  id: "gur-garhmukteshwar",
+  slug: "gurugram-to-garhmukteshwar-tempo-traveller-fare",
+  origin: "Gurugram",
+  destination: "Garhmukteshwar (Ganga Ghat)",
+  distance: 135,
+  duration: "3 Hours",
+  description:
+    "Tempo traveller booking from Gurugram to Garhmukteshwar for Ganga darshan, religious trips, and family outings.",
+  highlights: ["Brijghat", "Ganga Ghat", "Mukteshwar Mahadev Temple"],
+  tollEstimate: 450,
+},
 ].map((route) => ({
   ...route,
   mapEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(route.origin)}+to+${encodeURIComponent(

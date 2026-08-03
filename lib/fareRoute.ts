@@ -272,6 +272,10 @@ export const NOIDA_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) => route.origin === "Noida",
 );
 
+export const GURUGRAM_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
+  (route) => route.origin === "Gurugram",
+);
+
 // Uttarakhand routes (Hill stations from Varanasi) - Regular Fares
 export const UTTARAKHAND_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) =>

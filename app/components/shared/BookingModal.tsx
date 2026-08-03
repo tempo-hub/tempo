@@ -23,10 +23,7 @@ export default function BookingModal({
     tempoSize: vehicleType || "9-Seater",
     travelDate: "",
     pickupTime: "",
-    name: "",
     phone: "",
-    pickupPoint: "",
-    notes: "",
   });
 
   useEffect(() => {
@@ -68,11 +65,11 @@ export default function BookingModal({
     const requiredFields = [
       { value: formData.from, label: "Pickup City" },
       { value: formData.to, label: "Destination City" },
+      { value: formData.tripType, label: "Trip Type" },
+      { value: formData.tempoSize, label: "Tempo Size" },
       { value: formData.travelDate, label: "Travel Date" },
       { value: formData.pickupTime, label: "Pickup Time" },
-      { value: formData.name, label: "Name" },
       { value: formData.phone, label: "Phone Number" },
-      { value: formData.pickupPoint, label: "Pickup Point" },
     ];
 
     const missingField = requiredFields.find((field) => !field.value.trim());
@@ -97,10 +94,7 @@ Hi YatraTempoTraveller,
 *Tempo Size:* ${formData.tempoSize}
 *Travel Date:* ${formData.travelDate}
 *Pickup Time:* ${formData.pickupTime}
-*Name:* ${formData.name}
 *Phone:* ${formData.phone}
-*Pickup Point:* ${formData.pickupPoint || "To be confirmed"}
-*Notes:* ${formData.notes || "None"}
 
 _Sent via YatraTempoTraveller.com booking form_
 `;
@@ -250,19 +244,6 @@ _Sent via YatraTempoTraveller.com booking form_
             </select>
           </div>
 
-          {/* Name */}
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-              Full Name <span className="text-red-500">*</span>
-            </label>
-            <input
-              name="name"
-              placeholder="Enter your full name"
-              className="w-full h-11 px-4 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:bg-white focus:border-[#FE6A01] focus:ring-2 focus:ring-[#FE6A01]/20 focus:outline-none transition-all duration-200 placeholder:text-gray-400 hover:border-gray-400"
-              onChange={handleChange}
-            />
-          </div>
-
           {/* Phone with local hint */}
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1.5">
@@ -278,39 +259,6 @@ _Sent via YatraTempoTraveller.com booking form_
             />
             <p className="text-xs text-gray-500 mt-1">
               You&apos;ll receive confirmation on WhatsApp
-            </p>
-          </div>
-
-          {/* Pickup Point */}
-          <div className="md:col-span-2">
-            <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-              Exact Pickup Location <span className="text-red-500">*</span>
-            </label>
-            <input
-              name="pickupPoint"
-              placeholder="Hotel name, Airport, Railway Station, or Home address in Varanasi"
-              className="w-full h-11 px-4 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:bg-white focus:border-[#FE6A01] focus:ring-2 focus:ring-[#FE6A01]/20 focus:outline-none transition-all duration-200 placeholder:text-gray-400 hover:border-gray-400"
-              onChange={handleChange}
-            />
-            <p className="text-xs text-gray-500 mt-1">
-              ✓ Doorstep pickup & drop available
-            </p>
-          </div>
-
-          {/* Special Requirements aligned with website offerings */}
-          <div className="md:col-span-2">
-            <label className="block text-sm font-semibold text-gray-700 mb-1.5">
-              Special Requirements
-            </label>
-            <textarea
-              name="notes"
-              rows={3}
-              placeholder="e.g., Need decorated tempo for wedding, extra luggage space, wheelchair accessible, driver night stay needed, multi-day itinerary..."
-              className="w-full px-4 py-3 text-sm text-gray-900 bg-gray-50 border border-gray-300 rounded-lg focus:bg-white focus:border-[#FE6A01] focus:ring-2 focus:ring-[#FE6A01]/20 focus:outline-none transition-all duration-200 placeholder:text-gray-400 hover:border-gray-400 resize-y"
-              onChange={handleChange}
-            />
-            <p className="text-xs text-gray-500 mt-1">
-              We&apos;ll accommodate all requests — just let us know!
             </p>
           </div>
         </div>

@@ -5995,7 +5995,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Explore local culture",
     ],
   },
-
   "Chand Baori Abhaneri": {
     overview:
       "Chand Baori is one of India's deepest and most spectacular stepwells, renowned for its geometric architecture.",
@@ -6040,7 +6039,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Wear comfortable footwear",
     ],
   },
-
   "Bhangarh Fort": {
     overview:
       "Bhangarh Fort is a historic fort complex known for its ruins, architecture, and fascinating legends.",
@@ -6085,7 +6083,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Carry camera",
     ],
   },
-
   "Jaisamand Lake": {
     overview:
       "Jaisamand Lake is one of Asia's largest artificial lakes, known for scenic beauty, boating, and wildlife surroundings.",
@@ -6130,7 +6127,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Enjoy lakeside viewpoints",
     ],
   },
-
   Bharatpur: {
     overview:
       "Bharatpur is a historic city in eastern Rajasthan, famous for Keoladeo National Park, a UNESCO World Heritage Site renowned for birdwatching, wetlands, and rich biodiversity.",
@@ -6193,7 +6189,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Combine your trip with Deeg Palace and Mathura-Vrindavan",
     ],
   },
-
   Alwar: {
     overview:
       "Alwar is a historic city in Rajasthan known for its majestic forts, royal palaces, wildlife sanctuaries, and proximity to the Aravalli Hills, making it a popular mix of heritage and nature tourism.",
@@ -6255,7 +6250,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Combine Alwar trip with Neemrana Fort or Jaipur",
     ],
   },
-
   Chittorgarh: {
     overview:
       "Chittorgarh is one of Rajasthan’s most iconic historical cities, famous for the majestic Chittorgarh Fort, Rajput valor, and rich tales of sacrifice, bravery, and heritage.",
@@ -6317,7 +6311,6 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Visit light and sound show in the evening",
     ],
   },
-
   Sikar: {
     overview:
       "Sikar is a culturally rich city in Rajasthan known for its grand havelis, historic temples, Shekhawati fresco art, and its importance as an education hub in North India.",
@@ -11034,4 +11027,235 @@ export const CITY_GUIDES: Record<string, CityGuide> = {
       "Good for heritage tourism",
     ],
   },
+  Dhanaulti: {
+    overview: "Dhanaulti is a quiet hill station situated amidst thick alpine forests of Deodar, Rhododendron, and Oak.",
+    detailedDescription: "A peaceful retreat away from the crowds, offering eco-parks and breathtaking views of the snow-capped Himalayas.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Eco Parks", "Surkanda Devi Temple", "Potato Farm", "Himalayan Weavers"],
+      bgColor: "bg-emerald-50",
+      textColor: "text-emerald-800",
+    },
+    significance: {
+      title: "Nature & Serenity",
+      items: ["Eco-tourism", "Quiet Hill Station", "Snowfall destination"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "September-June",
+    idealDuration: "1-2 days",
+    localFood: ["Pahadi food", "Maggi point snacks"],
+    festivals: ["Local fairs"],
+    travelTips: ["Pack warm clothes", "Enjoy the quiet environment"],
+  },
+  Kanatal: {
+    overview: "Kanatal is a serene village in Uttarakhand, known for its untouched natural beauty.",
+    detailedDescription: "Perfect for camping, trekking, and nature walks, offering panoramic views of the Himalayan ranges.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Tehri Dam", "Surkanda Devi Temple", "Kodia Jungle"],
+      bgColor: "bg-indigo-50",
+      textColor: "text-indigo-800",
+    },
+    significance: {
+      title: "Adventure & Camping",
+      items: ["Camping Hub", "Offbeat Destination"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "April-October",
+    idealDuration: "1-2 days",
+    localFood: ["Camp meals", "Local Pahadi cuisine"],
+    festivals: ["Local Pahadi festivals"],
+    travelTips: ["Great for camping", "Carry cash"],
+  },
+  Chopta: {
+    overview: "Chopta is a small region of meadows and evergreen forest area which is a part of kedarnath wildlife sanctuary.",
+    detailedDescription: "Often referred to as the 'Mini Switzerland of Uttarakhand', it serves as the base for trekking to Tungnath and Chandrashila.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Tungnath Temple", "Chandrashila Trek", "Deoria Tal"],
+      bgColor: "bg-lime-50",
+      textColor: "text-lime-800",
+    },
+    significance: {
+      title: "Trekking & Spiritual",
+      items: ["Mini Switzerland", "Panch Kedar (Tungnath)", "Base Camp"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "March-May & September-November",
+    idealDuration: "2-3 days",
+    localFood: ["Pahadi thali", "Maggi & Tea"],
+    festivals: ["Maha Shivratri"],
+    travelTips: ["Prepare for trekking", "Limited electricity and mobile network"],
+  },
+  Bhimtal: {
+    overview: "Bhimtal is a town in the Nainital district, famous for the Bhimtal Lake with an island in its center.",
+    detailedDescription: "A less crowded alternative to Nainital, offering serene lake views, boating, and pleasant weather.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Bhimtal Lake", "Bhimeshwar Mahadev Temple", "Aquarium on the Island"],
+      bgColor: "bg-cyan-50",
+      textColor: "text-cyan-800",
+    },
+    significance: {
+      title: "Nature & Mythology",
+      items: ["Lake City", "Associated with Mahabharata"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "March-June & September-December",
+    idealDuration: "1-2 days",
+    localFood: ["Kumaoni food", "Lake fish"],
+    festivals: ["Harela"],
+    travelTips: ["Enjoy boating", "Visit the island aquarium"],
+  },
+  Mukteshwar: {
+    overview: "Mukteshwar is a pleasing destination situated at an elevation of 2285 meters above sea level in Nainital district.",
+    detailedDescription: "Known for its fruit orchards, coniferous forests, and the 350-year-old Mukteshwar Dham dedicated to Lord Shiva.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Mukteshwar Dham", "Chauli Ki Jali", "Bhalu Gaad Waterfalls"],
+      bgColor: "bg-stone-50",
+      textColor: "text-stone-800",
+    },
+    significance: {
+      title: "Spiritual & Nature",
+      items: ["180-degree Himalayan view", "Lord Shiva Temple"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "March-July & October-February",
+    idealDuration: "1-2 days",
+    localFood: ["Pahadi cuisine", "Fresh fruits (Apples, Plums)"],
+    festivals: ["Maha Shivratri"],
+    travelTips: ["Try local fruit jams", "Great for rock climbing at Chauli Ki Jali"],
+  },
+  Almora: {
+    overview: "Almora is a picturesque town known for its rich cultural heritage, unique handicrafts, and delicious cuisine.",
+    detailedDescription: "Considered the cultural heart of the Kumaon region, it has a distinct vibe with old temples and traditional markets.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Kasar Devi Temple", "Jageshwar Dham", "Chitai Golu Devta Temple", "Zero Point"],
+      bgColor: "bg-amber-50",
+      textColor: "text-amber-800",
+    },
+    significance: {
+      title: "Cultural & Historical",
+      items: ["Cultural Capital of Kumaon", "Hippie Trail history"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "April-June & September-November",
+    idealDuration: "2-3 days",
+    localFood: ["Bal Mithai", "Chokha", "Bhaang ki Chutney"],
+    festivals: ["Nanda Devi Festival", "Jageshwar Monsoon Festival"],
+    travelTips: ["Try local sweets", "Visit Kasar Devi for meditation"],
+  },
+  "Jim Corbett National Park (Dhikala/Bijrani)": {
+    overview: "Jim Corbett is the oldest national park in India, famous for its Bengal tiger population.",
+    detailedDescription: "Located in the Himalayan foothills, it offers wildlife safaris through diverse landscapes including rivers, forests, and grasslands.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Jungle Safari", "Dhikala Zone", "Corbett Waterfall", "Garjiya Devi Temple"],
+      bgColor: "bg-green-100",
+      textColor: "text-green-900",
+    },
+    significance: {
+      title: "Wildlife Conservation",
+      items: ["Project Tiger", "Oldest National Park", "Rich Biodiversity"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "November-June (Safaris closed in monsoon)",
+    idealDuration: "2-3 days",
+    localFood: ["Kumaoni cuisine", "Camp meals"],
+    festivals: ["Wildlife Week"],
+    travelTips: ["Book safaris months in advance", "Maintain silence during safaris"],
+  },
+  Badrinath: {
+    overview: "Badrinath is a holy town in Chamoli district and one of the Char Dham pilgrimage sites.",
+    detailedDescription: "Dedicated to Lord Vishnu, the temple is situated along the banks of the Alaknanda River, surrounded by the Nar and Narayana mountains.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Badrinath Temple", "Tapt Kund", "Mana Village", "Neelkanth Peak"],
+      bgColor: "bg-yellow-50",
+      textColor: "text-yellow-800",
+    },
+    significance: {
+      title: "Spiritual Significance",
+      items: ["Char Dham Yatra", "Chota Char Dham", "Dedicated to Lord Vishnu"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "May-June & September-October",
+    idealDuration: "1-2 days",
+    localFood: ["Pure vegetarian meals", "Prasad"],
+    festivals: ["Mata Murti Ka Mela", "Badri Kedar Festival"],
+    travelTips: ["Check weather and road conditions", "Visit Mana, the last Indian village"],
+  },
+  Kedarnath: {
+    overview: "Kedarnath is one of the most sacred pilgrimage centers of Lord Shiva, located in the Rudraprayag district.",
+    detailedDescription: "Accessible via an arduous trek from Gaurikund, the ancient temple is set amidst snow-clad peaks and the Mandakini river.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Kedarnath Temple", "Gaurikund", "Bhairavnath Temple", "Vasuki Tal"],
+      bgColor: "bg-gray-100",
+      textColor: "text-gray-800",
+    },
+    significance: {
+      title: "Spiritual Significance",
+      items: ["Jyotirlinga", "Char Dham Yatra", "Panch Kedar"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "May-June & September-October",
+    idealDuration: "2-3 days",
+    localFood: ["Basic vegetarian food", "Prasad"],
+    festivals: ["Shravani Annakoot Mela"],
+    travelTips: ["Prepare for physical exertion", "Book helicopters/ponies early"],
+  },
+  Yamunotri: {
+    overview: "Yamunotri is the source of the Yamuna River and the seat of the Goddess Yamuna in Hinduism.",
+    detailedDescription: "It is part of the Char Dham pilgrimage circuit, requiring a trek from Janki Chatti to reach the temple and thermal springs.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Yamunotri Temple", "Surya Kund", "Divya Shila", "Janki Chatti"],
+      bgColor: "bg-cyan-50",
+      textColor: "text-cyan-800",
+    },
+    significance: {
+      title: "Spiritual Significance",
+      items: ["Source of Yamuna", "Char Dham Yatra"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "May-June & September-October",
+    idealDuration: "1-2 days",
+    localFood: ["Basic pilgrim meals"],
+    festivals: ["Basant Panchami", "Phool Dei"],
+    travelTips: ["Start trek early morning", "Bathe in Surya Kund hot springs"],
+  },
+  Gangotri: {
+    overview: "Gangotri is the origin of the River Ganges and the seat of the Goddess Ganga.",
+    detailedDescription: "A vital Char Dham destination, the picturesque temple town is nestled in the majestic Garhwal Himalayas.",
+    keyAttractions: {
+      title: "Key Attractions",
+      items: ["Gangotri Temple", "Bhagirathi Shila", "Surya Kund", "Gaumukh Trek Base"],
+      bgColor: "bg-blue-100",
+      textColor: "text-blue-900",
+    },
+    significance: {
+      title: "Spiritual Significance",
+      items: ["Source of Ganges", "Char Dham Yatra"],
+      bgColor: "bg-green-50",
+      textColor: "text-green-800",
+    },
+    bestTimeToVisit: "May-June & September-October",
+    idealDuration: "1-2 days",
+    localFood: ["Basic vegetarian food"],
+    festivals: ["Ganga Dussehra"],
+    travelTips: ["Carry warm clothes", "Respect the sanctity of the river"],
+  }
 };
