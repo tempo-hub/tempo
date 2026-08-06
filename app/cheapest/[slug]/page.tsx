@@ -45,23 +45,8 @@ export async function generateMetadata({
   };
 }
 
-// Generate static params for static site generation
-export async function generateStaticParams() {
-  const ALL_CHEAPEST_ROUTES = [
-    ...PRAYAGRAJ_CHEAPEST_ROUTES,
-    ...AYODHYA_CHEAPEST_ROUTES,
-    ...VARANASI_CHEAPEST_ROUTES,
-    ...UTTARAKHAND_CHEAPEST_ROUTES,
-    ...MADHYAPRADESH_CHEAPEST_ROUTES,
-    ...RAJASTHAN_CHEAPEST_ROUTES,
-    ...BIHAR_CHEAPEST_ROUTES,
-    ...DELHI_NCR_CHEAPEST_ROUTES,
-  ];
-
-  return ALL_CHEAPEST_ROUTES.map((route) => ({
-    slug: route.slug,
-  }));
-}
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 // Page component
 export default async function Page({

@@ -33,12 +33,8 @@ import { PricingSection } from "@/app/components/sections/PricingSection";
 import { generateFareFaqs } from "../../components/sections";
 
 export const revalidate = 86400;
-
-export async function generateStaticParams() {
-  return ROUTES.map((route) => ({
-    slug: route.slug,
-  }));
-}
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 export async function generateMetadata({
   params,

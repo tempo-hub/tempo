@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { urbaniaRoutes } from "@/lib/urbaniaRoutes";
-import { ALL_ROUTES } from "@/lib/allRoutes";
 import Image from "next/image";
 import {
   Phone,
@@ -20,15 +19,8 @@ type Props = {
   }>;
 };
 
-export async function generateStaticParams() {
-  return ALL_ROUTES.map((route) => ({
-    slug:
-      `${route.origin.toLowerCase().replace(/\s+/g, "-")}` +
-      `-to-` +
-      `${route.destination.toLowerCase().replace(/\s+/g, "-")}` +
-      `-urbania-fare`,
-  }));
-}
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
