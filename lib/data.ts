@@ -34055,7 +34055,7 @@ export const ROUTES: TaxiRoute[] = [
     distance: 1315,
     duration: "23 Hours",
     description:
-      "Tempo traveller booking from Bangalore to Silvassa for family trips, nature tours, and weekend holidays.",
+      "Tempo traveller bookings from Bangalore to Silvassa for family trips, nature tours, and weekend holidays.",
     highlights: ["Vanganga Lake", "Tribal Museum", "Hirwa Van Garden"],
     tollEstimate: 4100,
   },
