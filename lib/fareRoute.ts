@@ -288,6 +288,10 @@ export const BANGALORE_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) => route.origin === "Bangalore",
 );
 
+export const HYDERABAD_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
+  (route) => route.origin === "Hyderabad",
+);
+
 // Uttarakhand routes (Hill stations from Varanasi) - Regular Fares
 export const UTTARAKHAND_FARE_ROUTES: TaxiRoute[] = ROUTES.filter(
   (route) =>

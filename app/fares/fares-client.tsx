@@ -28,6 +28,7 @@ import {
   FARIDABAD_FARE_ROUTES,
   GHAZIABAD_FARE_ROUTES,
   BANGALORE_FARE_ROUTES,
+  HYDERABAD_FARE_ROUTES,
 } from "@/lib/fareRoute";
 import { useMemo } from "react";
 
@@ -81,6 +82,11 @@ export default function FaresClient() {
         ...BANGALORE_FARE_ROUTES.map((route) => ({
           ...route,
           originCity: "Bangalore",
+          category: "regular" as const,
+        })),
+        ...HYDERABAD_FARE_ROUTES.map((route) => ({
+          ...route,
+          originCity: "Hyderabad",
           category: "regular" as const,
         })),
         ...LUCKNOW_FARE_ROUTES.map((route) => ({
@@ -573,6 +579,31 @@ export default function FaresClient() {
 
               // Special handling for Bangalore
               if (city === "Bangalore") {
+                return (
+                  <div key={city} className="space-y-16">
+                    <div className="space-y-10">
+                      <div className="flex items-center gap-4">
+                        <h2 className="text-3xl font-black text-secondary flex items-center gap-3 italic">
+                          <MapPin className="text-primary w-8 h-8" />
+                          Tempo Traveller Fares from {city}
+                        </h2>
+                        <div className="h-px bg-slate-200 flex-1 mt-2" />
+                        <span className="bg-primary text-secondary text-[10px] font-black px-3 py-1 rounded-full uppercase">
+                          {cityRoutes.length} Active Routes
+                        </span>
+                      </div>
+                      <div className="grid md:grid-cols-3 gap-6">
+                        {cityRoutes.map((route) => (
+                          <FareCard key={route.id} route={route} />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+
+              // Special handling for Hyderabad
+              if (city === "Hyderabad") {
                 return (
                   <div key={city} className="space-y-16">
                     <div className="space-y-10">
