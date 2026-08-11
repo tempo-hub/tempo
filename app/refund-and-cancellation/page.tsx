@@ -292,7 +292,7 @@ export default function RefundAndCancellation() {
               </p>
 
               <p>
-                The time required for a refund to appear in the customer's
+                The time required for a refund to appear in the customer&apos;s
                 account may vary depending on the payment provider, bank, or
                 financial institution involved.
               </p>
@@ -528,7 +528,7 @@ export default function RefundAndCancellation() {
               Yatra Tempo Traveller operates as a part of Chiku Mobility India
               Private Limited. For the most accurate and up-to-date
               organizational refund, cancellation, terms, and related
-              policies, please refer to the parent organization's website.
+              policies, please refer to the parent organization&apos;s website.
             </p>
 
             <a

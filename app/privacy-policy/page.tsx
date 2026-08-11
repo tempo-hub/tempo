@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPolicy() {
-  const lastUpdated = new Date().getFullYear();
+  // const lastUpdated = new Date().getFullYear();
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
@@ -372,7 +372,7 @@ export default function PrivacyPolicy() {
 
             <div className="mt-6 space-y-5 text-[15px] leading-7 text-slate-600">
               <p>
-                We do not intend to sell customers' personal information as a
+                We do not intend to sell customers&apos; personal information as a
                 commercial product.
               </p>
 
@@ -571,7 +571,7 @@ export default function PrivacyPolicy() {
           ===================================================== */}
           <section className="mt-8 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
             <span className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
-              Children's Privacy
+              Children&apos;s Privacy
             </span>
 
             <h2 className="mt-2 text-3xl font-black">
@@ -690,7 +690,7 @@ export default function PrivacyPolicy() {
               </div>
             </div>
           </section>
-          
+
         </div>
       </section>
     </main>

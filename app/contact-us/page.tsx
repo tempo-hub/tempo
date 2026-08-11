@@ -8,7 +8,6 @@ import {
   MapPin,
   MessageCircle,
   Phone,
-  Send,
   ShieldCheck,
   Users,
 } from "lucide-react";
