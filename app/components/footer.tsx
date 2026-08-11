@@ -92,6 +92,14 @@ export const Footer = () => {
             <ul className="space-y-4 text-slate-400">
               <li>
                 <Link
+                  href="/terms-and-conditions"
+                  className="hover:text-white transition-colors"
+                >
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/privacy-policy"
                   className="hover:text-white transition-colors"
                 >
@@ -100,10 +108,18 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/terms-and-conditions"
+                  href="/contact-us"
                   className="hover:text-white transition-colors"
                 >
-                  Terms of Service
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about-us"
+                  className="hover:text-white transition-colors"
+                >
+                  About Us
                 </Link>
               </li>
               <li>
@@ -154,8 +170,8 @@ export const Footer = () => {
 
         <div className="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
           <p>
-            © 2026 All rights reserved from Chiku mobility india private
-            limited.
+            © {new Date().getFullYear()} All rights reserved from Chiku Mobility India Private
+            Limited.
           </p>
         </div>
       </div>
