@@ -37008,18 +37008,6 @@ export const ROUTES: TaxiRoute[] = [
     tollEstimate: 900,
   },
   {
-    id: "hyd-ongole",
-    slug: "hyderabad-to-ongole-tempo-traveller-fare",
-    origin: "Hyderabad",
-    destination: "Ongole",
-    distance: 620,
-    duration: "11 Hours",
-    description:
-      "Tempo traveller booking from Hyderabad to Ongole for family vacations, business travel, beach trips, and sightseeing.",
-    highlights: ["Kothapatnam Beach", "Chirala", "Tangutur"],
-    tollEstimate: 1850,
-  },
-  {
     id: "hyd-nellore",
     slug: "hyderabad-to-nellore-tempo-traveller-fare",
     origin: "Hyderabad",
@@ -37470,18 +37458,6 @@ export const ROUTES: TaxiRoute[] = [
       "Kawal Wildlife Sanctuary",
     ],
     tollEstimate: 900,
-  },
-  {
-    id: "hyd-nalgonda",
-    slug: "hyderabad-to-nalgonda-tempo-traveller-fare",
-    origin: "Hyderabad",
-    destination: "Nalgonda",
-    distance: 105,
-    duration: "2 Hours 30 Minutes",
-    description:
-      "Tempo traveller booking from Hyderabad to Nalgonda for family trips, historical tours, pilgrimage visits, and sightseeing.",
-    highlights: ["Bhongir Fort", "Nandikonda", "Nagarjuna Sagar"],
-    tollEstimate: 300,
   },
   {
     id: "hyd-suryapet",
@@ -39870,6 +39846,2906 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller booking from Hyderabad to Darjeeling for hill station vacations, family trips, tea tours, and Himalayan sightseeing.",
     highlights: ["Tiger Hill", "Darjeeling Himalayan Railway", "Batasia Loop"],
     tollEstimate: 5850,
+  },
+  {
+    id: "hyd-kalimpong",
+    slug: "hyderabad-to-kalimpong-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kalimpong",
+    distance: 1900,
+    duration: "34 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kalimpong for family vacations, mountain trips, sightseeing, and Himalayan getaways.",
+    highlights: ["Deolo Hill", "Durpin Monastery", "Cactus Nursery"],
+    tollEstimate: 5700,
+  },
+
+  {
+    id: "hyd-kurseong",
+    slug: "hyderabad-to-kurseong-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kurseong",
+    distance: 1925,
+    duration: "35 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kurseong for peaceful hill vacations, family trips, tea garden tours, and Himalayan sightseeing.",
+    highlights: ["Eagle's Craig", "Makaibari Tea Estate", "Dow Hill"],
+    tollEstimate: 5775,
+  },
+
+  {
+    id: "hyd-mirik",
+    slug: "hyderabad-to-mirik-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mirik",
+    distance: 1950,
+    duration: "35 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mirik for family holidays, lake visits, tea garden tours, and peaceful Himalayan getaways.",
+    highlights: ["Mirik Lake", "Sumendu Lake", "Orange Orchards"],
+    tollEstimate: 5850,
+  },
+
+  {
+    id: "hyd-gangtok",
+    slug: "hyderabad-to-gangtok-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Gangtok",
+    distance: 2050,
+    duration: "37 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Gangtok for family vacations, mountain adventures, sightseeing tours, and Sikkim holidays.",
+    highlights: ["MG Marg", "Rumtek Monastery", "Tsomgo Lake"],
+    tollEstimate: 6150,
+  },
+
+  {
+    id: "hyd-pelling",
+    slug: "hyderabad-to-pelling-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Pelling",
+    distance: 2100,
+    duration: "38 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Pelling for family trips, Himalayan sightseeing, monastery tours, and scenic mountain vacations.",
+    highlights: [
+      "Pemayangtse Monastery",
+      "Rabdentse Ruins",
+      "Khecheopalri Lake",
+    ],
+    tollEstimate: 6300,
+  },
+
+  {
+    id: "hyd-lachen",
+    slug: "hyderabad-to-lachen-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Lachen",
+    distance: 2200,
+    duration: "40 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Lachen for Himalayan adventures, family tours, mountain sightseeing, and North Sikkim trips.",
+    highlights: ["Gurudongmar Lake", "Lachen Monastery", "Thangu Valley"],
+    tollEstimate: 6600,
+  },
+
+  {
+    id: "hyd-lachung",
+    slug: "hyderabad-to-lachung-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Lachung",
+    distance: 2225,
+    duration: "40 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Lachung for mountain vacations, family tours, North Sikkim sightseeing, and Himalayan adventures.",
+    highlights: ["Yumthang Valley", "Lachung Monastery", "Zero Point"],
+    tollEstimate: 6675,
+  },
+
+  {
+    id: "hyd-yumthang-valley",
+    slug: "hyderabad-to-yumthang-valley-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Yumthang Valley",
+    distance: 2300,
+    duration: "42 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Yumthang Valley for scenic Himalayan journeys, family trips, nature tours, and North Sikkim sightseeing.",
+    highlights: [
+      "Yumthang Valley",
+      "Shingba Rhododendron Sanctuary",
+      "Hot Springs",
+    ],
+    tollEstimate: 6900,
+  },
+
+  {
+    id: "hyd-nathu-la-pass",
+    slug: "hyderabad-to-nathu-la-pass-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nathu La Pass",
+    distance: 2150,
+    duration: "39 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nathu La Pass for mountain adventures, family tours, high-altitude sightseeing, and Sikkim trips.",
+    highlights: ["Nathu La Pass", "Tsomgo Lake", "Baba Mandir"],
+    tollEstimate: 6450,
+  },
+
+  {
+    id: "hyd-tsomgo-lake",
+    slug: "hyderabad-to-tsomgo-lake-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Tsomgo Lake",
+    distance: 2125,
+    duration: "38 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Tsomgo Lake for family vacations, Himalayan sightseeing, scenic mountain tours, and Sikkim travel.",
+    highlights: ["Tsomgo Lake", "Baba Mandir", "Nathu La Pass"],
+    tollEstimate: 6375,
+  },
+  {
+    id: "hyd-zuluk",
+    slug: "hyderabad-to-zuluk-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Zuluk",
+    distance: 2200,
+    duration: "40 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Zuluk for Himalayan road trips, family vacations, scenic mountain tours, and Sikkim sightseeing.",
+    highlights: ["Zuluk Silk Route", "Thambi View Point", "Nathang Valley"],
+    tollEstimate: 6600,
+  },
+
+  {
+    id: "hyd-udaipur",
+    slug: "hyderabad-to-udaipur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Udaipur",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Udaipur for family vacations, heritage tours, romantic getaways, and Rajasthan sightseeing.",
+    highlights: ["City Palace", "Lake Pichola", "Sajjangarh Palace"],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-jodhpur",
+    slug: "hyderabad-to-jodhpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jodhpur",
+    distance: 1500,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jodhpur for family trips, heritage tours, desert vacations, and Rajasthan sightseeing.",
+    highlights: ["Mehrangarh Fort", "Jaswant Thada", "Umaid Bhawan Palace"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "hyd-jaisalmer",
+    slug: "hyderabad-to-jaisalmer-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jaisalmer",
+    distance: 1750,
+    duration: "32 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jaisalmer for desert adventures, family vacations, cultural tours, and Rajasthan sightseeing.",
+    highlights: ["Jaisalmer Fort", "Sam Sand Dunes", "Patwon Ki Haveli"],
+    tollEstimate: 5250,
+  },
+
+  {
+    id: "hyd-bikaner",
+    slug: "hyderabad-to-bikaner-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bikaner",
+    distance: 1700,
+    duration: "31 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bikaner for family holidays, heritage tours, desert trips, and Rajasthan sightseeing.",
+    highlights: ["Junagarh Fort", "Karni Mata Temple", "Lalgarh Palace"],
+    tollEstimate: 5100,
+  },
+
+  {
+    id: "hyd-ajmer",
+    slug: "hyderabad-to-ajmer-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Ajmer",
+    distance: 1400,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Ajmer for pilgrimage tours, family trips, heritage sightseeing, and Rajasthan travel.",
+    highlights: [
+      "Ajmer Sharif Dargah",
+      "Ana Sagar Lake",
+      "Adhai Din Ka Jhonpra",
+    ],
+    tollEstimate: 4200,
+  },
+
+  {
+    id: "hyd-pushkar",
+    slug: "hyderabad-to-pushkar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Pushkar",
+    distance: 1425,
+    duration: "26 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Pushkar for pilgrimage trips, family vacations, cultural tours, and Rajasthan sightseeing.",
+    highlights: ["Pushkar Lake", "Brahma Temple", "Savitri Temple"],
+    tollEstimate: 4275,
+  },
+
+  {
+    id: "hyd-mount-abu",
+    slug: "hyderabad-to-mount-abu-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mount Abu",
+    distance: 1300,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mount Abu for family vacations, hill station trips, nature tours, and Rajasthan sightseeing.",
+    highlights: ["Nakki Lake", "Dilwara Temples", "Guru Shikhar"],
+    tollEstimate: 3900,
+  },
+
+  {
+    id: "hyd-bundi",
+    slug: "hyderabad-to-bundi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bundi",
+    distance: 1200,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bundi for heritage vacations, family trips, historical tours, and Rajasthan sightseeing.",
+    highlights: ["Bundi Palace", "Taragarh Fort", "Raniji Ki Baori"],
+    tollEstimate: 3600,
+  },
+  {
+    id: "hyd-kota",
+    slug: "hyderabad-to-kota-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kota",
+    distance: 1150,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kota for family trips, educational tours, city sightseeing, and Rajasthan travel.",
+    highlights: ["Kota Barrage", "Seven Wonders Park", "Kishore Sagar Lake"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-bharatpur",
+    slug: "hyderabad-to-bharatpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bharatpur",
+    distance: 1350,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bharatpur for family vacations, wildlife tours, heritage trips, and Rajasthan sightseeing.",
+    highlights: ["Keoladeo National Park", "Lohagarh Fort", "Bharatpur Palace"],
+    tollEstimate: 4050,
+  },
+
+  {
+    id: "hyd-alwar",
+    slug: "hyderabad-to-alwar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Alwar",
+    distance: 1450,
+    duration: "26 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Alwar for family holidays, heritage tours, wildlife trips, and Rajasthan sightseeing.",
+    highlights: ["Bala Quila", "City Palace", "Siliserh Lake"],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "hyd-shekhawati",
+    slug: "hyderabad-to-shekhawati-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Shekhawati",
+    distance: 1600,
+    duration: "29 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Shekhawati for heritage tours, family vacations, cultural trips, and Rajasthan sightseeing.",
+    highlights: ["Mandawa Havelis", "Nawalgarh Havelis", "Fatehpur Havelis"],
+    tollEstimate: 4800,
+  },
+
+  {
+    id: "hyd-ranthambore",
+    slug: "hyderabad-to-ranthambore-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Ranthambore",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Ranthambore for wildlife safaris, family trips, nature tours, and Rajasthan vacations.",
+    highlights: [
+      "Ranthambore National Park",
+      "Ranthambore Fort",
+      "Trinetra Ganesh Temple",
+    ],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-sariska",
+    slug: "hyderabad-to-sariska-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Sariska",
+    distance: 1450,
+    duration: "26 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Sariska for wildlife adventures, family vacations, nature tours, and Rajasthan sightseeing.",
+    highlights: [
+      "Sariska Tiger Reserve",
+      "Sariska Palace",
+      "Pandupole Hanuman Temple",
+    ],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "hyd-kumbhalgarh",
+    slug: "hyderabad-to-kumbhalgarh-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kumbhalgarh",
+    distance: 1350,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kumbhalgarh for heritage tours, family trips, fort sightseeing, and Rajasthan vacations.",
+    highlights: [
+      "Kumbhalgarh Fort",
+      "Badal Mahal",
+      "Kumbhalgarh Wildlife Sanctuary",
+    ],
+    tollEstimate: 4050,
+  },
+
+  {
+    id: "hyd-ranakpur",
+    slug: "hyderabad-to-ranakpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Ranakpur",
+    distance: 1375,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Ranakpur for pilgrimage tours, family vacations, heritage sightseeing, and Rajasthan travel.",
+    highlights: [
+      "Ranakpur Jain Temple",
+      "Surya Narayan Temple",
+      "Ranakpur Valley",
+    ],
+    tollEstimate: 4125,
+  },
+
+  {
+    id: "hyd-charbhuja",
+    slug: "hyderabad-to-charbhuja-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Charbhuja",
+    distance: 1325,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Charbhuja for pilgrimage tours, family trips, temple visits, and Rajasthan travel.",
+    highlights: ["Charbhuja Nath Temple", "Gomti River", "Kumbhalgarh Region"],
+    tollEstimate: 3975,
+  },
+
+  {
+    id: "hyd-nathdwara",
+    slug: "hyderabad-to-nathdwara-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nathdwara",
+    distance: 1300,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nathdwara for pilgrimage tours, family vacations, temple visits, and Rajasthan sightseeing.",
+    highlights: ["Shrinathji Temple", "Haldighati", "Nathdwara Art"],
+    tollEstimate: 3900,
+  },
+  {
+    id: "hyd-eklingji",
+    slug: "hyderabad-to-eklingji-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Eklingji",
+    distance: 1275,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Eklingji for pilgrimage tours, family trips, temple visits, and Rajasthan sightseeing.",
+    highlights: ["Eklingji Temple", "Nagda Temples", "Udaipur"],
+    tollEstimate: 3825,
+  },
+
+  {
+    id: "hyd-nagda",
+    slug: "hyderabad-to-nagda-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nagda",
+    distance: 1280,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nagda for heritage tours, pilgrimage trips, family vacations, and historical sightseeing.",
+    highlights: ["Sas-Bahu Temples", "Haldighati", "Eklingji Temple"],
+    tollEstimate: 3840,
+  },
+
+  {
+    id: "hyd-haldighati",
+    slug: "hyderabad-to-haldighati-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Haldighati",
+    distance: 1325,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Haldighati for historical tours, family trips, heritage sightseeing, and Rajasthan vacations.",
+    highlights: [
+      "Haldighati Pass",
+      "Maharana Pratap Museum",
+      "Chetak Memorial",
+    ],
+    tollEstimate: 3975,
+  },
+
+  {
+    id: "hyd-dungarpur",
+    slug: "hyderabad-to-dungarpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Dungarpur",
+    distance: 1150,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Dungarpur for heritage vacations, family trips, palace tours, and scenic Rajasthan sightseeing.",
+    highlights: ["Juna Mahal", "Gaib Sagar Lake", "Vijay Raj Rajeshwar Temple"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-pratapgarh",
+    slug: "hyderabad-to-pratapgarh-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Pratapgarh",
+    distance: 1150,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Pratapgarh for family trips, heritage tours, cultural sightseeing, and Rajasthan travel.",
+    highlights: ["Sita Mata Wildlife Sanctuary", "Devgarh", "Pratapgarh Fort"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-neemrana",
+    slug: "hyderabad-to-neemrana-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Neemrana",
+    distance: 1500,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Neemrana for heritage getaways, family vacations, weekend trips, and Rajasthan sightseeing.",
+    highlights: ["Neemrana Fort Palace", "Baori", "Neemrana Heritage Sites"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "hyd-mandawa",
+    slug: "hyderabad-to-mandawa-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mandawa",
+    distance: 1600,
+    duration: "29 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mandawa for heritage tours, family vacations, haveli sightseeing, and cultural Rajasthan trips.",
+    highlights: ["Mandawa Fort", "Murmuria Haveli", "Jhunjhunwala Haveli"],
+    tollEstimate: 4800,
+  },
+
+  {
+    id: "hyd-mathura",
+    slug: "hyderabad-to-mathura-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mathura",
+    distance: 1500,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mathura for pilgrimage tours, family trips, temple visits, and Braj sightseeing.",
+    highlights: [
+      "Shri Krishna Janmabhoomi",
+      "Dwarkadhish Temple",
+      "Vishram Ghat",
+    ],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "hyd-vrindavan",
+    slug: "hyderabad-to-vrindavan-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Vrindavan",
+    distance: 1525,
+    duration: "28 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Vrindavan for pilgrimage tours, family vacations, temple visits, and Braj Dham sightseeing.",
+    highlights: ["Banke Bihari Temple", "Prem Mandir", "ISKCON Temple"],
+    tollEstimate: 4575,
+  },
+  {
+    id: "hyd-gwalior",
+    slug: "hyderabad-to-gwalior-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Gwalior",
+    distance: 1150,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Gwalior for family trips, heritage tours, historical sightseeing, and Madhya Pradesh travel.",
+    highlights: ["Gwalior Fort", "Jai Vilas Palace", "Sas Bahu Temple"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-orchha",
+    slug: "hyderabad-to-orchha-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Orchha",
+    distance: 1100,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Orchha for heritage vacations, family trips, temple visits, and historical sightseeing.",
+    highlights: ["Orchha Fort", "Ram Raja Temple", "Chaturbhuj Temple"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "hyd-khajuraho",
+    slug: "hyderabad-to-khajuraho-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Khajuraho",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Khajuraho for heritage tours, family vacations, historical sightseeing, and temple visits.",
+    highlights: [
+      "Khajuraho Temples",
+      "Kandariya Mahadeva Temple",
+      "Lakshmana Temple",
+    ],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-indore",
+    slug: "hyderabad-to-indore-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Indore",
+    distance: 850,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Indore for family trips, business travel, city sightseeing, food tours, and Madhya Pradesh vacations.",
+    highlights: ["Rajwada Palace", "Lal Bagh Palace", "Sarafa Bazaar"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "hyd-bhopal",
+    slug: "hyderabad-to-bhopal-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bhopal",
+    distance: 900,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bhopal for family vacations, city tours, heritage sightseeing, and Madhya Pradesh travel.",
+    highlights: ["Upper Lake", "Sanchi Stupa", "Van Vihar National Park"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "hyd-ujjain",
+    slug: "hyderabad-to-ujjain-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Ujjain",
+    distance: 950,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Ujjain for pilgrimage tours, family trips, temple visits, and spiritual journeys.",
+    highlights: ["Mahakaleshwar Temple", "Mahakal Lok", "Ram Ghat"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "hyd-omkareshwar",
+    slug: "hyderabad-to-omkareshwar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Omkareshwar",
+    distance: 900,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Omkareshwar for pilgrimage tours, family trips, Jyotirlinga visits, and spiritual journeys.",
+    highlights: [
+      "Omkareshwar Jyotirlinga",
+      "Mamleshwar Temple",
+      "Narmada River",
+    ],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "hyd-maheshwar",
+    slug: "hyderabad-to-maheshwar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Maheshwar",
+    distance: 850,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Maheshwar for heritage tours, family vacations, temple visits, and scenic Narmada sightseeing.",
+    highlights: ["Maheshwar Fort", "Ahilya Bai Temple", "Narmada Ghats"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "hyd-mandu",
+    slug: "hyderabad-to-mandu-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mandu",
+    distance: 900,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mandu for heritage vacations, family trips, historical sightseeing, and Madhya Pradesh tours.",
+    highlights: ["Jahaz Mahal", "Hindola Mahal", "Rani Roopmati Pavilion"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "hyd-jabalpur",
+    slug: "hyderabad-to-jabalpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jabalpur",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jabalpur for family vacations, nature tours, wildlife trips, and Madhya Pradesh sightseeing.",
+    highlights: ["Bhedaghat", "Dhuandhar Falls", "Marble Rocks"],
+    tollEstimate: 3150,
+  },
+  {
+    id: "hyd-bandhavgarh",
+    slug: "hyderabad-to-bandhavgarh-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bandhavgarh",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bandhavgarh for wildlife safaris, family vacations, nature tours, and Madhya Pradesh sightseeing.",
+    highlights: ["Bandhavgarh National Park", "Bandhavgarh Fort", "Tala Zone"],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-kanha",
+    slug: "hyderabad-to-kanha-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kanha",
+    distance: 1150,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kanha for wildlife safaris, family trips, nature vacations, and Madhya Pradesh travel.",
+    highlights: ["Kanha National Park", "Kanha Tiger Reserve", "Kanha Museum"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-pench",
+    slug: "hyderabad-to-pench-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Pench",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Pench for wildlife adventures, family vacations, jungle safaris, and nature tours.",
+    highlights: ["Pench National Park", "Pench Tiger Reserve", "Jungle Safari"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "hyd-pachmarhi",
+    slug: "hyderabad-to-pachmarhi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Pachmarhi",
+    distance: 950,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Pachmarhi for hill station vacations, family trips, nature tours, and Madhya Pradesh sightseeing.",
+    highlights: ["Bee Falls", "Dhoopgarh", "Jatashankar Temple"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "hyd-amarkantak",
+    slug: "hyderabad-to-amarkantak-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Amarkantak",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Amarkantak for pilgrimage tours, family trips, nature vacations, and spiritual sightseeing.",
+    highlights: [
+      "Narmada Udgam Temple",
+      "Kapildhara Falls",
+      "Dudh Dhara Falls",
+    ],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-gandhinagar",
+    slug: "hyderabad-to-gandhinagar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Gandhinagar",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Gandhinagar for family trips, business travel, city sightseeing, and Gujarat vacations.",
+    highlights: ["Akshardham Temple", "Adalaj Stepwell", "Indroda Nature Park"],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-ahmedabad",
+    slug: "hyderabad-to-ahmedabad-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Ahmedabad",
+    distance: 1200,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Ahmedabad for family vacations, business trips, heritage tours, and Gujarat sightseeing.",
+    highlights: ["Sabarmati Ashram", "Adalaj Stepwell", "Kankaria Lake"],
+    tollEstimate: 3600,
+  },
+
+  {
+    id: "hyd-vadodara",
+    slug: "hyderabad-to-vadodara-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Vadodara",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Vadodara for family trips, heritage tours, cultural vacations, and Gujarat sightseeing.",
+    highlights: ["Laxmi Vilas Palace", "Sayaji Garden", "Baroda Museum"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "hyd-surat",
+    slug: "hyderabad-to-surat-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Surat",
+    distance: 900,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Surat for family trips, business travel, city tours, shopping, and Gujarat vacations.",
+    highlights: ["Dumas Beach", "Dutch Garden", "Surat Castle"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "hyd-dwarka",
+    slug: "hyderabad-to-dwarka-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Dwarka",
+    distance: 1550,
+    duration: "28 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Dwarka for pilgrimage tours, family vacations, temple visits, and Gujarat sightseeing.",
+    highlights: ["Dwarkadhish Temple", "Bet Dwarka", "Rukmini Devi Temple"],
+    tollEstimate: 4650,
+  },
+  {
+    id: "hyd-somnath",
+    slug: "hyderabad-to-somnath-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Somnath",
+    distance: 1500,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Somnath for pilgrimage tours, family vacations, temple visits, and Gujarat sightseeing.",
+    highlights: ["Somnath Temple", "Triveni Sangam", "Bhalka Tirth"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "hyd-veraval",
+    slug: "hyderabad-to-veraval-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Veraval",
+    distance: 1500,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Veraval for family trips, pilgrimage tours, coastal vacations, and Gujarat sightseeing.",
+    highlights: ["Somnath Temple", "Veraval Beach", "Bhalka Tirth"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "hyd-porbandar",
+    slug: "hyderabad-to-porbandar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Porbandar",
+    distance: 1550,
+    duration: "28 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Porbandar for family vacations, heritage tours, coastal trips, and Gujarat sightseeing.",
+    highlights: ["Kirti Mandir", "Sudama Temple", "Porbandar Beach"],
+    tollEstimate: 4650,
+  },
+
+  {
+    id: "hyd-jamnagar",
+    slug: "hyderabad-to-jamnagar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jamnagar",
+    distance: 1450,
+    duration: "26 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jamnagar for family trips, wildlife tours, coastal vacations, and Gujarat sightseeing.",
+    highlights: ["Lakhota Lake", "Marine National Park", "Lakhota Fort"],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "hyd-rajkot",
+    slug: "hyderabad-to-rajkot-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Rajkot",
+    distance: 1350,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Rajkot for family vacations, business trips, heritage tours, and Gujarat sightseeing.",
+    highlights: [
+      "Kaba Gandhi No Delo",
+      "Watson Museum",
+      "Rotary Midtown Dolls Museum",
+    ],
+    tollEstimate: 4050,
+  },
+
+  {
+    id: "hyd-bhavnagar",
+    slug: "hyderabad-to-bhavnagar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bhavnagar",
+    distance: 1350,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bhavnagar for family trips, heritage tours, pilgrimage visits, and Gujarat sightseeing.",
+    highlights: ["Takhteshwar Temple", "Nilambag Palace", "Victoria Park"],
+    tollEstimate: 4050,
+  },
+
+  {
+    id: "hyd-gir-national-park",
+    slug: "hyderabad-to-gir-national-park-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Gir National Park",
+    distance: 1500,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Gir National Park for wildlife safaris, family vacations, nature tours, and Gujarat travel.",
+    highlights: ["Gir National Park", "Asiatic Lions", "Gir Jungle Safari"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "hyd-palitana",
+    slug: "hyderabad-to-palitana-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Palitana",
+    distance: 1400,
+    duration: "26 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Palitana for pilgrimage tours, family trips, temple visits, and Gujarat sightseeing.",
+    highlights: [
+      "Shatrunjaya Hill",
+      "Palitana Jain Temples",
+      "Adishwar Temple",
+    ],
+    tollEstimate: 4200,
+  },
+
+  {
+    id: "hyd-kutch",
+    slug: "hyderabad-to-kutch-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kutch",
+    distance: 1650,
+    duration: "30 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kutch for family vacations, cultural tours, desert trips, and Gujarat sightseeing.",
+    highlights: ["Great Rann of Kutch", "Kutch Desert", "Kutch Handicrafts"],
+    tollEstimate: 4950,
+  },
+
+  {
+    id: "hyd-bhuj",
+    slug: "hyderabad-to-bhuj-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bhuj",
+    distance: 1650,
+    duration: "30 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bhuj for family vacations, heritage tours, cultural trips, and Kutch sightseeing.",
+    highlights: ["Aina Mahal", "Prag Mahal", "Bhujodi Village"],
+    tollEstimate: 4950,
+  },
+  {
+    id: "hyd-mandvi",
+    slug: "hyderabad-to-mandvi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mandvi",
+    distance: 1600,
+    duration: "29 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mandvi for family vacations, beach holidays, heritage tours, and Kutch sightseeing.",
+    highlights: ["Mandvi Beach", "Vijay Vilas Palace", "Kutch Shipbuilding"],
+    tollEstimate: 4800,
+  },
+
+  {
+    id: "hyd-dholavira",
+    slug: "hyderabad-to-dholavira-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Dholavira",
+    distance: 1800,
+    duration: "33 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Dholavira for heritage tours, archaeological trips, family vacations, and Kutch sightseeing.",
+    highlights: [
+      "Dholavira Archaeological Site",
+      "Harappan Ruins",
+      "Rann of Kutch",
+    ],
+    tollEstimate: 5400,
+  },
+
+  {
+    id: "hyd-ambaji",
+    slug: "hyderabad-to-ambaji-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Ambaji",
+    distance: 1350,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Ambaji for pilgrimage tours, family trips, temple visits, and Gujarat sightseeing.",
+    highlights: ["Ambaji Temple", "Gabbar Hill", "Kumbhariya Jain Temples"],
+    tollEstimate: 4050,
+  },
+
+  {
+    id: "hyd-modhera",
+    slug: "hyderabad-to-modhera-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Modhera",
+    distance: 1300,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Modhera for heritage tours, family vacations, temple visits, and Gujarat sightseeing.",
+    highlights: ["Modhera Sun Temple", "Surya Kund", "Modhera Dance Festival"],
+    tollEstimate: 3900,
+  },
+
+  {
+    id: "hyd-patan",
+    slug: "hyderabad-to-patan-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Patan",
+    distance: 1325,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Patan for heritage tours, family trips, historical sightseeing, and Gujarat vacations.",
+    highlights: ["Rani Ki Vav", "Patan Patola Heritage", "Sahasralinga Talav"],
+    tollEstimate: 3975,
+  },
+
+  {
+    id: "hyd-mehsana",
+    slug: "hyderabad-to-mehsana-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mehsana",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mehsana for family trips, business travel, temple visits, and Gujarat sightseeing.",
+    highlights: ["Modhera Sun Temple", "Bahuchar Mata Temple", "Thol Lake"],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-nadiad",
+    slug: "hyderabad-to-nadiad-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nadiad",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nadiad for family trips, pilgrimage tours, business travel, and Gujarat sightseeing.",
+    highlights: [
+      "Santram Mandir",
+      "Swaminarayan Temple",
+      "Nadiad Heritage Sites",
+    ],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "hyd-bharuch",
+    slug: "hyderabad-to-bharuch-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bharuch",
+    distance: 950,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bharuch for family trips, business travel, heritage tours, and Gujarat sightseeing.",
+    highlights: ["Golden Bridge", "Narmada River", "Bhrigu Rishi Temple"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "hyd-vapi",
+    slug: "hyderabad-to-vapi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Vapi",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Vapi for family trips, business travel, weekend getaways, and Gujarat sightseeing.",
+    highlights: ["Daman", "Silvassa", "Dudhani Lake"],
+    tollEstimate: 3150,
+  },
+  {
+    id: "hyd-vijayawada",
+    slug: "hyderabad-to-vijayawada-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Vijayawada",
+    distance: 275,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Vijayawada for family trips, business travel, pilgrimage tours, and Andhra Pradesh sightseeing.",
+    highlights: ["Kanaka Durga Temple", "Prakasam Barrage", "Undavalli Caves"],
+    tollEstimate: 825,
+  },
+
+  {
+    id: "hyd-guntur",
+    slug: "hyderabad-to-guntur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Guntur",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Guntur for family trips, business travel, pilgrimage tours, and Andhra Pradesh sightseeing.",
+    highlights: ["Amaravathi", "Uppalapadu Bird Sanctuary", "Kondaveedu Fort"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "hyd-rajahmundry",
+    slug: "hyderabad-to-rajahmundry-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Rajahmundry",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Rajahmundry for family vacations, business trips, temple tours, and Godavari sightseeing.",
+    highlights: ["Godavari River", "Dowleswaram Barrage", "Papikondalu"],
+    tollEstimate: 1290,
+  },
+
+  {
+    id: "hyd-visakhapatnam",
+    slug: "hyderabad-to-visakhapatnam-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Visakhapatnam",
+    distance: 620,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Visakhapatnam for family vacations, beach trips, corporate travel, and Andhra Pradesh sightseeing.",
+    highlights: ["RK Beach", "Kailasagiri", "INS Kurusura Submarine Museum"],
+    tollEstimate: 1860,
+  },
+
+  {
+    id: "hyd-vizianagaram",
+    slug: "hyderabad-to-vizianagaram-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Vizianagaram",
+    distance: 650,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Vizianagaram for family trips, heritage tours, business travel, and Andhra Pradesh sightseeing.",
+    highlights: ["Vizianagaram Fort", "Ramatirthalu", "Gantyada Temples"],
+    tollEstimate: 1950,
+  },
+
+  {
+    id: "hyd-srikakulam",
+    slug: "hyderabad-to-srikakulam-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Srikakulam",
+    distance: 700,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Srikakulam for family vacations, pilgrimage tours, coastal trips, and Andhra Pradesh sightseeing.",
+    highlights: [
+      "Arasavalli Sun Temple",
+      "Srikurmam Temple",
+      "Kalingapatnam Beach",
+    ],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "hyd-eluru",
+    slug: "hyderabad-to-eluru-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Eluru",
+    distance: 370,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Eluru for family trips, business travel, temple visits, and Andhra Pradesh sightseeing.",
+    highlights: ["Kolleru Lake", "Dwaraka Tirumala", "Eluru Buddha Park"],
+    tollEstimate: 1110,
+  },
+
+  {
+    id: "hyd-bhimavaram",
+    slug: "hyderabad-to-bhimavaram-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bhimavaram",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bhimavaram for family trips, pilgrimage tours, temple visits, and Andhra Pradesh sightseeing.",
+    highlights: ["Somarama Temple", "Mavullamma Temple", "Kolleru Lake"],
+    tollEstimate: 1290,
+  },
+
+  {
+    id: "hyd-tadepalligudem",
+    slug: "hyderabad-to-tadepalligudem-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Tadepalligudem",
+    distance: 400,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Tadepalligudem for family trips, business travel, temple visits, and Andhra Pradesh sightseeing.",
+    highlights: [
+      "Dwaraka Tirumala",
+      "Tadepalligudem Temples",
+      "Godavari Region",
+    ],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "hyd-tanuku",
+    slug: "hyderabad-to-tanuku-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Tanuku",
+    distance: 450,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Tanuku for family trips, pilgrimage tours, business travel, and Andhra Pradesh sightseeing.",
+    highlights: ["Perupalem Beach", "Dwaraka Tirumala", "Godavari Delta"],
+    tollEstimate: 1350,
+  },
+  {
+    id: "hyd-narsapur",
+    slug: "hyderabad-to-narsapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Narsapur",
+    distance: 475,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Narsapur for family trips, coastal vacations, temple visits, and Andhra Pradesh sightseeing.",
+    highlights: ["Narsapur Lace Industry", "Godavari Delta", "Perupalem Beach"],
+    tollEstimate: 1425,
+  },
+
+  {
+    id: "hyd-palakollu",
+    slug: "hyderabad-to-palakollu-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Palakollu",
+    distance: 450,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Palakollu for family trips, pilgrimage tours, temple visits, and Andhra Pradesh sightseeing.",
+    highlights: [
+      "Ksheera Ramalingeswara Temple",
+      "Godavari Delta",
+      "Perupalem Beach",
+    ],
+    tollEstimate: 1350,
+  },
+
+  {
+    id: "hyd-machilipatnam",
+    slug: "hyderabad-to-machilipatnam-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Machilipatnam",
+    distance: 390,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Machilipatnam for family vacations, coastal trips, business travel, and Andhra Pradesh sightseeing.",
+    highlights: [
+      "Manginapudi Beach",
+      "Machilipatnam Lighthouse",
+      "Panduranga Temple",
+    ],
+    tollEstimate: 1170,
+  },
+
+  {
+    id: "hyd-tenali",
+    slug: "hyderabad-to-tenali-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Tenali",
+    distance: 330,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Tenali for family trips, business travel, pilgrimage tours, and Andhra Pradesh sightseeing.",
+    highlights: ["Tenali Temples", "Undavalli Caves", "Amaravathi"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "hyd-chirala",
+    slug: "hyderabad-to-chirala-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Chirala",
+    distance: 390,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Chirala for family vacations, beach holidays, coastal trips, and Andhra Pradesh sightseeing.",
+    highlights: [
+      "Ramapuram Beach",
+      "Vodarevu Beach",
+      "Chirala Handloom Market",
+    ],
+    tollEstimate: 1170,
+  },
+
+  {
+    id: "hyd-ongole",
+    slug: "hyderabad-to-ongole-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Ongole",
+    distance: 420,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Ongole for family trips, coastal vacations, business travel, and Andhra Pradesh sightseeing.",
+    highlights: ["Kothapatnam Beach", "Chirala Beach", "Ongole Bull"],
+    tollEstimate: 1260,
+  },
+
+  {
+    id: "hyd-kavali",
+    slug: "hyderabad-to-kavali-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kavali",
+    distance: 500,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kavali for family trips, coastal vacations, pilgrimage tours, and Andhra Pradesh travel.",
+    highlights: ["Udayagiri Fort", "Kavali Beach", "Jonnawada Temple"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "hyd-kandukur",
+    slug: "hyderabad-to-kandukur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kandukur",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kandukur for family trips, business travel, coastal journeys, and Andhra Pradesh sightseeing.",
+    highlights: ["Kandukur Temples", "Kothapatnam Beach", "Ongole"],
+    tollEstimate: 1290,
+  },
+
+  {
+    id: "hyd-markapur",
+    slug: "hyderabad-to-markapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Markapur",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Markapur for pilgrimage tours, family trips, temple visits, and Andhra Pradesh travel.",
+    highlights: [
+      "Chennakesava Swamy Temple",
+      "Srisailam",
+      "Gundalakamma River",
+    ],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "hyd-podili",
+    slug: "hyderabad-to-podili-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Podili",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Podili for family trips, pilgrimage tours, business travel, and Andhra Pradesh sightseeing.",
+    highlights: ["Podili Temples", "Markapur", "Gundalakamma Region"],
+    tollEstimate: 900,
+  },
+  {
+    id: "hyd-kanigiri",
+    slug: "hyderabad-to-kanigiri-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kanigiri",
+    distance: 330,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kanigiri for family trips, business travel, pilgrimage tours, and Andhra Pradesh sightseeing.",
+    highlights: ["Kanigiri Fort", "Gundlakamma River", "Kandukur"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "hyd-darsi",
+    slug: "hyderabad-to-darsi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Darsi",
+    distance: 310,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Darsi for family trips, business travel, temple visits, and Andhra Pradesh sightseeing.",
+    highlights: ["Darsi Temples", "Markapur", "Gundlakamma Region"],
+    tollEstimate: 930,
+  },
+
+  {
+    id: "hyd-chimakurthy",
+    slug: "hyderabad-to-chimakurthy-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Chimakurthy",
+    distance: 400,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Chimakurthy for family trips, business travel, local sightseeing, and Andhra Pradesh travel.",
+    highlights: ["Chimakurthy Granite Industry", "Ongole", "Kothapatnam Beach"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "hyd-vinukonda",
+    slug: "hyderabad-to-vinukonda-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Vinukonda",
+    distance: 280,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Vinukonda for family trips, business travel, pilgrimage tours, and Andhra Pradesh sightseeing.",
+    highlights: ["Vinukonda Fort", "Kondaveedu Fort", "Amaravathi"],
+    tollEstimate: 840,
+  },
+
+  {
+    id: "hyd-narasaraopet",
+    slug: "hyderabad-to-narasaraopet-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Narasaraopet",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Narasaraopet for family trips, business travel, pilgrimage tours, and Andhra Pradesh sightseeing.",
+    highlights: ["Kotappakonda", "Trikoteswara Swamy Temple", "Kondaveedu"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "hyd-sattenapalle",
+    slug: "hyderabad-to-sattenapalle-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Sattenapalle",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Sattenapalle for family trips, business travel, pilgrimage tours, and Andhra Pradesh sightseeing.",
+    highlights: ["Amaravathi", "Kondaveedu Fort", "Kotappakonda"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "hyd-piduguralla",
+    slug: "hyderabad-to-piduguralla-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Piduguralla",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Piduguralla for family trips, business travel, pilgrimage tours, and Andhra Pradesh travel.",
+    highlights: ["Piduguralla Limestone Region", "Macherla", "Nagarjuna Sagar"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "hyd-macherla",
+    slug: "hyderabad-to-macherla-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Macherla",
+    distance: 230,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Macherla for pilgrimage tours, family trips, temple visits, and Andhra Pradesh sightseeing.",
+    highlights: [
+      "Chennakesava Swamy Temple",
+      "Nagarjuna Sagar",
+      "Ethipothala Falls",
+    ],
+    tollEstimate: 690,
+  },
+
+  {
+    id: "hyd-nalgonda",
+    slug: "hyderabad-to-nalgonda-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nalgonda",
+    distance: 105,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nalgonda for family trips, business travel, pilgrimage tours, and Telangana sightseeing.",
+    highlights: ["Bhongir Fort", "Nagarjuna Sagar", "Yadadri Temple"],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "hyd-miryalaguda",
+    slug: "hyderabad-to-miryalaguda-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Miryalaguda",
+    distance: 150,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Miryalaguda for family trips, business travel, pilgrimage tours, and Telangana travel.",
+    highlights: ["Nagarjuna Sagar", "Halia", "Yadadri Temple"],
+    tollEstimate: 450,
+  },
+  {
+    id: "hyd-kodad",
+    slug: "hyderabad-to-kodad-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kodad",
+    distance: 190,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kodad for family trips, business travel, pilgrimage tours, and Telangana travel.",
+    highlights: ["Munneru River", "Nagarjuna Sagar", "Kodad Temples"],
+    tollEstimate: 570,
+  },
+  {
+    id: "hyd-jangaon",
+    slug: "hyderabad-to-jangaon-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jangaon",
+    distance: 85,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jangaon for family trips, business travel, temple visits, and Telangana sightseeing.",
+    highlights: ["Kolanupaka Jain Temple", "Yadadri", "Pembarti Handicrafts"],
+    tollEstimate: 255,
+  },
+
+  {
+    id: "hyd-siddipet",
+    slug: "hyderabad-to-siddipet-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Siddipet",
+    distance: 105,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Siddipet for family trips, business travel, pilgrimage tours, and Telangana travel.",
+    highlights: [
+      "Komuravelli Mallanna Temple",
+      "Kondapochamma Reservoir",
+      "Husnabad",
+    ],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "hyd-medak",
+    slug: "hyderabad-to-medak-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Medak",
+    distance: 100,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Medak for family trips, heritage tours, pilgrimage visits, and Telangana sightseeing.",
+    highlights: [
+      "Medak Cathedral",
+      "Medak Fort",
+      "Pocharam Wildlife Sanctuary",
+    ],
+    tollEstimate: 300,
+  },
+
+  {
+    id: "hyd-sangareddy",
+    slug: "hyderabad-to-sangareddy-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Sangareddy",
+    distance: 55,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Hyderabad to Sangareddy for family trips, business travel, local sightseeing, and Telangana travel.",
+    highlights: [
+      "Manjeera Wildlife Sanctuary",
+      "Singur Dam",
+      "Sangareddy Museum",
+    ],
+    tollEstimate: 165,
+  },
+
+  {
+    id: "hyd-zaheerabad",
+    slug: "hyderabad-to-zaheerabad-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Zaheerabad",
+    distance: 105,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Zaheerabad for family trips, business travel, pilgrimage tours, and Telangana sightseeing.",
+    highlights: ["Bidar", "Manjeera River", "Zaheerabad Temples"],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "hyd-narayankhed",
+    slug: "hyderabad-to-narayankhed-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Narayankhed",
+    distance: 165,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Narayankhed for family trips, pilgrimage tours, rural getaways, and Telangana travel.",
+    highlights: ["Manjeera River", "Narayankhed Temples", "Bidar"],
+    tollEstimate: 495,
+  },
+
+  {
+    id: "hyd-bidar",
+    slug: "hyderabad-to-bidar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bidar",
+    distance: 145,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bidar for family vacations, heritage tours, pilgrimage trips, and Karnataka sightseeing.",
+    highlights: ["Bidar Fort", "Gurudwara Nanak Jhira Sahib", "Bahmani Tombs"],
+    tollEstimate: 435,
+  },
+
+  {
+    id: "hyd-bhalki",
+    slug: "hyderabad-to-bhalki-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bhalki",
+    distance: 125,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bhalki for family trips, pilgrimage tours, heritage sightseeing, and Karnataka travel.",
+    highlights: ["Bhalki Fort", "Guru Nanak Jhira Sahib", "Bidar"],
+    tollEstimate: 375,
+  },
+  {
+    id: "hyd-basavakalyan",
+    slug: "hyderabad-to-basavakalyan-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Basavakalyan",
+    distance: 180,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Basavakalyan for family trips, heritage tours, pilgrimage visits, and Karnataka sightseeing.",
+    highlights: ["Basavakalyan Fort", "Anubhava Mantapa", "Kudala Sangama"],
+    tollEstimate: 540,
+  },
+
+  {
+    id: "hyd-gulbarga",
+    slug: "hyderabad-to-gulbarga-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Gulbarga",
+    distance: 230,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Gulbarga for family trips, heritage tours, pilgrimage visits, and Karnataka sightseeing.",
+    highlights: ["Gulbarga Fort", "Khwaja Bande Nawaz Dargah", "Haft Gumbaz"],
+    tollEstimate: 690,
+  },
+
+  {
+    id: "hyd-yadgir",
+    slug: "hyderabad-to-yadgir-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Yadgir",
+    distance: 225,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Yadgir for family trips, heritage tours, pilgrimage visits, and Karnataka travel.",
+    highlights: ["Yadgir Fort", "Sannati", "Buddha Vihara"],
+    tollEstimate: 675,
+  },
+
+  {
+    id: "hyd-shahapur",
+    slug: "hyderabad-to-shahapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Shahapur",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Shahapur for family trips, pilgrimage tours, heritage sightseeing, and Karnataka travel.",
+    highlights: ["Shahapur Fort", "Sannati", "Yadgir"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "hyd-shorapur",
+    slug: "hyderabad-to-shorapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Shorapur",
+    distance: 290,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Shorapur for family trips, heritage tours, cultural sightseeing, and Karnataka travel.",
+    highlights: ["Shorapur Fort", "Surpur Heritage Sites", "Krishna River"],
+    tollEstimate: 870,
+  },
+
+  {
+    id: "hyd-raichur",
+    slug: "hyderabad-to-raichur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Raichur",
+    distance: 210,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Raichur for family trips, heritage tours, pilgrimage visits, and Karnataka sightseeing.",
+    highlights: ["Raichur Fort", "Maski", "Ek Minar Ki Masjid"],
+    tollEstimate: 630,
+  },
+
+  {
+    id: "hyd-sindhanur",
+    slug: "hyderabad-to-sindhanur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Sindhanur",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Sindhanur for family trips, business travel, pilgrimage tours, and Karnataka travel.",
+    highlights: ["Tungabhadra River", "Manvi", "Raichur"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "hyd-gangavathi",
+    slug: "hyderabad-to-gangavathi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Gangavathi",
+    distance: 350,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Gangavathi for family vacations, heritage tours, pilgrimage trips, and Hampi sightseeing.",
+    highlights: ["Hampi", "Virupaksha Temple", "Tungabhadra River"],
+    tollEstimate: 1050,
+  },
+
+  {
+    id: "hyd-koppal",
+    slug: "hyderabad-to-koppal-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Koppal",
+    distance: 365,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Koppal for family trips, heritage tours, pilgrimage visits, and Karnataka sightseeing.",
+    highlights: ["Koppal Fort", "Hampi", "Anegundi"],
+    tollEstimate: 1095,
+  },
+
+  {
+    id: "hyd-yelburga",
+    slug: "hyderabad-to-yelburga-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Yelburga",
+    distance: 390,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Yelburga for family trips, heritage tours, temple visits, and Karnataka travel.",
+    highlights: ["Itagi Bhimambika Temple", "Koppal", "Hampi"],
+    tollEstimate: 1170,
+  },
+  {
+    id: "hyd-kushtagi",
+    slug: "hyderabad-to-kushtagi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kushtagi",
+    distance: 400,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kushtagi for family trips, heritage tours, pilgrimage visits, and Karnataka travel.",
+    highlights: ["Kushtagi Temples", "Koppal", "Hampi"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "hyd-badami",
+    slug: "hyderabad-to-badami-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Badami",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Badami for heritage tours, family vacations, temple visits, and Karnataka sightseeing.",
+    highlights: ["Badami Cave Temples", "Agastya Lake", "Badami Fort"],
+    tollEstimate: 1290,
+  },
+
+  {
+    id: "hyd-aihole",
+    slug: "hyderabad-to-aihole-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Aihole",
+    distance: 450,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Aihole for heritage tours, family trips, temple sightseeing, and Karnataka travel.",
+    highlights: ["Durga Temple", "Lad Khan Temple", "Ravanaphadi Cave"],
+    tollEstimate: 1350,
+  },
+
+  {
+    id: "hyd-pattadakal",
+    slug: "hyderabad-to-pattadakal-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Pattadakal",
+    distance: 450,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Pattadakal for heritage tours, family vacations, temple visits, and historical sightseeing.",
+    highlights: [
+      "Virupaksha Temple",
+      "Pattadakal Group of Monuments",
+      "Mallikarjuna Temple",
+    ],
+    tollEstimate: 1350,
+  },
+
+  {
+    id: "hyd-bagalkot",
+    slug: "hyderabad-to-bagalkot-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bagalkot",
+    distance: 480,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bagalkot for family trips, heritage tours, pilgrimage visits, and Karnataka sightseeing.",
+    highlights: ["Badami", "Aihole", "Pattadakal"],
+    tollEstimate: 1440,
+  },
+
+  {
+    id: "hyd-mudhol",
+    slug: "hyderabad-to-mudhol-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mudhol",
+    distance: 520,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mudhol for family trips, heritage tours, business travel, and Karnataka sightseeing.",
+    highlights: ["Mudhol Palace", "Ghataprabha River", "Bagalkot"],
+    tollEstimate: 1560,
+  },
+
+  {
+    id: "hyd-jamakhandi",
+    slug: "hyderabad-to-jamakhandi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jamakhandi",
+    distance: 540,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jamakhandi for family trips, heritage tours, pilgrimage visits, and Karnataka travel.",
+    highlights: ["Jamakhandi Palace", "Ghataprabha Region", "Badami"],
+    tollEstimate: 1620,
+  },
+
+  {
+    id: "hyd-bijapur",
+    slug: "hyderabad-to-bijapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bijapur",
+    distance: 520,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bijapur for heritage tours, family vacations, historical sightseeing, and Karnataka travel.",
+    highlights: ["Gol Gumbaz", "Ibrahim Rauza", "Bijapur Fort"],
+    tollEstimate: 1560,
+  },
+
+  {
+    id: "hyd-basavana-bagewadi",
+    slug: "hyderabad-to-basavana-bagewadi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Basavana Bagewadi",
+    distance: 500,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Basavana Bagewadi for pilgrimage tours, family trips, temple visits, and Karnataka sightseeing.",
+    highlights: ["Basaveshwara Temple", "Bijapur", "Almatti Dam"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "hyd-sindagi",
+    slug: "hyderabad-to-sindagi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Sindagi",
+    distance: 470,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Sindagi for family trips, pilgrimage tours, heritage sightseeing, and Karnataka travel.",
+    highlights: ["Sindagi Temples", "Bijapur", "Almatti Dam"],
+    tollEstimate: 1410,
+  },
+  {
+    id: "hyd-indi",
+    slug: "hyderabad-to-indi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Indi",
+    distance: 420,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Indi for family trips, business travel, pilgrimage tours, and Karnataka sightseeing.",
+    highlights: ["Indi Temples", "Bijapur", "Almatti Dam"],
+    tollEstimate: 1260,
+  },
+
+  {
+    id: "hyd-solapur",
+    slug: "hyderabad-to-solapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Solapur",
+    distance: 310,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Solapur for family trips, business travel, pilgrimage tours, and Maharashtra sightseeing.",
+    highlights: ["Siddheshwar Temple", "Akkalkot", "Solapur Fort"],
+    tollEstimate: 930,
+  },
+
+  {
+    id: "hyd-pandharpur",
+    slug: "hyderabad-to-pandharpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Pandharpur",
+    distance: 360,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Pandharpur for pilgrimage tours, family trips, temple visits, and Maharashtra sightseeing.",
+    highlights: [
+      "Vitthal Rukmini Temple",
+      "Chandrabhaga River",
+      "Pundalik Temple",
+    ],
+    tollEstimate: 1080,
+  },
+
+  {
+    id: "hyd-barshi",
+    slug: "hyderabad-to-barshi-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Barshi",
+    distance: 330,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Barshi for family trips, pilgrimage tours, temple visits, and Maharashtra travel.",
+    highlights: ["Bhagwant Temple", "Barshi Temples", "Solapur"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "hyd-latur",
+    slug: "hyderabad-to-latur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Latur",
+    distance: 280,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Latur for family trips, business travel, educational tours, and Maharashtra sightseeing.",
+    highlights: ["Udgir Fort", "Kharosa Caves", "Ausa Fort"],
+    tollEstimate: 840,
+  },
+
+  {
+    id: "hyd-osmanabad",
+    slug: "hyderabad-to-osmanabad-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Osmanabad",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Osmanabad for family trips, pilgrimage tours, heritage visits, and Maharashtra sightseeing.",
+    highlights: ["Tulja Bhavani Temple", "Naldurg Fort", "Dharashiv Caves"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "hyd-nanded",
+    slug: "hyderabad-to-nanded-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nanded",
+    distance: 280,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nanded for pilgrimage tours, family trips, religious visits, and Maharashtra travel.",
+    highlights: [
+      "Takht Sachkhand Shri Hazur Sahib",
+      "Nanded Fort",
+      "Godavari River",
+    ],
+    tollEstimate: 840,
+  },
+
+  {
+    id: "hyd-parbhani",
+    slug: "hyderabad-to-parbhani-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Parbhani",
+    distance: 320,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Parbhani for family trips, pilgrimage tours, business travel, and Maharashtra sightseeing.",
+    highlights: ["Shri Sai Janmasthan", "Parbhani Temples", "Nanded"],
+    tollEstimate: 960,
+  },
+
+  {
+    id: "hyd-hingoli",
+    slug: "hyderabad-to-hingoli-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Hingoli",
+    distance: 370,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Hingoli for family trips, pilgrimage tours, temple visits, and Maharashtra travel.",
+    highlights: ["Aundha Nagnath Temple", "Narsi Namdev", "Hingoli Temples"],
+    tollEstimate: 1110,
+  },
+
+  {
+    id: "hyd-jalna",
+    slug: "hyderabad-to-jalna-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jalna",
+    distance: 500,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jalna for family trips, business travel, pilgrimage tours, and Maharashtra sightseeing.",
+    highlights: ["Jamb Samarth", "Jalna Fort", "Matsyodari Devi Temple"],
+    tollEstimate: 1500,
+  },
+  {
+    id: "hyd-beed",
+    slug: "hyderabad-to-beed-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Beed",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Beed for family trips, pilgrimage tours, business travel, and Maharashtra sightseeing.",
+    highlights: ["Kankaleshwar Temple", "Majalgaon Dam", "Beed Fort"],
+    tollEstimate: 1290,
+  },
+
+  {
+    id: "hyd-dharashiv",
+    slug: "hyderabad-to-dharashiv-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Dharashiv",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Dharashiv for family trips, heritage tours, pilgrimage visits, and Maharashtra sightseeing.",
+    highlights: ["Dharashiv Caves", "Naldurg Fort", "Tulja Bhavani Temple"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "hyd-tuljapur",
+    slug: "hyderabad-to-tuljapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Tuljapur",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Tuljapur for pilgrimage tours, family trips, temple visits, and Maharashtra travel.",
+    highlights: ["Tulja Bhavani Temple", "Ghat Shila Temple", "Kallol Tirth"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "hyd-shahada",
+    slug: "hyderabad-to-shahada-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Shahada",
+    distance: 930,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Shahada for family trips, pilgrimage tours, cultural travel, and Maharashtra sightseeing.",
+    highlights: ["Prakasha", "Dandapaneshwar Temple", "Toranmal"],
+    tollEstimate: 2790,
+  },
+
+  {
+    id: "hyd-navapur",
+    slug: "hyderabad-to-navapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Navapur",
+    distance: 1000,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Navapur for family trips, nature tours, cultural vacations, and Maharashtra travel.",
+    highlights: ["Unai Hot Springs", "Toranmal", "Nandurbar"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "hyd-anand",
+    slug: "hyderabad-to-anand-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Anand",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Anand for family trips, business travel, educational tours, and Gujarat sightseeing.",
+    highlights: ["Amul Dairy", "Sardar Patel Memorial", "Flo Art Gallery"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "hyd-kheda",
+    slug: "hyderabad-to-kheda-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Kheda",
+    distance: 1080,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Kheda for family trips, business travel, pilgrimage tours, and Gujarat sightseeing.",
+    highlights: ["Kheda Fort", "Galteshwar Mahadev Temple", "Vadtal"],
+    tollEstimate: 3240,
+  },
+
+  {
+    id: "hyd-dahod",
+    slug: "hyderabad-to-dahod-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Dahod",
+    distance: 1000,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Dahod for family trips, business travel, cultural tours, and Gujarat sightseeing.",
+    highlights: ["Ratanmahal Sloth Bear Sanctuary", "Dahod Fort", "Kali Dam"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "hyd-godhra",
+    slug: "hyderabad-to-godhra-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Godhra",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Godhra for family trips, pilgrimage tours, business travel, and Gujarat sightseeing.",
+    highlights: ["Godhra Temples", "Pavagadh", "Champaner"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "hyd-lunavada",
+    slug: "hyderabad-to-lunavada-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Lunavada",
+    distance: 1100,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Lunavada for family trips, nature tours, heritage travel, and Gujarat sightseeing.",
+    highlights: ["Lunavada Palace", "Kadana Dam", "Mahi River"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "hyd-modasa",
+    slug: "hyderabad-to-modasa-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Modasa",
+    distance: 1200,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Modasa for family trips, business travel, heritage tours, and Gujarat sightseeing.",
+    highlights: ["Shamlaji Temple", "Khedbrahma", "Sabarkantha Region"],
+    tollEstimate: 3600,
+  },
+
+  {
+    id: "hyd-himmatnagar",
+    slug: "hyderabad-to-himmatnagar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Himmatnagar",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Himmatnagar for family trips, business travel, pilgrimage tours, and Gujarat sightseeing.",
+    highlights: ["Shamlaji Temple", "Idar", "Himmatnagar Heritage Sites"],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-idar",
+    slug: "hyderabad-to-idar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Idar",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Idar for family trips, heritage tours, nature vacations, and Gujarat sightseeing.",
+    highlights: ["Idar Fort", "Idariyo Gadh", "Shamlaji"],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-shamlaji",
+    slug: "hyderabad-to-shamlaji-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Shamlaji",
+    distance: 1300,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Shamlaji for pilgrimage tours, family trips, temple visits, and Gujarat sightseeing.",
+    highlights: ["Shamlaji Temple", "Devni Mori", "Meshwo River"],
+    tollEstimate: 3900,
+  },
+  {
+    id: "hyd-udaipur-rajasthan",
+    slug: "hyderabad-to-udaipur-rajasthan-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Udaipur",
+    distance: 1250,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Udaipur for family vacations, heritage tours, wedding trips, and Rajasthan sightseeing.",
+    highlights: ["City Palace", "Lake Pichola", "Jag Mandir"],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "hyd-banswara",
+    slug: "hyderabad-to-banswara-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Banswara",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Banswara for family vacations, nature tours, heritage trips, and Rajasthan sightseeing.",
+    highlights: ["Mahi Dam", "Anand Sagar Lake", "Tripura Sundari Temple"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "hyd-pratapgarh-rajasthan",
+    slug: "hyderabad-to-pratapgarh-rajasthan-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Pratapgarh",
+    distance: 1100,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Pratapgarh for family trips, heritage tours, cultural vacations, and Rajasthan sightseeing.",
+    highlights: ["Sitamata Wildlife Sanctuary", "Devgarh", "Jai Stambh"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "hyd-chittorgarh",
+    slug: "hyderabad-to-chittorgarh-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Chittorgarh",
+    distance: 1200,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Chittorgarh for heritage tours, family vacations, historical sightseeing, and Rajasthan travel.",
+    highlights: ["Chittorgarh Fort", "Vijay Stambh", "Kirti Stambh"],
+    tollEstimate: 3600,
+  },
+
+  {
+    id: "hyd-neemuch",
+    slug: "hyderabad-to-neemuch-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Neemuch",
+    distance: 1150,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Neemuch for family trips, pilgrimage tours, heritage visits, and Madhya Pradesh sightseeing.",
+    highlights: ["Sukhanand Ji Ashram", "Nava Toran Temple", "Gandhi Sagar"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-mandsaur",
+    slug: "hyderabad-to-mandsaur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mandsaur",
+    distance: 1100,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mandsaur for family trips, heritage tours, temple visits, and Madhya Pradesh travel.",
+    highlights: ["Pashupatinath Temple", "Gandhi Sagar Dam", "Bhanpura Museum"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "hyd-ratlam",
+    slug: "hyderabad-to-ratlam-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Ratlam",
+    distance: 1000,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Ratlam for family trips, business travel, heritage tours, and Madhya Pradesh sightseeing.",
+    highlights: ["Kaktel Point", "Cactus Garden", "Sailana"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "hyd-jhabua",
+    slug: "hyderabad-to-jhabua-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jhabua",
+    distance: 1000,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jhabua for family trips, cultural tours, nature vacations, and Madhya Pradesh travel.",
+    highlights: ["Bhagoria Festival", "Deojhari", "Jhabua Tribal Culture"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "hyd-alirajpur",
+    slug: "hyderabad-to-alirajpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Alirajpur",
+    distance: 950,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Alirajpur for family trips, cultural tours, nature vacations, and Madhya Pradesh sightseeing.",
+    highlights: ["Choral Dam", "Narmada Valley", "Tribal Villages"],
+    tollEstimate: 2850,
+  },
+  {
+    id: "hyd-barwani",
+    slug: "hyderabad-to-barwani-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Barwani",
+    distance: 850,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Barwani for family trips, nature tours, heritage visits, and Madhya Pradesh sightseeing.",
+    highlights: ["Rajghat", "Bawangaja", "Narmada Valley"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "hyd-khargone",
+    slug: "hyderabad-to-khargone-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Khargone",
+    distance: 800,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Khargone for family trips, heritage tours, pilgrimage visits, and Madhya Pradesh sightseeing.",
+    highlights: ["Maheshwar", "Ahilya Fort", "Narmada River"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "hyd-khandwa",
+    slug: "hyderabad-to-khandwa-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Khandwa",
+    distance: 700,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Khandwa for family trips, pilgrimage tours, heritage visits, and Madhya Pradesh travel.",
+    highlights: ["Omkareshwar", "Dada Dhuniwale Darbar", "Narmada River"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "hyd-burhanpur",
+    slug: "hyderabad-to-burhanpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Burhanpur",
+    distance: 650,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Burhanpur for family vacations, heritage tours, historical sightseeing, and Madhya Pradesh travel.",
+    highlights: ["Shahi Qila", "Asirgarh Fort", "Dargah-e-Hakimi"],
+    tollEstimate: 1950,
+  },
+
+  {
+    id: "hyd-akola",
+    slug: "hyderabad-to-akola-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Akola",
+    distance: 600,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Akola for family trips, business travel, heritage tours, and Maharashtra sightseeing.",
+    highlights: ["Akola Fort", "Raj Rajeshwar Temple", "Narnala Fort"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "hyd-washim",
+    slug: "hyderabad-to-washim-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Washim",
+    distance: 500,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Washim for family trips, pilgrimage tours, temple visits, and Maharashtra travel.",
+    highlights: ["Balaji Temple", "Padmatirtha", "Washim Heritage Sites"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "hyd-buldhana",
+    slug: "hyderabad-to-buldhana-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Buldhana",
+    distance: 550,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Buldhana for family trips, pilgrimage tours, nature vacations, and Maharashtra sightseeing.",
+    highlights: ["Gajanan Maharaj Temple", "Lonar Lake", "Shegaon"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "hyd-shegaon",
+    slug: "hyderabad-to-shegaon-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Shegaon",
+    distance: 600,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Shegaon for pilgrimage tours, family trips, temple visits, and Maharashtra sightseeing.",
+    highlights: [
+      "Gajanan Maharaj Temple",
+      "Anand Sagar",
+      "Shegaon Heritage Sites",
+    ],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "hyd-khamgaon",
+    slug: "hyderabad-to-khamgaon-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Khamgaon",
+    distance: 580,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Khamgaon for family trips, business travel, pilgrimage tours, and Maharashtra sightseeing.",
+    highlights: ["Shegaon", "Gajanan Maharaj Temple", "Buldhana"],
+    tollEstimate: 1740,
+  },
+  {
+    id: "hyd-malkapur",
+    slug: "hyderabad-to-malkapur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Malkapur",
+    distance: 620,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Malkapur for family trips, business travel, pilgrimage tours, and Maharashtra sightseeing.",
+    highlights: ["Shegaon", "Gajanan Maharaj Temple", "Buldhana"],
+    tollEstimate: 1860,
+  },
+
+  {
+    id: "hyd-jalgaon",
+    slug: "hyderabad-to-jalgaon-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Jalgaon",
+    distance: 700,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Jalgaon for family trips, business travel, heritage tours, and Maharashtra sightseeing.",
+    highlights: ["Ajanta Caves", "Gandhi Research Foundation", "Mehrun Lake"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "hyd-chalisgaon",
+    slug: "hyderabad-to-chalisgaon-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Chalisgaon",
+    distance: 780,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Chalisgaon for family trips, business travel, pilgrimage tours, and Maharashtra sightseeing.",
+    highlights: ["Patnadevi Temple", "Ajanta Caves", "Jalgaon"],
+    tollEstimate: 2340,
+  },
+
+  {
+    id: "hyd-manmad",
+    slug: "hyderabad-to-manmad-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Manmad",
+    distance: 850,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Manmad for family trips, pilgrimage tours, business travel, and Maharashtra sightseeing.",
+    highlights: ["Trimbakeshwar", "Shirdi", "Ankai Fort"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "hyd-malegaon",
+    slug: "hyderabad-to-malegaon-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Malegaon",
+    distance: 850,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Malegaon for family trips, business travel, pilgrimage tours, and Maharashtra travel.",
+    highlights: ["Chandwad", "Ankai Fort", "Shirdi"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "hyd-dhule",
+    slug: "hyderabad-to-dhule-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Dhule",
+    distance: 850,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Dhule for family trips, business travel, road trips, and Maharashtra sightseeing.",
+    highlights: ["Laling Fort", "Songir Fort", "Shree Swaminarayan Temple"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "hyd-shirpur",
+    slug: "hyderabad-to-shirpur-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Shirpur",
+    distance: 900,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Shirpur for family trips, business travel, pilgrimage tours, and Maharashtra sightseeing.",
+    highlights: ["Shirpur Temples", "Thalner Fort", "Narmada Region"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "hyd-dondaicha",
+    slug: "hyderabad-to-dondaicha-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Dondaicha",
+    distance: 950,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Dondaicha for family trips, business travel, cultural tours, and Maharashtra travel.",
+    highlights: ["Nandurbar", "Shahada", "Toranmal"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "hyd-sindkheda",
+    slug: "hyderabad-to-sindkheda-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Sindkheda",
+    distance: 900,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Sindkheda for family trips, heritage tours, pilgrimage visits, and Maharashtra travel.",
+    highlights: ["Thalner Fort", "Nandurbar", "Shirpur"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "hyd-nandurbar",
+    slug: "hyderabad-to-nandurbar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nandurbar",
+    distance: 950,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nandurbar for family trips, cultural tours, nature vacations, and Maharashtra travel.",
+    highlights: [
+      "Dandapaneshwar Ganesh Temple",
+      "Prakasha Temples",
+      "Toranmal",
+    ],
+    tollEstimate: 2850,
+  },
+  {
+    id: "hyd-taloda",
+    slug: "hyderabad-to-taloda-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Taloda",
+    distance: 980,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Taloda for family trips, cultural tours, nature vacations, and Maharashtra travel.",
+    highlights: ["Nandurbar", "Prakasha Temples", "Toranmal"],
+    tollEstimate: 2940,
+  },
+
+  {
+    id: "hyd-akkalkuwa",
+    slug: "hyderabad-to-akkalkuwa-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Akkalkuwa",
+    distance: 1000,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Akkalkuwa for family trips, nature tours, cultural vacations, and Maharashtra sightseeing.",
+    highlights: ["Dediapada", "Narmada Valley", "Toranmal"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "hyd-dahanu",
+    slug: "hyderabad-to-dahanu-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Dahanu",
+    distance: 1050,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Dahanu for family vacations, beach trips, nature tours, and Maharashtra sightseeing.",
+    highlights: ["Dahanu Beach", "Bordi Beach", "Dahanu Fort"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "hyd-palghar",
+    slug: "hyderabad-to-palghar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Palghar",
+    distance: 1100,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Palghar for family vacations, beach holidays, weekend trips, and Maharashtra sightseeing.",
+    highlights: ["Kelva Beach", "Shirgaon Fort", "Tandulwadi Fort"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "hyd-vasai",
+    slug: "hyderabad-to-vasai-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Vasai",
+    distance: 1150,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Vasai for family trips, heritage tours, beach vacations, and Mumbai sightseeing.",
+    highlights: ["Vasai Fort", "Vasai Beach", "Bassein Fort"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-virar",
+    slug: "hyderabad-to-virar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Virar",
+    distance: 1150,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Virar for family vacations, weekend getaways, pilgrimage trips, and Mumbai sightseeing.",
+    highlights: ["Jivdani Temple", "Arnala Fort", "Arnala Beach"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-bhayandar",
+    slug: "hyderabad-to-bhayandar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bhayandar",
+    distance: 1175,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bhayandar for family trips, business travel, weekend getaways, and Mumbai sightseeing.",
+    highlights: ["Gorai Beach", "Global Vipassana Pagoda", "Uttan Beach"],
+    tollEstimate: 3525,
+  },
+
+  {
+    id: "hyd-borivali",
+    slug: "hyderabad-to-borivali-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Borivali",
+    distance: 1200,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Borivali for family trips, corporate travel, weekend getaways, and Mumbai sightseeing.",
+    highlights: ["Sanjay Gandhi National Park", "Kanheri Caves", "Gorai Beach"],
+    tollEstimate: 3600,
+  },
+
+  {
+    id: "hyd-andheri",
+    slug: "hyderabad-to-andheri-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Andheri",
+    distance: 1220,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Andheri for family trips, corporate travel, airport transfers, and Mumbai sightseeing.",
+    highlights: ["Juhu Beach", "Versova Beach", "ISKCON Temple"],
+    tollEstimate: 3660,
+  },
+
+  {
+    id: "hyd-bandra",
+    slug: "hyderabad-to-bandra-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Bandra",
+    distance: 1230,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Bandra for family trips, corporate travel, weekend getaways, and Mumbai sightseeing.",
+    highlights: ["Bandra-Worli Sea Link", "Bandra Fort", "Mount Mary Basilica"],
+    tollEstimate: 3690,
+  },
+  {
+    id: "hyd-colaba",
+    slug: "hyderabad-to-colaba-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Colaba",
+    distance: 1230,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Colaba for family trips, corporate travel, sightseeing tours, and Mumbai city vacations.",
+    highlights: ["Gateway of India", "Colaba Causeway", "Taj Mahal Palace"],
+    tollEstimate: 3690,
+  },
+
+  {
+    id: "hyd-nariman-point",
+    slug: "hyderabad-to-nariman-point-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nariman Point",
+    distance: 1240,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nariman Point for corporate travel, family trips, business visits, and Mumbai sightseeing.",
+    highlights: ["Marine Drive", "Nariman Point", "Gateway of India"],
+    tollEstimate: 3720,
+  },
+
+  {
+    id: "hyd-marine-drive",
+    slug: "hyderabad-to-marine-drive-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Marine Drive",
+    distance: 1240,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Marine Drive for family vacations, city sightseeing, corporate trips, and Mumbai travel.",
+    highlights: ["Marine Drive", "Girgaon Chowpatty", "Nariman Point"],
+    tollEstimate: 3720,
+  },
+
+  {
+    id: "hyd-juhu",
+    slug: "hyderabad-to-juhu-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Juhu",
+    distance: 1220,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Juhu for family trips, beach vacations, corporate travel, and Mumbai sightseeing.",
+    highlights: ["Juhu Beach", "ISKCON Temple", "Prithvi Theatre"],
+    tollEstimate: 3660,
+  },
+
+  {
+    id: "hyd-versova",
+    slug: "hyderabad-to-versova-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Versova",
+    distance: 1220,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Versova for family trips, beach vacations, corporate travel, and Mumbai sightseeing.",
+    highlights: ["Versova Beach", "Versova Fort", "Juhu Beach"],
+    tollEstimate: 3660,
+  },
+
+  {
+    id: "hyd-madh-island",
+    slug: "hyderabad-to-madh-island-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Madh Island",
+    distance: 1240,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Madh Island for family vacations, beach trips, weekend getaways, and Mumbai sightseeing.",
+    highlights: ["Madh Island Beach", "Madh Fort", "Aksa Beach"],
+    tollEstimate: 3720,
+  },
+
+  {
+    id: "hyd-gorai",
+    slug: "hyderabad-to-gorai-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Gorai",
+    distance: 1220,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Gorai for family vacations, beach holidays, weekend trips, and Mumbai sightseeing.",
+    highlights: ["Gorai Beach", "Global Vipassana Pagoda", "EsselWorld"],
+    tollEstimate: 3660,
+  },
+
+  {
+    id: "hyd-manori",
+    slug: "hyderabad-to-manori-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Manori",
+    distance: 1230,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Manori for family vacations, beach trips, group outings, and Mumbai sightseeing.",
+    highlights: ["Manori Beach", "Gorai Beach", "Global Vipassana Pagoda"],
+    tollEstimate: 3690,
+  },
+
+  {
+    id: "hyd-uttan",
+    slug: "hyderabad-to-uttan-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Uttan",
+    distance: 1200,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Uttan for family trips, coastal vacations, weekend getaways, and Mumbai sightseeing.",
+    highlights: ["Uttan Beach", "St. Mary's Island", "Gorai Beach"],
+    tollEstimate: 3600,
+  },
+
+  {
+    id: "hyd-mira-road",
+    slug: "hyderabad-to-mira-road-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Mira Road",
+    distance: 1190,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Mira Road for family trips, corporate travel, weekend getaways, and Mumbai sightseeing.",
+    highlights: [
+      "Sanjay Gandhi National Park",
+      "Gorai Beach",
+      "Global Vipassana Pagoda",
+    ],
+    tollEstimate: 3570,
+  },
+  {
+    id: "hyd-naigaon",
+    slug: "hyderabad-to-naigaon-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Naigaon",
+    distance: 1180,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Naigaon for family trips, group travel, business visits, and Maharashtra sightseeing.",
+    highlights: ["Naigaon Beach", "Vasai Fort", "Gorai Beach"],
+    tollEstimate: 3540,
+  },
+
+  {
+    id: "hyd-nallasopara",
+    slug: "hyderabad-to-nallasopara-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Nallasopara",
+    distance: 1170,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Nallasopara for family trips, pilgrimage tours, weekend getaways, and Maharashtra travel.",
+    highlights: ["Chakreshwar Mahadev Temple", "Vasai Fort", "Arnala Beach"],
+    tollEstimate: 3510,
+  },
+
+  {
+    id: "hyd-vasai-2",
+    slug: "hyderabad-to-vasai-tempo-traveller-fare-2",
+    origin: "Hyderabad",
+    destination: "Vasai",
+    distance: 1150,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Vasai for family trips, heritage tours, beach vacations, and Maharashtra sightseeing.",
+    highlights: ["Vasai Fort", "Vasai Beach", "Bassein Fort"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-boisar",
+    slug: "hyderabad-to-boisar-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Boisar",
+    distance: 1080,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Boisar for family trips, business travel, beach holidays, and Maharashtra sightseeing.",
+    highlights: ["Tarapur Fort", "Shirgaon Beach", "Kelva Beach"],
+    tollEstimate: 3240,
+  },
+
+  {
+    id: "hyd-silvassa",
+    slug: "hyderabad-to-silvassa-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Silvassa",
+    distance: 1100,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Silvassa for family vacations, nature trips, group tours, and Dadra and Nagar Haveli sightseeing.",
+    highlights: ["Dudhni Waterfalls", "Vanganga Lake Garden", "Tribal Museum"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "hyd-daman",
+    slug: "hyderabad-to-daman-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Daman",
+    distance: 1150,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Daman for family vacations, beach holidays, weekend getaways, and coastal sightseeing.",
+    highlights: ["Devka Beach", "Jampore Beach", "Daman Fort"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "hyd-diu",
+    slug: "hyderabad-to-diu-tempo-traveller-fare",
+    origin: "Hyderabad",
+    destination: "Diu",
+    distance: 1450,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Hyderabad to Diu for family vacations, beach holidays, heritage tours, and coastal sightseeing.",
+    highlights: ["Diu Fort", "Nagoa Beach", "St. Paul's Church"],
+    tollEstimate: 4350,
   },
 ].map((route) => ({
   ...route,

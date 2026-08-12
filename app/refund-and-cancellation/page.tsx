@@ -9,6 +9,7 @@ import {
   Headphones,
   IndianRupee,
   MapPin,
+  Phone,
   RefreshCcw,
   ShieldCheck,
   XCircle,
@@ -111,14 +112,12 @@ export default function RefundAndCancellation() {
         </div>
       </section>
 
-
       {/* =========================================================
           MAIN CONTENT
       ========================================================= */}
       <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
 
         <div className="mx-auto max-w-5xl">
-
           {/* =====================================================
               INTRODUCTION
           ===================================================== */}
@@ -176,7 +175,6 @@ export default function RefundAndCancellation() {
 
             </div>
           </section>
-
 
           {/* =====================================================
               CANCELLATION POLICY
@@ -251,7 +249,6 @@ export default function RefundAndCancellation() {
 
             </div>
           </section>
-
 
           {/* =====================================================
               REFUND POLICY
@@ -340,7 +337,6 @@ export default function RefundAndCancellation() {
             </div>
           </section>
 
-
           {/* =====================================================
               DATE CHANGE
           ===================================================== */}
@@ -387,7 +383,6 @@ export default function RefundAndCancellation() {
             </div>
           </section>
 
-
           {/* =====================================================
               NO SHOW
           ===================================================== */}
@@ -431,7 +426,6 @@ export default function RefundAndCancellation() {
             </div>
           </section>
 
-
           {/* =====================================================
               IF YATRA CANCELS
           ===================================================== */}
@@ -466,7 +460,6 @@ export default function RefundAndCancellation() {
 
             </div>
           </section>
-
 
           {/* =====================================================
               IMPORTANT TERMS
@@ -506,7 +499,6 @@ export default function RefundAndCancellation() {
             </div>
           </section>
 
-
           {/* =====================================================
               PARENT COMPANY
           ===================================================== */}
@@ -543,16 +535,12 @@ export default function RefundAndCancellation() {
 
           </section>
 
-
           {/* =====================================================
               CONTACT SUPPORT
           ===================================================== */}
           <section className="mt-8 overflow-hidden rounded-3xl bg-gradient-to-r from-primary to-amber-500 p-7 text-slate-950 shadow-lg sm:p-10">
-
             <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-
               <div>
-
                 <span className="text-sm font-bold uppercase tracking-[0.18em] text-slate-800">
                   Need Assistance?
                 </span>
@@ -593,18 +581,15 @@ export default function RefundAndCancellation() {
                     <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
                     Sigra, Varanasi, Uttar Pradesh 221010
                   </p>
-
                 </div>
-
               </div>
-
 
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
                 <a
                   href="tel:+918448445504"
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-950 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-slate-800"
                 >
-                  <Headphones className="h-4 w-4" />
+                  <Phone className="h-4 w-4" />
                   Call Support
                 </a>
 
@@ -616,7 +601,6 @@ export default function RefundAndCancellation() {
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </div>
-
             </div>
           </section>
         </div>

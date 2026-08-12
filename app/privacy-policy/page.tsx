@@ -13,6 +13,7 @@ import {
   Mail,
   ShieldCheck,
   UserCheck,
+  Phone,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -636,7 +637,7 @@ export default function PrivacyPolicy() {
 
                 <div className="mt-6 space-y-3 text-sm font-semibold text-slate-900">
                   <p className="flex items-center gap-2">
-                    <Headphones className="h-4 w-4" />
+                    <Phone className="h-4 w-4" />
 
                     <span>
                       Phone:{" "}
@@ -676,7 +677,7 @@ export default function PrivacyPolicy() {
                   href="tel:+918448445504"
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-950 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-slate-800"
                 >
-                  <Headphones className="h-4 w-4" />
+                  <Phone className="h-4 w-4" />
                   Contact Support
                 </a>
 
@@ -690,7 +691,6 @@ export default function PrivacyPolicy() {
               </div>
             </div>
           </section>
-
         </div>
       </section>
     </main>

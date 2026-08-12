@@ -36,7 +36,7 @@ export default function ContactUs() {
           <div className="mx-auto max-w-4xl text-center">
             {/* Badge */}
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-primary">
-              <Headphones className="h-4 w-4" />
+              <Phone className="h-4 w-4" />
               Yatra Tempo Traveller
             </div>
 
@@ -53,16 +53,18 @@ export default function ContactUs() {
 
             {/* Hero Actions */}
             <div className="mt-10 flex flex-wrap justify-center gap-4">
+              {/* Call */}
               <a
-                href="tel:+916280820037"
+                href="tel:+918448445504"
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-slate-950 transition hover:opacity-90"
               >
                 <Phone className="h-4 w-4" />
                 Call Us
               </a>
 
+              {/* WhatsApp */}
               <a
-                href="https://wa.me/916280820037"
+                href="https://wa.me/918448445504"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-white/10"
@@ -76,13 +78,13 @@ export default function ContactUs() {
       </section>
 
       {/* =========================================================
-          QUICK CONTACT CARDS
+            QUICK CONTACT CARDS
       ========================================================= */}
       <section className="relative z-10 -mt-10 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-3">
           {/* Phone */}
           <a
-            href="tel:+916280820037"
+            href="tel:+918448445504"
             className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
           >
             <div className="flex items-start gap-4">
@@ -96,7 +98,7 @@ export default function ContactUs() {
                 </p>
 
                 <h2 className="mt-1 text-lg font-black text-slate-900">
-                  +91 6280820037
+                  +91 84484 45504
                 </h2>
 
                 <p className="mt-1 text-sm text-slate-500">
@@ -134,7 +136,7 @@ export default function ContactUs() {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/916280820037"
+            href="https://wa.me/918448445504"
             target="_blank"
             rel="noopener noreferrer"
             className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
@@ -150,7 +152,7 @@ export default function ContactUs() {
                 </p>
 
                 <h2 className="mt-1 text-lg font-black text-slate-900">
-                  Chat With Us
+                  +91 84484 45504
                 </h2>
 
                 <p className="mt-1 text-sm text-slate-500">
@@ -211,7 +213,7 @@ export default function ContactUs() {
 
               <div className="mt-6 space-y-4">
                 <a
-                  href="tel:+916280820037"
+                  href="tel:+918448445504"
                   className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
                 >
                   <Phone className="h-5 w-5 text-primary" />
@@ -219,12 +221,12 @@ export default function ContactUs() {
                   <div>
                     <p className="text-xs text-slate-500">Call / Booking</p>
 
-                    <p className="font-bold">+91 62808 20037</p>
+                    <p className="font-bold">+91 84484 45504</p>
                   </div>
                 </a>
 
                 <a
-                  href="https://wa.me/916280820037"
+                  href="https://wa.me/918448445504"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
@@ -234,7 +236,7 @@ export default function ContactUs() {
                   <div>
                     <p className="text-xs text-slate-500">WhatsApp</p>
 
-                    <p className="font-bold">Chat With Our Team</p>
+                    <p className="font-bold">+91 84484 45504</p>
                   </div>
                 </a>
 
@@ -449,7 +451,7 @@ export default function ContactUs() {
 
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
               <a
-                href="tel:+916280820037"
+                href="tel:+918448445504"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-950 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-slate-800"
               >
                 <Phone className="h-4 w-4" />
@@ -457,7 +459,7 @@ export default function ContactUs() {
               </a>
 
               <a
-                href="https://wa.me/916280820037"
+                href="https://wa.me/918448445504"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-950/20 bg-white/40 px-6 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-white/60"
