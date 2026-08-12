@@ -7,7 +7,6 @@ import {
   Eye,
   FileCheck2,
   Globe,
-  Headphones,
   LockKeyhole,
   MapPin,
   Mail,

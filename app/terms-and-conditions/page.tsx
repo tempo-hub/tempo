@@ -217,9 +217,9 @@ export default function TermsAndConditions() {
 
               <p>
                 These Terms and Conditions are intended to govern the use of
-                Yatra Tempo Traveller's services and should be read together
-                with any applicable booking, cancellation, refund, privacy, or
-                service-specific policies.
+                Yatra Tempo Traveller&apos;s services and should be read
+                together with any applicable booking, cancellation, refund,
+                privacy, or service-specific policies.
               </p>
 
               <h2>17. Parent Organization</h2>
@@ -240,7 +240,8 @@ export default function TermsAndConditions() {
                 <p className="mb-3">
                   For additional organizational terms, privacy information,
                   refund policies, cancellation policies, and other legal
-                  disclosures, please visit our parent organization's website.
+                  disclosures, please visit our parent organization&apos;s
+                  website.
                 </p>
 
                 <a
@@ -256,9 +257,9 @@ export default function TermsAndConditions() {
 
               <div className="mt-10 pt-6 border-t border-slate-200">
                 <p className="text-sm text-slate-500 mb-0">
-                  By using Yatra Tempo Traveller's website or services, you
-                  acknowledge that you have read and agreed to these Terms and
-                  Conditions.
+                  By using Yatra Tempo Traveller&apos;s website or services,
+                  you acknowledge that you have read and agreed to these Terms
+                  and Conditions.
                 </p>
               </div>
             </div>
