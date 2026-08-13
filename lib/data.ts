@@ -42747,6 +42747,3948 @@ export const ROUTES: TaxiRoute[] = [
     highlights: ["Diu Fort", "Nagoa Beach", "St. Paul's Church"],
     tollEstimate: 4350,
   },
+
+  // Tempo Traveller Routes from Ludhiana
+  {
+    id: "ludhiana-chandigarh",
+    slug: "ludhiana-to-chandigarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chandigarh",
+    distance: 105,
+    duration: "2 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Chandigarh for family trips, business travel, group tours, airport transfers, and sightseeing.",
+    highlights: ["Rock Garden", "Sukhna Lake", "Rose Garden"],
+    tollEstimate: 315,
+  },
+  {
+    id: "ludhiana-amritsar",
+    slug: "ludhiana-to-amritsar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Amritsar",
+    distance: 140,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Amritsar for family trips, religious tours, Golden Temple visits, and sightseeing.",
+    highlights: ["Golden Temple", "Jallianwala Bagh", "Wagah Border"],
+    tollEstimate: 420,
+  },
+
+  {
+    id: "ludhiana-jalandhar",
+    slug: "ludhiana-to-jalandhar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jalandhar",
+    distance: 70,
+    duration: "1 Hour 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Jalandhar for family trips, business travel, group tours, and local sightseeing.",
+    highlights: [
+      "Devi Talab Mandir",
+      "Wonderland Theme Park",
+      "Pushpa Gujral Science City",
+    ],
+    tollEstimate: 210,
+  },
+
+  {
+    id: "ludhiana-patiala",
+    slug: "ludhiana-to-patiala-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Patiala",
+    distance: 95,
+    duration: "2 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Patiala for family vacations, heritage tours, cultural trips, and sightseeing.",
+    highlights: ["Qila Mubarak", "Moti Bagh Palace", "Baradari Gardens"],
+    tollEstimate: 285,
+  },
+
+  {
+    id: "ludhiana-bathinda",
+    slug: "ludhiana-to-bathinda-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bathinda",
+    distance: 155,
+    duration: "3 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bathinda for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Qila Mubarak", "Bathinda Lake", "Rose Garden"],
+    tollEstimate: 465,
+  },
+
+  {
+    id: "ludhiana-firozpur",
+    slug: "ludhiana-to-firozpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Firozpur",
+    distance: 125,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Firozpur for family trips, group tours, historical visits, and local sightseeing.",
+    highlights: [
+      "Saragarhi Memorial Gurudwara",
+      "National Martyrs Memorial",
+      "Indo-Pak Border",
+    ],
+    tollEstimate: 375,
+  },
+
+  {
+    id: "ludhiana-moga",
+    slug: "ludhiana-to-moga-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Moga",
+    distance: 105,
+    duration: "2 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Moga for family travel, group tours, business trips, and local transportation.",
+    highlights: ["Gurudwara Nanaksar Sahib", "Moga City", "Local Markets"],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "ludhiana-kapurthala",
+    slug: "ludhiana-to-kapurthala-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kapurthala",
+    distance: 90,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kapurthala for family trips, heritage tours, group travel, and sightseeing.",
+    highlights: ["Jagatjit Palace", "Moorish Mosque", "Kanjli Wetland"],
+    tollEstimate: 270,
+  },
+
+  {
+    id: "ludhiana-hoshiarpur",
+    slug: "ludhiana-to-hoshiarpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Hoshiarpur",
+    distance: 85,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Hoshiarpur for family trips, religious tours, group travel, and sightseeing.",
+    highlights: [
+      "Takhni-Rehmapur Wildlife Sanctuary",
+      "Gurdwara Harian Velan",
+      "Hoshiarpur Markets",
+    ],
+    tollEstimate: 255,
+  },
+
+  {
+    id: "ludhiana-nawanshahr",
+    slug: "ludhiana-to-nawanshahr-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nawanshahr",
+    distance: 60,
+    duration: "1 Hour 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Nawanshahr for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: [
+      "Kirpa Sagar Gurudwara",
+      "Gurdwara Manji Sahib",
+      "Local Markets",
+    ],
+    tollEstimate: 180,
+  },
+  {
+    id: "ludhiana-sangrur",
+    slug: "ludhiana-to-sangrur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sangrur",
+    distance: 105,
+    duration: "2 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Sangrur for family trips, group tours, business travel, and sightseeing.",
+    highlights: ["Gurdwara Nanakiana Sahib", "Sangrur Fort", "Banasar Garden"],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "ludhiana-barnala",
+    slug: "ludhiana-to-barnala-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Barnala",
+    distance: 85,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Barnala for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Barnala Fort", "Sekha Village", "Local Markets"],
+    tollEstimate: 255,
+  },
+
+  {
+    id: "ludhiana-faridkot",
+    slug: "ludhiana-to-faridkot-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Faridkot",
+    distance: 150,
+    duration: "3 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Faridkot for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Gurudwara Tilla Baba Farid", "Raj Mahal", "Faridkot Fort"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "ludhiana-gurdaspur",
+    slug: "ludhiana-to-gurdaspur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gurdaspur",
+    distance: 150,
+    duration: "3 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Gurdaspur for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Gurdwara Sri Kandh Sahib", "Gurdaspur City", "Local Markets"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "ludhiana-pathankot",
+    slug: "ludhiana-to-pathankot-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Pathankot",
+    distance: 190,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Pathankot for family vacations, group tours, religious trips, and sightseeing.",
+    highlights: ["Ranjit Sagar Dam", "Mukteshwar Temple", "Nurpur Fort"],
+    tollEstimate: 570,
+  },
+
+  {
+    id: "ludhiana-ropar",
+    slug: "ludhiana-to-ropar-rupnagar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ropar (Rupnagar)",
+    distance: 95,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Ropar (Rupnagar) for family trips, group travel, heritage tours, and sightseeing.",
+    highlights: ["Rupnagar Wetland", "Anandpur Sahib", "Kiratpur Sahib"],
+    tollEstimate: 285,
+  },
+
+  {
+    id: "ludhiana-mohali",
+    slug: "ludhiana-to-mohali-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mohali",
+    distance: 105,
+    duration: "2 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mohali for family trips, business travel, group tours, airport transfers, and sightseeing.",
+    highlights: [
+      "Punjab Cricket Association Stadium",
+      "Gurudwara Amb Sahib",
+      "Rose Garden",
+    ],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "ludhiana-khanna",
+    slug: "ludhiana-to-khanna-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Khanna",
+    distance: 45,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Ludhiana to Khanna for family trips, business travel, group transportation, and local sightseeing.",
+    highlights: ["Khanna Grain Market", "Local Markets", "Nearby Villages"],
+    tollEstimate: 135,
+  },
+
+  {
+    id: "ludhiana-phagwara",
+    slug: "ludhiana-to-phagwara-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Phagwara",
+    distance: 50,
+    duration: "1 Hour 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Phagwara for family trips, religious tours, group travel, business journeys, and sightseeing.",
+    highlights: [
+      "Gurdwara Sukhchain Sahib",
+      "Haveli Heritage Village",
+      "Local Markets",
+    ],
+    tollEstimate: 150,
+  },
+  {
+    id: "ludhiana-jagraon",
+    slug: "ludhiana-to-jagraon-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jagraon",
+    distance: 45,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Ludhiana to Jagraon for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Jagraon Fort", "Gurudwara Nanaksar Sahib", "Local Markets"],
+    tollEstimate: 135,
+  },
+
+  {
+    id: "ludhiana-raikot",
+    slug: "ludhiana-to-raikot-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Raikot",
+    distance: 60,
+    duration: "1 Hour 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Raikot for family trips, group tours, business travel, and local sightseeing.",
+    highlights: ["Raikot City", "Local Markets", "Nearby Villages"],
+    tollEstimate: 180,
+  },
+
+  {
+    id: "ludhiana-makhdumpur",
+    slug: "ludhiana-to-makhdumpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Makhdumpur",
+    distance: 55,
+    duration: "1 Hour 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Makhdumpur for family trips, group travel, religious visits, and local sightseeing.",
+    highlights: ["Local Temples", "Village Landscapes", "Local Markets"],
+    tollEstimate: 165,
+  },
+
+  {
+    id: "ludhiana-sidhwan-bet",
+    slug: "ludhiana-to-sidhwan-bet-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sidhwan Bet",
+    distance: 40,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Ludhiana to Sidhwan Bet for family trips, group transportation, rural tours, and local travel.",
+    highlights: ["Sidhwan Bet", "Sutlej River", "Local Villages"],
+    tollEstimate: 120,
+  },
+
+  {
+    id: "ludhiana-doraha",
+    slug: "ludhiana-to-doraha-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Doraha",
+    distance: 25,
+    duration: "45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Doraha for family trips, business travel, group transportation, and local journeys.",
+    highlights: ["Doraha Fort", "Local Markets", "Nearby Villages"],
+    tollEstimate: 75,
+  },
+
+  {
+    id: "ludhiana-samrala",
+    slug: "ludhiana-to-samrala-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Samrala",
+    distance: 50,
+    duration: "1 Hour 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Samrala for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Samrala City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "ludhiana-machhiwara",
+    slug: "ludhiana-to-machhiwara-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Machhiwara",
+    distance: 45,
+    duration: "1 Hour 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Machhiwara for family trips, religious tours, group travel, and heritage visits.",
+    highlights: [
+      "Gurdwara Kirpan Sahib",
+      "Gurdwara Katana Sahib",
+      "Machhiwara Forest",
+    ],
+    tollEstimate: 135,
+  },
+
+  {
+    id: "ludhiana-payal",
+    slug: "ludhiana-to-payal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Payal",
+    distance: 40,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Ludhiana to Payal for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Payal Fort", "Local Markets", "Historic Sites"],
+    tollEstimate: 120,
+  },
+
+  {
+    id: "ludhiana-khamanon",
+    slug: "ludhiana-to-khamanon-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Khamanon",
+    distance: 65,
+    duration: "1 Hour 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Khamanon for family trips, group tours, business travel, and local sightseeing.",
+    highlights: ["Khamanon City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 195,
+  },
+
+  {
+    id: "ludhiana-bassi-pathana",
+    slug: "ludhiana-to-bassi-pathana-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bassi Pathana",
+    distance: 75,
+    duration: "1 Hour 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bassi Pathana for family trips, religious tours, group travel, and historical sightseeing.",
+    highlights: [
+      "Gurdwara Sri Fatehgarh Sahib",
+      "Fatehgarh Sahib",
+      "Local Markets",
+    ],
+    tollEstimate: 225,
+  },
+  {
+    id: "ludhiana-fatehgarh-sahib",
+    slug: "ludhiana-to-fatehgarh-sahib-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Fatehgarh Sahib",
+    distance: 85,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Fatehgarh Sahib for family trips, religious tours, group travel, and historical sightseeing.",
+    highlights: [
+      "Fatehgarh Sahib Gurudwara",
+      "Baba Banda Singh Bahadur Memorial",
+      "Aam Khas Bagh",
+    ],
+    tollEstimate: 255,
+  },
+
+  {
+    id: "ludhiana-sirhind",
+    slug: "ludhiana-to-sirhind-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sirhind",
+    distance: 85,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Sirhind for family trips, religious tours, heritage visits, and group travel.",
+    highlights: [
+      "Gurudwara Fatehgarh Sahib",
+      "Aam Khas Bagh",
+      "Floating Restaurant",
+    ],
+    tollEstimate: 255,
+  },
+
+  {
+    id: "ludhiana-mandi-gobindgarh",
+    slug: "ludhiana-to-mandi-gobindgarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mandi Gobindgarh",
+    distance: 65,
+    duration: "1 Hour 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mandi Gobindgarh for family trips, business travel, group transportation, and local sightseeing.",
+    highlights: ["Gobindgarh Fort", "Historic Markets", "Local Temples"],
+    tollEstimate: 195,
+  },
+
+  {
+    id: "ludhiana-rajpura",
+    slug: "ludhiana-to-rajpura-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rajpura",
+    distance: 100,
+    duration: "2 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Rajpura for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Rajpura City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 300,
+  },
+
+  {
+    id: "ludhiana-zirakpur",
+    slug: "ludhiana-to-zirakpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Zirakpur",
+    distance: 110,
+    duration: "2 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Zirakpur for family trips, airport transfers, business travel, group tours, and sightseeing.",
+    highlights: ["Zirakpur Markets", "Chhatbir Zoo", "Dhakoli"],
+    tollEstimate: 330,
+  },
+
+  {
+    id: "ludhiana-derabassi",
+    slug: "ludhiana-to-derabassi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Derabassi",
+    distance: 120,
+    duration: "2 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Derabassi for family trips, business travel, group transportation, and local sightseeing.",
+    highlights: ["Derabassi Markets", "Sukhna Lake", "Chhatbir Zoo"],
+    tollEstimate: 360,
+  },
+
+  {
+    id: "ludhiana-kharar",
+    slug: "ludhiana-to-kharar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kharar",
+    distance: 105,
+    duration: "2 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kharar for family trips, business travel, group tours, and local transportation.",
+    highlights: ["Kharar City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "ludhiana-banur",
+    slug: "ludhiana-to-banur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Banur",
+    distance: 120,
+    duration: "2 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Banur for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Banur Fort", "Gurudwaras", "Local Markets"],
+    tollEstimate: 360,
+  },
+
+  {
+    id: "ludhiana-sas-nagar-mohali",
+    slug: "ludhiana-to-sas-nagar-mohali-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "S.A.S. Nagar (Mohali)",
+    distance: 105,
+    duration: "2 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to S.A.S. Nagar (Mohali) for family trips, business travel, airport transfers, group tours, and sightseeing.",
+    highlights: [
+      "Punjab Cricket Association Stadium",
+      "Gurudwara Amb Sahib",
+      "Rose Garden",
+    ],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "ludhiana-naya-nangal",
+    slug: "ludhiana-to-naya-nangal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Naya Nangal",
+    distance: 125,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Naya Nangal for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Nangal Wetland", "Bhakra Dam", "Anandpur Sahib"],
+    tollEstimate: 375,
+  },
+  {
+    id: "ludhiana-anandpur-sahib",
+    slug: "ludhiana-to-anandpur-sahib-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Anandpur Sahib",
+    distance: 120,
+    duration: "2 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Anandpur Sahib for family trips, religious tours, group travel, and sightseeing.",
+    highlights: [
+      "Takht Sri Kesgarh Sahib",
+      "Virasat-e-Khalsa",
+      "Anandpur Sahib Gurudwara",
+    ],
+    tollEstimate: 360,
+  },
+
+  {
+    id: "ludhiana-kiratpur-sahib",
+    slug: "ludhiana-to-kiratpur-sahib-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kiratpur Sahib",
+    distance: 105,
+    duration: "2 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kiratpur Sahib for religious tours, family trips, group travel, and sightseeing.",
+    highlights: [
+      "Gurudwara Patal Puri Sahib",
+      "Gurudwara Shri Kiratpur Sahib",
+      "Sutlej River",
+    ],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "ludhiana-nangal",
+    slug: "ludhiana-to-nangal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nangal",
+    distance: 125,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Nangal for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Nangal Wetland", "Bhakra Dam", "Sutlej River"],
+    tollEstimate: 375,
+  },
+
+  {
+    id: "ludhiana-dera-baba-nanak",
+    slug: "ludhiana-to-dera-baba-nanak-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dera Baba Nanak",
+    distance: 180,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Dera Baba Nanak for religious tours, family trips, group travel, and pilgrimage journeys.",
+    highlights: [
+      "Kartarpur Corridor",
+      "Gurdwara Dera Baba Nanak",
+      "Ravi River",
+    ],
+    tollEstimate: 540,
+  },
+
+  {
+    id: "ludhiana-batala",
+    slug: "ludhiana-to-batala-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Batala",
+    distance: 125,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Batala for family trips, religious tours, group travel, and local sightseeing.",
+    highlights: ["Gurdwara Kandh Sahib", "Gurdwara Achal Sahib", "Jal Mahal"],
+    tollEstimate: 375,
+  },
+
+  {
+    id: "ludhiana-qadian",
+    slug: "ludhiana-to-qadian-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Qadian",
+    distance: 150,
+    duration: "3 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Qadian for family trips, group travel, religious visits, and local sightseeing.",
+    highlights: ["Qadian Heritage Sites", "Bahishti Maqbara", "Local Markets"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "ludhiana-dharamkot",
+    slug: "ludhiana-to-dharamkot-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dharamkot",
+    distance: 115,
+    duration: "2 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Dharamkot for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Dharamkot Village", "Sutlej River Region", "Local Markets"],
+    tollEstimate: 345,
+  },
+
+  {
+    id: "ludhiana-kot-kapura",
+    slug: "ludhiana-to-kot-kapura-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kot Kapura",
+    distance: 150,
+    duration: "3 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kot Kapura for family trips, religious tours, group travel, and local sightseeing.",
+    highlights: [
+      "Gurudwara Tilla Baba Farid",
+      "Local Markets",
+      "Kot Kapura Heritage Sites",
+    ],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "ludhiana-muktsar",
+    slug: "ludhiana-to-muktsar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Muktsar",
+    distance: 190,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Muktsar for family trips, religious tours, group travel, and pilgrimage journeys.",
+    highlights: [
+      "Gurudwara Sri Muktsar Sahib",
+      "Muktsar Sahib",
+      "Rupana Sahib",
+    ],
+    tollEstimate: 570,
+  },
+  {
+    id: "ludhiana-malout",
+    slug: "ludhiana-to-malout-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Malout",
+    distance: 215,
+    duration: "4 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Malout for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Malout City", "Local Markets", "Nearby Villages"],
+    tollEstimate: 645,
+  },
+
+  {
+    id: "ludhiana-abohar",
+    slug: "ludhiana-to-abohar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Abohar",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Abohar for family trips, group tours, business travel, and sightseeing.",
+    highlights: ["Abohar Wildlife Sanctuary", "Nehru Park", "Local Markets"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "ludhiana-fazilka",
+    slug: "ludhiana-to-fazilka-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Fazilka",
+    distance: 275,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Fazilka for family trips, group travel, historical visits, and sightseeing.",
+    highlights: ["Asafwala War Memorial", "Sadqi Border", "Fazilka Wetlands"],
+    tollEstimate: 825,
+  },
+
+  {
+    id: "ludhiana-guru-har-sahai",
+    slug: "ludhiana-to-guru-har-sahai-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Guru Har Sahai",
+    distance: 220,
+    duration: "4 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Guru Har Sahai for family trips, religious tours, group travel, and local sightseeing.",
+    highlights: ["Gurudwaras", "Guru Har Sahai Town", "Local Markets"],
+    tollEstimate: 660,
+  },
+
+  {
+    id: "ludhiana-mansa",
+    slug: "ludhiana-to-mansa-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mansa",
+    distance: 170,
+    duration: "3 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mansa for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Mansa City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 510,
+  },
+
+  {
+    id: "ludhiana-budhlada",
+    slug: "ludhiana-to-budhlada-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Budhlada",
+    distance: 190,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Budhlada for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Budhlada City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 570,
+  },
+
+  {
+    id: "ludhiana-sardulgarh",
+    slug: "ludhiana-to-sardulgarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sardulgarh",
+    distance: 220,
+    duration: "4 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Sardulgarh for family trips, group tours, business travel, and local sightseeing.",
+    highlights: ["Sardulgarh City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 660,
+  },
+
+  {
+    id: "ludhiana-sunam",
+    slug: "ludhiana-to-sunam-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sunam",
+    distance: 95,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Sunam for family trips, religious tours, group travel, and local sightseeing.",
+    highlights: ["Sunam City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 285,
+  },
+
+  {
+    id: "ludhiana-dhuri",
+    slug: "ludhiana-to-dhuri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dhuri",
+    distance: 80,
+    duration: "1 Hour 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Dhuri for family trips, group travel, business journeys, and local transportation.",
+    highlights: ["Dhuri City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 240,
+  },
+
+  {
+    id: "ludhiana-malerkotla",
+    slug: "ludhiana-to-malerkotla-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Malerkotla",
+    distance: 65,
+    duration: "1 Hour 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Malerkotla for family trips, group travel, religious visits, and local sightseeing.",
+    highlights: ["Malerkotla Fort", "Jama Masjid", "Local Markets"],
+    tollEstimate: 195,
+  },
+  {
+    id: "ludhiana-ahmedgarh",
+    slug: "ludhiana-to-ahmedgarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ahmedgarh",
+    distance: 45,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Ludhiana to Ahmedgarh for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Ahmedgarh Fort", "Local Markets", "Nearby Villages"],
+    tollEstimate: 135,
+  },
+
+  {
+    id: "ludhiana-amargarh",
+    slug: "ludhiana-to-amargarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Amargarh",
+    distance: 70,
+    duration: "1 Hour 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Amargarh for family trips, group tours, business travel, and local sightseeing.",
+    highlights: ["Amargarh Town", "Gurudwaras", "Local Markets"],
+    tollEstimate: 210,
+  },
+
+  {
+    id: "ludhiana-samana",
+    slug: "ludhiana-to-samana-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Samana",
+    distance: 125,
+    duration: "2 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Samana for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Samana City", "Historic Sites", "Local Markets"],
+    tollEstimate: 375,
+  },
+
+  {
+    id: "ludhiana-nabha",
+    slug: "ludhiana-to-nabha-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nabha",
+    distance: 105,
+    duration: "2 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Nabha for family trips, heritage tours, group travel, and local sightseeing.",
+    highlights: ["Nabha Fort", "Patiala Heritage Sites", "Local Markets"],
+    tollEstimate: 315,
+  },
+
+  {
+    id: "ludhiana-lalru",
+    slug: "ludhiana-to-lalru-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Lalru",
+    distance: 125,
+    duration: "2 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Lalru for family trips, business travel, group transportation, and local sightseeing.",
+    highlights: ["Lalru Town", "Local Markets", "Nearby Villages"],
+    tollEstimate: 375,
+  },
+
+  {
+    id: "ludhiana-tarn-taran",
+    slug: "ludhiana-to-tarn-taran-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Tarn Taran",
+    distance: 175,
+    duration: "3 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Tarn Taran for family trips, religious tours, group travel, and pilgrimage journeys.",
+    highlights: [
+      "Gurudwara Sri Tarn Taran Sahib",
+      "Tarn Taran Sarovar",
+      "Gurudwara Darbar Sahib",
+    ],
+    tollEstimate: 525,
+  },
+
+  {
+    id: "ludhiana-khemkaran",
+    slug: "ludhiana-to-khemkaran-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Khemkaran",
+    distance: 220,
+    duration: "4 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Khemkaran for family trips, historical tours, group travel, and border-area sightseeing.",
+    highlights: [
+      "Khemkaran War Memorial",
+      "Assal Uttar Memorial",
+      "Local Gurudwaras",
+    ],
+    tollEstimate: 660,
+  },
+
+  {
+    id: "ludhiana-patti-punjab",
+    slug: "ludhiana-to-patti-punjab-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Patti (Punjab)",
+    distance: 200,
+    duration: "4 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Patti (Punjab) for family trips, religious tours, group travel, and local sightseeing.",
+    highlights: ["Patti Fort", "Gurudwaras", "Local Markets"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "ludhiana-naushera-pannu",
+    slug: "ludhiana-to-naushera-pannu-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Naushera Pannu",
+    distance: 185,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Naushera Pannu for family trips, religious tours, group travel, and local sightseeing.",
+    highlights: ["Naushera Pannu Town", "Gurudwaras", "Local Markets"],
+    tollEstimate: 555,
+  },
+  {
+    id: "ludhiana-ambala",
+    slug: "ludhiana-to-ambala-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ambala",
+    distance: 120,
+    duration: "2 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Ambala for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Ambala Cantonment", "Badshahi Bag Gurudwara", "Ambala City"],
+    tollEstimate: 360,
+  },
+
+  {
+    id: "ludhiana-panchkula",
+    slug: "ludhiana-to-panchkula-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Panchkula",
+    distance: 135,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Panchkula for family trips, group tours, business travel, and sightseeing.",
+    highlights: ["Mata Mansa Devi Temple", "Morni Hills", "Sukhna Lake"],
+    tollEstimate: 405,
+  },
+
+  {
+    id: "ludhiana-karnal",
+    slug: "ludhiana-to-karnal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Karnal",
+    distance: 220,
+    duration: "4 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Karnal for family trips, business travel, group tours, and sightseeing.",
+    highlights: [
+      "Karnal Lake",
+      "Cantonment Church Tower",
+      "Kalander Shah's Tomb",
+    ],
+    tollEstimate: 660,
+  },
+
+  {
+    id: "ludhiana-panipat",
+    slug: "ludhiana-to-panipat-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Panipat",
+    distance: 265,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Panipat for family trips, historical tours, group travel, and sightseeing.",
+    highlights: ["Panipat Museum", "Panipat Battlefield", "Kabuli Bagh Mosque"],
+    tollEstimate: 795,
+  },
+
+  {
+    id: "ludhiana-kurukshetra",
+    slug: "ludhiana-to-kurukshetra-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kurukshetra",
+    distance: 190,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kurukshetra for family trips, religious tours, pilgrimage journeys, and sightseeing.",
+    highlights: ["Brahma Sarovar", "Jyotisar", "Krishna Museum"],
+    tollEstimate: 570,
+  },
+
+  {
+    id: "ludhiana-yamunanagar",
+    slug: "ludhiana-to-yamunanagar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Yamunanagar",
+    distance: 210,
+    duration: "4 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Yamunanagar for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Kalesar National Park", "Adibadri", "Hathnikund Barrage"],
+    tollEstimate: 630,
+  },
+
+  {
+    id: "ludhiana-sonipat",
+    slug: "ludhiana-to-sonipat-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sonipat",
+    distance: 300,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Sonipat for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Khwaja Khizr Tomb", "Mojoland", "Murthal Food Street"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "ludhiana-rohtak",
+    slug: "ludhiana-to-rohtak-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rohtak",
+    distance: 330,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Rohtak for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Tilyar Lake", "Rohtak Zoo", "Asthal Bohar"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "ludhiana-hisar",
+    slug: "ludhiana-to-hisar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Hisar",
+    distance: 365,
+    duration: "6 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Hisar for family trips, business travel, group tours, and historical sightseeing.",
+    highlights: ["Firoz Shah Palace Complex", "Gujari Mahal", "Rakhigarhi"],
+    tollEstimate: 1095,
+  },
+
+  {
+    id: "ludhiana-bhiwani",
+    slug: "ludhiana-to-bhiwani-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bhiwani",
+    distance: 360,
+    duration: "6 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bhiwani for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Bhiwani Boxing Club", "Devsar Dham", "Star Monument"],
+    tollEstimate: 1080,
+  },
+  {
+    id: "ludhiana-sirsa",
+    slug: "ludhiana-to-sirsa-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sirsa",
+    distance: 330,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Sirsa for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Dera Sacha Sauda", "Tara Baba Kutiya", "Sirsa City"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "ludhiana-fatehabad",
+    slug: "ludhiana-to-fatehabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Fatehabad",
+    distance: 300,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Fatehabad for family trips, group tours, business travel, and sightseeing.",
+    highlights: ["Banawali Archaeological Site", "Bhuna", "Fatehabad City"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "ludhiana-palwal",
+    slug: "ludhiana-to-palwal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Palwal",
+    distance: 360,
+    duration: "6 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Palwal for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Panchvati Temple", "Palwal City", "Local Markets"],
+    tollEstimate: 1080,
+  },
+
+  {
+    id: "ludhiana-faridabad",
+    slug: "ludhiana-to-faridabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Faridabad",
+    distance: 380,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Faridabad for family trips, business travel, group tours, airport transfers, and sightseeing.",
+    highlights: ["Surajkund", "Raja Nahar Singh Palace", "Badkhal Lake"],
+    tollEstimate: 1140,
+  },
+
+  {
+    id: "ludhiana-gurugram",
+    slug: "ludhiana-to-gurugram-gurgaon-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gurugram (Gurgaon)",
+    distance: 370,
+    duration: "6 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Gurugram (Gurgaon) for family trips, business travel, corporate transportation, airport transfers, and sightseeing.",
+    highlights: ["Cyber Hub", "Kingdom of Dreams", "Sultanpur National Park"],
+    tollEstimate: 1110,
+  },
+
+  {
+    id: "ludhiana-manesar",
+    slug: "ludhiana-to-manesar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Manesar",
+    distance: 380,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Manesar for corporate travel, family trips, group tours, airport transfers, and sightseeing.",
+    highlights: [
+      "Damdama Lake",
+      "Heritage Transport Museum",
+      "Manesar Golf Course",
+    ],
+    tollEstimate: 1140,
+  },
+
+  {
+    id: "ludhiana-dharuhera",
+    slug: "ludhiana-to-dharuhera-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dharuhera",
+    distance: 390,
+    duration: "7 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Dharuhera for family trips, business travel, corporate transportation, and group journeys.",
+    highlights: ["Dharuhera City", "Local Markets", "Nearby Industrial Areas"],
+    tollEstimate: 1170,
+  },
+
+  {
+    id: "ludhiana-rewari",
+    slug: "ludhiana-to-rewari-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rewari",
+    distance: 410,
+    duration: "7 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Rewari for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Rewari Railway Heritage Museum", "Bada Talab", "Dharuhera"],
+    tollEstimate: 1230,
+  },
+
+  {
+    id: "ludhiana-mahendragarh",
+    slug: "ludhiana-to-mahendragarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mahendragarh",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mahendragarh for family trips, group tours, historical visits, and sightseeing.",
+    highlights: ["Jal Mahal", "Mahendragarh Fort", "Local Heritage Sites"],
+    tollEstimate: 1290,
+  },
+
+  {
+    id: "ludhiana-narnaul",
+    slug: "ludhiana-to-narnaul-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Narnaul",
+    distance: 445,
+    duration: "8 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Narnaul for family trips, heritage tours, group travel, and sightseeing.",
+    highlights: ["Chor Gumbad", "Jal Mahal", "Dhosi Hill"],
+    tollEstimate: 1335,
+  },
+  {
+    id: "ludhiana-kaithal",
+    slug: "ludhiana-to-kaithal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kaithal",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kaithal for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Kaithal Fort", "Kapil Muni Temple", "Pehowa"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "ludhiana-jind",
+    slug: "ludhiana-to-jind-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jind",
+    distance: 285,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Jind for family trips, group tours, business travel, and sightseeing.",
+    highlights: ["Rani Talab", "Pandav Pindara", "Bhuteshvara Temple"],
+    tollEstimate: 855,
+  },
+
+  {
+    id: "ludhiana-narwana",
+    slug: "ludhiana-to-narwana-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Narwana",
+    distance: 315,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Narwana for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Narwana City", "Dhamtan Sahib", "Local Markets"],
+    tollEstimate: 945,
+  },
+
+  {
+    id: "ludhiana-tohana",
+    slug: "ludhiana-to-tohana-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Tohana",
+    distance: 300,
+    duration: "5 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Tohana for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Tohana City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "ludhiana-ratia",
+    slug: "ludhiana-to-ratia-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ratia",
+    distance: 320,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Ratia for family trips, group tours, business travel, and local sightseeing.",
+    highlights: ["Ratia City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 960,
+  },
+
+  {
+    id: "ludhiana-ellenabad",
+    slug: "ludhiana-to-ellenabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ellenabad",
+    distance: 350,
+    duration: "6 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Ellenabad for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Ellenabad City", "Local Markets", "Nearby Villages"],
+    tollEstimate: 1050,
+  },
+
+  {
+    id: "ludhiana-rania",
+    slug: "ludhiana-to-rania-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rania",
+    distance: 340,
+    duration: "6 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Rania for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Rania City", "Gurudwaras", "Local Markets"],
+    tollEstimate: 1020,
+  },
+
+  {
+    id: "ludhiana-mandi-dabwali",
+    slug: "ludhiana-to-mandi-dabwali-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mandi Dabwali",
+    distance: 345,
+    duration: "6 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mandi Dabwali for family trips, group tours, business travel, and sightseeing.",
+    highlights: ["Mandi Dabwali City", "Local Markets", "Nearby Villages"],
+    tollEstimate: 1035,
+  },
+
+  {
+    id: "ludhiana-charkhi-dadri",
+    slug: "ludhiana-to-charkhi-dadri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Charkhi Dadri",
+    distance: 345,
+    duration: "6 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Charkhi Dadri for family trips, group travel, business journeys, and sightseeing.",
+    highlights: [
+      "Charkhi Dadri City",
+      "Local Markets",
+      "Nearby Heritage Sites",
+    ],
+    tollEstimate: 1035,
+  },
+  {
+    id: "ludhiana-shimla",
+    slug: "ludhiana-to-shimla-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Shimla",
+    distance: 210,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Shimla for family vacations, hill station trips, group tours, and sightseeing.",
+    highlights: ["The Ridge", "Mall Road", "Kufri"],
+    tollEstimate: 630,
+  },
+
+  {
+    id: "ludhiana-manali",
+    slug: "ludhiana-to-manali-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Manali",
+    distance: 310,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Manali for family vacations, group tours, honeymoon trips, adventure holidays, and sightseeing.",
+    highlights: ["Solang Valley", "Hadimba Temple", "Mall Road"],
+    tollEstimate: 930,
+  },
+
+  {
+    id: "ludhiana-dharamshala",
+    slug: "ludhiana-to-dharamshala-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dharamshala",
+    distance: 200,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Dharamshala for family vacations, spiritual trips, group tours, and mountain sightseeing.",
+    highlights: ["McLeod Ganj", "Dalai Lama Temple", "Bhagsu Waterfall"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "ludhiana-dalhousie",
+    slug: "ludhiana-to-dalhousie-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dalhousie",
+    distance: 310,
+    duration: "7 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Dalhousie for family vacations, group tours, hill station holidays, and sightseeing.",
+    highlights: ["Khajjiar", "Mall Road", "Panchpula"],
+    tollEstimate: 930,
+  },
+
+  {
+    id: "ludhiana-kullu",
+    slug: "ludhiana-to-kullu-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kullu",
+    distance: 290,
+    duration: "7 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kullu for family vacations, group tours, adventure trips, and scenic mountain travel.",
+    highlights: [
+      "Raghunath Temple",
+      "Great Himalayan National Park",
+      "Beas River",
+    ],
+    tollEstimate: 870,
+  },
+
+  {
+    id: "ludhiana-kasauli",
+    slug: "ludhiana-to-kasauli-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kasauli",
+    distance: 145,
+    duration: "3 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kasauli for family vacations, weekend trips, group tours, and hill station sightseeing.",
+    highlights: ["Mall Road", "Monkey Point", "Gilbert Trail"],
+    tollEstimate: 435,
+  },
+
+  {
+    id: "ludhiana-solan",
+    slug: "ludhiana-to-solan-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Solan",
+    distance: 160,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Solan for family trips, business travel, group tours, and hill station sightseeing.",
+    highlights: [
+      "Mohan Shakti National Heritage Park",
+      "Jatoli Shiv Temple",
+      "Solan Brewery",
+    ],
+    tollEstimate: 480,
+  },
+
+  {
+    id: "ludhiana-nahan",
+    slug: "ludhiana-to-nahan-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nahan",
+    distance: 170,
+    duration: "4 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Nahan for family vacations, group tours, weekend trips, and sightseeing.",
+    highlights: ["Renuka Lake", "Suketi Fossil Park", "Jaitak Fort"],
+    tollEstimate: 510,
+  },
+
+  {
+    id: "ludhiana-kangra",
+    slug: "ludhiana-to-kangra-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kangra",
+    distance: 190,
+    duration: "4 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kangra for family trips, religious tours, group travel, and sightseeing.",
+    highlights: [
+      "Kangra Fort",
+      "Mata Brajeshwari Devi Temple",
+      "Masroor Rock Temples",
+    ],
+    tollEstimate: 570,
+  },
+
+  {
+    id: "ludhiana-palampur",
+    slug: "ludhiana-to-palampur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Palampur",
+    distance: 215,
+    duration: "5 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Palampur for family vacations, group tours, nature trips, and scenic sightseeing.",
+    highlights: ["Tea Gardens", "Neugal Cafe", "Tashi Jong Monastery"],
+    tollEstimate: 645,
+  },
+  {
+    id: "ludhiana-chamba",
+    slug: "ludhiana-to-chamba-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chamba",
+    distance: 280,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Chamba for family vacations, group tours, religious trips, and mountain sightseeing.",
+    highlights: ["Chamba Town", "Lakshmi Narayan Temple", "Chamera Lake"],
+    tollEstimate: 840,
+  },
+
+  {
+    id: "ludhiana-mandi",
+    slug: "ludhiana-to-mandi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mandi",
+    distance: 250,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mandi for family vacations, group tours, religious trips, and scenic mountain travel.",
+    highlights: ["Panchvaktra Temple", "Prashar Lake", "Rewalsar Lake"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "ludhiana-bilaspur",
+    slug: "ludhiana-to-bilaspur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bilaspur",
+    distance: 170,
+    duration: "4 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bilaspur for family trips, group tours, weekend holidays, and sightseeing.",
+    highlights: ["Gobind Sagar Lake", "Bhakra Dam", "Koldam Dam"],
+    tollEstimate: 510,
+  },
+
+  {
+    id: "ludhiana-una-himachal",
+    slug: "ludhiana-to-una-himachal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Una (Himachal)",
+    distance: 120,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Una (Himachal) for family trips, religious tours, group travel, and sightseeing.",
+    highlights: [
+      "Chintpurni Temple",
+      "Dera Baba Bharbhag Singh",
+      "Gobind Sagar Lake",
+    ],
+    tollEstimate: 360,
+  },
+
+  {
+    id: "ludhiana-hamirpur",
+    slug: "ludhiana-to-hamirpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Hamirpur",
+    distance: 155,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Hamirpur for family trips, religious tours, group travel, and scenic sightseeing.",
+    highlights: ["Sujanpur Tira", "Deotsidh Temple", "Nadaun"],
+    tollEstimate: 465,
+  },
+
+  {
+    id: "ludhiana-kufri",
+    slug: "ludhiana-to-kufri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kufri",
+    distance: 225,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kufri for family vacations, group tours, snow trips, adventure holidays, and sightseeing.",
+    highlights: ["Kufri Fun World", "Himalayan Nature Park", "Mahasu Peak"],
+    tollEstimate: 675,
+  },
+
+  {
+    id: "ludhiana-rohtang-pass",
+    slug: "ludhiana-to-rohtang-pass-via-manali-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rohtang Pass (via Manali)",
+    distance: 335,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Rohtang Pass via Manali for family vacations, group tours, snow adventures, and mountain sightseeing.",
+    highlights: ["Rohtang Pass", "Solang Valley", "Manali"],
+    tollEstimate: 1005,
+  },
+
+  {
+    id: "ludhiana-spiti-valley",
+    slug: "ludhiana-to-spiti-valley-via-manali-charter-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Spiti Valley (via Manali - charter)",
+    distance: 560,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller charter booking from Ludhiana to Spiti Valley via Manali for group adventure tours, mountain expeditions, and extended Himalayan trips.",
+    highlights: ["Key Monastery", "Kaza", "Chandratal Lake"],
+    tollEstimate: 1680,
+  },
+
+  {
+    id: "ludhiana-dharamsala-mcleodganj",
+    slug: "ludhiana-to-dharamsala-mcleodganj-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dharamsala - Mcleodganj",
+    distance: 205,
+    duration: "5 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Dharamsala and Mcleodganj for family vacations, spiritual trips, group tours, and mountain sightseeing.",
+    highlights: ["McLeod Ganj", "Dalai Lama Temple", "Bhagsu Waterfall"],
+    tollEstimate: 615,
+  },
+
+  {
+    id: "ludhiana-khajjiar",
+    slug: "ludhiana-to-khajjiar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Khajjiar",
+    distance: 325,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Khajjiar for family vacations, group tours, weekend getaways, and scenic mountain sightseeing.",
+    highlights: [
+      "Khajjiar Lake",
+      "Khajji Nag Temple",
+      "Kalatope Wildlife Sanctuary",
+    ],
+    tollEstimate: 975,
+  },
+  {
+    id: "ludhiana-joginder-nagar",
+    slug: "ludhiana-to-joginder-nagar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Joginder Nagar",
+    distance: 220,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Joginder Nagar for family vacations, group tours, scenic mountain trips, and sightseeing.",
+    highlights: ["Bir Billing", "Joginder Nagar Valley", "Barot Valley"],
+    tollEstimate: 660,
+  },
+
+  {
+    id: "ludhiana-karsog",
+    slug: "ludhiana-to-karsog-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Karsog",
+    distance: 300,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Karsog for family vacations, group tours, nature trips, and Himalayan sightseeing.",
+    highlights: [
+      "Mamleshwar Mahadev Temple",
+      "Karsog Valley",
+      "Shikari Devi Temple",
+    ],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "ludhiana-rampur-himachal",
+    slug: "ludhiana-to-rampur-himachal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rampur (Himachal)",
+    distance: 360,
+    duration: "8 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Rampur (Himachal) for family vacations, group tours, heritage trips, and mountain sightseeing.",
+    highlights: ["Padam Palace", "Rampur Bushahr", "Satluj River"],
+    tollEstimate: 1080,
+  },
+
+  {
+    id: "ludhiana-rohru",
+    slug: "ludhiana-to-rohru-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rohru",
+    distance: 330,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Rohru for family vacations, group tours, nature trips, and scenic Himalayan travel.",
+    highlights: ["Pabbar Valley", "Chanshal Pass", "Rohru Apple Orchards"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "ludhiana-chail",
+    slug: "ludhiana-to-chail-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chail",
+    distance: 190,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Chail for family vacations, weekend getaways, group tours, and peaceful hill station sightseeing.",
+    highlights: [
+      "Chail Palace",
+      "Chail Cricket Ground",
+      "Chail Wildlife Sanctuary",
+    ],
+    tollEstimate: 570,
+  },
+
+  {
+    id: "ludhiana-parwanoo",
+    slug: "ludhiana-to-parwanoo-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Parwanoo",
+    distance: 130,
+    duration: "3 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Parwanoo for family trips, weekend holidays, group travel, and hill station sightseeing.",
+    highlights: ["Timber Trail", "Mansa Devi Temple", "Shoolini Mata Temple"],
+    tollEstimate: 390,
+  },
+
+  {
+    id: "ludhiana-baddi",
+    slug: "ludhiana-to-baddi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Baddi",
+    distance: 135,
+    duration: "3 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Baddi for business travel, corporate transportation, family trips, group tours, and sightseeing.",
+    highlights: ["Baddi Industrial Area", "Pinjore Gardens", "Timber Trail"],
+    tollEstimate: 405,
+  },
+
+  {
+    id: "ludhiana-nalagarh",
+    slug: "ludhiana-to-nalagarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nalagarh",
+    distance: 125,
+    duration: "3 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Nalagarh for family trips, business travel, group tours, heritage visits, and sightseeing.",
+    highlights: ["Nalagarh Fort", "Ramgarh Fort", "Swarghat"],
+    tollEstimate: 375,
+  },
+  {
+    id: "ludhiana-haridwar",
+    slug: "ludhiana-to-haridwar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Haridwar",
+    distance: 235,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Haridwar for family trips, religious tours, group travel, and pilgrimage journeys.",
+    highlights: ["Har Ki Pauri", "Mansa Devi Temple", "Ganga Aarti"],
+    tollEstimate: 705,
+  },
+
+  {
+    id: "ludhiana-rishikesh",
+    slug: "ludhiana-to-rishikesh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rishikesh",
+    distance: 255,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Rishikesh for family vacations, spiritual trips, adventure tours, group travel, and sightseeing.",
+    highlights: ["Laxman Jhula", "Triveni Ghat", "River Rafting"],
+    tollEstimate: 765,
+  },
+
+  {
+    id: "ludhiana-dehradun",
+    slug: "ludhiana-to-dehradun-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dehradun",
+    distance: 230,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Dehradun for family trips, group tours, business travel, educational trips, and sightseeing.",
+    highlights: ["Robber's Cave", "Sahastradhara", "Forest Research Institute"],
+    tollEstimate: 690,
+  },
+
+  {
+    id: "ludhiana-mussoorie",
+    slug: "ludhiana-to-mussoorie-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mussoorie",
+    distance: 255,
+    duration: "6 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mussoorie for family vacations, weekend getaways, group tours, and hill station sightseeing.",
+    highlights: ["Mall Road", "Kempty Falls", "Gun Hill"],
+    tollEstimate: 765,
+  },
+
+  {
+    id: "ludhiana-nainital",
+    slug: "ludhiana-to-nainital-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nainital",
+    distance: 430,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Nainital for family vacations, group tours, honeymoon trips, and scenic hill station sightseeing.",
+    highlights: ["Naini Lake", "Mall Road", "Naina Devi Temple"],
+    tollEstimate: 1290,
+  },
+
+  {
+    id: "ludhiana-jim-corbett",
+    slug: "ludhiana-to-jim-corbett-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jim Corbett",
+    distance: 390,
+    duration: "8 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Jim Corbett for family vacations, wildlife tours, group trips, jungle safaris, and nature sightseeing.",
+    highlights: [
+      "Jim Corbett National Park",
+      "Jungle Safari",
+      "Corbett Waterfall",
+    ],
+    tollEstimate: 1170,
+  },
+
+  {
+    id: "ludhiana-kausani",
+    slug: "ludhiana-to-kausani-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kausani",
+    distance: 500,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kausani for family vacations, group tours, nature trips, and scenic Himalayan sightseeing.",
+    highlights: ["Kausani Viewpoint", "Anasakti Ashram", "Baijnath Temple"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "ludhiana-ranikhet",
+    slug: "ludhiana-to-ranikhet-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ranikhet",
+    distance: 470,
+    duration: "10 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Ranikhet for family vacations, group tours, nature trips, and peaceful hill station sightseeing.",
+    highlights: ["Chaubatia Gardens", "Jhula Devi Temple", "Majhkhali"],
+    tollEstimate: 1410,
+  },
+
+  {
+    id: "ludhiana-almora",
+    slug: "ludhiana-to-almora-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Almora",
+    distance: 455,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Almora for family vacations, group tours, cultural trips, and scenic Himalayan sightseeing.",
+    highlights: ["Bright End Corner", "Kasar Devi Temple", "Almora Bazaar"],
+    tollEstimate: 1365,
+  },
+
+  {
+    id: "ludhiana-pithoragarh",
+    slug: "ludhiana-to-pithoragarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Pithoragarh",
+    distance: 600,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Pithoragarh for family vacations, group tours, mountain trips, and Himalayan sightseeing.",
+    highlights: ["Pithoragarh Fort", "Thal Kedar", "Chandak Hill"],
+    tollEstimate: 1800,
+  },
+  {
+    id: "ludhiana-chamoli",
+    slug: "ludhiana-to-chamoli-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chamoli",
+    distance: 420,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Chamoli for family vacations, group tours, pilgrimage trips, and Himalayan sightseeing.",
+    highlights: ["Gopeshwar", "Nandprayag", "Alaknanda River"],
+    tollEstimate: 1260,
+  },
+
+  {
+    id: "ludhiana-pauri",
+    slug: "ludhiana-to-pauri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Pauri",
+    distance: 330,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Pauri for family vacations, group tours, nature trips, and scenic Himalayan sightseeing.",
+    highlights: ["Pauri Viewpoint", "Kandoliya Temple", "Khirsu"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "ludhiana-kedarnath",
+    slug: "ludhiana-to-kedarnath-via-rishikesh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kedarnath (via Rishikesh)",
+    distance: 500,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kedarnath via Rishikesh for pilgrimage tours, family trips, and group travel.",
+    highlights: ["Kedarnath Temple", "Gaurikund", "Rishikesh"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "ludhiana-badrinath",
+    slug: "ludhiana-to-badrinath-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Badrinath",
+    distance: 500,
+    duration: "13 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Badrinath for Char Dham pilgrimage, family trips, religious tours, and group travel.",
+    highlights: ["Badrinath Temple", "Mana Village", "Tapt Kund"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "ludhiana-gangotri",
+    slug: "ludhiana-to-gangotri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gangotri",
+    distance: 500,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Gangotri for Char Dham pilgrimage, religious tours, family trips, and Himalayan sightseeing.",
+    highlights: ["Gangotri Temple", "Bhagirathi River", "Pandava Gufa"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "ludhiana-yamunotri",
+    slug: "ludhiana-to-yamunotri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Yamunotri",
+    distance: 470,
+    duration: "12 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Yamunotri for Char Dham pilgrimage, religious tours, family trips, and group travel.",
+    highlights: ["Yamunotri Temple", "Surya Kund", "Janki Chatti"],
+    tollEstimate: 1410,
+  },
+
+  {
+    id: "ludhiana-auli",
+    slug: "ludhiana-to-auli-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Auli",
+    distance: 445,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Auli for family vacations, snow trips, adventure tours, group travel, and Himalayan sightseeing.",
+    highlights: ["Auli Ski Resort", "Auli Ropeway", "Gurso Bugyal"],
+    tollEstimate: 1335,
+  },
+
+  {
+    id: "ludhiana-haldwani",
+    slug: "ludhiana-to-haldwani-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Haldwani",
+    distance: 390,
+    duration: "8 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Haldwani for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Gaula River", "Gaula Barrage", "Local Markets"],
+    tollEstimate: 1170,
+  },
+
+  {
+    id: "ludhiana-rudrapur",
+    slug: "ludhiana-to-rudrapur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rudrapur",
+    distance: 370,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Rudrapur for family trips, business travel, corporate transportation, group tours, and sightseeing.",
+    highlights: ["Atariya Temple", "Moteshwar Mahadev Temple", "Local Markets"],
+    tollEstimate: 1110,
+  },
+
+  {
+    id: "ludhiana-kashipur",
+    slug: "ludhiana-to-kashipur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kashipur",
+    distance: 355,
+    duration: "7 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kashipur for family trips, religious tours, group travel, business journeys, and sightseeing.",
+    highlights: ["Drona Sagar", "Giri Sarovar", "Moteshwar Mahadev Temple"],
+    tollEstimate: 1065,
+  },
+  {
+    id: "ludhiana-roorkee",
+    slug: "ludhiana-to-roorkee-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Roorkee",
+    distance: 280,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Roorkee for family trips, group travel, business journeys, educational tours, and sightseeing.",
+    highlights: ["IIT Roorkee", "Solani Park", "Piran Kaliyar"],
+    tollEstimate: 840,
+  },
+
+  {
+    id: "ludhiana-kotdwar",
+    slug: "ludhiana-to-kotdwar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kotdwar",
+    distance: 300,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kotdwar for family trips, religious tours, group travel, wildlife excursions, and sightseeing.",
+    highlights: ["Sidhbali Temple", "Kanva Ashram", "Lansdowne"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "ludhiana-lansdowne",
+    slug: "ludhiana-to-lansdowne-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Lansdowne",
+    distance: 320,
+    duration: "7 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Lansdowne for family vacations, weekend getaways, group tours, and peaceful hill station sightseeing.",
+    highlights: ["Bhulla Lake", "Tip N Top", "St. Mary's Church"],
+    tollEstimate: 960,
+  },
+  {
+    id: "ludhiana-delhi",
+    slug: "ludhiana-to-delhi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Delhi",
+    distance: 310,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Delhi for family trips, business travel, group tours, airport transfers, and sightseeing.",
+    highlights: ["India Gate", "Red Fort", "Qutub Minar"],
+    tollEstimate: 930,
+  },
+
+  {
+    id: "ludhiana-noida",
+    slug: "ludhiana-to-noida-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Noida",
+    distance: 340,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Noida for family trips, business travel, corporate transportation, group tours, and sightseeing.",
+    highlights: [
+      "Okhla Bird Sanctuary",
+      "DLF Mall of India",
+      "Worlds of Wonder",
+    ],
+    tollEstimate: 1020,
+  },
+
+  {
+    id: "ludhiana-ghaziabad",
+    slug: "ludhiana-to-ghaziabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ghaziabad",
+    distance: 330,
+    duration: "5 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Ghaziabad for family trips, business travel, group transportation, airport transfers, and sightseeing.",
+    highlights: ["City Forest", "ISKCON Temple Ghaziabad", "Hindon River"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "ludhiana-agra",
+    slug: "ludhiana-to-agra-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Agra",
+    distance: 520,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Agra for family vacations, heritage tours, group travel, and sightseeing.",
+    highlights: ["Taj Mahal", "Agra Fort", "Mehtab Bagh"],
+    tollEstimate: 1560,
+  },
+
+  {
+    id: "ludhiana-mathura",
+    slug: "ludhiana-to-mathura-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mathura",
+    distance: 475,
+    duration: "8 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mathura for family trips, religious tours, pilgrimage journeys, and sightseeing.",
+    highlights: [
+      "Shri Krishna Janmabhoomi",
+      "Vishram Ghat",
+      "Dwarkadhish Temple",
+    ],
+    tollEstimate: 1425,
+  },
+
+  {
+    id: "ludhiana-vrindavan",
+    slug: "ludhiana-to-vrindavan-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Vrindavan",
+    distance: 465,
+    duration: "8 Hours 15 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Vrindavan for religious tours, family trips, pilgrimage journeys, and group travel.",
+    highlights: ["Banke Bihari Temple", "Prem Mandir", "ISKCON Temple"],
+    tollEstimate: 1395,
+  },
+
+  {
+    id: "ludhiana-fatehpur-sikri",
+    slug: "ludhiana-to-fatehpur-sikri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Fatehpur Sikri",
+    distance: 550,
+    duration: "9 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Fatehpur Sikri for heritage tours, family trips, group travel, and sightseeing.",
+    highlights: ["Buland Darwaza", "Jama Masjid", "Panch Mahal"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "ludhiana-varanasi",
+    slug: "ludhiana-to-varanasi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Varanasi",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Varanasi for pilgrimage tours, family trips, group travel, and spiritual sightseeing.",
+    highlights: ["Kashi Vishwanath Temple", "Dashashwamedh Ghat", "Sarnath"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "ludhiana-allahabad-prayagraj",
+    slug: "ludhiana-to-allahabad-prayagraj-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Allahabad (Prayagraj)",
+    distance: 900,
+    duration: "15 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Allahabad (Prayagraj) for pilgrimage tours, family trips, group travel, and sightseeing.",
+    highlights: ["Triveni Sangam", "Allahabad Fort", "Anand Bhavan"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "ludhiana-lucknow",
+    slug: "ludhiana-to-lucknow-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Lucknow",
+    distance: 780,
+    duration: "13 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Lucknow for family trips, business travel, group tours, and heritage sightseeing.",
+    highlights: ["Bara Imambara", "Chota Imambara", "Rumi Darwaza"],
+    tollEstimate: 2340,
+  },
+
+  {
+    id: "ludhiana-kanpur",
+    slug: "ludhiana-to-kanpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kanpur",
+    distance: 700,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kanpur for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["JK Temple", "Moti Jheel", "Kanpur Memorial Church"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "ludhiana-meerut",
+    slug: "ludhiana-to-meerut-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Meerut",
+    distance: 390,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Meerut for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Augarnath Temple", "Gandhi Bagh", "St. John's Church"],
+    tollEstimate: 1170,
+  },
+
+  {
+    id: "ludhiana-muzaffarnagar",
+    slug: "ludhiana-to-muzaffarnagar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Muzaffarnagar",
+    distance: 330,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Muzaffarnagar for family trips, business travel, group tours, and local sightseeing.",
+    highlights: ["Akshay Vat Vatika", "Jain Temple", "Local Markets"],
+    tollEstimate: 990,
+  },
+
+  {
+    id: "ludhiana-aligarh",
+    slug: "ludhiana-to-aligarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Aligarh",
+    distance: 490,
+    duration: "8 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Aligarh for family trips, educational tours, business travel, and sightseeing.",
+    highlights: [
+      "Aligarh Fort",
+      "Sir Syed Academy",
+      "Aligarh Muslim University",
+    ],
+    tollEstimate: 1470,
+  },
+
+  {
+    id: "ludhiana-hathras",
+    slug: "ludhiana-to-hathras-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Hathras",
+    distance: 500,
+    duration: "8 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Hathras for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Hathras Fort", "Local Markets", "Nearby Temples"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "ludhiana-firozabad",
+    slug: "ludhiana-to-firozabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Firozabad",
+    distance: 555,
+    duration: "9 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Firozabad for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Glass Bangle Markets", "Chandwar Gate", "Local Markets"],
+    tollEstimate: 1665,
+  },
+
+  {
+    id: "ludhiana-etawah",
+    slug: "ludhiana-to-etawah-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Etawah",
+    distance: 625,
+    duration: "10 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Etawah for family trips, wildlife tours, group travel, and sightseeing.",
+    highlights: [
+      "Etawah Safari Park",
+      "National Chambal Sanctuary",
+      "Etawah Fort",
+    ],
+    tollEstimate: 1875,
+  },
+
+  {
+    id: "ludhiana-bareilly",
+    slug: "ludhiana-to-bareilly-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bareilly",
+    distance: 430,
+    duration: "7 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bareilly for family trips, religious tours, business travel, and sightseeing.",
+    highlights: ["Alakhnath Temple", "Trivati Nath Temple", "Fun City"],
+    tollEstimate: 1290,
+  },
+
+  {
+    id: "ludhiana-moradabad",
+    slug: "ludhiana-to-moradabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Moradabad",
+    distance: 440,
+    duration: "7 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Moradabad for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Raza Library", "Brassware Markets", "Prem Wonderland"],
+    tollEstimate: 1320,
+  },
+
+  {
+    id: "ludhiana-saharanpur",
+    slug: "ludhiana-to-saharanpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Saharanpur",
+    distance: 225,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Saharanpur for family trips, religious tours, business travel, and sightseeing.",
+    highlights: [
+      "Shakumbhari Devi Temple",
+      "Company Garden",
+      "Darul Uloom Deoband",
+    ],
+    tollEstimate: 675,
+  },
+
+  {
+    id: "ludhiana-shamli",
+    slug: "ludhiana-to-shamli-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Shamli",
+    distance: 295,
+    duration: "5 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Shamli for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Shamli City", "Local Markets", "Nearby Temples"],
+    tollEstimate: 885,
+  },
+
+  {
+    id: "ludhiana-baghpat",
+    slug: "ludhiana-to-baghpat-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Baghpat",
+    distance: 350,
+    duration: "6 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Baghpat for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Baraut", "Purana Shiva Temple", "Local Markets"],
+    tollEstimate: 1050,
+  },
+
+  {
+    id: "ludhiana-bulandshahr",
+    slug: "ludhiana-to-bulandshahr-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bulandshahr",
+    distance: 420,
+    duration: "7 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bulandshahr for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Belon Temple", "Sikandrabad", "Local Markets"],
+    tollEstimate: 1260,
+  },
+
+  {
+    id: "ludhiana-ghazipur",
+    slug: "ludhiana-to-ghazipur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ghazipur",
+    distance: 950,
+    duration: "16 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Ghazipur for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Ghazipur Fort", "Tomb of Lord Cornwallis", "Ganga River"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "ludhiana-mau",
+    slug: "ludhiana-to-mau-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mau",
+    distance: 1000,
+    duration: "17 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mau for family trips, group travel, business journeys, and local sightseeing.",
+    highlights: ["Mau City", "Local Markets", "Nearby Temples"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "ludhiana-ballia",
+    slug: "ludhiana-to-ballia-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ballia",
+    distance: 1100,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Ballia for family trips, group tours, religious visits, and sightseeing.",
+    highlights: ["Bhrigu Temple", "Dadri Mela", "Ganga River"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "ludhiana-deoria",
+    slug: "ludhiana-to-deoria-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Deoria",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Deoria for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Deoria City", "Gorakhpur Region", "Local Temples"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "ludhiana-gorakhpur",
+    slug: "ludhiana-to-gorakhpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gorakhpur",
+    distance: 1000,
+    duration: "17 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Gorakhpur for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Gorakhnath Temple", "Kushmi Forest", "Gita Press"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "ludhiana-ayodhya",
+    slug: "ludhiana-to-ayodhya-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ayodhya",
+    distance: 950,
+    duration: "16 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Ayodhya for religious tours, pilgrimage journeys, family trips, and group travel.",
+    highlights: ["Ram Mandir", "Hanuman Garhi", "Saryu River"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "ludhiana-faizabad",
+    slug: "ludhiana-to-faizabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Faizabad",
+    distance: 950,
+    duration: "16 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Faizabad for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Gulab Bari", "Bah Begum Ka Maqbara", "Saryu River"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "ludhiana-sultanpur",
+    slug: "ludhiana-to-sultanpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sultanpur",
+    distance: 850,
+    duration: "14 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Sultanpur for family trips, group travel, religious tours, and sightseeing.",
+    highlights: ["Sultanpur City", "Sultanpur National Park", "Local Temples"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-pratapgarh-up",
+    slug: "ludhiana-to-pratapgarh-up-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Pratapgarh (UP)",
+    distance: 875,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Pratapgarh (UP) for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Belha Devi Temple", "Pratapgarh Fort", "Local Markets"],
+    tollEstimate: 2625,
+  },
+
+  {
+    id: "ludhiana-chandauli",
+    slug: "ludhiana-to-chandauli-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chandauli",
+    distance: 980,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Chandauli for family trips, group travel, religious tours, and sightseeing.",
+    highlights: [
+      "Chandra Prabha Wildlife Sanctuary",
+      "Latif Shah Tomb",
+      "Devdari Falls",
+    ],
+    tollEstimate: 2940,
+  },
+
+  {
+    id: "ludhiana-mirzapur",
+    slug: "ludhiana-to-mirzapur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mirzapur",
+    distance: 950,
+    duration: "16 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mirzapur for family trips, religious tours, group travel, and sightseeing.",
+    highlights: ["Vindhyavasini Temple", "Ghats of Mirzapur", "Tanda Falls"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "ludhiana-sonebhadra",
+    slug: "ludhiana-to-sonebhadra-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sonebhadra",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Sonebhadra for family trips, group tours, nature trips, and sightseeing.",
+    highlights: ["Rihand Dam", "Robertsganj", "Agori Fort"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "ludhiana-vindhyachal",
+    slug: "ludhiana-to-vindhyachal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Vindhyachal",
+    distance: 960,
+    duration: "16 Hours 45 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Vindhyachal for religious tours, pilgrimage journeys, family trips, and group travel.",
+    highlights: [
+      "Vindhyavasini Devi Temple",
+      "Ashtabhuja Temple",
+      "Kali Khoh Temple",
+    ],
+    tollEstimate: 2880,
+  },
+
+  {
+    id: "ludhiana-chitrakoot",
+    slug: "ludhiana-to-chitrakoot-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chitrakoot",
+    distance: 900,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Chitrakoot for religious tours, pilgrimage journeys, family trips, and sightseeing.",
+    highlights: ["Ramghat", "Kamadgiri Temple", "Gupt Godavari"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "ludhiana-banda",
+    slug: "ludhiana-to-banda-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Banda",
+    distance: 800,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Banda for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Bamdev Temple", "Kaljar Fort", "Local Markets"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "ludhiana-mahoba",
+    slug: "ludhiana-to-mahoba-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mahoba",
+    distance: 750,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mahoba for family trips, heritage tours, group travel, and sightseeing.",
+    highlights: ["Kakramath Temple", "Rahila Sagar", "Mahoba Fort"],
+    tollEstimate: 2250,
+  },
+
+  {
+    id: "ludhiana-jhansi-up",
+    slug: "ludhiana-to-jhansi-up-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jhansi (UP)",
+    distance: 700,
+    duration: "12 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Jhansi (UP) for family trips, heritage tours, group travel, and sightseeing.",
+    highlights: ["Jhansi Fort", "Rani Mahal", "Government Museum"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "ludhiana-lalitpur-up",
+    slug: "ludhiana-to-lalitpur-up-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Lalitpur (UP)",
+    distance: 750,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Lalitpur (UP) for family trips, heritage tours, group travel, and sightseeing.",
+    highlights: ["Devgarh", "Matatila Dam", "Lalitpur Fort"],
+    tollEstimate: 2250,
+  },
+  {
+    id: "ludhiana-jammu",
+    slug: "ludhiana-to-jammu-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jammu",
+    distance: 200,
+    duration: "4 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Jammu for family trips, pilgrimage journeys, group travel, and sightseeing.",
+    highlights: ["Raghunath Temple", "Mubarak Mandi Palace", "Bahubali"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "ludhiana-katra",
+    slug: "ludhiana-to-katra-vaishno-devi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Katra (Vaishno Devi)",
+    distance: 270,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Katra (Vaishno Devi) for pilgrimage tours, family trips, group travel, and religious journeys.",
+    highlights: ["Vaishno Devi Temple", "Banganga", "Ardhkuwari"],
+    tollEstimate: 810,
+  },
+
+  {
+    id: "ludhiana-srinagar",
+    slug: "ludhiana-to-srinagar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Srinagar",
+    distance: 580,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Srinagar for family vacations, Kashmir tours, group trips, and scenic sightseeing.",
+    highlights: ["Dal Lake", "Mughal Gardens", "Shankaracharya Temple"],
+    tollEstimate: 1740,
+  },
+
+  {
+    id: "ludhiana-gulmarg",
+    slug: "ludhiana-to-gulmarg-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gulmarg",
+    distance: 630,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Gulmarg for family vacations, snow trips, group tours, adventure holidays, and sightseeing.",
+    highlights: ["Gulmarg Gondola", "Apharwat Peak", "Gulmarg Golf Course"],
+    tollEstimate: 1890,
+  },
+
+  {
+    id: "ludhiana-pahalgam",
+    slug: "ludhiana-to-pahalgam-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Pahalgam",
+    distance: 680,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Pahalgam for family vacations, Kashmir tours, group travel, and scenic mountain sightseeing.",
+    highlights: ["Betaab Valley", "Aru Valley", "Lidder River"],
+    tollEstimate: 2040,
+  },
+
+  {
+    id: "ludhiana-sonamarg",
+    slug: "ludhiana-to-sonamarg-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sonamarg",
+    distance: 650,
+    duration: "13 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Sonamarg for family vacations, snow trips, group tours, and Himalayan sightseeing.",
+    highlights: ["Thajiwas Glacier", "Zoji La", "Sind River"],
+    tollEstimate: 1950,
+  },
+
+  {
+    id: "ludhiana-anantnag",
+    slug: "ludhiana-to-anantnag-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Anantnag",
+    distance: 625,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Anantnag for family vacations, pilgrimage tours, group travel, and Kashmir sightseeing.",
+    highlights: ["Martand Sun Temple", "Verinag", "Achabal Gardens"],
+    tollEstimate: 1875,
+  },
+
+  {
+    id: "ludhiana-baramulla",
+    slug: "ludhiana-to-baramulla-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Baramulla",
+    distance: 620,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Baramulla for family trips, Kashmir tours, group travel, and scenic sightseeing.",
+    highlights: ["Wular Lake", "Jhelum River", "Baramulla Old Town"],
+    tollEstimate: 1860,
+  },
+
+  {
+    id: "ludhiana-kupwara",
+    slug: "ludhiana-to-kupwara-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kupwara",
+    distance: 680,
+    duration: "14 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kupwara for family vacations, group tours, mountain travel, and Kashmir sightseeing.",
+    highlights: ["Lolab Valley", "Bangus Valley", "Kupwara Town"],
+    tollEstimate: 2040,
+  },
+
+  {
+    id: "ludhiana-leh",
+    slug: "ludhiana-to-leh-via-manali-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Leh (via Manali)",
+    distance: 1000,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller charter booking from Ludhiana to Leh via Manali for adventure tours, group expeditions, family trips, and Himalayan sightseeing.",
+    highlights: ["Manali", "Rohtang Pass", "Sarchu", "Pangong Lake"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "ludhiana-kargil",
+    slug: "ludhiana-to-kargil-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kargil",
+    distance: 850,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kargil for adventure tours, group expeditions, family trips, and Himalayan sightseeing.",
+    highlights: ["Kargil War Memorial", "Drass", "SurU Valley"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-udhampur",
+    slug: "ludhiana-to-udhampur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Udhampur",
+    distance: 230,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Udhampur for family trips, pilgrimage journeys, group travel, and sightseeing.",
+    highlights: ["Sudh Mahadev Temple", "Krimchi Temples", "Mansar Lake"],
+    tollEstimate: 690,
+  },
+
+  {
+    id: "ludhiana-patnitop",
+    slug: "ludhiana-to-patnitop-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Patnitop",
+    distance: 270,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Patnitop for family vacations, snow trips, weekend getaways, group tours, and mountain sightseeing.",
+    highlights: ["Nathatop", "Patnitop Park", "Naag Temple"],
+    tollEstimate: 810,
+  },
+
+  {
+    id: "ludhiana-bhaderwah",
+    slug: "ludhiana-to-bhaderwah-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bhaderwah",
+    distance: 330,
+    duration: "7 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bhaderwah for family vacations, group tours, nature trips, and scenic Himalayan sightseeing.",
+    highlights: ["Padri Meadow", "Seoj Meadow", "Bhaderwah Valley"],
+    tollEstimate: 990,
+  },
+  {
+    id: "ludhiana-jaipur",
+    slug: "ludhiana-to-jaipur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jaipur",
+    distance: 570,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Jaipur for family vacations, group tours, business travel, heritage trips, and sightseeing.",
+    highlights: ["Amber Fort", "Hawa Mahal", "City Palace"],
+    tollEstimate: 1710,
+  },
+
+  {
+    id: "ludhiana-ajmer",
+    slug: "ludhiana-to-ajmer-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ajmer",
+    distance: 650,
+    duration: "11 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Ajmer for family trips, pilgrimage tours, group travel, and heritage sightseeing.",
+    highlights: [
+      "Ajmer Sharif Dargah",
+      "Ana Sagar Lake",
+      "Adhai Din Ka Jhonpra",
+    ],
+    tollEstimate: 1950,
+  },
+
+  {
+    id: "ludhiana-pushkar",
+    slug: "ludhiana-to-pushkar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Pushkar",
+    distance: 675,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Pushkar for family vacations, pilgrimage tours, group trips, and cultural sightseeing.",
+    highlights: ["Pushkar Lake", "Brahma Temple", "Pushkar Bazaar"],
+    tollEstimate: 2025,
+  },
+
+  {
+    id: "ludhiana-udaipur",
+    slug: "ludhiana-to-udaipur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Udaipur",
+    distance: 850,
+    duration: "14 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Udaipur for family vacations, group tours, romantic trips, heritage holidays, and sightseeing.",
+    highlights: ["City Palace", "Lake Pichola", "Jag Mandir"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-jodhpur",
+    slug: "ludhiana-to-jodhpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jodhpur",
+    distance: 820,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Jodhpur for family vacations, heritage tours, group travel, and sightseeing.",
+    highlights: ["Mehrangarh Fort", "Jaswant Thada", "Umaid Bhawan Palace"],
+    tollEstimate: 2460,
+  },
+
+  {
+    id: "ludhiana-jaisalmer",
+    slug: "ludhiana-to-jaisalmer-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jaisalmer",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Jaisalmer for family vacations, desert tours, group trips, heritage holidays, and sightseeing.",
+    highlights: ["Jaisalmer Fort", "Sam Sand Dunes", "Patwon Ki Haveli"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "ludhiana-bikaner",
+    slug: "ludhiana-to-bikaner-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bikaner",
+    distance: 850,
+    duration: "14 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bikaner for family vacations, heritage tours, group travel, and desert sightseeing.",
+    highlights: ["Junagarh Fort", "Karni Mata Temple", "Lalgarh Palace"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-kota",
+    slug: "ludhiana-to-kota-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kota",
+    distance: 750,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kota for family trips, educational journeys, group travel, business trips, and sightseeing.",
+    highlights: ["Seven Wonders Park", "Kishore Sagar Lake", "Kota Barrage"],
+    tollEstimate: 2250,
+  },
+
+  {
+    id: "ludhiana-bundi",
+    slug: "ludhiana-to-bundi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bundi",
+    distance: 790,
+    duration: "13 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bundi for heritage tours, family vacations, group travel, and cultural sightseeing.",
+    highlights: ["Bundi Palace", "Taragarh Fort", "Nawal Sagar Lake"],
+    tollEstimate: 2370,
+  },
+
+  {
+    id: "ludhiana-chittorgarh",
+    slug: "ludhiana-to-chittorgarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chittorgarh",
+    distance: 780,
+    duration: "13 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Chittorgarh for heritage tours, family vacations, group trips, and historical sightseeing.",
+    highlights: ["Chittorgarh Fort", "Vijay Stambh", "Kirti Stambh"],
+    tollEstimate: 2340,
+  },
+
+  {
+    id: "ludhiana-mount-abu",
+    slug: "ludhiana-to-mount-abu-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mount Abu",
+    distance: 900,
+    duration: "15 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Mount Abu for family vacations, weekend getaways, group tours, and hill station sightseeing.",
+    highlights: ["Nakki Lake", "Dilwara Temples", "Guru Shikhar"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "ludhiana-alwar",
+    slug: "ludhiana-to-alwar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Alwar",
+    distance: 550,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Alwar for family vacations, heritage tours, group travel, and sightseeing.",
+    highlights: ["Bala Quila", "City Palace", "Sariska National Park"],
+    tollEstimate: 1650,
+  },
+
+  {
+    id: "ludhiana-bharatpur",
+    slug: "ludhiana-to-bharatpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bharatpur",
+    distance: 500,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Bharatpur for family vacations, wildlife tours, heritage trips, group travel, and sightseeing.",
+    highlights: ["Keoladeo National Park", "Lohagarh Fort", "Bharatpur Palace"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "ludhiana-sawai-madhopur",
+    slug: "ludhiana-to-sawai-madhopur-ranthambore-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sawai Madhopur (Ranthambore)",
+    distance: 650,
+    duration: "11 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Sawai Madhopur and Ranthambore for wildlife safaris, family vacations, group tours, and nature trips.",
+    highlights: [
+      "Ranthambore National Park",
+      "Ranthambore Fort",
+      "Trinetra Ganesh Temple",
+    ],
+    tollEstimate: 1950,
+  },
+
+  {
+    id: "ludhiana-nathdwara",
+    slug: "ludhiana-to-nathdwara-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nathdwara",
+    distance: 820,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Nathdwara for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: ["Shrinathji Temple", "Charbhuja Temple", "Nathdwara Town"],
+    tollEstimate: 2460,
+  },
+
+  {
+    id: "ludhiana-kumbhalgarh",
+    slug: "ludhiana-to-kumbhalgarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kumbhalgarh",
+    distance: 850,
+    duration: "14 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Kumbhalgarh for heritage tours, family vacations, group trips, and Rajasthan sightseeing.",
+    highlights: [
+      "Kumbhalgarh Fort",
+      "Badal Mahal",
+      "Kumbhalgarh Wildlife Sanctuary",
+    ],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-ranakpur",
+    slug: "ludhiana-to-ranakpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ranakpur",
+    distance: 880,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Ranakpur for pilgrimage tours, heritage trips, family vacations, and group sightseeing.",
+    highlights: [
+      "Ranakpur Jain Temple",
+      "Surya Narayan Temple",
+      "Ranakpur Valley",
+    ],
+    tollEstimate: 2640,
+  },
+  {
+    id: "ludhiana-gwalior",
+    slug: "ludhiana-to-gwalior-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gwalior",
+    distance: 700,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Gwalior for family vacations, heritage tours, group travel, and sightseeing.",
+    highlights: ["Gwalior Fort", "Jai Vilas Palace", "Sas Bahu Temple"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "ludhiana-morena",
+    slug: "ludhiana-to-morena-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Morena",
+    distance: 730,
+    duration: "12 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Morena for family trips, heritage tours, group travel, and sightseeing.",
+    highlights: ["Mitavali Temple", "Padavali", "Bateshwar Temples"],
+    tollEstimate: 2190,
+  },
+
+  {
+    id: "ludhiana-bhind",
+    slug: "ludhiana-to-bhind-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bhind",
+    distance: 690,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Bhind for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Gohad Fort", "Malanpur", "Local Temples"],
+    tollEstimate: 2070,
+  },
+
+  {
+    id: "ludhiana-sheopur",
+    slug: "ludhiana-to-sheopur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sheopur",
+    distance: 850,
+    duration: "14 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Sheopur for wildlife tours, family trips, group travel, and nature sightseeing.",
+    highlights: ["Kuno National Park", "Sheopur Fort", "Palpur Fort"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-shivpuri",
+    slug: "ludhiana-to-shivpuri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Shivpuri",
+    distance: 800,
+    duration: "13 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Shivpuri for family vacations, wildlife tours, heritage trips, and group travel.",
+    highlights: ["Madhav National Park", "Sakhya Sagar Lake", "George Castle"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "ludhiana-datia",
+    slug: "ludhiana-to-datia-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Datia",
+    distance: 740,
+    duration: "12 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Datia for family trips, pilgrimage tours, heritage sightseeing, and group travel.",
+    highlights: ["Datia Palace", "Pitambara Peeth", "Sonagiri Jain Temples"],
+    tollEstimate: 2220,
+  },
+
+  {
+    id: "ludhiana-indore",
+    slug: "ludhiana-to-indore-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Indore",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Indore for family vacations, business travel, group tours, and sightseeing.",
+    highlights: ["Rajwada Palace", "Lal Bagh Palace", "Sarafa Bazaar"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "ludhiana-bhopal",
+    slug: "ludhiana-to-bhopal-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bhopal",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Bhopal for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Upper Lake", "Sanchi Stupa", "Van Vihar National Park"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "ludhiana-ujjain",
+    slug: "ludhiana-to-ujjain-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ujjain",
+    distance: 1000,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Ujjain for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: ["Mahakaleshwar Temple", "Ram Ghat", "Kal Bhairav Temple"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "ludhiana-khajuraho",
+    slug: "ludhiana-to-khajuraho-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Khajuraho",
+    distance: 900,
+    duration: "15 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Khajuraho for heritage tours, family vacations, group travel, and sightseeing.",
+    highlights: [
+      "Khajuraho Temples",
+      "Western Group of Temples",
+      "Kandariya Mahadev Temple",
+    ],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "ludhiana-orchha",
+    slug: "ludhiana-to-orchha-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Orchha",
+    distance: 800,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Orchha for heritage tours, family trips, religious journeys, and group sightseeing.",
+    highlights: ["Orchha Fort", "Ram Raja Temple", "Chaturbhuj Temple"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "ludhiana-mandu",
+    slug: "ludhiana-to-mandu-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mandu",
+    distance: 1150,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mandu for heritage tours, family vacations, group travel, and historical sightseeing.",
+    highlights: ["Jahaz Mahal", "Hindola Mahal", "Rani Roopmati Pavilion"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "ludhiana-omkareshwar",
+    slug: "ludhiana-to-omkareshwar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Omkareshwar",
+    distance: 1150,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Omkareshwar for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: ["Omkareshwar Temple", "Mamleshwar Temple", "Narmada River"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "ludhiana-mahakaleshwar-ujjain",
+    slug: "ludhiana-to-mahakaleshwar-ujjain-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mahakaleshwar (Ujjain)",
+    distance: 1000,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mahakaleshwar in Ujjain for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: ["Mahakaleshwar Jyotirlinga", "Mahakal Lok", "Ram Ghat"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "ludhiana-betul",
+    slug: "ludhiana-to-betul-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Betul",
+    distance: 1200,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Betul for family trips, group travel, business journeys, and sightseeing.",
+    highlights: ["Muktagiri", "Balajipuram", "Tapti River"],
+    tollEstimate: 3600,
+  },
+
+  {
+    id: "ludhiana-harda",
+    slug: "ludhiana-to-harda-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Harda",
+    distance: 1100,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Harda for family trips, group travel, business travel, and sightseeing.",
+    highlights: ["Narmada River", "Harda City", "Local Temples"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "ludhiana-hoshangabad",
+    slug: "ludhiana-to-hoshangabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Hoshangabad",
+    distance: 1080,
+    duration: "18 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Hoshangabad for family trips, pilgrimage tours, group travel, and riverside sightseeing.",
+    highlights: ["Sethani Ghat", "Narmada River", "Sethani Ghat Aarti"],
+    tollEstimate: 3240,
+  },
+
+  {
+    id: "ludhiana-ratlam",
+    slug: "ludhiana-to-ratlam-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ratlam",
+    distance: 950,
+    duration: "16 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Ratlam for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Kaktel Temple", "Gadkhange Mata Temple", "Ratlam Markets"],
+    tollEstimate: 2850,
+  },
+
+  {
+    id: "ludhiana-mandsaur",
+    slug: "ludhiana-to-mandsaur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mandsaur",
+    distance: 1000,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mandsaur for family trips, heritage tours, pilgrimage journeys, and sightseeing.",
+    highlights: [
+      "Pashupatinath Temple",
+      "Gandhi Sagar Dam",
+      "Bandi Ji Ka Bagh",
+    ],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "ludhiana-neemuch",
+    slug: "ludhiana-to-neemuch-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Neemuch",
+    distance: 1030,
+    duration: "17 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Neemuch for family trips, pilgrimage tours, group travel, and sightseeing.",
+    highlights: ["Sukhanand Dham", "Bhadwa Mata Temple", "Gandhi Sagar Region"],
+    tollEstimate: 3090,
+  },
+
+  {
+    id: "ludhiana-jhabua",
+    slug: "ludhiana-to-jhabua-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jhabua",
+    distance: 1150,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Jhabua for family trips, cultural tours, group travel, and sightseeing.",
+    highlights: ["Jhabua Tribal Culture", "Hathipawa Hills", "Local Markets"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "ludhiana-dhar",
+    slug: "ludhiana-to-dhar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dhar",
+    distance: 1100,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Dhar for family trips, heritage tours, group travel, and sightseeing.",
+    highlights: ["Dhar Fort", "Bhojshala", "Mandu"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "ludhiana-dewas",
+    slug: "ludhiana-to-dewas-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dewas",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Dewas for family trips, pilgrimage tours, group travel, and sightseeing.",
+    highlights: ["Chamunda Mata Temple", "Tekri", "Dewas Palace"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "ludhiana-shajapur",
+    slug: "ludhiana-to-shajapur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Shajapur",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Shajapur for family trips, pilgrimage tours, group travel, and sightseeing.",
+    highlights: ["Maa Rajrajeshwari Temple", "Local Markets", "Nearby Temples"],
+    tollEstimate: 3150,
+  },
+
+  {
+    id: "ludhiana-sehore",
+    slug: "ludhiana-to-sehore-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sehore",
+    distance: 1070,
+    duration: "18 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Sehore for family trips, pilgrimage tours, group travel, and sightseeing.",
+    highlights: ["Ganesh Temple", "Salkanpur Temple", "Sehore City"],
+    tollEstimate: 3210,
+  },
+
+  {
+    id: "ludhiana-vidisha",
+    slug: "ludhiana-to-vidisha-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Vidisha",
+    distance: 1080,
+    duration: "18 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Vidisha for heritage tours, family trips, pilgrimage journeys, and sightseeing.",
+    highlights: ["Udayagiri Caves", "Heliodorus Pillar", "Bijamandal"],
+    tollEstimate: 3240,
+  },
+
+  {
+    id: "ludhiana-raisen",
+    slug: "ludhiana-to-raisen-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Raisen",
+    distance: 1100,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Raisen for heritage tours, family trips, group travel, and sightseeing.",
+    highlights: ["Raisen Fort", "Sanchi", "Bhimbetka"],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "ludhiana-sagar",
+    slug: "ludhiana-to-sagar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Sagar",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Sagar for family trips, group tours, business travel, and sightseeing.",
+    highlights: ["Lakha Banjara Lake", "Rahatgarh Waterfall", "Sagar Fort"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-damoh",
+    slug: "ludhiana-to-damoh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Damoh",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Damoh for family trips, pilgrimage tours, group travel, and sightseeing.",
+    highlights: ["Jatashankar Temple", "Nohta", "Nidan Falls"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-panna",
+    slug: "ludhiana-to-panna-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Panna",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Panna for wildlife tours, family vacations, group travel, and nature sightseeing.",
+    highlights: ["Panna National Park", "Pandav Falls", "Panna Tiger Reserve"],
+    tollEstimate: 2550,
+  },
+
+  {
+    id: "ludhiana-chhatarpur",
+    slug: "ludhiana-to-chhatarpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chhatarpur",
+    distance: 820,
+    duration: "14 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Chhatarpur for family trips, heritage tours, group travel, and sightseeing.",
+    highlights: ["Khajuraho", "Maharaja Chhatrasal Museum", "Local Temples"],
+    tollEstimate: 2460,
+  },
+
+  {
+    id: "ludhiana-tikamgarh",
+    slug: "ludhiana-to-tikamgarh-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Tikamgarh",
+    distance: 800,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Tikamgarh for heritage tours, family trips, group travel, and sightseeing.",
+    highlights: ["Tikamgarh Fort", "Kundeshwar Temple", "Orchha"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "ludhiana-chhindwara",
+    slug: "ludhiana-to-chhindwara-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chhindwara",
+    distance: 1200,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Chhindwara for family vacations, nature trips, group travel, and sightseeing.",
+    highlights: ["Patalkot", "Tamia", "Pench Region"],
+    tollEstimate: 3600,
+  },
+
+  {
+    id: "ludhiana-balaghat",
+    slug: "ludhiana-to-balaghat-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Balaghat",
+    distance: 1250,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Balaghat for wildlife tours, family trips, group travel, and nature sightseeing.",
+    highlights: [
+      "Kanha National Park",
+      "Ghangulpara Waterfall",
+      "Bajrang Ghat",
+    ],
+    tollEstimate: 3750,
+  },
+  {
+    id: "ludhiana-ahmedabad",
+    slug: "ludhiana-to-ahmedabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ahmedabad",
+    distance: 1150,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Ahmedabad for family vacations, business travel, group tours, and sightseeing.",
+    highlights: ["Sabarmati Ashram", "Adalaj Stepwell", "Kankaria Lake"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "ludhiana-surat",
+    slug: "ludhiana-to-surat-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Surat",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Surat for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Dumas Beach", "Surat Castle", "Dutch Garden"],
+    tollEstimate: 4050,
+  },
+
+  {
+    id: "ludhiana-vadodara",
+    slug: "ludhiana-to-vadodara-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Vadodara",
+    distance: 1250,
+    duration: "21 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Vadodara for family vacations, business trips, group travel, and heritage sightseeing.",
+    highlights: ["Laxmi Vilas Palace", "Sayaji Garden", "Baroda Museum"],
+    tollEstimate: 3750,
+  },
+
+  {
+    id: "ludhiana-rajkot",
+    slug: "ludhiana-to-rajkot-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Rajkot",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Rajkot for family trips, business travel, group tours, and Gujarat sightseeing.",
+    highlights: [
+      "Kaba Gandhi No Delo",
+      "Rotary Midtown Dolls Museum",
+      "Watson Museum",
+    ],
+    tollEstimate: 4050,
+  },
+
+  {
+    id: "ludhiana-gandhinagar",
+    slug: "ludhiana-to-gandhinagar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gandhinagar",
+    distance: 1180,
+    duration: "20 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Gandhinagar for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Akshardham Temple", "Adalaj Stepwell", "Indroda Nature Park"],
+    tollEstimate: 3540,
+  },
+
+  {
+    id: "ludhiana-mehsana",
+    slug: "ludhiana-to-mehsana-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mehsana",
+    distance: 1150,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mehsana for family trips, business travel, group tours, and Gujarat sightseeing.",
+    highlights: ["Modhera Sun Temple", "Bahucharaji Temple", "Thol Lake"],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "ludhiana-palanpur",
+    slug: "ludhiana-to-palanpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Palanpur",
+    distance: 1100,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Palanpur for family trips, pilgrimage tours, group travel, and sightseeing.",
+    highlights: [
+      "Balaram Palace",
+      "Jessore Sloth Bear Sanctuary",
+      "Palanpur Palace",
+    ],
+    tollEstimate: 3300,
+  },
+
+  {
+    id: "ludhiana-patan-gujarat",
+    slug: "ludhiana-to-patan-gujarat-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Patan (Gujarat)",
+    distance: 1150,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Patan (Gujarat) for heritage tours, family trips, group travel, and sightseeing.",
+    highlights: [
+      "Rani Ki Vav",
+      "Sahastralinga Talav",
+      "Patan Patola Heritage Museum",
+    ],
+    tollEstimate: 3450,
+  },
+
+  {
+    id: "ludhiana-modhera",
+    slug: "ludhiana-to-modhera-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Modhera",
+    distance: 1170,
+    duration: "20 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Modhera for heritage tours, family trips, group travel, and cultural sightseeing.",
+    highlights: ["Modhera Sun Temple", "Surya Kund", "Modhera Stepwell"],
+    tollEstimate: 3510,
+  },
+
+  {
+    id: "ludhiana-dwarka",
+    slug: "ludhiana-to-dwarka-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dwarka",
+    distance: 1500,
+    duration: "26 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Dwarka for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: ["Dwarkadhish Temple", "Bet Dwarka", "Nageshwar Jyotirlinga"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "ludhiana-somnath",
+    slug: "ludhiana-to-somnath-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Somnath",
+    distance: 1550,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Somnath for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: ["Somnath Temple", "Triveni Sangam", "Bhalka Tirth"],
+    tollEstimate: 4650,
+  },
+
+  {
+    id: "ludhiana-bhuj",
+    slug: "ludhiana-to-bhuj-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bhuj",
+    distance: 1450,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Bhuj for family vacations, heritage tours, desert trips, group travel, and sightseeing.",
+    highlights: ["Aina Mahal", "Prag Mahal", "Kutch Museum"],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "ludhiana-jamnagar",
+    slug: "ludhiana-to-jamnagar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jamnagar",
+    distance: 1450,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Jamnagar for family trips, wildlife tours, group travel, and coastal sightseeing.",
+    highlights: ["Lakhota Lake", "Lakhota Fort", "Marine National Park"],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "ludhiana-porbandar",
+    slug: "ludhiana-to-porbandar-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Porbandar",
+    distance: 1450,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Porbandar for family vacations, heritage tours, coastal trips, group travel, and sightseeing.",
+    highlights: ["Kirti Mandir", "Porbandar Beach", "Sudama Temple"],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "ludhiana-ambaji",
+    slug: "ludhiana-to-ambaji-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ambaji",
+    distance: 1080,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Ambaji for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: ["Ambaji Temple", "Gabbar Hill", "Kumbhariya Jain Temples"],
+    tollEstimate: 3240,
+  },
+  {
+    id: "ludhiana-mumbai",
+    slug: "ludhiana-to-mumbai-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mumbai",
+    distance: 1450,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mumbai for family vacations, business travel, group tours, and sightseeing.",
+    highlights: [
+      "Gateway of India",
+      "Marine Drive",
+      "Chhatrapati Shivaji Maharaj Terminus",
+    ],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "ludhiana-pune",
+    slug: "ludhiana-to-pune-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Pune",
+    distance: 1550,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Pune for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Shaniwar Wada", "Aga Khan Palace", "Sinhagad Fort"],
+    tollEstimate: 4650,
+  },
+
+  {
+    id: "ludhiana-nashik",
+    slug: "ludhiana-to-nashik-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nashik",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Nashik for family vacations, pilgrimage tours, group travel, and sightseeing.",
+    highlights: ["Trimbakeshwar Temple", "Sula Vineyards", "Panchavati"],
+    tollEstimate: 4050,
+  },
+
+  {
+    id: "ludhiana-shirdi",
+    slug: "ludhiana-to-shirdi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Shirdi",
+    distance: 1450,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Shirdi for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: ["Sai Baba Temple", "Dwarkamai", "Chavadi"],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "ludhiana-aurangabad",
+    slug: "ludhiana-to-aurangabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Aurangabad",
+    distance: 1450,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Aurangabad for family vacations, heritage tours, group travel, and sightseeing.",
+    highlights: ["Ajanta Caves", "Ellora Caves", "Bibi Ka Maqbara"],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "ludhiana-nagpur",
+    slug: "ludhiana-to-nagpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Nagpur",
+    distance: 1450,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Nagpur for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Deekshabhoomi", "Sitabardi Fort", "Ambazari Lake"],
+    tollEstimate: 4350,
+  },
+
+  {
+    id: "ludhiana-goa",
+    slug: "ludhiana-to-goa-panaji-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Goa (Panaji)",
+    distance: 2050,
+    duration: "35 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Goa (Panaji) for family vacations, beach holidays, group tours, and coastal sightseeing.",
+    highlights: ["Baga Beach", "Basilica of Bom Jesus", "Fort Aguada"],
+    tollEstimate: 6150,
+  },
+  {
+    id: "ludhiana-hyderabad",
+    slug: "ludhiana-to-hyderabad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Hyderabad",
+    distance: 1900,
+    duration: "33 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Hyderabad for family vacations, business travel, group tours, and sightseeing.",
+    highlights: ["Charminar", "Golconda Fort", "Hussain Sagar Lake"],
+    tollEstimate: 5700,
+  },
+
+  {
+    id: "ludhiana-bangalore",
+    slug: "ludhiana-to-bangalore-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bangalore",
+    distance: 2300,
+    duration: "40 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Bangalore for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Bangalore Palace", "Lalbagh Botanical Garden", "Cubbon Park"],
+    tollEstimate: 6900,
+  },
+
+  {
+    id: "ludhiana-chennai",
+    slug: "ludhiana-to-chennai-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Chennai",
+    distance: 2500,
+    duration: "43 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Chennai for family vacations, business travel, group tours, and sightseeing.",
+    highlights: ["Marina Beach", "Kapaleeshwarar Temple", "Fort St. George"],
+    tollEstimate: 7500,
+  },
+
+  {
+    id: "ludhiana-mysore",
+    slug: "ludhiana-to-mysore-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Mysore",
+    distance: 2400,
+    duration: "42 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Mysore for family vacations, group tours, heritage trips, and sightseeing.",
+    highlights: ["Mysore Palace", "Chamundi Hill", "Brindavan Gardens"],
+    tollEstimate: 7200,
+  },
+
+  {
+    id: "ludhiana-tirupati",
+    slug: "ludhiana-to-tirupati-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Tirupati",
+    distance: 2450,
+    duration: "42 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Tirupati for pilgrimage tours, family trips, religious journeys, and group travel.",
+    highlights: [
+      "Tirumala Venkateswara Temple",
+      "Kapila Theertham",
+      "Sri Govindaraja Swamy Temple",
+    ],
+    tollEstimate: 7350,
+  },
+  {
+    id: "ludhiana-patna",
+    slug: "ludhiana-to-patna-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Patna",
+    distance: 1400,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Patna for family vacations, pilgrimage tours, business travel, group trips, and sightseeing.",
+    highlights: ["Golghar", "Patna Sahib", "Buddha Smriti Park"],
+    tollEstimate: 4200,
+  },
+
+  {
+    id: "ludhiana-gaya",
+    slug: "ludhiana-to-gaya-bodh-gaya-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gaya (Bodh Gaya)",
+    distance: 1500,
+    duration: "26 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Gaya and Bodh Gaya for pilgrimage tours, family trips, Buddhist heritage tours, and group travel.",
+    highlights: ["Mahabodhi Temple", "Bodhi Tree", "Vishnupad Temple"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "ludhiana-ranchi",
+    slug: "ludhiana-to-ranchi-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Ranchi",
+    distance: 1550,
+    duration: "27 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Ranchi for family vacations, business travel, group tours, and sightseeing.",
+    highlights: ["Dassam Falls", "Jagannath Temple", "Rock Garden"],
+    tollEstimate: 4650,
+  },
+
+  {
+    id: "ludhiana-jamshedpur",
+    slug: "ludhiana-to-jamshedpur-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Jamshedpur",
+    distance: 1600,
+    duration: "28 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Jamshedpur for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Jubilee Park", "Dalma Wildlife Sanctuary", "Dimna Lake"],
+    tollEstimate: 4800,
+  },
+
+  {
+    id: "ludhiana-dhanbad",
+    slug: "ludhiana-to-dhanbad-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Dhanbad",
+    distance: 1500,
+    duration: "26 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Dhanbad for business travel, family trips, group tours, and sightseeing.",
+    highlights: ["Maithon Dam", "Topchanchi Lake", "Bhatinda Falls"],
+    tollEstimate: 4500,
+  },
+
+  {
+    id: "ludhiana-bokaro",
+    slug: "ludhiana-to-bokaro-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Bokaro",
+    distance: 1530,
+    duration: "26 Hours 30 Minutes",
+    description:
+      "Tempo traveller booking from Ludhiana to Bokaro for family trips, business travel, group tours, and sightseeing.",
+    highlights: ["Jawaharlal Nehru Biological Park", "City Park", "Garga Dam"],
+    tollEstimate: 4590,
+  },
+  {
+    id: "ludhiana-kolkata",
+    slug: "ludhiana-to-kolkata-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Kolkata",
+    distance: 1750,
+    duration: "30 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Kolkata for family vacations, business travel, group tours, and sightseeing.",
+    highlights: ["Victoria Memorial", "Howrah Bridge", "Indian Museum"],
+    tollEstimate: 5250,
+  },
+
+  {
+    id: "ludhiana-siliguri",
+    slug: "ludhiana-to-siliguri-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Siliguri",
+    distance: 1750,
+    duration: "30 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Siliguri for family trips, group tours, business travel, and North Bengal sightseeing.",
+    highlights: [
+      "Mahananda Wildlife Sanctuary",
+      "ISKCON Temple",
+      "Siliguri Tea Gardens",
+    ],
+    tollEstimate: 5250,
+  },
+
+  {
+    id: "ludhiana-darjeeling",
+    slug: "ludhiana-to-darjeeling-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Darjeeling",
+    distance: 1800,
+    duration: "32 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Darjeeling for family vacations, hill station trips, group tours, and scenic sightseeing.",
+    highlights: ["Tiger Hill", "Batasia Loop", "Darjeeling Himalayan Railway"],
+    tollEstimate: 5400,
+  },
+
+  {
+    id: "ludhiana-gangtok",
+    slug: "ludhiana-to-gangtok-sikkim-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gangtok (Sikkim)",
+    distance: 1900,
+    duration: "34 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Gangtok, Sikkim for family vacations, group tours, mountain trips, and scenic sightseeing.",
+    highlights: ["Tsomgo Lake", "Nathula Pass", "Rumtek Monastery"],
+    tollEstimate: 5700,
+  },
 ].map((route) => ({
   ...route,
   mapEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(route.origin)}+to+${encodeURIComponent(
