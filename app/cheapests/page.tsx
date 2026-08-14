@@ -3,6 +3,8 @@ import CheapestFaresClient from "./cheapest-fares-client";
 import { FAQPage } from "../components/schemas";
 import { GLOBAL_FAQS } from "@/lib/faq-data";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Search Tempo Traveller Fares | Complete Route Directory",
   description:

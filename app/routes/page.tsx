@@ -7,6 +7,8 @@ import { Metadata } from "next";
 import { FAQSection } from "../components/sections";
 import { FAQPage } from "../components/schemas";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Varanasi Tempo Traveller Routes | Budget & Cheapest Options",
   description:

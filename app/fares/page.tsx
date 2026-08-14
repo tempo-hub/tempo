@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import FaresClient from "./fares-client";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Search Tempo Traveller Fares | Complete Route Directory",
   description:

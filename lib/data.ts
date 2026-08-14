@@ -46663,6 +46663,19 @@ export const ROUTES: TaxiRoute[] = [
     ],
     tollEstimate: 5250,
   },
+  
+  {
+    id: "ludhiana-gangtok",
+    slug: "ludhiana-to-gangtok-sikkim-tempo-traveller-fare",
+    origin: "Ludhiana",
+    destination: "Gangtok (Sikkim)",
+    distance: 1900,
+    duration: "34 Hours",
+    description:
+      "Tempo traveller booking from Ludhiana to Gangtok, Sikkim for family vacations, group tours, mountain trips, and scenic sightseeing.",
+    highlights: ["Tsomgo Lake", "Nathula Pass", "Rumtek Monastery"],
+    tollEstimate: 5700,
+  },
 
   {
     id: "ludhiana-darjeeling",
@@ -46675,19 +46688,6 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller booking from Ludhiana to Darjeeling for family vacations, hill station trips, group tours, and scenic sightseeing.",
     highlights: ["Tiger Hill", "Batasia Loop", "Darjeeling Himalayan Railway"],
     tollEstimate: 5400,
-  },
-
-  {
-    id: "ludhiana-gangtok",
-    slug: "ludhiana-to-gangtok-sikkim-tempo-traveller-fare",
-    origin: "Ludhiana",
-    destination: "Gangtok (Sikkim)",
-    distance: 1900,
-    duration: "34 Hours",
-    description:
-      "Tempo traveller booking from Ludhiana to Gangtok, Sikkim for family vacations, group tours, mountain trips, and scenic sightseeing.",
-    highlights: ["Tsomgo Lake", "Nathula Pass", "Rumtek Monastery"],
-    tollEstimate: 5700,
   },
 ].map((route) => ({
   ...route,
