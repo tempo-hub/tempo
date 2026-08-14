@@ -46663,7 +46663,7 @@ export const ROUTES: TaxiRoute[] = [
     ],
     tollEstimate: 5250,
   },
-  
+
   {
     id: "ludhiana-gangtok",
     slug: "ludhiana-to-gangtok-sikkim-tempo-traveller-fare",
@@ -46688,6 +46688,140 @@ export const ROUTES: TaxiRoute[] = [
       "Tempo traveller booking from Ludhiana to Darjeeling for family vacations, hill station trips, group tours, and scenic sightseeing.",
     highlights: ["Tiger Hill", "Batasia Loop", "Darjeeling Himalayan Railway"],
     tollEstimate: 5400,
+  },
+
+  // Tempo Traveller Routes from Chandigarh
+  {
+    id: "chandigarh-shimla",
+    slug: "chandigarh-to-shimla-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Shimla",
+    distance: 115,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Shimla for family vacations, hill station trips, group tours, and scenic sightseeing.",
+    highlights: ["The Ridge", "Mall Road", "Jakhu Temple"],
+    tollEstimate: 350,
+  },
+  {
+    id: "chandigarh-manali",
+    slug: "chandigarh-to-manali-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Manali",
+    distance: 310,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Manali for family vacations, hill station trips, group tours, and scenic sightseeing.",
+    highlights: ["Solang Valley", "Hadimba Temple", "Mall Road"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-kasauli",
+    slug: "chandigarh-to-kasauli-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kasauli",
+    distance: 60,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kasauli for family vacations, weekend getaways, hill station trips, and scenic sightseeing.",
+    highlights: ["Mall Road", "Gilbert Trail", "Sunset Point"],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-kufri",
+    slug: "chandigarh-to-kufri-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kufri",
+    distance: 130,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kufri for family vacations, hill station trips, adventure tours, and scenic sightseeing.",
+    highlights: ["Kufri Fun World", "Mahasu Peak", "Himalayan Nature Park"],
+    tollEstimate: 350,
+  },
+
+  {
+    id: "chandigarh-chail",
+    slug: "chandigarh-to-chail-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Chail",
+    distance: 105,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Chail for family vacations, weekend getaways, hill station trips, and peaceful sightseeing.",
+    highlights: ["Chail Palace", "Chail Cricket Ground", "Kali Tibba Temple"],
+    tollEstimate: 300,
+  },
+
+  {
+    id: "chandigarh-dharamshala",
+    slug: "chandigarh-to-dharamshala-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dharamshala",
+    distance: 240,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dharamshala for family vacations, hill station trips, pilgrimage tours, and scenic sightseeing.",
+    highlights: ["Dalai Lama Temple", "Bhagsu Waterfall", "War Memorial"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-mcleod-ganj",
+    slug: "chandigarh-to-mcleod-ganj-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "McLeod Ganj",
+    distance: 250,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to McLeod Ganj for family vacations, spiritual journeys, hill station trips, and scenic sightseeing.",
+    highlights: [
+      "Tsuglagkhang Complex",
+      "Bhagsu Waterfall",
+      "Namgyal Monastery",
+    ],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-dalhousie",
+    slug: "chandigarh-to-dalhousie-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dalhousie",
+    distance: 340,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dalhousie for family vacations, hill station trips, group tours, and scenic sightseeing.",
+    highlights: ["Gandhi Chowk", "Panchpula", "Subhash Baoli"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-khajjiar",
+    slug: "chandigarh-to-khajjiar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Khajjiar",
+    distance: 350,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Khajjiar for family vacations, hill station trips, nature tours, and scenic sightseeing.",
+    highlights: ["Khajjiar Lake", "Khajji Nag Temple", "Khajjiar Meadows"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-palampur",
+    slug: "chandigarh-to-palampur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Palampur",
+    distance: 235,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Palampur for family vacations, hill station trips, tea garden tours, and scenic sightseeing.",
+    highlights: ["Palampur Tea Gardens", "Tashi Jong Monastery", "Neugal Cafe"],
+    tollEstimate: 550,
   },
 ].map((route) => ({
   ...route,
