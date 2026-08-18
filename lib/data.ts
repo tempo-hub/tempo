@@ -46823,6 +46823,4146 @@ export const ROUTES: TaxiRoute[] = [
     highlights: ["Palampur Tea Gardens", "Tashi Jong Monastery", "Neugal Cafe"],
     tollEstimate: 550,
   },
+  {
+    id: "chandigarh-bir-billing",
+    slug: "chandigarh-to-bir-billing-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bir Billing",
+    distance: 225,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bir Billing for paragliding trips, adventure tours, family vacations, and scenic Himachal Pradesh travel.",
+    highlights: [
+      "Bir Paragliding",
+      "Billing Paragliding Site",
+      "Bir Tibetan Colony",
+    ],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-morni-hills",
+    slug: "chandigarh-to-morni-hills-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Morni Hills",
+    distance: 45,
+    duration: "1.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Morni Hills for weekend trips, family outings, nature tours, and scenic hill vacations.",
+    highlights: ["Morni Fort", "Tikkar Tal", "Morni Hills Viewpoints"],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-parwanoo",
+    slug: "chandigarh-to-parwanoo-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Parwanoo",
+    distance: 35,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Chandigarh to Parwanoo for family trips, hill station vacations, Timber Trail visits, and weekend getaways.",
+    highlights: ["Timber Trail", "Mansa Devi Temple", "Shoolini Mata Temple"],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-barog",
+    slug: "chandigarh-to-barog-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Barog",
+    distance: 60,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Barog for peaceful hill vacations, family trips, nature escapes, and scenic sightseeing.",
+    highlights: [
+      "Barog Railway Station",
+      "Barog Hills",
+      "Mohan Shakti National Heritage Park",
+    ],
+    tollEstimate: 200,
+  },
+
+  {
+    id: "chandigarh-solan",
+    slug: "chandigarh-to-solan-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Solan",
+    distance: 70,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Solan for family vacations, temple tours, weekend trips, and Himachal sightseeing.",
+    highlights: [
+      "Mohan Shakti National Heritage Park",
+      "Jatoli Shiv Temple",
+      "Shoolini Mata Temple",
+    ],
+    tollEstimate: 200,
+  },
+
+  {
+    id: "chandigarh-nalagarh",
+    slug: "chandigarh-to-nalagarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nalagarh",
+    distance: 45,
+    duration: "1.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nalagarh for family trips, heritage tours, business travel, and nearby Himachal sightseeing.",
+    highlights: ["Nalagarh Fort", "Ramgarh Fort", "Himalayan Nature Park"],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-baddi",
+    slug: "chandigarh-to-baddi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Baddi",
+    distance: 35,
+    duration: "1.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Baddi for corporate travel, industrial visits, family trips, group transportation, and local sightseeing.",
+    highlights: ["Baddi Industrial Area", "Pinjore Gardens", "Nalagarh Fort"],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-ropar",
+    slug: "chandigarh-to-ropar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ropar",
+    distance: 50,
+    duration: "1.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ropar for family outings, historical tours, religious trips, and group travel.",
+    highlights: [
+      "Rupnagar Wetland",
+      "Ropar Archaeological Museum",
+      "Anandpur Sahib",
+    ],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-anandpur-sahib",
+    slug: "chandigarh-to-anandpur-sahib-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Anandpur Sahib",
+    distance: 85,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Anandpur Sahib for religious tours, family pilgrimages, historical sightseeing, and group travel.",
+    highlights: [
+      "Takht Sri Kesgarh Sahib",
+      "Virasat-e-Khalsa",
+      "Anandpur Sahib",
+    ],
+    tollEstimate: 200,
+  },
+
+  {
+    id: "chandigarh-kiratpur-sahib",
+    slug: "chandigarh-to-kiratpur-sahib-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kiratpur Sahib",
+    distance: 95,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kiratpur Sahib for religious tours, family pilgrimages, group travel, and sightseeing.",
+    highlights: [
+      "Gurdwara Patal Puri Sahib",
+      "Kiratpur Sahib Gurudwaras",
+      "Anandpur Sahib",
+    ],
+    tollEstimate: 250,
+  },
+  {
+    id: "chandigarh-naina-devi-temple",
+    slug: "chandigarh-to-naina-devi-temple-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Naina Devi Temple",
+    distance: 105,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Naina Devi Temple for religious tours, family pilgrimages, and scenic Himachal Pradesh trips.",
+    highlights: ["Naina Devi Temple", "Gobind Sagar Lake", "Bhakra Dam"],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-bilaspur",
+    slug: "chandigarh-to-bilaspur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bilaspur",
+    distance: 135,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bilaspur for family vacations, religious tours, sightseeing, and group travel.",
+    highlights: ["Gobind Sagar Lake", "Koldam Dam", "Bandla Hills"],
+    tollEstimate: 300,
+  },
+
+  {
+    id: "chandigarh-sundernagar",
+    slug: "chandigarh-to-sundernagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sundernagar",
+    distance: 170,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sundernagar for family trips, scenic Himachal vacations, temple visits, and group tours.",
+    highlights: ["Sundernagar Lake", "Sukhdev Vatika", "Murari Devi Temple"],
+    tollEstimate: 350,
+  },
+
+  {
+    id: "chandigarh-mandi",
+    slug: "chandigarh-to-mandi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mandi",
+    distance: 200,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mandi for family vacations, temple tours, Himalayan sightseeing, and group travel.",
+    highlights: ["Bhootnath Temple", "Pandoh Dam", "Prashar Lake"],
+    tollEstimate: 400,
+  },
+
+  {
+    id: "chandigarh-kullu",
+    slug: "chandigarh-to-kullu-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kullu",
+    distance: 275,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kullu for family vacations, adventure trips, river rafting, and scenic Himalayan sightseeing.",
+    highlights: [
+      "Great Himalayan National Park",
+      "Raghunath Temple",
+      "Beas River",
+    ],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-naggar",
+    slug: "chandigarh-to-naggar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Naggar",
+    distance: 290,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Naggar for peaceful mountain vacations, family trips, heritage tours, and scenic sightseeing.",
+    highlights: [
+      "Naggar Castle",
+      "Nicholas Roerich Art Gallery",
+      "Jagatipatt Temple",
+    ],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-kasol",
+    slug: "chandigarh-to-kasol-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kasol",
+    distance: 300,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kasol for group trips, adventure vacations, trekking tours, and scenic Parvati Valley travel.",
+    highlights: ["Parvati Valley", "Manikaran", "Chalal Village"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-manikaran",
+    slug: "chandigarh-to-manikaran-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Manikaran",
+    distance: 310,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Manikaran for religious pilgrimages, family trips, hot spring visits, and Parvati Valley sightseeing.",
+    highlights: ["Manikaran Sahib", "Hot Springs", "Lord Ramchandra Temple"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-tirthan-valley",
+    slug: "chandigarh-to-tirthan-valley-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Tirthan Valley",
+    distance: 280,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Tirthan Valley for nature vacations, trekking trips, family getaways, and peaceful Himalayan sightseeing.",
+    highlights: [
+      "Tirthan River",
+      "Great Himalayan National Park",
+      "Jibhi Waterfall",
+    ],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-jalori-pass",
+    slug: "chandigarh-to-jalori-pass-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jalori Pass",
+    distance: 300,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jalori Pass for adventure trips, trekking tours, nature vacations, and scenic Himalayan travel.",
+    highlights: ["Jalori Pass", "Serolsar Lake", "Shoja"],
+    tollEstimate: 600,
+  },
+  {
+    id: "chandigarh-shoja",
+    slug: "chandigarh-to-shoja-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Shoja",
+    distance: 280,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Shoja for peaceful mountain vacations, nature trips, trekking tours, and scenic Himalayan getaways.",
+    highlights: ["Jalori Pass", "Serolsar Lake", "Shoja Village"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-jibhi",
+    slug: "chandigarh-to-jibhi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jibhi",
+    distance: 260,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jibhi for family vacations, waterfall visits, nature escapes, trekking trips, and scenic sightseeing.",
+    highlights: ["Jibhi Waterfall", "Jibhi Valley", "Jalori Pass"],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-sainj-valley",
+    slug: "chandigarh-to-sainj-valley-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sainj Valley",
+    distance: 230,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sainj Valley for nature vacations, trekking adventures, family trips, and peaceful Himalayan sightseeing.",
+    highlights: [
+      "Sainj River",
+      "Great Himalayan National Park",
+      "Shangarh Village",
+    ],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-great-himalayan-national-park",
+    slug: "chandigarh-to-great-himalayan-national-park-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Great Himalayan National Park",
+    distance: 260,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Great Himalayan National Park for wildlife tours, trekking adventures, nature trips, and Himalayan exploration.",
+    highlights: [
+      "Great Himalayan National Park",
+      "Tirthan Valley",
+      "Wildlife Trails",
+    ],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-spiti-valley",
+    slug: "chandigarh-to-spiti-valley-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Spiti Valley",
+    distance: 450,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Spiti Valley for adventure tours, family group trips, monastery visits, road trips, and high-altitude Himalayan sightseeing.",
+    highlights: ["Key Monastery", "Chandratal Lake", "Kunzum Pass"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-kaza",
+    slug: "chandigarh-to-kaza-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kaza",
+    distance: 470,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kaza for Spiti Valley road trips, monastery tours, adventure vacations, and high-altitude sightseeing.",
+    highlights: ["Key Monastery", "Komic Village", "Hikkim Village"],
+    tollEstimate: 950,
+  },
+
+  {
+    id: "chandigarh-tabo",
+    slug: "chandigarh-to-tabo-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Tabo",
+    distance: 430,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Tabo for Buddhist monastery tours, Spiti Valley trips, family group travel, and Himalayan sightseeing.",
+    highlights: ["Tabo Monastery", "Tabo Caves", "Tabo Village"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-dhankar",
+    slug: "chandigarh-to-dhankar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dhankar",
+    distance: 450,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dhankar for monastery tours, adventure road trips, scenic Himalayan travel, and Spiti Valley sightseeing.",
+    highlights: ["Dhankar Monastery", "Dhankar Lake", "Dhankar Village"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-pin-valley",
+    slug: "chandigarh-to-pin-valley-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pin Valley",
+    distance: 475,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pin Valley for wildlife tours, adventure trips, trekking, monastery visits, and remote Himalayan exploration.",
+    highlights: ["Pin Valley National Park", "Kungri Monastery", "Mud Village"],
+    tollEstimate: 950,
+  },
+
+  {
+    id: "chandigarh-kunzum-pass",
+    slug: "chandigarh-to-kunzum-pass-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kunzum Pass",
+    distance: 520,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kunzum Pass for Spiti road trips, adventure tours, high-altitude sightseeing, and Himalayan exploration.",
+    highlights: ["Kunzum Pass", "Chandratal Lake", "Kunzum Mata Temple"],
+    tollEstimate: 1000,
+  },
+  {
+    id: "chandigarh-rohtang-pass",
+    slug: "chandigarh-to-rohtang-pass-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rohtang Pass",
+    distance: 300,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rohtang Pass for mountain adventures, family vacations, snow trips, and scenic Himalayan sightseeing.",
+    highlights: ["Rohtang Pass", "Solang Valley", "Beas River"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-leh",
+    slug: "chandigarh-to-leh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Leh",
+    distance: 750,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Leh for Ladakh road trips, adventure tours, family group travel, monastery visits, and Himalayan sightseeing.",
+    highlights: ["Leh Palace", "Shanti Stupa", "Magnetic Hill"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "chandigarh-ladakh",
+    slug: "chandigarh-to-ladakh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ladakh",
+    distance: 750,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ladakh for long-distance road trips, adventure tours, family vacations, monasteries, and high-altitude Himalayan sightseeing.",
+    highlights: ["Leh", "Nubra Valley", "Pangong Tso"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "chandigarh-nubra-valley",
+    slug: "chandigarh-to-nubra-valley-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nubra Valley",
+    distance: 850,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nubra Valley for Ladakh road trips, adventure vacations, desert sightseeing, monasteries, and scenic mountain travel.",
+    highlights: ["Diskit Monastery", "Hunder Sand Dunes", "Khardung La"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "chandigarh-pangong-tso",
+    slug: "chandigarh-to-pangong-tso-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pangong Tso",
+    distance: 900,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pangong Tso for Ladakh adventure tours, high-altitude lake trips, photography tours, and scenic Himalayan road journeys.",
+    highlights: ["Pangong Lake", "Chang La Pass", "Spangmik Village"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "chandigarh-tso-moriri",
+    slug: "chandigarh-to-tso-moriri-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Tso Moriri",
+    distance: 950,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Tso Moriri for remote Ladakh road trips, lake sightseeing, adventure travel, and high-altitude Himalayan exploration.",
+    highlights: ["Tso Moriri Lake", "Korzok Village", "Tso Kar"],
+    tollEstimate: 1900,
+  },
+
+  {
+    id: "chandigarh-zanskar-valley",
+    slug: "chandigarh-to-zanskar-valley-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Zanskar Valley",
+    distance: 1050,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Zanskar Valley for adventure road trips, trekking expeditions, remote Himalayan exploration, and group travel.",
+    highlights: ["Padum", "Drang-Drung Glacier", "Pensi La Pass"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "chandigarh-kargil",
+    slug: "chandigarh-to-kargil-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kargil",
+    distance: 850,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kargil for Ladakh road trips, historical tours, family group travel, and scenic Himalayan sightseeing.",
+    highlights: ["Kargil War Memorial", "Mulbekh Monastery", "Sur u Valley"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "chandigarh-drass",
+    slug: "chandigarh-to-drass-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Drass",
+    distance: 900,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Drass for Ladakh road trips, historical tours, family vacations, and scenic Himalayan travel.",
+    highlights: ["Drass War Memorial", "Drass Valley", "Kargil War Memorial"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "chandigarh-srinagar",
+    slug: "chandigarh-to-srinagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Srinagar",
+    distance: 620,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Srinagar for family vacations, Kashmir tours, honeymoon trips, group travel, and scenic sightseeing.",
+    highlights: ["Dal Lake", "Mughal Gardens", "Shankaracharya Temple"],
+    tollEstimate: 1250,
+  },
+  {
+    id: "chandigarh-gulmarg",
+    slug: "chandigarh-to-gulmarg-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gulmarg",
+    distance: 580,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gulmarg for family vacations, snow trips, skiing adventures, honeymoon tours, and scenic Kashmir sightseeing.",
+    highlights: ["Gulmarg Gondola", "Apharwat Peak", "Gulmarg Ski Resort"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "chandigarh-pahalgam",
+    slug: "chandigarh-to-pahalgam-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pahalgam",
+    distance: 700,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pahalgam for family vacations, honeymoon trips, nature tours, and scenic Kashmir sightseeing.",
+    highlights: ["Betaab Valley", "Aru Valley", "Lidder River"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "chandigarh-sonamarg",
+    slug: "chandigarh-to-sonamarg-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sonamarg",
+    distance: 650,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sonamarg for family vacations, snow trips, mountain adventures, and scenic Kashmir sightseeing.",
+    highlights: ["Thajiwas Glacier", "Zoji La", "Sind River"],
+    tollEstimate: 1300,
+  },
+
+  {
+    id: "chandigarh-yusmarg",
+    slug: "chandigarh-to-yusmarg-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Yusmarg",
+    distance: 650,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Yusmarg for peaceful family vacations, nature escapes, photography tours, and scenic Kashmir travel.",
+    highlights: ["Doodhpathri", "Nilnag Lake", "Tosamaidan"],
+    tollEstimate: 1300,
+  },
+
+  {
+    id: "chandigarh-patnitop",
+    slug: "chandigarh-to-patnitop-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Patnitop",
+    distance: 330,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Patnitop for family vacations, mountain getaways, adventure trips, and scenic Jammu sightseeing.",
+    highlights: ["Nathatop", "Patnitop Park", "Madhatop"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-sanasar",
+    slug: "chandigarh-to-sanasar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sanasar",
+    distance: 350,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sanasar for adventure vacations, paragliding trips, family getaways, and scenic mountain sightseeing.",
+    highlights: ["Sanasar Lake", "Paragliding", "Nathatop"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-jammu",
+    slug: "chandigarh-to-jammu-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jammu",
+    distance: 350,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jammu for family trips, religious tours, business travel, and group transportation.",
+    highlights: ["Raghunath Temple", "Mubarak Mandi Palace", "Bahu Fort"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-katra",
+    slug: "chandigarh-to-katra-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Katra",
+    distance: 390,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Katra for Vaishno Devi pilgrimages, family religious tours, and comfortable group travel.",
+    highlights: ["Vaishno Devi Temple", "Banganga", "Ardhkuwari Cave"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-vaishno-devi",
+    slug: "chandigarh-to-vaishno-devi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Vaishno Devi",
+    distance: 390,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Vaishno Devi for family pilgrimages, religious tours, and group travel to the holy shrine.",
+    highlights: ["Vaishno Devi Shrine", "Banganga", "Ardhkuwari"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-amritsar",
+    slug: "chandigarh-to-amritsar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Amritsar",
+    distance: 230,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Amritsar for family vacations, religious tours, Golden Temple visits, and group sightseeing.",
+    highlights: ["Golden Temple", "Jallianwala Bagh", "Wagah Border"],
+    tollEstimate: 500,
+  },
+  {
+    id: "chandigarh-tarn-taran",
+    slug: "chandigarh-to-tarn-taran-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Tarn Taran",
+    distance: 250,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Tarn Taran for religious tours, family pilgrimages, group travel, and sightseeing in Punjab.",
+    highlights: [
+      "Tarn Taran Sahib",
+      "Darbar Sahib Tarn Taran",
+      "Goindwal Sahib",
+    ],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-wagah-border",
+    slug: "chandigarh-to-wagah-border-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Wagah Border",
+    distance: 260,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Wagah Border for family trips, group tours, patriotic sightseeing, and the famous Beating Retreat ceremony.",
+    highlights: [
+      "Wagah-Attari Border",
+      "Beating Retreat Ceremony",
+      "Attari Border",
+    ],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-jalandhar",
+    slug: "chandigarh-to-jalandhar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jalandhar",
+    distance: 150,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jalandhar for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: [
+      "Devi Talab Mandir",
+      "Pushpa Gujral Science City",
+      "Wonderland Theme Park",
+    ],
+    tollEstimate: 350,
+  },
+
+  {
+    id: "chandigarh-ludhiana",
+    slug: "chandigarh-to-ludhiana-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ludhiana",
+    distance: 105,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ludhiana for business travel, family trips, weddings, events, and group transportation.",
+    highlights: [
+      "Punjab Agricultural University",
+      "Lodhi Fort",
+      "Nehru Rose Garden",
+    ],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-patiala",
+    slug: "chandigarh-to-patiala-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Patiala",
+    distance: 70,
+    duration: "2 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Patiala for family vacations, heritage tours, weddings, religious trips, and group travel.",
+    highlights: ["Qila Mubarak", "Moti Bagh Palace", "Sheesh Mahal"],
+    tollEstimate: 200,
+  },
+
+  {
+    id: "chandigarh-rajpura",
+    slug: "chandigarh-to-rajpura-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rajpura",
+    distance: 45,
+    duration: "1.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rajpura for business travel, family trips, weddings, events, and convenient group transportation.",
+    highlights: [
+      "Rajpura Market",
+      "Gurudwara Sahib",
+      "Nearby Patiala Attractions",
+    ],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-fatehgarh-sahib",
+    slug: "chandigarh-to-fatehgarh-sahib-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Fatehgarh Sahib",
+    distance: 55,
+    duration: "1.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Fatehgarh Sahib for religious pilgrimages, family tours, historical sightseeing, and group travel.",
+    highlights: [
+      "Gurudwara Fatehgarh Sahib",
+      "Baba Banda Singh Bahadur Memorial",
+      "Aam Khas Bagh",
+    ],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-sirhind",
+    slug: "chandigarh-to-sirhind-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sirhind",
+    distance: 60,
+    duration: "1.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sirhind for religious tours, historical sightseeing, family trips, and group transportation.",
+    highlights: ["Gurudwara Fatehgarh Sahib", "Aam Khas Bagh", "Rauza Sharif"],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-sangrur",
+    slug: "chandigarh-to-sangrur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sangrur",
+    distance: 125,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sangrur for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: ["Sangrur Fort", "Gurdwara Nanaksar", "Banasar Garden"],
+    tollEstimate: 300,
+  },
+
+  {
+    id: "chandigarh-barnala",
+    slug: "chandigarh-to-barnala-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Barnala",
+    distance: 145,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Barnala for family trips, business travel, weddings, religious tours, and group transportation.",
+    highlights: ["Barnala Fort", "Tapa", "Local Punjabi Heritage"],
+    tollEstimate: 300,
+  },
+  {
+    id: "chandigarh-mansa",
+    slug: "chandigarh-to-mansa-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mansa",
+    distance: 215,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mansa for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: [
+      "Mansa Devi Temple",
+      "Buddha Dal Gurudwara",
+      "Nearby Punjab Attractions",
+    ],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-bathinda",
+    slug: "chandigarh-to-bathinda-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bathinda",
+    distance: 230,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bathinda for family vacations, business travel, historical tours, religious trips, and group transportation.",
+    highlights: ["Qila Mubarak", "Bathinda Lake", "Takht Sri Damdama Sahib"],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-muktsar",
+    slug: "chandigarh-to-muktsar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Muktsar",
+    distance: 300,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Muktsar for religious tours, family trips, historical sightseeing, and group travel.",
+    highlights: [
+      "Gurudwara Tibbi Sahib",
+      "Muktsar Sahib",
+      "Gurudwara Rakab Ganj Sahib",
+    ],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-ferozepur",
+    slug: "chandigarh-to-ferozepur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ferozepur",
+    distance: 300,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ferozepur for historical tours, family trips, border sightseeing, business travel, and group transportation.",
+    highlights: [
+      "National Martyrs Memorial",
+      "Saragarhi Memorial Gurudwara",
+      "Ferozepur Cantonment",
+    ],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-fazilka",
+    slug: "chandigarh-to-fazilka-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Fazilka",
+    distance: 340,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Fazilka for family trips, historical tours, business travel, and group transportation.",
+    highlights: ["Asafwala War Memorial", "Sadqui Border", "Fazilka Heritage"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-abohar",
+    slug: "chandigarh-to-abohar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Abohar",
+    distance: 330,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Abohar for family trips, business travel, wildlife visits, and group transportation.",
+    highlights: [
+      "Abohar Wildlife Sanctuary",
+      "Seth Ganga Ram Memorial",
+      "Abohar Local Markets",
+    ],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-sri-ganganagar",
+    slug: "chandigarh-to-sri-ganganagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sri Ganganagar",
+    distance: 370,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sri Ganganagar for family vacations, business travel, religious tours, and group transportation across Punjab and Rajasthan.",
+    highlights: ["Hindumalkot Border", "Bada Mandir", "Gurudwara Budhha Johad"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-hoshiarpur",
+    slug: "chandigarh-to-hoshiarpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Hoshiarpur",
+    distance: 120,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Hoshiarpur for family trips, religious tours, weddings, business travel, and group transportation.",
+    highlights: [
+      "Takhni-Rehmapur Wildlife Sanctuary",
+      "Dera Baba Charan Singh",
+      "Hoshiarpur Heritage",
+    ],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-nawanshahr",
+    slug: "chandigarh-to-nawanshahr-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nawanshahr",
+    distance: 90,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nawanshahr for family trips, religious tours, weddings, business travel, and group transportation.",
+    highlights: [
+      "Gurudwara Nanak Sar",
+      "Nawanshahr Heritage",
+      "Nearby Punjab Villages",
+    ],
+    tollEstimate: 200,
+  },
+
+  {
+    id: "chandigarh-kapurthala",
+    slug: "chandigarh-to-kapurthala-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kapurthala",
+    distance: 165,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kapurthala for heritage tours, family vacations, religious trips, weddings, and group sightseeing.",
+    highlights: [
+      "Jagdish Palace",
+      "Pushpa Gujral Science City",
+      "Moorish Mosque",
+    ],
+    tollEstimate: 350,
+  },
+  {
+    id: "chandigarh-phagwara",
+    slug: "chandigarh-to-phagwara-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Phagwara",
+    distance: 130,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Phagwara for family trips, business travel, weddings, religious tours, and group transportation.",
+    highlights: [
+      "Gurudwara Sukhchain Sahib",
+      "Phagwara Market",
+      "Nearby Punjab Attractions",
+    ],
+    tollEstimate: 300,
+  },
+
+  {
+    id: "chandigarh-moga",
+    slug: "chandigarh-to-moga-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Moga",
+    distance: 190,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Moga for family trips, business travel, weddings, religious tours, and group transportation.",
+    highlights: [
+      "Gurudwara Nanaksar Sahib",
+      "Moga Local Markets",
+      "Punjab Countryside",
+    ],
+    tollEstimate: 400,
+  },
+
+  {
+    id: "chandigarh-faridkot",
+    slug: "chandigarh-to-faridkot-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Faridkot",
+    distance: 220,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Faridkot for family trips, religious tours, weddings, business travel, and group transportation.",
+    highlights: ["Gurudwara Tilla Baba Farid", "Qila Mubarak", "Darbar Ganj"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-kotkapura",
+    slug: "chandigarh-to-kotkapura-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kotkapura",
+    distance: 230,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kotkapura for family trips, religious tours, business travel, weddings, and group transportation.",
+    highlights: [
+      "Gurudwara Godari Sahib",
+      "Kotkapura Markets",
+      "Nearby Faridkot Attractions",
+    ],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-zirakpur",
+    slug: "chandigarh-to-zirakpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Zirakpur",
+    distance: 15,
+    duration: "30 Minutes",
+    description:
+      "Tempo traveller booking from Chandigarh to Zirakpur for airport transfers, family trips, weddings, business travel, and local group transportation.",
+    highlights: ["Dhillon Plaza", "Zirakpur Markets", "Chhatbir Zoo"],
+    tollEstimate: 50,
+  },
+
+  {
+    id: "chandigarh-derabassi",
+    slug: "chandigarh-to-derabassi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Derabassi",
+    distance: 25,
+    duration: "45 Minutes",
+    description:
+      "Tempo traveller booking from Chandigarh to Derabassi for business travel, family trips, weddings, events, and local group transportation.",
+    highlights: [
+      "Derabassi Market",
+      "Sukhna Enclave",
+      "Nearby Chandigarh Attractions",
+    ],
+    tollEstimate: 75,
+  },
+
+  {
+    id: "chandigarh-lalru",
+    slug: "chandigarh-to-lalru-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Lalru",
+    distance: 35,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Chandigarh to Lalru for business travel, family trips, weddings, events, and convenient group transportation.",
+    highlights: [
+      "Lalru Market",
+      "Ambala-Chandigarh Highway",
+      "Nearby Punjab Attractions",
+    ],
+    tollEstimate: 100,
+  },
+
+  {
+    id: "chandigarh-ambala",
+    slug: "chandigarh-to-ambala-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ambala",
+    distance: 50,
+    duration: "1.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ambala for family trips, business travel, weddings, religious tours, and group transportation.",
+    highlights: ["Ambala Cantonment", "Rani Ka Talab", "Gurudwara Manji Sahib"],
+    tollEstimate: 150,
+  },
+
+  {
+    id: "chandigarh-panchkula",
+    slug: "chandigarh-to-panchkula-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Panchkula",
+    distance: 10,
+    duration: "30 Minutes",
+    description:
+      "Tempo traveller booking from Chandigarh to Panchkula for local group travel, family trips, weddings, business travel, and sightseeing.",
+    highlights: ["Mata Mansa Devi Temple", "Pinjore Gardens", "Morni Hills"],
+    tollEstimate: 50,
+  },
+
+  {
+    id: "chandigarh-mohali",
+    slug: "chandigarh-to-mohali-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mohali",
+    distance: 10,
+    duration: "30 Minutes",
+    description:
+      "Tempo traveller booking from Chandigarh to Mohali for corporate travel, weddings, family trips, airport transfers, events, and local group transportation.",
+    highlights: [
+      "Punjab Cricket Association Stadium",
+      "Rose Garden",
+      "Gurudwara Amb Sahib",
+    ],
+    tollEstimate: 50,
+  },
+  {
+    id: "chandigarh-kharar",
+    slug: "chandigarh-to-kharar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kharar",
+    distance: 20,
+    duration: "45 Minutes",
+    description:
+      "Tempo traveller booking from Chandigarh to Kharar for family trips, business travel, weddings, events, and local group transportation.",
+    highlights: [
+      "Kharar Market",
+      "Gurudwara Shri Amb Sahib",
+      "Mohali Attractions",
+    ],
+    tollEstimate: 50,
+  },
+
+  {
+    id: "chandigarh-pinjore",
+    slug: "chandigarh-to-pinjore-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pinjore",
+    distance: 22,
+    duration: "45 Minutes",
+    description:
+      "Tempo traveller booking from Chandigarh to Pinjore for family outings, heritage tours, weekend trips, and group sightseeing.",
+    highlights: ["Pinjore Gardens", "Bhima Devi Temple", "Yadavindra Gardens"],
+    tollEstimate: 75,
+  },
+
+  {
+    id: "chandigarh-kalka",
+    slug: "chandigarh-to-kalka-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kalka",
+    distance: 30,
+    duration: "1 Hour",
+    description:
+      "Tempo traveller booking from Chandigarh to Kalka for family trips, religious tours, Shimla connections, and group transportation.",
+    highlights: ["Kalka Railway Station", "Kali Mata Temple", "Shivalik Hills"],
+    tollEstimate: 100,
+  },
+
+  {
+    id: "chandigarh-nahan",
+    slug: "chandigarh-to-nahan-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nahan",
+    distance: 85,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nahan for family vacations, weekend getaways, temple tours, and scenic Himachal sightseeing.",
+    highlights: ["Renuka Lake", "Suketi Fossil Park", "Rani Tal"],
+    tollEstimate: 200,
+  },
+
+  {
+    id: "chandigarh-paonta-sahib",
+    slug: "chandigarh-to-paonta-sahib-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Paonta Sahib",
+    distance: 115,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Paonta Sahib for religious pilgrimages, family tours, historical sightseeing, and group travel.",
+    highlights: ["Gurudwara Paonta Sahib", "Yamuna River", "Sirmour Heritage"],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-dehradun",
+    slug: "chandigarh-to-dehradun-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dehradun",
+    distance: 115,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dehradun for family vacations, business travel, educational trips, weddings, and group transportation.",
+    highlights: ["Robber's Cave", "Sahastradhara", "Forest Research Institute"],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-mussoorie",
+    slug: "chandigarh-to-mussoorie-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mussoorie",
+    distance: 200,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mussoorie for family vacations, honeymoon trips, weekend getaways, and scenic hill station sightseeing.",
+    highlights: ["Mall Road", "Kempty Falls", "Gun Hill"],
+    tollEstimate: 400,
+  },
+
+  {
+    id: "chandigarh-rishikesh",
+    slug: "chandigarh-to-rishikesh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rishikesh",
+    distance: 220,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rishikesh for family vacations, adventure trips, yoga retreats, rafting tours, and group travel.",
+    highlights: ["Laxman Jhula", "Triveni Ghat", "River Rafting"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-haridwar",
+    slug: "chandigarh-to-haridwar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Haridwar",
+    distance: 220,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Haridwar for religious pilgrimages, family tours, Ganga Aarti visits, and comfortable group travel.",
+    highlights: ["Har Ki Pauri", "Mansa Devi Temple", "Ganga Aarti"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-roorkee",
+    slug: "chandigarh-to-roorkee-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Roorkee",
+    distance: 180,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Roorkee for educational trips, business travel, family tours, weddings, and group transportation.",
+    highlights: ["IIT Roorkee", "Solani Aqueduct", "Roorkee Cantonment"],
+    tollEstimate: 350,
+  },
+  {
+    id: "chandigarh-kashipur",
+    slug: "chandigarh-to-kashipur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kashipur",
+    distance: 260,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kashipur for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: ["Drona Sagar", "Giri Sarovar", "Moteshwar Mahadev Temple"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-haldwani",
+    slug: "chandigarh-to-haldwani-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Haldwani",
+    distance: 300,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Haldwani for family vacations, business travel, Kumaon tours, and group transportation.",
+    highlights: ["Gaula River", "Gaula Barrage", "Kathgodam"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-nainital",
+    slug: "chandigarh-to-nainital-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nainital",
+    distance: 320,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nainital for family vacations, honeymoon trips, weekend getaways, and scenic hill station sightseeing.",
+    highlights: ["Naini Lake", "Mall Road", "Naina Devi Temple"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-almora",
+    slug: "chandigarh-to-almora-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Almora",
+    distance: 400,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Almora for family vacations, mountain getaways, heritage tours, and scenic Kumaon sightseeing.",
+    highlights: ["Bright End Corner", "Kasar Devi Temple", "Almora Market"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-kausani",
+    slug: "chandigarh-to-kausani-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kausani",
+    distance: 430,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kausani for peaceful family vacations, Himalayan views, nature trips, and scenic Uttarakhand sightseeing.",
+    highlights: ["Kausani Viewpoint", "Anasakti Ashram", "Baijnath Temple"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-binsar",
+    slug: "chandigarh-to-binsar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Binsar",
+    distance: 420,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Binsar for wildlife tours, nature vacations, family getaways, and peaceful Himalayan sightseeing.",
+    highlights: ["Binsar Wildlife Sanctuary", "Zero Point", "Kasar Devi"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-ranikhet",
+    slug: "chandigarh-to-ranikhet-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ranikhet",
+    distance: 380,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ranikhet for family vacations, honeymoon trips, nature tours, and scenic Kumaon sightseeing.",
+    highlights: ["Chaubatia Gardens", "Jhula Devi Temple", "Majhkhali"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-jageshwar",
+    slug: "chandigarh-to-jageshwar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jageshwar",
+    distance: 500,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jageshwar for religious pilgrimages, family vacations, temple tours, and Himalayan sightseeing.",
+    highlights: [
+      "Jageshwar Temple",
+      "Dandeshwar Temple",
+      "Jageshwar Archaeological Museum",
+    ],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "chandigarh-chaukori",
+    slug: "chandigarh-to-chaukori-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Chaukori",
+    distance: 520,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Chaukori for peaceful mountain vacations, family trips, Himalayan sunrise views, and nature sightseeing.",
+    highlights: ["Himalayan Viewpoints", "Berinag", "Patal Bhuvaneshwar"],
+    tollEstimate: 1050,
+  },
+
+  {
+    id: "chandigarh-pithoragarh",
+    slug: "chandigarh-to-pithoragarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pithoragarh",
+    distance: 500,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pithoragarh for family vacations, adventure trips, religious tours, and scenic Kumaon sightseeing.",
+    highlights: ["Pithoragarh Fort", "Chandak Hill", "Thal Kedar"],
+    tollEstimate: 1000,
+  },
+  {
+    id: "chandigarh-munsiyari",
+    slug: "chandigarh-to-munsiyari-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Munsiyari",
+    distance: 600,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Munsiyari for family vacations, trekking trips, mountain adventures, and scenic Himalayan sightseeing.",
+    highlights: ["Khaliya Top", "Birthi Falls", "Nanda Devi Temple"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "chandigarh-auli",
+    slug: "chandigarh-to-auli-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Auli",
+    distance: 430,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Auli for family vacations, skiing trips, adventure tours, and scenic Himalayan sightseeing.",
+    highlights: ["Auli Ropeway", "Auli Ski Slopes", "Gorson Bugyal"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-joshimath",
+    slug: "chandigarh-to-joshimath-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Joshimath",
+    distance: 410,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Joshimath for family vacations, religious tours, Char Dham journeys, and Himalayan sightseeing.",
+    highlights: ["Narsingh Temple", "Auli", "Vishnuprayag"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-chopta",
+    slug: "chandigarh-to-chopta-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Chopta",
+    distance: 380,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Chopta for trekking adventures, family vacations, nature trips, and scenic Himalayan getaways.",
+    highlights: ["Tungnath Temple", "Chandrashila", "Deoria Tal"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-tungnath",
+    slug: "chandigarh-to-tungnath-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Tungnath",
+    distance: 400,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Tungnath for religious pilgrimages, trekking tours, family group travel, and Himalayan adventures.",
+    highlights: ["Tungnath Temple", "Chandrashila Peak", "Chopta"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-gaurikund",
+    slug: "chandigarh-to-gaurikund-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gaurikund",
+    distance: 470,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gaurikund for Kedarnath pilgrimage, religious tours, family pilgrimages, and group travel.",
+    highlights: [
+      "Gauri Kund Temple",
+      "Kedarnath Trek Starting Point",
+      "Hot Water Springs",
+    ],
+    tollEstimate: 950,
+  },
+
+  {
+    id: "chandigarh-kedarnath",
+    slug: "chandigarh-to-kedarnath-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kedarnath",
+    distance: 490,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kedarnath for Char Dham pilgrimages, family religious tours, and group travel to the sacred Himalayan temple.",
+    highlights: ["Kedarnath Temple", "Bhairavnath Temple", "Mandakini River"],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "chandigarh-guptakashi",
+    slug: "chandigarh-to-guptakashi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Guptakashi",
+    distance: 450,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Guptakashi for Kedarnath pilgrimage, religious tours, family trips, and scenic Himalayan travel.",
+    highlights: [
+      "Vishwanath Temple",
+      "Ardhanarishwar Temple",
+      "Mandakini Valley",
+    ],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-ukhimath",
+    slug: "chandigarh-to-ukhimath-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ukhimath",
+    distance: 430,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ukhimath for religious tours, family pilgrimages, temple visits, and scenic Himalayan vacations.",
+    highlights: ["Omkareshwar Temple", "Ukhimath Temples", "Chopta"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-rudraprayag",
+    slug: "chandigarh-to-rudraprayag-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rudraprayag",
+    distance: 380,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rudraprayag for Char Dham journeys, family vacations, religious tours, and scenic Himalayan sightseeing.",
+    highlights: ["Rudranath Temple", "Alaknanda River", "Mandakini River"],
+    tollEstimate: 800,
+  },
+  {
+    id: "chandigarh-badrinath",
+    slug: "chandigarh-to-badrinath-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Badrinath",
+    distance: 500,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Badrinath for Char Dham pilgrimages, family religious tours, and scenic Himalayan journeys.",
+    highlights: ["Badrinath Temple", "Mana Village", "Vasudhara Falls"],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "chandigarh-gangotri",
+    slug: "chandigarh-to-gangotri-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gangotri",
+    distance: 450,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gangotri for Char Dham pilgrimages, family tours, religious journeys, and Himalayan sightseeing.",
+    highlights: ["Gangotri Temple", "Bhagirathi River", "Pandava Gufa"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-yamunotri",
+    slug: "chandigarh-to-yamunotri-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Yamunotri",
+    distance: 420,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Yamunotri for Char Dham pilgrimages, family religious tours, and scenic Himalayan travel.",
+    highlights: ["Yamunotri Temple", "Surya Kund", "Janki Chatti"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-barkot",
+    slug: "chandigarh-to-barkot-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Barkot",
+    distance: 330,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Barkot for Yamunotri pilgrimages, family vacations, mountain getaways, and group travel.",
+    highlights: ["Yamuna Valley", "Janki Chatti", "Kempty Falls"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-uttarkashi",
+    slug: "chandigarh-to-uttarkashi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Uttarkashi",
+    distance: 360,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Uttarkashi for religious tours, Char Dham journeys, family trips, and Himalayan sightseeing.",
+    highlights: [
+      "Vishwanath Temple",
+      "Maneri Dam",
+      "Nehru Institute of Mountaineering",
+    ],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-harsil",
+    slug: "chandigarh-to-harsil-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Harsil",
+    distance: 430,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Harsil for peaceful mountain vacations, family getaways, nature tours, and scenic Himalayan sightseeing.",
+    highlights: ["Harsil Valley", "Bhagirathi River", "Dharali"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-dharali",
+    slug: "chandigarh-to-dharali-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dharali",
+    distance: 440,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dharali for Gangotri pilgrimages, family vacations, nature trips, and scenic Himalayan travel.",
+    highlights: ["Bhagirathi River", "Harsil Valley", "Gangotri"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-dhanolti",
+    slug: "chandigarh-to-dhanolti-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dhanolti",
+    distance: 180,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dhanolti for peaceful hill vacations, family trips, nature escapes, and scenic Uttarakhand sightseeing.",
+    highlights: ["Eco Park", "Surkanda Devi Temple", "Dhanolti Forest"],
+    tollEstimate: 400,
+  },
+
+  {
+    id: "chandigarh-kempty-fall",
+    slug: "chandigarh-to-kempty-fall-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kempty Fall",
+    distance: 190,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kempty Falls for family outings, weekend trips, Mussoorie sightseeing, and scenic hill vacations.",
+    highlights: ["Kempty Falls", "Mussoorie", "Camel's Back Road"],
+    tollEstimate: 400,
+  },
+  {
+    id: "chandigarh-maldevta",
+    slug: "chandigarh-to-maldevta-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Maldevta",
+    distance: 125,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Maldevta for family outings, nature trips, weekend getaways, and peaceful mountain sightseeing.",
+    highlights: ["Maldevta Waterfall", "Song River", "Nature Trails"],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-new-tehri",
+    slug: "chandigarh-to-new-tehri-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "New Tehri",
+    distance: 260,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to New Tehri for family vacations, Tehri Lake trips, adventure tours, and scenic Himalayan sightseeing.",
+    highlights: ["Tehri Lake", "Tehri Dam", "Surkanda Devi Temple"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-dhanaulti",
+    slug: "chandigarh-to-dhanaulti-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dhanaulti",
+    distance: 185,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dhanaulti for peaceful hill vacations, family trips, nature escapes, and scenic Uttarakhand sightseeing.",
+    highlights: ["Eco Park", "Surkanda Devi Temple", "Apple Orchards"],
+    tollEstimate: 400,
+  },
+
+  {
+    id: "chandigarh-chakrata",
+    slug: "chandigarh-to-chakrata-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Chakrata",
+    distance: 175,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Chakrata for family vacations, nature trips, trekking adventures, and peaceful Himalayan getaways.",
+    highlights: ["Tiger Falls", "Deoban", "Chilmiri Neck"],
+    tollEstimate: 350,
+  },
+
+  {
+    id: "chandigarh-kanatal",
+    slug: "chandigarh-to-kanatal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kanatal",
+    distance: 210,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kanatal for family vacations, camping trips, nature escapes, and scenic Himalayan sightseeing.",
+    highlights: ["Surkanda Devi Temple", "Kodia Forest", "Tehri Lake"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-chamba-uttarakhand",
+    slug: "chandigarh-to-chamba-uttarakhand-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Chamba",
+    distance: 245,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Chamba, Uttarakhand for family vacations, mountain getaways, nature tours, and scenic Himalayan travel.",
+    highlights: ["Tehri Lake", "Surkanda Devi Temple", "New Tehri"],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-lansdowne",
+    slug: "chandigarh-to-lansdowne-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Lansdowne",
+    distance: 270,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Lansdowne for family vacations, weekend getaways, nature trips, and peaceful hill station sightseeing.",
+    highlights: ["Bhulla Lake", "Tip-in-Top", "St. Mary's Church"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-pauri",
+    slug: "chandigarh-to-pauri-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pauri",
+    distance: 310,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pauri for family vacations, mountain tours, religious trips, and scenic Garhwal sightseeing.",
+    highlights: [
+      "Kandoliya Temple",
+      "Kyunkaleshwar Mahadev Temple",
+      "Chaukhamba Viewpoint",
+    ],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-duggalbitta",
+    slug: "chandigarh-to-duggalbitta-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Duggalbitta",
+    distance: 370,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Duggalbitta for nature vacations, trekking trips, family getaways, and scenic Himalayan sightseeing.",
+    highlights: ["Kedarnath Wildlife Sanctuary", "Chopta", "Deoria Tal"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-nandprayag",
+    slug: "chandigarh-to-nandprayag-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nandprayag",
+    distance: 400,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nandprayag for Char Dham journeys, family vacations, religious tours, and scenic Himalayan travel.",
+    highlights: ["Alaknanda River", "Nandakini River", "Nandprayag Sangam"],
+    tollEstimate: 800,
+  },
+  {
+    id: "chandigarh-karnaprayag",
+    slug: "chandigarh-to-karnaprayag-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Karnaprayag",
+    distance: 380,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Karnaprayag for family vacations, Char Dham journeys, religious tours, and scenic Himalayan sightseeing.",
+    highlights: ["Karnaprayag Sangam", "Uma Devi Temple", "Alaknanda River"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-chamoli",
+    slug: "chandigarh-to-chamoli-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Chamoli",
+    distance: 420,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Chamoli for family vacations, religious tours, adventure trips, and scenic Himalayan travel.",
+    highlights: [
+      "Chamoli Gopeshwar",
+      "Nanda Devi National Park",
+      "Alaknanda River",
+    ],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-gwaldam",
+    slug: "chandigarh-to-gwaldam-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gwaldam",
+    distance: 430,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gwaldam for peaceful mountain vacations, family getaways, nature tours, and scenic Kumaon sightseeing.",
+    highlights: ["Gwaldam Hill Station", "Baijnath Temple", "Himalayan Views"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-kathgodam",
+    slug: "chandigarh-to-kathgodam-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kathgodam",
+    distance: 315,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kathgodam for family trips, Kumaon vacations, business travel, and convenient group transportation.",
+    highlights: ["Kathgodam Railway Station", "Gaula River", "Haldwani"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-ramnagar",
+    slug: "chandigarh-to-ramnagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ramnagar",
+    distance: 280,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ramnagar for wildlife safaris, family vacations, adventure trips, and Corbett sightseeing.",
+    highlights: ["Corbett National Park", "Garjiya Temple", "Kosi River"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-corbett-national-park",
+    slug: "chandigarh-to-corbett-national-park-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Corbett National Park",
+    distance: 285,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Corbett National Park for wildlife safaris, family vacations, nature tours, and group adventure trips.",
+    highlights: ["Jim Corbett National Park", "Dhikala Zone", "Kosi River"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-dhikala",
+    slug: "chandigarh-to-dhikala-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dhikala",
+    distance: 330,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dhikala for wildlife safaris, jungle adventures, family trips, and Corbett National Park sightseeing.",
+    highlights: [
+      "Dhikala Safari Zone",
+      "Ramganga Reservoir",
+      "Wildlife Safari",
+    ],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-bijrani",
+    slug: "chandigarh-to-bijrani-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bijrani",
+    distance: 300,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bijrani for wildlife safaris, family vacations, jungle adventures, and nature sightseeing.",
+    highlights: ["Bijrani Safari Zone", "Tiger Safari", "Corbett Forest"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-garjiya",
+    slug: "chandigarh-to-garjiya-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Garjiya",
+    distance: 290,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Garjiya for family vacations, religious tours, wildlife trips, and Corbett sightseeing.",
+    highlights: ["Garjiya Devi Temple", "Kosi River", "Corbett National Park"],
+    tollEstimate: 600,
+  },
+  {
+    id: "chandigarh-bhimtal",
+    slug: "chandigarh-to-bhimtal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bhimtal",
+    distance: 320,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bhimtal for family vacations, lake tours, nature trips, and scenic Uttarakhand sightseeing.",
+    highlights: ["Bhimtal Lake", "Victoria Dam", "Bhimeshwar Mahadev Temple"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-sattal",
+    slug: "chandigarh-to-sattal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sattal",
+    distance: 330,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sattal for peaceful family vacations, nature escapes, birdwatching tours, and lake sightseeing.",
+    highlights: ["Sattal Lakes", "Sattal Birding", "Subhash Dhara"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-naukuchiatal",
+    slug: "chandigarh-to-naukuchiatal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Naukuchiatal",
+    distance: 335,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Naukuchiatal for family vacations, lake trips, adventure activities, and peaceful mountain getaways.",
+    highlights: ["Naukuchiatal Lake", "Paragliding", "Hanuman Temple"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-mukteshwar",
+    slug: "chandigarh-to-mukteshwar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mukteshwar",
+    distance: 370,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mukteshwar for family vacations, mountain getaways, adventure trips, and scenic Himalayan sightseeing.",
+    highlights: ["Mukteshwar Temple", "Chauli Ki Jali", "Mukteshwar Dham"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-peora",
+    slug: "chandigarh-to-peora-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Peora",
+    distance: 390,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Peora for peaceful mountain vacations, nature retreats, family getaways, and offbeat Himalayan sightseeing.",
+    highlights: ["Peora Village", "Himalayan Views", "Kumaon Forests"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-pangot",
+    slug: "chandigarh-to-pangot-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pangot",
+    distance: 340,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pangot for birdwatching tours, nature vacations, family trips, and peaceful Himalayan getaways.",
+    highlights: [
+      "Pangot Bird Sanctuary",
+      "Kilbury Forest",
+      "Himalayan Birdwatching",
+    ],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-kilbury",
+    slug: "chandigarh-to-kilbury-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kilbury",
+    distance: 345,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kilbury for birdwatching, forest excursions, nature trips, and scenic Himalayan sightseeing.",
+    highlights: ["Kilbury Bird Sanctuary", "Pangot", "Himalayan Forests"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-abbot-mount",
+    slug: "chandigarh-to-abbot-mount-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Abbot Mount",
+    distance: 500,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Abbot Mount for peaceful mountain vacations, nature retreats, family getaways, and offbeat Uttarakhand travel.",
+    highlights: ["Abbot Mount", "Lohaghat", "Mayawati Ashram"],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "chandigarh-kakrighat",
+    slug: "chandigarh-to-kakrighat-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kakrighat",
+    distance: 420,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kakrighat for spiritual journeys, family vacations, nature trips, and scenic Kumaon sightseeing.",
+    highlights: ["Kakrighat Temple", "Kosi River", "Kumaon Hills"],
+    tollEstimate: 850,
+  },
+  {
+    id: "chandigarh-someshwar",
+    slug: "chandigarh-to-someshwar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Someshwar",
+    distance: 420,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Someshwar for family vacations, peaceful mountain getaways, temple visits, and scenic Kumaon sightseeing.",
+    highlights: ["Someshwar Valley", "Someshwar Temple", "Kumaon Hills"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-dwarahat",
+    slug: "chandigarh-to-dwarahat-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dwarahat",
+    distance: 410,
+    duration: "9.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dwarahat for family vacations, religious tours, heritage sightseeing, and peaceful Himalayan travel.",
+    highlights: ["Dwarahat Temples", "Dunagiri Temple", "Kumaon Hills"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-lohaghat",
+    slug: "chandigarh-to-lohaghat-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Lohaghat",
+    distance: 500,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Lohaghat for family vacations, nature trips, temple tours, and scenic Uttarakhand sightseeing.",
+    highlights: ["Abbott Mount", "Mayawati Ashram", "Advaita Ashrama"],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "chandigarh-champawat",
+    slug: "chandigarh-to-champawat-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Champawat",
+    distance: 520,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Champawat for family vacations, religious tours, heritage trips, and scenic Himalayan sightseeing.",
+    highlights: ["Champawat Fort", "Purnagiri Temple", "Baleshwar Temple"],
+    tollEstimate: 1050,
+  },
+
+  {
+    id: "chandigarh-tanakpur",
+    slug: "chandigarh-to-tanakpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Tanakpur",
+    distance: 450,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Tanakpur for religious pilgrimages, family trips, business travel, and group transportation.",
+    highlights: ["Purnagiri Temple", "Sharda River", "Sharda Barrage"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-khatima",
+    slug: "chandigarh-to-khatima-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Khatima",
+    distance: 400,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Khatima for family trips, business travel, religious tours, and group transportation across Uttarakhand.",
+    highlights: ["Banbasa", "Sharda Sagar Dam", "Nanakmatta Sahib"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-banbasa",
+    slug: "chandigarh-to-banbasa-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Banbasa",
+    distance: 440,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Banbasa for family trips, religious tours, border-area travel, and group transportation.",
+    highlights: ["Sharda Barrage", "Sharda River", "Purnagiri Temple"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-rudrapur",
+    slug: "chandigarh-to-rudrapur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rudrapur",
+    distance: 350,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rudrapur for business travel, family trips, weddings, events, and group transportation.",
+    highlights: ["Atariya Temple", "Gandhi Park", "Pantnagar"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-kichha",
+    slug: "chandigarh-to-kichha-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kichha",
+    distance: 370,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kichha for business travel, family trips, weddings, events, and convenient group transportation.",
+    highlights: ["Kichha Market", "Rudrapur", "Pantnagar"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-bazpur",
+    slug: "chandigarh-to-bazpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bazpur",
+    distance: 310,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bazpur for family trips, business travel, religious tours, and group transportation.",
+    highlights: ["Bazpur Market", "Kashipur", "Corbett National Park"],
+    tollEstimate: 650,
+  },
+  {
+    id: "chandigarh-gadarpur",
+    slug: "chandigarh-to-gadarpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gadarpur",
+    distance: 330,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gadarpur for family trips, business travel, weddings, religious tours, and group transportation.",
+    highlights: ["Gadarpur Market", "Rudrapur", "Kashipur"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-sitarganj",
+    slug: "chandigarh-to-sitarganj-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sitarganj",
+    distance: 390,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sitarganj for family trips, business travel, religious tours, and group transportation across Uttarakhand.",
+    highlights: ["Nanakmatta Sahib", "Sarda River", "Khatima"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-khamaria",
+    slug: "chandigarh-to-khamaria-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Khamaria",
+    distance: 410,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Khamaria for family trips, business travel, local sightseeing, and group transportation.",
+    highlights: [
+      "Khamaria Local Market",
+      "Sitarganj",
+      "Uttarakhand Countryside",
+    ],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-sitarganj-2",
+    slug: "chandigarh-to-sitarganj-2-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sitarganj",
+    distance: 390,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sitarganj for family trips, business travel, religious tours, and group transportation across Uttarakhand.",
+    highlights: ["Nanakmatta Sahib", "Sarda River", "Khatima"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-delhi",
+    slug: "chandigarh-to-delhi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Delhi",
+    distance: 245,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Delhi for family trips, corporate travel, airport transfers, weddings, events, and group transportation.",
+    highlights: ["India Gate", "Red Fort", "Connaught Place"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-gurugram",
+    slug: "chandigarh-to-gurugram-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gurugram",
+    distance: 280,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gurugram for corporate travel, airport transfers, family trips, weddings, events, and group transportation.",
+    highlights: [
+      "Cyber City",
+      "Kingdom of Dreams Area",
+      "Sultanpur National Park",
+    ],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-faridabad",
+    slug: "chandigarh-to-faridabad-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Faridabad",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Faridabad for business travel, family trips, weddings, events, airport transfers, and group transportation.",
+    highlights: ["Surajkund", "Raja Nahar Singh Palace", "Badkhal Lake"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-noida",
+    slug: "chandigarh-to-noida-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Noida",
+    distance: 290,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Noida for corporate travel, family trips, airport transfers, weddings, events, and group transportation.",
+    highlights: [
+      "Okhla Bird Sanctuary",
+      "The Great India Place",
+      "Noida Golf Course",
+    ],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-ghaziabad",
+    slug: "chandigarh-to-ghaziabad-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ghaziabad",
+    distance: 280,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ghaziabad for business travel, family trips, weddings, events, airport transfers, and group transportation.",
+    highlights: ["ISKCON Ghaziabad", "City Forest", "Dasna Temple"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-meerut",
+    slug: "chandigarh-to-meerut-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Meerut",
+    distance: 210,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Meerut for family trips, business travel, historical tours, weddings, and group transportation.",
+    highlights: ["Augarnath Temple", "Gandhi Bagh", "Suraj Kund"],
+    tollEstimate: 450,
+  },
+  {
+    id: "chandigarh-muzaffarnagar",
+    slug: "chandigarh-to-muzaffarnagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Muzaffarnagar",
+    distance: 190,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Muzaffarnagar for family trips, business travel, weddings, events, and group transportation.",
+    highlights: ["Muzaffarnagar City", "Shukratal", "Jain Temple"],
+    tollEstimate: 400,
+  },
+
+  {
+    id: "chandigarh-saharanpur",
+    slug: "chandigarh-to-saharanpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Saharanpur",
+    distance: 115,
+    duration: "3 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Saharanpur for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: [
+      "Saharanpur Botanical Garden",
+      "Shakumbhari Devi Temple",
+      "Company Garden",
+    ],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-karnal",
+    slug: "chandigarh-to-karnal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Karnal",
+    distance: 125,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Karnal for family trips, business travel, weddings, events, and group transportation.",
+    highlights: [
+      "Karnal Lake",
+      "Cantonment Church Tower",
+      "Kalander Shah's Tomb",
+    ],
+    tollEstimate: 300,
+  },
+
+  {
+    id: "chandigarh-kurukshetra",
+    slug: "chandigarh-to-kurukshetra-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kurukshetra",
+    distance: 100,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kurukshetra for religious pilgrimages, historical tours, family trips, and group sightseeing.",
+    highlights: ["Brahma Sarovar", "Jyotisar", "Krishna Museum"],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-yamunanagar",
+    slug: "chandigarh-to-yamunanagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Yamunanagar",
+    distance: 105,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Yamunanagar for family trips, business travel, religious tours, and group transportation.",
+    highlights: ["Kalesar National Park", "Adibadri", "Hathni Kund Barrage"],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-jagadhri",
+    slug: "chandigarh-to-jagadhri-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jagadhri",
+    distance: 110,
+    duration: "2.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jagadhri for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: [
+      "Jagadhri Market",
+      "Kalesar National Park",
+      "Hathni Kund Barrage",
+    ],
+    tollEstimate: 250,
+  },
+
+  {
+    id: "chandigarh-sonipat",
+    slug: "chandigarh-to-sonipat-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sonipat",
+    distance: 190,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sonipat for corporate travel, family trips, weddings, events, and group transportation.",
+    highlights: ["Khwaja Khizr Tomb", "Mughal Sarai", "Murthal"],
+    tollEstimate: 400,
+  },
+
+  {
+    id: "chandigarh-panipat",
+    slug: "chandigarh-to-panipat-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Panipat",
+    distance: 175,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Panipat for historical tours, family trips, business travel, weddings, and group transportation.",
+    highlights: ["Panipat Museum", "Panipat Battlefield", "Kabuli Bagh Mosque"],
+    tollEstimate: 350,
+  },
+
+  {
+    id: "chandigarh-hisar",
+    slug: "chandigarh-to-hisar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Hisar",
+    distance: 230,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Hisar for business travel, family trips, historical tours, weddings, and group transportation.",
+    highlights: ["Firoz Shah Palace Complex", "Gujari Mahal", "Blue Bird Lake"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-rohtak",
+    slug: "chandigarh-to-rohtak-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rohtak",
+    distance: 200,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rohtak for family trips, business travel, educational tours, weddings, and group transportation.",
+    highlights: ["Tilyar Lake", "Rohtak Zoo", "Maharshi Dayanand University"],
+    tollEstimate: 400,
+  },
+  {
+    id: "chandigarh-bhiwani",
+    slug: "chandigarh-to-bhiwani-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bhiwani",
+    distance: 240,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bhiwani for family trips, business travel, weddings, events, and group transportation.",
+    highlights: ["Bhiwani Boxing Club", "Star Monument", "Bhiwani Zoo"],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-jind",
+    slug: "chandigarh-to-jind-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jind",
+    distance: 220,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jind for family trips, religious tours, business travel, weddings, and group transportation.",
+    highlights: ["Rani Talab", "Pandav Pindara", "Jind Fort"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-kaithal",
+    slug: "chandigarh-to-kaithal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kaithal",
+    distance: 150,
+    duration: "3.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kaithal for family trips, religious tours, business travel, weddings, and group transportation.",
+    highlights: ["Kapil Muni Temple", "Vidkyar Lake", "Hansewala Dham"],
+    tollEstimate: 300,
+  },
+
+  {
+    id: "chandigarh-narwana",
+    slug: "chandigarh-to-narwana-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Narwana",
+    distance: 190,
+    duration: "4 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Narwana for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: ["Dhamtan Sahib", "Narwana Market", "Nearby Jind Attractions"],
+    tollEstimate: 400,
+  },
+
+  {
+    id: "chandigarh-tohana",
+    slug: "chandigarh-to-tohana-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Tohana",
+    distance: 210,
+    duration: "4.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Tohana for family trips, business travel, weddings, events, and group transportation.",
+    highlights: ["Tohana Market", "Dera Sacha Sauda Area", "Fatehabad Region"],
+    tollEstimate: 450,
+  },
+
+  {
+    id: "chandigarh-fatehabad",
+    slug: "chandigarh-to-fatehabad-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Fatehabad",
+    distance: 245,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Fatehabad for family trips, historical tours, business travel, weddings, and group transportation.",
+    highlights: [
+      "Banawali Archaeological Site",
+      "Asigarh Fort",
+      "Fatehabad Market",
+    ],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-sirsa",
+    slug: "chandigarh-to-sirsa-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sirsa",
+    distance: 280,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sirsa for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: ["Dera Sacha Sauda", "Tara Baba Kutiya", "Rania Region"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-ellenabad",
+    slug: "chandigarh-to-ellenabad-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ellenabad",
+    distance: 320,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ellenabad for family trips, business travel, weddings, events, and convenient group transportation.",
+    highlights: ["Ellenabad Market", "Ghaggar River Region", "Sirsa District"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-dabwali",
+    slug: "chandigarh-to-dabwali-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dabwali",
+    distance: 330,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dabwali for family trips, business travel, weddings, events, and group transportation.",
+    highlights: ["Dabwali Market", "Ghaggar Region", "Punjab-Haryana Border"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-mandi-dabwali",
+    slug: "chandigarh-to-mandi-dabwali-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mandi Dabwali",
+    distance: 330,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mandi Dabwali for family trips, business travel, weddings, events, and group transportation.",
+    highlights: [
+      "Mandi Dabwali Market",
+      "Punjab-Haryana Border",
+      "Ghaggar Region",
+    ],
+    tollEstimate: 700,
+  },
+  {
+    id: "chandigarh-rania",
+    slug: "chandigarh-to-rania-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rania",
+    distance: 300,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rania for family trips, business travel, weddings, events, and group transportation.",
+    highlights: ["Rania Market", "Ghaggar River Region", "Sirsa District"],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-siwani",
+    slug: "chandigarh-to-siwani-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Siwani",
+    distance: 260,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Siwani for family trips, business travel, weddings, events, and group transportation.",
+    highlights: ["Siwani Market", "Bhiwani Region", "Haryana Countryside"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-bahadurgarh",
+    slug: "chandigarh-to-bahadurgarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bahadurgarh",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bahadurgarh for corporate travel, family trips, weddings, events, and group transportation.",
+    highlights: ["Bahadurgarh Industrial Area", "Tikri Border", "City Park"],
+    tollEstimate: 550,
+  },
+
+  {
+    id: "chandigarh-jhajjar",
+    slug: "chandigarh-to-jhajjar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jhajjar",
+    distance: 250,
+    duration: "5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jhajjar for family trips, business travel, weddings, events, and group transportation.",
+    highlights: [
+      "Jhajjar Fort",
+      "Bhindawas Wildlife Sanctuary",
+      "Haryana Countryside",
+    ],
+    tollEstimate: 500,
+  },
+
+  {
+    id: "chandigarh-rewari",
+    slug: "chandigarh-to-rewari-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rewari",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rewari for family trips, business travel, weddings, corporate travel, and group transportation.",
+    highlights: ["Rewari Railway Heritage Museum", "Bada Talab", "Dharuhera"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-mahendragarh",
+    slug: "chandigarh-to-mahendragarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mahendragarh",
+    distance: 320,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mahendragarh for family trips, historical tours, religious visits, weddings, and group transportation.",
+    highlights: ["Mahendragarh Fort", "Jal Mahal", "Dhosi Hill"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-narnaul",
+    slug: "chandigarh-to-narnaul-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Narnaul",
+    distance: 330,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Narnaul for historical tours, family trips, religious visits, weddings, and group transportation.",
+    highlights: ["Jal Mahal", "Chor Gumbad", "Dhosi Hill"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-bawal",
+    slug: "chandigarh-to-bawal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bawal",
+    distance: 310,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bawal for corporate travel, industrial visits, family trips, weddings, and group transportation.",
+    highlights: ["Bawal Industrial Area", "Bawal Fort", "Rewari"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-manesar",
+    slug: "chandigarh-to-manesar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Manesar",
+    distance: 285,
+    duration: "5.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Manesar for corporate travel, business trips, family outings, weddings, events, and group transportation.",
+    highlights: [
+      "Heritage Transport Museum",
+      "Sultanpur National Park",
+      "Manesar Golf Course",
+    ],
+    tollEstimate: 600,
+  },
+
+  {
+    id: "chandigarh-pataudi",
+    slug: "chandigarh-to-pataudi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pataudi",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pataudi for family vacations, heritage tours, weddings, events, and group transportation.",
+    highlights: [
+      "Pataudi Palace",
+      "Pataudi Heritage",
+      "Sultanpur National Park",
+    ],
+    tollEstimate: 650,
+  },
+  {
+    id: "chandigarh-sohna",
+    slug: "chandigarh-to-sohna-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sohna",
+    distance: 310,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sohna for family trips, weekend getaways, corporate travel, weddings, and group transportation.",
+    highlights: ["Sohna Hot Springs", "Damdama Lake", "Sohna Hills"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-palwal",
+    slug: "chandigarh-to-palwal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Palwal",
+    distance: 350,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Palwal for family trips, business travel, weddings, events, and convenient group transportation.",
+    highlights: ["Nahar Singh Mahal", "Palwal Market", "Baba Farid's Tomb"],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-hodal",
+    slug: "chandigarh-to-hodal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Hodal",
+    distance: 370,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Hodal for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: ["Hodal Market", "Bramha Temple", "Braj Region"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-ballabhgarh",
+    slug: "chandigarh-to-ballabhgarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ballabhgarh",
+    distance: 320,
+    duration: "6.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ballabhgarh for corporate travel, family trips, weddings, events, and group transportation.",
+    highlights: ["Raja Nahar Singh Palace", "Ballabhgarh Fort", "Faridabad"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-faridabad-2",
+    slug: "chandigarh-to-faridabad-2-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Faridabad",
+    distance: 300,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Faridabad for business travel, family trips, weddings, events, airport transfers, and group transportation.",
+    highlights: ["Surajkund", "Raja Nahar Singh Palace", "Badkhal Lake"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-agra",
+    slug: "chandigarh-to-agra-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Agra",
+    distance: 450,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Agra for family vacations, historical tours, wedding trips, corporate travel, and group sightseeing.",
+    highlights: ["Taj Mahal", "Agra Fort", "Mehtab Bagh"],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-mathura",
+    slug: "chandigarh-to-mathura-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mathura",
+    distance: 420,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mathura for religious pilgrimages, family tours, Krishna Janmabhoomi visits, and group travel.",
+    highlights: [
+      "Shri Krishna Janmabhoomi",
+      "Dwarkadhish Temple",
+      "Vishram Ghat",
+    ],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-vrindavan",
+    slug: "chandigarh-to-vrindavan-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Vrindavan",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Vrindavan for religious pilgrimages, family tours, temple visits, and comfortable group transportation.",
+    highlights: ["Banke Bihari Temple", "Prem Mandir", "ISKCON Vrindavan"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-aligarh",
+    slug: "chandigarh-to-aligarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Aligarh",
+    distance: 390,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Aligarh for family trips, educational tours, business travel, weddings, and group transportation.",
+    highlights: ["Aligarh Fort", "AMU Campus", "Shekha Lake"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-gwalior",
+    slug: "chandigarh-to-gwalior-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gwalior",
+    distance: 600,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gwalior for historical tours, family vacations, weddings, business travel, and group sightseeing.",
+    highlights: ["Gwalior Fort", "Jai Vilas Palace", "Sas Bahu Temple"],
+    tollEstimate: 1200,
+  },
+  {
+    id: "chandigarh-jaipur",
+    slug: "chandigarh-to-jaipur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jaipur",
+    distance: 510,
+    duration: "9 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jaipur for family vacations, heritage tours, weddings, corporate travel, and group sightseeing.",
+    highlights: ["Amber Fort", "Hawa Mahal", "City Palace"],
+    tollEstimate: 1000,
+  },
+
+  {
+    id: "chandigarh-ajmer",
+    slug: "chandigarh-to-ajmer-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ajmer",
+    distance: 580,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ajmer for religious pilgrimages, family trips, heritage tours, and group transportation.",
+    highlights: [
+      "Ajmer Sharif Dargah",
+      "Ana Sagar Lake",
+      "Adhai Din Ka Jhonpra",
+    ],
+    tollEstimate: 1150,
+  },
+
+  {
+    id: "chandigarh-pushkar",
+    slug: "chandigarh-to-pushkar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pushkar",
+    distance: 600,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pushkar for religious tours, family vacations, cultural trips, and group sightseeing.",
+    highlights: ["Brahma Temple", "Pushkar Lake", "Savitri Temple"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "chandigarh-udaipur",
+    slug: "chandigarh-to-udaipur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Udaipur",
+    distance: 750,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Udaipur for family vacations, royal heritage tours, destination weddings, and scenic Rajasthan sightseeing.",
+    highlights: ["City Palace", "Lake Pichola", "Sajjangarh Palace"],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "chandigarh-jodhpur",
+    slug: "chandigarh-to-jodhpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jodhpur",
+    distance: 700,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jodhpur for family vacations, heritage tours, destination weddings, and Rajasthan sightseeing.",
+    highlights: ["Mehrangarh Fort", "Jaswant Thada", "Umaid Bhawan Palace"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "chandigarh-jaisalmer",
+    slug: "chandigarh-to-jaisalmer-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jaisalmer",
+    distance: 900,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jaisalmer for desert vacations, family trips, heritage tours, destination weddings, and group travel.",
+    highlights: ["Jaisalmer Fort", "Sam Sand Dunes", "Patwon Ki Haveli"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "chandigarh-bikaner",
+    slug: "chandigarh-to-bikaner-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bikaner",
+    distance: 650,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bikaner for family vacations, heritage tours, religious trips, weddings, and Rajasthan sightseeing.",
+    highlights: ["Junagarh Fort", "Karni Mata Temple", "Lalgarh Palace"],
+    tollEstimate: 1300,
+  },
+
+  {
+    id: "chandigarh-mount-abu",
+    slug: "chandigarh-to-mount-abu-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mount Abu",
+    distance: 800,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mount Abu for family vacations, weekend getaways, religious tours, and scenic hill station sightseeing.",
+    highlights: ["Nakki Lake", "Dilwara Temples", "Guru Shikhar"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "chandigarh-chittorgarh",
+    slug: "chandigarh-to-chittorgarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Chittorgarh",
+    distance: 700,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Chittorgarh for historical tours, family vacations, heritage sightseeing, and group travel.",
+    highlights: ["Chittorgarh Fort", "Vijay Stambh", "Kirti Stambh"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "chandigarh-bundi",
+    slug: "chandigarh-to-bundi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bundi",
+    distance: 650,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bundi for heritage tours, family vacations, historical sightseeing, and Rajasthan group travel.",
+    highlights: ["Bundi Palace", "Taragarh Fort", "Nawal Sagar Lake"],
+    tollEstimate: 1300,
+  },
+  {
+    id: "chandigarh-kota",
+    slug: "chandigarh-to-kota-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kota",
+    distance: 650,
+    duration: "11.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kota for family trips, educational tours, business travel, weddings, and group transportation.",
+    highlights: ["Kota Barrage", "Seven Wonders Park", "Kishore Sagar Lake"],
+    tollEstimate: 1300,
+  },
+
+  {
+    id: "chandigarh-bharatpur",
+    slug: "chandigarh-to-bharatpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bharatpur",
+    distance: 470,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bharatpur for family vacations, wildlife tours, heritage trips, and group sightseeing.",
+    highlights: ["Keoladeo National Park", "Lohagarh Fort", "Bharatpur Palace"],
+    tollEstimate: 950,
+  },
+
+  {
+    id: "chandigarh-alwar",
+    slug: "chandigarh-to-alwar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Alwar",
+    distance: 400,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Alwar for family vacations, heritage tours, wildlife trips, weddings, and group transportation.",
+    highlights: ["Bala Quila", "City Palace", "Siliserh Lake"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-neemrana",
+    slug: "chandigarh-to-neemrana-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Neemrana",
+    distance: 320,
+    duration: "6 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Neemrana for heritage vacations, weekend getaways, destination weddings, corporate trips, and group travel.",
+    highlights: ["Neemrana Fort Palace", "Baori", "Heritage Walks"],
+    tollEstimate: 650,
+  },
+
+  {
+    id: "chandigarh-mandawa",
+    slug: "chandigarh-to-mandawa-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mandawa",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mandawa for heritage tours, family vacations, cultural trips, and Shekhawati sightseeing.",
+    highlights: ["Mandawa Fort", "Havelis", "Murmu ki Haveli"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-shekhawati",
+    slug: "chandigarh-to-shekhawati-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Shekhawati",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Shekhawati for heritage tours, cultural vacations, family trips, and traditional Rajasthan sightseeing.",
+    highlights: ["Painted Havelis", "Mandawa", "Nawalgarh"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-ranthambore",
+    slug: "chandigarh-to-ranthambore-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ranthambore",
+    distance: 560,
+    duration: "10 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ranthambore for wildlife safaris, family vacations, adventure trips, and nature sightseeing.",
+    highlights: [
+      "Ranthambore National Park",
+      "Ranthambore Fort",
+      "Tiger Safari",
+    ],
+    tollEstimate: 1100,
+  },
+
+  {
+    id: "chandigarh-sariska",
+    slug: "chandigarh-to-sariska-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sariska",
+    distance: 410,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sariska for wildlife safaris, family vacations, nature tours, and Rajasthan sightseeing.",
+    highlights: [
+      "Sariska Tiger Reserve",
+      "Sariska Palace",
+      "Pandupole Hanuman Temple",
+    ],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-kumbhalgarh",
+    slug: "chandigarh-to-kumbhalgarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kumbhalgarh",
+    distance: 760,
+    duration: "13.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kumbhalgarh for heritage tours, family vacations, historical sightseeing, and Rajasthan group travel.",
+    highlights: [
+      "Kumbhalgarh Fort",
+      "Kumbhalgarh Wildlife Sanctuary",
+      "Badal Mahal",
+    ],
+    tollEstimate: 1500,
+  },
+
+  {
+    id: "chandigarh-ranakpur",
+    slug: "chandigarh-to-ranakpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ranakpur",
+    distance: 720,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ranakpur for religious tours, family vacations, heritage trips, and scenic Rajasthan sightseeing.",
+    highlights: [
+      "Ranakpur Jain Temple",
+      "Surya Narayan Temple",
+      "Aravalli Hills",
+    ],
+    tollEstimate: 1450,
+  },
+  {
+    id: "chandigarh-nathdwara",
+    slug: "chandigarh-to-nathdwara-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nathdwara",
+    distance: 730,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nathdwara for religious pilgrimages, family vacations, temple tours, and group transportation.",
+    highlights: ["Shrinathji Temple", "Charbhuja Temple", "Banas River"],
+    tollEstimate: 1450,
+  },
+
+  {
+    id: "chandigarh-haldighati",
+    slug: "chandigarh-to-haldighati-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Haldighati",
+    distance: 720,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Haldighati for historical tours, family trips, heritage sightseeing, and Rajasthan group travel.",
+    highlights: [
+      "Haldighati Battle Site",
+      "Maharana Pratap Museum",
+      "Chetak Samadhi",
+    ],
+    tollEstimate: 1450,
+  },
+
+  {
+    id: "chandigarh-eklingji",
+    slug: "chandigarh-to-eklingji-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Eklingji",
+    distance: 720,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Eklingji for religious pilgrimages, temple tours, family trips, and heritage sightseeing.",
+    highlights: ["Eklingji Temple", "Nagda Temples", "Udaipur"],
+    tollEstimate: 1450,
+  },
+
+  {
+    id: "chandigarh-nagda",
+    slug: "chandigarh-to-nagda-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nagda",
+    distance: 715,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nagda for heritage tours, religious trips, family vacations, and historical sightseeing.",
+    highlights: ["Sas-Bahu Temples", "Eklingji Temple", "Ancient Nagda Ruins"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "chandigarh-charbhuja",
+    slug: "chandigarh-to-charbhuja-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Charbhuja",
+    distance: 700,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Charbhuja for religious pilgrimages, family tours, temple visits, and Rajasthan sightseeing.",
+    highlights: ["Charbhuja Temple", "Kumbhalgarh", "Aravalli Hills"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "chandigarh-banswara",
+    slug: "chandigarh-to-banswara-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Banswara",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Banswara for family vacations, heritage tours, nature trips, and scenic Rajasthan sightseeing.",
+    highlights: ["Mahi Dam", "Anand Sagar Lake", "Tripura Sundari Temple"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "chandigarh-dungarpur",
+    slug: "chandigarh-to-dungarpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dungarpur",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dungarpur for heritage tours, family vacations, palace sightseeing, and Rajasthan group travel.",
+    highlights: ["Udai Bilas Palace", "Juna Mahal", "Gaib Sagar Lake"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "chandigarh-pratapgarh",
+    slug: "chandigarh-to-pratapgarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pratapgarh",
+    distance: 780,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pratapgarh for family trips, heritage tours, religious visits, and scenic Rajasthan travel.",
+    highlights: ["Devgarh", "Sitamata Wildlife Sanctuary", "Pratapgarh Fort"],
+    tollEstimate: 1550,
+  },
+
+  {
+    id: "chandigarh-kishangarh",
+    slug: "chandigarh-to-kishangarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kishangarh",
+    distance: 600,
+    duration: "10.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kishangarh for family trips, heritage tours, business travel, weddings, and group transportation.",
+    highlights: ["Kishangarh Fort", "Phool Mahal Palace", "Gondulav Lake"],
+    tollEstimate: 1200,
+  },
+
+  {
+    id: "chandigarh-beawar",
+    slug: "chandigarh-to-beawar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Beawar",
+    distance: 620,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Beawar for family trips, business travel, religious tours, weddings, and Rajasthan group transportation.",
+    highlights: ["Badnore Fort", "Masuda Fort", "Beawar Markets"],
+    tollEstimate: 1250,
+  },
+  {
+    id: "chandigarh-pali",
+    slug: "chandigarh-to-pali-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pali",
+    distance: 720,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pali for family vacations, heritage tours, religious trips, weddings, and Rajasthan sightseeing.",
+    highlights: [
+      "Ranakpur Jain Temple",
+      "Jawai Leopard Safari",
+      "Om Banna Temple",
+    ],
+    tollEstimate: 1450,
+  },
+
+  {
+    id: "chandigarh-jalore",
+    slug: "chandigarh-to-jalore-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jalore",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jalore for family trips, historical tours, religious visits, weddings, and group transportation.",
+    highlights: ["Jalore Fort", "Sundha Mata Temple", "Jalore City"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "chandigarh-sirohi",
+    slug: "chandigarh-to-sirohi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sirohi",
+    distance: 800,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sirohi for family vacations, religious tours, heritage trips, and scenic Rajasthan sightseeing.",
+    highlights: ["Sirohi Fort", "Sarna Mata Temple", "Mount Abu"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "chandigarh-barmer",
+    slug: "chandigarh-to-barmer-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Barmer",
+    distance: 950,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Barmer for desert vacations, family trips, cultural tours, weddings, and Rajasthan sightseeing.",
+    highlights: ["Barmer Fort", "Kiradu Temples", "Barmer Handicrafts"],
+    tollEstimate: 1900,
+  },
+
+  {
+    id: "chandigarh-phalodi",
+    slug: "chandigarh-to-phalodi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Phalodi",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Phalodi for desert trips, family vacations, heritage tours, and Rajasthan sightseeing.",
+    highlights: ["Phalodi Fort", "Khichan Bird Sanctuary", "Desert Landscapes"],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "chandigarh-nagaur",
+    slug: "chandigarh-to-nagaur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nagaur",
+    distance: 700,
+    duration: "12.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nagaur for heritage tours, family vacations, religious trips, and cultural Rajasthan sightseeing.",
+    highlights: ["Nagaur Fort", "Tarkeen Dargah", "Nagaur Cattle Fair Grounds"],
+    tollEstimate: 1400,
+  },
+
+  {
+    id: "chandigarh-sikar",
+    slug: "chandigarh-to-sikar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Sikar",
+    distance: 430,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Sikar for family trips, religious tours, heritage sightseeing, weddings, and group transportation.",
+    highlights: ["Rani Mahal", "Madhav Sagar Lake", "Devgarh"],
+    tollEstimate: 850,
+  },
+
+  {
+    id: "chandigarh-jhunjhunu",
+    slug: "chandigarh-to-jhunjhunu-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jhunjhunu",
+    distance: 400,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jhunjhunu for heritage tours, family vacations, cultural trips, and Shekhawati sightseeing.",
+    highlights: ["Khetri Mahal", "Rani Sati Temple", "Shekhawati Havelis"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-churu",
+    slug: "chandigarh-to-churu-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Churu",
+    distance: 470,
+    duration: "8.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Churu for heritage tours, family vacations, cultural trips, and traditional Rajasthan sightseeing.",
+    highlights: ["Churu Havelis", "Surana Haveli", "Tal Chhapar Sanctuary"],
+    tollEstimate: 950,
+  },
+
+  {
+    id: "chandigarh-hanumangarh",
+    slug: "chandigarh-to-hanumangarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Hanumangarh",
+    distance: 370,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Hanumangarh for historical tours, religious trips, family vacations, and group transportation.",
+    highlights: ["Bhatner Fort", "Kalibangan", "Gogamedi"],
+    tollEstimate: 750,
+  },
+  {
+    id: "chandigarh-anupgarh",
+    slug: "chandigarh-to-anupgarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Anupgarh",
+    distance: 390,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Anupgarh for family trips, business travel, historical tours, weddings, and group transportation.",
+    highlights: ["Anupgarh Fort", "Ghaggar River Region", "Rajasthan Border"],
+    tollEstimate: 800,
+  },
+
+  {
+    id: "chandigarh-suratgarh",
+    slug: "chandigarh-to-suratgarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Suratgarh",
+    distance: 350,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Suratgarh for family trips, business travel, historical tours, weddings, and group transportation.",
+    highlights: [
+      "Suratgarh Fort",
+      "Indira Gandhi Canal",
+      "Suratgarh Thermal Power Station",
+    ],
+    tollEstimate: 700,
+  },
+
+  {
+    id: "chandigarh-ganganagar",
+    slug: "chandigarh-to-ganganagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ganganagar",
+    distance: 380,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ganganagar for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: [
+      "Hindumalkot Border",
+      "Gauri Shankar Temple",
+      "Indira Gandhi Canal",
+    ],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-pilani",
+    slug: "chandigarh-to-pilani-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pilani",
+    distance: 360,
+    duration: "7 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pilani for educational tours, family trips, business travel, weddings, and group transportation.",
+    highlights: ["BITS Pilani", "Birla Museum", "Saraswati Temple"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-khetri",
+    slug: "chandigarh-to-khetri-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Khetri",
+    distance: 380,
+    duration: "7.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Khetri for heritage tours, family vacations, religious trips, and cultural Rajasthan sightseeing.",
+    highlights: ["Khetri Mahal", "Raghunath Temple", "Khetri Fort"],
+    tollEstimate: 750,
+  },
+
+  {
+    id: "chandigarh-fatehpur-rajasthan",
+    slug: "chandigarh-to-fatehpur-rajasthan-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Fatehpur",
+    distance: 440,
+    duration: "8 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Fatehpur, Rajasthan for heritage tours, family vacations, cultural trips, weddings, and Shekhawati sightseeing.",
+    highlights: [
+      "Fatehpur Havelis",
+      "Nand Lal Dev Temple",
+      "Shekhawati Heritage",
+    ],
+    tollEstimate: 900,
+  },
+
+  {
+    id: "chandigarh-rajsamand",
+    slug: "chandigarh-to-rajsamand-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rajsamand",
+    distance: 720,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rajsamand for family vacations, heritage tours, religious trips, and scenic Rajasthan sightseeing.",
+    highlights: ["Rajsamand Lake", "Dwarkadhish Temple", "Kumbhalgarh"],
+    tollEstimate: 1450,
+  },
+
+  {
+    id: "chandigarh-bhilwara",
+    slug: "chandigarh-to-bhilwara-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bhilwara",
+    distance: 680,
+    duration: "12 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bhilwara for family trips, business travel, religious tours, weddings, and Rajasthan sightseeing.",
+    highlights: ["Harni Mahadev Temple", "Mandalgarh Fort", "Meja Dam"],
+    tollEstimate: 1350,
+  },
+
+  {
+    id: "chandigarh-shahpura-rajasthan",
+    slug: "chandigarh-to-shahpura-rajasthan-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Shahpura",
+    distance: 610,
+    duration: "11 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Shahpura, Rajasthan for heritage tours, family vacations, cultural trips, weddings, and group transportation.",
+    highlights: ["Shahpura Haveli", "Ramdwara", "Aravalli Hills"],
+    tollEstimate: 1250,
+  },
+
+  {
+    id: "chandigarh-nimbahera",
+    slug: "chandigarh-to-nimbahera-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nimbahera",
+    distance: 720,
+    duration: "13 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nimbahera for family trips, religious tours, heritage sightseeing, weddings, and group transportation.",
+    highlights: ["Nimbahera Fort", "Sanwaliyaji Temple", "Chittorgarh Fort"],
+    tollEstimate: 1450,
+  },
+  {
+    id: "chandigarh-neemuch",
+    slug: "chandigarh-to-neemuch-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Neemuch",
+    distance: 800,
+    duration: "14 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Neemuch for family trips, historical tours, religious visits, weddings, and group transportation.",
+    highlights: ["Bhadwa Mata Temple", "Sukhanandji Ashram", "Neemuch Fort"],
+    tollEstimate: 1600,
+  },
+
+  {
+    id: "chandigarh-mandsaur",
+    slug: "chandigarh-to-mandsaur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mandsaur",
+    distance: 850,
+    duration: "15 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mandsaur for family vacations, religious tours, historical sightseeing, weddings, and group travel.",
+    highlights: [
+      "Pashupatinath Temple",
+      "Gandhi Sagar Region",
+      "Mandsaur Fort",
+    ],
+    tollEstimate: 1700,
+  },
+
+  {
+    id: "chandigarh-ratlam",
+    slug: "chandigarh-to-ratlam-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ratlam",
+    distance: 900,
+    duration: "15.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ratlam for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: ["Sailana Palace", "Kaktel Temple", "Cactus Garden"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "chandigarh-ujjain",
+    slug: "chandigarh-to-ujjain-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ujjain",
+    distance: 950,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ujjain for religious pilgrimages, family trips, temple tours, Mahakal Darshan, and group transportation.",
+    highlights: ["Mahakaleshwar Temple", "Mahakal Lok", "Ram Ghat"],
+    tollEstimate: 1900,
+  },
+
+  {
+    id: "chandigarh-indore",
+    slug: "chandigarh-to-indore-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Indore",
+    distance: 1050,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Indore for family vacations, business travel, weddings, events, and group transportation.",
+    highlights: ["Rajwada Palace", "Lal Bagh Palace", "Sarafa Bazaar"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "chandigarh-bhopal",
+    slug: "chandigarh-to-bhopal-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bhopal",
+    distance: 1150,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bhopal for family trips, business travel, historical tours, weddings, and Madhya Pradesh sightseeing.",
+    highlights: ["Upper Lake", "Sanchi Stupa", "Van Vihar National Park"],
+    tollEstimate: 2300,
+  },
+
+  {
+    id: "chandigarh-khajuraho",
+    slug: "chandigarh-to-khajuraho-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Khajuraho",
+    distance: 1150,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Khajuraho for heritage tours, family vacations, historical sightseeing, and group travel.",
+    highlights: [
+      "Khajuraho Temples",
+      "Western Group of Temples",
+      "Panna National Park",
+    ],
+    tollEstimate: 2300,
+  },
+
+  {
+    id: "chandigarh-orchha",
+    slug: "chandigarh-to-orchha-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Orchha",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Orchha for heritage tours, family vacations, religious trips, and historical sightseeing.",
+    highlights: ["Orchha Fort", "Ram Raja Temple", "Jahangir Mahal"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "chandigarh-jabalpur",
+    slug: "chandigarh-to-jabalpur-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jabalpur",
+    distance: 1250,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jabalpur for family vacations, nature trips, wildlife tours, religious visits, and group transportation.",
+    highlights: ["Bhedaghat", "Dhuandhar Falls", "Marble Rocks"],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "chandigarh-bandhavgarh",
+    slug: "chandigarh-to-bandhavgarh-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bandhavgarh",
+    distance: 1300,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bandhavgarh for wildlife safaris, family vacations, adventure trips, and Madhya Pradesh sightseeing.",
+    highlights: [
+      "Bandhavgarh National Park",
+      "Bandhavgarh Fort",
+      "Tiger Safari",
+    ],
+    tollEstimate: 2600,
+  },
+  {
+    id: "chandigarh-kanha-national-park",
+    slug: "chandigarh-to-kanha-national-park-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kanha National Park",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kanha National Park for wildlife safaris, family vacations, nature tours, and group travel.",
+    highlights: [
+      "Kanha National Park",
+      "Kanha Tiger Reserve",
+      "Wildlife Safari",
+    ],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "chandigarh-pench-national-park",
+    slug: "chandigarh-to-pench-national-park-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pench National Park",
+    distance: 1250,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pench National Park for wildlife safaris, family vacations, nature trips, and group transportation.",
+    highlights: [
+      "Pench National Park",
+      "Pench Tiger Reserve",
+      "Wildlife Safari",
+    ],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "chandigarh-pachmarhi",
+    slug: "chandigarh-to-pachmarhi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Pachmarhi",
+    distance: 1200,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Pachmarhi for family vacations, hill station trips, nature tours, and scenic Madhya Pradesh sightseeing.",
+    highlights: ["Bee Falls", "Jata Shankar Cave", "Dhoopgarh"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "chandigarh-amarkantak",
+    slug: "chandigarh-to-amarkantak-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Amarkantak",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Amarkantak for religious pilgrimages, family trips, nature tours, and spiritual sightseeing.",
+    highlights: [
+      "Narmada Udgam Temple",
+      "Kapildhara Falls",
+      "Amarkantak Temples",
+    ],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "chandigarh-ahmedabad",
+    slug: "chandigarh-to-ahmedabad-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Ahmedabad",
+    distance: 900,
+    duration: "16 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Ahmedabad for business travel, family trips, weddings, events, and Gujarat sightseeing.",
+    highlights: ["Sabarmati Ashram", "Kankaria Lake", "Adalaj Stepwell"],
+    tollEstimate: 1800,
+  },
+
+  {
+    id: "chandigarh-gandhinagar",
+    slug: "chandigarh-to-gandhinagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gandhinagar",
+    distance: 950,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gandhinagar for business travel, family trips, corporate events, weddings, and Gujarat sightseeing.",
+    highlights: ["Akshardham Temple", "Adalaj Stepwell", "Indroda Nature Park"],
+    tollEstimate: 1900,
+  },
+
+  {
+    id: "chandigarh-vadodara",
+    slug: "chandigarh-to-vadodara-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Vadodara",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Vadodara for business travel, family vacations, heritage tours, weddings, and group transportation.",
+    highlights: ["Laxmi Vilas Palace", "Sayaji Garden", "Baroda Museum"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "chandigarh-surat",
+    slug: "chandigarh-to-surat-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Surat",
+    distance: 1250,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Surat for business travel, family trips, weddings, events, and group transportation.",
+    highlights: ["Dumas Beach", "Surat Castle", "Dutch Garden"],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "chandigarh-dwarka",
+    slug: "chandigarh-to-dwarka-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dwarka",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dwarka for religious pilgrimages, family vacations, temple tours, and Gujarat sightseeing.",
+    highlights: ["Dwarkadhish Temple", "Bet Dwarka", "Rukmini Devi Temple"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "chandigarh-somnath",
+    slug: "chandigarh-to-somnath-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Somnath",
+    distance: 1450,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Somnath for religious pilgrimages, family trips, temple tours, and Gujarat sightseeing.",
+    highlights: ["Somnath Temple", "Triveni Sangam", "Bhalka Tirth"],
+    tollEstimate: 2900,
+  },
+  {
+    id: "chandigarh-veraval",
+    slug: "chandigarh-to-veraval-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Veraval",
+    distance: 1450,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Veraval for religious pilgrimages, family vacations, coastal trips, and Gujarat sightseeing.",
+    highlights: ["Somnath Temple", "Veraval Beach", "Bhalka Tirth"],
+    tollEstimate: 2900,
+  },
+
+  {
+    id: "chandigarh-porbandar",
+    slug: "chandigarh-to-porbandar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Porbandar",
+    distance: 1400,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Porbandar for family vacations, heritage tours, religious trips, coastal sightseeing, and group travel.",
+    highlights: ["Kirti Mandir", "Sudama Temple", "Porbandar Beach"],
+    tollEstimate: 2800,
+  },
+
+  {
+    id: "chandigarh-jamnagar",
+    slug: "chandigarh-to-jamnagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Jamnagar",
+    distance: 1250,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Jamnagar for family trips, business travel, wildlife tours, religious visits, and Gujarat sightseeing.",
+    highlights: ["Lakhota Lake", "Lakhota Palace", "Marine National Park"],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "chandigarh-rajkot",
+    slug: "chandigarh-to-rajkot-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Rajkot",
+    distance: 1200,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Rajkot for business travel, family vacations, heritage tours, weddings, and group transportation.",
+    highlights: [
+      "Kaba Gandhi No Delo",
+      "Watson Museum",
+      "Rotary Midtown Dolls Museum",
+    ],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "chandigarh-bhavnagar",
+    slug: "chandigarh-to-bhavnagar-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bhavnagar",
+    distance: 1150,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bhavnagar for family trips, business travel, religious tours, heritage sightseeing, and group transportation.",
+    highlights: ["Takhteshwar Temple", "Nilambag Palace", "Victoria Park"],
+    tollEstimate: 2300,
+  },
+
+  {
+    id: "chandigarh-gir-national-park",
+    slug: "chandigarh-to-gir-national-park-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Gir National Park",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Gir National Park for wildlife safaris, family vacations, nature tours, and group travel.",
+    highlights: [
+      "Gir National Park",
+      "Asiatic Lion Safari",
+      "Gir Interpretation Zone",
+    ],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "chandigarh-palitana",
+    slug: "chandigarh-to-palitana-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Palitana",
+    distance: 1200,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Palitana for religious pilgrimages, Jain temple tours, family trips, and Gujarat sightseeing.",
+    highlights: [
+      "Shatrunjaya Hill",
+      "Palitana Jain Temples",
+      "Adishwar Temple",
+    ],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "chandigarh-bhuj",
+    slug: "chandigarh-to-bhuj-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bhuj",
+    distance: 1200,
+    duration: "21 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bhuj for family vacations, cultural tours, heritage trips, desert sightseeing, and Gujarat group travel.",
+    highlights: ["Aina Mahal", "Prag Mahal", "Bhujodi Handicraft Village"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "chandigarh-mandvi",
+    slug: "chandigarh-to-mandvi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mandvi",
+    distance: 1250,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mandvi for family vacations, beach trips, cultural tours, heritage sightseeing, and group transportation.",
+    highlights: ["Mandvi Beach", "Vijay Vilas Palace", "Shipbuilding Yard"],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "chandigarh-dholavira",
+    slug: "chandigarh-to-dholavira-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Dholavira",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Dholavira for historical tours, archaeological trips, family vacations, and cultural Gujarat sightseeing.",
+    highlights: [
+      "Dholavira Archaeological Site",
+      "Harappan Ruins",
+      "Great Rann of Kutch",
+    ],
+    tollEstimate: 2700,
+  },
+  {
+    id: "chandigarh-kutch",
+    slug: "chandigarh-to-kutch-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Kutch",
+    distance: 1250,
+    duration: "22 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Kutch for family vacations, desert tours, cultural trips, heritage sightseeing, and group travel.",
+    highlights: [
+      "Great Rann of Kutch",
+      "Kutch Handicraft Villages",
+      "Kutch Desert Landscape",
+    ],
+    tollEstimate: 2500,
+  },
+
+  {
+    id: "chandigarh-modhera",
+    slug: "chandigarh-to-modhera-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Modhera",
+    distance: 1000,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Modhera for heritage tours, family vacations, historical sightseeing, and Gujarat group travel.",
+    highlights: ["Modhera Sun Temple", "Surya Kund", "Modhera Dance Festival"],
+    tollEstimate: 2000,
+  },
+
+  {
+    id: "chandigarh-patan",
+    slug: "chandigarh-to-patan-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Patan",
+    distance: 1050,
+    duration: "18 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Patan for heritage tours, family trips, historical sightseeing, and cultural Gujarat travel.",
+    highlights: ["Rani Ki Vav", "Patan Patola Heritage", "Sahasralinga Talav"],
+    tollEstimate: 2100,
+  },
+
+  {
+    id: "chandigarh-mehsana",
+    slug: "chandigarh-to-mehsana-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Mehsana",
+    distance: 1000,
+    duration: "17 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Mehsana for family trips, business travel, religious tours, weddings, and group transportation.",
+    highlights: [
+      "Modhera Sun Temple",
+      "Bahuchar Mata Temple",
+      "Toranwali Mata Temple",
+    ],
+    tollEstimate: 2000,
+  },
+
+  {
+    id: "chandigarh-nadiad",
+    slug: "chandigarh-to-nadiad-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Nadiad",
+    distance: 1100,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Nadiad for family trips, religious tours, business travel, weddings, and Gujarat sightseeing.",
+    highlights: ["Santram Mandir", "Swaminarayan Temple", "Nadiad Heritage"],
+    tollEstimate: 2200,
+  },
+
+  {
+    id: "chandigarh-anand",
+    slug: "chandigarh-to-anand-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Anand",
+    distance: 1120,
+    duration: "19 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Anand for business travel, family trips, educational tours, weddings, and group transportation.",
+    highlights: ["Amul Dairy", "Sardar Patel Museum", "Swaminarayan Temple"],
+    tollEstimate: 2250,
+  },
+
+  {
+    id: "chandigarh-bharuch",
+    slug: "chandigarh-to-bharuch-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Bharuch",
+    distance: 1200,
+    duration: "20 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Bharuch for business travel, family trips, religious tours, weddings, and Gujarat sightseeing.",
+    highlights: ["Golden Bridge", "Bhrigu Rishi Temple", "Narmada River"],
+    tollEstimate: 2400,
+  },
+
+  {
+    id: "chandigarh-vapi",
+    slug: "chandigarh-to-vapi-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Vapi",
+    distance: 1350,
+    duration: "23 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Vapi for business travel, family trips, industrial visits, weddings, and group transportation.",
+    highlights: ["Daman", "Dudhni Waterfalls", "Silvassa"],
+    tollEstimate: 2700,
+  },
+
+  {
+    id: "chandigarh-daman",
+    slug: "chandigarh-to-daman-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Daman",
+    distance: 1380,
+    duration: "23.5 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Daman for family vacations, beach trips, weekend getaways, weddings, and group sightseeing.",
+    highlights: ["Devka Beach", "Daman Fort", "Jampore Beach"],
+    tollEstimate: 2750,
+  },
+
+  {
+    id: "chandigarh-diu",
+    slug: "chandigarh-to-diu-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Diu",
+    distance: 1500,
+    duration: "25 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Diu for family vacations, beach holidays, heritage tours, and coastal sightseeing.",
+    highlights: ["Diu Fort", "Nagoa Beach", "St. Paul's Church"],
+    tollEstimate: 3000,
+  },
+
+  {
+    id: "chandigarh-silvassa",
+    slug: "chandigarh-to-silvassa-tempo-traveller-fare",
+    origin: "Chandigarh",
+    destination: "Silvassa",
+    distance: 1400,
+    duration: "24 Hours",
+    description:
+      "Tempo traveller booking from Chandigarh to Silvassa for family vacations, nature trips, weekend getaways, and group sightseeing.",
+    highlights: [
+      "Dudhni Waterfalls",
+      "Vanganga Lake Garden",
+      "Tribal Cultural Museum",
+    ],
+    tollEstimate: 2800,
+  },
 ].map((route) => ({
   ...route,
   mapEmbedUrl: `https://www.google.com/maps?q=${encodeURIComponent(route.origin)}+to+${encodeURIComponent(

@@ -664,7 +664,7 @@ export default function FaresClient() {
                 );
               }
 
-              // Special handling for Hyderabad
+              // Special handling for Chandigarh
               if (city === "Chandigarh") {
                 return (
                   <div key={city} className="space-y-16">
