@@ -99,7 +99,7 @@ Hi YatraTempoTraveller,
 _Sent via YatraTempoTraveller.com booking form_
 `;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=916280820037&text=${encodeURIComponent(
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=919818022327&text=${encodeURIComponent(
       message,
     )}`;
 

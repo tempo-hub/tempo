@@ -134,7 +134,7 @@ export default function FarePageClient({
   const competitorPrice = Math.round(fare * 1.4);
   const savings = competitorPrice - fare;
 
-  const whatsappUrl = `https://wa.me/916280820037?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/919818022327?text=${encodeURIComponent(
     `Hi, I want to book a cab from ${route.origin} to ${route.destination} at ₹${fare}`,
   )}`;
 

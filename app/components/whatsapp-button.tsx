@@ -7,7 +7,7 @@ export const WhatsAppButton = () => {
   const openWhatsApp = () => {
     const message =
       "Hi, I want to book a Tempo Traveller. Please share availability and fare details.";
-    const whatsappUrl = `https://wa.me/916280820037?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919818022327?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
@@ -35,7 +35,7 @@ export const WhatsAppButton = () => {
           title="Call Yatra Tempo Traveller"
           className="rounded-full h-16 w-16 p-0 shadow-2xl cursor-pointer"
           onClick={() => {
-            window.location.href = "tel:+916280820037";
+            window.location.href = "tel:+919818022327";
           }}
         >
           <Phone size={30} aria-hidden="true" />

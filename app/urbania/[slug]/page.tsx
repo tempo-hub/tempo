@@ -257,7 +257,7 @@ export default async function UrbaniaPage({ params }: Props) {
               {/* CTA */}
               <div className="flex flex-wrap gap-4 mt-8">
                 <a
-                  href="tel:+916280820037"
+                  href="tel:+919818022327"
                   className="bg-primary px-6 py-4 rounded-xl font-semibold flex items-center gap-2 transition"
                 >
                   <Phone size={20} />
@@ -457,7 +457,7 @@ export default async function UrbaniaPage({ params }: Props) {
                   {/* Buttons */}
                   <div className="mt-8 flex gap-4">
                     <a
-                      href="tel:+916280820037"
+                      href="tel:+919818022327"
                       className="flex-1 rounded-2xl bg-primary hover:opacity-90 py-4 text-center text-lg font-semibold text-white transition-all duration-300"
                     >
                       Call Now
@@ -694,7 +694,7 @@ export default async function UrbaniaPage({ params }: Props) {
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 mt-12">
                 <a
-                  href="tel:+916280820037"
+                  href="tel:+919818022327"
                   className="inline-flex items-center justify-center rounded-2xl bg-primary hover:opacity-90 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 shadow-lg shadow-primary/20"
                 >
                   Call Now

@@ -196,7 +196,7 @@ export const OfficeLocation = ({
               <div>
                 <h4 className="font-bold text-secondary">Emergency Support</h4>
                 <p className="text-sm text-muted-foreground">
-                  +91 8448445504 (Available 24/7)
+                  +91 98180 22327 (Available 24/7)
                 </p>
               </div>
             </div>
