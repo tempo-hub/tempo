@@ -135,7 +135,7 @@ export default function FarePageClient({
   const savings = competitorPrice - fare;
 
   const whatsappUrl = `https://wa.me/919818022327?text=${encodeURIComponent(
-    `Hi, I want to book a cab from ${route.origin} to ${route.destination} at ₹${fare}`,
+    `Hi, I want to book a Tempo Traveller through Yatra Tempo Traveller powered by Chikucab. ${route.origin} to ${route.destination} at ₹${fare}`,
   )}`;
 
   return (

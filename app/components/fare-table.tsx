@@ -3,11 +3,9 @@
 import { VEHICLES, calculateFare, TaxiRoute } from "@/lib/data";
 import { Button } from "./ui-base";
 import { Info, ArrowUpRight, Phone, ShieldCheck } from "lucide-react";
-import { useState } from "react";
-import BookingModal from "./shared/BookingModal";
+import { openWhatsAppChat } from "@/lib/whatsappUtils";
 
 export const FareTable = ({ route }: { route: TaxiRoute }) => {
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   return (
     <>
@@ -141,7 +139,7 @@ export const FareTable = ({ route }: { route: TaxiRoute }) => {
                           size="sm"
                           variant={isCheapest ? "primary" : "secondary"}
                           className="h-10 px-4 rounded-xl w-full font-semibold"
-                          onClick={() => setIsBookingOpen(true)}
+                          onClick={() => openWhatsAppChat()}
                         >
                           Book Now
                           <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -180,11 +178,6 @@ export const FareTable = ({ route }: { route: TaxiRoute }) => {
           </div>
         </div>
       </div>
-
-      <BookingModal
-        isOpen={isBookingOpen}
-        onClose={() => setIsBookingOpen(false)}
-      />
     </>
   );
 };

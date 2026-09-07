@@ -1,18 +1,18 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import { VEHICLES, calculateFare, TaxiRoute } from "@/lib/data";
 import { Button, Card } from "./ui-base";
 import { Bus, ShoppingCart, CheckCircle2, ShieldCheck } from "lucide-react";
 import { motion } from "framer-motion";
-import BookingModal from "./shared/BookingModal";
+import { openWhatsAppChat } from "@/lib/whatsappUtils";
+import { useState } from "react";
 
 export const FareCalculator = ({ route }: { route: TaxiRoute }) => {
   const [selectedVehicle, setSelectedVehicle] = useState(VEHICLES[0]);
   const fare = useMemo(() => {
     return calculateFare(route.distance, selectedVehicle.perKmRate);
   }, [route.distance, selectedVehicle]);
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   return (
     <>
@@ -141,7 +141,7 @@ export const FareCalculator = ({ route }: { route: TaxiRoute }) => {
               <Button
                 variant="whatsapp"
                 className="w-full h-14 rounded-xl text-lg group"
-                onClick={() => setIsBookingOpen(true)}
+                onClick={() => openWhatsAppChat()}
               >
                 Book on WhatsApp
               </Button>
@@ -153,11 +153,6 @@ export const FareCalculator = ({ route }: { route: TaxiRoute }) => {
           </div>
         </div>
       </Card>
-
-      <BookingModal
-        isOpen={isBookingOpen}
-        onClose={() => setIsBookingOpen(false)}
-      />
     </>
   );
 };

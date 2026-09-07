@@ -6,7 +6,7 @@ import { Phone } from "lucide-react";
 export const WhatsAppButton = () => {
   const openWhatsApp = () => {
     const message =
-      "Hi, I want to book a Tempo Traveller. Please share availability and fare details.";
+      "Hi, I want to book a Tempo Traveller through Yatra Tempo Traveller powered by Chikucab.";
     const whatsappUrl = `https://wa.me/919818022327?text=${encodeURIComponent(message)}`;
 
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
