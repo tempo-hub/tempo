@@ -50992,3 +50992,265 @@ export const calculateFare = (distance: number, rate: number) => {
 
   return Math.round(base);
 };
+
+// Exact City Hub Slugs
+export const CITY_HUBS = [
+  {
+    slug: "tempo-traveller-in-ayodhya",
+    name: "Ayodhya",
+    state: "Uttar Pradesh",
+    tag: "Ram Nagari",
+    desc: "Ram Mandir holy city hub for Ramayana circuit tours.",
+  },
+  {
+    slug: "tempo-traveller-in-delhi",
+    name: "Delhi",
+    state: "Delhi/NCR",
+    tag: "National Capital Hub",
+    desc: "Primary NCR pickup hub for Agra, Uttarakhand, Himachal, Rajasthan & pan-India group tours.",
+  },
+  {
+    slug: "tempo-traveller-in-noida",
+    name: "Noida",
+    state: "Uttar Pradesh",
+    tag: "NCR Hub",
+    desc: "Expressway pickup hub servicing Agra, Mathura, and Uttarakhand.",
+  },
+  {
+    slug: "tempo-traveller-in-ujjain",
+    name: "Ujjain",
+    state: "Madhya Pradesh",
+    tag: "Mahakal Corridor",
+    desc: "Mahakaleshwar Jyotirlinga holy city hub.",
+  },
+  {
+    slug: "tempo-traveller-in-jaipur",
+    name: "Jaipur",
+    state: "Rajasthan",
+    tag: "Heritage Hub",
+    desc: "Pink City hub for Rajasthan fort tours, Pushkar & Udaipur trips.",
+  },
+  {
+    slug: "tempo-traveller-in-indore",
+    name: "Indore",
+    state: "Madhya Pradesh",
+    tag: "MP Hub",
+    desc: "Madhya Pradesh central hub for Ujjain Mahakal, Omkareshwar & Pachmarhi.",
+  },
+  {
+    slug: "tempo-traveller-in-mathura",
+    name: "Mathura",
+    state: "Uttar Pradesh",
+    tag: "Braj Hub",
+    desc: "Lord Krishna's birthplace hub for Braj Dham religious Yatra.",
+  },
+  {
+    slug: "tempo-traveller-in-rishikesh",
+    name: "Rishikesh",
+    state: "Uttarakhand",
+    tag: "Yoga & Adventure",
+    desc: "Himalayan gateway for Char Dham, Kedarnath & rafting expeditions.",
+  },
+  {
+    slug: "tempo-traveller-in-chandigarh",
+    name: "Chandigarh",
+    state: "Punjab/Haryana",
+    tag: "North Gateway",
+    desc: "Northern capital gateway for Shimla, Manali & Leh Ladakh tours.",
+  },
+  {
+    slug: "tempo-traveller-in-mumbai",
+    name: "Mumbai",
+    state: "Maharashtra",
+    tag: "West Gateway",
+    desc: "Financial capital hub for Shirdi, Nashik & Goa luxury tours.",
+  },
+  {
+    slug: "tempo-traveller-in-ahmedabad",
+    name: "Ahmedabad",
+    state: "Gujarat",
+    tag: "Gujarat Hub",
+    desc: "Gujarat central hub for Statue of Unity & Somnath trips.",
+  },
+  {
+    slug: "tempo-traveller-in-bangalore",
+    name: "Bangalore",
+    state: "Karnataka",
+    tag: "South Hub",
+    desc: "Southern tech hub for Mysore, Ooty & Coorg luxury tours.",
+  },
+  {
+    slug: "tempo-traveller-in-nagpur",
+    name: "Nagpur",
+    state: "Maharashtra",
+    tag: "Central India Hub",
+    desc: "Central India travel hub for Pench, Tadoba, Pachmarhi, Jabalpur & nearby destinations.",
+  },
+  {
+    slug: "tempo-traveller-in-faridabad",
+    name: "Faridabad",
+    state: "Haryana",
+    tag: "NCR Hub",
+    desc: "Industrial NCR hub for Agra Expressway & outstation journeys.",
+  },
+  {
+    slug: "tempo-traveller-in-agra",
+    name: "Agra",
+    state: "Uttar Pradesh",
+    tag: "Taj Gateway",
+    desc: "Taj Mahal city hub for Golden Triangle circuit luxury travel.",
+  },
+  {
+    slug: "tempo-traveller-in-dehradun",
+    name: "Dehradun",
+    state: "Uttarakhand",
+    tag: "Hill Capital",
+    desc: "Uttarakhand capital hub for Mussoorie, Chakrata & Dhanaulti.",
+  },
+  {
+    slug: "tempo-traveller-in-haridwar",
+    name: "Haridwar",
+    state: "Uttarakhand",
+    tag: "Spiritual Hub",
+    desc: "Ganga Ghat holy city hub for pilgrimage and mountain tour groups.",
+  },
+  {
+    slug: "tempo-traveller-in-kanpur",
+    name: "Kanpur",
+    state: "Uttar Pradesh",
+    tag: "UP Hub",
+    desc: "Central UP hub for Lucknow, Prayagraj & Ayodhya tours.",
+  },
+  {
+    slug: "tempo-traveller-in-udaipur",
+    name: "Udaipur",
+    state: "Rajasthan",
+    tag: "Lakes Gateway",
+    desc: "City of Lakes hub for Rajasthan heritage circuit.",
+  },
+  {
+    slug: "tempo-traveller-in-prayagraj",
+    name: "Prayagraj",
+    state: "Uttar Pradesh",
+    tag: "Triveni Sangam",
+    desc: "Holy confluence hub for Kashi, Ayodhya & Chitrakoot Yatra.",
+  },
+  {
+    slug: "tempo-traveller-in-shimla",
+    name: "Shimla",
+    state: "Himachal Pradesh",
+    tag: "Hill Station",
+    desc: "Capital hill station hub for Kufri, Spiti & Kinnaur.",
+  },
+  {
+    slug: "tempo-traveller-in-amritsar",
+    name: "Amritsar",
+    state: "Punjab",
+    tag: "Golden City",
+    desc: "Holy Golden Temple hub for Wagah Border & Himachal tours.",
+  },
+  {
+    slug: "tempo-traveller-in-ghaziabad",
+    name: "Ghaziabad",
+    state: "Uttar Pradesh",
+    tag: "NCR Hub",
+    desc: "East NCR hub for Char Dham Yatra and Himachal mountain routes.",
+  },
+];
+
+export const FAQS = [
+  {
+    q: "What is a Tempo Traveller and who should hire one?",
+    a: "A Tempo Traveller is a spacious passenger vehicle designed for group travel. It is ideal for families, friends, corporate teams, wedding groups, pilgrimage tours, school or college trips, and outstation journeys. Yatra Tempo Traveller offers multiple seating options to comfortably accommodate different group sizes.",
+  },
+
+  {
+    q: "What seating options are available with Yatra Tempo Traveller?",
+    a: "Yatra Tempo Traveller offers multiple seating options, including 9-seater, 12-seater, 16-seater, 17-seater, and 20-seater vehicles, depending on availability and travel requirements. You can choose the vehicle based on your group size, luggage requirements, route, and preferred comfort level.",
+  },
+
+  {
+    q: "How much does it cost to hire a Tempo Traveller?",
+    a: "Tempo Traveller rental fares depend on the vehicle's seating capacity, travel distance, number of days, route, season, and trip type. Outstation packages may include a minimum daily kilometer requirement, while tolls, parking, state taxes, and driver allowance may be charged separately unless included in an all-inclusive package. Contact Yatra Tempo Traveller for an exact quotation based on your itinerary.",
+  },
+
+  {
+    q: "Is Tempo Traveller available for one-way and round-trip journeys?",
+    a: "Yes. Yatra Tempo Traveller provides vehicles for one-way trips, round trips, local sightseeing, airport transfers, multi-day tours, and customized outstation journeys. Share your pickup location, destination, travel dates, and group size to receive a suitable quotation.",
+  },
+
+  {
+    q: "Can I hire a Tempo Traveller for Char Dham Yatra?",
+    a: "Yes, Tempo Travellers can be hired for pilgrimage journeys such as Char Dham Yatra, Do Dham Yatra, Ayodhya, Varanasi, Mathura, Vrindavan, Haridwar, Rishikesh, and other religious destinations. Vehicle suitability depends on the route, road conditions, group size, and local travel restrictions.",
+  },
+
+  {
+    q: "Can I book a Tempo Traveller for hill stations?",
+    a: "Yes. Tempo Travellers are suitable for many hill-station and mountain routes. Depending on the destination and road conditions, we can recommend an appropriate vehicle and experienced driver. For high-altitude or difficult mountain routes, vehicle availability and route restrictions should be confirmed before booking.",
+  },
+
+  {
+    q: "Are experienced drivers provided with the Tempo Traveller?",
+    a: "Yes. Yatra Tempo Traveller provides professional drivers familiar with local, outstation, pilgrimage, and highway routes. For mountain journeys, an experienced hill-route driver can be requested depending on availability.",
+  },
+
+  {
+    q: "Does the Tempo Traveller have AC?",
+    a: "Most of our Tempo Traveller options are equipped with air conditioning and comfortable passenger seating. Features may vary depending on the vehicle variant, model, and availability. You can confirm the exact vehicle specifications with our booking team before confirming your trip.",
+  },
+
+  {
+    q: "Can I hire a Tempo Traveller for weddings and events?",
+    a: "Yes. Tempo Travellers are a convenient option for weddings, family functions, corporate events, conferences, destination weddings, and group transportation. Multiple vehicles can also be arranged for larger groups, subject to availability.",
+  },
+
+  {
+    q: "Are toll taxes, parking charges, and state taxes included in the fare?",
+    a: "This depends on the quotation and package selected. Toll taxes, parking charges, state entry taxes, permits, and other route-specific charges may be charged separately at actual cost unless an all-inclusive package is provided. Always check the final quotation for a clear breakdown of included and excluded charges.",
+  },
+
+  {
+    q: "Is there a minimum kilometer limit for outstation Tempo Traveller bookings?",
+    a: "Yes, a minimum daily kilometer billing may apply to outstation Tempo Traveller bookings. The minimum kilometer requirement depends on the vehicle, route, and package. Our booking team will provide the applicable kilometer calculation along with your quotation.",
+  },
+
+  {
+    q: "Can I hire a Tempo Traveller for local sightseeing?",
+    a: "Yes. Yatra Tempo Traveller offers local sightseeing and city-tour packages. You can hire a Tempo Traveller for a few hours, a full day, or multiple days depending on your itinerary and vehicle requirement.",
+  },
+
+  {
+    q: "Can I customize my Tempo Traveller trip itinerary?",
+    a: "Yes. You can customize your trip according to your pickup location, destinations, sightseeing stops, travel dates, number of days, and group size. Our team can help you select a suitable vehicle and prepare a customized quotation.",
+  },
+
+  {
+    q: "How do I book a Tempo Traveller with Yatra?",
+    a: "To book a Tempo Traveller, share your pickup location, destination, travel date, return date if applicable, number of passengers, and preferred seating capacity. Our booking team will check vehicle availability, provide a quotation, and guide you through the confirmation process.",
+  },
+
+  {
+    q: "How much advance is required to confirm a booking?",
+    a: "The advance amount depends on the vehicle, travel dates, trip duration, route, and booking package. Your booking team will confirm the required advance amount when providing the quotation. The booking is confirmed after the agreed advance payment is received.",
+  },
+
+  {
+    q: "Can I book a Tempo Traveller at the last minute?",
+    a: "Last-minute bookings may be possible depending on vehicle availability. However, advance booking is recommended during weekends, holidays, wedding seasons, festivals, and peak travel periods because premium Tempo Traveller vehicles can get booked quickly.",
+  },
+
+  {
+    q: "Can I hire multiple Tempo Travellers for a large group?",
+    a: "Yes. Multiple Tempo Travellers can be arranged for large groups, corporate tours, weddings, family functions, school trips, and other events, subject to vehicle availability. Our team can help coordinate vehicles according to your group size and itinerary.",
+  },
+
+  {
+    q: "What happens if my travel plan changes after booking?",
+    a: "If your travel dates, route, passenger count, or itinerary changes, contact our booking team as early as possible. Changes are subject to vehicle availability, revised distance or duration, and the applicable booking and cancellation terms.",
+  },
+
+  {
+    q: "Why should I choose Yatra Tempo Traveller?",
+    a: "Yatra Tempo Traveller focuses on comfortable group transportation with multiple vehicle options, professional drivers, flexible trip planning, transparent quotations, and support for local, outstation, pilgrimage, corporate, wedding, and sightseeing journeys across India.",
+  },
+];
