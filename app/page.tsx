@@ -49,7 +49,7 @@ export default function Home() {
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-                <a href="tel:+919818022327">
+                <a href="tel:+916280820037">
                   <Button
                     variant="outline"
                     size="lg"

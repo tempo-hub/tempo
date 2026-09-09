@@ -5,14 +5,12 @@ import {
   ArrowRight,
   MapPin,
   Star,
-  Users,
   Clock,
   Award,
   Shield,
   Phone,
   MessageSquare,
   Bus,
-  Compass,
   CheckCircle2,
 } from "lucide-react";
 

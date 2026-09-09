@@ -50996,6 +50996,7 @@ export const calculateFare = (distance: number, rate: number) => {
 // Exact City Hub Slugs
 export const CITY_HUBS = [
   {
+    id: "ayodhya",
     slug: "tempo-traveller-in-ayodhya",
     name: "Ayodhya",
     state: "Uttar Pradesh",
@@ -51003,6 +51004,7 @@ export const CITY_HUBS = [
     desc: "Ram Mandir holy city hub for Ramayana circuit tours.",
   },
   {
+    id: "delhi",
     slug: "tempo-traveller-in-delhi",
     name: "Delhi",
     state: "Delhi/NCR",
@@ -51010,6 +51012,7 @@ export const CITY_HUBS = [
     desc: "Primary NCR pickup hub for Agra, Uttarakhand, Himachal, Rajasthan & pan-India group tours.",
   },
   {
+    id: "noida",
     slug: "tempo-traveller-in-noida",
     name: "Noida",
     state: "Uttar Pradesh",
@@ -51017,6 +51020,7 @@ export const CITY_HUBS = [
     desc: "Expressway pickup hub servicing Agra, Mathura, and Uttarakhand.",
   },
   {
+    id: "ujjain",
     slug: "tempo-traveller-in-ujjain",
     name: "Ujjain",
     state: "Madhya Pradesh",
@@ -51024,6 +51028,7 @@ export const CITY_HUBS = [
     desc: "Mahakaleshwar Jyotirlinga holy city hub.",
   },
   {
+    id: "jaipur",
     slug: "tempo-traveller-in-jaipur",
     name: "Jaipur",
     state: "Rajasthan",
@@ -51031,6 +51036,7 @@ export const CITY_HUBS = [
     desc: "Pink City hub for Rajasthan fort tours, Pushkar & Udaipur trips.",
   },
   {
+    id: "indore",
     slug: "tempo-traveller-in-indore",
     name: "Indore",
     state: "Madhya Pradesh",
@@ -51038,6 +51044,7 @@ export const CITY_HUBS = [
     desc: "Madhya Pradesh central hub for Ujjain Mahakal, Omkareshwar & Pachmarhi.",
   },
   {
+    id: "mathura",
     slug: "tempo-traveller-in-mathura",
     name: "Mathura",
     state: "Uttar Pradesh",
@@ -51045,6 +51052,7 @@ export const CITY_HUBS = [
     desc: "Lord Krishna's birthplace hub for Braj Dham religious Yatra.",
   },
   {
+    id: "rishikesh",
     slug: "tempo-traveller-in-rishikesh",
     name: "Rishikesh",
     state: "Uttarakhand",
@@ -51052,6 +51060,7 @@ export const CITY_HUBS = [
     desc: "Himalayan gateway for Char Dham, Kedarnath & rafting expeditions.",
   },
   {
+    id: "chandigarh",
     slug: "tempo-traveller-in-chandigarh",
     name: "Chandigarh",
     state: "Punjab/Haryana",
@@ -51059,6 +51068,7 @@ export const CITY_HUBS = [
     desc: "Northern capital gateway for Shimla, Manali & Leh Ladakh tours.",
   },
   {
+    id: "mumbai",
     slug: "tempo-traveller-in-mumbai",
     name: "Mumbai",
     state: "Maharashtra",
@@ -51066,6 +51076,7 @@ export const CITY_HUBS = [
     desc: "Financial capital hub for Shirdi, Nashik & Goa luxury tours.",
   },
   {
+    id: "ahmedabad",
     slug: "tempo-traveller-in-ahmedabad",
     name: "Ahmedabad",
     state: "Gujarat",
@@ -51073,6 +51084,7 @@ export const CITY_HUBS = [
     desc: "Gujarat central hub for Statue of Unity & Somnath trips.",
   },
   {
+    id: "bangalore",
     slug: "tempo-traveller-in-bangalore",
     name: "Bangalore",
     state: "Karnataka",
@@ -51080,6 +51092,7 @@ export const CITY_HUBS = [
     desc: "Southern tech hub for Mysore, Ooty & Coorg luxury tours.",
   },
   {
+    id: "nagpur",
     slug: "tempo-traveller-in-nagpur",
     name: "Nagpur",
     state: "Maharashtra",
@@ -51087,6 +51100,7 @@ export const CITY_HUBS = [
     desc: "Central India travel hub for Pench, Tadoba, Pachmarhi, Jabalpur & nearby destinations.",
   },
   {
+    id: "faridabad",
     slug: "tempo-traveller-in-faridabad",
     name: "Faridabad",
     state: "Haryana",
@@ -51094,6 +51108,7 @@ export const CITY_HUBS = [
     desc: "Industrial NCR hub for Agra Expressway & outstation journeys.",
   },
   {
+    id: "agra",
     slug: "tempo-traveller-in-agra",
     name: "Agra",
     state: "Uttar Pradesh",
@@ -51101,6 +51116,7 @@ export const CITY_HUBS = [
     desc: "Taj Mahal city hub for Golden Triangle circuit luxury travel.",
   },
   {
+    id: "dehradun",
     slug: "tempo-traveller-in-dehradun",
     name: "Dehradun",
     state: "Uttarakhand",
@@ -51108,6 +51124,7 @@ export const CITY_HUBS = [
     desc: "Uttarakhand capital hub for Mussoorie, Chakrata & Dhanaulti.",
   },
   {
+    id: "haridwar",
     slug: "tempo-traveller-in-haridwar",
     name: "Haridwar",
     state: "Uttarakhand",
@@ -51115,6 +51132,7 @@ export const CITY_HUBS = [
     desc: "Ganga Ghat holy city hub for pilgrimage and mountain tour groups.",
   },
   {
+    id: "kanpur",
     slug: "tempo-traveller-in-kanpur",
     name: "Kanpur",
     state: "Uttar Pradesh",
@@ -51122,6 +51140,7 @@ export const CITY_HUBS = [
     desc: "Central UP hub for Lucknow, Prayagraj & Ayodhya tours.",
   },
   {
+    id: "udaipur",
     slug: "tempo-traveller-in-udaipur",
     name: "Udaipur",
     state: "Rajasthan",
@@ -51129,6 +51148,7 @@ export const CITY_HUBS = [
     desc: "City of Lakes hub for Rajasthan heritage circuit.",
   },
   {
+    id: "prayagraj",
     slug: "tempo-traveller-in-prayagraj",
     name: "Prayagraj",
     state: "Uttar Pradesh",
@@ -51136,6 +51156,7 @@ export const CITY_HUBS = [
     desc: "Holy confluence hub for Kashi, Ayodhya & Chitrakoot Yatra.",
   },
   {
+    id: "shimla",
     slug: "tempo-traveller-in-shimla",
     name: "Shimla",
     state: "Himachal Pradesh",
@@ -51143,6 +51164,7 @@ export const CITY_HUBS = [
     desc: "Capital hill station hub for Kufri, Spiti & Kinnaur.",
   },
   {
+    id: "amritsar",
     slug: "tempo-traveller-in-amritsar",
     name: "Amritsar",
     state: "Punjab",
@@ -51150,6 +51172,7 @@ export const CITY_HUBS = [
     desc: "Holy Golden Temple hub for Wagah Border & Himachal tours.",
   },
   {
+    id: "ghaziabad",
     slug: "tempo-traveller-in-ghaziabad",
     name: "Ghaziabad",
     state: "Uttar Pradesh",

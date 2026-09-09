@@ -3,7 +3,7 @@
  * @param customMessage Optional custom message to append to the default message
  */
 export const openWhatsAppChat = (customMessage?: string) => {
-  const phoneNumber = "919818022327";
+  const phoneNumber = "916280820037";
   
   const baseMessage = "Hi, I want to book a Tempo Traveller through Yatra Tempo Traveller powered by Chikucab.";
   

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
 import {
   Award,
@@ -11,7 +10,6 @@ import {
   CheckCircle2,
   ChevronDown,
   ChevronUp,
-  Clock,
   MapPin,
   MessageCircle,
   Phone,
@@ -64,8 +62,8 @@ interface RouteItem {
 // CONSTANTS
 // ============================================================
 
-const WHATSAPP_NUMBER = "919818022327";
-const PHONE_NUMBER = "+919818022327";
+const WHATSAPP_NUMBER = "916280820037";
+const PHONE_NUMBER = "+916280820037";
 
 const BRAND = "#FE6A01";
 const BRAND_DARK = "#FE791A";
@@ -785,10 +783,16 @@ export default function CityTemplate({
                 target="_blank"
                 method="GET"
                 onSubmit={(e) => {
-                  const select = e.currentTarget.querySelector("select");
-                  const hidden = e.currentTarget.querySelector(
-                    'input[type="hidden"]',
-                  );
+                  const select =
+                    e.currentTarget.querySelector<HTMLSelectElement>(
+                      'select[name="seaterVariant"]',
+                    );
+
+                  const hidden =
+                    e.currentTarget.querySelector<HTMLInputElement>(
+                      'input[type="hidden"]',
+                    );
+
                   if (hidden && select) {
                     hidden.value = `Quote for Tempo Traveller in ${city.name} - ${select.value}`;
                   }
