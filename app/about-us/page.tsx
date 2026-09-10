@@ -10,6 +10,7 @@ import {
   TrendingDown,
   Users,
 } from "lucide-react";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About Us | Yatra Tempo Traveller",
@@ -453,13 +454,13 @@ export default function AboutUs() {
                 </p>
               </div>
 
-              <a
+              <Link
                 href="/fares"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-primary/90"
               >
                 Explore Fares
                 <ArrowRight className="h-4 w-4" />
-              </a>
+              </Link>
 
             </div>
 
@@ -485,7 +486,7 @@ export default function AboutUs() {
             wider mobility services, visit our main website.
           </p>
 
-          <a
+          <Link
             href="https://chikucab.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -493,7 +494,7 @@ export default function AboutUs() {
           >
             Visit Chiku Cab
             <ArrowRight className="h-4 w-4" />
-          </a>
+          </Link>
 
         </div>
       </section>
@@ -511,13 +512,13 @@ export default function AboutUs() {
             travel option for your family, friends, colleagues, or group.
           </p>
 
-          <a
+          <Link
             href="/fares"
             className="mt-8 inline-flex items-center gap-2 rounded-xl bg-slate-950 px-7 py-3.5 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-slate-800"
           >
             Find Your Route
             <ArrowRight className="h-4 w-4" />
-          </a>
+          </Link>
 
         </div>
       </section>
