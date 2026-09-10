@@ -63,7 +63,7 @@ interface RouteItem {
 // ============================================================
 
 const WHATSAPP_NUMBER = "916280820037";
-const PHONE_NUMBER = "+916280820037";
+const PHONE_NUMBER = "+918448445504";
 
 const BRAND = "#FE6A01";
 const BRAND_DARK = "#FE791A";
@@ -219,7 +219,6 @@ interface CityTemplateProps {
 
 export default function CityTemplate({
   city,
-  routes = [],
   fleet = [],
   faqs = [],
 }: CityTemplateProps) {
@@ -2168,7 +2167,7 @@ export default function CityTemplate({
                     fontStyle: "italic",
                   }}
                 >
-                  "{review.text}"
+                  &quot;{review.text}&quot;
                 </p>
 
                 <div

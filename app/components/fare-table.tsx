@@ -145,7 +145,7 @@ export const FareTable = ({ route }: { route: TaxiRoute }) => {
                           <ArrowUpRight className="ml-1 h-4 w-4" />
                         </Button>
 
-                        <a href="tel:+916280820037">
+                        <a href="tel:+918448445504">
                           <Button
                             size="sm"
                             variant="outline"
