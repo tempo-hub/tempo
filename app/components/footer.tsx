@@ -73,10 +73,20 @@ export const Footer = () => {
                   </Link>
                 </li>
               ))}
+
+              <li>
+                <Link
+                  href="/per-km-fare"
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  Per Km Fares
+                </Link>
+              </li>
+
               <li>
                 <Link
                   href="/calculator"
-                  className="text-primary font-bold hover:text-white transition-colors"
+                  className="text-slate-400 hover:text-white transition-colors"
                 >
                   Fare Calculator
                 </Link>
@@ -168,10 +178,16 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
-          <p>
-            © {new Date().getFullYear()} All rights reserved from Chiku Mobility India Private
-            Limited.
+        <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs sm:text-sm text-slate-500">
+          <p className="text-center md:text-left leading-relaxed">
+            © {new Date().getFullYear()} All rights reserved by{" "}
+            <span className="text-slate-400 font-medium">
+              Chiku Mobility India Private Limited
+            </span>
+            .
+          </p>
+          <p className="text-center md:text-right text-slate-600">
+            Made with care for travelers across India 🇮🇳
           </p>
         </div>
       </div>

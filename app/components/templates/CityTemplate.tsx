@@ -19,6 +19,20 @@ import {
   Luggage,
   Route,
   MessageSquare,
+  Snowflake,
+  UserCheck,
+  Fuel,
+  MapPinned,
+  Music,
+  Wifi,
+  Sunrise,
+  Moon,
+  Check,
+  X,
+  Thermometer,
+  CalendarDays,
+  Lightbulb,
+  IndianRupee,
 } from "lucide-react";
 
 // ============================================================
@@ -215,6 +229,868 @@ interface CityTemplateProps {
   routes?: RouteItem[];
   fleet?: FleetItem[];
   faqs?: Array<{ q: string; a: string }>;
+}
+
+// ============================================================
+// SERVICE HIGHLIGHTS
+// ============================================================
+
+interface ServiceHighlightsProps {
+  cityName: string;
+}
+
+function ServiceHighlights({ cityName }: ServiceHighlightsProps) {
+  const highlights = [
+    {
+      icon: Snowflake,
+      title: "AC & Non-AC Options",
+      desc: "Choose as per season & budget",
+    },
+    {
+      icon: UserCheck,
+      title: "Experienced Driver",
+      desc: "Verified, polite & route-aware",
+    },
+    { icon: Fuel, title: "Fuel Included", desc: "No surprise fuel charges" },
+    {
+      icon: MapPinned,
+      title: "Doorstep Pickup",
+      desc: "Home, hotel, station, airport",
+    },
+    {
+      icon: ShieldCheck,
+      title: "Sanitized Vehicles",
+      desc: "Deep cleaned after every trip",
+    },
+    { icon: Music, title: "Music System", desc: "AUX, USB ports, speaker" },
+    { icon: Wifi, title: "24/7 Support", desc: "Live trip assistance on call" },
+    {
+      icon: CheckCircle2,
+      title: "Toll & Parking",
+      desc: "Transparent billing",
+    },
+  ];
+
+  return (
+    <section style={{ padding: "5rem 1.25rem", background: "#FFFFFF" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <SectionHeading
+          badge="What's Included"
+          title={`Every Booking in ${cityName} Comes With`}
+          description="Transparent inclusions — no surprises, no hidden charges, ever."
+        />
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+            gap: "1rem",
+            marginTop: "2.5rem",
+          }}
+          className="highlights-grid"
+        >
+          {highlights.map(({ icon: Icon, title, desc }) => (
+            <div
+              key={title}
+              style={{
+                display: "flex",
+                alignItems: "flex-start",
+                gap: "0.9rem",
+                padding: "1.25rem",
+                background: "#FFFFFF",
+                borderRadius: "16px",
+                border: `1px solid ${BORDER}`,
+                transition: "all 0.25s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = BRAND;
+                e.currentTarget.style.boxShadow =
+                  "0 10px 30px rgba(254,106,1,0.08)";
+                e.currentTarget.style.transform = "translateY(-3px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = BORDER;
+                e.currentTarget.style.boxShadow = "none";
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              <div
+                style={{
+                  width: "44px",
+                  height: "44px",
+                  flexShrink: 0,
+                  borderRadius: "12px",
+                  background: BRAND_LIGHT,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: BRAND,
+                }}
+              >
+                <Icon size={22} />
+              </div>
+              <div>
+                <h3
+                  style={{
+                    margin: "0 0 0.25rem",
+                    fontSize: "0.98rem",
+                    fontWeight: 700,
+                    color: TEXT_DARK,
+                  }}
+                >
+                  {title}
+                </h3>
+                <p
+                  style={{
+                    margin: 0,
+                    fontSize: "0.83rem",
+                    color: TEXT_MUTED,
+                    lineHeight: 1.55,
+                  }}
+                >
+                  {desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================
+// FARE BREAKDOWN
+// ============================================================
+
+interface FareBreakdownProps {
+  cityName: string;
+  whatsappUrl: string;
+  fleet: FleetItem[];
+}
+
+function FareBreakdown({ cityName, whatsappUrl, fleet }: FareBreakdownProps) {
+  const formatCurrency = (n: number) =>
+    new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+      maximumFractionDigits: 0,
+    }).format(n);
+
+  return (
+    <section style={{ padding: "5rem 1.25rem", background: "#F8FAFC" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <SectionHeading
+          badge="Transparent Fares"
+          title={`Tempo Traveller Fare in ${cityName}`}
+          description="Indicative rates — final fare depends on route, days & season. Get an exact quote in 2 minutes."
+        />
+
+        <div
+          style={{
+            background: "#FFFFFF",
+            borderRadius: "20px",
+            border: `1px solid ${BORDER}`,
+            overflow: "hidden",
+            boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
+            marginTop: "2.5rem",
+          }}
+        >
+          <div style={{ overflowX: "auto" }}>
+            <table
+              style={{
+                width: "100%",
+                borderCollapse: "collapse",
+                minWidth: "760px",
+              }}
+            >
+              <thead>
+                <tr style={{ background: BRAND_LIGHT }}>
+                  {[
+                    "Vehicle",
+                    "Rate / Km",
+                    "Min Km / Day",
+                    "Driver Allowance",
+                    "Luggage",
+                    "Action",
+                  ].map((h) => (
+                    <th
+                      key={h}
+                      style={{
+                        padding: "1rem 1.25rem",
+                        textAlign: "left",
+                        fontSize: "0.82rem",
+                        fontWeight: 800,
+                        color: BRAND_DARK,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.03em",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {h}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {fleet.map((row, i) => (
+                  <tr
+                    key={row.id}
+                    style={{
+                      borderTop: `1px solid ${BORDER}`,
+                      background: i % 2 === 0 ? "#FFFFFF" : "#FAFBFC",
+                    }}
+                  >
+                    <td
+                      style={{
+                        padding: "1rem 1.25rem",
+                        fontWeight: 700,
+                        color: TEXT_DARK,
+                        fontSize: "0.92rem",
+                      }}
+                    >
+                      {row.name}
+                    </td>
+                    <td
+                      style={{
+                        padding: "1rem 1.25rem",
+                        color: BRAND_DARK,
+                        fontWeight: 800,
+                        fontSize: "1rem",
+                      }}
+                    >
+                      {formatCurrency(row.ratePerKm)}
+                    </td>
+                    <td
+                      style={{
+                        padding: "1rem 1.25rem",
+                        color: TEXT_MUTED,
+                        fontSize: "0.9rem",
+                      }}
+                    >
+                      {row.minKmPerDay} km
+                    </td>
+                    <td
+                      style={{
+                        padding: "1rem 1.25rem",
+                        color: TEXT_MUTED,
+                        fontSize: "0.9rem",
+                      }}
+                    >
+                      {formatCurrency(row.driverAllowance)}
+                    </td>
+                    <td
+                      style={{
+                        padding: "1rem 1.25rem",
+                        color: TEXT_MUTED,
+                        fontSize: "0.9rem",
+                      }}
+                    >
+                      {row.luggageCapacity}
+                    </td>
+                    <td style={{ padding: "1rem 1.25rem" }}>
+                      <a
+                        href={`${whatsappUrl}%20Vehicle:%20${encodeURIComponent(row.name)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: "inline-flex",
+                          alignItems: "center",
+                          gap: "0.35rem",
+                          padding: "0.5rem 1rem",
+                          borderRadius: "999px",
+                          background: BRAND,
+                          color: "#FFFFFF",
+                          fontSize: "0.82rem",
+                          fontWeight: 800,
+                          textDecoration: "none",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        <MessageCircle size={14} />
+                        Get Quote
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p
+          style={{
+            marginTop: "1rem",
+            fontSize: "0.8rem",
+            color: TEXT_MUTED,
+            textAlign: "center",
+          }}
+        >
+          * Toll, parking, state tax & entry fees extra. GST applicable. Final
+          quote confirmed on WhatsApp.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================
+// SIGHTSEEING ITINERARY
+// ============================================================
+
+interface SightseeingItineraryProps {
+  cityName: string;
+  oneDaySpots?: string[];
+  twoDaySpots?: string[];
+}
+
+function SightseeingItinerary({
+  cityName,
+  oneDaySpots = [],
+  twoDaySpots = [],
+}: SightseeingItineraryProps) {
+  const oneDay = oneDaySpots.length
+    ? oneDaySpots
+    : [
+        `Morning: Pickup & ${cityName} local tour`,
+        "Main Temple / Landmark visit",
+        "Lunch break at popular local restaurant",
+        "Evening: Aarti / Sunset point",
+      ];
+
+  const twoDay = twoDaySpots.length
+    ? twoDaySpots
+    : [
+        `Day 1: Full-day ${cityName} city tour`,
+        "Day 2: Nearby attractions & sightseeing",
+        "Optional: Shopping & local food trail",
+        "Drop-off at preferred location",
+      ];
+
+  return (
+    <section style={{ padding: "5rem 1.25rem", background: "#FFFFFF" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <SectionHeading
+          badge="Suggested Itineraries"
+          title={`${cityName} Tour Packages — 1 Day & 2 Day`}
+          description="Sample itineraries we customize daily. Share your preferences and we'll build a route for you."
+        />
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            gap: "1.5rem",
+            marginTop: "2.5rem",
+          }}
+          className="itinerary-grid"
+        >
+          {/* 1-Day Package */}
+          <div
+            style={{
+              border: `1px solid ${BORDER}`,
+              borderRadius: "20px",
+              padding: "1.75rem",
+              background: "#FFFFFF",
+              boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.6rem",
+                marginBottom: "1rem",
+              }}
+            >
+              <div
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  borderRadius: "12px",
+                  background: BRAND_LIGHT,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: BRAND,
+                }}
+              >
+                <Sunrise size={22} />
+              </div>
+              <div>
+                <h3
+                  style={{
+                    margin: 0,
+                    fontSize: "1.15rem",
+                    fontWeight: 800,
+                    color: TEXT_DARK,
+                  }}
+                >
+                  1-Day {cityName} Tour
+                </h3>
+                <span style={{ fontSize: "0.8rem", color: TEXT_MUTED }}>
+                  Approx 8–10 hours
+                </span>
+              </div>
+            </div>
+
+            <ol style={{ listStyle: "none", padding: 0, margin: 0 }}>
+              {oneDay.map((spot, i) => (
+                <li
+                  key={i}
+                  style={{
+                    display: "flex",
+                    gap: "0.75rem",
+                    padding: "0.7rem 0",
+                    borderBottom:
+                      i < oneDay.length - 1 ? `1px dashed ${BORDER}` : "none",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "26px",
+                      height: "26px",
+                      borderRadius: "50%",
+                      background: BRAND,
+                      color: "#FFFFFF",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: "0.75rem",
+                      fontWeight: 800,
+                      flexShrink: 0,
+                    }}
+                  >
+                    {i + 1}
+                  </div>
+                  <span
+                    style={{
+                      color: TEXT_DARK,
+                      fontSize: "0.9rem",
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    {spot}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          {/* 2-Day Package */}
+          <div
+            style={{
+              border: `1px solid ${BRAND}`,
+              borderRadius: "20px",
+              padding: "1.75rem",
+              background: "#FFFFFF",
+              boxShadow: "0 15px 40px rgba(254,106,1,0.10)",
+              position: "relative",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                top: "-12px",
+                right: "1.25rem",
+                background: BRAND,
+                color: "#FFFFFF",
+                fontSize: "0.7rem",
+                fontWeight: 800,
+                padding: "0.35rem 0.8rem",
+                borderRadius: "999px",
+                letterSpacing: "0.03em",
+              }}
+            >
+              MOST BOOKED
+            </div>
+
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.6rem",
+                marginBottom: "1rem",
+              }}
+            >
+              <div
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  borderRadius: "12px",
+                  background: BRAND_LIGHT,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: BRAND,
+                }}
+              >
+                <Moon size={22} />
+              </div>
+              <div>
+                <h3
+                  style={{
+                    margin: 0,
+                    fontSize: "1.15rem",
+                    fontWeight: 800,
+                    color: TEXT_DARK,
+                  }}
+                >
+                  2-Day {cityName} Tour
+                </h3>
+                <span style={{ fontSize: "0.8rem", color: TEXT_MUTED }}>
+                  Ideal for weekend trips
+                </span>
+              </div>
+            </div>
+
+            <ol style={{ listStyle: "none", padding: 0, margin: 0 }}>
+              {twoDay.map((spot, i) => (
+                <li
+                  key={i}
+                  style={{
+                    display: "flex",
+                    gap: "0.75rem",
+                    padding: "0.7rem 0",
+                    borderBottom:
+                      i < twoDay.length - 1 ? `1px dashed ${BORDER}` : "none",
+                  }}
+                >
+                  <div
+                    style={{
+                      width: "26px",
+                      height: "26px",
+                      borderRadius: "50%",
+                      background: BRAND,
+                      color: "#FFFFFF",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: "0.75rem",
+                      fontWeight: 800,
+                      flexShrink: 0,
+                    }}
+                  >
+                    {i + 1}
+                  </div>
+                  <span
+                    style={{
+                      color: TEXT_DARK,
+                      fontSize: "0.9rem",
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    {spot}
+                  </span>
+                </li>
+              ))}
+            </ol>
+
+            <div
+              style={{
+                marginTop: "1rem",
+                padding: "0.85rem",
+                borderRadius: "12px",
+                background: BRAND_LIGHT,
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                color: BRAND_DARK,
+                fontSize: "0.82rem",
+                fontWeight: 700,
+              }}
+            >
+              <MapPin size={15} />
+              Fully customizable · Hotel stays can be arranged
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================
+// WHY BOOK FROM US (COMPARISON)
+// ============================================================
+
+interface WhyBookFromUsProps {
+  cityName: string;
+}
+
+function WhyBookFromUs({ cityName }: WhyBookFromUsProps) {
+  const features = [
+    "Transparent per-km pricing",
+    "Experienced & verified drivers",
+    "24/7 trip support",
+    "AC & well-maintained vehicles",
+    "No hidden charges at trip end",
+    "Free cancellation up to 24 hrs",
+    "Instant WhatsApp booking",
+    "Multiple seater options (9–26)",
+  ];
+
+  return (
+    <section style={{ padding: "5rem 1.25rem", background: "#F8FAFC" }}>
+      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+        <SectionHeading
+          badge="Comparison"
+          title={`YatraTempoTraveller vs Others in ${cityName}`}
+          description="See why 500+ groups choose us over local operators."
+        />
+
+        <div
+          style={{
+            background: "#FFFFFF",
+            borderRadius: "20px",
+            border: `1px solid ${BORDER}`,
+            overflow: "hidden",
+            boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
+            marginTop: "2.5rem",
+          }}
+        >
+          <div style={{ overflowX: "auto" }}>
+            <table
+              style={{
+                width: "100%",
+                borderCollapse: "collapse",
+                minWidth: "600px",
+              }}
+            >
+              <thead>
+                <tr>
+                  <th
+                    style={{
+                      padding: "1.25rem",
+                      textAlign: "left",
+                      fontSize: "0.85rem",
+                      fontWeight: 800,
+                      color: TEXT_MUTED,
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Feature
+                  </th>
+                  <th
+                    style={{
+                      padding: "1.25rem",
+                      textAlign: "center",
+                      fontSize: "0.85rem",
+                      fontWeight: 800,
+                      color: BRAND_DARK,
+                      textTransform: "uppercase",
+                      background: BRAND_LIGHT,
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    YatraTempoTraveller
+                  </th>
+                  <th
+                    style={{
+                      padding: "1.25rem",
+                      textAlign: "center",
+                      fontSize: "0.85rem",
+                      fontWeight: 800,
+                      color: TEXT_MUTED,
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Other Operators
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {features.map((feature, i) => (
+                  <tr
+                    key={feature}
+                    style={{
+                      borderTop: `1px solid ${BORDER}`,
+                      background: i % 2 === 0 ? "#FFFFFF" : "#FAFBFC",
+                    }}
+                  >
+                    <td
+                      style={{
+                        padding: "1rem 1.25rem",
+                        color: TEXT_DARK,
+                        fontSize: "0.92rem",
+                        fontWeight: 600,
+                      }}
+                    >
+                      {feature}
+                    </td>
+                    <td
+                      style={{
+                        padding: "1rem 1.25rem",
+                        textAlign: "center",
+                        background: i % 2 === 0 ? BRAND_LIGHT : "#FFF8F2",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "inline-flex",
+                          width: "28px",
+                          height: "28px",
+                          borderRadius: "50%",
+                          background: "#22C55E",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Check size={16} color="#FFFFFF" strokeWidth={3} />
+                      </div>
+                    </td>
+                    <td
+                      style={{ padding: "1rem 1.25rem", textAlign: "center" }}
+                    >
+                      <div
+                        style={{
+                          display: "inline-flex",
+                          width: "28px",
+                          height: "28px",
+                          borderRadius: "50%",
+                          background: "#F1F5F9",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <X size={16} color="#94A3B8" strokeWidth={3} />
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================
+// TRAVEL TIPS
+// ============================================================
+
+interface TravelTipsProps {
+  cityName: string;
+  state?: string;
+}
+
+function TravelTips({ cityName, state = "" }: TravelTipsProps) {
+  const tips = [
+    {
+      icon: CalendarDays,
+      title: "Best Time to Visit",
+      desc: `October to March is ideal for exploring ${cityName}. Pleasant weather, festive season, and great for sightseeing.`,
+    },
+    {
+      icon: Thermometer,
+      title: "Summer (Apr–Jun)",
+      desc: "Hot afternoons — plan early morning or evening trips. AC Tempo Traveller highly recommended.",
+    },
+    {
+      icon: Sunrise,
+      title: "Monsoon (Jul–Sep)",
+      desc: `Occasional showers make ${cityName} lush. Carry umbrellas, expect minor route changes.`,
+    },
+    {
+      icon: Users,
+      title: "Group Size Tip",
+      desc: "9–12 seater is best for families; 16–20 seater ideal for pilgrimages & weddings.",
+    },
+    {
+      icon: IndianRupee,
+      title: "Budget Planning",
+      desc: "Book 3–5 days in advance for the best rates. Off-season bookings are 15–20% cheaper.",
+    },
+    {
+      icon: Lightbulb,
+      title: "Local Tip",
+      desc: `Try local cuisine and shop at nearby markets. Ask your driver for hidden gems in ${cityName}.`,
+    },
+  ];
+
+  return (
+    <section style={{ padding: "5rem 1.25rem", background: "#FFFFFF" }}>
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <SectionHeading
+          badge="Travel Tips"
+          title={`Plan Your ${cityName} Trip the Smart Way`}
+          description={`Handy tips for ${cityName}${state ? `, ${state}` : ""} travel — from locals & frequent visitors.`}
+        />
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "1.25rem",
+            marginTop: "2.5rem",
+          }}
+          className="tips-grid"
+        >
+          {tips.map(({ icon: Icon, title, desc }) => (
+            <div
+              key={title}
+              style={{
+                padding: "1.5rem",
+                borderRadius: "18px",
+                border: `1px solid ${BORDER}`,
+                background: "#FFFFFF",
+                transition: "all 0.25s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = BRAND;
+                e.currentTarget.style.boxShadow =
+                  "0 12px 35px rgba(254,106,1,0.08)";
+                e.currentTarget.style.transform = "translateY(-3px)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = BORDER;
+                e.currentTarget.style.boxShadow = "none";
+                e.currentTarget.style.transform = "translateY(0)";
+              }}
+            >
+              <div
+                style={{
+                  width: "46px",
+                  height: "46px",
+                  borderRadius: "14px",
+                  background: BRAND_LIGHT,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: BRAND,
+                  marginBottom: "1rem",
+                }}
+              >
+                <Icon size={22} />
+              </div>
+              <h3
+                style={{
+                  margin: "0 0 0.5rem",
+                  fontSize: "1.02rem",
+                  fontWeight: 800,
+                  color: TEXT_DARK,
+                }}
+              >
+                {title}
+              </h3>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: "0.87rem",
+                  color: TEXT_MUTED,
+                  lineHeight: 1.65,
+                }}
+              >
+                {desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default function CityTemplate({
@@ -594,7 +1470,7 @@ export default function CityTemplate({
                   letterSpacing: "-0.04em",
                 }}
               >
-                Tempo Traveller in{" "}
+                Tempo Traveller Fare in{" "}
                 <span style={{ color: "#FA7517" }}>{city.name}</span>
               </h1>
 
@@ -1357,6 +2233,16 @@ export default function CityTemplate({
         </div>
       </section>
 
+      {/* ✅ INSERT #1 */}
+      <ServiceHighlights cityName={city.name} />
+
+      {/* ✅ INSERT #2 */}
+      <FareBreakdown
+        cityName={city.name}
+        whatsappUrl={whatsappUrl}
+        fleet={displayFleet}
+      />
+
       {/* =====================================================
           FLEET SECTION
       ===================================================== */}
@@ -1557,6 +2443,9 @@ export default function CityTemplate({
           </div>
         </div>
       </section>
+
+      {/* ✅ INSERT #3 */}
+      <SightseeingItinerary cityName={city.name} />
 
       {/* =====================================================
           POPULAR PLACES
@@ -1798,6 +2687,9 @@ export default function CityTemplate({
           </div>
         </div>
       </section>
+
+      {/* ✅ INSERT #4 */}
+      <WhyBookFromUs cityName={city.name} />
 
       {/* =====================================================
           HOW BOOKING WORKS
@@ -2064,6 +2956,9 @@ export default function CityTemplate({
           </div>
         </div>
       </section>
+
+      {/* ✅ INSERT #5 */}
+      <TravelTips cityName={city.name} state={city.state} />
 
       {/* =====================================================
           CUSTOMER REVIEWS

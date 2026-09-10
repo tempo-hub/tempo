@@ -50997,7 +50997,7 @@ export const calculateFare = (distance: number, rate: number) => {
 export const CITY_HUBS = [
   {
     id: "ayodhya",
-    slug: "tempo-traveller-in-ayodhya",
+    slug: "tempo-traveller-fare-in-ayodhya",
     name: "Ayodhya",
     state: "Uttar Pradesh",
     tag: "Ram Nagari",
@@ -51005,7 +51005,7 @@ export const CITY_HUBS = [
   },
   {
     id: "delhi",
-    slug: "tempo-traveller-in-delhi",
+    slug: "tempo-traveller-fare-in-delhi",
     name: "Delhi",
     state: "Delhi/NCR",
     tag: "National Capital Hub",
@@ -51013,7 +51013,7 @@ export const CITY_HUBS = [
   },
   {
     id: "noida",
-    slug: "tempo-traveller-in-noida",
+    slug: "tempo-traveller-fare-in-noida",
     name: "Noida",
     state: "Uttar Pradesh",
     tag: "NCR Hub",
@@ -51021,7 +51021,7 @@ export const CITY_HUBS = [
   },
   {
     id: "ujjain",
-    slug: "tempo-traveller-in-ujjain",
+    slug: "tempo-traveller-fare-in-ujjain",
     name: "Ujjain",
     state: "Madhya Pradesh",
     tag: "Mahakal Corridor",
@@ -51029,7 +51029,7 @@ export const CITY_HUBS = [
   },
   {
     id: "jaipur",
-    slug: "tempo-traveller-in-jaipur",
+    slug: "tempo-traveller-fare-in-jaipur",
     name: "Jaipur",
     state: "Rajasthan",
     tag: "Heritage Hub",
@@ -51037,7 +51037,7 @@ export const CITY_HUBS = [
   },
   {
     id: "indore",
-    slug: "tempo-traveller-in-indore",
+    slug: "tempo-traveller-fare-in-indore",
     name: "Indore",
     state: "Madhya Pradesh",
     tag: "MP Hub",
@@ -51045,7 +51045,7 @@ export const CITY_HUBS = [
   },
   {
     id: "mathura",
-    slug: "tempo-traveller-in-mathura",
+    slug: "tempo-traveller-fare-in-mathura",
     name: "Mathura",
     state: "Uttar Pradesh",
     tag: "Braj Hub",
@@ -51053,7 +51053,7 @@ export const CITY_HUBS = [
   },
   {
     id: "rishikesh",
-    slug: "tempo-traveller-in-rishikesh",
+    slug: "tempo-traveller-fare-in-rishikesh",
     name: "Rishikesh",
     state: "Uttarakhand",
     tag: "Yoga & Adventure",
@@ -51061,7 +51061,7 @@ export const CITY_HUBS = [
   },
   {
     id: "chandigarh",
-    slug: "tempo-traveller-in-chandigarh",
+    slug: "tempo-traveller-fare-in-chandigarh",
     name: "Chandigarh",
     state: "Punjab/Haryana",
     tag: "North Gateway",
@@ -51069,7 +51069,7 @@ export const CITY_HUBS = [
   },
   {
     id: "mumbai",
-    slug: "tempo-traveller-in-mumbai",
+    slug: "tempo-traveller-fare-in-mumbai",
     name: "Mumbai",
     state: "Maharashtra",
     tag: "West Gateway",
@@ -51077,7 +51077,7 @@ export const CITY_HUBS = [
   },
   {
     id: "ahmedabad",
-    slug: "tempo-traveller-in-ahmedabad",
+    slug: "tempo-traveller-fare-in-ahmedabad",
     name: "Ahmedabad",
     state: "Gujarat",
     tag: "Gujarat Hub",
@@ -51085,7 +51085,7 @@ export const CITY_HUBS = [
   },
   {
     id: "bangalore",
-    slug: "tempo-traveller-in-bangalore",
+    slug: "tempo-traveller-fare-in-bangalore",
     name: "Bangalore",
     state: "Karnataka",
     tag: "South Hub",
@@ -51093,7 +51093,7 @@ export const CITY_HUBS = [
   },
   {
     id: "nagpur",
-    slug: "tempo-traveller-in-nagpur",
+    slug: "tempo-traveller-fare-in-nagpur",
     name: "Nagpur",
     state: "Maharashtra",
     tag: "Central India Hub",
@@ -51101,7 +51101,7 @@ export const CITY_HUBS = [
   },
   {
     id: "faridabad",
-    slug: "tempo-traveller-in-faridabad",
+    slug: "tempo-traveller-fare-in-faridabad",
     name: "Faridabad",
     state: "Haryana",
     tag: "NCR Hub",
@@ -51109,7 +51109,7 @@ export const CITY_HUBS = [
   },
   {
     id: "agra",
-    slug: "tempo-traveller-in-agra",
+    slug: "tempo-traveller-fare-in-agra",
     name: "Agra",
     state: "Uttar Pradesh",
     tag: "Taj Gateway",
@@ -51117,7 +51117,7 @@ export const CITY_HUBS = [
   },
   {
     id: "dehradun",
-    slug: "tempo-traveller-in-dehradun",
+    slug: "tempo-traveller-fare-in-dehradun",
     name: "Dehradun",
     state: "Uttarakhand",
     tag: "Hill Capital",
@@ -51125,7 +51125,7 @@ export const CITY_HUBS = [
   },
   {
     id: "haridwar",
-    slug: "tempo-traveller-in-haridwar",
+    slug: "tempo-traveller-fare-in-haridwar",
     name: "Haridwar",
     state: "Uttarakhand",
     tag: "Spiritual Hub",
@@ -51133,7 +51133,7 @@ export const CITY_HUBS = [
   },
   {
     id: "kanpur",
-    slug: "tempo-traveller-in-kanpur",
+    slug: "tempo-traveller-fare-in-kanpur",
     name: "Kanpur",
     state: "Uttar Pradesh",
     tag: "UP Hub",
@@ -51141,7 +51141,7 @@ export const CITY_HUBS = [
   },
   {
     id: "udaipur",
-    slug: "tempo-traveller-in-udaipur",
+    slug: "tempo-traveller-fare-in-udaipur",
     name: "Udaipur",
     state: "Rajasthan",
     tag: "Lakes Gateway",
@@ -51149,7 +51149,7 @@ export const CITY_HUBS = [
   },
   {
     id: "prayagraj",
-    slug: "tempo-traveller-in-prayagraj",
+    slug: "tempo-traveller-fare-in-prayagraj",
     name: "Prayagraj",
     state: "Uttar Pradesh",
     tag: "Triveni Sangam",
@@ -51157,7 +51157,7 @@ export const CITY_HUBS = [
   },
   {
     id: "shimla",
-    slug: "tempo-traveller-in-shimla",
+    slug: "tempo-traveller-fare-in-shimla",
     name: "Shimla",
     state: "Himachal Pradesh",
     tag: "Hill Station",
@@ -51165,7 +51165,7 @@ export const CITY_HUBS = [
   },
   {
     id: "amritsar",
-    slug: "tempo-traveller-in-amritsar",
+    slug: "tempo-traveller-fare-in-amritsar",
     name: "Amritsar",
     state: "Punjab",
     tag: "Golden City",
@@ -51173,7 +51173,7 @@ export const CITY_HUBS = [
   },
   {
     id: "ghaziabad",
-    slug: "tempo-traveller-in-ghaziabad",
+    slug: "tempo-traveller-fare-in-ghaziabad",
     name: "Ghaziabad",
     state: "Uttar Pradesh",
     tag: "NCR Hub",

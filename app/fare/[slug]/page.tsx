@@ -1,5 +1,5 @@
 import { notFound, redirect } from "next/navigation";
-import { ROUTES, calculateFare } from "@/lib/data";
+import { ROUTES, calculateFare, CITY_HUBS } from "@/lib/data";
 import Image from "next/image";
 import { FareCalculator } from "../../components/fare-calculator";
 import { FareTable } from "../../components/fare-table";
@@ -21,7 +21,17 @@ import {
   Offer,
   FAQPage,
 } from "../../components/schemas";
-import { MapPin, Clock, ShieldCheck, Star, Users, Bus, ClipboardCheck, IndianRupee, Smile } from "lucide-react";
+import {
+  MapPin,
+  Clock,
+  ShieldCheck,
+  Star,
+  Users,
+  Bus,
+  ClipboardCheck,
+  IndianRupee,
+  Smile,
+} from "lucide-react";
 import { Metadata } from "next";
 import { RouteComparisonSection } from "@/app/components/sections/RouteComparisonSection";
 import { RelatedRoutesSection } from "@/app/components/sections/RelatedRoutesSection";
@@ -31,6 +41,7 @@ import { RouteGuideSection } from "@/app/components/sections/RouteGuideSection";
 import { TravelUseCasesSection } from "@/app/components/sections/TravelUseCasesSection";
 import { PricingSection } from "@/app/components/sections/PricingSection";
 import { generateFareFaqs } from "../../components/sections";
+import Link from "next/link";
 
 export const revalidate = 86400;
 export const dynamic = "force-dynamic";
@@ -97,7 +108,7 @@ export default async function FarePage({
     },
   ];
 
-  const ratePerKm = 18
+  const ratePerKm = 18;
   const faqs = generateFareFaqs(route.origin, route.destination);
   FAQPage(faqs);
 
@@ -132,7 +143,6 @@ export default async function FarePage({
           ),
         }}
       />
-      
       {/* ==================== HERO SECTION (Fare + CTA) ==================== */}
       <section className="pt-12 pb-20 bg-gradient-to-br from-slate-900 via-slate-800 to-secondary border-b border-border relative overflow-hidden">
         {" "}
@@ -199,7 +209,6 @@ export default async function FarePage({
           <FareCalculator route={route} />{" "}
         </div>{" "}
       </section>
-
       {/* Route Highlights */}
       <section className="py-20 bg-white border-b border-border">
         <div className="max-w-7xl mx-auto px-4">
@@ -210,54 +219,42 @@ export default async function FarePage({
 
             <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">
               Get complete travel information including distance, travel time,
-              recommended route, road condition, and estimated fare for your journey.
+              recommended route, road condition, and estimated fare for your
+              journey.
             </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
-
             <div className="rounded-2xl border p-6 text-center">
               <MapPin className="mx-auto h-10 w-10 text-primary mb-4" />
               <h3 className="font-bold text-lg">Distance</h3>
-              <p className="text-2xl font-black mt-2">
-                {route.distance} km
-              </p>
+              <p className="text-2xl font-black mt-2">{route.distance} km</p>
             </div>
 
             <div className="rounded-2xl border p-6 text-center">
               <Clock className="mx-auto h-10 w-10 text-primary mb-4" />
               <h3 className="font-bold text-lg">Travel Time</h3>
-              <p className="text-2xl font-black mt-2">
-                {route.duration}
-              </p>
+              <p className="text-2xl font-black mt-2">{route.duration}</p>
             </div>
 
             <div className="rounded-2xl border p-6 text-center">
               <ShieldCheck className="mx-auto h-10 w-10 text-primary mb-4" />
-              <h3 className="font-bold text-lg">
-                Road Condition
-              </h3>
+              <h3 className="font-bold text-lg">Road Condition</h3>
 
-              <p className="text-2xl font-black mt-2">
-                Excellent
-              </p>
+              <p className="text-2xl font-black mt-2">Excellent</p>
             </div>
 
             <div className="rounded-2xl border p-6 text-center">
               <Users className="mx-auto h-10 w-10 text-primary mb-4" />
-              <h3 className="font-bold text-lg">
-                Recommended Vehicle
-              </h3>
+              <h3 className="font-bold text-lg">Recommended Vehicle</h3>
 
               <p className="text-xl font-black mt-2">
                 12 Seater Tempo Traveller
               </p>
             </div>
-
           </div>
         </div>
       </section>
-
       {/* ==================== FARE TABLE + CALCULATOR ==================== */}
       <section className="py-10 sm:py-12 md:py-14 lg:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-10 md:space-y-12">
@@ -280,6 +277,29 @@ export default async function FarePage({
               fare options and book your {route.origin} to {route.destination}{" "}
               tempo traveller at the best price today.
             </p>
+
+            {/* City Fare Internal Link - Only for available CITY_HUBS */}
+            {(() => {
+              const cityPage = CITY_HUBS.find(
+                (city) =>
+                  city.name.toLowerCase() === route.destination.toLowerCase(),
+              );
+
+              if (!cityPage) return null;
+
+              return (
+                <p className="mt-4 text-sm sm:text-base text-muted-foreground">
+                  Explore the{" "}
+                  <Link
+                    href={`/${cityPage.slug}`}
+                    className="text-primary font-semibold hover:underline"
+                  >
+                    Tempo Traveller Fare in {cityPage.name}
+                  </Link>{" "}
+                  for detailed pricing.
+                </p>
+              );
+            })()}
           </div>
 
           {/* Fare Table */}
@@ -309,13 +329,10 @@ export default async function FarePage({
           </div>
         </div>
       </section>
-
       {/* Why Book Tempo Traveller With Us? */}
       <section className="py-24 bg-slate-50 border-y border-border">
         <div className="max-w-7xl mx-auto px-4">
-
           <div className="text-center mb-12">
-
             <h2 className="text-3xl font-black">
               Why Book Tempo Traveller With Us?
             </h2>
@@ -323,11 +340,9 @@ export default async function FarePage({
             <p className="text-muted-foreground mt-3">
               Trusted by thousands of customers across India.
             </p>
-
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
-
             {[
               "Lowest Fare",
               "Verified Drivers",
@@ -338,45 +353,33 @@ export default async function FarePage({
               "Instant Booking",
               "Free Trip Assistance",
             ].map((item) => (
-
               <div
                 key={item}
                 className="rounded-xl border bg-white p-6 text-center shadow-sm"
               >
                 <ShieldCheck className="mx-auto h-10 w-10 text-primary mb-4" />
 
-                <h3 className="font-bold">
-                  {item}
-                </h3>
-
+                <h3 className="font-bold">{item}</h3>
               </div>
-
             ))}
-
           </div>
-
         </div>
       </section>
-
       {/* City Guide Section */}
       <CityGuideSection route={route} />
-
       {/* Simple Booking Process */}
       <section className="py-24 bg-gradient-to-b from-slate-50 via-white to-slate-50">
         <div className="max-w-7xl mx-auto px-4">
-
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
               Book in 5 Easy Steps
             </span>
 
-            <h2 className="text-4xl font-black mb-4">
-              Simple Booking Process
-            </h2>
+            <h2 className="text-4xl font-black mb-4">Simple Booking Process</h2>
 
             <p className="text-muted-foreground text-lg">
-              Book your {route.origin} to {route.destination} Tempo Traveller in just
-              a few minutes.
+              Book your {route.origin} to {route.destination} Tempo Traveller in
+              just a few minutes.
             </p>
           </div>
 
@@ -420,7 +423,6 @@ export default async function FarePage({
                 key={step.number}
                 className="relative text-center group z-10"
               >
-
                 {/* Number */}
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold rounded-full px-2 py-1 shadow-lg">
                   {step.number}
@@ -431,9 +433,7 @@ export default async function FarePage({
                   <step.icon className="h-9 w-9" />
                 </div>
 
-                <h3 className="mt-6 text-xl font-bold">
-                  {step.title}
-                </h3>
+                <h3 className="mt-6 text-xl font-bold">{step.title}</h3>
 
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                   {step.desc}
@@ -443,7 +443,6 @@ export default async function FarePage({
           </div>
         </div>
       </section>
-
       {/* ==================== ROUTE GUIDE SECTION (DYNAMIC) ==================== */}
       <RouteGuideSection route={route} />
       {/* ==================== TRAVEL USE CASES (DYNAMIC) ==================== */}
@@ -459,7 +458,6 @@ export default async function FarePage({
       {/* Existing Components */}
       <ExperienceSection origin={route.origin} />
       <SafetySection origin={route.origin} />
-
       {/* Our Tempo Traveller Fleet */}
       <section className="py-24 bg-slate-50 border-y border-border">
         <div className="max-w-7xl mx-auto px-4">
@@ -475,7 +473,6 @@ export default async function FarePage({
           <VehicleGallery />
         </div>
       </section>
-
       <SocialProof origin={route.origin} />
       <TrustSection origin={route.origin} />
       <TestimonialsSection origin={route.origin} />
