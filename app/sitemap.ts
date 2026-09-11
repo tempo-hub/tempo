@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { ROUTES } from "@/lib/data";
+import { ROUTES, CITY_HUBS } from "@/lib/data";
 import {
   PRAYAGRAJ_CHEAPEST_ROUTES,
   AYODHYA_CHEAPEST_ROUTES,
@@ -65,6 +65,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // City Hub URLs
+  const cityHubUrls = CITY_HUBS.map((city) => ({
+    url: `${baseUrl}/${city.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  }));
+
   // ----------Static Pages------------
   const staticUrls = [
     {
@@ -109,6 +117,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/cities`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
   ];
 
   return [
@@ -117,5 +131,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...cheapestUrls,
     ...perKmFareUrls,
     ...urbaniaUrls,
+    ...cityHubUrls,
   ];
 }
