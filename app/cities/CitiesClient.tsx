@@ -31,7 +31,7 @@ export default function CitiesClient() {
         style={{
           padding: "9rem 1.5rem 4.5rem",
           background:
-            "linear-gradient(145deg, #B94700 0%, #FE6A01 55%, #FF8A32 100%)",
+            "#0D2339",
           color: "#fff",
           textAlign: "center",
           position: "relative",
@@ -122,7 +122,7 @@ export default function CitiesClient() {
           >
             Tempo Traveller Hire
             <br />
-            <span style={{ color: "#FFE1CC" }}>
+            <span style={{ color: "#E66406" }}>
               Across India
             </span>
           </h1>
@@ -183,7 +183,7 @@ export default function CitiesClient() {
                   style={{
                     fontSize: "1.45rem",
                     fontWeight: 800,
-                    color: "#FFE1CC",
+                    color: "#E66406",
                     lineHeight: 1.2,
                   }}
                 >
@@ -657,7 +657,7 @@ export default function CitiesClient() {
         style={{
           padding: "5rem 1.5rem",
           background:
-            "linear-gradient(135deg, #B94700 0%, #FE6A01 60%, #FF8533 100%)",
+            "#E66406",
           color: "#fff",
           textAlign: "center",
           position: "relative",
@@ -751,7 +751,7 @@ export default function CitiesClient() {
           >
             {/* WhatsApp */}
             <a
-              href="https://wa.me/918448445504"
+              href="https://wa.me/916280820037"
               target="_blank"
               rel="noopener noreferrer"
               style={{

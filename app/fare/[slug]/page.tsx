@@ -278,23 +278,23 @@ export default async function FarePage({
               tempo traveller at the best price today.
             </p>
 
-            {/* City Fare Internal Link - Only for available CITY_HUBS */}
+            {/* Origin City Fare Internal Link */}
             {(() => {
-              const cityPage = CITY_HUBS.find(
+              const originCity = CITY_HUBS.find(
                 (city) =>
-                  city.name.toLowerCase() === route.destination.toLowerCase(),
+                  city.name.toLowerCase() === route.origin.toLowerCase(),
               );
 
-              if (!cityPage) return null;
+              if (!originCity) return null;
 
               return (
                 <p className="mt-4 text-sm sm:text-base text-muted-foreground">
                   Explore the{" "}
                   <Link
-                    href={`/${cityPage.slug}`}
+                    href={`/${originCity.slug}`}
                     className="text-primary font-semibold hover:underline"
                   >
-                    Tempo Traveller Fare in {cityPage.name}
+                    Tempo Traveller Fare in {originCity.name}
                   </Link>{" "}
                   for detailed pricing.
                 </p>
