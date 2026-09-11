@@ -66,19 +66,6 @@ export default function CitiesClient() {
           }}
         />
 
-        {/* Decorative Circle - Center */}
-        <div
-          style={{
-            position: "absolute",
-            width: "180px",
-            height: "180px",
-            borderRadius: "50%",
-            border: "1px solid rgba(255,255,255,0.08)",
-            top: "30%",
-            left: "8%",
-            pointerEvents: "none",
-          }}
-        />
 
         <div
           style={{
