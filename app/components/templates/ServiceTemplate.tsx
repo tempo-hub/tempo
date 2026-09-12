@@ -298,7 +298,7 @@ const ServiceTemplate = ({ route }: ServiceTemplateProps) => {
               {/* CTA Buttons */}
               <div className="flex flex-wrap justify-center gap-4 mt-12">
                 <a
-                  href="tel:+918448445504"
+                  href="tel:+919151827941"
                   className="bg-primary hover:bg-primary/90 hover:scale-105 transition-all duration-300 text-white font-black px-8 py-4 rounded-2xl shadow-xl flex items-center gap-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -696,7 +696,7 @@ const ServiceTemplate = ({ route }: ServiceTemplateProps) => {
               </button>
 
               <a
-                href="tel:+918448445504"
+                href="tel:+919151827941"
                 className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white font-semibold px-8 py-4 rounded-2xl hover:bg-white hover:text-primary transition-all"
               >
                 <Phone className="h-5 w-5" />

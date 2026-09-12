@@ -779,7 +779,7 @@ export default function CitiesClient() {
 
             {/* Call */}
             <a
-              href="tel:+918448445504"
+              href="tel:+919151827941"
               style={{
                 display: "inline-flex",
                 alignItems: "center",

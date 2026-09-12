@@ -79,12 +79,12 @@ export const VehicleGallery = () => {
                     </span>
                   </Button>
 
-                  <a href="tel:+918448445504">
+                  <a href="tel:+919151827941">
                     <Button
                       variant="outline"
                       className="w-full rounded-xl h-12 border-primary/20 text-secondary hover:bg-primary/5"
                     >
-                      Call 8448445504
+                      Call 9151827941
                     </Button>
                   </a>
                 </div>

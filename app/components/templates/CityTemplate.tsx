@@ -77,7 +77,7 @@ interface RouteItem {
 // ============================================================
 
 const WHATSAPP_NUMBER = "916280820037";
-const PHONE_NUMBER = "+918448445504";
+const PHONE_NUMBER = "+919151827941";
 
 const BRAND = "#FE6A01";
 const BRAND_DARK = "#FE791A";

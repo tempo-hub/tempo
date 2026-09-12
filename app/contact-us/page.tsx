@@ -55,7 +55,7 @@ export default function ContactUs() {
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               {/* Call */}
               <a
-                href="tel:+918448445504"
+                href="tel:+919151827941"
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-slate-950 transition hover:opacity-90"
               >
                 <Phone className="h-4 w-4" />
@@ -84,7 +84,7 @@ export default function ContactUs() {
         <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-3">
           {/* Phone */}
           <a
-            href="tel:+918448445504"
+            href="tel:+919151827941"
             className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
           >
             <div className="flex items-start gap-4">
@@ -213,7 +213,7 @@ export default function ContactUs() {
 
               <div className="mt-6 space-y-4">
                 <a
-                  href="tel:+918448445504"
+                  href="tel:+919151827941"
                   className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 transition hover:bg-white/10"
                 >
                   <Phone className="h-5 w-5 text-primary" />
@@ -309,7 +309,7 @@ export default function ContactUs() {
                   <strong className="font-bold text-slate-700">
                     Contact No :
                   </strong>{" "}
-                  <a href="tel:+918448445504" className="hover:text-primary">
+                  <a href="tel:+919151827941" className="hover:text-primary">
                     98180 22327
                   </a>
                 </p>
@@ -344,7 +344,7 @@ export default function ContactUs() {
                   <strong className="font-bold text-slate-700">
                     Contact No :
                   </strong>{" "}
-                  <a href="tel:+918448445504" className="hover:text-primary">
+                  <a href="tel:+919151827941" className="hover:text-primary">
                     98180 22327
                   </a>
                 </p>
@@ -451,7 +451,7 @@ export default function ContactUs() {
 
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
               <a
-                href="tel:+918448445504"
+                href="tel:+919151827941"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-950 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-slate-800"
               >
                 <Phone className="h-4 w-4" />
