@@ -1250,6 +1250,11 @@ export default function CityTemplate({
         `Popular Places in ${cityName}`,
         "Local Sightseeing",
         "Nearby Tourist Attractions",
+        `Famous Temples in ${cityName}`,
+        `Tourist Attractions in ${cityName}`,
+        `Best Places to Visit in ${cityName}`,
+        `Family Tourist Places in ${cityName}`,
+        `Nearby Places to Visit from ${cityName}`,
       ]
     );
   };
@@ -1317,30 +1322,29 @@ export default function CityTemplate({
   const places = getPlaces(city.name);
   const cityRouteList = getCityRoutes(city.name);
 
-  // Default FAQs
   const defaultFaqs = [
     {
-      q: "What is the cost of hiring a Tempo Traveller?",
-      a: "Tempo Traveller pricing depends on the vehicle size, travel distance, number of days, route, tolls, parking and other trip requirements. Contact Yatra Tempo Traveller for the latest fare for your journey.",
+      q: `What is the cost of hiring a Tempo Traveller in ${city.name}?`,
+      a: `Tempo Traveller pricing in ${city.name} depends on the vehicle size, travel distance, number of days, route, tolls, parking and other trip requirements. Contact Yatra Tempo Traveller for the latest fare for your journey.`,
     },
     {
-      q: "Which Tempo Traveller seating options are available?",
-      a: "We provide multiple seating options including 9, 12, 16, 17 and 20 Seater Tempo Travellers, subject to availability and route requirements.",
+      q: `Which Tempo Traveller seating options are available in ${city.name}?`,
+      a: `We provide multiple seating options including 9, 12, 16, 17 and 20 Seater Tempo Travellers in ${city.name}, subject to availability and route requirements.`,
     },
     {
-      q: "Can I hire a Tempo Traveller for local sightseeing?",
+      q: `Can I hire a Tempo Traveller for local sightseeing in ${city.name}?`,
       a: `Yes. You can hire a Tempo Traveller for local sightseeing in ${city.name} as well as nearby destinations. The itinerary can be customized according to your group and travel requirements.`,
     },
     {
-      q: "Can I book a Tempo Traveller for an outstation trip?",
-      a: "Yes. Yatra Tempo Traveller provides vehicles for one-way trips, round trips, multi-day tours, family vacations, pilgrimage journeys, weddings and corporate travel.",
+      q: `Can I book a Tempo Traveller from ${city.name} for an outstation trip?`,
+      a: `Yes. Yatra Tempo Traveller provides vehicles from ${city.name} for one-way trips, round trips, multi-day tours, family vacations, pilgrimage journeys, weddings and corporate travel.`,
     },
     {
-      q: "Are experienced drivers provided with the vehicle?",
-      a: "Yes. Tempo Traveller bookings are provided with experienced chauffeurs familiar with city, highway and outstation routes.",
+      q: `Are experienced Tempo Traveller drivers available in ${city.name}?`,
+      a: `Yes. Tempo Traveller bookings in ${city.name} are provided with experienced chauffeurs familiar with city, highway and outstation routes.`,
     },
     {
-      q: "How can I book a Tempo Traveller?",
+      q: `How can I book a Tempo Traveller in ${city.name}?`,
       a: `You can contact us through WhatsApp or phone. Share your pickup city, destination, travel dates, group size and preferred vehicle, and our team will help with the booking and fare.`,
     },
   ];
@@ -2233,10 +2237,10 @@ export default function CityTemplate({
         </div>
       </section>
 
-      {/* ✅ INSERT #1 */}
+      {/* INSERT #1 */}
       <ServiceHighlights cityName={city.name} />
 
-      {/* ✅ INSERT #2 */}
+      {/* INSERT #2 */}
       <FareBreakdown
         cityName={city.name}
         whatsappUrl={whatsappUrl}
@@ -2444,7 +2448,7 @@ export default function CityTemplate({
         </div>
       </section>
 
-      {/* ✅ INSERT #3 */}
+      {/* INSERT #3 */}
       <SightseeingItinerary cityName={city.name} />
 
       {/* =====================================================
@@ -2688,7 +2692,7 @@ export default function CityTemplate({
         </div>
       </section>
 
-      {/* ✅ INSERT #4 */}
+      {/* INSERT #4 */}
       <WhyBookFromUs cityName={city.name} />
 
       {/* =====================================================
@@ -2957,7 +2961,7 @@ export default function CityTemplate({
         </div>
       </section>
 
-      {/* ✅ INSERT #5 */}
+      {/* INSERT #5 */}
       <TravelTips cityName={city.name} state={city.state} />
 
       {/* =====================================================
