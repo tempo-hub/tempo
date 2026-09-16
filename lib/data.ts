@@ -51148,15 +51148,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "nellore",
-    slug: "tempo-traveller-fare-in-nellore",
-    name: "Nellore",
-    state: "Andhra Pradesh",
-    tag: "Coastal & Pilgrimage Hub",
-    desc: "Growing coastal travel hub for temple visits, family tours, weddings, business trips, and group travel across southern Andhra Pradesh.",
-  },
-
-  {
     id: "kakinada",
     slug: "tempo-traveller-fare-in-kakinada",
     name: "Kakinada",
@@ -51165,41 +51156,6 @@ export const CITY_HUBS = [
     desc: "Important coastal Andhra travel hub for family tours, temple trips, business travel, weddings, and group journeys across East Godavari.",
   },
 
-  {
-    id: "rajahmundry",
-    slug: "tempo-traveller-fare-in-rajahmundry",
-    name: "Rajahmundry",
-    state: "Andhra Pradesh",
-    tag: "Godavari Travel Hub",
-    desc: "Major Godavari-region travel hub for temple tours, family trips, sightseeing, weddings, and group travel across Andhra Pradesh.",
-  },
-
-  {
-    id: "tirupati",
-    slug: "tempo-traveller-fare-in-tirupati",
-    name: "Tirupati",
-    state: "Andhra Pradesh",
-    tag: "Pilgrimage Travel Hub",
-    desc: "Major pilgrimage hub for Tirumala temple visits, family pilgrimages, religious tours, weddings, and group travel across South India.",
-  },
-
-  {
-    id: "kadapa",
-    slug: "tempo-traveller-fare-in-kadapa",
-    name: "Kadapa",
-    state: "Andhra Pradesh",
-    tag: "Regional Travel Hub",
-    desc: "Regional Andhra Pradesh travel hub for pilgrimage trips, family tours, business travel, weddings, and group journeys across Rayalaseema.",
-  },
-
-  {
-    id: "kurnool",
-    slug: "tempo-traveller-fare-in-kurnool",
-    name: "Kurnool",
-    state: "Andhra Pradesh",
-    tag: "Rayalaseema Travel Hub",
-    desc: "Major Rayalaseema travel hub for temple tours, family trips, business travel, weddings, and group journeys across Andhra Pradesh and nearby states.",
-  },
   {
     id: "guwahati",
     slug: "tempo-traveller-fare-in-guwahati",
@@ -51225,15 +51181,6 @@ export const CITY_HUBS = [
     state: "Bihar",
     tag: "Regional Travel Hub",
     desc: "Important Bihar travel hub for family trips, business travel, weddings, pilgrimages, and group journeys across eastern Bihar.",
-  },
-
-  {
-    id: "darbhanga",
-    slug: "tempo-traveller-fare-in-darbhanga",
-    name: "Darbhanga",
-    state: "Bihar",
-    tag: "North Bihar Travel Hub",
-    desc: "Major North Bihar travel hub for family tours, weddings, religious trips, business travel, and group transportation across the region.",
   },
 
   {
@@ -51309,15 +51256,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "jamnagar",
-    slug: "tempo-traveller-fare-in-jamnagar",
-    name: "Jamnagar",
-    state: "Gujarat",
-    tag: "Saurashtra Travel Hub",
-    desc: "Important Gujarat travel hub for business trips, coastal tours, temple visits, family travel, weddings, and group journeys across Saurashtra.",
-  },
-
-  {
     id: "bhavnagar",
     slug: "tempo-traveller-fare-in-bhavnagar",
     name: "Bhavnagar",
@@ -51351,15 +51289,6 @@ export const CITY_HUBS = [
     state: "Gujarat",
     tag: "South Gujarat Travel Hub",
     desc: "Growing South Gujarat travel hub for family tours, business trips, weddings, pilgrimage visits, and group travel across the region.",
-  },
-
-  {
-    id: "morbi",
-    slug: "tempo-traveller-fare-in-morbi",
-    name: "Morbi",
-    state: "Gujarat",
-    tag: "Industrial Travel Hub",
-    desc: "Major industrial city and travel hub in Gujarat for business trips, corporate transportation, family tours, weddings, and group travel.",
   },
 
   {
@@ -51462,15 +51391,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "hazaribagh",
-    slug: "tempo-traveller-fare-in-hazaribagh",
-    name: "Hazaribagh",
-    state: "Jharkhand",
-    tag: "Nature & Travel Hub",
-    desc: "Popular Jharkhand travel hub for nature tours, family trips, wildlife excursions, pilgrimages, weddings, and group travel across Eastern India.",
-  },
-
-  {
     id: "mangaluru",
     slug: "tempo-traveller-fare-in-mangaluru",
     name: "Mangaluru",
@@ -51489,15 +51409,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "davangere",
-    slug: "tempo-traveller-fare-in-davangere",
-    name: "Davangere",
-    state: "Karnataka",
-    tag: "Central Karnataka Travel Hub",
-    desc: "Major Central Karnataka travel hub for business trips, family tours, weddings, educational travel, and group transportation.",
-  },
-
-  {
     id: "tumkur",
     slug: "tempo-traveller-fare-in-tumkur",
     name: "Tumkur",
@@ -51507,30 +51418,12 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "kozhikode",
-    slug: "tempo-traveller-fare-in-kozhikode",
-    name: "Kozhikode",
-    state: "Kerala",
-    tag: "Malabar Travel Hub",
-    desc: "Major Malabar travel hub for coastal holidays, family tours, business travel, weddings, and group journeys across northern Kerala.",
-  },
-
-  {
     id: "thrissur",
     slug: "tempo-traveller-fare-in-thrissur",
     name: "Thrissur",
     state: "Kerala",
     tag: "Cultural Travel Hub",
     desc: "Major Kerala cultural hub for temple tours, festivals, family trips, weddings, sightseeing, and group travel.",
-  },
-
-  {
-    id: "kannur",
-    slug: "tempo-traveller-fare-in-kannur",
-    name: "Kannur",
-    state: "Kerala",
-    tag: "Malabar Travel Hub",
-    desc: "Popular North Kerala travel hub for beaches, heritage tours, family holidays, weddings, and group travel across Malabar.",
   },
 
   {
@@ -51552,24 +51445,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "palakkad",
-    slug: "tempo-traveller-fare-in-palakkad",
-    name: "Palakkad",
-    state: "Kerala",
-    tag: "Nature & Travel Hub",
-    desc: "Important Kerala travel hub for nature tours, temple visits, family trips, weddings, and group journeys across Kerala and Tamil Nadu.",
-  },
-
-  {
-    id: "indore",
-    slug: "tempo-traveller-fare-in-indore",
-    name: "Indore",
-    state: "Madhya Pradesh",
-    tag: "Central India Travel Hub",
-    desc: "Major Madhya Pradesh travel hub for business trips, food tours, family travel, weddings, sightseeing, and group journeys across Central India.",
-  },
-
-  {
     id: "bhopal",
     slug: "tempo-traveller-fare-in-bhopal",
     name: "Bhopal",
@@ -51585,33 +51460,6 @@ export const CITY_HUBS = [
     state: "Madhya Pradesh",
     tag: "Heritage Travel Hub",
     desc: "Major heritage travel hub for Gwalior Fort, historical tours, family trips, weddings, business travel, and group journeys across Central India.",
-  },
-
-  {
-    id: "sagar",
-    slug: "tempo-traveller-fare-in-sagar",
-    name: "Sagar",
-    state: "Madhya Pradesh",
-    tag: "Regional Travel Hub",
-    desc: "Important Madhya Pradesh travel hub for family tours, pilgrimage trips, business travel, weddings, and group transportation.",
-  },
-
-  {
-    id: "ratlam",
-    slug: "tempo-traveller-fare-in-ratlam",
-    name: "Ratlam",
-    state: "Madhya Pradesh",
-    tag: "Western MP Travel Hub",
-    desc: "Important Western Madhya Pradesh travel hub for business trips, family tours, pilgrimages, weddings, and group transportation.",
-  },
-
-  {
-    id: "vidisha",
-    slug: "tempo-traveller-fare-in-vidisha",
-    name: "Vidisha",
-    state: "Madhya Pradesh",
-    tag: "Heritage Travel Hub",
-    desc: "Historic Madhya Pradesh travel hub for heritage sightseeing, temple tours, family trips, weddings, and group journeys.",
   },
 
   {
@@ -51732,15 +51580,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "belagavi",
-    slug: "tempo-traveller-fare-in-belagavi",
-    name: "Belagavi",
-    state: "Karnataka",
-    tag: "North Karnataka Travel Hub",
-    desc: "Important North Karnataka travel hub for business travel, family tours, pilgrimages, weddings, and group transportation.",
-  },
-
-  {
     id: "shimoga",
     slug: "tempo-traveller-fare-in-shimoga",
     name: "Shimoga",
@@ -51795,24 +51634,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "ujjain",
-    slug: "tempo-traveller-fare-in-ujjain",
-    name: "Ujjain",
-    state: "Madhya Pradesh",
-    tag: "Pilgrimage Travel Hub",
-    desc: "Major pilgrimage hub for Mahakaleshwar Jyotirlinga, religious tours, family pilgrimages, weddings, and group travel across Central India.",
-  },
-
-  {
-    id: "dewas",
-    slug: "tempo-traveller-fare-in-dewas",
-    name: "Dewas",
-    state: "Madhya Pradesh",
-    tag: "Industrial Travel Hub",
-    desc: "Important Central Madhya Pradesh travel hub for business trips, family tours, religious visits, weddings, and group journeys.",
-  },
-
-  {
     id: "satna",
     slug: "tempo-traveller-fare-in-satna",
     name: "Satna",
@@ -51828,24 +51649,6 @@ export const CITY_HUBS = [
     state: "Madhya Pradesh",
     tag: "Heritage Travel Hub",
     desc: "Historic Madhya Pradesh travel hub for heritage tours, family trips, religious visits, weddings, and group travel.",
-  },
-
-  {
-    id: "khandwa",
-    slug: "tempo-traveller-fare-in-khandwa",
-    name: "Khandwa",
-    state: "Madhya Pradesh",
-    tag: "Regional Travel Hub",
-    desc: "Important Madhya Pradesh travel hub for pilgrimage trips, family tours, business travel, weddings, and group journeys.",
-  },
-
-  {
-    id: "morena",
-    slug: "tempo-traveller-fare-in-morena",
-    name: "Morena",
-    state: "Madhya Pradesh",
-    tag: "Heritage Travel Hub",
-    desc: "Important North Madhya Pradesh travel hub for heritage tours, family trips, pilgrimage visits, weddings, and group transportation.",
   },
 
   {
@@ -51953,15 +51756,6 @@ export const CITY_HUBS = [
     state: "Odisha",
     tag: "South Odisha Travel Hub",
     desc: "Important South Odisha travel hub for family tours, temple visits, coastal trips, weddings, and group travel.",
-  },
-
-  {
-    id: "sambalpur",
-    slug: "tempo-traveller-fare-in-sambalpur",
-    name: "Sambalpur",
-    state: "Odisha",
-    tag: "Western Odisha Travel Hub",
-    desc: "Major Western Odisha travel hub for business trips, family tours, temple visits, weddings, and group journeys.",
   },
 
   {
@@ -52144,48 +51938,12 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "erode",
-    slug: "tempo-traveller-fare-in-erode",
-    name: "Erode",
-    state: "Tamil Nadu",
-    tag: "Business & Industrial Hub",
-    desc: "Important Tamil Nadu business and industrial travel hub for corporate trips, family tours, weddings, and group transportation.",
-  },
-
-  {
     id: "tiruppur",
     slug: "tempo-traveller-fare-in-tiruppur",
     name: "Tiruppur",
     state: "Tamil Nadu",
     tag: "Industrial Travel Hub",
     desc: "Major textile and industrial travel hub in Tamil Nadu for business trips, corporate transportation, family travel, weddings, and group journeys.",
-  },
-
-  {
-    id: "vellore",
-    slug: "tempo-traveller-fare-in-vellore",
-    name: "Vellore",
-    state: "Tamil Nadu",
-    tag: "Healthcare & Travel Hub",
-    desc: "Major Tamil Nadu travel hub for medical travel, temple visits, family trips, weddings, and group transportation.",
-  },
-
-  {
-    id: "thoothukudi",
-    slug: "tempo-traveller-fare-in-thoothukudi",
-    name: "Thoothukudi",
-    state: "Tamil Nadu",
-    tag: "Coastal & Industrial Hub",
-    desc: "Important coastal Tamil Nadu travel hub for business trips, family tours, pilgrimage visits, weddings, and group travel.",
-  },
-
-  {
-    id: "dindigul",
-    slug: "tempo-traveller-fare-in-dindigul",
-    name: "Dindigul",
-    state: "Tamil Nadu",
-    tag: "Regional Travel Hub",
-    desc: "Important Tamil Nadu travel hub for family tours, temple visits, hill station trips, weddings, and group journeys.",
   },
 
   {
@@ -52198,30 +51956,12 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "ranipet",
-    slug: "tempo-traveller-fare-in-ranipet",
-    name: "Ranipet",
-    state: "Tamil Nadu",
-    tag: "Industrial Travel Hub",
-    desc: "Important Tamil Nadu industrial travel hub for business trips, corporate travel, family tours, weddings, and group journeys.",
-  },
-
-  {
     id: "nagercoil",
     slug: "tempo-traveller-fare-in-nagercoil",
     name: "Nagercoil",
     state: "Tamil Nadu",
     tag: "Southern Travel Hub",
     desc: "Major southern Tamil Nadu travel hub for Kanyakumari trips, temple tours, family holidays, weddings, and group travel.",
-  },
-
-  {
-    id: "karur",
-    slug: "tempo-traveller-fare-in-karur",
-    name: "Karur",
-    state: "Tamil Nadu",
-    tag: "Business & Industrial Hub",
-    desc: "Important Tamil Nadu business and industrial travel hub for corporate trips, family tours, weddings, temple visits, and group transportation.",
   },
 
   {
@@ -52243,30 +51983,12 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "avadi",
-    slug: "tempo-traveller-fare-in-avadi",
-    name: "Avadi",
-    state: "Tamil Nadu",
-    tag: "Chennai Metropolitan Hub",
-    desc: "Important Chennai Metropolitan Region travel hub for business trips, family tours, weddings, airport transfers, and group journeys.",
-  },
-
-  {
     id: "warangal",
     slug: "tempo-traveller-fare-in-warangal",
     name: "Warangal",
     state: "Telangana",
     tag: "Tier 2 Heritage Hub",
     desc: "Important heritage and travel hub for temple tours, family trips, weddings, business travel, and group journeys across Telangana.",
-  },
-
-  {
-    id: "nizamabad",
-    slug: "tempo-traveller-fare-in-nizamabad",
-    name: "Nizamabad",
-    state: "Telangana",
-    tag: "North Telangana Travel Hub",
-    desc: "Major North Telangana travel hub for family tours, business trips, temple visits, weddings, and group transportation.",
   },
 
   {
@@ -52279,30 +52001,12 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "suryapet",
-    slug: "tempo-traveller-fare-in-suryapet",
-    name: "Suryapet",
-    state: "Telangana",
-    tag: "Regional Travel Hub",
-    desc: "Strategic Telangana travel hub connecting major cities for family tours, business trips, pilgrimages, weddings, and group travel.",
-  },
-
-  {
     id: "adilabad",
     slug: "tempo-traveller-fare-in-adilabad",
     name: "Adilabad",
     state: "Telangana",
     tag: "North Telangana Hub",
     desc: "Important northern Telangana travel destination for family tours, nature trips, religious journeys, weddings, and group transportation.",
-  },
-
-  {
-    id: "wanaparthy",
-    slug: "tempo-traveller-fare-in-wanaparthy",
-    name: "Wanaparthy",
-    state: "Telangana",
-    tag: "South Telangana Hub",
-    desc: "Growing South Telangana travel hub for family tours, heritage visits, weddings, religious journeys, and group travel.",
   },
 
   {
@@ -52315,57 +52019,12 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "bodhan",
-    slug: "tempo-traveller-fare-in-bodhan",
-    name: "Bodhan",
-    state: "Telangana",
-    tag: "Regional Travel Hub",
-    desc: "Important Nizamabad-region travel destination for family tours, religious visits, business trips, weddings, and group transportation.",
-  },
-
-  {
-    id: "armoor",
-    slug: "tempo-traveller-fare-in-armoor",
-    name: "Armoor",
-    state: "Telangana",
-    tag: "Regional Travel Hub",
-    desc: "Convenient Telangana travel destination for family journeys, temple visits, business travel, weddings, and group transportation.",
-  },
-
-  {
     id: "bhongir",
     slug: "tempo-traveller-fare-in-bhongir",
     name: "Bhongir",
     state: "Telangana",
     tag: "Heritage Travel Hub",
     desc: "Popular heritage destination near Hyderabad for fort visits, family tours, weekend trips, weddings, and group travel.",
-  },
-
-  {
-    id: "vikarabad",
-    slug: "tempo-traveller-fare-in-vikarabad",
-    name: "Vikarabad",
-    state: "Telangana",
-    tag: "Nature Travel Hub",
-    desc: "Popular getaway near Hyderabad for nature trips, family outings, weekend tours, weddings, and group transportation.",
-  },
-
-  {
-    id: "medak",
-    slug: "tempo-traveller-fare-in-medak",
-    name: "Medak",
-    state: "Telangana",
-    tag: "Heritage & Pilgrimage Hub",
-    desc: "Historic Telangana destination for Medak Fort, church visits, temple tours, family trips, weddings, and group travel.",
-  },
-
-  {
-    id: "sangareddy",
-    slug: "tempo-traveller-fare-in-sangareddy",
-    name: "Sangareddy",
-    state: "Telangana",
-    tag: "Hyderabad Region Travel Hub",
-    desc: "Important travel and industrial hub near Hyderabad for corporate trips, family tours, weddings, airport transfers, and group journeys.",
   },
 
   {
@@ -52770,14 +52429,6 @@ export const CITY_HUBS = [
     desc: "Important Garhwal pilgrimage and travel hub connecting major religious and mountain destinations, suitable for Char Dham Yatra, family tours, and group transportation.",
   },
   {
-    id: "howrah",
-    slug: "tempo-traveller-fare-in-howrah",
-    name: "Howrah",
-    state: "West Bengal",
-    tag: "Kolkata Metro Hub",
-    desc: "Major transport hub across the Hooghly River from Kolkata, suitable for family trips, pilgrimage tours, airport transfers, and group transportation.",
-  },
-  {
     id: "durgapur",
     slug: "tempo-traveller-fare-in-durgapur",
     name: "Durgapur",
@@ -52834,14 +52485,6 @@ export const CITY_HUBS = [
     desc: "Important transportation hub in North Bengal, suitable for family tours, local sightseeing, pilgrimage trips, and group transportation.",
   },
   {
-    id: "jalpaiguri",
-    slug: "tempo-traveller-fare-in-jalpaiguri",
-    name: "Jalpaiguri",
-    state: "West Bengal",
-    tag: "North Bengal Travel Hub",
-    desc: "Scenic North Bengal travel hub with access to Dooars and Himalayan destinations, suitable for family vacations, sightseeing tours, and group travel.",
-  },
-  {
     id: "balurghat",
     slug: "tempo-traveller-fare-in-balurghat",
     name: "Balurghat",
@@ -52889,14 +52532,7 @@ export const CITY_HUBS = [
     tag: "Pilgrimage & Cultural Hub",
     desc: "Historic and pilgrimage-rich district known for important religious and cultural destinations, suitable for family tours, pilgrimage journeys, and group transportation.",
   },
-  {
-    id: "murshidabad",
-    slug: "tempo-traveller-fare-in-murshidabad",
-    name: "Murshidabad",
-    state: "West Bengal",
-    tag: "Heritage & Travel Hub",
-    desc: "Historic destination famous for palaces, monuments, and heritage attractions, suitable for family tours, heritage trips, sightseeing, and group transportation.",
-  },
+
   {
     id: "hooghly",
     slug: "tempo-traveller-fare-in-hooghly",
@@ -53707,15 +53343,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "begusarai",
-    slug: "tempo-traveller-fare-in-begusarai",
-    name: "Begusarai",
-    state: "Bihar",
-    tag: "Bihar Travel Hub",
-    desc: "Important Bihar industrial and travel hub suitable for family tours, business trips, pilgrimage travel, and group transportation.",
-  },
-
-  {
     id: "bharatpur",
     slug: "tempo-traveller-fare-in-bharatpur",
     name: "Bharatpur",
@@ -53823,7 +53450,6 @@ export const CITY_HUBS = [
     desc: "Regional Tamil Nadu destination suitable for family tours, nature trips, sightseeing, and group transportation.",
   },
 
-
   {
     id: "eluru",
     slug: "tempo-traveller-fare-in-eluru",
@@ -53876,15 +53502,6 @@ export const CITY_HUBS = [
     state: "Bihar",
     tag: "Pilgrimage Travel Hub",
     desc: "Major Bihar pilgrimage destination suitable for religious tours, family trips, Bodh Gaya visits, and group transportation.",
-  },
-
-  {
-    id: "godhra",
-    slug: "tempo-traveller-fare-in-godhra",
-    name: "Godhra",
-    state: "Gujarat",
-    tag: "Gujarat Travel Hub",
-    desc: "Important Gujarat regional hub suitable for family tours, pilgrimage trips, business travel, and group transportation.",
   },
 
   {
@@ -54041,15 +53658,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "karimnagar",
-    slug: "tempo-traveller-fare-in-karimnagar",
-    name: "Karimnagar",
-    state: "Telangana",
-    tag: "Telangana Travel Hub",
-    desc: "Major Telangana city suitable for family tours, business trips, pilgrimage travel, and group transportation.",
-  },
-
-  {
     id: "karwar",
     slug: "tempo-traveller-fare-in-karwar",
     name: "Karwar",
@@ -54131,15 +53739,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "mancherial",
-    slug: "tempo-traveller-fare-in-mancherial",
-    name: "Mancherial",
-    state: "Telangana",
-    tag: "Telangana Travel Hub",
-    desc: "Important northern Telangana industrial and travel hub suitable for family tours, business trips, and group transportation.",
-  },
-
-  {
     id: "mehsana",
     slug: "tempo-traveller-fare-in-mehsana",
     name: "Mehsana",
@@ -54155,24 +53754,6 @@ export const CITY_HUBS = [
     state: "Gujarat",
     tag: "Gujarat Travel Hub",
     desc: "Regional Gujarat destination suitable for family tours, pilgrimage travel, sightseeing, and group transportation.",
-  },
-
-  {
-    id: "mundra",
-    slug: "tempo-traveller-fare-in-mundra",
-    name: "Mundra",
-    state: "Gujarat",
-    tag: "Kutch Travel Hub",
-    desc: "Major Kutch port and industrial hub suitable for corporate travel, business trips, family tours, and group transportation.",
-  },
-
-  {
-    id: "muzaffarpur",
-    slug: "tempo-traveller-fare-in-muzaffarpur",
-    name: "Muzaffarpur",
-    state: "Bihar",
-    tag: "Bihar Travel Hub",
-    desc: "Major North Bihar city suitable for family tours, pilgrimage trips, business travel, and group transportation.",
   },
 
   {
@@ -54221,15 +53802,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "nirmal",
-    slug: "tempo-traveller-fare-in-nirmal",
-    name: "Nirmal",
-    state: "Telangana",
-    tag: "Telangana Travel Hub",
-    desc: "Important northern Telangana travel destination suitable for family tours, sightseeing, pilgrimage trips, and group transportation.",
-  },
-
-  {
     id: "omerga",
     slug: "tempo-traveller-fare-in-omerga",
     name: "Omerga",
@@ -54275,24 +53847,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "palakollu",
-    slug: "tempo-traveller-fare-in-palakollu",
-    name: "Palakollu",
-    state: "Andhra Pradesh",
-    tag: "Andhra Pradesh Travel Hub",
-    desc: "Regional coastal Andhra destination suitable for family tours, pilgrimage trips, sightseeing, and group transportation.",
-  },
-
-  {
-    id: "palanpur",
-    slug: "tempo-traveller-fare-in-palanpur",
-    name: "Palanpur",
-    state: "Gujarat",
-    tag: "North Gujarat Hub",
-    desc: "Important North Gujarat travel hub suitable for family tours, pilgrimage trips, business travel, and group transportation.",
-  },
-
-  {
     id: "palghar",
     slug: "tempo-traveller-fare-in-palghar",
     name: "Palghar",
@@ -54320,15 +53874,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "patan",
-    slug: "tempo-traveller-fare-in-patan",
-    name: "Patan",
-    state: "Gujarat",
-    tag: "Heritage Travel Hub",
-    desc: "Historic Gujarat destination suitable for heritage tours, family trips, pilgrimage travel, and group transportation.",
-  },
-
-  {
     id: "phaltan",
     slug: "tempo-traveller-fare-in-phaltan",
     name: "Phaltan",
@@ -54345,16 +53890,6 @@ export const CITY_HUBS = [
     tag: "Maharashtra Travel Hub",
     desc: "Regional Maharashtra travel destination suitable for family tours, local trips, pilgrimage travel, and group transportation.",
   },
-
-  {
-    id: "puri",
-    slug: "tempo-traveller-fare-in-puri",
-    name: "Puri",
-    state: "Odisha",
-    tag: "Pilgrimage & Coastal Hub",
-    desc: "Major Odisha pilgrimage and beach destination suitable for Jagannath Yatra, family tours, sightseeing, and group transportation.",
-  },
-
   {
     id: "raigad",
     slug: "tempo-traveller-fare-in-raigad",
@@ -54482,15 +54017,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "silvassa",
-    slug: "tempo-traveller-fare-in-silvassa",
-    name: "Silvassa",
-    state: "Dadra and Nagar Haveli and Daman and Diu",
-    tag: "Western India Travel Hub",
-    desc: "Popular western India destination suitable for family tours, weekend trips, sightseeing, and group transportation.",
-  },
-
-  {
     id: "sindhudurg",
     slug: "tempo-traveller-fare-in-sindhudurg",
     name: "Sindhudurg",
@@ -54545,15 +54071,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "udupi",
-    slug: "tempo-traveller-fare-in-udupi",
-    name: "Udupi",
-    state: "Karnataka",
-    tag: "Coastal Karnataka Hub",
-    desc: "Popular Karnataka pilgrimage and coastal destination suitable for temple tours, family trips, sightseeing, and group transportation.",
-  },
-
-  {
     id: "unjha",
     slug: "tempo-traveller-fare-in-unjha",
     name: "Unjha",
@@ -54578,24 +54095,6 @@ export const CITY_HUBS = [
     state: "Gujarat",
     tag: "South Gujarat Hub",
     desc: "Major South Gujarat travel hub suitable for family tours, coastal trips, business travel, and group transportation.",
-  },
-
-  {
-    id: "vapi",
-    slug: "tempo-traveller-fare-in-vapi",
-    name: "Vapi",
-    state: "Gujarat",
-    tag: "Industrial Travel Hub",
-    desc: "Major South Gujarat industrial hub suitable for corporate travel, business trips, family tours, and group transportation.",
-  },
-
-  {
-    id: "vijapur",
-    slug: "tempo-traveller-fare-in-vijapur",
-    name: "Vijapur",
-    state: "Gujarat",
-    tag: "Gujarat Travel Hub",
-    desc: "Regional Gujarat destination suitable for family tours, pilgrimage travel, local sightseeing, and group transportation.",
   },
 
   {
@@ -54668,6 +54167,3923 @@ export const CITY_HUBS = [
     state: "Punjab",
     tag: "Tricity Travel Hub",
     desc: "Major Tricity-region travel hub near Chandigarh suitable for airport transfers, family tours, corporate travel, and group transportation.",
+  },
+
+  // -----15 September Routes-----
+  {
+    id: "bhuj",
+    slug: "tempo-traveller-fare-in-bhuj",
+    name: "Bhuj",
+    state: "Gujarat",
+    tag: "Kutch Travel Hub",
+    desc: "Major Kutch travel hub suitable for heritage tours, desert trips, family vacations, group travel, and sightseeing.",
+  },
+
+  {
+    id: "botad",
+    slug: "tempo-traveller-fare-in-botad",
+    name: "Botad",
+    state: "Gujarat",
+    tag: "Saurashtra Travel Hub",
+    desc: "Regional Saurashtra travel hub suitable for family tours, pilgrimage trips, group transportation, and outstation travel.",
+  },
+
+  {
+    id: "dabhoi",
+    slug: "tempo-traveller-fare-in-dabhoi",
+    name: "Dabhoi",
+    state: "Gujarat",
+    tag: "Central Gujarat Travel Hub",
+    desc: "Historic Central Gujarat travel hub suitable for heritage tours, family trips, pilgrimage travel, and group transportation.",
+  },
+
+  {
+    id: "daman",
+    slug: "tempo-traveller-fare-in-daman",
+    name: "Daman",
+    state: "Daman and Diu",
+    tag: "Coastal Travel Hub",
+    desc: "Popular coastal travel destination suitable for beach vacations, family tours, group trips, corporate travel, and weekend getaways.",
+  },
+
+  {
+    id: "dwarka",
+    slug: "tempo-traveller-fare-in-dwarka",
+    name: "Dwarka",
+    state: "Gujarat",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Major pilgrimage and tourism hub suitable for Dwarka temple tours, family pilgrimages, group travel, and Gujarat sightseeing.",
+  },
+
+  {
+    id: "godhra",
+    slug: "tempo-traveller-fare-in-godhra",
+    name: "Godhra",
+    state: "Gujarat",
+    tag: "Central Gujarat Travel Hub",
+    desc: "Important Central Gujarat travel hub suitable for family tours, pilgrimage trips, group transportation, and outstation travel.",
+  },
+
+  {
+    id: "himmatnagar",
+    slug: "tempo-traveller-fare-in-himmatnagar",
+    name: "Himmatnagar",
+    state: "Gujarat",
+    tag: "North Gujarat Travel Hub",
+    desc: "Major North Gujarat travel hub suitable for family tours, business travel, pilgrimage trips, and group transportation.",
+  },
+
+  {
+    id: "idar",
+    slug: "tempo-traveller-fare-in-idar",
+    name: "Idar",
+    state: "Gujarat",
+    tag: "Sabarkantha Travel Hub",
+    desc: "Scenic Sabarkantha travel hub suitable for family outings, heritage tours, group trips, and Gujarat sightseeing.",
+  },
+
+  {
+    id: "jamnagar",
+    slug: "tempo-traveller-fare-in-jamnagar",
+    name: "Jamnagar",
+    state: "Gujarat",
+    tag: "Saurashtra Travel Hub",
+    desc: "Major Saurashtra travel hub suitable for family vacations, coastal tours, pilgrimage trips, corporate travel, and group transportation.",
+  },
+
+  {
+    id: "kapadvanj",
+    slug: "tempo-traveller-fare-in-kapadvanj",
+    name: "Kapadvanj",
+    state: "Gujarat",
+    tag: "Kheda Travel Hub",
+    desc: "Regional Kheda travel hub suitable for family tours, pilgrimage travel, group trips, and outstation transportation.",
+  },
+
+  {
+    id: "karjan",
+    slug: "tempo-traveller-fare-in-karjan",
+    name: "Karjan",
+    state: "Gujarat",
+    tag: "Vadodara Travel Hub",
+    desc: "Important Vadodara-region travel hub suitable for family tours, business travel, group transportation, and outstation trips.",
+  },
+
+  {
+    id: "khambhat",
+    slug: "tempo-traveller-fare-in-khambhat",
+    name: "Khambhat",
+    state: "Gujarat",
+    tag: "Anand Travel Hub",
+    desc: "Historic coastal Gujarat travel hub suitable for family tours, heritage trips, group travel, and regional transportation.",
+  },
+
+  {
+    id: "kheda",
+    slug: "tempo-traveller-fare-in-kheda",
+    name: "Kheda",
+    state: "Gujarat",
+    tag: "Central Gujarat Travel Hub",
+    desc: "Regional Central Gujarat travel hub suitable for family tours, pilgrimage trips, group transportation, and outstation travel.",
+  },
+
+  {
+    id: "kodinar",
+    slug: "tempo-traveller-fare-in-kodinar",
+    name: "Kodinar",
+    state: "Gujarat",
+    tag: "Saurashtra Coastal Hub",
+    desc: "Coastal Saurashtra travel hub suitable for family vacations, pilgrimage tours, Somnath trips, and group transportation.",
+  },
+
+  {
+    id: "lathi",
+    slug: "tempo-traveller-fare-in-lathi",
+    name: "Lathi",
+    state: "Gujarat",
+    tag: "Saurashtra Travel Hub",
+    desc: "Regional Saurashtra travel hub suitable for family tours, pilgrimage trips, group transportation, and outstation travel.",
+  },
+
+  {
+    id: "limbdi",
+    slug: "tempo-traveller-fare-in-limbdi",
+    name: "Limbdi",
+    state: "Gujarat",
+    tag: "Surendranagar Travel Hub",
+    desc: "Important Surendranagar-region travel hub suitable for family tours, group trips, pilgrimage travel, and outstation transportation.",
+  },
+
+  {
+    id: "lunawada",
+    slug: "tempo-traveller-fare-in-lunawada",
+    name: "Lunawada",
+    state: "Gujarat",
+    tag: "Mahisagar Travel Hub",
+    desc: "Major Mahisagar travel hub suitable for family tours, pilgrimage trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "mahuva",
+    slug: "tempo-traveller-fare-in-mahuva",
+    name: "Mahuva",
+    state: "Gujarat",
+    tag: "Saurashtra Coastal Hub",
+    desc: "Coastal Saurashtra travel hub suitable for family vacations, pilgrimage tours, group trips, and outstation transportation.",
+  },
+
+  {
+    id: "mandvi",
+    slug: "tempo-traveller-fare-in-mandvi",
+    name: "Mandvi",
+    state: "Gujarat",
+    tag: "Kutch Coastal Travel Hub",
+    desc: "Popular Kutch coastal travel hub suitable for beach vacations, family tours, sightseeing, group travel, and weekend trips.",
+  },
+
+  {
+    id: "mangrol",
+    slug: "tempo-traveller-fare-in-mangrol",
+    name: "Mangrol",
+    state: "Gujarat",
+    tag: "Saurashtra Coastal Hub",
+    desc: "Coastal Saurashtra travel hub suitable for family vacations, pilgrimage trips, coastal sightseeing, and group transportation.",
+  },
+
+  {
+    id: "meghraj",
+    slug: "tempo-traveller-fare-in-meghraj",
+    name: "Meghraj",
+    state: "Gujarat",
+    tag: "Aravalli Travel Hub",
+    desc: "Regional Aravalli travel hub suitable for family tours, rural sightseeing, group trips, and outstation transportation.",
+  },
+
+  {
+    id: "morbi",
+    slug: "tempo-traveller-fare-in-morbi",
+    name: "Morbi",
+    state: "Gujarat",
+    tag: "Saurashtra Industrial Hub",
+    desc: "Major Saurashtra industrial and travel hub suitable for corporate travel, family tours, group transportation, and outstation trips.",
+  },
+
+  {
+    id: "mundra",
+    slug: "tempo-traveller-fare-in-mundra",
+    name: "Mundra",
+    state: "Gujarat",
+    tag: "Kutch Industrial Hub",
+    desc: "Major Kutch industrial and coastal travel hub suitable for corporate travel, group transportation, family trips, and outstation travel.",
+  },
+
+  {
+    id: "padra",
+    slug: "tempo-traveller-fare-in-padra",
+    name: "Padra",
+    state: "Gujarat",
+    tag: "Vadodara Travel Hub",
+    desc: "Vadodara-region travel hub suitable for family tours, corporate travel, group transportation, and outstation trips.",
+  },
+
+  {
+    id: "palanpur",
+    slug: "tempo-traveller-fare-in-palanpur",
+    name: "Palanpur",
+    state: "Gujarat",
+    tag: "North Gujarat Travel Hub",
+    desc: "Major North Gujarat travel hub suitable for family tours, pilgrimage trips, Rajasthan travel, and group transportation.",
+  },
+
+  {
+    id: "patan",
+    slug: "tempo-traveller-fare-in-patan",
+    name: "Patan",
+    state: "Gujarat",
+    tag: "Heritage Travel Hub",
+    desc: "Historic North Gujarat travel hub suitable for heritage tours, family trips, pilgrimage travel, and group transportation.",
+  },
+
+  {
+    id: "porbandar",
+    slug: "tempo-traveller-fare-in-porbandar",
+    name: "Porbandar",
+    state: "Gujarat",
+    tag: "Coastal Saurashtra Hub",
+    desc: "Major coastal Saurashtra travel hub suitable for family vacations, pilgrimage tours, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "radhanpur",
+    slug: "tempo-traveller-fare-in-radhanpur",
+    name: "Radhanpur",
+    state: "Gujarat",
+    tag: "North Gujarat Travel Hub",
+    desc: "Important North Gujarat travel hub suitable for family tours, pilgrimage travel, Rajasthan trips, and outstation transportation.",
+  },
+
+  {
+    id: "rajpipla",
+    slug: "tempo-traveller-fare-in-rajpipla",
+    name: "Rajpipla",
+    state: "Gujarat",
+    tag: "Narmada Tourism Hub",
+    desc: "Important Narmada tourism hub suitable for Statue of Unity trips, family tours, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "salaya",
+    slug: "tempo-traveller-fare-in-salaya",
+    name: "Salaya",
+    state: "Gujarat",
+    tag: "Devbhoomi Dwarka Travel Hub",
+    desc: "Coastal Devbhoomi Dwarka travel hub suitable for family tours, pilgrimage trips, coastal sightseeing, and group transportation.",
+  },
+
+  {
+    id: "sanand",
+    slug: "tempo-traveller-fare-in-sanand",
+    name: "Sanand",
+    state: "Gujarat",
+    tag: "Ahmedabad Travel Hub",
+    desc: "Major Ahmedabad-region industrial travel hub suitable for corporate travel, family tours, group transportation, and outstation trips.",
+  },
+
+  {
+    id: "savli",
+    slug: "tempo-traveller-fare-in-savli",
+    name: "Savli",
+    state: "Gujarat",
+    tag: "Vadodara Industrial Hub",
+    desc: "Important Vadodara-region industrial hub suitable for corporate travel, business trips, group transportation, and family tours.",
+  },
+
+  {
+    id: "sidhpur",
+    slug: "tempo-traveller-fare-in-sidhpur",
+    name: "Sidhpur",
+    state: "Gujarat",
+    tag: "North Gujarat Heritage Hub",
+    desc: "Historic North Gujarat travel hub suitable for heritage tours, pilgrimage trips, family travel, and group transportation.",
+  },
+
+  {
+    id: "somnath",
+    slug: "tempo-traveller-fare-in-somnath",
+    name: "Somnath",
+    state: "Gujarat",
+    tag: "Pilgrimage Tourism Hub",
+    desc: "Major pilgrimage tourism hub suitable for Somnath temple tours, family pilgrimages, coastal sightseeing, and group travel.",
+  },
+
+  {
+    id: "thangadh",
+    slug: "tempo-traveller-fare-in-thangadh",
+    name: "Thangadh",
+    state: "Gujarat",
+    tag: "Surendranagar Travel Hub",
+    desc: "Regional Surendranagar travel hub suitable for family tours, group transportation, pilgrimage trips, and outstation travel.",
+  },
+
+  {
+    id: "umbergaon",
+    slug: "tempo-traveller-fare-in-umbergaon",
+    name: "Umbergaon",
+    state: "Gujarat",
+    tag: "South Gujarat Coastal Hub",
+    desc: "South Gujarat coastal travel hub suitable for family vacations, group tours, corporate travel, and weekend trips.",
+  },
+
+  {
+    id: "vadnagar",
+    slug: "tempo-traveller-fare-in-vadnagar",
+    name: "Vadnagar",
+    state: "Gujarat",
+    tag: "Heritage Tourism Hub",
+    desc: "Historic North Gujarat heritage hub suitable for cultural tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "valod",
+    slug: "tempo-traveller-fare-in-valod",
+    name: "Valod",
+    state: "Gujarat",
+    tag: "Tapi Travel Hub",
+    desc: "Regional Tapi travel hub suitable for family tours, group trips, pilgrimage travel, and outstation transportation.",
+  },
+
+  {
+    id: "vapi",
+    slug: "tempo-traveller-fare-in-vapi",
+    name: "Vapi",
+    state: "Gujarat",
+    tag: "South Gujarat Industrial Hub",
+    desc: "Major South Gujarat industrial and travel hub suitable for corporate travel, family tours, group transportation, and outstation trips.",
+  },
+
+  {
+    id: "veraval",
+    slug: "tempo-traveller-fare-in-veraval",
+    name: "Veraval",
+    state: "Gujarat",
+    tag: "Somnath Coastal Hub",
+    desc: "Major coastal travel hub near Somnath suitable for pilgrimage tours, family vacations, coastal sightseeing, and group transportation.",
+  },
+
+  {
+    id: "vijapur",
+    slug: "tempo-traveller-fare-in-vijapur",
+    name: "Vijapur",
+    state: "Gujarat",
+    tag: "North Gujarat Travel Hub",
+    desc: "Regional North Gujarat travel hub suitable for family tours, business travel, pilgrimage trips, and group transportation.",
+  },
+  {
+    id: "margao",
+    slug: "tempo-traveller-fare-in-margao",
+    name: "Margao",
+    state: "Goa",
+    tag: "South Goa Travel Hub",
+    desc: "Major South Goa travel hub suitable for family tours, beach vacations, pilgrimage trips, group transportation, and sightseeing.",
+  },
+
+  {
+    id: "vasco-da-gama",
+    slug: "tempo-traveller-fare-in-vasco-da-gama",
+    name: "Vasco da Gama",
+    state: "Goa",
+    tag: "Airport Travel Hub",
+    desc: "Major Goa travel hub near Dabolim Airport suitable for airport transfers, family tours, beach trips, corporate travel, and group transportation.",
+  },
+
+  {
+    id: "mapusa",
+    slug: "tempo-traveller-fare-in-mapusa",
+    name: "Mapusa",
+    state: "Goa",
+    tag: "North Goa Travel Hub",
+    desc: "Major North Goa travel hub suitable for beach vacations, family tours, sightseeing, airport transfers, and group transportation.",
+  },
+
+  {
+    id: "ponda",
+    slug: "tempo-traveller-fare-in-ponda",
+    name: "Ponda",
+    state: "Goa",
+    tag: "Central Goa Travel Hub",
+    desc: "Central Goa travel hub suitable for temple tours, family trips, sightseeing, pilgrimage travel, and group transportation.",
+  },
+
+  {
+    id: "bicholim",
+    slug: "tempo-traveller-fare-in-bicholim",
+    name: "Bicholim",
+    state: "Goa",
+    tag: "North Goa Travel Hub",
+    desc: "North Goa travel hub suitable for family tours, nature trips, sightseeing, temple visits, and group transportation.",
+  },
+
+  {
+    id: "curchorem",
+    slug: "tempo-traveller-fare-in-curchorem",
+    name: "Curchorem",
+    state: "Goa",
+    tag: "South Goa Travel Hub",
+    desc: "South Goa regional travel hub suitable for family tours, local sightseeing, group trips, and outstation transportation.",
+  },
+
+  {
+    id: "sanquelim",
+    slug: "tempo-traveller-fare-in-sanquelim",
+    name: "Sanquelim",
+    state: "Goa",
+    tag: "North Goa Travel Hub",
+    desc: "Regional North Goa travel hub suitable for family tours, nature trips, sightseeing, temple visits, and group transportation.",
+  },
+
+  {
+    id: "valpoi",
+    slug: "tempo-traveller-fare-in-valpoi",
+    name: "Valpoi",
+    state: "Goa",
+    tag: "Sattari Travel Hub",
+    desc: "Scenic Goa travel hub suitable for nature trips, family tours, wildlife excursions, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "quepem",
+    slug: "tempo-traveller-fare-in-quepem",
+    name: "Quepem",
+    state: "Goa",
+    tag: "South Goa Travel Hub",
+    desc: "South Goa travel hub suitable for family tours, temple visits, sightseeing, group transportation, and outstation trips.",
+  },
+
+  {
+    id: "canacona",
+    slug: "tempo-traveller-fare-in-canacona",
+    name: "Canacona",
+    state: "Goa",
+    tag: "South Goa Beach Hub",
+    desc: "Popular South Goa coastal travel hub suitable for beach vacations, family tours, sightseeing, group trips, and weekend getaways.",
+  },
+
+  {
+    id: "pernem",
+    slug: "tempo-traveller-fare-in-pernem",
+    name: "Pernem",
+    state: "Goa",
+    tag: "North Goa Travel Hub",
+    desc: "Northern Goa travel hub suitable for beach vacations, family tours, airport transfers, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "sattari",
+    slug: "tempo-traveller-fare-in-sattari",
+    name: "Sattari",
+    state: "Goa",
+    tag: "Nature Travel Hub",
+    desc: "Nature-rich Goa travel region suitable for family tours, wildlife trips, waterfalls, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "tiswadi",
+    slug: "tempo-traveller-fare-in-tiswadi",
+    name: "Tiswadi",
+    state: "Goa",
+    tag: "Panaji Travel Hub",
+    desc: "Central Goa travel hub covering the Panaji region, suitable for city tours, family trips, sightseeing, corporate travel, and group transportation.",
+  },
+
+  {
+    id: "mormugao",
+    slug: "tempo-traveller-fare-in-mormugao",
+    name: "Mormugao",
+    state: "Goa",
+    tag: "Port & Coastal Travel Hub",
+    desc: "Major coastal Goa travel hub suitable for beach vacations, cruise transfers, airport travel, family tours, and group transportation.",
+  },
+
+  {
+    id: "dharbandora",
+    slug: "tempo-traveller-fare-in-dharbandora",
+    name: "Dharbandora",
+    state: "Goa",
+    tag: "Central Goa Travel Hub",
+    desc: "Central Goa travel hub suitable for nature tours, family trips, sightseeing, temple visits, and group transportation.",
+  },
+
+  {
+    id: "silvassa",
+    slug: "tempo-traveller-fare-in-silvassa",
+    name: "Silvassa",
+    state: "Dadra and Nagar Haveli and Daman and Diu",
+    tag: "Union Territory Travel Hub",
+    desc: "Popular Union Territory travel hub suitable for family vacations, nature trips, sightseeing, corporate travel, and group transportation.",
+  },
+
+  {
+    id: "diu",
+    slug: "tempo-traveller-fare-in-diu",
+    name: "Diu",
+    state: "Dadra and Nagar Haveli and Daman and Diu",
+    tag: "Coastal Tourism Hub",
+    desc: "Popular coastal tourism destination suitable for beach vacations, family tours, sightseeing, heritage trips, and group transportation.",
+  },
+
+  {
+    id: "bagalkot",
+    slug: "tempo-traveller-fare-in-bagalkot",
+    name: "Bagalkot",
+    state: "Karnataka",
+    tag: "North Karnataka Travel Hub",
+    desc: "Major North Karnataka travel hub suitable for family tours, heritage trips, pilgrimage travel, and group transportation.",
+  },
+
+  {
+    id: "belagavi",
+    slug: "tempo-traveller-fare-in-belagavi",
+    name: "Belagavi",
+    state: "Karnataka",
+    tag: "North Karnataka Travel Hub",
+    desc: "Major North Karnataka travel hub suitable for family tours, business travel, pilgrimage trips, and group transportation.",
+  },
+
+  {
+    id: "chikkamagaluru",
+    slug: "tempo-traveller-fare-in-chikkamagaluru",
+    name: "Chikkamagaluru",
+    state: "Karnataka",
+    tag: "Hill Station Travel Hub",
+    desc: "Popular Karnataka hill-station travel hub suitable for family vacations, nature trips, plantation tours, sightseeing, and group travel.",
+  },
+
+  {
+    id: "chitradurga",
+    slug: "tempo-traveller-fare-in-chitradurga",
+    name: "Chitradurga",
+    state: "Karnataka",
+    tag: "Central Karnataka Travel Hub",
+    desc: "Historic Central Karnataka travel hub suitable for heritage tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "davangere",
+    slug: "tempo-traveller-fare-in-davangere",
+    name: "Davangere",
+    state: "Karnataka",
+    tag: "Central Karnataka Travel Hub",
+    desc: "Major Central Karnataka travel hub suitable for family tours, business travel, outstation trips, and group transportation.",
+  },
+
+  {
+    id: "gadag",
+    slug: "tempo-traveller-fare-in-gadag",
+    name: "Gadag",
+    state: "Karnataka",
+    tag: "North Karnataka Travel Hub",
+    desc: "Regional North Karnataka travel hub suitable for heritage tours, pilgrimage trips, family travel, and group transportation.",
+  },
+
+  {
+    id: "hassan",
+    slug: "tempo-traveller-fare-in-hassan",
+    name: "Hassan",
+    state: "Karnataka",
+    tag: "Heritage Travel Hub",
+    desc: "Important Karnataka heritage travel hub suitable for temple tours, family vacations, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "haveri",
+    slug: "tempo-traveller-fare-in-haveri",
+    name: "Haveri",
+    state: "Karnataka",
+    tag: "Central Karnataka Travel Hub",
+    desc: "Regional Karnataka travel hub suitable for family tours, pilgrimage trips, business travel, and group transportation.",
+  },
+
+  {
+    id: "kodagu",
+    slug: "tempo-traveller-fare-in-kodagu",
+    name: "Kodagu",
+    state: "Karnataka",
+    tag: "Coorg Tourism Hub",
+    desc: "Popular Coorg tourism hub suitable for hill-station vacations, family tours, nature trips, plantation visits, and group transportation.",
+  },
+
+  {
+    id: "kolar",
+    slug: "tempo-traveller-fare-in-kolar",
+    name: "Kolar",
+    state: "Karnataka",
+    tag: "Bengaluru Region Travel Hub",
+    desc: "Important Bengaluru-region travel hub suitable for family tours, temple visits, business travel, and group transportation.",
+  },
+
+  {
+    id: "mandya",
+    slug: "tempo-traveller-fare-in-mandya",
+    name: "Mandya",
+    state: "Karnataka",
+    tag: "Mysuru Region Travel Hub",
+    desc: "Important Mysuru-region travel hub suitable for family tours, heritage trips, pilgrimage travel, and group transportation.",
+  },
+
+  {
+    id: "raichur",
+    slug: "tempo-traveller-fare-in-raichur",
+    name: "Raichur",
+    state: "Karnataka",
+    tag: "North Karnataka Travel Hub",
+    desc: "Major North Karnataka travel hub suitable for family tours, heritage trips, pilgrimage travel, and outstation transportation.",
+  },
+
+  {
+    id: "shivamogga",
+    slug: "tempo-traveller-fare-in-shivamogga",
+    name: "Shivamogga",
+    state: "Karnataka",
+    tag: "Malnad Travel Hub",
+    desc: "Major Malnad Karnataka travel hub suitable for nature tours, waterfalls, family vacations, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "udupi",
+    slug: "tempo-traveller-fare-in-udupi",
+    name: "Udupi",
+    state: "Karnataka",
+    tag: "Coastal Karnataka Travel Hub",
+    desc: "Popular Coastal Karnataka travel hub suitable for beach vacations, temple tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "uttara-kannada",
+    slug: "tempo-traveller-fare-in-uttara-kannada",
+    name: "Uttara Kannada",
+    state: "Karnataka",
+    tag: "Coastal Karnataka Tourism Hub",
+    desc: "Scenic Coastal Karnataka travel hub suitable for beach vacations, nature tours, waterfalls, pilgrimage trips, and group travel.",
+  },
+
+  {
+    id: "yadgir",
+    slug: "tempo-traveller-fare-in-yadgir",
+    name: "Yadgir",
+    state: "Karnataka",
+    tag: "North Karnataka Travel Hub",
+    desc: "Regional North Karnataka travel hub suitable for family tours, pilgrimage trips, heritage travel, and group transportation.",
+  },
+
+  {
+    id: "angamaly",
+    slug: "tempo-traveller-fare-in-angamaly",
+    name: "Angamaly",
+    state: "Kerala",
+    tag: "Central Kerala Travel Hub",
+    desc: "Important Central Kerala travel hub suitable for airport transfers, family tours, pilgrimage trips, and group transportation.",
+  },
+
+  {
+    id: "attingal",
+    slug: "tempo-traveller-fare-in-attingal",
+    name: "Attingal",
+    state: "Kerala",
+    tag: "South Kerala Travel Hub",
+    desc: "Regional South Kerala travel hub suitable for family tours, pilgrimage trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "chalakudy",
+    slug: "tempo-traveller-fare-in-chalakudy",
+    name: "Chalakudy",
+    state: "Kerala",
+    tag: "Nature Tourism Hub",
+    desc: "Popular Central Kerala travel hub suitable for nature trips, waterfall tours, family vacations, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "chengannur",
+    slug: "tempo-traveller-fare-in-chengannur",
+    name: "Chengannur",
+    state: "Kerala",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Important Kerala pilgrimage travel hub suitable for temple tours, family trips, group pilgrimages, and outstation transportation.",
+  },
+
+  {
+    id: "cherthala",
+    slug: "tempo-traveller-fare-in-cherthala",
+    name: "Cherthala",
+    state: "Kerala",
+    tag: "Coastal Kerala Travel Hub",
+    desc: "Coastal Kerala travel hub suitable for family vacations, backwater tours, beach trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "chittur",
+    slug: "tempo-traveller-fare-in-chittur",
+    name: "Chittur",
+    state: "Kerala",
+    tag: "Palakkad Travel Hub",
+    desc: "Palakkad-region travel hub suitable for family tours, temple visits, cultural trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "ernakulam",
+    slug: "tempo-traveller-fare-in-ernakulam",
+    name: "Ernakulam",
+    state: "Kerala",
+    tag: "Central Kerala Travel Hub",
+    desc: "Major Central Kerala travel hub suitable for corporate travel, airport transfers, family tours, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "idukki",
+    slug: "tempo-traveller-fare-in-idukki",
+    name: "Idukki",
+    state: "Kerala",
+    tag: "Hill Tourism Hub",
+    desc: "Scenic Kerala hill travel hub suitable for family vacations, nature tours, waterfalls, plantation trips, and group transportation.",
+  },
+
+  {
+    id: "kannur",
+    slug: "tempo-traveller-fare-in-kannur",
+    name: "Kannur",
+    state: "Kerala",
+    tag: "North Kerala Travel Hub",
+    desc: "Major North Kerala travel hub suitable for beach vacations, heritage tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "kasaragod",
+    slug: "tempo-traveller-fare-in-kasaragod",
+    name: "Kasaragod",
+    state: "Kerala",
+    tag: "North Kerala Travel Hub",
+    desc: "Northern Kerala travel hub suitable for beach vacations, heritage tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "kayankulam",
+    slug: "tempo-traveller-fare-in-kayankulam",
+    name: "Kayamkulam",
+    state: "Kerala",
+    tag: "Backwater Travel Hub",
+    desc: "Kerala backwater-region travel hub suitable for family vacations, sightseeing, pilgrimage trips, and group transportation.",
+  },
+
+  {
+    id: "kottayam",
+    slug: "tempo-traveller-fare-in-kottayam",
+    name: "Kottayam",
+    state: "Kerala",
+    tag: "Central Kerala Travel Hub",
+    desc: "Major Central Kerala travel hub suitable for family tours, pilgrimage trips, backwater vacations, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "kozhikode",
+    slug: "tempo-traveller-fare-in-kozhikode",
+    name: "Kozhikode",
+    state: "Kerala",
+    tag: "North Kerala Travel Hub",
+    desc: "Major North Kerala travel hub suitable for beach vacations, family tours, business travel, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "palakkad",
+    slug: "tempo-traveller-fare-in-palakkad",
+    name: "Palakkad",
+    state: "Kerala",
+    tag: "Gateway Kerala Travel Hub",
+    desc: "Major Kerala travel hub connecting Tamil Nadu and Kerala, suitable for family tours, heritage trips, nature travel, and group transportation.",
+  },
+
+  {
+    id: "pathanamthitta",
+    slug: "tempo-traveller-fare-in-pathanamthitta",
+    name: "Pathanamthitta",
+    state: "Kerala",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Major Kerala pilgrimage travel hub suitable for temple tours, family pilgrimages, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "thiruvalla",
+    slug: "tempo-traveller-fare-in-thiruvalla",
+    name: "Thiruvalla",
+    state: "Kerala",
+    tag: "Central Kerala Travel Hub",
+    desc: "Important Central Kerala travel hub suitable for family tours, pilgrimage trips, cultural travel, and group transportation.",
+  },
+
+  {
+    id: "thodupuzha",
+    slug: "tempo-traveller-fare-in-thodupuzha",
+    name: "Thodupuzha",
+    state: "Kerala",
+    tag: "Idukki Travel Hub",
+    desc: "Gateway to Kerala's hill regions suitable for family vacations, nature tours, waterfalls, plantation trips, and group transportation.",
+  },
+
+  {
+    id: "wayanad",
+    slug: "tempo-traveller-fare-in-wayanad",
+    name: "Wayanad",
+    state: "Kerala",
+    tag: "Hill Station Tourism Hub",
+    desc: "Popular Kerala hill-station tourism hub suitable for family vacations, wildlife tours, nature trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "arakkonam",
+    slug: "tempo-traveller-fare-in-arakkonam",
+    name: "Arakkonam",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "ariyalur",
+    slug: "tempo-traveller-fare-in-ariyalur",
+    name: "Ariyalur",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "attur",
+    slug: "tempo-traveller-fare-in-attur",
+    name: "Attur",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "avadi",
+    slug: "tempo-traveller-fare-in-avadi",
+    name: "Avadi",
+    state: "Tamil Nadu",
+    tag: "Chennai Travel Hub",
+    desc: "Important Chennai-region travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "batlagundu",
+    slug: "tempo-traveller-fare-in-batlagundu",
+    name: "Batlagundu",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "bhavani",
+    slug: "tempo-traveller-fare-in-bhavani",
+    name: "Bhavani",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "cheyyar",
+    slug: "tempo-traveller-fare-in-cheyyar",
+    name: "Cheyyar",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "chidambaram",
+    slug: "tempo-traveller-fare-in-chidambaram",
+    name: "Chidambaram",
+    state: "Tamil Nadu",
+    tag: "Temple Tourism Hub",
+    desc: "Popular Tamil Nadu temple tourism hub suitable for pilgrimage trips, family vacations, sightseeing, cultural tours, and group transportation.",
+  },
+
+  {
+    id: "coonoor",
+    slug: "tempo-traveller-fare-in-coonoor",
+    name: "Coonoor",
+    state: "Tamil Nadu",
+    tag: "Hill Station Tourism Hub",
+    desc: "Popular Tamil Nadu hill-station tourism hub suitable for family vacations, nature trips, sightseeing, weekend getaways, and group transportation.",
+  },
+
+  {
+    id: "cuddalore",
+    slug: "tempo-traveller-fare-in-cuddalore",
+    name: "Cuddalore",
+    state: "Tamil Nadu",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Tamil Nadu coastal travel hub suitable for family trips, sightseeing, temple tours, weddings, and outstation group transportation.",
+  },
+
+  {
+    id: "dindigul",
+    slug: "tempo-traveller-fare-in-dindigul",
+    name: "Dindigul",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "erode",
+    slug: "tempo-traveller-fare-in-erode",
+    name: "Erode",
+    state: "Tamil Nadu",
+    tag: "Major Travel Hub",
+    desc: "Major Tamil Nadu travel hub suitable for family trips, business travel, group tours, sightseeing, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "gudiyatham",
+    slug: "tempo-traveller-fare-in-gudiyatham",
+    name: "Gudiyatham",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "karur",
+    slug: "tempo-traveller-fare-in-karur",
+    name: "Karur",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "kumbakonam",
+    slug: "tempo-traveller-fare-in-kumbakonam",
+    name: "Kumbakonam",
+    state: "Tamil Nadu",
+    tag: "Temple Tourism Hub",
+    desc: "Popular Tamil Nadu temple tourism hub suitable for pilgrimage trips, temple tours, family vacations, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "mayiladuthurai",
+    slug: "tempo-traveller-fare-in-mayiladuthurai",
+    name: "Mayiladuthurai",
+    state: "Tamil Nadu",
+    tag: "Temple Tourism Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for temple tours, pilgrimage trips, family vacations, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "nagapattinam",
+    slug: "tempo-traveller-fare-in-nagapattinam",
+    name: "Nagapattinam",
+    state: "Tamil Nadu",
+    tag: "Coastal Tourism Hub",
+    desc: "Popular Tamil Nadu coastal tourism hub suitable for pilgrimage trips, family vacations, temple tours, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "namakkal",
+    slug: "tempo-traveller-fare-in-namakkal",
+    name: "Namakkal",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "oddanchatram",
+    slug: "tempo-traveller-fare-in-oddanchatram",
+    name: "Oddanchatram",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "palani",
+    slug: "tempo-traveller-fare-in-palani",
+    name: "Palani",
+    state: "Tamil Nadu",
+    tag: "Pilgrimage Tourism Hub",
+    desc: "Popular Tamil Nadu pilgrimage tourism hub suitable for temple visits, family trips, religious tours, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "paramakudi",
+    slug: "tempo-traveller-fare-in-paramakudi",
+    name: "Paramakudi",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "pattukkottai",
+    slug: "tempo-traveller-fare-in-pattukkottai",
+    name: "Pattukkottai",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "perambalur",
+    slug: "tempo-traveller-fare-in-perambalur",
+    name: "Perambalur",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "pollachi",
+    slug: "tempo-traveller-fare-in-pollachi",
+    name: "Pollachi",
+    state: "Tamil Nadu",
+    tag: "Nature Tourism Hub",
+    desc: "Popular Tamil Nadu nature tourism hub suitable for family vacations, sightseeing, wildlife trips, hill-station tours, and group transportation.",
+  },
+
+  {
+    id: "pudukkottai",
+    slug: "tempo-traveller-fare-in-pudukkottai",
+    name: "Pudukkottai",
+    state: "Tamil Nadu",
+    tag: "Heritage Travel Hub",
+    desc: "Popular Tamil Nadu heritage travel hub suitable for family trips, sightseeing, cultural tours, temple visits, and group transportation.",
+  },
+
+  {
+    id: "ramanathapuram",
+    slug: "tempo-traveller-fare-in-ramanathapuram",
+    name: "Ramanathapuram",
+    state: "Tamil Nadu",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Popular Tamil Nadu pilgrimage travel hub suitable for religious tours, family trips, temple visits, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "ranipet",
+    slug: "tempo-traveller-fare-in-ranipet",
+    name: "Ranipet",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "sivakasi",
+    slug: "tempo-traveller-fare-in-sivakasi",
+    name: "Sivakasi",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "sivaganga",
+    slug: "tempo-traveller-fare-in-sivaganga",
+    name: "Sivaganga",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "srirangam",
+    slug: "tempo-traveller-fare-in-srirangam",
+    name: "Srirangam",
+    state: "Tamil Nadu",
+    tag: "Temple Tourism Hub",
+    desc: "Popular Tamil Nadu temple tourism hub suitable for pilgrimage trips, temple tours, family vacations, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "tenkasi",
+    slug: "tempo-traveller-fare-in-tenkasi",
+    name: "Tenkasi",
+    state: "Tamil Nadu",
+    tag: "Nature Tourism Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family vacations, sightseeing, temple tours, waterfalls, nature trips, and group transportation.",
+  },
+
+  {
+    id: "theni",
+    slug: "tempo-traveller-fare-in-theni",
+    name: "Theni",
+    state: "Tamil Nadu",
+    tag: "Nature Tourism Hub",
+    desc: "Popular Tamil Nadu nature tourism hub suitable for family vacations, sightseeing, hill trips, waterfalls, temple tours, and group transportation.",
+  },
+
+  {
+    id: "thoothukudi",
+    slug: "tempo-traveller-fare-in-thoothukudi",
+    name: "Thoothukudi",
+    state: "Tamil Nadu",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Tamil Nadu coastal travel hub suitable for family trips, sightseeing, pilgrimages, weddings, and outstation group transportation.",
+  },
+
+  {
+    id: "tiruchengodu",
+    slug: "tempo-traveller-fare-in-tiruchengodu",
+    name: "Tiruchengodu",
+    state: "Tamil Nadu",
+    tag: "Temple Tourism Hub",
+    desc: "Popular Tamil Nadu temple tourism hub suitable for pilgrimage trips, family tours, sightseeing, religious journeys, and group transportation.",
+  },
+
+  {
+    id: "tirupattur",
+    slug: "tempo-traveller-fare-in-tirupattur",
+    name: "Tirupattur",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "tiruvallur",
+    slug: "tempo-traveller-fare-in-tiruvallur",
+    name: "Tiruvallur",
+    state: "Tamil Nadu",
+    tag: "Chennai Region Travel Hub",
+    desc: "Important Chennai-region travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "tiruvannamalai",
+    slug: "tempo-traveller-fare-in-tiruvannamalai",
+    name: "Tiruvannamalai",
+    state: "Tamil Nadu",
+    tag: "Pilgrimage Tourism Hub",
+    desc: "Major Tamil Nadu pilgrimage tourism hub suitable for temple visits, religious tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "udumalpet",
+    slug: "tempo-traveller-fare-in-udumalpet",
+    name: "Udumalpet",
+    state: "Tamil Nadu",
+    tag: "Nature Tourism Hub",
+    desc: "Popular Tamil Nadu nature tourism hub suitable for family vacations, sightseeing, hill trips, wildlife tours, and group transportation.",
+  },
+
+  {
+    id: "vellore",
+    slug: "tempo-traveller-fare-in-vellore",
+    name: "Vellore",
+    state: "Tamil Nadu",
+    tag: "Major Travel Hub",
+    desc: "Major Tamil Nadu travel hub suitable for family trips, pilgrimage tours, sightseeing, weddings, medical travel, and outstation journeys.",
+  },
+
+  {
+    id: "viluppuram",
+    slug: "tempo-traveller-fare-in-viluppuram",
+    name: "Viluppuram",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "virudhunagar",
+    slug: "tempo-traveller-fare-in-virudhunagar",
+    name: "Virudhunagar",
+    state: "Tamil Nadu",
+    tag: "Travel Hub",
+    desc: "Popular Tamil Nadu travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+  {
+    id: "adoni",
+    slug: "tempo-traveller-fare-in-adoni",
+    name: "Adoni",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "amalapuram",
+    slug: "tempo-traveller-fare-in-amalapuram",
+    name: "Amalapuram",
+    state: "Andhra Pradesh",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Andhra Pradesh coastal travel hub suitable for family trips, sightseeing, temple tours, weddings, and group transportation.",
+  },
+
+  {
+    id: "anakapalle",
+    slug: "tempo-traveller-fare-in-anakapalle",
+    name: "Anakapalle",
+    state: "Andhra Pradesh",
+    tag: "Visakhapatnam Region Travel Hub",
+    desc: "Important Andhra Pradesh travel hub near Visakhapatnam suitable for family trips, group tours, sightseeing, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "anantapur",
+    slug: "tempo-traveller-fare-in-anantapur",
+    name: "Anantapur",
+    state: "Andhra Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Major Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "bapatla",
+    slug: "tempo-traveller-fare-in-bapatla",
+    name: "Bapatla",
+    state: "Andhra Pradesh",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Andhra Pradesh coastal travel hub suitable for family trips, beach visits, sightseeing, pilgrimages, and group transportation.",
+  },
+
+  {
+    id: "chittoor",
+    slug: "tempo-traveller-fare-in-chittoor",
+    name: "Chittoor",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, pilgrimage tours, sightseeing, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "cuddapah",
+    slug: "tempo-traveller-fare-in-cuddapah",
+    name: "Cuddapah",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "dharmavaram",
+    slug: "tempo-traveller-fare-in-dharmavaram",
+    name: "Dharmavaram",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "guntakal",
+    slug: "tempo-traveller-fare-in-guntakal",
+    name: "Guntakal",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Important Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "hindupur",
+    slug: "tempo-traveller-fare-in-hindupur",
+    name: "Hindupur",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "kadapa",
+    slug: "tempo-traveller-fare-in-kadapa",
+    name: "Kadapa",
+    state: "Andhra Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Major Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "kavali",
+    slug: "tempo-traveller-fare-in-kavali",
+    name: "Kavali",
+    state: "Andhra Pradesh",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Andhra Pradesh coastal travel hub suitable for family trips, sightseeing, beach visits, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "kurnool",
+    slug: "tempo-traveller-fare-in-kurnool",
+    name: "Kurnool",
+    state: "Andhra Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Major Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "madanapalle",
+    slug: "tempo-traveller-fare-in-madanapalle",
+    name: "Madanapalle",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "markapur",
+    slug: "tempo-traveller-fare-in-markapur",
+    name: "Markapur",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "nellore",
+    slug: "tempo-traveller-fare-in-nellore",
+    name: "Nellore",
+    state: "Andhra Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Major Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, coastal tours, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "palakollu",
+    slug: "tempo-traveller-fare-in-palakollu",
+    name: "Palakollu",
+    state: "Andhra Pradesh",
+    tag: "Temple Tourism Hub",
+    desc: "Popular Andhra Pradesh temple tourism hub suitable for pilgrimage trips, temple tours, family vacations, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "proddatur",
+    slug: "tempo-traveller-fare-in-proddatur",
+    name: "Proddatur",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "rajampet",
+    slug: "tempo-traveller-fare-in-rajampet",
+    name: "Rajampet",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "rajahmundry",
+    slug: "tempo-traveller-fare-in-rajahmundry",
+    name: "Rajahmundry",
+    state: "Andhra Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Major Andhra Pradesh travel hub suitable for family trips, river tourism, sightseeing, temple tours, weddings, and group transportation.",
+  },
+
+  {
+    id: "ramachandrapuram",
+    slug: "tempo-traveller-fare-in-ramachandrapuram",
+    name: "Ramachandrapuram",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, temple visits, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "rayachoti",
+    slug: "tempo-traveller-fare-in-rayachoti",
+    name: "Rayachoti",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "tadepalligudem",
+    slug: "tempo-traveller-fare-in-tadepalligudem",
+    name: "Tadepalligudem",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "tanuku",
+    slug: "tempo-traveller-fare-in-tanuku",
+    name: "Tanuku",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "tirupati",
+    slug: "tempo-traveller-fare-in-tirupati",
+    name: "Tirupati",
+    state: "Andhra Pradesh",
+    tag: "Pilgrimage Tourism Hub",
+    desc: "Major Andhra Pradesh pilgrimage tourism hub suitable for temple visits, family trips, religious tours, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "vinukonda",
+    slug: "tempo-traveller-fare-in-vinukonda",
+    name: "Vinukonda",
+    state: "Andhra Pradesh",
+    tag: "Travel Hub",
+    desc: "Popular Andhra Pradesh travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "armoor",
+    slug: "tempo-traveller-fare-in-armoor",
+    name: "Armoor",
+    state: "Telangana",
+    tag: "Travel Hub",
+    desc: "Popular Telangana travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "asifabad",
+    slug: "tempo-traveller-fare-in-asifabad",
+    name: "Asifabad",
+    state: "Telangana",
+    tag: "Travel Hub",
+    desc: "Popular Telangana travel hub suitable for family trips, group tours, sightseeing, nature trips, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "bodhan",
+    slug: "tempo-traveller-fare-in-bodhan",
+    name: "Bodhan",
+    state: "Telangana",
+    tag: "Travel Hub",
+    desc: "Popular Telangana travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "karimnagar",
+    slug: "tempo-traveller-fare-in-karimnagar",
+    name: "Karimnagar",
+    state: "Telangana",
+    tag: "Major Travel Hub",
+    desc: "Major Telangana travel hub suitable for family trips, group tours, sightseeing, temple tours, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "kothagudem",
+    slug: "tempo-traveller-fare-in-kothagudem",
+    name: "Kothagudem",
+    state: "Telangana",
+    tag: "Travel Hub",
+    desc: "Important Telangana travel hub suitable for family trips, group tours, sightseeing, nature trips, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "mancherial",
+    slug: "tempo-traveller-fare-in-mancherial",
+    name: "Mancherial",
+    state: "Telangana",
+    tag: "Travel Hub",
+    desc: "Popular Telangana travel hub suitable for family trips, group tours, sightseeing, nature trips, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "medak",
+    slug: "tempo-traveller-fare-in-medak",
+    name: "Medak",
+    state: "Telangana",
+    tag: "Heritage Travel Hub",
+    desc: "Popular Telangana heritage travel hub suitable for family trips, sightseeing, historical tours, pilgrimages, and group transportation.",
+  },
+
+  {
+    id: "nirmal",
+    slug: "tempo-traveller-fare-in-nirmal",
+    name: "Nirmal",
+    state: "Telangana",
+    tag: "Travel Hub",
+    desc: "Popular Telangana travel hub suitable for family trips, cultural tours, sightseeing, family vacations, and outstation journeys.",
+  },
+
+  {
+    id: "nizamabad",
+    slug: "tempo-traveller-fare-in-nizamabad",
+    name: "Nizamabad",
+    state: "Telangana",
+    tag: "Major Travel Hub",
+    desc: "Major Telangana travel hub suitable for family trips, group tours, sightseeing, temple visits, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "sangareddy",
+    slug: "tempo-traveller-fare-in-sangareddy",
+    name: "Sangareddy",
+    state: "Telangana",
+    tag: "Hyderabad Region Travel Hub",
+    desc: "Important Telangana travel hub near Hyderabad suitable for family trips, group tours, sightseeing, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "suryapet",
+    slug: "tempo-traveller-fare-in-suryapet",
+    name: "Suryapet",
+    state: "Telangana",
+    tag: "Major Travel Hub",
+    desc: "Major Telangana travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "vikarabad",
+    slug: "tempo-traveller-fare-in-vikarabad",
+    name: "Vikarabad",
+    state: "Telangana",
+    tag: "Weekend Travel Hub",
+    desc: "Popular Telangana weekend travel hub suitable for family trips, nature getaways, sightseeing, group tours, and outstation journeys.",
+  },
+
+  {
+    id: "wanaparthy",
+    slug: "tempo-traveller-fare-in-wanaparthy",
+    name: "Wanaparthy",
+    state: "Telangana",
+    tag: "Travel Hub",
+    desc: "Popular Telangana travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "karaikal",
+    slug: "tempo-traveller-fare-in-karaikal",
+    name: "Karaikal",
+    state: "Puducherry",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Puducherry coastal travel hub suitable for family trips, beach visits, temple tours, sightseeing, weddings, and group transportation.",
+  },
+
+  {
+    id: "mahe",
+    slug: "tempo-traveller-fare-in-mahe",
+    name: "Mahe",
+    state: "Puducherry",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Puducherry coastal travel hub suitable for family trips, sightseeing, beach visits, family vacations, and outstation journeys.",
+  },
+
+  {
+    id: "yanam",
+    slug: "tempo-traveller-fare-in-yanam",
+    name: "Yanam",
+    state: "Puducherry",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Puducherry coastal travel hub suitable for family trips, sightseeing, river-side visits, temple tours, and group transportation.",
+  },
+
+  {
+    id: "kavaratti",
+    slug: "tempo-traveller-fare-in-kavaratti",
+    name: "Kavaratti",
+    state: "Lakshadweep",
+    tag: "Island Travel Hub",
+    desc: "Popular Lakshadweep island travel hub suitable for family vacations, island sightseeing, beach trips, group tours, and leisure travel.",
+  },
+  {
+    id: "alipurduar",
+    slug: "tempo-traveller-fare-in-alipurduar",
+    name: "Alipurduar",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular North Bengal travel hub suitable for family trips, group tours, sightseeing, nature trips, and outstation journeys.",
+  },
+
+  {
+    id: "barasat",
+    slug: "tempo-traveller-fare-in-barasat",
+    name: "Barasat",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Important West Bengal travel hub near Kolkata suitable for family trips, group tours, weddings, sightseeing, and outstation journeys.",
+  },
+
+  {
+    id: "barrackpore",
+    slug: "tempo-traveller-fare-in-barrackpore",
+    name: "Barrackpore",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Popular West Bengal travel hub near Kolkata suitable for family trips, heritage tours, sightseeing, weddings, and group transportation.",
+  },
+
+  {
+    id: "basirhat",
+    slug: "tempo-traveller-fare-in-basirhat",
+    name: "Basirhat",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular West Bengal travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "bhatpara",
+    slug: "tempo-traveller-fare-in-bhatpara",
+    name: "Bhatpara",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Important West Bengal travel hub in the Kolkata metropolitan region suitable for family trips, group tours, events, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "bolpur",
+    slug: "tempo-traveller-fare-in-bolpur",
+    name: "Bolpur",
+    state: "West Bengal",
+    tag: "Cultural Travel Hub",
+    desc: "Popular West Bengal cultural travel hub suitable for family trips, cultural tours, sightseeing, heritage visits, and weekend getaways.",
+  },
+
+  {
+    id: "cooch-behar",
+    slug: "tempo-traveller-fare-in-cooch-behar",
+    name: "Cooch Behar",
+    state: "West Bengal",
+    tag: "Heritage Travel Hub",
+    desc: "Important North Bengal heritage travel hub suitable for family trips, sightseeing, historical tours, temple visits, and group journeys.",
+  },
+
+  {
+    id: "darjeeling",
+    slug: "tempo-traveller-fare-in-darjeeling",
+    name: "Darjeeling",
+    state: "West Bengal",
+    tag: "Hill Station Travel Hub",
+    desc: "Popular West Bengal hill station travel hub suitable for family vacations, sightseeing, mountain trips, group tours, and weekend getaways.",
+  },
+
+  {
+    id: "diamond-harbour",
+    slug: "tempo-traveller-fare-in-diamond-harbour",
+    name: "Diamond Harbour",
+    state: "West Bengal",
+    tag: "Weekend Travel Hub",
+    desc: "Popular West Bengal riverside travel hub suitable for family trips, weekend getaways, sightseeing, group tours, and leisure travel.",
+  },
+
+  {
+    id: "dinhata",
+    slug: "tempo-traveller-fare-in-dinhata",
+    name: "Dinhata",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular North Bengal travel hub suitable for family trips, group tours, sightseeing, cultural visits, and outstation journeys.",
+  },
+
+  {
+    id: "falta",
+    slug: "tempo-traveller-fare-in-falta",
+    name: "Falta",
+    state: "West Bengal",
+    tag: "Weekend Travel Hub",
+    desc: "Popular West Bengal travel destination suitable for family outings, riverside trips, weekend getaways, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "gangarampur",
+    slug: "tempo-traveller-fare-in-gangarampur",
+    name: "Gangarampur",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular South Bengal travel hub suitable for family trips, group tours, sightseeing, cultural visits, and outstation journeys.",
+  },
+
+  {
+    id: "gopalpur",
+    slug: "tempo-traveller-fare-in-gopalpur",
+    name: "Gopalpur",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular West Bengal travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "habra",
+    slug: "tempo-traveller-fare-in-habra",
+    name: "Habra",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Important West Bengal travel hub near Kolkata suitable for family trips, group tours, weddings, sightseeing, and outstation journeys.",
+  },
+
+  {
+    id: "halisahar",
+    slug: "tempo-traveller-fare-in-halisahar",
+    name: "Halisahar",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Popular West Bengal travel hub in the Kolkata metropolitan region suitable for family trips, group tours, sightseeing, weddings, and events.",
+  },
+
+  {
+    id: "howrah",
+    slug: "tempo-traveller-fare-in-howrah",
+    name: "Howrah",
+    state: "West Bengal",
+    tag: "Major Travel Hub",
+    desc: "Major West Bengal travel hub adjoining Kolkata suitable for family trips, business travel, group tours, weddings, sightseeing, and outstation journeys.",
+  },
+
+  {
+    id: "hugli-chinsurah",
+    slug: "tempo-traveller-fare-in-hugli-chinsurah",
+    name: "Hugli-Chinsurah",
+    state: "West Bengal",
+    tag: "Heritage Travel Hub",
+    desc: "Important West Bengal heritage travel hub suitable for family trips, historical tours, sightseeing, temple visits, and group transportation.",
+  },
+
+  {
+    id: "jalpaiguri",
+    slug: "tempo-traveller-fare-in-jalpaiguri",
+    name: "Jalpaiguri",
+    state: "West Bengal",
+    tag: "Major Travel Hub",
+    desc: "Major North Bengal travel hub suitable for family trips, group tours, sightseeing, tea garden visits, nature trips, and outstation journeys.",
+  },
+
+  {
+    id: "jangipur",
+    slug: "tempo-traveller-fare-in-jangipur",
+    name: "Jangipur",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular West Bengal travel hub suitable for family trips, group tours, sightseeing, cultural visits, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "katwa",
+    slug: "tempo-traveller-fare-in-katwa",
+    name: "Katwa",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular West Bengal travel hub suitable for family trips, group tours, temple visits, sightseeing, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "kharagpur",
+    slug: "tempo-traveller-fare-in-kharagpur",
+    name: "Kharagpur",
+    state: "West Bengal",
+    tag: "Major Travel Hub",
+    desc: "Major West Bengal travel hub suitable for family trips, business travel, group tours, sightseeing, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "mathabhanga",
+    slug: "tempo-traveller-fare-in-mathabhanga",
+    name: "Mathabhanga",
+    state: "West Bengal",
+    tag: "North Bengal Travel Hub",
+    desc: "Popular North Bengal travel hub suitable for family trips, group tours, sightseeing, nature trips, and outstation journeys.",
+  },
+
+  {
+    id: "medinipur",
+    slug: "tempo-traveller-fare-in-medinipur",
+    name: "Medinipur",
+    state: "West Bengal",
+    tag: "Major Travel Hub",
+    desc: "Major West Bengal travel hub suitable for family trips, group tours, sightseeing, cultural tours, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "memari",
+    slug: "tempo-traveller-fare-in-memari",
+    name: "Memari",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular West Bengal travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "murshidabad",
+    slug: "tempo-traveller-fare-in-murshidabad",
+    name: "Murshidabad",
+    state: "West Bengal",
+    tag: "Heritage Travel Hub",
+    desc: "Major West Bengal heritage travel hub suitable for family trips, historical tours, palace visits, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "naihati",
+    slug: "tempo-traveller-fare-in-naihati",
+    name: "Naihati",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Popular West Bengal travel hub near Kolkata suitable for family trips, group tours, sightseeing, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "nabadwip",
+    slug: "tempo-traveller-fare-in-nabadwip",
+    name: "Nabadwip",
+    state: "West Bengal",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Major West Bengal pilgrimage travel hub suitable for temple visits, religious tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "nakashipara",
+    slug: "tempo-traveller-fare-in-nakashipara",
+    name: "Nakashipara",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular West Bengal travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "nalhati",
+    slug: "tempo-traveller-fare-in-nalhati",
+    name: "Nalhati",
+    state: "West Bengal",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Popular West Bengal pilgrimage travel hub suitable for temple visits, family trips, sightseeing, religious tours, and group transportation.",
+  },
+
+  {
+    id: "panihati",
+    slug: "tempo-traveller-fare-in-panihati",
+    name: "Panihati",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Popular West Bengal travel hub in the Kolkata metropolitan region suitable for family trips, group tours, events, weddings, and sightseeing.",
+  },
+
+  {
+    id: "ranaghat",
+    slug: "tempo-traveller-fare-in-ranaghat",
+    name: "Ranaghat",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Important West Bengal travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "santipur",
+    slug: "tempo-traveller-fare-in-santipur",
+    name: "Santipur",
+    state: "West Bengal",
+    tag: "Heritage Travel Hub",
+    desc: "Popular West Bengal heritage and cultural travel hub suitable for family trips, temple tours, sightseeing, cultural visits, and group journeys.",
+  },
+
+  {
+    id: "serampore",
+    slug: "tempo-traveller-fare-in-serampore",
+    name: "Serampore",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Important West Bengal travel hub near Kolkata suitable for family trips, heritage tours, sightseeing, weddings, and group transportation.",
+  },
+
+  {
+    id: "shyamnagar",
+    slug: "tempo-traveller-fare-in-shyamnagar",
+    name: "Shyamnagar",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Popular West Bengal travel hub near Kolkata suitable for family trips, group tours, sightseeing, events, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "siuri",
+    slug: "tempo-traveller-fare-in-siuri",
+    name: "Siuri",
+    state: "West Bengal",
+    tag: "Travel Hub",
+    desc: "Popular West Bengal travel hub suitable for family trips, group tours, sightseeing, cultural visits, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "tamluk",
+    slug: "tempo-traveller-fare-in-tamluk",
+    name: "Tamluk",
+    state: "West Bengal",
+    tag: "Heritage Travel Hub",
+    desc: "Important West Bengal heritage travel hub suitable for family trips, historical tours, temple visits, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "tarakeswar",
+    slug: "tempo-traveller-fare-in-tarakeswar",
+    name: "Tarakeswar",
+    state: "West Bengal",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Popular West Bengal pilgrimage travel hub suitable for temple visits, religious tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "uluberia",
+    slug: "tempo-traveller-fare-in-uluberia",
+    name: "Uluberia",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Important West Bengal travel hub near Kolkata and Howrah suitable for family trips, group tours, weddings, sightseeing, and outstation journeys.",
+  },
+
+  {
+    id: "uttarpara",
+    slug: "tempo-traveller-fare-in-uttarpara",
+    name: "Uttarpara",
+    state: "West Bengal",
+    tag: "Kolkata Region Travel Hub",
+    desc: "Popular West Bengal travel hub near Kolkata suitable for family trips, group tours, sightseeing, weddings, and outstation journeys.",
+  },
+  {
+    id: "arrah",
+    slug: "tempo-traveller-fare-in-arrah",
+    name: "Arrah",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "aurangabad",
+    slug: "tempo-traveller-fare-in-aurangabad",
+    name: "Aurangabad",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Popular Bihar travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "bagaha",
+    slug: "tempo-traveller-fare-in-bagaha",
+    name: "Bagaha",
+    state: "Bihar",
+    tag: "Nature Travel Hub",
+    desc: "Popular Bihar travel hub near Valmiki region suitable for family trips, nature tours, wildlife visits, sightseeing, and group journeys.",
+  },
+
+  {
+    id: "banka",
+    slug: "tempo-traveller-fare-in-banka",
+    name: "Banka",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Popular Bihar travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "begusarai",
+    slug: "tempo-traveller-fare-in-begusarai",
+    name: "Begusarai",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, business travel, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "bettiah",
+    slug: "tempo-traveller-fare-in-bettiah",
+    name: "Bettiah",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Important Bihar travel hub suitable for family trips, group tours, sightseeing, nature trips, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "buxar",
+    slug: "tempo-traveller-fare-in-buxar",
+    name: "Buxar",
+    state: "Bihar",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Important Bihar pilgrimage travel hub suitable for religious tours, family trips, sightseeing, temple visits, and group transportation.",
+  },
+
+  {
+    id: "chhapra",
+    slug: "tempo-traveller-fare-in-chhapra",
+    name: "Chhapra",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "darbhanga",
+    slug: "tempo-traveller-fare-in-darbhanga",
+    name: "Darbhanga",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, cultural tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "dehri",
+    slug: "tempo-traveller-fare-in-dehri",
+    name: "Dehri",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Popular Bihar travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "dumraon",
+    slug: "tempo-traveller-fare-in-dumraon",
+    name: "Dumraon",
+    state: "Bihar",
+    tag: "Heritage Travel Hub",
+    desc: "Popular Bihar heritage travel hub suitable for family trips, cultural tours, sightseeing, weddings, and group transportation.",
+  },
+
+  {
+    id: "gopalganj",
+    slug: "tempo-traveller-fare-in-gopalganj",
+    name: "Gopalganj",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Popular Bihar travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "jamui",
+    slug: "tempo-traveller-fare-in-jamui",
+    name: "Jamui",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Popular Bihar travel hub suitable for family trips, group tours, sightseeing, pilgrimages, nature trips, and outstation journeys.",
+  },
+
+  {
+    id: "jehanabad",
+    slug: "tempo-traveller-fare-in-jehanabad",
+    name: "Jehanabad",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Popular Bihar travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "katihar",
+    slug: "tempo-traveller-fare-in-katihar",
+    name: "Katihar",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "kishanganj",
+    slug: "tempo-traveller-fare-in-kishanganj",
+    name: "Kishanganj",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Important Bihar travel hub suitable for family trips, group tours, sightseeing, nature trips, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "lakhisarai",
+    slug: "tempo-traveller-fare-in-lakhisarai",
+    name: "Lakhisarai",
+    state: "Bihar",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Popular Bihar travel hub suitable for family trips, pilgrimage tours, sightseeing, temple visits, and group transportation.",
+  },
+
+  {
+    id: "madhubani",
+    slug: "tempo-traveller-fare-in-madhubani",
+    name: "Madhubani",
+    state: "Bihar",
+    tag: "Cultural Travel Hub",
+    desc: "Popular Bihar cultural travel hub suitable for family trips, cultural tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "munger",
+    slug: "tempo-traveller-fare-in-munger",
+    name: "Munger",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, heritage visits, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "muzaffarpur",
+    slug: "tempo-traveller-fare-in-muzaffarpur",
+    name: "Muzaffarpur",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "nawada",
+    slug: "tempo-traveller-fare-in-nawada",
+    name: "Nawada",
+    state: "Bihar",
+    tag: "Travel Hub",
+    desc: "Popular Bihar travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "purnia",
+    slug: "tempo-traveller-fare-in-purnia",
+    name: "Purnia",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "samastipur",
+    slug: "tempo-traveller-fare-in-samastipur",
+    name: "Samastipur",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "sasaram",
+    slug: "tempo-traveller-fare-in-sasaram",
+    name: "Sasaram",
+    state: "Bihar",
+    tag: "Heritage Travel Hub",
+    desc: "Popular Bihar heritage travel hub suitable for family trips, historical tours, sightseeing, pilgrimages, and group transportation.",
+  },
+
+  {
+    id: "siwan",
+    slug: "tempo-traveller-fare-in-siwan",
+    name: "Siwan",
+    state: "Bihar",
+    tag: "Major Travel Hub",
+    desc: "Major Bihar travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "sitamarhi",
+    slug: "tempo-traveller-fare-in-sitamarhi",
+    name: "Sitamarhi",
+    state: "Bihar",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Important Bihar pilgrimage travel hub associated with religious tourism, family trips, temple visits, sightseeing, and group transportation.",
+  },
+  {
+    id: "bokaro",
+    slug: "tempo-traveller-fare-in-bokaro",
+    name: "Bokaro",
+    state: "Jharkhand",
+    tag: "Major Travel Hub",
+    desc: "Major Jharkhand travel hub suitable for family trips, group tours, sightseeing, weddings, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "chaibasa",
+    slug: "tempo-traveller-fare-in-chaibasa",
+    name: "Chaibasa",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Important Jharkhand travel hub suitable for family trips, group tours, sightseeing, nature trips, cultural tours, and outstation journeys.",
+  },
+
+  {
+    id: "deoghar",
+    slug: "tempo-traveller-fare-in-deoghar",
+    name: "Deoghar",
+    state: "Jharkhand",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Major Jharkhand pilgrimage travel hub suitable for temple visits, religious tours, family trips, sightseeing, and group transportation.",
+  },
+
+  {
+    id: "dumka",
+    slug: "tempo-traveller-fare-in-dumka",
+    name: "Dumka",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Important Jharkhand travel hub suitable for family trips, group tours, sightseeing, nature trips, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "giridih",
+    slug: "tempo-traveller-fare-in-giridih",
+    name: "Giridih",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Popular Jharkhand travel hub suitable for family trips, group tours, sightseeing, nature trips, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "godda",
+    slug: "tempo-traveller-fare-in-godda",
+    name: "Godda",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Popular Jharkhand travel hub suitable for family trips, group tours, sightseeing, nature trips, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "gumla",
+    slug: "tempo-traveller-fare-in-gumla",
+    name: "Gumla",
+    state: "Jharkhand",
+    tag: "Nature Travel Hub",
+    desc: "Popular Jharkhand nature travel hub suitable for family trips, group tours, sightseeing, waterfalls, nature tours, and outstation journeys.",
+  },
+
+  {
+    id: "hazaribagh",
+    slug: "tempo-traveller-fare-in-hazaribagh",
+    name: "Hazaribagh",
+    state: "Jharkhand",
+    tag: "Nature Travel Hub",
+    desc: "Popular Jharkhand nature travel hub suitable for family vacations, wildlife trips, sightseeing, group tours, and weekend getaways.",
+  },
+
+  {
+    id: "jamtara",
+    slug: "tempo-traveller-fare-in-jamtara",
+    name: "Jamtara",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Popular Jharkhand travel hub suitable for family trips, group tours, sightseeing, pilgrimages, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "khunti",
+    slug: "tempo-traveller-fare-in-khunti",
+    name: "Khunti",
+    state: "Jharkhand",
+    tag: "Nature Travel Hub",
+    desc: "Popular Jharkhand nature travel hub suitable for family trips, group tours, sightseeing, waterfalls, cultural tours, and outstation journeys.",
+  },
+
+  {
+    id: "latehar",
+    slug: "tempo-traveller-fare-in-latehar",
+    name: "Latehar",
+    state: "Jharkhand",
+    tag: "Nature Travel Hub",
+    desc: "Popular Jharkhand nature travel hub suitable for family trips, wildlife tours, sightseeing, waterfalls, group tours, and weekend getaways.",
+  },
+
+  {
+    id: "lohargada",
+    slug: "tempo-traveller-fare-in-lohardaga",
+    name: "Lohardaga",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Popular Jharkhand travel hub suitable for family trips, group tours, sightseeing, nature trips, cultural tours, and outstation journeys.",
+  },
+
+  {
+    id: "pakur",
+    slug: "tempo-traveller-fare-in-pakur",
+    name: "Pakur",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Popular Jharkhand travel hub suitable for family trips, group tours, sightseeing, cultural tours, pilgrimages, and outstation journeys.",
+  },
+
+  {
+    id: "palamu",
+    slug: "tempo-traveller-fare-in-palamu",
+    name: "Palamu",
+    state: "Jharkhand",
+    tag: "Nature Travel Hub",
+    desc: "Important Jharkhand travel hub suitable for family trips, wildlife tours, nature trips, sightseeing, group tours, and outstation journeys.",
+  },
+
+  {
+    id: "ramgarh",
+    slug: "tempo-traveller-fare-in-ramgarh",
+    name: "Ramgarh",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Important Jharkhand travel hub suitable for family trips, group tours, sightseeing, business travel, weddings, and outstation journeys.",
+  },
+
+  {
+    id: "sahebganj",
+    slug: "tempo-traveller-fare-in-sahebganj",
+    name: "Sahebganj",
+    state: "Jharkhand",
+    tag: "Travel Hub",
+    desc: "Popular Jharkhand travel hub suitable for family trips, group tours, riverside sightseeing, cultural tours, and outstation journeys.",
+  },
+
+  {
+    id: "saraikela",
+    slug: "tempo-traveller-fare-in-saraikela",
+    name: "Saraikela",
+    state: "Jharkhand",
+    tag: "Cultural Travel Hub",
+    desc: "Popular Jharkhand cultural travel hub suitable for family trips, cultural tours, sightseeing, heritage visits, and group transportation.",
+  },
+
+  {
+    id: "simdega",
+    slug: "tempo-traveller-fare-in-simdega",
+    name: "Simdega",
+    state: "Jharkhand",
+    tag: "Nature Travel Hub",
+    desc: "Popular Jharkhand nature travel hub suitable for family trips, sightseeing, waterfalls, nature tours, group journeys, and weekend getaways.",
+  },
+
+  {
+    id: "west-singhbhum",
+    slug: "tempo-traveller-fare-in-west-singhbhum",
+    name: "West Singhbhum",
+    state: "Jharkhand",
+    tag: "Nature Travel Hub",
+    desc: "Important Jharkhand nature travel hub suitable for family trips, wildlife tours, sightseeing, waterfalls, cultural visits, and group transportation.",
+  },
+  {
+    id: "balangir",
+    slug: "tempo-traveller-fare-in-balangir",
+    name: "Balangir",
+    state: "Odisha",
+    tag: "Travel Hub",
+    desc: "Important Odisha travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "balasore",
+    slug: "tempo-traveller-fare-in-balasore",
+    name: "Balasore",
+    state: "Odisha",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Odisha coastal travel hub suitable for family trips, beach visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "baripada",
+    slug: "tempo-traveller-fare-in-baripada",
+    name: "Baripada",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Important Odisha nature travel hub suitable for family trips, wildlife tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "bhadrak",
+    slug: "tempo-traveller-fare-in-bhadrak",
+    name: "Bhadrak",
+    state: "Odisha",
+    tag: "Travel Hub",
+    desc: "Important Odisha travel hub suitable for family trips, sightseeing, cultural tours, pilgrimage visits, and group transportation.",
+  },
+  {
+    id: "bhawanipatna",
+    slug: "tempo-traveller-fare-in-bhawanipatna",
+    name: "Bhawanipatna",
+    state: "Odisha",
+    tag: "Travel Hub",
+    desc: "Important Odisha travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "bolangir",
+    slug: "tempo-traveller-fare-in-bolangir",
+    name: "Bolangir",
+    state: "Odisha",
+    tag: "Travel Hub",
+    desc: "Important Odisha travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "boudh",
+    slug: "tempo-traveller-fare-in-boudh",
+    name: "Boudh",
+    state: "Odisha",
+    tag: "Cultural Travel Hub",
+    desc: "Odisha cultural travel hub suitable for family trips, temple visits, sightseeing, heritage tours, and group transportation.",
+  },
+  {
+    id: "dhenkanal",
+    slug: "tempo-traveller-fare-in-dhenkanal",
+    name: "Dhenkanal",
+    state: "Odisha",
+    tag: "Heritage Travel Hub",
+    desc: "Odisha heritage travel hub suitable for family trips, sightseeing, temple visits, cultural tours, and group transportation.",
+  },
+  {
+    id: "ganjam",
+    slug: "tempo-traveller-fare-in-ganjam",
+    name: "Ganjam",
+    state: "Odisha",
+    tag: "Coastal Travel Hub",
+    desc: "Popular Odisha coastal travel hub suitable for family trips, sightseeing, beach visits, cultural tours, and group transportation.",
+  },
+  {
+    id: "jagatsinghpur",
+    slug: "tempo-traveller-fare-in-jagatsinghpur",
+    name: "Jagatsinghpur",
+    state: "Odisha",
+    tag: "Coastal Travel Hub",
+    desc: "Odisha coastal travel hub suitable for family trips, sightseeing, cultural visits, temple tours, and group transportation.",
+  },
+  {
+    id: "jajpur",
+    slug: "tempo-traveller-fare-in-jajpur",
+    name: "Jajpur",
+    state: "Odisha",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Important Odisha pilgrimage and heritage travel hub suitable for temple visits, family trips, sightseeing, and group transportation.",
+  },
+  {
+    id: "kalahandi",
+    slug: "tempo-traveller-fare-in-kalahandi",
+    name: "Kalahandi",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Odisha nature travel hub suitable for family trips, sightseeing, cultural tours, waterfalls, and group transportation.",
+  },
+  {
+    id: "kandhamal",
+    slug: "tempo-traveller-fare-in-kandhamal",
+    name: "Kandhamal",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Odisha nature travel hub suitable for family trips, hill trips, sightseeing, waterfalls, cultural visits, and group transportation.",
+  },
+  {
+    id: "kendrapara",
+    slug: "tempo-traveller-fare-in-kendrapara",
+    name: "Kendrapara",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Odisha nature and coastal travel hub suitable for family trips, wildlife tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "keonjhar",
+    slug: "tempo-traveller-fare-in-keonjhar",
+    name: "Keonjhar",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Odisha nature travel hub suitable for family trips, waterfalls, sightseeing, forest trips, and group transportation.",
+  },
+  {
+    id: "koraput",
+    slug: "tempo-traveller-fare-in-koraput",
+    name: "Koraput",
+    state: "Odisha",
+    tag: "Hill Travel Hub",
+    desc: "Popular Odisha hill and nature travel hub suitable for family trips, waterfalls, sightseeing, tribal culture tours, and group transportation.",
+  },
+  {
+    id: "malkangiri",
+    slug: "tempo-traveller-fare-in-malkangiri",
+    name: "Malkangiri",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Odisha nature travel hub suitable for family trips, forest tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "mayurbhanj",
+    slug: "tempo-traveller-fare-in-mayurbhanj",
+    name: "Mayurbhanj",
+    state: "Odisha",
+    tag: "Wildlife Travel Hub",
+    desc: "Important Odisha wildlife travel hub suitable for family trips, forest tours, wildlife sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "nabarangpur",
+    slug: "tempo-traveller-fare-in-nabarangpur",
+    name: "Nabarangpur",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Odisha nature travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "nayagarh",
+    slug: "tempo-traveller-fare-in-nayagarh",
+    name: "Nayagarh",
+    state: "Odisha",
+    tag: "Travel Hub",
+    desc: "Odisha travel hub suitable for family trips, temple visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "nuapada",
+    slug: "tempo-traveller-fare-in-nuapada",
+    name: "Nuapada",
+    state: "Odisha",
+    tag: "Travel Hub",
+    desc: "Odisha travel hub suitable for family trips, sightseeing, nature trips, cultural tours, and group transportation.",
+  },
+  {
+    id: "puri",
+    slug: "tempo-traveller-fare-in-puri",
+    name: "Puri",
+    state: "Odisha",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Major Odisha pilgrimage and coastal travel hub suitable for Jagannath temple visits, family trips, sightseeing, beach tours, and group transportation.",
+  },
+  {
+    id: "rayagada",
+    slug: "tempo-traveller-fare-in-rayagada",
+    name: "Rayagada",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Odisha nature travel hub suitable for family trips, sightseeing, waterfalls, cultural tours, and group transportation.",
+  },
+  {
+    id: "sambalpur",
+    slug: "tempo-traveller-fare-in-sambalpur",
+    name: "Sambalpur",
+    state: "Odisha",
+    tag: "Major Travel Hub",
+    desc: "Major Odisha travel hub suitable for family trips, sightseeing, cultural tours, temple visits, and group transportation.",
+  },
+  {
+    id: "subarnapur",
+    slug: "tempo-traveller-fare-in-subarnapur",
+    name: "Subarnapur",
+    state: "Odisha",
+    tag: "Cultural Travel Hub",
+    desc: "Odisha cultural travel hub suitable for family trips, temple visits, heritage tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "sundargarh",
+    slug: "tempo-traveller-fare-in-sundargarh",
+    name: "Sundargarh",
+    state: "Odisha",
+    tag: "Nature Travel Hub",
+    desc: "Odisha nature travel hub suitable for family trips, waterfalls, sightseeing, forest tours, and group transportation.",
+  },
+  {
+    id: "barpeta",
+    slug: "tempo-traveller-fare-in-barpeta",
+    name: "Barpeta",
+    state: "Assam",
+    tag: "Cultural Travel Hub",
+    desc: "Assam cultural travel hub suitable for family trips, temple visits, sightseeing, heritage tours, and group transportation.",
+  },
+  {
+    id: "bongaigaon",
+    slug: "tempo-traveller-fare-in-bongaigaon",
+    name: "Bongaigaon",
+    state: "Assam",
+    tag: "Travel Hub",
+    desc: "Important Assam travel hub suitable for family trips, sightseeing, nature trips, cultural tours, and group transportation.",
+  },
+  {
+    id: "dhubri",
+    slug: "tempo-traveller-fare-in-dhubri",
+    name: "Dhubri",
+    state: "Assam",
+    tag: "Cultural Travel Hub",
+    desc: "Assam cultural travel hub suitable for family trips, sightseeing, heritage visits, religious tours, and group transportation.",
+  },
+  {
+    id: "dibrugarh",
+    slug: "tempo-traveller-fare-in-dibrugarh",
+    name: "Dibrugarh",
+    state: "Assam",
+    tag: "Major Travel Hub",
+    desc: "Major Assam travel hub suitable for family trips, tea garden tours, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "goalpara",
+    slug: "tempo-traveller-fare-in-goalpara",
+    name: "Goalpara",
+    state: "Assam",
+    tag: "Nature Travel Hub",
+    desc: "Assam nature travel hub suitable for family trips, wildlife tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "golaghat",
+    slug: "tempo-traveller-fare-in-golaghat",
+    name: "Golaghat",
+    state: "Assam",
+    tag: "Wildlife Travel Hub",
+    desc: "Assam wildlife travel hub suitable for family trips, national park visits, nature tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "haflong",
+    slug: "tempo-traveller-fare-in-haflong",
+    name: "Haflong",
+    state: "Assam",
+    tag: "Hill Travel Hub",
+    desc: "Popular Assam hill travel hub suitable for family trips, nature tours, sightseeing, waterfalls, and group transportation.",
+  },
+  {
+    id: "hailakandi",
+    slug: "tempo-traveller-fare-in-hailakandi",
+    name: "Hailakandi",
+    state: "Assam",
+    tag: "Travel Hub",
+    desc: "Assam travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "jorhat",
+    slug: "tempo-traveller-fare-in-jorhat",
+    name: "Jorhat",
+    state: "Assam",
+    tag: "Tea Travel Hub",
+    desc: "Major Assam tea and cultural travel hub suitable for family trips, tea garden tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "karimganj",
+    slug: "tempo-traveller-fare-in-karimganj",
+    name: "Karimganj",
+    state: "Assam",
+    tag: "Travel Hub",
+    desc: "Assam travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "kokrajhar",
+    slug: "tempo-traveller-fare-in-kokrajhar",
+    name: "Kokrajhar",
+    state: "Assam",
+    tag: "Cultural Travel Hub",
+    desc: "Assam cultural and nature travel hub suitable for family trips, sightseeing, forest tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "lakhimpur",
+    slug: "tempo-traveller-fare-in-lakhimpur",
+    name: "Lakhimpur",
+    state: "Assam",
+    tag: "Nature Travel Hub",
+    desc: "Assam nature travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "marigaon",
+    slug: "tempo-traveller-fare-in-marigaon",
+    name: "Marigaon",
+    state: "Assam",
+    tag: "Nature Travel Hub",
+    desc: "Assam nature travel hub suitable for family trips, wildlife tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "nagaon",
+    slug: "tempo-traveller-fare-in-nagaon",
+    name: "Nagaon",
+    state: "Assam",
+    tag: "Major Travel Hub",
+    desc: "Important Assam travel hub suitable for family trips, wildlife tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "nalbari",
+    slug: "tempo-traveller-fare-in-nalbari",
+    name: "Nalbari",
+    state: "Assam",
+    tag: "Cultural Travel Hub",
+    desc: "Assam cultural travel hub suitable for family trips, temple visits, sightseeing, festivals, and group transportation.",
+  },
+  {
+    id: "sibsagar",
+    slug: "tempo-traveller-fare-in-sibsagar",
+    name: "Sibsagar",
+    state: "Assam",
+    tag: "Heritage Travel Hub",
+    desc: "Assam heritage travel hub suitable for family trips, historical sightseeing, temple visits, cultural tours, and group transportation.",
+  },
+  {
+    id: "sonitpur",
+    slug: "tempo-traveller-fare-in-sonitpur",
+    name: "Sonitpur",
+    state: "Assam",
+    tag: "Nature Travel Hub",
+    desc: "Assam nature travel hub suitable for family trips, wildlife tours, sightseeing, tea garden visits, and group transportation.",
+  },
+  {
+    id: "tinsukia",
+    slug: "tempo-traveller-fare-in-tinsukia",
+    name: "Tinsukia",
+    state: "Assam",
+    tag: "Nature Travel Hub",
+    desc: "Important Assam nature travel hub suitable for family trips, wildlife tours, tea garden visits, sightseeing, and group transportation.",
+  },
+  {
+    id: "udalguri",
+    slug: "tempo-traveller-fare-in-udalguri",
+    name: "Udalguri",
+    state: "Assam",
+    tag: "Nature Travel Hub",
+    desc: "Assam nature travel hub suitable for family trips, forest tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "shillong",
+    slug: "tempo-traveller-fare-in-shillong",
+    name: "Shillong",
+    state: "Meghalaya",
+    tag: "Major Hill Travel Hub",
+    desc: "Major Meghalaya hill travel hub suitable for family trips, sightseeing, waterfalls, nature tours, and group transportation.",
+  },
+  {
+    id: "tura",
+    slug: "tempo-traveller-fare-in-tura",
+    name: "Tura",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, hill trips, sightseeing, waterfalls, and group transportation.",
+  },
+  {
+    id: "jowai",
+    slug: "tempo-traveller-fare-in-jowai",
+    name: "Jowai",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, waterfalls, sightseeing, scenic tours, and group transportation.",
+  },
+  {
+    id: "nongstoin",
+    slug: "tempo-traveller-fare-in-nongstoin",
+    name: "Nongstoin",
+    state: "Meghalaya",
+    tag: "Hill Travel Hub",
+    desc: "Meghalaya hill travel hub suitable for family trips, nature tours, waterfalls, sightseeing, and group transportation.",
+  },
+  {
+    id: "williamnagar",
+    slug: "tempo-traveller-fare-in-williamnagar",
+    name: "Williamnagar",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, sightseeing, hill trips, cultural tours, and group transportation.",
+  },
+  {
+    id: "baghmara",
+    slug: "tempo-traveller-fare-in-baghmara",
+    name: "Baghmara",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, forest tours, waterfalls, sightseeing, and group transportation.",
+  },
+  {
+    id: "resubelpara",
+    slug: "tempo-traveller-fare-in-resubelpara",
+    name: "Resubelpara",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, sightseeing, hill tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "ampati",
+    slug: "tempo-traveller-fare-in-ampati",
+    name: "Ampati",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "khliehriat",
+    slug: "tempo-traveller-fare-in-khliehriat",
+    name: "Khliehriat",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, scenic tours, waterfalls, sightseeing, and group transportation.",
+  },
+  {
+    id: "mairang",
+    slug: "tempo-traveller-fare-in-mairang",
+    name: "Mairang",
+    state: "Meghalaya",
+    tag: "Hill Travel Hub",
+    desc: "Meghalaya hill travel hub suitable for family trips, nature tours, sightseeing, waterfalls, and group transportation.",
+  },
+  {
+    id: "mawkyrwat",
+    slug: "tempo-traveller-fare-in-mawkyrwat",
+    name: "Mawkyrwat",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, scenic tours, waterfalls, sightseeing, and group transportation.",
+  },
+  {
+    id: "nongpoh",
+    slug: "tempo-traveller-fare-in-nongpoh",
+    name: "Nongpoh",
+    state: "Meghalaya",
+    tag: "Hill Travel Hub",
+    desc: "Meghalaya hill travel hub suitable for family trips, sightseeing, nature tours, lakes, and group transportation.",
+  },
+  {
+    id: "rongram",
+    slug: "tempo-traveller-fare-in-rongram",
+    name: "Rongram",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, sightseeing, forest tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "selsella",
+    slug: "tempo-traveller-fare-in-selsella",
+    name: "Selsella",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, sightseeing, scenic tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "shangpung",
+    slug: "tempo-traveller-fare-in-shangpung",
+    name: "Shangpung",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, scenic tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "thadlaskein",
+    slug: "tempo-traveller-fare-in-thadlaskein",
+    name: "Thadlaskein",
+    state: "Meghalaya",
+    tag: "Nature Travel Hub",
+    desc: "Meghalaya nature travel hub suitable for family trips, scenic tours, sightseeing, cultural visits, and group transportation.",
+  },
+
+  {
+    id: "imphal",
+    slug: "tempo-traveller-fare-in-imphal",
+    name: "Imphal",
+    state: "Manipur",
+    tag: "Major Travel Hub",
+    desc: "Major Manipur travel hub suitable for family trips, sightseeing, cultural tours, pilgrimage visits, and group transportation.",
+  },
+  {
+    id: "thoubal",
+    slug: "tempo-traveller-fare-in-thoubal",
+    name: "Thoubal",
+    state: "Manipur",
+    tag: "Nature Travel Hub",
+    desc: "Manipur nature travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "bishnupur",
+    slug: "tempo-traveller-fare-in-bishnupur",
+    name: "Bishnupur",
+    state: "Manipur",
+    tag: "Heritage Travel Hub",
+    desc: "Manipur heritage travel hub suitable for family trips, temple visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "churachandpur",
+    slug: "tempo-traveller-fare-in-churachandpur",
+    name: "Churachandpur",
+    state: "Manipur",
+    tag: "Nature Travel Hub",
+    desc: "Manipur nature travel hub suitable for family trips, sightseeing, hill tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "kakching",
+    slug: "tempo-traveller-fare-in-kakching",
+    name: "Kakching",
+    state: "Manipur",
+    tag: "Travel Hub",
+    desc: "Manipur travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "kangpokpi",
+    slug: "tempo-traveller-fare-in-kangpokpi",
+    name: "Kangpokpi",
+    state: "Manipur",
+    tag: "Hill Travel Hub",
+    desc: "Manipur hill travel hub suitable for family trips, sightseeing, nature tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "senapati",
+    slug: "tempo-traveller-fare-in-senapati",
+    name: "Senapati",
+    state: "Manipur",
+    tag: "Nature Travel Hub",
+    desc: "Manipur nature travel hub suitable for family trips, hill tours, sightseeing, forest trips, and group transportation.",
+  },
+  {
+    id: "tamenglong",
+    slug: "tempo-traveller-fare-in-tamenglong",
+    name: "Tamenglong",
+    state: "Manipur",
+    tag: "Nature Travel Hub",
+    desc: "Manipur nature travel hub suitable for family trips, waterfalls, forest tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "ukhrul",
+    slug: "tempo-traveller-fare-in-ukhrul",
+    name: "Ukhrul",
+    state: "Manipur",
+    tag: "Hill Travel Hub",
+    desc: "Manipur hill travel hub suitable for family trips, nature tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "chandel",
+    slug: "tempo-traveller-fare-in-chandel",
+    name: "Chandel",
+    state: "Manipur",
+    tag: "Nature Travel Hub",
+    desc: "Manipur nature travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "aizawl",
+    slug: "tempo-traveller-fare-in-aizawl",
+    name: "Aizawl",
+    state: "Mizoram",
+    tag: "Major Hill Travel Hub",
+    desc: "Major Mizoram hill travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "lunglei",
+    slug: "tempo-traveller-fare-in-lunglei",
+    name: "Lunglei",
+    state: "Mizoram",
+    tag: "Hill Travel Hub",
+    desc: "Mizoram hill travel hub suitable for family trips, scenic tours, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "siaha",
+    slug: "tempo-traveller-fare-in-siaha",
+    name: "Siaha",
+    state: "Mizoram",
+    tag: "Nature Travel Hub",
+    desc: "Mizoram nature travel hub suitable for family trips, sightseeing, hill tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "champhai",
+    slug: "tempo-traveller-fare-in-champhai",
+    name: "Champhai",
+    state: "Mizoram",
+    tag: "Hill Travel Hub",
+    desc: "Mizoram hill travel hub suitable for family trips, scenic tours, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "kolasib",
+    slug: "tempo-traveller-fare-in-kolasib",
+    name: "Kolasib",
+    state: "Mizoram",
+    tag: "Nature Travel Hub",
+    desc: "Mizoram nature travel hub suitable for family trips, sightseeing, scenic tours, and group transportation.",
+  },
+  {
+    id: "lawngtlai",
+    slug: "tempo-traveller-fare-in-lawngtlai",
+    name: "Lawngtlai",
+    state: "Mizoram",
+    tag: "Nature Travel Hub",
+    desc: "Mizoram nature travel hub suitable for family trips, sightseeing, forest tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "mamit",
+    slug: "tempo-traveller-fare-in-mamit",
+    name: "Mamit",
+    state: "Mizoram",
+    tag: "Nature Travel Hub",
+    desc: "Mizoram nature travel hub suitable for family trips, wildlife tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "saiha",
+    slug: "tempo-traveller-fare-in-saiha",
+    name: "Saiha",
+    state: "Mizoram",
+    tag: "Nature Travel Hub",
+    desc: "Mizoram nature travel hub suitable for family trips, sightseeing, cultural tours, hill trips, and group transportation.",
+  },
+  {
+    id: "serchhip",
+    slug: "tempo-traveller-fare-in-serchhip",
+    name: "Serchhip",
+    state: "Mizoram",
+    tag: "Nature Travel Hub",
+    desc: "Mizoram nature travel hub suitable for family trips, sightseeing, waterfalls, hill tours, and group transportation.",
+  },
+  {
+    id: "kohima",
+    slug: "tempo-traveller-fare-in-kohima",
+    name: "Kohima",
+    state: "Nagaland",
+    tag: "Major Hill Travel Hub",
+    desc: "Major Nagaland hill travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "dimapur",
+    slug: "tempo-traveller-fare-in-dimapur",
+    name: "Dimapur",
+    state: "Nagaland",
+    tag: "Major Travel Hub",
+    desc: "Major Nagaland travel hub suitable for family trips, sightseeing, cultural tours, business travel, and group transportation.",
+  },
+  {
+    id: "mokokchung",
+    slug: "tempo-traveller-fare-in-mokokchung",
+    name: "Mokokchung",
+    state: "Nagaland",
+    tag: "Hill Travel Hub",
+    desc: "Nagaland hill travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "tuensang",
+    slug: "tempo-traveller-fare-in-tuensang",
+    name: "Tuensang",
+    state: "Nagaland",
+    tag: "Hill Travel Hub",
+    desc: "Nagaland hill travel hub suitable for family trips, cultural tours, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "wokha",
+    slug: "tempo-traveller-fare-in-wokha",
+    name: "Wokha",
+    state: "Nagaland",
+    tag: "Nature Travel Hub",
+    desc: "Nagaland nature travel hub suitable for family trips, hill tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "zunheboto",
+    slug: "tempo-traveller-fare-in-zunheboto",
+    name: "Zunheboto",
+    state: "Nagaland",
+    tag: "Hill Travel Hub",
+    desc: "Nagaland hill travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "phek",
+    slug: "tempo-traveller-fare-in-phek",
+    name: "Phek",
+    state: "Nagaland",
+    tag: "Nature Travel Hub",
+    desc: "Nagaland nature travel hub suitable for family trips, hill tours, sightseeing, scenic trips, and group transportation.",
+  },
+  {
+    id: "kiphire",
+    slug: "tempo-traveller-fare-in-kiphire",
+    name: "Kiphire",
+    state: "Nagaland",
+    tag: "Hill Travel Hub",
+    desc: "Nagaland hill travel hub suitable for family trips, nature tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "longleng",
+    slug: "tempo-traveller-fare-in-longleng",
+    name: "Longleng",
+    state: "Nagaland",
+    tag: "Hill Travel Hub",
+    desc: "Nagaland hill travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "mon",
+    slug: "tempo-traveller-fare-in-mon",
+    name: "Mon",
+    state: "Nagaland",
+    tag: "Cultural Travel Hub",
+    desc: "Nagaland cultural travel hub suitable for family trips, tribal culture tours, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "peren",
+    slug: "tempo-traveller-fare-in-peren",
+    name: "Peren",
+    state: "Nagaland",
+    tag: "Nature Travel Hub",
+    desc: "Nagaland nature travel hub suitable for family trips, waterfalls, sightseeing, forest tours, and group transportation.",
+  },
+  {
+    id: "agartala",
+    slug: "tempo-traveller-fare-in-agartala",
+    name: "Agartala",
+    state: "Tripura",
+    tag: "Major Travel Hub",
+    desc: "Major Tripura travel hub suitable for family trips, sightseeing, heritage tours, temple visits, and group transportation.",
+  },
+  {
+    id: "dhalai",
+    slug: "tempo-traveller-fare-in-dhalai",
+    name: "Dhalai",
+    state: "Tripura",
+    tag: "Nature Travel Hub",
+    desc: "Tripura nature travel hub suitable for family trips, sightseeing, forest tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "gomati",
+    slug: "tempo-traveller-fare-in-gomati",
+    name: "Gomati",
+    state: "Tripura",
+    tag: "Nature Travel Hub",
+    desc: "Tripura nature travel hub suitable for family trips, temple visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "khowai",
+    slug: "tempo-traveller-fare-in-khowai",
+    name: "Khowai",
+    state: "Tripura",
+    tag: "Nature Travel Hub",
+    desc: "Tripura nature travel hub suitable for family trips, sightseeing, forest tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "north-tripura",
+    slug: "tempo-traveller-fare-in-north-tripura",
+    name: "North Tripura",
+    state: "Tripura",
+    tag: "Nature Travel Hub",
+    desc: "Tripura nature travel hub suitable for family trips, sightseeing, forest tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "sepahijala",
+    slug: "tempo-traveller-fare-in-sepahijala",
+    name: "Sepahijala",
+    state: "Tripura",
+    tag: "Wildlife Travel Hub",
+    desc: "Tripura wildlife and nature travel hub suitable for family trips, wildlife tours, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "south-tripura",
+    slug: "tempo-traveller-fare-in-south-tripura",
+    name: "South Tripura",
+    state: "Tripura",
+    tag: "Travel Hub",
+    desc: "Tripura travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "unakoti",
+    slug: "tempo-traveller-fare-in-unakoti",
+    name: "Unakoti",
+    state: "Tripura",
+    tag: "Heritage Travel Hub",
+    desc: "Tripura heritage and pilgrimage travel hub suitable for family trips, temple visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "west-tripura",
+    slug: "tempo-traveller-fare-in-west-tripura",
+    name: "West Tripura",
+    state: "Tripura",
+    tag: "Travel Hub",
+    desc: "Tripura travel hub suitable for family trips, sightseeing, cultural tours, heritage visits, and group transportation.",
+  },
+  {
+    id: "itanagar",
+    slug: "tempo-traveller-fare-in-itanagar",
+    name: "Itanagar",
+    state: "Arunachal Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Major Arunachal Pradesh travel hub suitable for family trips, sightseeing, cultural tours, hill trips, and group transportation.",
+  },
+  {
+    id: "tawang",
+    slug: "tempo-traveller-fare-in-tawang",
+    name: "Tawang",
+    state: "Arunachal Pradesh",
+    tag: "Hill Travel Hub",
+    desc: "Popular Arunachal Pradesh hill travel hub suitable for family trips, monastery tours, sightseeing, mountain trips, and group transportation.",
+  },
+  {
+    id: "west-kameng",
+    slug: "tempo-traveller-fare-in-west-kameng",
+    name: "West Kameng",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, mountain tours, sightseeing, monasteries, and group transportation.",
+  },
+  {
+    id: "east-kameng",
+    slug: "tempo-traveller-fare-in-east-kameng",
+    name: "East Kameng",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, hill tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "papum-pare",
+    slug: "tempo-traveller-fare-in-papum-pare",
+    name: "Papum Pare",
+    state: "Arunachal Pradesh",
+    tag: "Travel Hub",
+    desc: "Arunachal Pradesh travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "kurung-kumey",
+    slug: "tempo-traveller-fare-in-kurung-kumey",
+    name: "Kurung Kumey",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, hill tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "kra-daadi",
+    slug: "tempo-traveller-fare-in-kra-daadi",
+    name: "Kra Daadi",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, mountain tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "lower-subansiri",
+    slug: "tempo-traveller-fare-in-lower-subansiri",
+    name: "Lower Subansiri",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, hill tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "upper-subansiri",
+    slug: "tempo-traveller-fare-in-upper-subansiri",
+    name: "Upper Subansiri",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, mountain tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "west-siang",
+    slug: "tempo-traveller-fare-in-west-siang",
+    name: "West Siang",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, river valley tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "east-siang",
+    slug: "tempo-traveller-fare-in-east-siang",
+    name: "East Siang",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, river valley tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "siang",
+    slug: "tempo-traveller-fare-in-siang",
+    name: "Siang",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, river valley tours, sightseeing, mountain trips, and group transportation.",
+  },
+  {
+    id: "upper-siang",
+    slug: "tempo-traveller-fare-in-upper-siang",
+    name: "Upper Siang",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, mountain tours, river valley trips, sightseeing, and group transportation.",
+  },
+  {
+    id: "lower-dibang-valley",
+    slug: "tempo-traveller-fare-in-lower-dibang-valley",
+    name: "Lower Dibang Valley",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, mountain tours, sightseeing, forest trips, and group transportation.",
+  },
+  {
+    id: "dibang-valley",
+    slug: "tempo-traveller-fare-in-dibang-valley",
+    name: "Dibang Valley",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, mountain tours, wildlife trips, sightseeing, and group transportation.",
+  },
+  {
+    id: "upper-dibang-valley",
+    slug: "tempo-traveller-fare-in-upper-dibang-valley",
+    name: "Upper Dibang Valley",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh mountain travel hub suitable for family trips, nature tours, sightseeing, wildlife trips, and group transportation.",
+  },
+  {
+    id: "lohit",
+    slug: "tempo-traveller-fare-in-lohit",
+    name: "Lohit",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, sightseeing, mountain tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "changlang",
+    slug: "tempo-traveller-fare-in-changlang",
+    name: "Changlang",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, forest tours, sightseeing, cultural visits, and group transportation.",
+  },
+  {
+    id: "tirap",
+    slug: "tempo-traveller-fare-in-tirap",
+    name: "Tirap",
+    state: "Arunachal Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Arunachal Pradesh nature travel hub suitable for family trips, cultural tours, sightseeing, forest trips, and group transportation.",
+  },
+  {
+    id: "namsai",
+    slug: "tempo-traveller-fare-in-namsai",
+    name: "Namsai",
+    state: "Arunachal Pradesh",
+    tag: "Cultural Travel Hub",
+    desc: "Arunachal Pradesh cultural and nature travel hub suitable for family trips, monastery visits, sightseeing, nature tours, and group transportation.",
+  },
+
+  // 16 Sep routes
+  {
+    id: "gangtok",
+    slug: "tempo-traveller-fare-in-gangtok",
+    name: "Gangtok",
+    state: "Sikkim",
+    tag: "Major Hill Travel Hub",
+    desc: "Major Sikkim hill travel hub suitable for family trips, sightseeing, monastery tours, mountain trips, and group transportation.",
+  },
+  {
+    id: "namchi",
+    slug: "tempo-traveller-fare-in-namchi",
+    name: "Namchi",
+    state: "Sikkim",
+    tag: "Hill Travel Hub",
+    desc: "Sikkim hill travel hub suitable for family trips, sightseeing, monastery visits, nature tours, and group transportation.",
+  },
+  {
+    id: "gyalshing",
+    slug: "tempo-traveller-fare-in-gyalshing",
+    name: "Gyalshing",
+    state: "Sikkim",
+    tag: "Hill Travel Hub",
+    desc: "Sikkim hill travel hub suitable for family trips, monastery tours, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "melli",
+    slug: "tempo-traveller-fare-in-melli",
+    name: "Melli",
+    state: "Sikkim",
+    tag: "Nature Travel Hub",
+    desc: "Sikkim nature travel hub suitable for family trips, sightseeing, scenic tours, river trips, and group transportation.",
+  },
+  {
+    id: "rangpo",
+    slug: "tempo-traveller-fare-in-rangpo",
+    name: "Rangpo",
+    state: "Sikkim",
+    tag: "Travel Hub",
+    desc: "Sikkim travel hub suitable for family trips, sightseeing, hill tours, nature trips, and group transportation.",
+  },
+  {
+    id: "singtam",
+    slug: "tempo-traveller-fare-in-singtam",
+    name: "Singtam",
+    state: "Sikkim",
+    tag: "Nature Travel Hub",
+    desc: "Sikkim nature travel hub suitable for family trips, sightseeing, scenic tours, hill trips, and group transportation.",
+  },
+  {
+    id: "jorthang",
+    slug: "tempo-traveller-fare-in-jorthang",
+    name: "Jorthang",
+    state: "Sikkim",
+    tag: "Hill Travel Hub",
+    desc: "Sikkim hill travel hub suitable for family trips, sightseeing, nature tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "ravangla",
+    slug: "tempo-traveller-fare-in-ravangla",
+    name: "Ravangla",
+    state: "Sikkim",
+    tag: "Hill Travel Hub",
+    desc: "Sikkim hill travel hub suitable for family trips, monastery visits, sightseeing, nature tours, and group transportation.",
+  },
+  {
+    id: "soreng",
+    slug: "tempo-traveller-fare-in-soreng",
+    name: "Soreng",
+    state: "Sikkim",
+    tag: "Nature Travel Hub",
+    desc: "Sikkim nature travel hub suitable for family trips, sightseeing, hill tours, scenic trips, and group transportation.",
+  },
+  {
+    id: "yuksom",
+    slug: "tempo-traveller-fare-in-yuksom",
+    name: "Yuksom",
+    state: "Sikkim",
+    tag: "Heritage Travel Hub",
+    desc: "Sikkim heritage and mountain travel hub suitable for family trips, monastery visits, trekking trips, sightseeing, and group transportation.",
+  },
+  {
+    id: "agar-malwa",
+    slug: "tempo-traveller-fare-in-agar-malwa",
+    name: "Agar Malwa",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, temple visits, cultural tours, and group transportation.",
+  },
+  {
+    id: "alirajpur",
+    slug: "tempo-traveller-fare-in-alirajpur",
+    name: "Alirajpur",
+    state: "Madhya Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Madhya Pradesh nature travel hub suitable for family trips, sightseeing, tribal culture tours, nature trips, and group transportation.",
+  },
+  {
+    id: "anuppur",
+    slug: "tempo-traveller-fare-in-anuppur",
+    name: "Anuppur",
+    state: "Madhya Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Madhya Pradesh nature travel hub suitable for family trips, sightseeing, forest tours, waterfalls, and group transportation.",
+  },
+  {
+    id: "ashoknagar",
+    slug: "tempo-traveller-fare-in-ashoknagar",
+    name: "Ashoknagar",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, heritage tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "balaghat",
+    slug: "tempo-traveller-fare-in-balaghat",
+    name: "Balaghat",
+    state: "Madhya Pradesh",
+    tag: "Wildlife Travel Hub",
+    desc: "Madhya Pradesh wildlife travel hub suitable for family trips, forest tours, wildlife trips, sightseeing, and group transportation.",
+  },
+  {
+    id: "betul",
+    slug: "tempo-traveller-fare-in-betul",
+    name: "Betul",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, nature trips, cultural tours, and group transportation.",
+  },
+  {
+    id: "bhind",
+    slug: "tempo-traveller-fare-in-bhind",
+    name: "Bhind",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, heritage tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "chhatarpur",
+    slug: "tempo-traveller-fare-in-chhatarpur",
+    name: "Chhatarpur",
+    state: "Madhya Pradesh",
+    tag: "Heritage Travel Hub",
+    desc: "Madhya Pradesh heritage travel hub suitable for family trips, temple visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "damoh",
+    slug: "tempo-traveller-fare-in-damoh",
+    name: "Damoh",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, temple visits, nature trips, and group transportation.",
+  },
+  {
+    id: "datia",
+    slug: "tempo-traveller-fare-in-datia",
+    name: "Datia",
+    state: "Madhya Pradesh",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Madhya Pradesh pilgrimage and heritage travel hub suitable for family trips, temple visits, sightseeing, and group transportation.",
+  },
+  {
+    id: "dewas",
+    slug: "tempo-traveller-fare-in-dewas",
+    name: "Dewas",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, pilgrimage visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "dhar",
+    slug: "tempo-traveller-fare-in-dhar",
+    name: "Dhar",
+    state: "Madhya Pradesh",
+    tag: "Heritage Travel Hub",
+    desc: "Madhya Pradesh heritage travel hub suitable for family trips, historical sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "dindori",
+    slug: "tempo-traveller-fare-in-dindori",
+    name: "Dindori",
+    state: "Madhya Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Madhya Pradesh nature travel hub suitable for family trips, forest tours, waterfalls, sightseeing, and group transportation.",
+  },
+  {
+    id: "guna",
+    slug: "tempo-traveller-fare-in-guna",
+    name: "Guna",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "harda",
+    slug: "tempo-traveller-fare-in-harda",
+    name: "Harda",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, nature trips, cultural tours, and group transportation.",
+  },
+
+  {
+    id: "indore",
+    slug: "tempo-traveller-fare-in-indore",
+    name: "Indore",
+    state: "Madhya Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Major Madhya Pradesh travel hub suitable for family trips, business travel, sightseeing, pilgrimage trips, and group transportation.",
+  },
+  {
+    id: "jhabua",
+    slug: "tempo-traveller-fare-in-jhabua",
+    name: "Jhabua",
+    state: "Madhya Pradesh",
+    tag: "Cultural Travel Hub",
+    desc: "Madhya Pradesh cultural travel hub suitable for family trips, tribal culture tours, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "katni",
+    slug: "tempo-traveller-fare-in-katni",
+    name: "Katni",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, temple visits, nature trips, and group transportation.",
+  },
+  {
+    id: "khandwa",
+    slug: "tempo-traveller-fare-in-khandwa",
+    name: "Khandwa",
+    state: "Madhya Pradesh",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Madhya Pradesh pilgrimage and travel hub suitable for family trips, temple visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "mandla",
+    slug: "tempo-traveller-fare-in-mandla",
+    name: "Mandla",
+    state: "Madhya Pradesh",
+    tag: "Wildlife Travel Hub",
+    desc: "Madhya Pradesh wildlife and nature travel hub suitable for family trips, forest tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "morena",
+    slug: "tempo-traveller-fare-in-morena",
+    name: "Morena",
+    state: "Madhya Pradesh",
+    tag: "Heritage Travel Hub",
+    desc: "Madhya Pradesh heritage travel hub suitable for family trips, historical sightseeing, temple visits, and group transportation.",
+  },
+  {
+    id: "narsinghpur",
+    slug: "tempo-traveller-fare-in-narsinghpur",
+    name: "Narsinghpur",
+    state: "Madhya Pradesh",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Madhya Pradesh pilgrimage travel hub suitable for family trips, temple visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "neemuch",
+    slug: "tempo-traveller-fare-in-neemuch",
+    name: "Neemuch",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, pilgrimage visits, cultural tours, and group transportation.",
+  },
+  {
+    id: "panna",
+    slug: "tempo-traveller-fare-in-panna",
+    name: "Panna",
+    state: "Madhya Pradesh",
+    tag: "Wildlife Travel Hub",
+    desc: "Madhya Pradesh wildlife and nature travel hub suitable for family trips, national park tours, waterfalls, sightseeing, and group transportation.",
+  },
+  {
+    id: "raisen",
+    slug: "tempo-traveller-fare-in-raisen",
+    name: "Raisen",
+    state: "Madhya Pradesh",
+    tag: "Heritage Travel Hub",
+    desc: "Madhya Pradesh heritage travel hub suitable for family trips, historical sightseeing, forts, cultural tours, and group transportation.",
+  },
+  {
+    id: "rajgarh",
+    slug: "tempo-traveller-fare-in-rajgarh",
+    name: "Rajgarh",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "ratlam",
+    slug: "tempo-traveller-fare-in-ratlam",
+    name: "Ratlam",
+    state: "Madhya Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Important Madhya Pradesh travel hub suitable for family trips, business travel, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "rewa",
+    slug: "tempo-traveller-fare-in-rewa",
+    name: "Rewa",
+    state: "Madhya Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, waterfalls, sightseeing, nature tours, and group transportation.",
+  },
+  {
+    id: "sagar",
+    slug: "tempo-traveller-fare-in-sagar",
+    name: "Sagar",
+    state: "Madhya Pradesh",
+    tag: "Major Travel Hub",
+    desc: "Major Madhya Pradesh travel hub suitable for family trips, sightseeing, heritage tours, pilgrimage visits, and group transportation.",
+  },
+
+  {
+    id: "sehore",
+    slug: "tempo-traveller-fare-in-sehore",
+    name: "Sehore",
+    state: "Madhya Pradesh",
+    tag: "Pilgrimage Travel Hub",
+    desc: "Madhya Pradesh pilgrimage and travel hub suitable for family trips, temple visits, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "seoni",
+    slug: "tempo-traveller-fare-in-seoni",
+    name: "Seoni",
+    state: "Madhya Pradesh",
+    tag: "Wildlife Travel Hub",
+    desc: "Madhya Pradesh wildlife and nature travel hub suitable for family trips, forest tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "shahdol",
+    slug: "tempo-traveller-fare-in-shahdol",
+    name: "Shahdol",
+    state: "Madhya Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Madhya Pradesh nature travel hub suitable for family trips, forest tours, sightseeing, waterfalls, and group transportation.",
+  },
+  {
+    id: "shajapur",
+    slug: "tempo-traveller-fare-in-shajapur",
+    name: "Shajapur",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, sightseeing, cultural tours, temple visits, and group transportation.",
+  },
+  {
+    id: "sheopur",
+    slug: "tempo-traveller-fare-in-sheopur",
+    name: "Sheopur",
+    state: "Madhya Pradesh",
+    tag: "Wildlife Travel Hub",
+    desc: "Madhya Pradesh wildlife travel hub suitable for family trips, national park tours, nature trips, sightseeing, and group transportation.",
+  },
+  {
+    id: "shivpuri",
+    slug: "tempo-traveller-fare-in-shivpuri",
+    name: "Shivpuri",
+    state: "Madhya Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Madhya Pradesh nature travel hub suitable for family trips, wildlife tours, sightseeing, historical visits, and group transportation.",
+  },
+  {
+    id: "sidhi",
+    slug: "tempo-traveller-fare-in-sidhi",
+    name: "Sidhi",
+    state: "Madhya Pradesh",
+    tag: "Nature Travel Hub",
+    desc: "Madhya Pradesh nature travel hub suitable for family trips, sightseeing, waterfalls, forest tours, and group transportation.",
+  },
+  {
+    id: "singrauli",
+    slug: "tempo-traveller-fare-in-singrauli",
+    name: "Singrauli",
+    state: "Madhya Pradesh",
+    tag: "Travel Hub",
+    desc: "Madhya Pradesh travel hub suitable for family trips, business travel, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "tikamgarh",
+    slug: "tempo-traveller-fare-in-tikamgarh",
+    name: "Tikamgarh",
+    state: "Madhya Pradesh",
+    tag: "Heritage Travel Hub",
+    desc: "Madhya Pradesh heritage travel hub suitable for family trips, historical sightseeing, temple visits, and group transportation.",
+  },
+  {
+    id: "ujjain",
+    slug: "tempo-traveller-fare-in-ujjain",
+    name: "Ujjain",
+    state: "Madhya Pradesh",
+    tag: "Major Pilgrimage Hub",
+    desc: "Major Madhya Pradesh pilgrimage travel hub suitable for family trips, Mahakal temple visits, sightseeing, and group transportation.",
+  },
+  {
+    id: "umaria",
+    slug: "tempo-traveller-fare-in-umaria",
+    name: "Umaria",
+    state: "Madhya Pradesh",
+    tag: "Wildlife Travel Hub",
+    desc: "Madhya Pradesh wildlife travel hub suitable for family trips, national park tours, forest trips, sightseeing, and group transportation.",
+  },
+  {
+    id: "vidisha",
+    slug: "tempo-traveller-fare-in-vidisha",
+    name: "Vidisha",
+    state: "Madhya Pradesh",
+    tag: "Heritage Travel Hub",
+    desc: "Madhya Pradesh heritage travel hub suitable for family trips, historical sightseeing, temple visits, and cultural tours.",
+  },
+  {
+    id: "balod",
+    slug: "tempo-traveller-fare-in-balod",
+    name: "Balod",
+    state: "Chhattisgarh",
+    tag: "Travel Hub",
+    desc: "Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "baloda-bazar",
+    slug: "tempo-traveller-fare-in-baloda-bazar",
+    name: "Baloda Bazar",
+    state: "Chhattisgarh",
+    tag: "Travel Hub",
+    desc: "Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "balrampur",
+    slug: "tempo-traveller-fare-in-balrampur",
+    name: "Balrampur",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, sightseeing, forest tours, waterfalls, and group transportation.",
+  },
+  {
+    id: "bastar",
+    slug: "tempo-traveller-fare-in-bastar",
+    name: "Bastar",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature and tribal travel hub suitable for family trips, waterfalls, forest tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "bemetara",
+    slug: "tempo-traveller-fare-in-bemetara",
+    name: "Bemetara",
+    state: "Chhattisgarh",
+    tag: "Travel Hub",
+    desc: "Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "bijapur",
+    slug: "tempo-traveller-fare-in-bijapur",
+    name: "Bijapur",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, forest tours, sightseeing, waterfalls, and group transportation.",
+  },
+  {
+    id: "bilaspur",
+    slug: "tempo-traveller-fare-in-bilaspur",
+    name: "Bilaspur",
+    state: "Chhattisgarh",
+    tag: "Major Travel Hub",
+    desc: "Major Chhattisgarh travel hub suitable for family trips, business travel, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "dantewada",
+    slug: "tempo-traveller-fare-in-dantewada",
+    name: "Dantewada",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature and tribal travel hub suitable for family trips, waterfalls, forest tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "dhamtari",
+    slug: "tempo-traveller-fare-in-dhamtari",
+    name: "Dhamtari",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, sightseeing, water reservoir trips, cultural tours, and group transportation.",
+  },
+  {
+    id: "durg",
+    slug: "tempo-traveller-fare-in-durg",
+    name: "Durg",
+    state: "Chhattisgarh",
+    tag: "Major Travel Hub",
+    desc: "Major Chhattisgarh travel hub suitable for family trips, business travel, sightseeing, cultural tours, and group transportation.",
+  },
+  {
+    id: "gariaband",
+    slug: "tempo-traveller-fare-in-gariaband",
+    name: "Gariaband",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, forest tours, waterfalls, sightseeing, and group transportation.",
+  },
+  {
+    id: "janjgir-champa",
+    slug: "tempo-traveller-fare-in-janjgir-champa",
+    name: "Janjgir-Champa",
+    state: "Chhattisgarh",
+    tag: "Travel Hub",
+    desc: "Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, temple visits, and group transportation.",
+  },
+  {
+    id: "jashpur",
+    slug: "tempo-traveller-fare-in-jashpur",
+    name: "Jashpur",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, waterfalls, forest tours, sightseeing, and group transportation.",
+  },
+  {
+    id: "kabirdham",
+    slug: "tempo-traveller-fare-in-kabirdham",
+    name: "Kabirdham",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, sightseeing, forest tours, cultural visits, and group transportation.",
+  },
+  {
+    id: "kanker",
+    slug: "tempo-traveller-fare-in-kanker",
+    name: "Kanker",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature and tribal travel hub suitable for family trips, forest tours, waterfalls, cultural visits, and group transportation.",
+  },
+  {
+    id: "kondagaon",
+    slug: "tempo-traveller-fare-in-kondagaon",
+    name: "Kondagaon",
+    state: "Chhattisgarh",
+    tag: "Cultural Travel Hub",
+    desc: "Chhattisgarh tribal and cultural travel hub suitable for family trips, sightseeing, cultural tours, forest trips, and group transportation.",
+  },
+  {
+    id: "korba",
+    slug: "tempo-traveller-fare-in-korba",
+    name: "Korba",
+    state: "Chhattisgarh",
+    tag: "Major Travel Hub",
+    desc: "Important Chhattisgarh travel hub suitable for family trips, business travel, sightseeing, nature trips, and group transportation.",
+  },
+  {
+    id: "korea",
+    slug: "tempo-traveller-fare-in-korea",
+    name: "Korea",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, forest tours, sightseeing, waterfalls, and group transportation.",
+  },
+  {
+    id: "mahasamund",
+    slug: "tempo-traveller-fare-in-mahasamund",
+    name: "Mahasamund",
+    state: "Chhattisgarh",
+    tag: "Travel Hub",
+    desc: "Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "mungeli",
+    slug: "tempo-traveller-fare-in-mungeli",
+    name: "Mungeli",
+    state: "Chhattisgarh",
+    tag: "Travel Hub",
+    desc: "Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, nature trips, and group transportation.",
+  },
+  {
+    id: "narayanpur",
+    slug: "tempo-traveller-fare-in-narayanpur",
+    name: "Narayanpur",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature and tribal travel hub suitable for family trips, forest tours, cultural visits, sightseeing, and group transportation.",
+  },
+  {
+    id: "raigarh",
+    slug: "tempo-traveller-fare-in-raigarh",
+    name: "Raigarh",
+    state: "Chhattisgarh",
+    tag: "Major Travel Hub",
+    desc: "Important Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, business travel, and group transportation.",
+  },
+  {
+    id: "rajnandgaon",
+    slug: "tempo-traveller-fare-in-rajnandgaon",
+    name: "Rajnandgaon",
+    state: "Chhattisgarh",
+    tag: "Travel Hub",
+    desc: "Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, temple visits, and group transportation.",
+  },
+  {
+    id: "sukma",
+    slug: "tempo-traveller-fare-in-sukma",
+    name: "Sukma",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature and tribal travel hub suitable for family trips, forest tours, waterfalls, cultural visits, and group transportation.",
+  },
+  {
+    id: "surajpur",
+    slug: "tempo-traveller-fare-in-surajpur",
+    name: "Surajpur",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, forest tours, waterfalls, sightseeing, and group transportation.",
+  },
+  {
+    id: "surguja",
+    slug: "tempo-traveller-fare-in-surguja",
+    name: "Surguja",
+    state: "Chhattisgarh",
+    tag: "Nature Travel Hub",
+    desc: "Chhattisgarh nature travel hub suitable for family trips, waterfalls, forest tours, sightseeing, and group transportation.",
   },
 ];
 
