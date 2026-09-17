@@ -32,7 +32,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Tempo Traveller in ${city.name} | Yatra Tempo Traveller`,
+    title: `Tempo Traveller fare in ${city.name} @19/km | Book Now`,
 
     description:
       `Hire a Tempo Traveller in ${city.name}, ${city.state} for family trips, sightseeing, pilgrimage tours, weddings, corporate travel and outstation journeys.`,
@@ -42,7 +42,7 @@ export async function generateMetadata({
     },
 
     openGraph: {
-      title: `Tempo Traveller in ${city.name} | Yatra Tempo Traveller`,
+      title: `Tempo Traveller fare in ${city.name} @19/km | Book Now`,
       description: city.desc,
       url: `https://yatratempotraveller.com/${city.slug}`,
       siteName: "Yatra Tempo Traveller",

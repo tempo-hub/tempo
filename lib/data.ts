@@ -51220,15 +51220,6 @@ export const CITY_HUBS = [
   },
 
   {
-    id: "korba",
-    slug: "tempo-traveller-fare-in-korba",
-    name: "Korba",
-    state: "Chhattisgarh",
-    tag: "Industrial Travel Hub",
-    desc: "Important industrial travel hub in Chhattisgarh for corporate transportation, family trips, weddings, business travel, and group journeys.",
-  },
-
-  {
     id: "surat",
     slug: "tempo-traveller-fare-in-surat",
     name: "Surat",
@@ -57926,14 +57917,6 @@ export const CITY_HUBS = [
     desc: "Chhattisgarh nature travel hub suitable for family trips, forest tours, sightseeing, waterfalls, and group transportation.",
   },
   {
-    id: "bilaspur",
-    slug: "tempo-traveller-fare-in-bilaspur",
-    name: "Bilaspur",
-    state: "Chhattisgarh",
-    tag: "Major Travel Hub",
-    desc: "Major Chhattisgarh travel hub suitable for family trips, business travel, sightseeing, cultural tours, and group transportation.",
-  },
-  {
     id: "dantewada",
     slug: "tempo-traveller-fare-in-dantewada",
     name: "Dantewada",
@@ -58045,14 +58028,7 @@ export const CITY_HUBS = [
     tag: "Nature Travel Hub",
     desc: "Chhattisgarh nature and tribal travel hub suitable for family trips, forest tours, cultural visits, sightseeing, and group transportation.",
   },
-  {
-    id: "raigarh",
-    slug: "tempo-traveller-fare-in-raigarh",
-    name: "Raigarh",
-    state: "Chhattisgarh",
-    tag: "Major Travel Hub",
-    desc: "Important Chhattisgarh travel hub suitable for family trips, sightseeing, cultural tours, business travel, and group transportation.",
-  },
+
   {
     id: "rajnandgaon",
     slug: "tempo-traveller-fare-in-rajnandgaon",
