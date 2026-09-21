@@ -98,7 +98,7 @@ export default function ContactUs() {
                 </p>
 
                 <h2 className="mt-1 text-lg font-black text-slate-900">
-                  +91 84484 45504
+                  6280820037
                 </h2>
 
                 <p className="mt-1 text-sm text-slate-500">
@@ -152,7 +152,7 @@ export default function ContactUs() {
                 </p>
 
                 <h2 className="mt-1 text-lg font-black text-slate-900">
-                  +91 84484 45504
+                  6280820037
                 </h2>
 
                 <p className="mt-1 text-sm text-slate-500">
@@ -310,7 +310,7 @@ export default function ContactUs() {
                     Contact No :
                   </strong>{" "}
                   <a href="tel:+916280820037" className="hover:text-primary">
-                    98180 22327
+                    6280820037
                   </a>
                 </p>
 
@@ -345,7 +345,7 @@ export default function ContactUs() {
                     Contact No :
                   </strong>{" "}
                   <a href="tel:+916280820037" className="hover:text-primary">
-                    98180 22327
+                    6280820037
                   </a>
                 </p>
 
