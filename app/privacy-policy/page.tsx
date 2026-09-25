@@ -641,10 +641,10 @@ export default function PrivacyPolicy() {
                     <span>
                       Phone:{" "}
                       <a
-                        href="tel:+916280820037"
+                        href="tel:+919151827941"
                         className="underline underline-offset-4"
                       >
-                        +91 6280820037
+                        +91 9151827941
                       </a>
                     </span>
                   </p>
@@ -673,7 +673,7 @@ export default function PrivacyPolicy() {
 
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
                 <a
-                  href="tel:+916280820037"
+                  href="tel:+919151827941"
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-950 px-6 py-3.5 text-sm font-bold text-white transition hover:bg-slate-800"
                 >
                   <Phone className="h-4 w-4" />

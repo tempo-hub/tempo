@@ -150,12 +150,12 @@ export default function RoutesPage() {
               entire North India.
             </p>
             <div className="flex flex-wrap justify-center gap-4 pt-4">
-              <a href="tel:+916280820037">
+              <a href="tel:+919151827941">
                 <Button size="lg" className="h-14 px-10 rounded-xl shadow-xl">
                   Call for Custom Quote
                 </Button>
               </a>
-              <a href="https://wa.me/916280820037?text=Hi!%20Custom%20Quote%20for%20Tempo%20Traveller">
+              <a href="https://wa.me/919151827941?text=Hi!%20Custom%20Quote%20for%20Tempo%20Traveller">
                 <Button
                   variant="whatsapp"
                   size="lg"

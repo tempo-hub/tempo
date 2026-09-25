@@ -738,7 +738,7 @@ export default function CitiesClient() {
           >
             {/* WhatsApp */}
             <a
-              href="https://wa.me/916280820037"
+              href="https://wa.me/919151827941"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -779,7 +779,7 @@ export default function CitiesClient() {
 
             {/* Call */}
             <a
-              href="tel:+916280820037"
+              href="tel:+919151827941"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
