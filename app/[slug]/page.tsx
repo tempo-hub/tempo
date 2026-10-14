@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-
-import { CITY_HUBS } from "@/lib/data";
+import { CITY_HUBS, CITY_HUBS_WITH_LOCATIONS } from "@/lib/data";
 import CityTemplate from "../components/templates/CityTemplate";
 
 interface CityPageProps {
@@ -32,17 +31,17 @@ export async function generateMetadata({
   }
 
   return {
-    title: `Tempo Traveller fare in ${city.name} @19/km | Book Now`,
+    title: `Tempo Traveller fare in ${city.name} | From ₹25/km | Book Now`,
 
     description:
-      `Hire a Tempo Traveller in ${city.name}, ${city.state} for family trips, sightseeing, pilgrimage tours, weddings, corporate travel and outstation journeys.`,
+      `Tempo Traveller on rent in ${city.name}, 9 to 26 seater from ₹25/km, 250 km/day, driver allowance ₹500. Get instant quote on WhatsApp`,
 
     alternates: {
       canonical: `https://yatratempotraveller.com/${city.slug}`,
     },
 
     openGraph: {
-      title: `Tempo Traveller fare in ${city.name} @19/km | Book Now`,
+      title: `Tempo Traveller fare in ${city.name} @25/km | Book Now`,
       description: city.desc,
       url: `https://yatratempotraveller.com/${city.slug}`,
       siteName: "Yatra Tempo Traveller",
@@ -57,7 +56,7 @@ export default async function CityPage({
 }: CityPageProps) {
   const { slug } = await params;
 
-  const city = CITY_HUBS.find(
+  const city = CITY_HUBS_WITH_LOCATIONS.find(
     (item) => item.slug === slug
   );
 

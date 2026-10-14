@@ -33,7 +33,9 @@ import {
   CalendarDays,
   Lightbulb,
   IndianRupee,
+  Info,
 } from "lucide-react";
+import CityTravelPolicies from "../shared/CityTravelPolicies";
 
 // ============================================================
 // TYPES
@@ -49,6 +51,8 @@ interface City {
   metaDescription?: string;
   country?: string;
   image?: string;
+  pickupPoints?: string[];
+  serviceAreas?: string[];
 }
 
 interface FleetItem {
@@ -1324,6 +1328,11 @@ export default function CityTemplate({
 
   const defaultFaqs = [
     {
+      q: `What is the per-kilometre rental cost of a Tempo Traveller in ${city.name}?`,
+      a: `The rental cost of a Tempo Traveller in ${city.name} depends on the seating capacity, travel distance, trip duration and route. Driver allowance, tolls and parking charges may be extra. Contact Yatra Tempo Traveller for the latest per-kilometre rate and total fare for your trip.`,
+    },
+
+    {
       q: `What is the cost of hiring a Tempo Traveller in ${city.name}?`,
       a: `Tempo Traveller pricing in ${city.name} depends on the vehicle size, travel distance, number of days, route, tolls, parking and other trip requirements. Contact Yatra Tempo Traveller for the latest fare for your journey.`,
     },
@@ -1350,6 +1359,11 @@ export default function CityTemplate({
   ];
 
   const displayFaqs = faqs.length > 0 ? faqs : defaultFaqs;
+
+  const pickupPoints = city.pickupPoints ?? [];
+  const serviceAreas = city.serviceAreas ?? [];
+  const hasPickupPoints = pickupPoints.length > 0;
+  const hasServiceAreas = serviceAreas.length > 0;
 
   return (
     <main
@@ -2018,6 +2032,256 @@ export default function CityTemplate({
           </div>
         </div>
       </section>
+
+      {/* ===== PICKUP & DROP LOCATIONS ===== */}
+      {(hasPickupPoints || hasServiceAreas) && (
+        <section
+          className="pickup-drop-section"
+          style={{
+            padding: "4rem 0",
+            background: "#fffaf5",
+          }}
+        >
+          <div
+            className="container"
+            style={{
+              maxWidth: "1280px",
+              margin: "0 auto",
+              padding: "0 1.5rem",
+            }}
+          >
+            {/* Header */}
+            <div
+              style={{
+                textAlign: "center",
+                maxWidth: "780px",
+                margin: "0 auto 3rem",
+              }}
+            >
+              <div
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                  background: "#fff0e5",
+                  color: "#FE791A",
+                  padding: "0.25rem 1.2rem",
+                  borderRadius: "40px",
+                  fontSize: "0.8rem",
+                  fontWeight: 600,
+                }}
+              >
+                <MapPin size={14} />
+                Pickup & Drop
+              </div>
+
+              <h2
+                style={{
+                  fontSize: "2.3rem",
+                  fontWeight: 700,
+                  margin: "0.5rem 0 0.75rem",
+                  color: "#0b1a2e",
+                }}
+              >
+                Urbania Tempo Traveller Pickup & Drop{" "}
+                <span style={{ color: "#FE791A" }}>
+                  Locations in {city.name}
+                </span>
+              </h2>
+
+              <p
+                style={{
+                  fontSize: "1.05rem",
+                  color: "#4a5a6e",
+                  lineHeight: "1.6",
+                }}
+              >
+                Book an Urbania Tempo Traveller in {city.name} with convenient
+                pickup and drop options across popular localities and service
+                areas for family trips, weddings, corporate travel, and
+                outstation journeys.
+              </p>
+            </div>
+
+            {/* Two Column Grid */}
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+                gap: "2rem",
+              }}
+            >
+              {/* Pickup Locations */}
+              {hasPickupPoints && (
+                <div
+                  style={{
+                    background: "#ffffff",
+                    borderRadius: "20px",
+                    padding: "1.8rem",
+                    border: "1px solid #ffeadb",
+                    boxShadow: "0 4px 12px rgba(254,121,26,0.06)",
+                  }}
+                >
+                  <h3
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                      fontSize: "1.15rem",
+                      fontWeight: 700,
+                      color: "#0b1a2e",
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    <MapPin size={20} color="#FE791A" />
+                    <span>Pickup Points in {city.name}</span>
+                  </h3>
+
+                  <ul
+                    style={{
+                      listStyle: "none",
+                      padding: 0,
+                      margin: 0,
+                    }}
+                  >
+                    {pickupPoints.map((point, idx) => (
+                      <li
+                        key={point}
+                        style={{
+                          display: "flex",
+                          alignItems: "flex-start",
+                          gap: "0.6rem",
+                          padding: "0.55rem 0",
+                          borderBottom:
+                            idx < pickupPoints.length - 1
+                              ? "1px solid #fff0e5"
+                              : "none",
+                          fontSize: "0.9rem",
+                          color: "#1a2634",
+                          lineHeight: 1.5,
+                        }}
+                      >
+                        <CheckCircle2
+                          size={16}
+                          color="#FE791A"
+                          style={{
+                            flexShrink: 0,
+                            marginTop: "2px",
+                          }}
+                        />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Service Areas / Drop Locations */}
+              {hasServiceAreas && (
+                <div
+                  style={{
+                    background: "#ffffff",
+                    borderRadius: "20px",
+                    padding: "1.8rem",
+                    border: "1px solid #ffeadb",
+                    boxShadow: "0 4px 12px rgba(254,121,26,0.06)",
+                  }}
+                >
+                  <h3
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                      fontSize: "1.15rem",
+                      fontWeight: 700,
+                      color: "#0b1a2e",
+                      marginBottom: "1rem",
+                    }}
+                  >
+                    <MapPin size={20} color="#FE791A" />
+                    <span>Service Areas in {city.name}</span>
+                  </h3>
+
+                  <ul
+                    style={{
+                      listStyle: "none",
+                      padding: 0,
+                      margin: 0,
+                    }}
+                  >
+                    {serviceAreas.map((area, idx) => (
+                      <li
+                        key={area}
+                        style={{
+                          display: "flex",
+                          alignItems: "flex-start",
+                          gap: "0.6rem",
+                          padding: "0.55rem 0",
+                          borderBottom:
+                            idx < serviceAreas.length - 1
+                              ? "1px solid #fff0e5"
+                              : "none",
+                          fontSize: "0.9rem",
+                          color: "#1a2634",
+                          lineHeight: 1.5,
+                        }}
+                      >
+                        <CheckCircle2
+                          size={16}
+                          color="#FE791A"
+                          style={{
+                            flexShrink: 0,
+                            marginTop: "2px",
+                          }}
+                        />
+                        <span>{area}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* Booking Note */}
+            <div
+              style={{
+                marginTop: "2rem",
+                padding: "1rem 1.5rem",
+                background: "#fff5ec",
+                borderRadius: "12px",
+                border: "1px solid #ffdfc4",
+                display: "flex",
+                alignItems: "flex-start",
+                gap: "0.6rem",
+                fontSize: "0.9rem",
+                color: "#0b1a2e",
+                lineHeight: 1.6,
+              }}
+            >
+              <Info
+                size={18}
+                color="#FE791A"
+                style={{
+                  flexShrink: 0,
+                  marginTop: "2px",
+                }}
+              />
+              <span>
+                Pickup and drop availability depends on your booking, vehicle
+                availability, road access, and local parking restrictions.
+                Additional charges may apply for outstation travel, tolls,
+                parking, and driver allowances according to the booking terms.
+                Confirm your exact pickup and destination before booking.
+              </span>
+            </div>
+          </div>
+        </section>
+      )}
+
+      <CityTravelPolicies
+        cityName={city.name}
+        fleet={displayFleet.map((vehicle) => vehicle.seater)}
+      />
 
       {/* =====================================================
           ABOUT CITY
@@ -2944,7 +3208,7 @@ export default function CityTemplate({
                     fontWeight: 600,
                   }}
                 >
-                  ✅ No hidden charges
+                  No hidden charges
                 </span>
                 <span
                   style={{
@@ -3127,7 +3391,7 @@ export default function CityTemplate({
         <div style={{ maxWidth: "850px", margin: "0 auto" }}>
           <SectionHeading
             badge="FAQs"
-            title={`Tempo Traveller in ${city.name} - FAQs`}
+            title={`Tempo Traveller On Rent in ${city.name} - FAQs`}
             description="Frequently asked questions about Tempo Traveller booking and travel."
           />
 

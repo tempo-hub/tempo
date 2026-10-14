@@ -1,5 +1,6 @@
 import { generateRouteFaqs, GLOBAL_FAQS } from "./faq-data";
 import { CITY_GUIDES } from "./cityGuides";
+import {CITY_LOCATION_DATA} from "./cityLocationData";
 
 export interface VehicleFare {
   type: string;
@@ -58062,6 +58063,23 @@ export const CITY_HUBS = [
     desc: "Chhattisgarh nature travel hub suitable for family trips, waterfalls, forest tours, sightseeing, and group transportation.",
   },
 ];
+
+const isCityLocationId = (
+  id: string
+): id is keyof typeof CITY_LOCATION_DATA =>
+  Object.prototype.hasOwnProperty.call(CITY_LOCATION_DATA, id);
+
+export const CITY_HUBS_WITH_LOCATIONS = CITY_HUBS.map((city) => {
+  const locations = isCityLocationId(city.id)
+    ? CITY_LOCATION_DATA[city.id]
+    : undefined;
+
+  return {
+    ...city,
+    pickupPoints: locations?.pickupPoints ?? [],
+    serviceAreas: locations?.serviceAreas ?? [],
+  };
+});
 
 export const FAQS = [
   {

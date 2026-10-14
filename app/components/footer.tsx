@@ -155,10 +155,6 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6 text-primary">Contact Us</h4>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3 text-slate-400">
-                <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>Sigra, Varanasi, Uttar Pradesh 221010</span>
-              </li>
               <li className="flex items-center gap-3 text-slate-400">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
                 <a href="tel:+919151827941" className="hover:text-white">
