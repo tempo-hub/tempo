@@ -10,6 +10,7 @@ import {
   BIHAR_CHEAPEST_ROUTES,
   DELHI_NCR_CHEAPEST_ROUTES,
 } from "@/lib/cheapestRoute";
+import { localityData } from "@/lib/localityData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://yatratempotraveller.com";
@@ -125,7 +126,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const localityEntries = localityData.map((item) => ({
+    url: `${baseUrl}/${item.city}/${item.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
+  }));
+
   return [
+    ...localityEntries,
     ...staticUrls,
     ...fareUrls,
     ...cheapestUrls,
