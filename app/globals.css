@@ -304,4 +304,310 @@
   }
 }
 
+/* ===== LOCAL PICKUP & TRAVEL GUIDE ===== */
+.pickup-guide-section {
+  padding: 4rem 0;
+  background: #f8faff;
+}
 
+.pickup-guide-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.pickup-guide-heading {
+  max-width: 800px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.pickup-guide-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
+  background: #fff0e5;
+  color: #fe791a;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.pickup-guide-heading h2 {
+  margin: 1rem 0 0.8rem;
+  color: #0d2339;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.pickup-guide-heading h2 span {
+  color: #fe791a;
+}
+
+.pickup-guide-heading p {
+  margin: 0;
+  color: #5b6b7e;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ===== GUIDE CARDS ===== */
+.pickup-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.pickup-guide-card {
+  padding: 1.7rem;
+  border: 1px solid #e5eaf3;
+  border-radius: 20px;
+  background: #fff;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.pickup-guide-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffc28f;
+  box-shadow: 0 12px 30px rgba(254, 121, 26, 0.1);
+}
+
+.pickup-guide-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  background: #fff0e5;
+  color: #fe791a;
+}
+
+.pickup-guide-card h3 {
+  margin: 0 0 0.7rem;
+  color: #0d2339;
+  font-size: 1.15rem;
+  font-weight: 750;
+}
+
+.pickup-guide-card h4 {
+  margin: 1.2rem 0 0.7rem;
+  color: #26374c;
+  font-size: 0.9rem;
+}
+
+.pickup-guide-card p {
+  margin: 0;
+  color: #5b6b7e;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+/* ===== TAGS & SEATER OPTIONS ===== */
+.pickup-guide-tags,
+.pickup-guide-seaters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pickup-guide-tags span,
+.pickup-guide-seaters span {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #f4dfce;
+  border-radius: 30px;
+  background: #fff8f2;
+  color: #34445b;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* ===== TRIP TYPES ===== */
+.pickup-guide-list {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pickup-guide-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  color: #34445b;
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+.pickup-guide-list li svg {
+  flex-shrink: 0;
+  color: #087c55;
+  margin-top: 2px;
+}
+
+.pickup-guide-note {
+  margin-top: 1rem !important;
+  font-size: 0.78rem !important;
+}
+
+/* ===== POPULAR ROUTES ===== */
+.pickup-guide-routes {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px solid #e5eaf3;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.pickup-guide-routes h3,
+.pickup-guide-cta h3 {
+  margin: 0 0 0.5rem;
+  color: #0d2339;
+  font-size: 1.2rem;
+  font-weight: 750;
+}
+
+.pickup-guide-routes p,
+.pickup-guide-cta p {
+  margin: 0;
+  color: #5b6b7e;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.pickup-guide-route-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.pickup-guide-route-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.85rem;
+  border: 1px solid #e5eaf3;
+  border-radius: 12px;
+  color: #26374c;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.pickup-guide-route-links a svg {
+  flex-shrink: 0;
+  color: #fe791a;
+}
+
+.pickup-guide-route-links a:hover {
+  border-color: #fe791a;
+  background: #fff8f2;
+  color: #fe791a;
+}
+
+/* ===== BOOKING CTA ===== */
+.pickup-guide-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 1.8rem 2rem;
+  border-radius: 20px;
+  background: #0d2339;
+  border-left: 5px solid #fe791a;
+}
+
+.pickup-guide-cta h3 {
+  color: #fff;
+}
+
+.pickup-guide-cta p {
+  max-width: 700px;
+  color: #e1e8f0;
+}
+
+.pickup-guide-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 0.55rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 40px;
+  background: #fe791a;
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 750;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.pickup-guide-cta a:hover {
+  background: #e9660b;
+  transform: translateY(-2px);
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .pickup-guide-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pickup-guide-routes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .pickup-guide-section {
+    padding: 3rem 0;
+  }
+
+  .pickup-guide-container {
+    padding: 0 1rem;
+  }
+
+  .pickup-guide-grid,
+  .pickup-guide-route-links {
+    grid-template-columns: 1fr;
+  }
+
+  .pickup-guide-card {
+    padding: 1.3rem;
+  }
+
+  .pickup-guide-routes {
+    padding: 1.2rem;
+  }
+
+  .pickup-guide-cta {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 1.4rem;
+  }
+
+  .pickup-guide-cta a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
