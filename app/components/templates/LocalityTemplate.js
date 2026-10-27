@@ -22,18 +22,14 @@ import {
 import { useState } from "react";
 import Image from "next/image";
 
-
 function FAQItem({ question, answer, isOpen, onToggle }) {
   return (
     <div
       style={{
         background: "#FFFFFF",
         borderRadius: "16px",
-        border: isOpen
-          ? "1px solid #FE791A"
-          : "1px solid #F0E1D5",
-        transition:
-          "border-color 0.3s ease, box-shadow 0.3s ease",
+        border: isOpen ? "1px solid #FE791A" : "1px solid #F0E1D5",
+        transition: "border-color 0.3s ease, box-shadow 0.3s ease",
         overflow: "hidden",
         boxShadow: isOpen
           ? "0 8px 24px rgba(254, 121, 26, 0.12)"
@@ -91,21 +87,16 @@ function FAQItem({ question, answer, isOpen, onToggle }) {
         style={{
           maxHeight: isOpen ? "1000px" : "0",
           overflow: "hidden",
-          transition:
-            "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+          transition: "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
         }}
       >
         <div
           style={{
-            padding: isOpen
-              ? "1.1rem 1.5rem 1.5rem"
-              : "0 1.5rem",
+            padding: isOpen ? "1.1rem 1.5rem 1.5rem" : "0 1.5rem",
             color: "#5B6B7E",
             fontSize: "0.95rem",
             lineHeight: 1.8,
-            borderTop: isOpen
-              ? "1px solid #F5E6DA"
-              : "none",
+            borderTop: isOpen ? "1px solid #F5E6DA" : "none",
             transition: "padding 0.3s ease",
           }}
         >
@@ -115,7 +106,6 @@ function FAQItem({ question, answer, isOpen, onToggle }) {
     </div>
   );
 }
-
 
 export default function LocalityTemplate({
   locality,
@@ -130,49 +120,48 @@ export default function LocalityTemplate({
   const placeLabel = `${locality.locality}, ${locality.cityName}`;
   const whatsappText = `Booking Query for Urbania Tempo Traveller Hire in ${placeLabel}`;
 
-  
-const faqs = [
-  {
-    q: `What is the fare for a Tempo Traveller in ${placeLabel}?`,
-    a: `Tempo Traveller rental fare from ${placeLabel} depends on the seating capacity, travel distance, trip duration, vehicle availability and route. Tolls, parking, state taxes and driver allowance may be charged separately. Contact Yatra Tempo Traveller with your travel details to get a fare estimate and confirm the total booking cost.`,
-  },
-  {
-    q: `Which Tempo Traveller seating options are available in ${locality.locality}?`,
-    a: `Yatra Tempo Traveller offers booking enquiries for 9, 12, 15, 16, 20 and 26 Seater Tempo Travellers from ${locality.locality}, ${locality.cityName}. Availability depends on your travel date and requirements. Share your passenger count and luggage details to enquire about a suitable vehicle.`,
-  },
-  {
-    q: `Do you provide pickup from my location in ${locality.locality}?`,
-    a: `You can enquire about pickup from your home, hotel, office or another agreed location in ${locality.locality} and nearby areas, including ${(locality.nearbyAreas || []).slice(0, 3).join(", ")}${locality.nearbyAreas?.length ? " and surrounding localities" : ""}. Please share your exact pickup address when requesting a quote so the pickup arrangements can be confirmed.`,
-  },
-  {
-    q: `Can I book a Tempo Traveller for an outstation trip from ${locality.locality}?`,
-    a: `Yes, you can enquire about local sightseeing, outstation journeys, family holidays, wedding travel, corporate trips and multi-day tours from ${locality.locality}. Popular routes include ${(locality.popularRoutes || []).slice(0, 3).join(", ")}${locality.popularRoutes?.length ? " and other destinations" : ""}. Share your destination, travel dates and trip duration to check vehicle availability and fares.`,
-  },
-  {
-    q: `Are tolls, parking and driver charges included in the Tempo Traveller fare?`,
-    a: `The fare inclusions depend on the specific booking and route. Driver allowance, tolls, parking, state taxes, night charges and other applicable expenses may be additional. Before confirming your Yatra Tempo Traveller booking, request a clear fare breakdown showing included services, extra charges and payment terms.`,
-  },
-  {
-    q: `How can I book a Tempo Traveller from ${placeLabel}?`,
-    a: `To enquire with Yatra Tempo Traveller, share your pickup location in ${locality.locality}, destination, travel date, pickup time, return date if applicable, passenger count and preferred seating capacity. Our booking team can help you check availability, understand the fare and confirm the booking terms.`,
-  },
-  {
-    q: `Which Tempo Traveller should I choose for my group?`,
-    a: `The right vehicle depends on the number of passengers, luggage and trip requirements. You can enquire about 9, 12, 15, 16, 20 and 26 Seater Tempo Travellers. Ask the booking team to confirm the actual passenger capacity, luggage space and available facilities before choosing your vehicle.`,
-  },
-  {
-    q: `Can I book a Tempo Traveller for a wedding or family trip?`,
-    a: `Yes, you can enquire about Tempo Traveller rentals for weddings, family functions, religious visits, school or college outings, corporate travel and group holidays from ${placeLabel}. Share your itinerary, passenger count and travel schedule to receive suitable vehicle options and a fare estimate.`,
-  },
-  {
-    q: `What details are required to get a Tempo Traveller quotation?`,
-    a: `Please provide your pickup address, destination, travel date, pickup time, return date or trip duration, number of passengers, luggage requirements and preferred seating capacity. Mention any planned stops or special requirements so the team can prepare a more accurate quotation.`,
-  },
-  {
-    q: `How early should I book a Tempo Traveller in ${locality.locality}?`,
-    a: `Booking in advance is recommended, especially for weekends, holidays, wedding dates and peak travel seasons. Availability for ${locality.locality} depends on your travel date and preferred seating capacity. Contact Yatra Tempo Traveller as early as possible to check availability and confirm your booking.`,
-  },
-];
+  const faqs = [
+    {
+      q: `What is the fare for a Tempo Traveller in ${placeLabel}?`,
+      a: `Tempo Traveller rental fare from ${placeLabel} depends on the seating capacity, travel distance, trip duration, vehicle availability and route. Tolls, parking, state taxes and driver allowance may be charged separately. Contact Yatra Tempo Traveller with your travel details to get a fare estimate and confirm the total booking cost.`,
+    },
+    {
+      q: `Which Tempo Traveller seating options are available in ${locality.locality}?`,
+      a: `Yatra Tempo Traveller offers booking enquiries for 9, 12, 15, 16, 20 and 26 Seater Tempo Travellers from ${locality.locality}, ${locality.cityName}. Availability depends on your travel date and requirements. Share your passenger count and luggage details to enquire about a suitable vehicle.`,
+    },
+    {
+      q: `Do you provide pickup from my location in ${locality.locality}?`,
+      a: `You can enquire about pickup from your home, hotel, office or another agreed location in ${locality.locality} and nearby areas, including ${(locality.nearbyAreas || []).slice(0, 3).join(", ")}${locality.nearbyAreas?.length ? " and surrounding localities" : ""}. Please share your exact pickup address when requesting a quote so the pickup arrangements can be confirmed.`,
+    },
+    {
+      q: `Can I book a Tempo Traveller for an outstation trip from ${locality.locality}?`,
+      a: `Yes, you can enquire about local sightseeing, outstation journeys, family holidays, wedding travel, corporate trips and multi-day tours from ${locality.locality}. Popular routes include ${(locality.popularRoutes || []).slice(0, 3).join(", ")}${locality.popularRoutes?.length ? " and other destinations" : ""}. Share your destination, travel dates and trip duration to check vehicle availability and fares.`,
+    },
+    {
+      q: `Are tolls, parking and driver charges included in the Tempo Traveller fare?`,
+      a: `The fare inclusions depend on the specific booking and route. Driver allowance, tolls, parking, state taxes, night charges and other applicable expenses may be additional. Before confirming your Yatra Tempo Traveller booking, request a clear fare breakdown showing included services, extra charges and payment terms.`,
+    },
+    {
+      q: `How can I book a Tempo Traveller from ${placeLabel}?`,
+      a: `To enquire with Yatra Tempo Traveller, share your pickup location in ${locality.locality}, destination, travel date, pickup time, return date if applicable, passenger count and preferred seating capacity. Our booking team can help you check availability, understand the fare and confirm the booking terms.`,
+    },
+    {
+      q: `Which Tempo Traveller should I choose for my group?`,
+      a: `The right vehicle depends on the number of passengers, luggage and trip requirements. You can enquire about 9, 12, 15, 16, 20 and 26 Seater Tempo Travellers. Ask the booking team to confirm the actual passenger capacity, luggage space and available facilities before choosing your vehicle.`,
+    },
+    {
+      q: `Can I book a Tempo Traveller for a wedding or family trip?`,
+      a: `Yes, you can enquire about Tempo Traveller rentals for weddings, family functions, religious visits, school or college outings, corporate travel and group holidays from ${placeLabel}. Share your itinerary, passenger count and travel schedule to receive suitable vehicle options and a fare estimate.`,
+    },
+    {
+      q: `What details are required to get a Tempo Traveller quotation?`,
+      a: `Please provide your pickup address, destination, travel date, pickup time, return date or trip duration, number of passengers, luggage requirements and preferred seating capacity. Mention any planned stops or special requirements so the team can prepare a more accurate quotation.`,
+    },
+    {
+      q: `How early should I book a Tempo Traveller in ${locality.locality}?`,
+      a: `Booking in advance is recommended, especially for weekends, holidays, wedding dates and peak travel seasons. Availability for ${locality.locality} depends on your travel date and preferred seating capacity. Contact Yatra Tempo Traveller as early as possible to check availability and confirm your booking.`,
+    },
+  ];
 
   const cityLink = cityHubSlug ? `/${cityHubSlug}` : "/cities";
   const cityPageUrl = `/tempo-traveller-fare-in-${locality.city}`;

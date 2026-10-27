@@ -21,10 +21,10 @@ function findLocality(slug, localitySlug) {
 export async function generateMetadata({ params }) {
   const { slug, locality } = await params;
   const data = findLocality(slug, locality);
-  const baseUrl = "https://hireurbaniatempotraveller.com";
+  const baseUrl = "https://yatratempotraveller.com";
 
   if (!data) {
-    return { title: "Locality Not Found | Hire Urbania" };
+    return { title: "Locality Not Found | Hire Tempo Traveller" };
   }
 
   const canonical = `${baseUrl}/${data.city}/${data.slug}`;
@@ -36,8 +36,8 @@ export async function generateMetadata({ params }) {
     description,
     keywords: [
       `tempo traveller fare in ${data.locality}`,
-      `urbania tempo traveller hire in ${data.locality}`,
-      `force urbania rental ${data.locality} ${data.cityName}`,
+      `tempo traveller hire in ${data.locality}`,
+      `tempo traveller rental ${data.locality} ${data.cityName}`,
       `9 12 16 seater urbania ${data.locality}`,
     ],
     alternates: { canonical },
@@ -45,13 +45,13 @@ export async function generateMetadata({ params }) {
       title,
       description,
       url: canonical,
-      siteName: "Hire Force Urbania Tempo Traveller",
+      siteName: "Hire Tempo Traveller",
       images: [
         {
           url: "/images/hero.png",
           width: 1200,
           height: 630,
-          alt: `Force Urbania tempo traveller ${data.locality}`,
+          alt: `Hire Tempo Traveller ${data.locality}`,
         },
       ],
       type: "website",
@@ -91,12 +91,12 @@ export default async function LocalityPage({ params }) {
         name: `What is the fare for a tempo traveller in ${data.locality}, ${data.cityName}?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `Fare from ${data.locality}, ${data.cityName} depends on seating, distance, days, tolls and parking. Contact Hire Urbania for an exact quote.`,
+          text: `Fare from ${data.locality}, ${data.cityName} depends on seating, distance, days, tolls and parking. Contact Tempo Traveller for an exact quote.`,
         },
       },
       {
         "@type": "Question",
-        name: `How do I book a Force Urbania from ${data.locality}, ${data.cityName}?`,
+        name: `How do I book a tempo traveller from ${data.locality}, ${data.cityName}?`,
         acceptedAnswer: {
           "@type": "Answer",
           text: `Share pickup, destination, dates and group size on WhatsApp or phone to confirm availability and fare.`,
@@ -119,7 +119,7 @@ export default async function LocalityPage({ params }) {
     areaServed: `${data.locality}, ${data.cityName}`,
     serviceType: "Tempo Traveller Rental",
     telephone: "+919151827941",
-    url: `https://hireurbaniatempotraveller.com/${data.city}/${data.slug}`,
+    url: `https://yatratempotraveller.com/${data.city}/${data.slug}`,
   };
 
   return (
