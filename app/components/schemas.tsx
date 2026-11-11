@@ -61,7 +61,7 @@ export const Offer = (price: number, route: string, slug: string) => ({
     "@type": ["LocalBusiness", "TaxiService"],
     name: "Chiku Cab",
     url: "https://yatratempotraveller.com",
-    telephone: "+919151827941",
+    telephone: "+919417184683",
     priceRange: "Starts ₹18/km",
 
     image: "https://yatratempotraveller.com/ytfavicon.png",

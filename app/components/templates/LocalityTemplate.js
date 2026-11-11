@@ -114,7 +114,7 @@ export default function LocalityTemplate({
   cityHubSlug = null,
 }) {
   const { cityName, description } = locality;
-  const whatsappNumber = "919151827941";
+  const whatsappNumber = "919417184683";
   const [openFAQIndex, setOpenFAQIndex] = useState(null);
 
   const placeLabel = `${locality.locality}, ${locality.cityName}`;

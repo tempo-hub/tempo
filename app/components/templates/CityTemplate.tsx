@@ -80,8 +80,8 @@ interface RouteItem {
 // CONSTANTS
 // ============================================================
 
-const WHATSAPP_NUMBER = "919151827941";
-const PHONE_NUMBER = "+919151827941";
+const WHATSAPP_NUMBER = "919417184683";
+const PHONE_NUMBER = "+919417184683";
 
 const BRAND = "#FE6A01";
 const BRAND_DARK = "#FE791A";

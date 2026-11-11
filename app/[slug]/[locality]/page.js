@@ -118,7 +118,7 @@ export default async function LocalityPage({ params }) {
     },
     areaServed: `${data.locality}, ${data.cityName}`,
     serviceType: "Tempo Traveller Rental",
-    telephone: "+919151827941",
+    telephone: "+919417184683",
     url: `https://yatratempotraveller.com/${data.city}/${data.slug}`,
   };
 

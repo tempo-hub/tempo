@@ -49,7 +49,7 @@ export const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <a href="tel:+919151827941">
+            <a href="tel:+919417184683">
               <Button size="sm" className="flex gap-2">
                 <Phone className="h-4 w-4" /> Call Now
               </Button>
@@ -92,9 +92,9 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <a href="tel:+919151827941" className="block pt-2">
+              <a href="tel:+919417184683" className="block pt-2">
                 <Button className="w-full flex gap-3">
-                  <Phone className="h-5 w-5" /> Call 9151827941
+                  <Phone className="h-5 w-5" /> Call 9417184683
                 </Button>
               </a>
             </div>
