@@ -3,6 +3,7 @@ import { CITY_GUIDES } from "./cityGuides";
 import { CITY_LOCATION_DATA } from "./cityLocationData";
 
 export interface VehicleFare {
+  slug: string;
   type: string;
   name: string;
   seating: string;
@@ -147,6 +148,7 @@ export interface TaxiRoute {
 
 export const VEHICLES: VehicleFare[] = [
   {
+    slug: "9-Seater-Tempo-Traveller",
     type: "9 Seater",
     name: "9 Seater Tempo Traveller",
     seating: "9+1",
@@ -161,6 +163,7 @@ export const VEHICLES: VehicleFare[] = [
     image: "/vehicles/9-seater-chiku.jpg",
   },
   {
+    slug: "12-Seater-Tempo-Traveller",
     type: "12 Seater",
     name: "12 Seater Tempo Traveller",
     seating: "12+1",
@@ -175,6 +178,7 @@ export const VEHICLES: VehicleFare[] = [
     image: "/vehicles/12-seater-chiku.jpg",
   },
   {
+    slug: "15-Seater-Tempo-Traveller",
     type: "15 Seater",
     name: "15 Seater Tempo Traveller",
     seating: "15+1",
@@ -190,6 +194,7 @@ export const VEHICLES: VehicleFare[] = [
     image: "/vehicles/15-seater-chiku.jpg",
   },
   {
+    slug: "16-Seater-Tempo-Traveller",
     type: "16 Seater",
     name: "16 Seater Tempo Traveller",
     seating: "16+1",
@@ -204,6 +209,7 @@ export const VEHICLES: VehicleFare[] = [
     image: "/vehicles/16-seater-chiku.jpg",
   },
   {
+    slug: "20-Seater-Tempo-Traveller",
     type: "20 Seater",
     name: "20 Seater Tempo Traveller",
     seating: "20+1",
@@ -218,6 +224,7 @@ export const VEHICLES: VehicleFare[] = [
     image: "/vehicles/20-seater-chiku.jpg",
   },
   {
+    slug: "26-Seater-Tempo-Traveller",
     type: "26 Seater",
     name: "26 Seater Tempo Traveller",
     seating: "26+1",

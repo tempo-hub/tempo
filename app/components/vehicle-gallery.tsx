@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import BookingModal from "./shared/BookingModal";
 
@@ -30,7 +31,12 @@ export const VehicleGallery = () => {
             transition={{ delay: i * 0.1 }}
             viewport={{ once: true }}
           >
-            <Card className="h-full group hover:border-primary/50 transition-colors">
+            <Card className="relative h-full group hover:border-primary/50 transition-colors">
+              <Link
+                href={`/${v.slug}`}
+                aria-label={`View ${v.name} details`}
+                className="absolute inset-0 z-10 rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
+              />
               <div className="aspect-video relative overflow-hidden bg-slate-100">
                 <Image
                   src={v.image}
@@ -65,7 +71,7 @@ export const VehicleGallery = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-3">
+                <div className="relative z-20 flex flex-col gap-3">
                   <Button
                     onClick={() => {
                       setSelectedVehicle(v.type);
