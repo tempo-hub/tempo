@@ -15,8 +15,8 @@ export const LocalBusiness = {
     postalCode: "221010",
     addressCountry: "IN",
   },
-  telephone: "+919999999999",
-  priceRange: "₹₹",
+  telephone: "+919417184683",
+  priceRange: "₹",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
