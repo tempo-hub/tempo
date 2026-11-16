@@ -398,7 +398,17 @@ export default function VehicleTemplate({ vehicle }: VehicleTemplateProps) {
       <VehicleExtraSections vehicle={vehicle} />
 
       {/* Additional Vehicle Sections */}
-      <VehicleAdditionalSections vehicle={vehicle} serviceAreas={[]} />
+      <VehicleAdditionalSections
+        vehicle={vehicle}
+        serviceAreas={[
+          "Varanasi",
+          "Lucknow",
+          "Prayagraj",
+          "Ayodhya",
+          "Delhi",
+          "Gorakhpur",
+        ]}
+      />
 
       {/* FAQ Section */}
       <section className="bg-white py-8 sm:py-10">
