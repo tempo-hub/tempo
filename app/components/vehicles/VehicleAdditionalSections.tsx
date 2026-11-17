@@ -23,7 +23,6 @@ export default function VehicleAdditionalSections({
   serviceAreas = [],
 }: VehicleAdditionalSectionsProps) {
   const [distance, setDistance] = useState<number>(100);
-
   const totalDistance = Number(distance) || 0;
   const estimatedFare = totalDistance * vehicle.perKmRate;
 
@@ -501,7 +500,7 @@ export default function VehicleAdditionalSections({
             </span>
 
             <h2 className="mt-2 text-2xl font-extrabold text-secondary sm:text-3xl">
-              Understanding {vehicle.name} Rental Charges
+               {vehicle.name} Rental Fare & Pricing Details
             </h2>
 
             <p className="mt-3 text-sm leading-7 text-slate-600">

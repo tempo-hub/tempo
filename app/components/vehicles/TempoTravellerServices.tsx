@@ -20,10 +20,18 @@ export default function TempoTravellerServices({
   currentVehicle,
 }: TempoTravellerServicesProps) {
 
-  // Exclude currently selected vehicle
-  const otherVehicles = VEHICLES.filter(
-    (item) => item.slug !== currentVehicle.slug
-  );
+  const otherVehicles =
+  currentVehicle.slug === "9-seater-luxury-tempo-traveller"
+    ? VEHICLES.filter((item) =>
+        [
+          "12-seater-tempo-traveller",
+          "16-seater-ac-tempo-traveller",
+          "9-seater-luxury-tempo-traveller",
+        ].includes(item.slug)
+      )
+    : VEHICLES.filter(
+        (item) => item.slug !== currentVehicle.slug
+      );
 
   const getWhatsAppUrl = (vehicle: VehicleFare) => {
     const message = `Hello, I am interested in booking a ${vehicle.name}. Please share availability and booking details.`;
@@ -185,7 +193,6 @@ export default function TempoTravellerServices({
           </a>
 
         </div>
-
       </div>
     </section>
   );

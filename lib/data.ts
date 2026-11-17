@@ -148,9 +148,9 @@ export interface TaxiRoute {
 
 export const VEHICLES: VehicleFare[] = [
   {
-    slug: "9-seater-tempo-traveller",
+    slug: "9-seater-luxury-tempo-traveller",
     type: "9 Seater",
-    name: "9 Seater Tempo Traveller",
+    name: "9 Seater Luxury Tempo Traveller",
     seating: "9+1",
     capacity: 9,
     perKmRate: 18,
@@ -193,9 +193,9 @@ export const VEHICLES: VehicleFare[] = [
     image: "/vehicles/15-seater-chiku.jpg",
   },
   {
-    slug: "16-seater-tempo-traveller",
+    slug: "16-seater-ac-tempo-traveller",
     type: "16 Seater",
-    name: "16 Seater Tempo Traveller",
+    name: "16 Seater AC Tempo Traveller",
     seating: "16+1",
     capacity: 16,
     perKmRate: 26,
