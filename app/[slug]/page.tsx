@@ -29,8 +29,8 @@ export async function generateMetadata({
   const vehicle = VEHICLES.find((item) => item.slug === slug);
   if (vehicle) {
     return {
-      title: `${vehicle.name} on Rent in Varanasi | Yatra Tempo Traveller`,
-      description: `Book a ${vehicle.name} in Varanasi. ${vehicle.seating} seating, starting at ₹${vehicle.perKmRate}/km. Contact us for a quote.`,
+      title: `${vehicle.name} on Rent | Yatra Tempo Traveller`,
+      description: `Book a ${vehicle.name}. ${vehicle.seating} seating, starting at ₹${vehicle.perKmRate}/km. Contact us for a quote.`,
       alternates: {
         canonical: `https://yatratempotraveller.com/${vehicle.slug}`,
       },
