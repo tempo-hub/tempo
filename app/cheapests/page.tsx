@@ -6,17 +6,27 @@ import { GLOBAL_FAQS } from "@/lib/faq-data";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Search Tempo Traveller Fares | Complete Route Directory",
+  title: "Cheapest Tempo Traveller Fares by Route | Compare & Book",
   description:
-    "Search and browse all tempo traveller routes. Transparent fixed pricing for Varanasi, Lucknow, Ayodhya, and more. Find your group fare instantly.",
+    "Compare cheapest tempo traveller fares for 300+ routes across Varanasi, Prayagraj, Ayodhya, Lucknow and more. Find the lowest fixed price for your group.",
   keywords: [
-    "tempo traveller fares",
-    "taxi search",
-    "Varanasi to Ayodhya fare",
-    "Lucknow tempo traveller rates",
-    "taxi directory India",
-    "yatratempotraveller",
+    "cheapest tempo traveller fares",
+    "lowest tempo traveller price",
+    "tempo traveller route fares",
+    "cheap tempo traveller booking",
+    "Varanasi to Ayodhya cheapest fare",
+    "Prayagraj to Varanasi tempo traveller fare",
   ],
+  alternates: {
+    canonical: "/cheapests",
+  },
+  openGraph: {
+    title: "Cheapest Tempo Traveller Fares by Route | Compare & Book",
+    description:
+      "Search and compare the cheapest tempo traveller fares across 300+ routes in India.",
+    url: "/cheapests",
+    type: "website",
+  },
 };
 
 export default function CheapestFaresPage() {

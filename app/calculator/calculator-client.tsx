@@ -10,23 +10,15 @@ import {
   PhoneCall,
 } from "lucide-react";
 import { Button, Card } from "../components/ui-base";
-import { getCalculatedDistance } from "@/lib/data";
+import { VEHICLE_FARE_GROUPS } from "@/lib/data";
 import BookingModal from "../components/shared/BookingModal";
 
 export default function CalculatorClient() {
   const [distance, setDistance] = useState<number>(100);
-  const [vehicleSize, setVehicleSize] = useState<number>(18); // Default rate for 17-20 seater
+  const [vehicleSize, setVehicleSize] = useState<number>(18);
 
-  const calculatedDistance = getCalculatedDistance(distance);
-
-  const fare = calculateFare(calculatedDistance, vehicleSize);
+  const fare = calculateFare(distance, vehicleSize);
   const [isBookingOpen, setIsBookingOpen] = useState(false);
-
-  const vehicleTypes = [
-    { name: "9-12 Seater", rate: 16, desc: "Small groups & families" },
-    { name: "13-20 Seater", rate: 18, desc: "Medium pilgrims groups" },
-    { name: "21-26 Seater", rate: 24, desc: "Large groups & events" },
-  ];
 
   return (
     <>
@@ -82,7 +74,7 @@ export default function CalculatorClient() {
                   Select Tempo Traveller Size
                 </label>
                 <div className="grid grid-cols-1 gap-3">
-                  {vehicleTypes.map((type) => (
+                  {VEHICLE_FARE_GROUPS.map((type) => (
                     <button
                       key={type.name}
                       onClick={() => setVehicleSize(type.rate)}

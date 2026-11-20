@@ -146,6 +146,14 @@ export interface TaxiRoute {
   };
 }
 
+export const STANDARD_ROUND_TRIP_ALLOWANCE = 500;
+export const VEHICLE_FARE_GROUPS = [
+  { name: "9-12 Seater", rate: 18, desc: "Small groups & families" },
+  { name: "13-16 Seater", rate: 25, desc: "Medium pilgrim & family groups" },
+  { name: "17-20 Seater", rate: 30, desc: "Large groups & events" },
+  { name: "21-26 Seater", rate: 35, desc: "Very large groups & events" },
+] as const;
+
 export const VEHICLES: VehicleFare[] = [
   {
     slug: "9-seater-luxury-tempo-traveller",
@@ -451,14 +459,19 @@ export const getCalculatedDistance = (distance: number) => {
   return distance < 250 ? 250 : distance;
 };
 
+export const getRoundTripDistance = (distance: number) => {
+  if (!Number.isFinite(distance) || distance < 0) return 250;
+  return Math.max(distance * 2, 250);
+};
+
 export function getPricingDetails(distance: number, isSameDay: boolean = true) {
   const perKmRateMin = 18;
   const perKmRateMax = 35;
 
-  const calculatedDistance = getCalculatedDistance(distance);
+  const calculatedDistance = getRoundTripDistance(distance);
 
-  const baseFareMin = calculatedDistance * 2 * perKmRateMin + 500;
-  const baseFareMax = calculatedDistance * 2 * perKmRateMax + 500;
+  const baseFareMin = calculatedDistance * perKmRateMin + 500;
+  const baseFareMax = calculatedDistance * perKmRateMax + 500;
 
   return {
     perKmRateDescription: `₹${perKmRateMin}-${perKmRateMax}/km (diesel + driver) – perfect for ${calculatedDistance} km journey`,
@@ -50992,12 +51005,15 @@ export const ROUTES: TaxiRoute[] = [
 ROUTES.forEach(addMediaToRoute);
 
 export const calculateFare = (distance: number, rate: number) => {
-  const calculatedDistance = getCalculatedDistance(distance);
+  if (!Number.isFinite(distance) || distance < 0) {
+    throw new RangeError("Distance must be a non-negative number");
+  }
+  if (!Number.isFinite(rate) || rate <= 0) {
+    throw new RangeError("Per-kilometre rate must be greater than zero");
+  }
 
-  const base = calculatedDistance * 2 * rate + 500;
-  // const surcharge = 500;
-
-  return Math.round(base);
+  const roundTripDistance = getRoundTripDistance(distance);
+  return Math.round(roundTripDistance * rate + 500);
 };
 
 // Exact City Hub Slugs

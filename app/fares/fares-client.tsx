@@ -147,6 +147,7 @@ export default function FaresClient() {
   // Calculate fare and sort
   const sortedRoutes = useMemo(() => {
     return [...ALL_FARE_ROUTES]
+      .filter((route) => !isSecondaryFareSlug(route.slug))
       .map((route) => ({
         ...route,
         fare: calculateFare(route.distance, 18),
@@ -212,8 +213,8 @@ export default function FaresClient() {
             Route Directory & Search
           </div>
           <h1 className="text-4xl md:text-6xl font-black mb-10 tracking-tight">
-            Search <span className="text-primary italic">Tempo Traveller</span>{" "}
-            Fares
+            Tempo Traveller{" "}
+            <span className="text-primary italic">Price List</span> & Fare Chart
           </h1>
 
           {/* Search Bar */}
@@ -727,6 +728,7 @@ export default function FaresClient() {
 import { FAQSection } from "../components/sections";
 import { GLOBAL_FAQS } from "@/lib/faq-data";
 import { TaxiRoute } from "@/lib/data";
+import { isSecondaryFareSlug } from "@/lib/routeCanonical";
 
 function FareCard({ route }: { route: TaxiRoute }) {
   return (

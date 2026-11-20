@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+Disallow: /admin
+Disallow: /admin-login
+Disallow: /api/
+
 Sitemap: https://yatratempotraveller.com/sitemap.xml

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import CitiesClient from "./CitiesClient";
 
 export const metadata: Metadata = {
-  title: "Tempo Traveller Cities | Yatra Tempo Traveller Hire Across India",
+  title: "Tempo Traveller Hire Across India | 20+ Cities",
 
   description:
     "Find Yatra Tempo Traveller services in 20+ cities across India. Book luxury tempo travellers for family trips, corporate events, pilgrimages, and group tours.",
@@ -13,16 +13,16 @@ export const metadata: Metadata = {
     "tempo traveller cities, yatra tempo traveller, tempo traveller hire, group travel India, luxury tempo traveller",
 
   alternates: {
-    canonical: "https://yatratempotraveller.com/cities",
+    canonical: "/cities",
   },
 
   openGraph: {
-    title: "Tempo Traveller Cities | Yatra Tempo Traveller",
+    title: "Tempo Traveller Hire Across India | 20+ Cities",
 
     description:
       "Book Yatra Tempo Traveller rentals across 20+ cities in India. Premium group travel services with guaranteed comfort.",
 
-    url: "https://yatratempotraveller.com/cities",
+    url: "/cities",
 
     siteName: "Yatra Tempo Traveller",
 

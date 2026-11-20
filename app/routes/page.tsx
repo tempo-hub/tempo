@@ -1,4 +1,5 @@
 import { ROUTES, calculateFare } from "@/lib/data";
+import { isSecondaryFareSlug } from "@/lib/routeCanonical";
 import { GLOBAL_FAQS } from "@/lib/faq-data";
 import Link from "next/link";
 import { Card, Button } from "../components/ui-base";
@@ -10,9 +11,26 @@ import { FAQPage } from "../components/schemas";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Varanasi Tempo Traveller Routes | Budget & Cheapest Options",
+  title: "Tempo Traveller Routes from Varanasi | Distance & Travel Time",
   description:
-    "Explore all 24+ tempo traveller routes from Varanasi. Discover the cheapest tempo traveller for group tours with transparent per km cost. Book your budget tempo traveller today.",
+    "Browse all tempo traveller routes from Varanasi with distance, travel time and fixed round-trip fares. Choose your destination and book your group trip online.",
+  keywords: [
+    "Varanasi tempo traveller routes",
+    "tempo traveller route map",
+    "Varanasi to Ayodhya route distance",
+    "tempo traveller route list",
+    "outstation tempo traveller routes",
+  ],
+  alternates: {
+    canonical: "/routes",
+  },
+  openGraph: {
+    title: "Tempo Traveller Routes from Varanasi | Distance & Travel Time",
+    description:
+      "Explore all tempo traveller routes from Varanasi with distance, travel time and fares.",
+    url: "/routes",
+    type: "website",
+  },
 };
 
 export default function RoutesPage() {
@@ -52,7 +70,7 @@ export default function RoutesPage() {
 
         {/* Routes Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {ROUTES.map((route) => {
+          {ROUTES.filter((route) => !isSecondaryFareSlug(route.slug)).map((route) => {
             return (
               <Link
                 key={route.id}

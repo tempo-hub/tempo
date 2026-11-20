@@ -1,4 +1,4 @@
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { VEHICLES, calculateFare } from "@/lib/data";
 import FarePageClient from "./FarePageClient";
 import {
@@ -37,10 +37,16 @@ export async function generateMetadata({
   const fare = calculateFare(route.distance, VEHICLES[0].perKmRate);
 
   return {
-    title: `${route.origin} to ${route.destination} Tempo Traveller | ₹${fare}`,
-    description: `Book tempo traveller from ${route.origin} to ${route.destination} at cheapest price ₹${fare}. No hidden charges.`,
+    title: `Cheapest Tempo Traveller ${route.origin} to ${route.destination} | ₹${fare}`,
+    description: `Book the cheapest tempo traveller from ${route.origin} to ${route.destination} at ₹${fare}. Fixed price, no hidden charges, 9 to 26 seater AC vehicles.`,
     alternates: {
-      canonical: `https://yatratempotraveller.com/cheapest/${route.slug}`,
+      canonical: `/cheapest/${route.slug}`,
+    },
+    openGraph: {
+      title: `Cheapest Tempo Traveller ${route.origin} to ${route.destination} | ₹${fare}`,
+      description: `Lowest fixed fare from ${route.origin} to ${route.destination} with no hidden charges.`,
+      url: `/cheapest/${route.slug}`,
+      type: "website",
     },
   };
 }
@@ -79,7 +85,7 @@ export default async function Page({
     const fixedRoute = ALL_CHEAPEST_ROUTES.find((r) => r.slug === fixedSlug);
 
     if (fixedRoute) {
-      redirect(`/cheapest/${fixedSlug}`);
+      permanentRedirect(`/cheapest/${fixedSlug}`);
     }
 
     notFound();

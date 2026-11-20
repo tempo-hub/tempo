@@ -556,20 +556,20 @@ function SightseeingItinerary({
   const oneDay = oneDaySpots.length
     ? oneDaySpots
     : [
-        `Morning: Pickup & ${cityName} local tour`,
-        "Main Temple / Landmark visit",
-        "Lunch break at popular local restaurant",
-        "Evening: Aarti / Sunset point",
-      ];
+      `Morning: Pickup & ${cityName} local tour`,
+      "Main Temple / Landmark visit",
+      "Lunch break at popular local restaurant",
+      "Evening: Aarti / Sunset point",
+    ];
 
   const twoDay = twoDaySpots.length
     ? twoDaySpots
     : [
-        `Day 1: Full-day ${cityName} city tour`,
-        "Day 2: Nearby attractions & sightseeing",
-        "Optional: Shopping & local food trail",
-        "Drop-off at preferred location",
-      ];
+      `Day 1: Full-day ${cityName} city tour`,
+      "Day 2: Nearby attractions & sightseeing",
+      "Optional: Shopping & local food trail",
+      "Drop-off at preferred location",
+    ];
 
   return (
     <section style={{ padding: "5rem 1.25rem", background: "#FFFFFF" }}>

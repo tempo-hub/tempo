@@ -13,9 +13,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Yatra Tempo Traveller",
+  title: "Contact Us",
   description:
     "Contact Yatra Tempo Traveller for tempo traveller bookings, group travel, family trips, corporate travel, weddings, pilgrimages, and outstation journeys across India.",
+  alternates: {
+    canonical: "/contact-us",
+  },
 };
 
 export default function ContactUs() {

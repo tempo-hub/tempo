@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props) {
     return {};
   }
 
-  const url = `https://yatratempotraveller.com/urbania/${slug}`;
+  const url = `/urbania/${slug}`;
 
   const title = `${route.origin} to ${route.destination} Urbania Fare | Force Urbania Rent`;
 

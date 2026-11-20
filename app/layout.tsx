@@ -11,10 +11,13 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.yatratempotraveller.com"),
-  title: "Tempo Traveller on Rent | 9 to 26 Seater Booking Online",
+  metadataBase: new URL("https://yatratempotraveller.com"),
+  title: {
+    default: "Tempo Traveller on Rent in Varanasi | Yatra Tempo Traveller",
+    template: "%s | Yatra Tempo Traveller",
+  },
   description:
-    "Book 9 to 26 seater Tempo Travellers for family trips, group tours, weddings and outstation travel. Explore affordable fares and book your ride easily.",
+    "Book 9 to 26 seater Tempo Travellers on rent in Varanasi for family trips, pilgrimages, weddings and outstation journeys. Explore our fleet and booking options.",
   verification: {
     google: "oQQ_e5TI41qZTSRvW6FH-MujeC-sMuhfposrPwFyXkc",
   },

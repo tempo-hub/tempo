@@ -13,6 +13,26 @@ import { VehicleGallery } from "./components/vehicle-gallery";
 import { Button, Card } from "./components/ui-base";
 import Link from "next/link";
 import { ArrowRight, Star, Shield, Zap, MapPin, Users } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tempo Traveller on Rent in Varanasi",
+
+  description:
+    "Book 9 to 26 seater Tempo Traveller on rent in Varanasi for family trips, Kashi Darshan, weddings and outstation travel. Explore vehicles and booking options.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Tempo Traveller on Rent in Varanasi",
+    description:
+      "Book 9 to 26 seater Tempo Travellers in Varanasi for local and outstation group travel.",
+    url: "/",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
@@ -31,17 +51,19 @@ export default function Home() {
                   Varanasi&apos;s #1 Tempo Traveller Service
                 </span>
               </div>
+
               <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight text-secondary leading-[1.1]">
-                Group Travel. <br />
-                <span className="text-primary italic">Fixed Prices.</span>{" "}
-                <br />
-                Tempo Traveller.
+                Tempo Traveller <br />
+                <span className="text-primary italic">on Rent in Varanasi</span>
+                <br />9 to 26 Seater.
               </h1>
+
               <p className="text-xl text-slate-600 max-w-lg leading-relaxed">
-                Book 9 to 26 seater tempo travellers from Varanasi to Ayodhya,
-                Prayagraj, and beyond for pilgrimages, weddings & group tours at
-                fixed fares.
+                Book 9 to 26 seater tempo travellers in Varanasi for Kashi
+                Darshan, family trips, weddings and outstation journeys. Choose
+                the right vehicle for your group and plan your journey.
               </p>
+              
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link href="/fares">
                   <Button size="lg" className="group h-14 rounded-xl">

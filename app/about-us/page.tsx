@@ -13,9 +13,12 @@ import {
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | Yatra Tempo Traveller",
+  title: "About Us",
   description:
     "Learn about Yatra Tempo Traveller, a trusted group travel service offering comfortable and reliable tempo traveller rentals for family trips, corporate travel, weddings, tours, and outstation journeys across India.",
+  alternates: {
+    canonical: "/about-us",
+  },
 };
 
 export default function AboutUs() {

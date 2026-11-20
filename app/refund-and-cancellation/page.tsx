@@ -16,9 +16,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Refund & Cancellation Policy | Yatra Tempo Traveller",
+  title: "Refund & Cancellation Policy",
   description:
     "Read the Refund and Cancellation Policy of Yatra Tempo Traveller, including booking cancellations, date changes, refund eligibility, processing, and customer support.",
+  alternates: {
+    canonical: "/refund-and-cancellation",
+  },
 };
 
 export default function RefundAndCancellation() {

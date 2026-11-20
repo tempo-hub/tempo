@@ -16,9 +16,12 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Yatra Tempo Traveller",
+  title: "Privacy Policy",
   description:
     "Read the Privacy Policy of Yatra Tempo Traveller to understand how we collect, use, protect, and manage customer information and personal data.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicy() {

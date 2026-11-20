@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
-import { ROUTES, CITY_HUBS } from "@/lib/data";
+import { CITY_HUBS } from "@/lib/data";
+import { getUniqueFareSlugs } from "@/lib/routeCanonical";
 import {
   PRAYAGRAJ_CHEAPEST_ROUTES,
   AYODHYA_CHEAPEST_ROUTES,
@@ -15,9 +16,9 @@ import { localityData } from "@/lib/localityData";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://yatratempotraveller.com";
 
-  // Fare Routes
-  const fareUrls = ROUTES.map((route) => ({
-    url: `${baseUrl}/fare/${route.slug}`,
+  // Fare Routes (unique canonical route pages only)
+  const fareUrls = getUniqueFareSlugs().map((slug) => ({
+    url: `${baseUrl}/fare/${slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.8,
@@ -89,7 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/cheapest`,
+      url: `${baseUrl}/cheapests`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.9,

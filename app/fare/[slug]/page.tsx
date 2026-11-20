@@ -1,4 +1,4 @@
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect, redirect } from "next/navigation";
 import { ROUTES, calculateFare, CITY_HUBS } from "@/lib/data";
 import Image from "next/image";
 import { FareCalculator } from "../../components/fare-calculator";
@@ -41,6 +41,7 @@ import { RouteGuideSection } from "@/app/components/sections/RouteGuideSection";
 import { TravelUseCasesSection } from "@/app/components/sections/TravelUseCasesSection";
 import { PricingSection } from "@/app/components/sections/PricingSection";
 import { generateFareFaqs } from "../../components/sections";
+import { getPrimaryFareSlug, isSecondaryFareSlug } from "@/lib/routeCanonical";
 import Link from "next/link";
 
 export const revalidate = 86400;
@@ -73,11 +74,12 @@ export async function generateMetadata({
 
   const fare = calculateFare(route.distance, 18);
   const title = `${route.origin} to ${route.destination} Tempo Traveller Fare | Round Trip ₹${fare}`;
+  const canonicalSlug = getPrimaryFareSlug(slug);
 
   return {
     title,
     description: `Complete guide for ${route.origin} to ${route.destination} tempo traveller. Fixed price ₹${fare} for round trip. Best time to visit, route details, local tips, and travel guide.`,
-    alternates: { canonical: `https://yatratempotraveller.com/fare/${slug}` },
+    alternates: { canonical: `/fare/${canonicalSlug}` },
     openGraph: {
       title,
       description: route.description,
@@ -95,6 +97,10 @@ export default async function FarePage({
   const route = ROUTES.find((r) => r.slug === slug);
 
   if (!route) notFound();
+
+  if (isSecondaryFareSlug(slug)) {
+    permanentRedirect(`/fare/${getPrimaryFareSlug(slug)}`);
+  }
 
   const fare = calculateFare(route.distance, 18);
   const perPersonFare9 = Math.round(fare / 9);

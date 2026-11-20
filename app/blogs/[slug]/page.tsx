@@ -16,7 +16,7 @@ export async function generateMetadata({
 
   if (!blog) {
     return {
-      title: "Blog Not Found | Chiku Cabs",
+      title: "Blog Not Found",
     };
   }
 
@@ -25,7 +25,7 @@ export async function generateMetadata({
     blog.content.replace(/<[^>]+>/g, "").slice(0, 160);
 
   return {
-    title: `${blog.title} | Chiku Cabs`,
+    title: blog.title,
     description,
     openGraph: {
       title: blog.title,

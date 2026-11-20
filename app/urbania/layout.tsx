@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     "Urbania for wedding",
     "Urbania for outstation",
   ],
+  
+  alternates: {
+    canonical: "/urbania",
+  },
 };
 
 export default function UrbaniaLayout({

@@ -1,9 +1,12 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | Yatra Tempo Traveller",
+  title: "Terms and Conditions",
   description:
     "Read the Terms and Conditions for booking tempo traveller rental and tour services with Yatra Tempo Traveller.",
+  alternates: {
+    canonical: "/terms-and-conditions",
+  },
 };
 
 export default function TermsAndConditions() {

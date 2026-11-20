@@ -29,10 +29,10 @@ export async function generateMetadata({
   const vehicle = VEHICLES.find((item) => item.slug === slug);
   if (vehicle) {
     return {
-      title: `${vehicle.name} on Rent | Yatra Tempo Traveller`,
+      title: `${vehicle.name} on Rent in Varanasi`,
       description: `Book a ${vehicle.name}. ${vehicle.seating} seating, starting at ₹${vehicle.perKmRate}/km. Contact us for a quote.`,
       alternates: {
-        canonical: `https://yatratempotraveller.com/${vehicle.slug}`,
+        canonical: `/${vehicle.slug}`,
       },
     };
   }
@@ -43,7 +43,7 @@ export async function generateMetadata({
 
   if (!city) {
     return {
-      title: "Tempo Traveller | Yatra Tempo Traveller",
+      title: "Tempo Traveller",
     };
   }
 
@@ -54,13 +54,13 @@ export async function generateMetadata({
       `Tempo Traveller on rent in ${city.name}, 9 to 26 seater from ₹25/km, 250 km/day, driver allowance ₹500. Get instant quote on WhatsApp`,
 
     alternates: {
-      canonical: `https://yatratempotraveller.com/${city.slug}`,
+      canonical: `/${city.slug}`,
     },
 
     openGraph: {
       title: `Tempo Traveller fare in ${city.name} @25/km | Book Now`,
       description: city.desc,
-      url: `https://yatratempotraveller.com/${city.slug}`,
+      url: `/${city.slug}`,
       siteName: "Yatra Tempo Traveller",
       locale: "en_IN",
       type: "website",

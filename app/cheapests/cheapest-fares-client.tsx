@@ -135,8 +135,8 @@ export default function CheapestFaresClient() {
             Route Directory & Search
           </div>
           <h1 className="text-4xl md:text-6xl font-black mb-6">
-            Search Cheapest{" "}
-            <span className="text-primary italic">Tempo Traveller</span> Fares
+            Cheapest <span className="text-primary italic">Tempo Traveller</span>{" "}
+            Fares by Route
           </h1>
 
           {/* Search Bar */}
