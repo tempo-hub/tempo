@@ -415,9 +415,10 @@ export const FAQSection = ({
               </div>
             </summary>
 
-            <div className="mt-4 pl-4 border-l-2 border-primary/20 text-sm md:text-base text-muted-foreground leading-7">
-              {faq.answer}
-            </div>
+            <div
+              className="faq-answer mt-4 pl-4 border-l-2 border-primary/20 text-sm md:text-base text-muted-foreground leading-7"
+              dangerouslySetInnerHTML={{ __html: faq.answer }}
+            />
           </details>
         ))}
       </div>

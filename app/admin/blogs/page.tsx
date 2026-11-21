@@ -424,7 +424,7 @@ export default function AdminBlogs() {
                 /* Prevent HTML cleaning issues */
                 disablePlugins: ["clean-html"],
               }}
-              onBlur={(newContent) => setContent(newContent)}
+              onChange={(newContent) => setContent(newContent)}
             />
           </div>
 

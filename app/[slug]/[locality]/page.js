@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import LocalityTemplate from "../../components/templates/LocalityTemplate";
 import { localityData } from "../../../lib/localityData";
 import { CITY_HUBS, VEHICLES } from "@/lib/data";
+import { BUSINESS_INFO } from "@/lib/businessConfig";
 
 export function generateStaticParams() {
   return localityData.map((item) => ({
@@ -108,17 +109,15 @@ export default async function LocalityPage({ params }) {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: data.title,
+    name: BUSINESS_INFO.name,
     description: data.metaDescription,
     address: {
       "@type": "PostalAddress",
-      addressLocality: data.locality,
-      addressRegion: data.cityName,
-      addressCountry: "India",
+      ...BUSINESS_INFO.address,
     },
     areaServed: `${data.locality}, ${data.cityName}`,
     serviceType: "Tempo Traveller Rental",
-    telephone: "+919417184683",
+    telephone: BUSINESS_INFO.telephone,
     url: `https://yatratempotraveller.com/${data.city}/${data.slug}`,
   };
 

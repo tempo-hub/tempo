@@ -37,10 +37,8 @@ import { RouteComparisonSection } from "@/app/components/sections/RouteCompariso
 import { RelatedRoutesSection } from "@/app/components/sections/RelatedRoutesSection";
 import { RouteMediaSection } from "@/app/components/sections/RouteMediaSection";
 import { CityGuideSection } from "@/app/components/sections/CityGuideSection";
-import { RouteGuideSection } from "@/app/components/sections/RouteGuideSection";
 import { TravelUseCasesSection } from "@/app/components/sections/TravelUseCasesSection";
 import { PricingSection } from "@/app/components/sections/PricingSection";
-import { generateFareFaqs } from "../../components/sections";
 import { getPrimaryFareSlug, isSecondaryFareSlug } from "@/lib/routeCanonical";
 import Link from "next/link";
 
@@ -74,15 +72,16 @@ export async function generateMetadata({
 
   const fare = calculateFare(route.distance, 18);
   const title = `${route.origin} to ${route.destination} Tempo Traveller Fare | Round Trip ₹${fare}`;
+  const description = `${route.description} Journey: ${route.distance} km, approximately ${route.duration}.`;
   const canonicalSlug = getPrimaryFareSlug(slug);
 
   return {
     title,
-    description: `Complete guide for ${route.origin} to ${route.destination} tempo traveller. Fixed price ₹${fare} for round trip. Best time to visit, route details, local tips, and travel guide.`,
+    description,
     alternates: { canonical: `/fare/${canonicalSlug}` },
     openGraph: {
       title,
-      description: route.description,
+      description,
       images: [{ url: route.routeImage || "/og-image.jpg" }],
     },
   };
@@ -115,8 +114,7 @@ export default async function FarePage({
   ];
 
   const ratePerKm = 18;
-  const faqs = generateFareFaqs(route.origin, route.destination);
-  FAQPage(faqs);
+  const faqs = route.faqs;
 
   return (
     <div className="min-h-screen bg-white">
@@ -223,14 +221,12 @@ export default async function FarePage({
               {route.origin} to {route.destination} Route Highlights
             </h2>
 
-            <p className="text-muted-foreground mt-3 max-w-3xl mx-auto">
-              Get complete travel information including distance, travel time,
-              recommended route, road condition, and estimated fare for your
-              journey.
+            <p className="text-muted-foreground mt-3 max-w-3xl mx-auto leading-relaxed">
+              {route.description}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-2xl border p-6 text-center">
               <MapPin className="mx-auto h-10 w-10 text-primary mb-4" />
               <h3 className="font-bold text-lg">Distance</h3>
@@ -243,22 +239,30 @@ export default async function FarePage({
               <p className="text-2xl font-black mt-2">{route.duration}</p>
             </div>
 
-            <div className="rounded-2xl border p-6 text-center">
-              <ShieldCheck className="mx-auto h-10 w-10 text-primary mb-4" />
-              <h3 className="font-bold text-lg">Road Condition</h3>
-
-              <p className="text-2xl font-black mt-2">Excellent</p>
-            </div>
-
-            <div className="rounded-2xl border p-6 text-center">
-              <Users className="mx-auto h-10 w-10 text-primary mb-4" />
-              <h3 className="font-bold text-lg">Recommended Vehicle</h3>
-
-              <p className="text-xl font-black mt-2">
-                12 Seater Tempo Traveller
-              </p>
-            </div>
+            {route.tollEstimate !== undefined && (
+              <div className="rounded-2xl border p-6 text-center">
+                <IndianRupee className="mx-auto h-10 w-10 text-primary mb-4" />
+                <h3 className="font-bold text-lg">Estimated Toll</h3>
+                <p className="text-2xl font-black mt-2">
+                  ₹{route.tollEstimate.toLocaleString("en-IN")}
+                </p>
+              </div>
+            )}
           </div>
+
+          {route.highlights.length > 0 && (
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {route.highlights.map((highlight) => (
+                <li
+                  key={highlight}
+                  className="flex items-start gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm font-medium text-slate-700"
+                >
+                  <Star className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </section>
       {/* ==================== FARE TABLE + CALCULATOR ==================== */}
@@ -450,7 +454,6 @@ export default async function FarePage({
         </div>
       </section>
       {/* ==================== ROUTE GUIDE SECTION (DYNAMIC) ==================== */}
-      <RouteGuideSection route={route} />
       {/* ==================== TRAVEL USE CASES (DYNAMIC) ==================== */}
       <TravelUseCasesSection route={route} />
       {/* ==================== PRICING EXPLANATION (DYNAMIC) ==================== */}

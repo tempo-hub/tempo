@@ -7,8 +7,7 @@ import {
   MessageCircle,
   Users,
 } from "lucide-react";
-
-import { VEHICLES, type VehicleFare } from "@/lib/data";
+import { ROUTES, VEHICLES, type VehicleFare } from "@/lib/data";
 
 interface TempoTravellerServicesProps {
   currentVehicle: VehicleFare;
@@ -33,6 +32,9 @@ export default function TempoTravellerServices({
   const otherVehicles = VEHICLES.filter(
     (item) => item.slug !== currentVehicle.slug,
   );
+  const popularRoutes = ROUTES.filter(
+    (route) => route.origin === "Varanasi",
+  ).slice(0, 4);
 
   const getWhatsAppUrl = (vehicle: VehicleFare) => {
     const message = `Hello, I am interested in booking a ${vehicle.name}. Please share availability and booking details.`;
@@ -210,6 +212,54 @@ export default function TempoTravellerServices({
 
           ))}
 
+        </div>
+
+        {/* Related fare and route pages */}
+        <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-wider text-primary">
+                Plan Your Trip
+              </p>
+              <h3 className="mt-1 text-xl font-extrabold text-secondary sm:text-2xl">
+                Popular Tempo Traveller Routes
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Explore route details and fares, or estimate the cost for your
+                own itinerary.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/calculator"
+                className="rounded-lg bg-primary px-4 py-2.5 text-sm font-bold text-white transition hover:opacity-90"
+              >
+                Calculate Your Fare
+              </Link>
+              <Link
+                href="/fares"
+                className="rounded-lg border border-primary px-4 py-2.5 text-sm font-bold text-primary transition hover:bg-primary hover:text-white"
+              >
+                View All Fares
+              </Link>
+            </div>
+          </div>
+
+          <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {popularRoutes.map((route) => (
+              <li key={route.slug}>
+                <Link
+                  href={`/fare/${route.slug}`}
+                  className="block rounded-xl border border-slate-200 p-4 text-sm font-semibold text-secondary transition hover:border-primary hover:text-primary"
+                >
+                  Varanasi to {route.destination}
+                  <span className="mt-1 block text-xs font-normal text-slate-500">
+                    View route and tempo traveller fare
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
         {/* Bottom CTA */}

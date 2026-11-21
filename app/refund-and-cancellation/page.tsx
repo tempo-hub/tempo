@@ -582,7 +582,8 @@ export default function RefundAndCancellation() {
 
                   <p className="flex items-start gap-2">
                     <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-                    Sigra, Varanasi, Uttar Pradesh 221010
+                    D 63/59 Shivpurwa, Mahmoorganj, Varanasi, Uttar Pradesh
+                    221010
                   </p>
                 </div>
               </div>

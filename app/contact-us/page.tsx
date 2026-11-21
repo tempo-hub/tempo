@@ -297,7 +297,8 @@ export default function ContactUs() {
                   <strong className="font-bold text-slate-700">
                     Office 1 :
                   </strong>{" "}
-                  D 63/59 Shivpurwa Mahmoorganj Pin 221010 Varanasi
+                  D 63/59 Shivpurwa, Mahmoorganj, Varanasi, Uttar Pradesh
+                  221010
                 </p>
 
                 <p>

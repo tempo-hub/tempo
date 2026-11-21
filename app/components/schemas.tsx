@@ -1,21 +1,19 @@
+import { BUSINESS_INFO } from "@/lib/businessConfig";
+
 export const LocalBusiness = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "YatraTempoTraveller.com",
-  url: "https://yatratempotraveller.com",
+  name: BUSINESS_INFO.name,
+  url: BUSINESS_INFO.website,
   logo: "https://yatratempotraveller.com/logo.png",
   image: "https://yatratempotraveller.com/og-image.jpg",
   description:
     "Premium tempo traveller service in Varanasi, Ayodhya, and North India.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Sigra",
-    addressLocality: "Varanasi",
-    addressRegion: "UP",
-    postalCode: "221010",
-    addressCountry: "IN",
+    ...BUSINESS_INFO.address,
   },
-  telephone: "+919417184683",
+  telephone: BUSINESS_INFO.telephone,
   priceRange: "₹",
   aggregateRating: {
     "@type": "AggregateRating",
@@ -59,20 +57,16 @@ export const Offer = (price: number, route: string, slug: string) => ({
 
   provider: {
     "@type": ["LocalBusiness", "TaxiService"],
-    name: "Chiku Cab",
-    url: "https://yatratempotraveller.com",
-    telephone: "+919417184683",
+    name: BUSINESS_INFO.name,
+    url: BUSINESS_INFO.website,
+    telephone: BUSINESS_INFO.telephone,
     priceRange: "Starts ₹18/km",
 
     image: "https://yatratempotraveller.com/ytfavicon.png",
 
     address: {
       "@type": "PostalAddress",
-      streetAddress: "D 63/59 Shivpurwa, Mahmoorganj, Varanasi, Uttar Pradesh 221010",
-      addressLocality: "Varanasi",
-      addressRegion: "Uttar Pradesh",
-      addressCountry: "IN",
-      postalCode: "221010"
+      ...BUSINESS_INFO.address
     },
 
     areaServed: [

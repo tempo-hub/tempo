@@ -261,14 +261,6 @@ function addMediaToRoute(route: TaxiRoute) {
 
   route.pricingDetails = getPricingDetails(route.distance, true);
 
-  route.routeGuide = getRouteGuide(
-    route.origin,
-    route.destination,
-    route.distance,
-  );
-
-  route.faqs = [...GLOBAL_FAQS];
-
   // Add city guide dynamically
   route.cityGuide = getCityGuideForDestination(route.destination);
 

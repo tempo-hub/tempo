@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { CITY_HUBS } from "@/lib/data";
+import { CITY_HUBS, VEHICLES } from "@/lib/data";
 import { getUniqueFareSlugs } from "@/lib/routeCanonical";
 import {
   PRAYAGRAJ_CHEAPEST_ROUTES,
@@ -134,9 +134,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  // Vehicle and seating-specific pages
+  const vehicleUrls = VEHICLES.map((vehicle) => ({
+    url: `${baseUrl}/${vehicle.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.85,
+  }));
+
+  const seaterUrls = VEHICLES.map((vehicle) => ({
+    url: `${baseUrl}/seater/${vehicle.capacity}-seater-tempo-traveller`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
+
+  const seaterIndex = {
+    url: `${baseUrl}/seater`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  };
+
   return [
     ...localityEntries,
     ...staticUrls,
+    seaterIndex,
+    ...seaterUrls,
+    ...vehicleUrls,
     ...fareUrls,
     ...cheapestUrls,
     ...perKmFareUrls,
